@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>专升本单词记忆</title>
+  <link rel="stylesheet" href="./styles.css?v=70b02120260804">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Spaced Word Lab</p>
+        <h1>专升本单词记忆</h1>
+      </div>
+      <div class="topbar-actions">
+        <button class="secondary-button" id="importButton" title="导入旧数据 / 备份文件" aria-label="导入旧数据">↥ 导入旧数据</button>
+        <button class="secondary-button" id="exportButton" title="导出本机备份" aria-label="导出本机备份">↧ 导出备份</button>
+        <button class="secondary-button" id="cloudSyncButton"><span aria-hidden="true">☁</span> 云同步</button>
+        <button class="secondary-button" id="startNewButton"><span aria-hidden="true">▶</span> 新词连背</button>
+        <button class="secondary-button" id="batchLearnButton"><span aria-hidden="true">✓</span> 一键记完新词</button>
+        <button class="secondary-button" id="sprintButton"><span aria-hidden="true">◷</span> 15分钟冲刺</button>
+        <button class="primary-button" id="focusDueButton"><span aria-hidden="true">◎</span> 开始复习</button>
+        <button class="secondary-button" id="weakOnlyButton"><span aria-hidden="true">★</span> 只背不会的</button>
+      </div>
+    </header>
+    <button class="mobile-focus-entry" id="mobileFocusEntry" type="button" aria-describedby="mobileFocusEntryHint">
+      <span class="mobile-focus-entry-copy">
+        <span class="mobile-focus-entry-kicker">手机 / 电脑共用</span>
+        <strong>一屏一词专注背词</strong>
+        <small id="mobileFocusEntryHint">支持看英文想中文、看英文选中文、看中文拼英文；三种方式共用同一份进度</small>
+      </span>
+      <span class="mobile-focus-entry-cta">开始 →</span>
+    </button>
+    <div class="readonly-banner" id="readonlyBanner" hidden></div>
+
+    <main class="workspace">
+      <nav class="module-switcher" aria-label="大模块切换">
+        <button class="module-button active" type="button" data-module-target="folder"><span>📁</span><strong>英语资料夹</strong><small>蓝色森林 / 四级 / 短语练习 / Word List / 全方位</small></button>
+        <button class="module-button" type="button" data-module-target="study"><span>🧠</span><strong>记忆训练</strong><small>复习 / 新词 / 听写 / 拼写</small></button>
+        <button class="module-button" type="button" data-module-target="smart"><span>🔎</span><strong>构词归类</strong><small>词根 / 形近 / 同义</small></button>
+        <button class="module-button" type="button" data-module-target="progress"><span>📊</span><strong>学习进度</strong><small>Word List 与分组统计</small></button>
+        <button class="module-button" type="button" data-module-target="manage"><span>＋</span><strong>管理词库</strong><small>添加 / 筛选 / 总词库</small></button>
+      </nav>
+
+      <section class="stats-grid module-section" data-module-section="study" aria-label="记忆统计">
+        <article class="metric">
+          <span>词条总数</span>
+          <strong id="totalCount">0</strong>
+        </article>
+        <article class="metric time">
+          <span>总学习时长</span>
+          <strong id="totalStudyTime">0分</strong>
+          <small id="todayStudyTime">今日 0分</small>
+        </article>
+        <article class="metric accent">
+          <span>现在到期</span>
+          <strong id="dueCount">0</strong>
+        </article>
+        <article class="metric warm">
+          <span>已完成</span>
+          <strong id="todayCount">0</strong>
+        </article>
+        <article class="metric calm completed-metric">
+          <span>已学习</span>
+          <strong id="doneTodayCount">0</strong>
+          <div class="metric-split" aria-label="累计已学习的单词和短语数量">
+            <div><small>单词</small><b id="todayWordActionCount">0</b></div>
+            <div><small>短语</small><b id="todayPhraseActionCount">0</b></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="prep-dashboard module-section" data-module-section="study" aria-label="专升本今日任务">
+        <article class="countdown-panel">
+          <div>
+            <p class="eyebrow">Exam</p>
+            <h2>专升本倒计时</h2>
+          </div>
+          <div class="countdown-number"><strong id="examDays">--</strong><span>天</span></div>
+          <label class="compact-field">
+            <span>考试日期</span>
+            <input id="examDateInput" type="date">
+          </label>
+        </article>
+        <article class="task-panel">
+          <span>今日新词</span>
+          <strong id="todayNewTarget">0</strong>
+          <p id="todayNewHint">先完成新词，再等系统复习</p>
+        </article>
+        <article class="task-panel accent">
+          <span>今日复习</span>
+          <strong id="todayReviewTarget">0</strong>
+          <p id="todayReviewHint">按页面显示的具体时间背</p>
+        </article>
+        <article class="task-panel warm">
+          <span>重点词</span>
+          <strong id="importantCount">0</strong>
+          <p>忘了的词会自动进入这里</p>
+        </article>
+        <article class="task-panel calm">
+          <span>预计用时</span>
+          <strong id="estimateMinutes">0</strong>
+          <p>分钟，拆开做也可以</p>
+        </article>
+      </section>
+
+      <section class="daily-report module-section" data-module-section="study" id="dailyReport" aria-label="今日战报"></section>
+
+      <section class="hero-workbench module-section" data-module-section="study">
+        <div class="study-area">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Now</p>
+              <h2>记忆卡片</h2>
+            </div>
+            <div class="session-tools">
+              <div class="sprint-chip" id="sprintStatus">未开始</div>
+              <div class="clock-chip" id="clockNow">--:--</div>
+            </div>
+          </div>
+
+          <div class="mode-tabs" role="tablist" aria-label="学习模式">
+            <button class="tab-button active" id="dueModeButton" type="button">到期复习</button>
+            <button class="tab-button" id="newModeButton" type="button">新词记忆</button>
+            <button class="tab-button" id="allModeButton" type="button">全部抽查</button>
+          </div>
+
+          <div class="practice-switch main-practice-switch" aria-label="常用练习方式">
+            <button class="practice-button active" data-practice-mode="card" type="button">卡片</button>
+            <button class="practice-button" data-practice-mode="zhToEn" type="button">中译英</button>
+            <button class="practice-button" data-practice-mode="choiceZhToEn" type="button">中文选英文</button>
+            <button class="practice-button" data-practice-mode="spell" type="button">拼写</button>
+            <button class="practice-button" data-practice-mode="dictation" type="button">听写</button>
+            <button class="practice-button" data-practice-mode="forms" type="button">变形</button>
+          </div>
+          <details class="special-practice-panel pos-practice-panel" open>
+            <summary>语法辨析训练</summary>
+            <div class="special-practice-note">五个模式独立记录进度。先练五大词性，再分别突破名词可数性、动词及物性、易混词形和句子语境。</div>
+            <div class="practice-switch special-practice-switch grammar-practice-grid" aria-label="语法辨析训练">
+              <button class="practice-button pos-practice-start" data-practice-mode="posClassify" type="button"><b>五大词性</b><small>名词 / 动词 / 数词 / 形容词 / 副词</small></button>
+              <button class="practice-button pos-practice-start" data-practice-mode="nounCountability" type="button"><b>名词可数性</b><small>可数 / 不可数 / 两者均可</small></button>
+              <button class="practice-button pos-practice-start" data-practice-mode="verbTransitivity" type="button"><b>动词及物性</b><small>及物 / 不及物 / 系动词等</small></button>
+              <button class="practice-button pos-practice-start" data-practice-mode="wordFamily" type="button"><b>易混词形</b><small>同词族中选择正确形式</small></button>
+              <button class="practice-button pos-practice-start" data-practice-mode="posContext" type="button"><b>句子语境</b><small>判断标记词在句中的词性</small></button>
+            </div>
+          </details>
+          <p class="mode-progress-note">默认进入卡片。五类语法训练独立计算正确率和复习进度；答题后自动进入下一题。</p>
+
+          <div class="dictation-tools" aria-label="听写设置">
+            <label class="compact-select">
+              <span>听写顺序</span>
+              <select id="dictationOrderSelect">
+                <option value="due">到期优先</option>
+                <option value="important">重点错词优先</option>
+                <option value="random">随机乱序</option>
+                <option value="az">A-Z 顺序</option>
+              </select>
+            </label>
+          </div>
+
+          <article class="word-card" id="activeCard"></article>
+        </div>
+
+        <aside class="schedule-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Plan</p>
+              <h2>今日几点背</h2>
+            </div>
+            <button class="text-button" id="copyPlanButton" type="button">复制计划</button>
+          </div>
+          <div class="time-ladder" id="todayTimeline"></div>
+        </aside>
+      </section>
+
+
+      <section class="folder-library-panel module-section" data-module-section="folder" id="folderLibraryPanel" aria-label="英语资料文件夹">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Folders</p>
+            <h2>英语资料夹</h2>
+          </div>
+          <p class="folder-hint">按蓝色森林、四级、短语练习、Word List、全方位分别查看。</p>
+        </div>
+        <div class="folder-library-layout">
+          <div class="folder-source-list" id="folderSourceList"></div>
+          <div class="folder-content" id="folderContent"></div>
+        </div>
+      </section>
+
+      <section class="smart-vocab-panel module-section" data-module-section="smart" id="smartVocabPanel" aria-label="智能归类与辨析">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Smart</p>
+            <h2>构词 / 形近 / 同义归类</h2>
+          </div>
+          <p class="folder-hint">先选类型，再点开看单词；不一次性铺开，手机不卡。</p>
+        </div>
+        <div class="smart-tabs">
+          <button class="smart-tab active" data-smart-tab="affix" type="button">前缀后缀词根</button>
+          <button class="smart-tab" data-smart-tab="similar" type="button">形近词对比</button>
+          <button class="smart-tab" data-smart-tab="synonym" type="button">同义词辨析</button>
+          <button class="smart-tab" data-smart-tab="family" type="button">词族归类</button>
+          <button class="smart-tab" data-smart-tab="polysemy" type="button">一词多义</button>
+          <button class="smart-tab" data-smart-tab="collocation" type="button">固定搭配</button>
+        </div>
+        <div id="smartVocabContent" class="smart-vocab-content"></div>
+      </section>
+
+
+      <section class="groups-panel module-section" data-module-section="progress">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Groups</p>
+            <h2>Word List 进度</h2>
+          </div>
+        </div>
+        <div class="group-grid" id="groupProgress"></div>
+      </section>
+
+      <section class="entry-grid module-section" data-module-section="manage">
+        <form class="entry-form" id="wordForm">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Add</p>
+              <h2>添加单词</h2>
+            </div>
+          </div>
+          <div class="form-grid">
+            <label>
+              <span>单词/短语</span>
+              <input id="termInput" required maxlength="80" placeholder="carry out">
+            </label>
+            <label>
+              <span>中文</span>
+              <input id="meaningInput" maxlength="120" placeholder="执行，实施">
+            </label>
+            <label>
+              <span>搭配/例句</span>
+              <input id="phraseInput" maxlength="180" placeholder="carry out a plan">
+            </label>
+            <label>
+              <span>标签</span>
+              <input id="tagInput" maxlength="60" placeholder="阅读 / 作文 / 高频">
+            </label>
+            <label>
+              <span>词库分类</span>
+              <select id="sourceInput">
+                <option value="全方位">全方位</option>
+                <option value="四级">四级</option>
+                <option value="蓝色森林">蓝色森林</option>
+              </select>
+            </label>
+          </div>
+          <div class="verb-forms-grid">
+            <label>
+              <span>三单</span>
+              <input id="thirdPersonInput" maxlength="80" placeholder="studies">
+            </label>
+            <label>
+              <span>过去式</span>
+              <input id="pastTenseInput" maxlength="80" placeholder="studied">
+            </label>
+            <label>
+              <span>过去分词</span>
+              <input id="pastParticipleInput" maxlength="80" placeholder="studied">
+            </label>
+          </div>
+          <label>
+            <span>备注</span>
+            <textarea id="noteInput" rows="2" placeholder="易混词、词根、发音提醒"></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="secondary-button" id="clearFormButton" type="button">清空</button>
+            <button class="primary-button" type="submit"><span aria-hidden="true">＋</span> 加入词库</button>
+          </div>
+        </form>
+
+        <section class="bulk-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Paste</p>
+              <h2>批量加入</h2>
+            </div>
+          </div>
+          <label class="bulk-source-select">
+            <span>归到</span>
+            <select id="bulkSourceInput">
+              <option value="全方位">全方位</option>
+              <option value="四级">四级</option>
+              <option value="蓝色森林">蓝色森林</option>
+            </select>
+          </label>
+          <textarea id="bulkInput" rows="8" placeholder="study | 学习 | study English | studies | studied | studied&#10;carry out | 执行 | carry out a task"></textarea>
+          <div class="form-actions">
+            <button class="secondary-button" id="clearBulkButton" type="button">清空</button>
+            <button class="primary-button" id="bulkAddButton" type="button"><span aria-hidden="true">＋</span> 批量加入</button>
+          </div>
+        </section>
+      </section>
+
+      <section class="library-panel module-section" data-module-section="manage">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Library</p>
+            <h2>词库</h2>
+          </div>
+          <div class="library-tools">
+            <label class="search-box">
+              <span aria-hidden="true">⌕</span>
+              <input id="searchInput" type="search" placeholder="搜索单词、中文、短语">
+            </label>
+            <select id="statusFilter" aria-label="状态筛选">
+              <option value="all">全部</option>
+              <option value="due">到期</option>
+              <option value="new">新词</option>
+              <option value="learning">学习中</option>
+              <option value="mature">稳定</option>
+              <option value="important">重点词</option>
+            </select>
+            <select id="librarySourceFilter" aria-label="词库分类筛选">
+              <option value="all">全部分类</option>
+              <option value="全方位">全方位</option>
+              <option value="四级">四级</option>
+              <option value="蓝色森林">蓝色森林</option>
+            </select>
+            <select id="listMaskMode" aria-label="列表遮挡">
+              <option value="show">显示全部</option>
+              <option value="hideEnglish">遮英文</option>
+              <option value="hideChinese">遮中文</option>
+            </select>
+          </div>
+        </div>
+        <div class="word-list" id="wordList"></div>
+      </section>
+    </main>
+  </div>
+
+  <input id="importInput" type="file" accept="application/json,.json" hidden>
+  <dialog class="cloud-dialog" id="cloudDialog" aria-labelledby="cloudDialogTitle">
+    <form class="cloud-panel" id="cloudForm" method="dialog">
+      <div class="cloud-heading">
+        <div>
+          <p class="eyebrow">Supabase Cloud</p>
+          <h2 id="cloudDialogTitle">云同步</h2>
+        </div>
+        <button class="icon-button secondary" type="button" id="closeCloudButton" aria-label="关闭">×</button>
+      </div>
+      <p class="cloud-intro">这里默认保存到云端并开启自动同步。第一次使用云同步前，必须在 Supabase SQL Editor 运行本包里的 supabase-word-memory-repair.sql。</p>
+      <div class="cloud-grid">
+        <label>
+          <span>公开编号</span>
+          <input id="cloudSlugInput" type="text" inputmode="latin" autocomplete="off" placeholder="cyrus329" maxlength="32">
+        </label>
+        <label>
+          <span>显示名称</span>
+          <input id="cloudNameInput" type="text" autocomplete="off" placeholder="专升本单词记忆">
+        </label>
+        <label>
+          <span>编辑密码</span>
+          <input id="cloudPinInput" type="password" autocomplete="current-password" placeholder="至少 4 位">
+        </label>
+        <label class="toggle-line">
+          <input id="cloudPublicInput" type="checkbox" checked>
+          <span>允许公开链接查看</span>
+        </label>
+        <label class="wide">
+          <span>Supabase 项目地址</span>
+          <input id="supabaseUrlInput" type="url" autocomplete="url" placeholder="https://xxxx.supabase.co">
+        </label>
+        <label class="wide">
+          <span>Supabase anon public key</span>
+          <input id="supabaseKeyInput" type="text" autocomplete="off" placeholder="sb_publishable_... 或 eyJ...">
+        </label>
+        <label class="wide">
+          <span>网页地址</span>
+          <input id="shareBaseUrlInput" type="url" autocomplete="url" placeholder="https://你的用户名.github.io/word-memory/">
+        </label>
+      </div>
+      <div class="share-row">
+        <button class="secondary-button" type="button" id="copyPublicLinkButton">复制公开链接</button>
+        <button class="secondary-button" type="button" id="copyEditLinkButton">复制协作链接</button>
+        <a class="secondary-button" href="./supabase-word-memory-repair.sql" download>下载云同步SQL</a>
+      </div>
+      <p class="cloud-status" id="cloudStatus" role="status" aria-live="polite"></p>
+      <div class="cloud-actions">
+        <button class="secondary-button" type="button" id="loadCloudButton">连接并加载云端</button>
+        <button class="secondary-button" type="button" id="localSaveButton">只保存本机</button>
+        <button class="secondary-button" type="button" id="cancelCloudButton">取消</button>
+        <button class="secondary-button" type="button" id="tryCloudSaveButton">检查云同步</button>
+        <button class="primary-button" type="submit">保存并开启云同步</button>
+      </div>
+    </form>
+  </dialog>
+  <div class="gaze-panel" id="gazePanel" hidden aria-live="polite">
+    <div class="gaze-panel-head">
+      <strong>实验翻词已关闭</strong>
+      <button class="text-button" id="gazeStopButton" type="button">关闭</button>
+    </div>
+    <p id="gazeStatus">已关闭。当前版本恢复稳定按钮操作，避免乱识别。</p>
+    <div class="gaze-zones"><span>已移除手指翻词</span><span>显示词义按钮已恢复</span><span>优先保证记忆记录稳定</span></div>
+  </div>
+  <section class="mobile-focus-mode" id="mobileFocusMode" role="dialog" aria-modal="true" aria-label="一屏一词专注背词模式" hidden>
+    <header class="mobile-focus-header">
+      <button class="mobile-focus-exit" id="mobileFocusExit" type="button" aria-label="退出一屏一词模式">退出</button>
+      <div class="mobile-focus-heading">
+        <strong id="mobileFocusTitle">一屏一词</strong>
+        <span id="mobileFocusSource">当前词库</span>
+      </div>
+      <strong class="mobile-focus-count" id="mobileFocusCount">0 / 0</strong>
+    </header>
+    <div class="mobile-focus-progress" id="mobileFocusProgress" role="progressbar" aria-label="背词进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <span id="mobileFocusProgressFill"></span>
+    </div>
+
+    <div class="mobile-focus-mode-switch" id="mobileFocusModeSwitch" role="group" aria-label="专注背词方式">
+      <button class="is-active" type="button" data-mobile-focus-mode="recall">看英文想中文</button>
+      <button type="button" data-mobile-focus-mode="choice">看英文选中文</button>
+      <button type="button" data-mobile-focus-mode="spelling">看中文拼英文</button>
+    </div>
+    <div class="mobile-focus-stage" id="mobileFocusStage">
+      <article class="mobile-focus-card" id="mobileFocusCard" role="button" aria-expanded="false" tabindex="0">
+        <aside class="mobile-focus-previous" id="mobileFocusPrevious" aria-live="polite" hidden>
+          <span>上一个</span>
+          <strong id="mobileFocusPreviousTerm"></strong>
+          <p id="mobileFocusPreviousMeaning"></p>
+        </aside>
+        <button class="mobile-focus-audio" id="mobileFocusAudio" type="button" aria-label="朗读当前单词">🔊</button>
+        <p class="mobile-focus-kicker" id="mobileFocusKicker">看英文，回想中文</p>
+        <h2 class="mobile-focus-term" id="mobileFocusTerm">单词</h2>
+        <p class="mobile-focus-phonetic" id="mobileFocusPhonetic"></p>
+        <div class="mobile-focus-answer" id="mobileFocusAnswer" hidden>
+          <p class="mobile-focus-meaning" id="mobileFocusMeaning"></p>
+          <p class="mobile-focus-detail" id="mobileFocusDetail"></p>
+        </div>
+
+        <div class="mobile-focus-choice" id="mobileFocusChoice" hidden aria-label="中文释义四选一">
+          <div class="mobile-focus-choice-grid">
+            <button type="button" data-mobile-focus-choice="0"></button>
+            <button type="button" data-mobile-focus-choice="1"></button>
+            <button type="button" data-mobile-focus-choice="2"></button>
+            <button type="button" data-mobile-focus-choice="3"></button>
+          </div>
+          <p class="mobile-focus-choice-feedback" id="mobileFocusChoiceFeedback" aria-live="polite"></p>
+        </div>
+
+        <div class="mobile-focus-spelling" id="mobileFocusSpelling" hidden>
+          <label for="mobileFocusSpellingInput">请输入英文</label>
+          <input id="mobileFocusSpellingInput" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" enterkeyhint="done" placeholder="看中文拼写英文">
+          <div class="mobile-focus-spelling-actions">
+            <button id="mobileFocusSpellingCheck" type="button">检查拼写</button>
+            <button id="mobileFocusSpellingClear" type="button">重写</button>
+          </div>
+          <p class="mobile-focus-spelling-feedback" id="mobileFocusSpellingFeedback" aria-live="polite"></p>
+        </div>
+        <p class="mobile-focus-tip" id="mobileFocusTip">点击卡片看答案 · 手机滑动切换 · 电脑可直接点击按钮</p>
+      </article>
+      <div class="mobile-focus-empty" id="mobileFocusEmpty" hidden>
+        <strong>这一组已经背完了</strong>
+        <p>退出后可选择其他词库继续学习。</p>
+      </div>
+    </div>
+    <div class="mobile-focus-shared-note" id="mobileFocusSharedNote">四选一、拼写和普通卡片共用同一份“记住 / 模糊 / 忘了”学习记录；云同步后手机、电脑一致。</div>
+    <footer class="mobile-focus-actions" aria-label="记忆程度">
+      <button class="mobile-focus-rate forgot" type="button" data-mobile-focus-rate="forgot"><strong>忘了</strong><small>与普通卡片共用进度</small></button>
+      <button class="mobile-focus-rate fuzzy" type="button" data-mobile-focus-rate="fuzzy"><strong>模糊</strong><small>加强复习</small></button>
+      <button class="mobile-focus-rate remember" type="button" data-mobile-focus-rate="remember"><strong>记住</strong><small>与普通卡片共用进度</small></button>
+    </footer>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./library-folder-data.js?v=70b02120260804"></script>
+  <script src="./word-data.js?v=70b02120260804"></script>
+  <script src="./context-engine.js?v=70b02120260804"></script>
+  <script src="./context-data.js?v=70b02120260804"></script>
+  <script src="./context-id-data.js?v=70b02120260804"></script>
+  <script src="./context-presenter.js?v=70b02120260804"></script>
+  <script src="./context-study-engine.js?v=70b02120260804"></script>
+  <script src="./mobile-focus.js?v=70b02120260804"></script>
+  <script src="./app.js?v=70b02120260804"></script>
+  <script src="./folder-view.js?v=70b02120260804"></script>
+  <script src="./smart-vocab.js?v=70b02120260804"></script>
+  <script>
+    (function(){
+      const buttons = Array.from(document.querySelectorAll('[data-module-target]'));
+      const sections = Array.from(document.querySelectorAll('[data-module-section]'));
+      if (!buttons.length || !sections.length) return;
+      const titleMap = {folder: '英语资料夹', study: '记忆训练', smart: '构词归类', progress: '学习进度', manage: '管理词库'};
+      function activate(name, keepHash){
+        const target = titleMap[name] ? name : 'folder';
+        buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.moduleTarget === target));
+        sections.forEach(sec => sec.classList.toggle('active', sec.dataset.moduleSection === target));
+        if (!keepHash) {
+          try { history.replaceState(null, '', '#' + target); } catch (e) {}
+        }
+        const main = document.querySelector('.workspace');
+        if (main) main.dataset.activeModule = target;
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      }
+      buttons.forEach(btn => btn.addEventListener('click', () => activate(btn.dataset.moduleTarget)));
+      const initial = (location.hash || '').replace('#','');
+      activate(titleMap[initial] ? initial : 'folder', true);
+      window.addEventListener('hashchange', () => activate((location.hash || '').replace('#',''), true));
+    })();
+  </script>
+</body>
+</html>
