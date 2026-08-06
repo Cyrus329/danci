@@ -1,4 +1,4 @@
-// Generated 2026-08-05. v70 B022 专升本题型语境；资料原句优先，新增词使用逐条校正语境。
+// Generated 2026-08-06. v70 B024 专升本题型语境；资料原句优先，新增词使用逐条校正语境。
 window.WORD_MEMORY_CONTEXTS = {
   "-able": {
     "primary": {
@@ -61483,6 +61483,1281 @@ window.WORD_MEMORY_CONTEXTS = {
       "templateFamily": "individually-reviewed",
       "contextId": "cet-20260805-26-049:primary",
       "batch": "v70-b022"
+    },
+    "extra": []
+  },
+  "be opposite to": {
+    "primary": {
+      "sentence": "My opinion is opposite to yours.",
+      "target": "be opposite to",
+      "translation": "我的观点与你的相反。",
+      "sense": "与……相反",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "source-example",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "phrase-practice-19-005:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "jacket": {
+    "primary": {
+      "sentence": "He put on a light jacket before leaving the dormitory.",
+      "target": "jacket",
+      "translation": "离开宿舍前，他穿上了一件薄夹克。",
+      "sense": "n. 夹克；短上衣；v. 给……穿夹克；用套包裹",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-001:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "astronomy": {
+    "primary": {
+      "sentence": "The astronomy club observed the moon through a telescope.",
+      "target": "astronomy",
+      "translation": "天文学社团用望远镜观察了月球。",
+      "sense": "n. 天文学（研究天体及宇宙现象的科学）",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-002:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "best-seller": {
+    "primary": {
+      "sentence": "The novel became a best-seller soon after it was published.",
+      "target": "best-seller",
+      "translation": "这部小说出版后不久便成为畅销书。",
+      "sense": "n. 畅销书；畅销商品",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-006:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "biochemistry": {
+    "primary": {
+      "sentence": "Biochemistry explains many chemical processes inside living cells.",
+      "target": "biochemistry",
+      "translation": "生物化学解释了活细胞内部的许多化学过程。",
+      "sense": "n. 生物化学（研究生物体内化学过程的学科）",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-007:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "the": {
+    "primary": {
+      "sentence": "The library near our campus stays open until ten.",
+      "target": "the",
+      "translation": "我们校园附近的那座图书馆开放到十点。",
+      "sense": "art. 定冠词，表特指、类指或最高级修饰",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-008:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "oven": {
+    "primary": {
+      "sentence": "The bread should remain in the oven for another ten minutes.",
+      "target": "oven",
+      "translation": "面包还应在烤箱里烤十分钟。",
+      "sense": "n. 烤箱；烤炉；灶",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-009:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "wool": {
+    "primary": {
+      "sentence": "This sweater is made from soft wool.",
+      "target": "wool",
+      "translation": "这件毛衣由柔软的羊毛制成。",
+      "sense": "n. 羊毛；毛线；毛料衣物",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-010:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "pillar": {
+    "primary": {
+      "sentence": "Trust is a central pillar of effective teamwork.",
+      "target": "pillar",
+      "translation": "信任是高效团队合作的重要支柱。",
+      "sense": "n. 柱子；支柱；核心人物或事物",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-012:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "ox": {
+    "primary": {
+      "sentence": "In the past, an ox was often used to pull farm equipment.",
+      "target": "ox",
+      "translation": "过去，人们常用牛拉农具。",
+      "sense": "n. 公牛（尤指阉割后用于劳作的牛）",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-014:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "basketball": {
+    "primary": {
+      "sentence": "Playing basketball after class helps students stay active.",
+      "target": "basketball",
+      "translation": "课后打篮球有助于学生保持活力。",
+      "sense": "n. 篮球运动；篮球（实体）",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-015:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "century": {
+    "primary": {
+      "sentence": "Technology changed rapidly during the twentieth century.",
+      "target": "century",
+      "translation": "科技在二十世纪发生了迅速变化。",
+      "sense": "n. 世纪；百年；板球中的百分",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-017:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "dime": {
+    "primary": {
+      "sentence": "She found a dime under the vending machine.",
+      "target": "dime",
+      "translation": "她在自动售货机下面发现了一枚一角硬币。",
+      "sense": "n. （美国、加拿大的）10分硬币；一角硬币",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-018:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "pure": {
+    "primary": {
+      "sentence": "The experiment requires pure water to avoid errors.",
+      "target": "pure",
+      "translation": "这项实验需要纯净水以避免误差。",
+      "sense": "adj. 纯的；纯净的；纯粹的；纯理论的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-020:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "chip": {
+    "primary": {
+      "sentence": "A tiny computer chip can store a large amount of information.",
+      "target": "chip",
+      "translation": "一枚微小的计算机芯片可以存储大量信息。",
+      "sense": "n. 碎片；缺口；炸薯条；芯片；v. 削下碎片；打出缺口",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-021:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "photo": {
+    "primary": {
+      "sentence": "The photo records our first day at college.",
+      "target": "photo",
+      "translation": "这张照片记录了我们大学第一天。",
+      "sense": "n. 照片；相片",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-022:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "false": {
+    "primary": {
+      "sentence": "Students should check the source before sharing a false claim.",
+      "target": "false",
+      "translation": "学生在传播错误说法前应核查来源。",
+      "sense": "adj. 错误的；虚假的；伪造的；adv. 错误地；欺诈地",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-023:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "happy": {
+    "primary": {
+      "sentence": "She was happy with the progress she made this month.",
+      "target": "happy",
+      "translation": "她对自己这个月取得的进步感到满意。",
+      "sense": "adj. 快乐的；幸福的；满意的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-026:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "everywhere": {
+    "primary": {
+      "sentence": "Mobile payment is now used almost everywhere in the city.",
+      "target": "everywhere",
+      "translation": "移动支付如今在这座城市几乎随处可见。",
+      "sense": "adv. 到处；各处；无论何处；n. 所有地方；各处",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-028:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "income": {
+    "primary": {
+      "sentence": "Part-time work can provide students with a small income.",
+      "target": "income",
+      "translation": "兼职工作可以为学生带来少量收入。",
+      "sense": "n. 收入；所得；收益",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-029:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "mop": {
+    "primary": {
+      "sentence": "Please mop the floor after the practical class.",
+      "target": "mop",
+      "translation": "实践课结束后请把地面拖干净。",
+      "sense": "n. 拖把；蓬乱的头发；v. 用拖把拖；擦干",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-031:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "baby": {
+    "primary": {
+      "sentence": "The baby stopped crying when the music began.",
+      "target": "baby",
+      "translation": "音乐响起时，婴儿停止了哭泣。",
+      "sense": "n. 婴儿；宝贝；幼崽；adj. 婴儿的；小型的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-032:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "sideways": {
+    "primary": {
+      "sentence": "He moved sideways to let the passengers pass.",
+      "target": "sideways",
+      "translation": "他向旁边挪了挪，让乘客通过。",
+      "sense": "adv. 向侧面地；斜向地；adj. 侧面的；横向的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-033:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "liver": {
+    "primary": {
+      "sentence": "The liver plays an important role in processing nutrients.",
+      "target": "liver",
+      "translation": "肝脏在处理营养物质方面发挥重要作用。",
+      "sense": "n. 肝脏；过着某种生活的人",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-034:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "pill": {
+    "primary": {
+      "sentence": "Take this pill after a meal as the doctor advised.",
+      "target": "pill",
+      "translation": "请按医生建议饭后服用这片药。",
+      "sense": "n. 药丸；药片；口服避孕药",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-035:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "bulletin": {
+    "primary": {
+      "sentence": "The school bulletin announced a change in the exam schedule.",
+      "target": "bulletin",
+      "translation": "学校公告通知了考试时间的变动。",
+      "sense": "n. 公告；简报；新闻快报",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-036:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "napkin": {
+    "primary": {
+      "sentence": "He placed a napkin beside each plate before dinner.",
+      "target": "napkin",
+      "translation": "晚餐前，他在每个盘子旁放了一张餐巾。",
+      "sense": "n. 餐巾；尿布（英式用法）",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-037:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "dormitory": {
+    "primary": {
+      "sentence": "The dormitory is quiet enough for evening study.",
+      "target": "dormitory",
+      "translation": "这间宿舍足够安静，适合晚间学习。",
+      "sense": "n. （尤指大学或学院的）宿舍；集体寝室",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-038:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "elevate": {
+    "primary": {
+      "sentence": "Regular reading can elevate both language ability and confidence.",
+      "target": "elevate",
+      "translation": "经常阅读能够提升语言能力和自信心。",
+      "sense": "vt. 举起；提升；提拔；使精神振奋",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-039:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "tin": {
+    "primary": {
+      "sentence": "The biscuits are kept fresh in a metal tin.",
+      "target": "tin",
+      "translation": "饼干被放在金属罐中保持新鲜。",
+      "sense": "n. 锡；罐头（英式）；v. 镀锡；罐装保存",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-040:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "anticipate": {
+    "primary": {
+      "sentence": "We anticipate that the new system will save study time.",
+      "target": "anticipate",
+      "translation": "我们预计新系统将节省学习时间。",
+      "sense": "vt. 预料；预期；先于……行动",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-041:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "atom": {
+    "primary": {
+      "sentence": "An atom is the basic unit of a chemical element.",
+      "target": "atom",
+      "translation": "原子是化学元素的基本单位。",
+      "sense": "n. 原子；微粒；微量",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-042:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "rice": {
+    "primary": {
+      "sentence": "Rice remains a major food crop in many Asian countries.",
+      "target": "rice",
+      "translation": "水稻仍是许多亚洲国家的主要粮食作物。",
+      "sense": "n. 稻；米；米饭；vt. 将食物压成米粒状",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-043:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "hesitate": {
+    "primary": {
+      "sentence": "Do not hesitate to ask the teacher when a step is unclear.",
+      "target": "hesitate",
+      "translation": "步骤不清楚时，不要犹豫，及时询问老师。",
+      "sense": "v. 犹豫；踌躇；不情愿",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-045:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "tractor": {
+    "primary": {
+      "sentence": "The tractor helped farmers prepare the field more efficiently.",
+      "target": "tractor",
+      "translation": "拖拉机帮助农民更高效地整理田地。",
+      "sense": "n. 拖拉机；牵引机",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-047:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "tumor": {
+    "primary": {
+      "sentence": "Early screening may help doctors detect a tumor sooner.",
+      "target": "tumor",
+      "translation": "早期筛查可能帮助医生更早发现肿瘤。",
+      "sense": "n. 肿瘤；肿块",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-048:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "shall": {
+    "primary": {
+      "sentence": "Shall we review the difficult words before the test?",
+      "target": "shall",
+      "translation": "我们考试前复习一下难词，好吗？",
+      "sense": "aux. 将；会；应；必须；……好吗",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-049:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "utilize": {
+    "primary": {
+      "sentence": "Students should utilize online resources with clear learning goals.",
+      "target": "utilize",
+      "translation": "学生应带着明确的学习目标利用网络资源。",
+      "sense": "vt. 利用；使用（强调有效使用资源）",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-32-050:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "moody": {
+    "primary": {
+      "sentence": "Lack of sleep can make a student tired and moody.",
+      "target": "moody",
+      "translation": "睡眠不足会使学生疲惫且情绪不定。",
+      "sense": "adj. 情绪不定的；喜怒无常的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-002:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "atmosphere": {
+    "primary": {
+      "sentence": "A supportive classroom atmosphere encourages students to speak.",
+      "target": "atmosphere",
+      "translation": "支持性的课堂氛围能鼓励学生开口表达。",
+      "sense": "n. 气氛；大气层；空气；情调",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-003:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "atmospheric": {
+    "primary": {
+      "sentence": "Scientists monitor atmospheric changes to study the climate.",
+      "target": "atmospheric",
+      "translation": "科学家监测大气变化以研究气候。",
+      "sense": "adj. 大气的；大气层的；有氛围的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-004:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "sphere": {
+    "primary": {
+      "sentence": "Digital technology now affects nearly every sphere of life.",
+      "target": "sphere",
+      "translation": "数字技术如今影响着生活的几乎每个领域。",
+      "sense": "n. 球体；范围；领域",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-005:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "spherical": {
+    "primary": {
+      "sentence": "The model uses a spherical surface to represent the earth.",
+      "target": "spherical",
+      "translation": "这个模型用球形表面表示地球。",
+      "sense": "adj. 球形的；球状的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-006:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "scope": {
+    "primary": {
+      "sentence": "The report is limited in scope but provides useful evidence.",
+      "target": "scope",
+      "translation": "这份报告范围有限，但提供了有用证据。",
+      "sense": "n. 范围；余地；眼界；vt. 查看；审视",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-007:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "environmental": {
+    "primary": {
+      "sentence": "Environmental education helps students develop responsible habits.",
+      "target": "environmental",
+      "translation": "环境教育有助于学生养成负责任的习惯。",
+      "sense": "adj. 环境的；周围的；有关环境的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-009:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "environmentalist": {
+    "primary": {
+      "sentence": "The environmentalist called for stronger protection of wetlands.",
+      "target": "environmentalist",
+      "translation": "这位环保人士呼吁加强湿地保护。",
+      "sense": "n. 环境保护主义者；环境保护者",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-010:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "conditional": {
+    "primary": {
+      "sentence": "The offer is conditional on completing the required training.",
+      "target": "conditional",
+      "translation": "这项录取以完成规定培训为条件。",
+      "sense": "adj. 有条件的；以……为条件的；n. 条件句；条件式",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-013:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "conditioner": {
+    "primary": {
+      "sentence": "The air conditioner keeps the computer room at a stable temperature.",
+      "target": "conditioner",
+      "translation": "空调使计算机房保持稳定温度。",
+      "sense": "n. 护发素；调节装置",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-014:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "cycling": {
+    "primary": {
+      "sentence": "Cycling to campus can reduce both cost and pollution.",
+      "target": "cycling",
+      "translation": "骑自行车去校园既能降低成本，也能减少污染。",
+      "sense": "n. 骑自行车；自行车运动",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-016:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "cyclist": {
+    "primary": {
+      "sentence": "Every cyclist should obey traffic signals at the crossing.",
+      "target": "cyclist",
+      "translation": "每位骑车人都应在路口遵守交通信号。",
+      "sense": "n. 骑自行车的人",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-017:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "recyclable": {
+    "primary": {
+      "sentence": "Please place recyclable bottles in the marked container.",
+      "target": "recyclable",
+      "translation": "请把可回收瓶子放入有标记的容器。",
+      "sense": "adj. 可回收的；可再利用的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-019:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "circle": {
+    "primary": {
+      "sentence": "Circle the key word before choosing an answer.",
+      "target": "circle",
+      "translation": "选择答案前，请圈出关键词。",
+      "sense": "n. 圆；圆圈；圈子；v. 盘旋；环行；绕……转圈",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-020:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "circular": {
+    "primary": {
+      "sentence": "The students sat around a circular table for discussion.",
+      "target": "circular",
+      "translation": "学生们围坐在圆桌旁讨论。",
+      "sense": "adj. 圆形的；循环的；传阅的；n. 广告传单",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-021:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "oval": {
+    "primary": {
+      "sentence": "The running track forms an oval around the field.",
+      "target": "oval",
+      "translation": "跑道在操场周围形成一个椭圆。",
+      "sense": "adj. 椭圆的；卵形的；n. 椭圆；卵形",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-022:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "circuit": {
+    "primary": {
+      "sentence": "A broken circuit prevents the device from receiving power.",
+      "target": "circuit",
+      "translation": "电路断开会使设备无法通电。",
+      "sense": "n. 环行路线；电路；巡回活动",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-023:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "circulate": {
+    "primary": {
+      "sentence": "Fresh air should circulate freely through the laboratory.",
+      "target": "circulate",
+      "translation": "新鲜空气应在实验室内自由流通。",
+      "sense": "vi. 循环；流通；流传；散布；vt. 使循环；使流通；散布",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-025:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "circulation": {
+    "primary": {
+      "sentence": "Daily exercise improves blood circulation and concentration.",
+      "target": "circulation",
+      "translation": "日常锻炼能改善血液循环和注意力。",
+      "sense": "n. 血液循环；流通；发行量；交流",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-026:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "setting": {
+    "primary": {
+      "sentence": "The story takes place in a modern university setting.",
+      "target": "setting",
+      "translation": "这个故事发生在一所现代大学的环境中。",
+      "sense": "n. 环境；背景；设置；衬托",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-027:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "contextual": {
+    "primary": {
+      "sentence": "Contextual clues often help readers infer an unfamiliar word.",
+      "target": "contextual",
+      "translation": "语境线索常能帮助读者推断生词含义。",
+      "sense": "adj. 上下文的；与语境有关的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-030:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "contestant": {
+    "primary": {
+      "sentence": "Each contestant had three minutes to present an idea.",
+      "target": "contestant",
+      "translation": "每位参赛者有三分钟陈述自己的想法。",
+      "sense": "n. 参赛者",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-032:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "protest": {
+    "primary": {
+      "sentence": "Residents organized a peaceful protest against the plan.",
+      "target": "protest",
+      "translation": "居民组织了一场反对该计划的和平抗议。",
+      "sense": "n. 抗议；反对；vt./vi. 抗议；申明",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-033:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "conduct": {
+    "primary": {
+      "sentence": "The research team will conduct a survey among first-year students.",
+      "target": "conduct",
+      "translation": "研究小组将在大一学生中开展调查。",
+      "sense": "vt. 实施；执行；带领；引导；vi. 指挥；传导；n. 行为；品行",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-034:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "conductor": {
+    "primary": {
+      "sentence": "Copper is widely used as an electrical conductor.",
+      "target": "conductor",
+      "translation": "铜被广泛用作导体。",
+      "sense": "n. 指挥；列车长；售票员；导体",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-035:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "direct": {
+    "primary": {
+      "sentence": "The teacher gave direct feedback on the writing task.",
+      "target": "direct",
+      "translation": "老师对写作任务给出了直接反馈。",
+      "sense": "adj. 直接的；径直的；坦率的；vt. 指挥；指导；管理；指路；adv. 直接",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-036:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "director": {
+    "primary": {
+      "sentence": "The program director explained the new training arrangement.",
+      "target": "director",
+      "translation": "项目主管说明了新的培训安排。",
+      "sense": "n. 董事；主管；导演；主任",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-037:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "direction": {
+    "primary": {
+      "sentence": "Clear direction helps a team finish the task efficiently.",
+      "target": "direction",
+      "translation": "明确的指导有助于团队高效完成任务。",
+      "sense": "n. 方向；趋势；用法说明；指导",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-038:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "instruct": {
+    "primary": {
+      "sentence": "The manual instructs users to save their work before updating.",
+      "target": "instruct",
+      "translation": "说明书提示用户更新前保存工作。",
+      "sense": "vt. 指示；指导；教导",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-039:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "instructor": {
+    "primary": {
+      "sentence": "The instructor demonstrated each step before practice began.",
+      "target": "instructor",
+      "translation": "练习开始前，讲师演示了每个步骤。",
+      "sense": "n. 教练；（大学）讲师",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-041:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "instructive": {
+    "primary": {
+      "sentence": "The error was frustrating but highly instructive.",
+      "target": "instructive",
+      "translation": "这次错误令人沮丧，但很有教育意义。",
+      "sense": "adj. 有教育意义的；富有教益的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-042:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "military": {
+    "primary": {
+      "sentence": "The museum displays equipment from different periods of military history.",
+      "target": "military",
+      "translation": "博物馆展示了不同军事历史时期的装备。",
+      "sense": "adj. 军事的；军队的；军用的；n. 军队；军方；军人",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-045:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "forth": {
+    "primary": {
+      "sentence": "From that day forth, she reviewed vocabulary every morning.",
+      "target": "forth",
+      "translation": "从那天起，她每天早晨都复习词汇。",
+      "sense": "adv. （从某时）往前；（从某处）向外",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-047:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "forthcoming": {
+    "primary": {
+      "sentence": "Details of the forthcoming examination will be announced online.",
+      "target": "forthcoming",
+      "translation": "即将举行的考试详情将在网上公布。",
+      "sense": "adj. 即将到来的；现成的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-048:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "forward": {
+    "primary": {
+      "sentence": "Please forward the notice to every member of the group.",
+      "target": "forward",
+      "translation": "请把通知转发给小组的每位成员。",
+      "sense": "adv. 向前；进展；向将来；提前；adj. 向前的；未来的；vt. 发送；转寄；n. 前锋",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-049:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "forever": {
+    "primary": {
+      "sentence": "A useful learning habit can benefit a student forever.",
+      "target": "forever",
+      "translation": "良好的学习习惯可以让学生终身受益。",
+      "sense": "adv. 永恒地；长久地；没完没了地",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-050:primary",
+      "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "foreseeable": {
+    "primary": {
+      "sentence": "Online learning will remain important for the foreseeable future.",
+      "target": "foreseeable",
+      "translation": "在可预见的未来，在线学习仍将十分重要。",
+      "sense": "adj. 可预见的；能预测的",
+      "pos": "other",
+      "level": "advanced",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b024",
+      "templateFamily": "individually-reviewed",
+      "contextId": "cet-20260806-27-052:primary",
+      "batch": "v70-b024"
     },
     "extra": []
   }

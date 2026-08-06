@@ -70,6 +70,7 @@
       choiceOptions: [],
       choiceResult: null,
       choiceWordId: null,
+      questionStartedAt: now(),
     };
     let historyPushed = false;
     let bound = false;
@@ -156,6 +157,7 @@
     function resetQuestionState(options = {}) {
       resetSpellingState(options);
       resetChoiceState();
+      session.questionStartedAt = now();
     }
 
     function setMode(mode) {
@@ -199,7 +201,8 @@
     }
 
     function normalizedMeaning(value) {
-      return String(value || '').replace(/\s+/g, ' ').trim().toLowerCase();
+      const text = value && typeof value === 'object' ? value.meaning : value;
+      return String(text || '').replace(/\s+/g, ' ').trim().toLowerCase();
     }
 
     function ensureChoiceOptions(word, chineseMeaning) {
@@ -207,18 +210,20 @@
       const supplied = typeof adapter.choiceOptions === 'function' ? adapter.choiceOptions(word) : [];
       const unique = [];
       const seen = new Set();
-      [...(Array.isArray(supplied) ? supplied : []), chineseMeaning].forEach((item) => {
-        const text = String(item || '').trim();
-        const key = normalizedMeaning(text);
-        if (!text || seen.has(key)) return;
+      [...(Array.isArray(supplied) ? supplied : []), { meaning: chineseMeaning, wordId: word.id }].forEach((item) => {
+        const option = item && typeof item === 'object'
+          ? { meaning: String(item.meaning || '').trim(), wordId: String(item.wordId || '') }
+          : { meaning: String(item || '').trim(), wordId: '' };
+        const key = normalizedMeaning(option.meaning);
+        if (!option.meaning || seen.has(key)) return;
         seen.add(key);
-        unique.push(text);
+        unique.push(option);
       });
       const fillers = ['未掌握该词义', '与本词无关的释义', '暂无对应释义'];
       fillers.forEach((item) => {
         if (unique.length < 4 && !seen.has(normalizedMeaning(item))) {
           seen.add(normalizedMeaning(item));
-          unique.push(item);
+          unique.push({ meaning: item, wordId: '' });
         }
       });
       session.choiceOptions = unique.slice(0, 4);
@@ -236,9 +241,14 @@
       const options = ensureChoiceOptions(word, correctMeaning);
       const selectedIndex = Number(index);
       if (!Number.isInteger(selectedIndex) || selectedIndex < 0 || selectedIndex >= options.length) return;
-      const correctIndex = options.findIndex((item) => normalizedMeaning(item) === normalizedMeaning(correctMeaning));
+      const correctIndex = options.findIndex((item) => normalizedMeaning(item.meaning) === normalizedMeaning(correctMeaning));
       const correct = selectedIndex === correctIndex;
-      session.choiceResult = { selectedIndex, correctIndex, correct };
+      session.choiceResult = {
+        selectedIndex,
+        correctIndex,
+        correct,
+        selectedWordId: options[selectedIndex]?.wordId || '',
+      };
       setExpanded(true);
       setRatingLocked(true);
       render();
@@ -389,9 +399,9 @@
         const options = ensureChoiceOptions(word, chineseMeaning);
         const result = session.choiceResult;
         elements.choiceButtons?.forEach?.((button, index) => {
-          const option = options[index] || '';
-          button.textContent = option ? `${String.fromCharCode(65 + index)}. ${option}` : '';
-          button.hidden = !option;
+          const option = options[index] || { meaning: '' };
+          button.textContent = option.meaning ? `${String.fromCharCode(65 + index)}. ${option.meaning}` : '';
+          button.hidden = !option.meaning;
           button.disabled = session.locked || Boolean(result);
           button.classList?.remove?.('is-correct', 'is-wrong', 'is-selected');
           if (result && index === result.correctIndex) button.classList?.add?.('is-correct');
@@ -464,7 +474,13 @@
 
       setRatingLocked(true);
       try {
-        adapter.rate?.(id, result);
+        adapter.rate?.(id, result, {
+          mode: session.mode,
+          responseMs: Math.max(0, now() - Number(session.questionStartedAt || now())),
+          choiceCorrect: session.choiceResult?.correct,
+          spellingCorrect: session.spellingResult?.correct,
+          confusedWithId: session.choiceResult?.correct ? '' : (session.choiceResult?.selectedWordId || ''),
+        });
       } catch (error) {
         setRatingLocked(false);
         throw error;

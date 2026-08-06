@@ -1,4 +1,4 @@
-// v70 B022 2026-08-05：新增短语练习18、蓝色森林31、四级26；保留B021词库、B019四选一及B017同卡片进度结构。
+// v70 B025 2026-08-06：新增短语练习19、蓝色森林32、四级27；保留B023快速复习、全词浏览及同卡片进度结构。；全词浏览默认保留用户原始导入顺序。
 window.WORD_MEMORY_WORDS = [
   {
     "id": "word-list-1-001",
@@ -2271,15 +2271,17 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-08T10:44:42",
-    "updatedAt": "2026-07-26T08:10:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
       "Word List 2",
-      "蓝色森林 21"
+      "蓝色森林 21",
+      "四级 27"
     ],
     "sources": [
       "Word List",
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "source": "Word List",
     "phonetic": "/kˈɑntɛkst/"
@@ -11310,17 +11312,19 @@ window.WORD_MEMORY_WORDS = [
     "tag": "全方位 2 / 全方位单词课",
     "source": "全方位",
     "sources": [
-      "全方位"
+      "全方位",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-18T00:00:00",
-    "updatedAt": "2026-06-18T00:00:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "全方位 2"
+      "全方位 2",
+      "四级 27"
     ],
     "phonetic": "/fɔrsˈi/"
   },
@@ -11703,17 +11707,19 @@ window.WORD_MEMORY_WORDS = [
     "tag": "全方位 2 / 全方位单词课",
     "source": "全方位",
     "sources": [
-      "全方位"
+      "全方位",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-18T00:00:00",
-    "updatedAt": "2026-06-18T00:00:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "全方位 2"
+      "全方位 2",
+      "四级 27"
     ],
     "phonetic": "/risˈaɪkʌl/"
   },
@@ -11853,17 +11859,19 @@ window.WORD_MEMORY_WORDS = [
     "tag": "全方位 2 / 全方位单词课",
     "source": "全方位",
     "sources": [
-      "全方位"
+      "全方位",
+      "蓝色森林"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-18T00:00:00",
-    "updatedAt": "2026-06-18T00:00:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "全方位 2"
+      "全方位 2",
+      "蓝色森林 32"
     ],
     "phonetic": "/ɪksklˈud/"
   },
@@ -13478,17 +13486,19 @@ window.WORD_MEMORY_WORDS = [
     "tag": "全方位 1 / 单词课补全",
     "source": "全方位",
     "sources": [
-      "全方位"
+      "全方位",
+      "蓝色森林"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-18T00:00:00",
-    "updatedAt": "2026-06-18T00:00:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "全方位 1"
+      "全方位 1",
+      "蓝色森林 32"
     ],
     "phonetic": "/ʌtrˈækt/"
   },
@@ -15873,18 +15883,20 @@ window.WORD_MEMORY_WORDS = [
     "source": "全方位",
     "sources": [
       "全方位",
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-18T00:00:00",
-    "updatedAt": "2026-06-18T00:00:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
       "全方位 2",
-      "蓝色森林 14"
+      "蓝色森林 14",
+      "四级 27"
     ],
     "phonetic": "/ɪnvˈaɪrʌnmʌnt/"
   },
@@ -21484,18 +21496,20 @@ window.WORD_MEMORY_WORDS = [
     "tag": "蓝色森林 5 / 第一章词汇短语",
     "source": "蓝色森林",
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-24T00:00:00",
-    "updatedAt": "2026-07-30T08:00:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 5",
-      "蓝色森林 25"
+      "蓝色森林 25",
+      "四级 27"
     ],
     "phonetic": "/kʌndˈɪʃʌn/"
   },
@@ -23450,13 +23464,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-25T12:20:00",
-    "updatedAt": "2026-06-25T12:20:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "Word List 6"
+      "Word List 6",
+      "蓝色森林 32"
     ],
     "sources": [
-      "Word List"
+      "Word List",
+      "蓝色森林"
     ],
     "phonetic": "/ˈizi/"
   },
@@ -28821,13 +28837,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-27T14:50:00+08:00",
-    "updatedAt": "2026-06-27T14:50:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 6"
+      "蓝色森林 6",
+      "四级 27"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "phonetic": "/sˈɝkʌmstˌæns/"
   },
@@ -30787,15 +30805,17 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-27T14:50:00+08:00",
-    "updatedAt": "2026-06-28T12:35:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 7",
-      "Word List 20"
+      "Word List 20",
+      "四级 27"
     ],
     "sources": [
       "蓝色森林",
-      "Word List"
+      "Word List",
+      "四级"
     ],
     "forms": {},
     "phonetic": "/kʌmˈænd/"
@@ -41614,13 +41634,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-28T11:40:00+08:00",
-    "updatedAt": "2026-06-28T11:40:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 9"
+      "蓝色森林 9",
+      "四级 27"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "phonetic": "/ˌɪnstrˈʌkʃʌn/"
   },
@@ -43121,10 +43143,11 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-28T11:40:00+08:00",
-    "updatedAt": "2026-06-28T11:40:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 9"
+      "蓝色森林 9",
+      "蓝色森林 32"
     ],
     "sources": [
       "蓝色森林"
@@ -48246,19 +48269,21 @@ window.WORD_MEMORY_WORDS = [
     "source": "Word List",
     "sources": [
       "Word List",
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-28T12:35:00+08:00",
-    "updatedAt": "2026-06-28T12:35:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
-      "Word List 20"
+      "Word List 20",
+      "四级 27"
     ],
     "phonetic": "/kʌmˈændɝ/"
   },
@@ -49712,19 +49737,21 @@ window.WORD_MEMORY_WORDS = [
     "tag": "四级 6 / 四级截图补充",
     "source": "四级",
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-29T14:05:00+08:00",
-    "updatedAt": "2026-06-29T14:05:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
-      "四级 6"
+      "四级 6",
+      "蓝色森林 32"
     ],
     "phonetic": "/rʌfrˈɛʃmʌnt/"
   },
@@ -53754,13 +53781,14 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-05T08:11:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
-      "四级 26"
+      "四级 26",
+      "蓝色森林 32"
     ],
     "phonetic": "/ʌpˈoʊz/"
   },
@@ -60023,11 +60051,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-16T09:00:00+08:00",
-    "updatedAt": "2026-07-16T09:00:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 13",
-      "四级 9"
+      "四级 9",
+      "蓝色森林 32"
     ],
     "sources": [
       "蓝色森林",
@@ -60263,10 +60292,11 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-16T09:00:00+08:00",
-    "updatedAt": "2026-07-16T09:00:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 13"
+      "蓝色森林 13",
+      "蓝色森林 32"
     ],
     "sources": [
       "蓝色森林"
@@ -63765,13 +63795,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-18T00:00:00",
-    "updatedAt": "2026-07-18T00:00:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "四级 8"
+      "四级 8",
+      "蓝色森林 32"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "phonetic": "/hˈæbʌtˌæt/"
@@ -70214,13 +70246,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-21T13:10:00+08:00",
-    "updatedAt": "2026-07-21T13:10:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 16"
+      "蓝色森林 16",
+      "四级 27"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "source": "蓝色森林",
     "phonetic": "/kˈɑntɛst/"
@@ -75298,13 +75332,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-23T08:45:00+08:00",
-    "updatedAt": "2026-07-23T08:45:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 18"
+      "蓝色森林 18",
+      "四级 27"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "source": "蓝色森林",
     "phonetic": "/bˈækɡrˌaʊnd/"
@@ -77359,13 +77395,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-24T08:00:00+08:00",
-    "updatedAt": "2026-07-24T08:00:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 19"
+      "蓝色森林 19",
+      "四级 27"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "source": "蓝色森林",
     "phonetic": "/sˈaɪkʌl/"
@@ -83315,13 +83353,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-26T08:10:00+08:00",
-    "updatedAt": "2026-07-26T08:10:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "四级 16"
+      "四级 16",
+      "蓝色森林 32"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "phonetic": "/sʌmˈɛstɝ/"
@@ -90977,13 +91017,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-29T08:30:00+08:00",
-    "updatedAt": "2026-07-29T08:30:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 24"
+      "蓝色森林 24",
+      "四级 27"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "source": "蓝色森林",
     "contextSentence": "The article discusses how a traveling circus protects its animals.",
@@ -96672,13 +96714,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-31T08:00:00+08:00",
-    "updatedAt": "2026-07-31T08:00:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 26"
+      "蓝色森林 26",
+      "四级 27"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "source": "蓝色森林",
     "forms": {},
@@ -99581,13 +99625,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-01T08:00:00+08:00",
-    "updatedAt": "2026-08-01T08:00:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "四级 22"
+      "四级 22",
+      "蓝色森林 32"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "forms": {},
@@ -103215,13 +103261,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-03T07:11:00+08:00",
-    "updatedAt": "2026-08-03T07:11:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "四级 24"
+      "四级 24",
+      "蓝色森林 32"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "forms": {},
@@ -104803,13 +104851,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-04T07:39:00+08:00",
-    "updatedAt": "2026-08-04T07:39:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "四级 25"
+      "四级 25",
+      "蓝色森林 32"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "forms": {},
@@ -105572,13 +105622,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-05T08:11:00+08:00",
-    "updatedAt": "2026-08-05T08:11:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 31"
+      "蓝色森林 31",
+      "四级 27"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "source": "蓝色森林",
     "forms": {},
@@ -106052,13 +106104,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-05T08:11:00+08:00",
-    "updatedAt": "2026-08-05T08:11:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
     "history": [],
     "groups": [
-      "四级 26"
+      "四级 26",
+      "蓝色森林 32"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "forms": {},
@@ -106663,5 +106717,2021 @@ window.WORD_MEMORY_WORDS = [
     "source": "四级",
     "forms": {},
     "phonetic": "/ɪmˈpoʊzɪŋ/"
+  },
+  {
+    "id": "phrase-practice-19-001",
+    "term": "renewable resources",
+    "meaning": "可再生资源",
+    "phrase": "Solar energy is one of the most important renewable resources.｜太阳能是最重要的可再生资源之一。",
+    "note": "来源：2026-08-06 蓝色森林专升本短语例句卡片；保留原例句并使用独立学习进度。",
+    "tag": "短语练习 19 / 蓝色森林专升本短语",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "短语练习 19"
+    ],
+    "sources": [
+      "短语练习"
+    ],
+    "source": "短语练习",
+    "forms": {},
+    "phonetic": "/rɪˈnuːəbl rɪˈsɔːrsɪz/"
+  },
+  {
+    "id": "phrase-practice-19-002",
+    "term": "connect A with/to B",
+    "meaning": "把A和B相联系在一起",
+    "phrase": "Please connect the printer to your computer.｜请把打印机连接到你的电脑上。",
+    "note": "来源：2026-08-06 蓝色森林专升本短语例句卡片；保留原例句并使用独立学习进度。",
+    "tag": "短语练习 19 / 蓝色森林专升本短语",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "短语练习 19"
+    ],
+    "sources": [
+      "短语练习"
+    ],
+    "source": "短语练习",
+    "forms": {},
+    "phonetic": "/kəˈnekt eɪ wɪð tuː biː/"
+  },
+  {
+    "id": "phrase-practice-19-003",
+    "term": "instead of",
+    "meaning": "而不是",
+    "phrase": "I chose tea instead of coffee.｜我选择了茶而不是咖啡。",
+    "note": "来源：2026-08-06 蓝色森林专升本短语例句卡片；保留原例句并使用独立学习进度。",
+    "tag": "短语练习 19 / 蓝色森林专升本短语",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "短语练习 19"
+    ],
+    "sources": [
+      "短语练习"
+    ],
+    "source": "短语练习",
+    "forms": {},
+    "phonetic": "/ɪnˈsted əv/"
+  },
+  {
+    "id": "phrase-practice-19-004",
+    "term": "rather than",
+    "meaning": "而不是",
+    "phrase": "I prefer tea rather than coffee.｜我更喜欢茶而不是咖啡。",
+    "note": "来源：2026-08-06 蓝色森林专升本短语例句卡片；保留原例句并使用独立学习进度。",
+    "tag": "短语练习 19 / 蓝色森林专升本短语",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "短语练习 19"
+    ],
+    "sources": [
+      "短语练习"
+    ],
+    "source": "短语练习",
+    "forms": {},
+    "phonetic": "/ˈrɑːðər ðæn/"
+  },
+  {
+    "id": "phrase-practice-19-005",
+    "term": "be opposite to",
+    "meaning": "与……相反",
+    "phrase": "My opinion is opposite to yours.｜我的观点与你的相反。",
+    "note": "来源：2026-08-06 蓝色森林专升本短语例句卡片；保留原例句并使用独立学习进度。",
+    "tag": "短语练习 19 / 蓝色森林专升本短语",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "短语练习 19"
+    ],
+    "sources": [
+      "短语练习"
+    ],
+    "source": "短语练习",
+    "forms": {},
+    "phonetic": "/biː ˈɒpəzɪt tuː/"
+  },
+  {
+    "id": "phrase-practice-19-006",
+    "term": "fight against",
+    "meaning": "对抗",
+    "phrase": "We must fight against pollution to protect our environment.｜为了保护环境，我们必须与污染作斗争。",
+    "note": "来源：2026-08-06 蓝色森林专升本短语例句卡片；保留原例句并使用独立学习进度。",
+    "tag": "短语练习 19 / 蓝色森林专升本短语",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "短语练习 19"
+    ],
+    "sources": [
+      "短语练习"
+    ],
+    "source": "短语练习",
+    "forms": {},
+    "phonetic": "/faɪt əˈɡenst/"
+  },
+  {
+    "id": "phrase-practice-19-007",
+    "term": "lean against",
+    "meaning": "倚靠",
+    "phrase": "He leaned against the wall and waited for his friend.｜他靠在墙上等朋友。",
+    "note": "来源：2026-08-06 蓝色森林专升本短语例句卡片；保留原例句并使用独立学习进度。",
+    "tag": "短语练习 19 / 蓝色森林专升本短语",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "短语练习 19"
+    ],
+    "sources": [
+      "短语练习"
+    ],
+    "source": "短语练习",
+    "forms": {},
+    "phonetic": "/liːn əˈɡenst/"
+  },
+  {
+    "id": "phrase-practice-19-008",
+    "term": "be against",
+    "meaning": "反对",
+    "phrase": "Many students are against the new school rule.｜许多学生反对新的校规。",
+    "note": "来源：2026-08-06 蓝色森林专升本短语例句卡片；保留原例句并使用独立学习进度。",
+    "tag": "短语练习 19 / 蓝色森林专升本短语",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "短语练习 19"
+    ],
+    "sources": [
+      "短语练习"
+    ],
+    "source": "短语练习",
+    "forms": {},
+    "phonetic": "/biː əˈɡenst/"
+  },
+  {
+    "id": "phrase-practice-19-009",
+    "term": "protect against",
+    "meaning": "防护；抵御",
+    "phrase": "Sunscreen helps protect your skin against the sun.｜防晒霜有助于保护皮肤免受阳光伤害。",
+    "note": "来源：2026-08-06 蓝色森林专升本短语例句卡片；保留原例句并使用独立学习进度。",
+    "tag": "短语练习 19 / 蓝色森林专升本短语",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "短语练习 19"
+    ],
+    "sources": [
+      "短语练习"
+    ],
+    "source": "短语练习",
+    "forms": {},
+    "phonetic": "/prəˈtekt əˈɡenst/"
+  },
+  {
+    "id": "phrase-practice-19-010",
+    "term": "out of control",
+    "meaning": "失控",
+    "phrase": "The fire got out of control quickly.｜火势很快失去了控制。",
+    "note": "来源：2026-08-06 蓝色森林专升本短语例句卡片；保留原例句并使用独立学习进度。",
+    "tag": "短语练习 19 / 蓝色森林专升本短语",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "短语练习 19"
+    ],
+    "sources": [
+      "短语练习"
+    ],
+    "source": "短语练习",
+    "forms": {},
+    "phonetic": "/aʊt əv kənˈtroʊl/"
+  },
+  {
+    "id": "blueforest-20260806-32-001",
+    "term": "jacket",
+    "meaning": "n. 夹克；短上衣；v. 给……穿夹克；用套包裹",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈdʒækɪt/"
+  },
+  {
+    "id": "blueforest-20260806-32-002",
+    "term": "astronomy",
+    "meaning": "n. 天文学（研究天体及宇宙现象的科学）",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/əˈstrɒnəmi/"
+  },
+  {
+    "id": "blueforest-20260806-32-006",
+    "term": "best-seller",
+    "meaning": "n. 畅销书；畅销商品",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˌbestˈselər/"
+  },
+  {
+    "id": "blueforest-20260806-32-007",
+    "term": "biochemistry",
+    "meaning": "n. 生物化学（研究生物体内化学过程的学科）",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˌbaɪoʊˈkemɪstri/"
+  },
+  {
+    "id": "blueforest-20260806-32-008",
+    "term": "the",
+    "meaning": "art. 定冠词，表特指、类指或最高级修饰",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ðə; ðiː/"
+  },
+  {
+    "id": "blueforest-20260806-32-009",
+    "term": "oven",
+    "meaning": "n. 烤箱；烤炉；灶",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈʌvən/"
+  },
+  {
+    "id": "blueforest-20260806-32-010",
+    "term": "wool",
+    "meaning": "n. 羊毛；毛线；毛料衣物",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/wʊl/"
+  },
+  {
+    "id": "blueforest-20260806-32-012",
+    "term": "pillar",
+    "meaning": "n. 柱子；支柱；核心人物或事物",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈpɪlər/"
+  },
+  {
+    "id": "blueforest-20260806-32-014",
+    "term": "ox",
+    "meaning": "n. 公牛（尤指阉割后用于劳作的牛）",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ɒks/"
+  },
+  {
+    "id": "blueforest-20260806-32-015",
+    "term": "basketball",
+    "meaning": "n. 篮球运动；篮球（实体）",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈbæskɪtbɔːl/"
+  },
+  {
+    "id": "blueforest-20260806-32-017",
+    "term": "century",
+    "meaning": "n. 世纪；百年；板球中的百分",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈsentʃəri/"
+  },
+  {
+    "id": "blueforest-20260806-32-018",
+    "term": "dime",
+    "meaning": "n. （美国、加拿大的）10分硬币；一角硬币",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/daɪm/"
+  },
+  {
+    "id": "blueforest-20260806-32-020",
+    "term": "pure",
+    "meaning": "adj. 纯的；纯净的；纯粹的；纯理论的",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/pjʊr/"
+  },
+  {
+    "id": "blueforest-20260806-32-021",
+    "term": "chip",
+    "meaning": "n. 碎片；缺口；炸薯条；芯片；v. 削下碎片；打出缺口",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/tʃɪp/"
+  },
+  {
+    "id": "blueforest-20260806-32-022",
+    "term": "photo",
+    "meaning": "n. 照片；相片",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈfoʊtoʊ/"
+  },
+  {
+    "id": "blueforest-20260806-32-023",
+    "term": "false",
+    "meaning": "adj. 错误的；虚假的；伪造的；adv. 错误地；欺诈地",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/fɔːls/"
+  },
+  {
+    "id": "blueforest-20260806-32-026",
+    "term": "happy",
+    "meaning": "adj. 快乐的；幸福的；满意的",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈhæpi/"
+  },
+  {
+    "id": "blueforest-20260806-32-028",
+    "term": "everywhere",
+    "meaning": "adv. 到处；各处；无论何处；n. 所有地方；各处",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈevriwer/"
+  },
+  {
+    "id": "blueforest-20260806-32-029",
+    "term": "income",
+    "meaning": "n. 收入；所得；收益",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈɪnkʌm/"
+  },
+  {
+    "id": "blueforest-20260806-32-031",
+    "term": "mop",
+    "meaning": "n. 拖把；蓬乱的头发；v. 用拖把拖；擦干",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/mɒp/"
+  },
+  {
+    "id": "blueforest-20260806-32-032",
+    "term": "baby",
+    "meaning": "n. 婴儿；宝贝；幼崽；adj. 婴儿的；小型的",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈbeɪbi/"
+  },
+  {
+    "id": "blueforest-20260806-32-033",
+    "term": "sideways",
+    "meaning": "adv. 向侧面地；斜向地；adj. 侧面的；横向的",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈsaɪdweɪz/"
+  },
+  {
+    "id": "blueforest-20260806-32-034",
+    "term": "liver",
+    "meaning": "n. 肝脏；过着某种生活的人",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈlɪvər/"
+  },
+  {
+    "id": "blueforest-20260806-32-035",
+    "term": "pill",
+    "meaning": "n. 药丸；药片；口服避孕药",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/pɪl/"
+  },
+  {
+    "id": "blueforest-20260806-32-036",
+    "term": "bulletin",
+    "meaning": "n. 公告；简报；新闻快报",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈbʊlətɪn/"
+  },
+  {
+    "id": "blueforest-20260806-32-037",
+    "term": "napkin",
+    "meaning": "n. 餐巾；尿布（英式用法）",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈnæpkɪn/"
+  },
+  {
+    "id": "blueforest-20260806-32-038",
+    "term": "dormitory",
+    "meaning": "n. （尤指大学或学院的）宿舍；集体寝室",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈdɔːrmətɔːri/"
+  },
+  {
+    "id": "blueforest-20260806-32-039",
+    "term": "elevate",
+    "meaning": "vt. 举起；提升；提拔；使精神振奋",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈelɪveɪt/"
+  },
+  {
+    "id": "blueforest-20260806-32-040",
+    "term": "tin",
+    "meaning": "n. 锡；罐头（英式）；v. 镀锡；罐装保存",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/tɪn/"
+  },
+  {
+    "id": "blueforest-20260806-32-041",
+    "term": "anticipate",
+    "meaning": "vt. 预料；预期；先于……行动",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ænˈtɪsɪpeɪt/"
+  },
+  {
+    "id": "blueforest-20260806-32-042",
+    "term": "atom",
+    "meaning": "n. 原子；微粒；微量",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈætəm/"
+  },
+  {
+    "id": "blueforest-20260806-32-043",
+    "term": "rice",
+    "meaning": "n. 稻；米；米饭；vt. 将食物压成米粒状",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/raɪs/"
+  },
+  {
+    "id": "blueforest-20260806-32-045",
+    "term": "hesitate",
+    "meaning": "v. 犹豫；踌躇；不情愿",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈhezɪteɪt/"
+  },
+  {
+    "id": "blueforest-20260806-32-047",
+    "term": "tractor",
+    "meaning": "n. 拖拉机；牵引机",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈtræktər/"
+  },
+  {
+    "id": "blueforest-20260806-32-048",
+    "term": "tumor",
+    "meaning": "n. 肿瘤；肿块",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈtuːmər/"
+  },
+  {
+    "id": "blueforest-20260806-32-049",
+    "term": "shall",
+    "meaning": "aux. 将；会；应；必须；……好吗",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ʃæl/"
+  },
+  {
+    "id": "blueforest-20260806-32-050",
+    "term": "utilize",
+    "meaning": "vt. 利用；使用（强调有效使用资源）",
+    "phrase": "",
+    "note": "来源：2026-08-06 蓝色森林普通词表截图；归入蓝色森林 32。",
+    "tag": "蓝色森林 32 / 蓝色森林词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 32"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈjuːtəlaɪz/"
+  },
+  {
+    "id": "cet-20260806-27-002",
+    "term": "moody",
+    "meaning": "adj. 情绪不定的；喜怒无常的",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈmuːdi/"
+  },
+  {
+    "id": "cet-20260806-27-003",
+    "term": "atmosphere",
+    "meaning": "n. 气氛；大气层；空气；情调",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈætməsfɪr/"
+  },
+  {
+    "id": "cet-20260806-27-004",
+    "term": "atmospheric",
+    "meaning": "adj. 大气的；大气层的；有氛围的",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˌætməsˈferɪk/"
+  },
+  {
+    "id": "cet-20260806-27-005",
+    "term": "sphere",
+    "meaning": "n. 球体；范围；领域",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/sfɪr/"
+  },
+  {
+    "id": "cet-20260806-27-006",
+    "term": "spherical",
+    "meaning": "adj. 球形的；球状的",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈsferɪkəl/"
+  },
+  {
+    "id": "cet-20260806-27-007",
+    "term": "scope",
+    "meaning": "n. 范围；余地；眼界；vt. 查看；审视",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/skoʊp/"
+  },
+  {
+    "id": "cet-20260806-27-009",
+    "term": "environmental",
+    "meaning": "adj. 环境的；周围的；有关环境的",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ɪnˌvaɪrənˈmentəl/"
+  },
+  {
+    "id": "cet-20260806-27-010",
+    "term": "environmentalist",
+    "meaning": "n. 环境保护主义者；环境保护者",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ɪnˌvaɪrənˈmentəlɪst/"
+  },
+  {
+    "id": "cet-20260806-27-013",
+    "term": "conditional",
+    "meaning": "adj. 有条件的；以……为条件的；n. 条件句；条件式",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/kənˈdɪʃənəl/"
+  },
+  {
+    "id": "cet-20260806-27-014",
+    "term": "conditioner",
+    "meaning": "n. 护发素；调节装置",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/kənˈdɪʃənər/"
+  },
+  {
+    "id": "cet-20260806-27-016",
+    "term": "cycling",
+    "meaning": "n. 骑自行车；自行车运动",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈsaɪklɪŋ/"
+  },
+  {
+    "id": "cet-20260806-27-017",
+    "term": "cyclist",
+    "meaning": "n. 骑自行车的人",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈsaɪklɪst/"
+  },
+  {
+    "id": "cet-20260806-27-019",
+    "term": "recyclable",
+    "meaning": "adj. 可回收的；可再利用的",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˌriːˈsaɪkləbəl/"
+  },
+  {
+    "id": "cet-20260806-27-020",
+    "term": "circle",
+    "meaning": "n. 圆；圆圈；圈子；v. 盘旋；环行；绕……转圈",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈsɜːrkəl/"
+  },
+  {
+    "id": "cet-20260806-27-021",
+    "term": "circular",
+    "meaning": "adj. 圆形的；循环的；传阅的；n. 广告传单",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈsɜːrkjələr/"
+  },
+  {
+    "id": "cet-20260806-27-022",
+    "term": "oval",
+    "meaning": "adj. 椭圆的；卵形的；n. 椭圆；卵形",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈoʊvəl/"
+  },
+  {
+    "id": "cet-20260806-27-023",
+    "term": "circuit",
+    "meaning": "n. 环行路线；电路；巡回活动",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈsɜːrkɪt/"
+  },
+  {
+    "id": "cet-20260806-27-025",
+    "term": "circulate",
+    "meaning": "vi. 循环；流通；流传；散布；vt. 使循环；使流通；散布",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈsɜːrkjəleɪt/"
+  },
+  {
+    "id": "cet-20260806-27-026",
+    "term": "circulation",
+    "meaning": "n. 血液循环；流通；发行量；交流",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˌsɜːrkjəˈleɪʃən/"
+  },
+  {
+    "id": "cet-20260806-27-027",
+    "term": "setting",
+    "meaning": "n. 环境；背景；设置；衬托",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈsetɪŋ/"
+  },
+  {
+    "id": "cet-20260806-27-030",
+    "term": "contextual",
+    "meaning": "adj. 上下文的；与语境有关的",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/kənˈtekstʃuəl/"
+  },
+  {
+    "id": "cet-20260806-27-032",
+    "term": "contestant",
+    "meaning": "n. 参赛者",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/kənˈtestənt/"
+  },
+  {
+    "id": "cet-20260806-27-033",
+    "term": "protest",
+    "meaning": "n. 抗议；反对；vt./vi. 抗议；申明",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈproʊtest; prəˈtest/"
+  },
+  {
+    "id": "cet-20260806-27-034",
+    "term": "conduct",
+    "meaning": "vt. 实施；执行；带领；引导；vi. 指挥；传导；n. 行为；品行",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/kənˈdʌkt; ˈkɒndʌkt/"
+  },
+  {
+    "id": "cet-20260806-27-035",
+    "term": "conductor",
+    "meaning": "n. 指挥；列车长；售票员；导体",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/kənˈdʌktər/"
+  },
+  {
+    "id": "cet-20260806-27-036",
+    "term": "direct",
+    "meaning": "adj. 直接的；径直的；坦率的；vt. 指挥；指导；管理；指路；adv. 直接",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/dəˈrekt; daɪˈrekt/"
+  },
+  {
+    "id": "cet-20260806-27-037",
+    "term": "director",
+    "meaning": "n. 董事；主管；导演；主任",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/dəˈrektər; daɪˈrektər/"
+  },
+  {
+    "id": "cet-20260806-27-038",
+    "term": "direction",
+    "meaning": "n. 方向；趋势；用法说明；指导",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/dəˈrekʃən; daɪˈrekʃən/"
+  },
+  {
+    "id": "cet-20260806-27-039",
+    "term": "instruct",
+    "meaning": "vt. 指示；指导；教导",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ɪnˈstrʌkt/"
+  },
+  {
+    "id": "cet-20260806-27-041",
+    "term": "instructor",
+    "meaning": "n. 教练；（大学）讲师",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ɪnˈstrʌktər/"
+  },
+  {
+    "id": "cet-20260806-27-042",
+    "term": "instructive",
+    "meaning": "adj. 有教育意义的；富有教益的",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ɪnˈstrʌktɪv/"
+  },
+  {
+    "id": "cet-20260806-27-045",
+    "term": "military",
+    "meaning": "adj. 军事的；军队的；军用的；n. 军队；军方；军人",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈmɪləteri/"
+  },
+  {
+    "id": "cet-20260806-27-047",
+    "term": "forth",
+    "meaning": "adv. （从某时）往前；（从某处）向外",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/fɔːrθ/"
+  },
+  {
+    "id": "cet-20260806-27-048",
+    "term": "forthcoming",
+    "meaning": "adj. 即将到来的；现成的",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˌfɔːrθˈkʌmɪŋ/"
+  },
+  {
+    "id": "cet-20260806-27-049",
+    "term": "forward",
+    "meaning": "adv. 向前；进展；向将来；提前；adj. 向前的；未来的；vt. 发送；转寄；n. 前锋",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈfɔːrwərd/"
+  },
+  {
+    "id": "cet-20260806-27-050",
+    "term": "forever",
+    "meaning": "adv. 永恒地；长久地；没完没了地",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/fərˈevər/"
+  },
+  {
+    "id": "cet-20260806-27-052",
+    "term": "foreseeable",
+    "meaning": "adj. 可预见的；能预测的",
+    "phrase": "",
+    "note": "来源：2026-08-06 明确标注“英语四级”的词表截图；归入四级 27。",
+    "tag": "四级 27 / 英语四级词表",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 27"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/fɔːrˈsiːəbəl/"
   }
 ];

@@ -11,8 +11,128 @@ const SETTINGS_KEY = "word-memory-trainer:settings:v1";
 const STUDY_TIME_KEY = "word-memory-trainer:study-time:v1";
 const DAILY_COMPLETED_KEY = "word-memory-trainer:daily-completed:v1";
 const CONTEXT_STUDY_KEY = "word-memory-trainer:context-study:v1";
+const MEMORY_LAB_KEY = "word-memory-trainer:memory-lab:v1";
 let dailyCompletedStore = loadDailyCompletedStore();
 let contextStudyStore = loadContextStudyStore();
+let memoryLabStore = loadMemoryLabStore();
+
+function normalizeAbilityStat(value = {}) {
+  const source = value && typeof value === "object" ? value : {};
+  return {
+    correct: Math.max(0, Number(source.correct) || 0),
+    wrong: Math.max(0, Number(source.wrong) || 0),
+    slow: Math.max(0, Number(source.slow) || 0),
+    totalMs: Math.max(0, Number(source.totalMs) || 0),
+    lastMs: Math.max(0, Number(source.lastMs) || 0),
+    score: Math.max(0, Math.min(100, Number(source.score) || 0)),
+    updatedAt: normalizeText(source.updatedAt || ""),
+  };
+}
+
+function normalizeMemoryLabStore(value = {}) {
+  const source = value && typeof value === "object" ? value : {};
+  const metrics = {};
+  Object.entries(source.metrics && typeof source.metrics === "object" ? source.metrics : {}).forEach(([id, item]) => {
+    if (!id || !item || typeof item !== "object") return;
+    const confusedWith = {};
+    Object.entries(item.confusedWith && typeof item.confusedWith === "object" ? item.confusedWith : {}).forEach(([otherId, count]) => {
+      const safeCount = Math.max(0, Number(count) || 0);
+      if (otherId && safeCount) confusedWith[otherId] = safeCount;
+    });
+    metrics[id] = {
+      recognition: normalizeAbilityStat(item.recognition),
+      spelling: normalizeAbilityStat(item.spelling),
+      confusedWith,
+      updatedAt: normalizeText(item.updatedAt || ""),
+    };
+  });
+  const flowSource = source.flow && typeof source.flow === "object" ? source.flow : {};
+  const reports = (Array.isArray(source.reports) ? source.reports : []).slice(-30).map((item) => ({
+    id: normalizeText(item?.id || ""),
+    type: normalizeText(item?.type || ""),
+    label: normalizeText(item?.label || ""),
+    startedAt: normalizeText(item?.startedAt || ""),
+    endedAt: normalizeText(item?.endedAt || ""),
+    completed: Math.max(0, Number(item?.completed) || 0),
+    correct: Math.max(0, Number(item?.correct) || 0),
+    wrong: Math.max(0, Number(item?.wrong) || 0),
+    durationSeconds: Math.max(0, Number(item?.durationSeconds) || 0),
+    weakIds: (Array.isArray(item?.weakIds) ? item.weakIds : []).map(normalizeText).filter(Boolean).slice(0, 20),
+  })).filter((item) => item.id || item.endedAt);
+  return {
+    version: 1,
+    metrics,
+    flow: {
+      completedSinceRecap: Math.max(0, Number(flowSource.completedSinceRecap) || 0),
+      recentIds: (Array.isArray(flowSource.recentIds) ? flowSource.recentIds : []).map(normalizeText).filter(Boolean).slice(-10),
+      autoMiniRecap: flowSource.autoMiniRecap !== false,
+    },
+    reports,
+    updatedAt: normalizeText(source.updatedAt || ""),
+  };
+}
+
+function loadMemoryLabStore() {
+  try {
+    return normalizeMemoryLabStore(JSON.parse(localStorage.getItem(MEMORY_LAB_KEY) || "{}"));
+  } catch {
+    return normalizeMemoryLabStore({});
+  }
+}
+
+function saveMemoryLabStore() {
+  memoryLabStore.updatedAt = new Date().toISOString();
+  try {
+    localStorage.setItem(MEMORY_LAB_KEY, JSON.stringify(normalizeMemoryLabStore(memoryLabStore)));
+  } catch {
+    // The compact mobile/cloud snapshot also carries this data.
+  }
+}
+
+function mergeMemoryLabStores(localValue = {}, incomingValue = {}) {
+  const localStore = normalizeMemoryLabStore(localValue);
+  const incomingStore = normalizeMemoryLabStore(incomingValue);
+  const merged = normalizeMemoryLabStore(localStore);
+  Object.entries(incomingStore.metrics).forEach(([id, item]) => {
+    const current = merged.metrics[id] || { recognition: normalizeAbilityStat(), spelling: normalizeAbilityStat(), confusedWith: {}, updatedAt: "" };
+    const mergeStat = (a, b) => {
+      const newer = (b.updatedAt || "") >= (a.updatedAt || "") ? b : a;
+      return {
+        correct: Math.max(a.correct, b.correct),
+        wrong: Math.max(a.wrong, b.wrong),
+        slow: Math.max(a.slow, b.slow),
+        totalMs: Math.max(a.totalMs, b.totalMs),
+        lastMs: newer.lastMs,
+        score: newer.score,
+        updatedAt: [a.updatedAt, b.updatedAt].filter(Boolean).sort().pop() || "",
+      };
+    };
+    const confusedWith = { ...current.confusedWith };
+    Object.entries(item.confusedWith || {}).forEach(([otherId, count]) => {
+      confusedWith[otherId] = Math.max(Number(confusedWith[otherId]) || 0, Number(count) || 0);
+    });
+    merged.metrics[id] = {
+      recognition: mergeStat(current.recognition, item.recognition),
+      spelling: mergeStat(current.spelling, item.spelling),
+      confusedWith,
+      updatedAt: [current.updatedAt, item.updatedAt].filter(Boolean).sort().pop() || "",
+    };
+  });
+  const reportsById = new Map();
+  [...localStore.reports, ...incomingStore.reports].forEach((report) => {
+    const key = report.id || `${report.type}|${report.endedAt}`;
+    if (!reportsById.has(key) || (report.endedAt || "") > (reportsById.get(key).endedAt || "")) reportsById.set(key, report);
+  });
+  merged.reports = [...reportsById.values()].sort((a, b) => (a.endedAt || "").localeCompare(b.endedAt || "")).slice(-30);
+  const newerFlow = (incomingStore.updatedAt || "") >= (localStore.updatedAt || "") ? incomingStore.flow : localStore.flow;
+  merged.flow = {
+    completedSinceRecap: Math.max(localStore.flow.completedSinceRecap, incomingStore.flow.completedSinceRecap),
+    recentIds: [...new Set([...(newerFlow.recentIds || []), ...(localStore.flow.recentIds || []), ...(incomingStore.flow.recentIds || [])])].slice(-10),
+    autoMiniRecap: newerFlow.autoMiniRecap !== false,
+  };
+  merged.updatedAt = [localStore.updatedAt, incomingStore.updatedAt].filter(Boolean).sort().pop() || "";
+  return normalizeMemoryLabStore(merged);
+}
 
 function normalizeContextStudyStore(value = {}) {
   const source = value && typeof value === "object" ? value : {};
@@ -369,6 +489,24 @@ const state = {
   contextIndex: 0,
   contextExpanded: false,
   choiceResult: null,
+  pendingRatingMeta: null,
+  quickSession: {
+    active: false,
+    ending: false,
+    id: "",
+    type: "",
+    label: "",
+    queueIds: [],
+    questionModes: [],
+    startedAt: "",
+    endsAt: "",
+    completed: 0,
+    correct: 0,
+    wrong: 0,
+    results: [],
+    streaks: {},
+    original: null,
+  },
   posQuizResult: null,
   lastAutoSpokenId: null,
   gazeControl: {
@@ -1564,6 +1702,7 @@ function compactPayloadForStorage(words, options = {}) {
     studySession: captureStudySessionSnapshot(),
     dailyCompleted: normalizeDailyCompletedStore(dailyCompletedStore),
     contextStudy: normalizeContextStudyStore(contextStudyStore),
+    memoryLab: normalizeMemoryLabStore(memoryLabStore),
     progress,
     customWords,
   };
@@ -1580,6 +1719,10 @@ function loadCompactWords(parsed, options = {}) {
   if (parsed?.dailyCompleted) {
     dailyCompletedStore = mergeDailyCompletedStores(dailyCompletedStore, parsed.dailyCompleted);
     saveDailyCompletedStore();
+  }
+  if (parsed?.memoryLab) {
+    memoryLabStore = mergeMemoryLabStores(memoryLabStore, parsed.memoryLab);
+    saveMemoryLabStore();
   }
   const words = cloneBuiltinWords();
   const byId = new Map(words.map((word) => [word.id, word]));
@@ -1761,7 +1904,9 @@ function payloadHasStudyData(payload) {
   if (payload.compact) {
     return (Array.isArray(payload.progress) && payload.progress.length > 0)
       || (Array.isArray(payload.customWords) && payload.customWords.length > 0)
-      || Object.keys(payload.contextStudy || {}).length > 0;
+      || Object.keys(payload.contextStudy || {}).length > 0
+      || Object.keys(payload.memoryLab?.metrics || {}).length > 0
+      || (Array.isArray(payload.memoryLab?.reports) && payload.memoryLab.reports.length > 0);
   }
   return Array.isArray(payload) ? payload.length > 0 : Array.isArray(payload.words) && payload.words.length > 0;
 }
@@ -2675,6 +2820,81 @@ function isDictationWeakWord(word) {
   return word.important || progressHasResult(word, (result) => ["dictation-wrong", "spell-wrong"].includes(result));
 }
 
+function abilityMetric(wordOrId, type = "recognition") {
+  const id = typeof wordOrId === "string" ? wordOrId : wordOrId?.id;
+  const item = id ? memoryLabStore.metrics[id] : null;
+  return normalizeAbilityStat(item?.[type]);
+}
+
+function abilityLabel(score = 0) {
+  if (score >= 80) return "熟练";
+  if (score >= 55) return "基本掌握";
+  if (score >= 25) return "学习中";
+  return "薄弱";
+}
+
+function recordMemoryMetric(word, type, correct, meta = {}) {
+  if (!word?.id || !["recognition", "spelling"].includes(type)) return;
+  const now = new Date().toISOString();
+  const item = memoryLabStore.metrics[word.id] || {
+    recognition: normalizeAbilityStat(),
+    spelling: normalizeAbilityStat(),
+    confusedWith: {},
+    updatedAt: "",
+  };
+  const stat = normalizeAbilityStat(item[type]);
+  const responseMs = Math.max(0, Number(meta.responseMs) || 0);
+  if (correct) stat.correct += 1;
+  else stat.wrong += 1;
+  if (responseMs) {
+    stat.totalMs += responseMs;
+    stat.lastMs = responseMs;
+    if (responseMs >= 3500) stat.slow += 1;
+  }
+  const speedBonus = responseMs && responseMs <= 2200 ? 2 : 0;
+  stat.score = Math.max(0, Math.min(100, stat.score + (correct ? 6 + speedBonus : -14)));
+  stat.updatedAt = now;
+  item[type] = stat;
+  const confusedId = normalizeText(meta.confusedWithId || "");
+  if (!correct && confusedId && confusedId !== word.id) {
+    item.confusedWith[confusedId] = (Number(item.confusedWith[confusedId]) || 0) + 1;
+  }
+  item.updatedAt = now;
+  memoryLabStore.metrics[word.id] = item;
+  saveMemoryLabStore();
+}
+
+function recordRatingMetric(word, result, meta = null) {
+  if (!word) return;
+  if (meta?.skipMetric) return;
+  const correct = result === "remember" || result === "new";
+  const mode = meta?.mode || "recall";
+  const type = mode === "spelling" ? "spelling" : "recognition";
+  recordMemoryMetric(word, type, correct, {
+    responseMs: meta?.responseMs || 0,
+    confusedWithId: meta?.confusedWithId || "",
+  });
+}
+
+function wordFamilyStem(value = "") {
+  let term = normalizeText(typeof value === "string" ? value : value?.term || "").toLowerCase().replace(/[^a-z]/g, "");
+  if (term.length < 4) return term;
+  const suffixes = ["ization", "isation", "ational", "fulness", "ousness", "iveness", "ability", "ibility", "ation", "ition", "tion", "sion", "ment", "ness", "ance", "ence", "ancy", "ency", "ality", "ility", "ity", "ive", "ous", "ful", "less", "able", "ible", "ally", "ly", "er", "or", "ing", "ed", "es", "s"];
+  for (const suffix of suffixes) {
+    if (term.endsWith(suffix) && term.length - suffix.length >= 4) {
+      term = term.slice(0, -suffix.length);
+      break;
+    }
+  }
+  return term;
+}
+
+function wordAbilitySummary(word) {
+  const recognition = abilityMetric(word, "recognition");
+  const spelling = abilityMetric(word, "spelling");
+  return { recognition, spelling, recognitionLabel: abilityLabel(recognition.score), spellingLabel: abilityLabel(spelling.score) };
+}
+
 function weakScore(word) {
   let score = 0;
   if (word.important) score += 50;
@@ -3534,6 +3754,210 @@ function undoLastReview() {
   showToast("已撤回上一步，回到上一个词");
 }
 
+function quickSessionQuestionMode(session = state.quickSession) {
+  const modes = Array.isArray(session?.questionModes) ? session.questionModes.filter((mode) => ["recall", "choice", "spelling"].includes(mode)) : [];
+  return modes.length ? modes[Math.max(0, Number(session.completed) || 0) % modes.length] : "choice";
+}
+
+function quickSessionSnapshot() {
+  const session = state.quickSession || {};
+  return {
+    active: Boolean(session.active),
+    ending: Boolean(session.ending),
+    id: session.id || "",
+    type: session.type || "",
+    label: session.label || "",
+    remaining: Array.isArray(session.queueIds) ? session.queueIds.length : 0,
+    completed: Number(session.completed) || 0,
+    correct: Number(session.correct) || 0,
+    wrong: Number(session.wrong) || 0,
+    startedAt: session.startedAt || "",
+    endsAt: session.endsAt || "",
+    questionMode: quickSessionQuestionMode(session),
+    results: Array.isArray(session.results) ? session.results.slice(-30) : [],
+  };
+}
+
+function notifyMemoryLab() {
+  try { window.WordMemoryLab?.render?.(); } catch { /* optional enhancement */ }
+}
+
+function openMobileFocusForSession() {
+  if (!mobileFocusController) initializeMobileFocus();
+  if (!mobileFocusController) return;
+  mobileFocusController.open();
+  mobileFocusController.setMode(quickSessionQuestionMode());
+}
+
+function startQuickSession(config = {}) {
+  const ids = [...new Set((Array.isArray(config.ids) ? config.ids : []).map(normalizeText).filter((id) => state.words.some((word) => word.id === id)))];
+  if (!ids.length) {
+    showToast(config.emptyMessage || "当前没有符合条件的单词");
+    return false;
+  }
+  if (state.quickSession.active) finishQuickSession("replaced", { immediate: true });
+  const now = new Date();
+  const durationSeconds = Math.max(0, Number(config.durationSeconds) || 0);
+  state.quickSession = {
+    active: true,
+    ending: false,
+    id: `quick-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+    type: normalizeText(config.type || "rapid"),
+    label: normalizeText(config.label || "快速复习"),
+    queueIds: ids,
+    questionModes: (Array.isArray(config.questionModes) ? config.questionModes : [config.mode || "choice"]).filter((mode) => ["recall", "choice", "spelling"].includes(mode)),
+    startedAt: now.toISOString(),
+    endsAt: durationSeconds ? new Date(now.getTime() + durationSeconds * 1000).toISOString() : "",
+    completed: 0,
+    correct: 0,
+    wrong: 0,
+    results: [],
+    streaks: {},
+    original: {
+      practiceMode: state.practiceMode,
+      mode: state.mode,
+      activeGroup: state.activeGroup,
+      activeId: state.activeId,
+    },
+  };
+  state.practiceMode = "card";
+  state.mode = "all";
+  setActiveId(ids[0]);
+  state.answerVisible = false;
+  resetTypingState();
+  render();
+  window.setTimeout(openMobileFocusForSession, 0);
+  notifyMemoryLab();
+  return true;
+}
+
+function finishQuickSession(reason = "completed", options = {}) {
+  const session = state.quickSession;
+  if (!session?.active && !session?.ending) return null;
+  const endedAt = new Date();
+  const startedMs = Date.parse(session.startedAt || "") || endedAt.getTime();
+  const weakIds = [...new Set((session.results || []).filter((item) => !item.correct).map((item) => item.wordId).filter(Boolean))].slice(0, 20);
+  const report = {
+    id: session.id || `quick-${endedAt.getTime()}`,
+    type: session.type || reason,
+    label: session.label || "快速复习",
+    startedAt: session.startedAt || endedAt.toISOString(),
+    endedAt: endedAt.toISOString(),
+    completed: Number(session.completed) || 0,
+    correct: Number(session.correct) || 0,
+    wrong: Number(session.wrong) || 0,
+    durationSeconds: Math.max(0, Math.round((endedAt.getTime() - startedMs) / 1000)),
+    weakIds,
+  };
+  memoryLabStore.reports = [...(memoryLabStore.reports || []), report].slice(-30);
+  saveMemoryLabStore();
+  const original = session.original || {};
+  state.quickSession = { active: false, ending: false, id: "", type: "", label: "", queueIds: [], questionModes: [], startedAt: "", endsAt: "", completed: 0, correct: 0, wrong: 0, results: [], streaks: {}, original: null };
+  state.practiceMode = PROGRESS_MODES.includes(original.practiceMode) ? original.practiceMode : "card";
+  state.mode = ["due", "new", "all", "weak"].includes(original.mode) ? original.mode : "due";
+  state.activeGroup = original.activeGroup || "all";
+  setActiveId(original.activeId || null);
+  chooseActiveWord(false);
+  if (options.immediate) {
+    mobileFocusController?.close?.();
+    render();
+  } else {
+    window.setTimeout(() => {
+      mobileFocusController?.close?.();
+      render();
+      showToast(`${report.label}结束：完成 ${report.completed} 个，错 ${report.wrong} 个`);
+      notifyMemoryLab();
+    }, 260);
+  }
+  return report;
+}
+
+function tickQuickSession() {
+  const session = state.quickSession;
+  if (!session?.active || session.ending || !session.endsAt) return;
+  if (Date.now() >= Date.parse(session.endsAt)) {
+    session.ending = true;
+    finishQuickSession("timeout");
+  }
+}
+
+function updateQuickSessionAfterRating(word, result) {
+  const session = state.quickSession;
+  if (!session?.active || session.ending || !word?.id) return;
+  const index = session.queueIds.indexOf(word.id);
+  if (index >= 0) session.queueIds.splice(index, 1);
+  const correct = result === "remember" || result === "new";
+  if (correct) session.correct += 1;
+  else session.wrong += 1;
+  session.results.push({ wordId: word.id, result, correct, time: new Date().toISOString() });
+
+  if (session.type === "today-errors") {
+    const streak = correct ? (Number(session.streaks[word.id]) || 0) + 1 : 0;
+    session.streaks[word.id] = streak;
+    if (streak < 2) {
+      const gap = correct ? 5 : 3;
+      session.queueIds.splice(Math.min(gap, session.queueIds.length), 0, word.id);
+    } else {
+      session.completed += 1;
+    }
+  } else {
+    session.completed += 1;
+  }
+
+  if (!session.queueIds.length || (session.endsAt && Date.now() >= Date.parse(session.endsAt))) {
+    session.ending = true;
+    finishQuickSession(session.queueIds.length ? "timeout" : "completed");
+    return;
+  }
+  setActiveId(session.queueIds[0]);
+  window.setTimeout(() => mobileFocusController?.setMode?.(quickSessionQuestionMode()), 0);
+  notifyMemoryLab();
+}
+
+function miniRecapCandidates() {
+  const ids = memoryLabStore.flow.recentIds || [];
+  return ids.map((id) => state.words.find((word) => word.id === id)).filter(Boolean)
+    .sort((a, b) => {
+      const aa = wordAbilitySummary(a);
+      const bb = wordAbilitySummary(b);
+      const aScore = (100 - Math.min(aa.recognition.score || 0, aa.spelling.score || 0)) + weakScore(a);
+      const bScore = (100 - Math.min(bb.recognition.score || 0, bb.spelling.score || 0)) + weakScore(b);
+      return bScore - aScore;
+    }).slice(0, 3);
+}
+
+function trackMiniRecap(word, result) {
+  if (!word?.id || state.quickSession.active || !memoryLabStore.flow.autoMiniRecap) return;
+  if (!["new", "remember", "fuzzy", "forgot"].includes(result)) return;
+  memoryLabStore.flow.recentIds = [...(memoryLabStore.flow.recentIds || []).filter((id) => id !== word.id), word.id].slice(-10);
+  memoryLabStore.flow.completedSinceRecap = (Number(memoryLabStore.flow.completedSinceRecap) || 0) + 1;
+  if (memoryLabStore.flow.completedSinceRecap < 10) {
+    saveMemoryLabStore();
+    return;
+  }
+  const words = miniRecapCandidates();
+  memoryLabStore.flow.completedSinceRecap = 0;
+  saveMemoryLabStore();
+  if (words.length < 3) return;
+  window.setTimeout(() => startQuickSession({
+    type: "mini-recap",
+    label: "每10词小复盘",
+    ids: words.map((item) => item.id),
+    questionModes: ["choice", "spelling", "choice"],
+  }), 420);
+}
+
+function todayWrongWordIds() {
+  const today = todayKey();
+  const wrongResults = new Set(["forgot", "fuzzy", "spell-wrong", "forms-wrong", "dictation-wrong", "choice-wrong", "pos-wrong", "noun-wrong", "verb-wrong", "family-wrong", "context-wrong"]);
+  return state.words.filter((word) => {
+    const records = [];
+    Object.values(word.progress || {}).forEach((progress) => { if (Array.isArray(progress?.history)) records.push(...progress.history); });
+    if (Array.isArray(word.history)) records.push(...word.history);
+    return records.some((entry) => wrongResults.has(entry.result) && entry.time && todayKey(new Date(entry.time)) === today);
+  }).sort((a, b) => weakScore(b) - weakScore(a)).map((word) => word.id);
+}
+
 function scheduleNext(word, result, options = {}) {
   const progress = modeProgress(word);
   const completedAt = options.completedAt || nowDate();
@@ -3575,6 +3999,11 @@ function scheduleNext(word, result, options = {}) {
     result,
     nextReviewAt: progress.nextReviewAt,
   });
+  const ratingMeta = state.pendingRatingMeta && state.pendingRatingMeta.wordId === word.id ? state.pendingRatingMeta : null;
+  state.pendingRatingMeta = null;
+  recordRatingMetric(word, result, ratingMeta);
+  updateQuickSessionAfterRating(word, result);
+  trackMiniRecap(word, result);
   markDailyCompleted(word, completedAt);
   if (!options.silent) {
     showToast(`下次：${formatDateTime(progress.nextReviewAt)}（${label}后）`);
@@ -3582,6 +4011,9 @@ function scheduleNext(word, result, options = {}) {
 }
 
 function getQueue() {
+  if (state.quickSession.active) {
+    return state.quickSession.queueIds.map((id) => state.words.find((word) => word.id === id)).filter(Boolean);
+  }
   const scopedWords = practiceEligibleWords(state.words.filter(wordMatchesActiveGroup));
   if (state.sprint.active) {
     return sprintQueue(scopedWords);
@@ -3663,6 +4095,10 @@ function mobileFocusChoiceOptions(word) {
   const correct = normalizeText(word?.meaning || "未填中文") || "未填中文";
   const correctKey = correct.toLowerCase();
   const phraseLike = /\s/.test(normalizeText(word?.term));
+  const targetPos = primaryTargetPos(word);
+  const targetStem = wordFamilyStem(word);
+  const targetGroups = new Set(wordGroupNames(word));
+  const confusion = memoryLabStore.metrics[word?.id]?.confusedWith || {};
   const candidates = [];
   const seen = new Set([correctKey]);
 
@@ -3674,40 +4110,54 @@ function mobileFocusChoiceOptions(word) {
       if (!meaning || meaning === "未填中文" || seen.has(key)) return;
       seen.add(key);
       const sameShape = /\s/.test(normalizeText(item.term)) === phraseLike;
+      const samePos = primaryTargetPos(item) === targetPos;
+      const sameFamily = targetStem && wordFamilyStem(item) === targetStem;
+      const sameGroup = wordGroupNames(item).some((group) => targetGroups.has(group));
+      const confusedCount = Number(confusion[item.id]) || 0;
+      const lengthGap = Math.abs(meaning.length - correct.length);
+      const score = lengthGap
+        + (sameShape ? 0 : 14)
+        + (samePos ? 0 : 18)
+        + (sameGroup ? 0 : 6)
+        - (sameFamily ? 12 : 0)
+        - Math.min(20, confusedCount * 5);
       candidates.push({
+        id: item.id,
         meaning,
-        score: Math.abs(meaning.length - correct.length) + (sameShape ? 0 : 10),
+        score,
         rank: mobileFocusChoiceHash(`${word.id}|${item.id}|${meaning}`),
       });
     });
   };
 
   collect(state.words.filter(wordMatchesActiveGroup));
-  if (candidates.length < 3) collect(state.words);
+  if (candidates.length < 12) collect(state.words);
 
   const distractors = candidates
     .sort((a, b) => a.score - b.score || a.rank - b.rank)
-    .slice(0, 3)
-    .map((item) => item.meaning);
+    .slice(0, 3);
 
   const fallback = ["未掌握该词义", "与本词无关的释义", "暂无对应释义"];
-  fallback.forEach((item) => {
-    if (distractors.length < 3 && item.toLowerCase() !== correctKey && !distractors.includes(item)) distractors.push(item);
+  fallback.forEach((meaning) => {
+    if (distractors.length < 3 && meaning.toLowerCase() !== correctKey && !distractors.some((item) => item.meaning === meaning)) {
+      distractors.push({ id: "", meaning, score: 99, rank: mobileFocusChoiceHash(`${word.id}|fallback|${meaning}`) });
+    }
   });
 
-  return [correct, ...distractors.slice(0, 3)]
-    .map((meaning) => ({ meaning, rank: mobileFocusChoiceHash(`${word.id}|choice|${meaning}`) }))
+  return [{ id: word.id, meaning: correct }, ...distractors.slice(0, 3)]
+    .map((item) => ({ ...item, rank: mobileFocusChoiceHash(`${word.id}|choice|${item.meaning}`) }))
     .sort((a, b) => a.rank - b.rank)
-    .map((item) => item.meaning);
+    .map((item) => ({ meaning: item.meaning, wordId: item.id }));
 }
 
-function applySharedCardRating(id, result) {
+function applySharedCardRating(id, result, meta = {}) {
   const word = state.words.find((item) => item.id === id);
   if (!word || !["remember", "fuzzy", "forgot"].includes(result)) return;
 
   // 直接复用普通卡片的动作入口：同一 progress.card、同一 history、同一每日完成、同一云存档。
   if (state.practiceMode !== "card") switchPracticeMode("card");
   setActiveId(id);
+  state.pendingRatingMeta = { wordId: id, ...meta };
   handleCardAction(result);
 }
 
@@ -3775,8 +4225,10 @@ function initializeMobileFocus() {
     rate: applySharedCardRating,
     checkSpelling: (input, word) => isSpellingCorrect(input, word),
     choiceOptions: mobileFocusChoiceOptions,
-    source: () => state.activeGroup === "all" ? "全部词库 · 与当前卡片完全同进度" : `${state.activeGroup} · 与当前卡片完全同进度`,
-    title: () => "一屏一词",
+    source: () => state.quickSession.active
+      ? `${state.quickSession.label || "快速复习"} · 与普通卡片共用进度`
+      : (state.activeGroup === "all" ? "全部词库 · 与当前卡片完全同进度" : `${state.activeGroup} · 与当前卡片完全同进度`),
+    title: () => state.quickSession.active ? (state.quickSession.label || "快速复习") : "一屏一词",
   });
 }
 
@@ -4276,6 +4728,8 @@ function answerChoice(word, selectedTerm) {
     word.important = true;
     word.errorReason = word.errorReason || "忘记中文";
   }
+  recordMemoryMetric(word, "recognition", correct);
+  state.pendingRatingMeta = { wordId: word.id, skipMetric: true, mode: "choice" };
   recordModeHistory(word, {
     time: completedAt.toISOString(),
     result: correct ? "choice-correct" : "choice-wrong",
@@ -4889,6 +5343,15 @@ function renderErrorReasonBox(word) {
 }
 
 
+function renderAbilityBox(word) {
+  const summary = wordAbilitySummary(word);
+  const statText = (stat) => stat.correct || stat.wrong ? `${stat.correct}对 / ${stat.wrong}错` : "暂无测试";
+  return `<div class="ability-dual-box" aria-label="认识度与拼写度">
+    <div><span>认识度</span><b>${summary.recognition.score}</b><em>${summary.recognitionLabel}</em><small>${statText(summary.recognition)}</small><i style="--ability:${summary.recognition.score}%"></i></div>
+    <div><span>拼写度</span><b>${summary.spelling.score}</b><em>${summary.spellingLabel}</em><small>${statText(summary.spelling)}</small><i style="--ability:${summary.spelling.score}%"></i></div>
+  </div>`;
+}
+
 function renderPlainListCard() {
   const queue = getQueue().slice(0, 14);
   if (!queue.length) {
@@ -4947,6 +5410,7 @@ function renderActiveCard() {
   const important = word.important ? `<p class="important-line">重点词</p>` : "";
   const masteryBox = renderMasteryBox(word);
   const errorReasonBox = renderErrorReasonBox(word);
+  const abilityBox = renderAbilityBox(word);
   const spellingBox = state.practiceMode === "forms" ? renderVerbFormsBox(word) : renderSpellingBox(word);
   const undoDisabled = state.reviewUndo ? "" : "disabled";
   const quickActions = `
@@ -4978,6 +5442,7 @@ function renderActiveCard() {
       ${extra}
       ${note}
       ${important}
+      ${abilityBox}
       ${errorReasonBox}
       ${masteryBox}
       <p class="next-line">下次：${formatDateTime(progress.nextReviewAt)} · ${statusLabel(status)}</p>
@@ -5419,6 +5884,8 @@ function handleCardAction(action) {
     const completedAt = new Date().toISOString();
     state.spellingResult = { correct };
     state.answerVisible = true;
+    recordMemoryMetric(word, "spelling", correct);
+    state.pendingRatingMeta = { wordId: word.id, skipMetric: true, mode: "spelling" };
     recordModeHistory(word, {
       time: completedAt,
       result: correct ? (["dictation", "dictationWeak"].includes(state.practiceMode) ? "dictation-correct" : "spell-correct") : (["dictation", "dictationWeak"].includes(state.practiceMode) ? "dictation-wrong" : "spell-wrong"),
@@ -5440,6 +5907,8 @@ function handleCardAction(action) {
     const completedAt = new Date().toISOString();
     state.formResult = { correct };
     state.answerVisible = true;
+    recordMemoryMetric(word, "spelling", correct);
+    state.pendingRatingMeta = { wordId: word.id, skipMetric: true, mode: "spelling" };
     recordModeHistory(word, {
       time: completedAt,
       result: correct ? "forms-correct" : "forms-wrong",
@@ -5584,6 +6053,7 @@ function exportWords() {
     studySession: captureStudySessionSnapshot(),
     dailyCompleted: normalizeDailyCompletedStore(dailyCompletedStore),
     contextStudy: normalizeContextStudyStore(contextStudyStore),
+    memoryLab: normalizeMemoryLabStore(memoryLabStore),
     words: state.words,
   };
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json;charset=utf-8" });
@@ -5704,6 +6174,10 @@ async function importWords(event) {
     if (parsed.contextStudy) {
       contextStudyStore = mergeContextStudyStores(contextStudyStore, parsed.contextStudy);
       saveContextStudyStore();
+    }
+    if (parsed.memoryLab) {
+      memoryLabStore = mergeMemoryLabStores(memoryLabStore, parsed.memoryLab);
+      saveMemoryLabStore();
     }
     syncTodayCompletedFromHistories();
     if (parsed.studySession) applyStudySessionSnapshot(parsed.studySession);
@@ -6115,6 +6589,54 @@ function registerServiceWorker() {
   }
 }
 
+window.WordMemoryApp = {
+  getWords: () => state.words,
+  getWord: (id) => state.words.find((word) => word.id === id) || null,
+  getMemoryLab: () => normalizeMemoryLabStore(memoryLabStore),
+  getAbility: (id) => wordAbilitySummary(state.words.find((word) => word.id === id) || { id }),
+  getQuickSession: quickSessionSnapshot,
+  getTodayWrongIds: todayWrongWordIds,
+  startQuickSession,
+  stopQuickSession: () => finishQuickSession("manual"),
+  tickQuickSession,
+  openMobileFocus: (mode = "recall") => {
+    if (!mobileFocusController) initializeMobileFocus();
+    mobileFocusController?.open?.();
+    mobileFocusController?.setMode?.(["recall", "choice", "spelling"].includes(mode) ? mode : "recall");
+  },
+  setMiniRecapEnabled: (enabled) => {
+    memoryLabStore.flow.autoMiniRecap = Boolean(enabled);
+    saveMemoryLabStore();
+    saveWords();
+    notifyMemoryLab();
+  },
+  openWord: (id) => {
+    const word = state.words.find((item) => item.id === id);
+    if (!word) return false;
+    state.quickSession.active = false;
+    state.practiceMode = "card";
+    state.mode = "all";
+    state.activeGroup = "all";
+    setActiveId(id);
+    state.answerVisible = false;
+    resetTypingState();
+    render();
+    try { history.replaceState(null, "", "#study"); } catch { location.hash = "study"; }
+    document.querySelector('[data-module-target="study"]')?.click?.();
+    return true;
+  },
+  speakWord: (id) => { const word = state.words.find((item) => item.id === id); if (word) speakTerm(word.term, { accent: "us" }); },
+  wordSources,
+  wordGroupNames,
+  wordFamilyStem,
+  statusOf,
+  weakScore,
+  priorityOf,
+  meaningSegments,
+  escapeHTML,
+  save: () => saveWords({ immediate: true }),
+};
+
 // 打开页面默认使用卡片模式；同时恢复上次保存的卡片筛选、分组和当前位置。
 state.practiceMode = "card";
 ensurePracticeSession("card").mode = state.mode;
@@ -6141,6 +6663,7 @@ window.addEventListener("beforeunload", () => {
 let periodicHeavyRefreshTicks = 0;
 setInterval(() => {
   tickStudyTime();
+  tickQuickSession();
   renderClock();
   renderSprintStatus();
   periodicHeavyRefreshTicks += 1;
