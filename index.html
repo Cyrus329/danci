@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>专升本单词记忆</title>
-  <link rel="stylesheet" href="./styles.css?v=70b02520260806">
+  <link rel="stylesheet" href="./styles.css?v=70b03120260807">
 </head>
 <body>
   <div class="app-shell">
@@ -40,7 +40,7 @@
         <button class="module-button" type="button" data-module-target="study"><span>🧠</span><strong>记忆训练</strong><small>复习 / 新词 / 听写 / 拼写</small></button>
         <button class="module-button" type="button" data-module-target="smart"><span>🔎</span><strong>构词归类</strong><small>词根 / 形近 / 同义</small></button>
         <button class="module-button" type="button" data-module-target="review"><span>⚡</span><strong>快速复习</strong><small>错词回炉 / 极速 / 冲刺</small></button>
-        <button class="module-button" type="button" data-module-target="browse"><span>☷</span><strong>全词浏览</strong><small>4577词快速查阅</small></button>
+        <button class="module-button" type="button" data-module-target="browse"><span>☷</span><strong>全词浏览</strong><small>4745词快速查阅</small></button>
         <button class="module-button" type="button" data-module-target="progress"><span>📊</span><strong>学习进度</strong><small>Word List 与分组统计</small></button>
         <button class="module-button" type="button" data-module-target="manage"><span>＋</span><strong>管理词库</strong><small>添加 / 筛选 / 总词库</small></button>
       </nav>
@@ -571,24 +571,30 @@
     </footer>
   </section>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="./library-folder-data.js?v=70b02520260806"></script>
-  <script src="./word-data.js?v=70b02520260806"></script>
-  <script src="./context-engine.js?v=70b02520260806"></script>
-  <script src="./context-data.js?v=70b02520260806"></script>
-  <script src="./context-id-data.js?v=70b02520260806"></script>
-  <script src="./context-presenter.js?v=70b02520260806"></script>
-  <script src="./context-study-engine.js?v=70b02520260806"></script>
-  <script src="./mobile-focus.js?v=70b02520260806"></script>
-  <script src="./app.js?v=70b02520260806"></script>
-  <script src="./memory-lab.js?v=70b02520260806"></script>
-  <script src="./folder-view.js?v=70b02520260806"></script>
-  <script src="./smart-vocab.js?v=70b02520260806"></script>
+  <script src="./library-folder-data.js?v=70b03120260807"></script>
+  <script src="./word-data.js?v=70b03120260807"></script>
+  <script src="./context-engine.js?v=70b03120260807"></script>
+  <script src="./context-data.js?v=70b03120260807"></script>
+  <script src="./context-id-data.js?v=70b03120260807"></script>
+  <script src="./context-presenter.js?v=70b03120260807"></script>
+  <script src="./context-study-engine.js?v=70b03120260807"></script>
+  <script src="./mobile-focus.js?v=70b03120260807"></script>
+  <script src="./app.js?v=70b03120260807"></script>
+  <script src="./memory-lab.js?v=70b03120260807"></script>
+  <script src="./folder-view.js?v=70b03120260807"></script>
+  <script src="./smart-vocab.js?v=70b03120260807"></script>
   <script>
     (function(){
       const buttons = Array.from(document.querySelectorAll('[data-module-target]'));
       const sections = Array.from(document.querySelectorAll('[data-module-section]'));
       if (!buttons.length || !sections.length) return;
       const titleMap = {folder: '英语资料夹', study: '记忆训练', smart: '构词归类', review: '快速复习', browse: '全词浏览', progress: '学习进度', manage: '管理词库'};
+      const switcher = document.querySelector('.module-switcher');
+      function syncDockHeight(){
+        if (!switcher) return;
+        const height = Math.ceil(switcher.getBoundingClientRect().height || switcher.offsetHeight || 0);
+        document.documentElement.style.setProperty('--module-switcher-dock-height', `${height}px`);
+      }
       function activate(name, keepHash){
         const target = titleMap[name] ? name : 'folder';
         buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.moduleTarget === target));
@@ -598,11 +604,18 @@
         }
         const main = document.querySelector('.workspace');
         if (main) main.dataset.activeModule = target;
+        requestAnimationFrame(syncDockHeight);
         window.scrollTo({top: 0, behavior: 'smooth'});
       }
       buttons.forEach(btn => btn.addEventListener('click', () => activate(btn.dataset.moduleTarget)));
       const initial = (location.hash || '').replace('#','');
       activate(titleMap[initial] ? initial : 'folder', true);
+      window.addEventListener('resize', syncDockHeight, { passive: true });
+      window.addEventListener('load', syncDockHeight, { once: true });
+      if ('ResizeObserver' in window && switcher) {
+        const dockObserver = new ResizeObserver(() => syncDockHeight());
+        dockObserver.observe(switcher);
+      }
       window.addEventListener('hashchange', () => activate((location.hash || '').replace('#',''), true));
     })();
   </script>

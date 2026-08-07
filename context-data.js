@@ -1,4 +1,4 @@
-// Generated 2026-08-06. v70 B024 专升本题型语境；资料原句优先，新增词使用逐条校正语境。
+// Generated 2026-08-07. v70 B029 new screenshot vocabulary contexts; existing contexts retained.
 window.WORD_MEMORY_CONTEXTS = {
   "-able": {
     "primary": {
@@ -62758,6 +62758,2862 @@ window.WORD_MEMORY_CONTEXTS = {
       "templateFamily": "individually-reviewed",
       "contextId": "cet-20260806-27-052:primary",
       "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "board": {
+    "primary": {
+      "sentence": "Students wrote the key points on the board before class ended.",
+      "target": "board",
+      "translation": "下课前，学生们把重点写在了黑板上。",
+      "sense": "n. 木板；董事会；膳食；棋盘；v. 登上（飞机或船）；寄宿；提供食宿",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-003:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "box": {
+    "primary": {
+      "sentence": "Please put the old textbooks into this box.",
+      "target": "box",
+      "translation": "请把旧课本放进这个箱子里。",
+      "sense": "n. 盒子；箱子；方框；包厢；v. 把……装箱；拳击",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-008:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "bit": {
+    "primary": {
+      "sentence": "A bit of daily practice can improve your vocabulary steadily.",
+      "target": "bit",
+      "translation": "每天进行一点练习可以稳步提高词汇量。",
+      "sense": "n. 少量；小块；一点；二进制位；马嚼子；钻头",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-009:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "bitter": {
+    "primary": {
+      "sentence": "The medicine tasted bitter, but it helped her recover.",
+      "target": "bitter",
+      "translation": "这种药味道很苦，但帮助她恢复了健康。",
+      "sense": "adj. 苦的；痛苦的；激烈的；严寒的；n. 苦啤酒",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-013:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "black": {
+    "primary": {
+      "sentence": "The teacher used a black pen to mark the important sentence.",
+      "target": "black",
+      "translation": "老师用黑色钢笔标出了这个重要句子。",
+      "sense": "adj. 黑色的；黑暗的；n. 黑色；黑人；v. 使变黑；抵制",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-014:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "bathroom": {
+    "primary": {
+      "sentence": "The bathroom is at the end of the corridor.",
+      "target": "bathroom",
+      "translation": "洗手间在走廊尽头。",
+      "sense": "n. 浴室；洗手间（美式常用）",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-025:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "bee": {
+    "primary": {
+      "sentence": "A bee moved from flower to flower in the school garden.",
+      "target": "bee",
+      "translation": "一只蜜蜂在校园花园里从一朵花飞到另一朵花。",
+      "sense": "n. 蜜蜂；聚会（旧用法）",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-028:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "bank": {
+    "primary": {
+      "sentence": "She went to the bank to open a savings account.",
+      "target": "bank",
+      "translation": "她去银行开了一个储蓄账户。",
+      "sense": "n. 银行；河岸；一排；v. 存钱；堆积；（飞机）倾斜飞行",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-035:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "little": {
+    "primary": {
+      "sentence": "There is little time left, so we must review the main points first.",
+      "target": "little",
+      "translation": "剩余时间很少，所以我们必须先复习重点。",
+      "sense": "adj. 小的；年幼的；少量的；adv. 很少；稍微；n. 少量；短暂时间",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-037:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "let": {
+    "primary": {
+      "sentence": "The teacher let us discuss the problem in groups.",
+      "target": "let",
+      "translation": "老师让我们分组讨论这个问题。",
+      "sense": "v. 允许；让；出租；n. 出租（英式用法）",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-043:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "bad": {
+    "primary": {
+      "sentence": "A bad study habit can waste a great deal of time.",
+      "target": "bad",
+      "translation": "不良的学习习惯会浪费大量时间。",
+      "sense": "adj. 坏的；严重的；不擅长的；腐坏的",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-047:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "attention": {
+    "primary": {
+      "sentence": "Please pay close attention to the words in bold type.",
+      "target": "attention",
+      "translation": "请特别注意黑体字。",
+      "sense": "n. 注意；注意力；照料；关心",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-054:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "into": {
+    "primary": {
+      "sentence": "The class was divided into four study groups.",
+      "target": "into",
+      "translation": "这个班被分成了四个学习小组。",
+      "sense": "prep. 进入；成为；撞上；关于；对……有兴趣",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-066:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "accent": {
+    "primary": {
+      "sentence": "Her clear accent made the English speech easy to understand.",
+      "target": "accent",
+      "translation": "她清晰的口音使这篇英语演讲容易理解。",
+      "sense": "n. 口音；重音；强调；vt. 强调；突出",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-079:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "them": {
+    "primary": {
+      "sentence": "The teacher gave them ten minutes to finish the exercise.",
+      "target": "them",
+      "translation": "老师给了他们十分钟完成练习。",
+      "sense": "pron. 他们；她们；它们（宾格）",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-090:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "about": {
+    "primary": {
+      "sentence": "The passage is about the importance of environmental protection.",
+      "target": "about",
+      "translation": "这篇文章讲的是环境保护的重要性。",
+      "sense": "prep. 关于；在……周围；涉及；adv. 大约；周围；将要",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-108:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "a": {
+    "primary": {
+      "sentence": "She keeps a notebook for new words and useful expressions.",
+      "target": "a",
+      "translation": "她用一个笔记本记录新单词和有用表达。",
+      "sense": "art. 一（个）；任一；每一；n. 字母A；第一等；甲级",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-109:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "rally": {
+    "primary": {
+      "sentence": "The teacher used “rally” in a short reading passage during vocabulary review.",
+      "target": "rally",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“rally”。",
+      "sense": "n. 集会；集合；v. 召集；恢复",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-001:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "networking": {
+    "primary": {
+      "sentence": "The word “networking” appeared in today’s entrance-exam practice.",
+      "target": "networking",
+      "translation": "“networking”出现在今天的专升本练习中。",
+      "sense": "n. 建立人际网络；网络连接",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-003:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cyberspace": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “cyberspace” quickly.",
+      "target": "cyberspace",
+      "translation": "小测时，全班需要快速识别“cyberspace”。",
+      "sense": "n. 网络空间",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "cet-20260807-28-004:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "hack": {
+    "primary": {
+      "sentence": "The study group reviewed “hack” and then completed a sentence with it.",
+      "target": "hack",
+      "translation": "学习小组复习了“hack”，随后用它完成句子。",
+      "sense": "v. 砍；非法侵入；n. 黑客；劈砍",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-005:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "democracy": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “democracy”.",
+      "target": "democracy",
+      "translation": "一道词汇题检验学生是否理解“democracy”。",
+      "sense": "n. 民主；民主制度",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "cet-20260807-28-006:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "socialize": {
+    "primary": {
+      "sentence": "The learner added “socialize” to the weak-word list for another review.",
+      "target": "socialize",
+      "translation": "学习者把“socialize”加入薄弱词列表，准备再次复习。",
+      "sense": "v. 社交；使社会化",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-007:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "ally": {
+    "primary": {
+      "sentence": "The word “ally” appeared in today’s entrance-exam practice.",
+      "target": "ally",
+      "translation": "“ally”出现在今天的专升本练习中。",
+      "sense": "n. 盟友；v. 结盟",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-011:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "alliance": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “alliance” quickly.",
+      "target": "alliance",
+      "translation": "小测时，全班需要快速识别“alliance”。",
+      "sense": "n. 联盟；同盟关系",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "cet-20260807-28-012:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "association": {
+    "primary": {
+      "sentence": "The study group reviewed “association” and then completed a sentence with it.",
+      "target": "association",
+      "translation": "学习小组复习了“association”，随后用它完成句子。",
+      "sense": "n. 协会；联系；联想",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-013:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "commuter": {
+    "primary": {
+      "sentence": "The teacher used “commuter” in a short reading passage during vocabulary review.",
+      "target": "commuter",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“commuter”。",
+      "sense": "n. 通勤者",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-017:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "neighborhood": {
+    "primary": {
+      "sentence": "Students marked “neighborhood” as a key word before discussing the passage.",
+      "target": "neighborhood",
+      "translation": "学生在讨论文章前把“neighborhood”标记为关键词。",
+      "sense": "n. 街区；邻里地区",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-018:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "neighbor": {
+    "primary": {
+      "sentence": "The word “neighbor” appeared in today’s entrance-exam practice.",
+      "target": "neighbor",
+      "translation": "“neighbor”出现在今天的专升本练习中。",
+      "sense": "n. 邻居；邻近的人或事物",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-019:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "associate": {
+    "primary": {
+      "sentence": "The study group reviewed “associate” and then completed a sentence with it.",
+      "target": "associate",
+      "translation": "学习小组复习了“associate”，随后用它完成句子。",
+      "sense": "v. 联系；交往；n. 伙伴；adj. 副的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-021:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "commune": {
+    "primary": {
+      "sentence": "The learner added “commune” to the weak-word list for another review.",
+      "target": "commune",
+      "translation": "学习者把“commune”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 公社；群体；v. 亲密交谈",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-023:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "communism": {
+    "primary": {
+      "sentence": "The teacher used “communism” in a short reading passage during vocabulary review.",
+      "target": "communism",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“communism”。",
+      "sense": "n. 共产主义",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-025:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "commute": {
+    "primary": {
+      "sentence": "Students marked “commute” as a key word before discussing the passage.",
+      "target": "commute",
+      "translation": "学生在讨论文章前把“commute”标记为关键词。",
+      "sense": "v. 通勤；减刑；n. 通勤",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-026:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "telecommunications": {
+    "primary": {
+      "sentence": "The study group reviewed “telecommunications” and then completed a sentence with it.",
+      "target": "telecommunications",
+      "translation": "学习小组复习了“telecommunications”，随后用它完成句子。",
+      "sense": "n. 电信；远程通信",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-029:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "messenger": {
+    "primary": {
+      "sentence": "The learner added “messenger” to the weak-word list for another review.",
+      "target": "messenger",
+      "translation": "学习者把“messenger”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 信使；送信人",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-031:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "superb": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “superb” from the surrounding sentence.",
+      "target": "superb",
+      "translation": "在模拟考试中，学生根据上下文推断“superb”的含义。",
+      "sense": "adj. 极好的；卓越的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-032:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "supreme": {
+    "primary": {
+      "sentence": "The teacher used “supreme” in a short reading passage during vocabulary review.",
+      "target": "supreme",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“supreme”。",
+      "sense": "adj. 最高的；至高无上的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-033:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "supremacy": {
+    "primary": {
+      "sentence": "Students marked “supremacy” as a key word before discussing the passage.",
+      "target": "supremacy",
+      "translation": "学生在讨论文章前把“supremacy”标记为关键词。",
+      "sense": "n. 至高地位；优势",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-034:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "inferior": {
+    "primary": {
+      "sentence": "The study group reviewed “inferior” and then completed a sentence with it.",
+      "target": "inferior",
+      "translation": "学习小组复习了“inferior”，随后用它完成句子。",
+      "sense": "adj. 较差的；下级的；n. 下级",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-037:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "inferiority": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “inferiority”.",
+      "target": "inferiority",
+      "translation": "一道词汇题检验学生是否理解“inferiority”。",
+      "sense": "n. 劣势；低等；自卑感",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "cet-20260807-28-038:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "super": {
+    "primary": {
+      "sentence": "The learner added “super” to the weak-word list for another review.",
+      "target": "super",
+      "translation": "学习者把“super”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 超级的；极好的；n. 主管",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-039:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "superior": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “superior” from the surrounding sentence.",
+      "target": "superior",
+      "translation": "在模拟考试中，学生根据上下文推断“superior”的含义。",
+      "sense": "adj. 更好的；上级的；n. 上级",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-040:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "superiority": {
+    "primary": {
+      "sentence": "The teacher used “superiority” in a short reading passage during vocabulary review.",
+      "target": "superiority",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“superiority”。",
+      "sense": "n. 优越；优势",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-041:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "elite": {
+    "primary": {
+      "sentence": "The word “elite” appeared in today’s entrance-exam practice.",
+      "target": "elite",
+      "translation": "“elite”出现在今天的专升本练习中。",
+      "sense": "n. 精英；adj. 精英的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-043:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "previous": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “previous” quickly.",
+      "target": "previous",
+      "translation": "小测时，全班需要快速识别“previous”。",
+      "sense": "adj. 以前的；前一个的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "cet-20260807-28-044:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "prior": {
+    "primary": {
+      "sentence": "The study group reviewed “prior” and then completed a sentence with it.",
+      "target": "prior",
+      "translation": "学习小组复习了“prior”，随后用它完成句子。",
+      "sense": "adj. 先前的；优先的；n. 先前事项",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-045:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "priority": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “priority”.",
+      "target": "priority",
+      "translation": "一道词汇题检验学生是否理解“priority”。",
+      "sense": "n. 优先事项；优先权",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "cet-20260807-28-046:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "authenticity": {
+    "primary": {
+      "sentence": "The learner added “authenticity” to the weak-word list for another review.",
+      "target": "authenticity",
+      "translation": "学习者把“authenticity”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 真实性；可靠性",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-047:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "sincere": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “sincere” from the surrounding sentence.",
+      "target": "sincere",
+      "translation": "在模拟考试中，学生根据上下文推断“sincere”的含义。",
+      "sense": "adj. 真诚的；诚挚的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-048:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "sincerely": {
+    "primary": {
+      "sentence": "The teacher used “sincerely” in a short reading passage during vocabulary review.",
+      "target": "sincerely",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“sincerely”。",
+      "sense": "adv. 真诚地；诚挚地",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-049:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "sincerity": {
+    "primary": {
+      "sentence": "Students marked “sincerity” as a key word before discussing the passage.",
+      "target": "sincerity",
+      "translation": "学生在讨论文章前把“sincerity”标记为关键词。",
+      "sense": "n. 真诚；诚意",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-050:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "genuine": {
+    "primary": {
+      "sentence": "The word “genuine” appeared in today’s entrance-exam practice.",
+      "target": "genuine",
+      "translation": "“genuine”出现在今天的专升本练习中。",
+      "sense": "adj. 真正的；真诚的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-051:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "authority": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “authority” quickly.",
+      "target": "authority",
+      "translation": "小测时，全班需要快速识别“authority”。",
+      "sense": "n. 权力；权威；当局",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "cet-20260807-28-052:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "authoritative": {
+    "primary": {
+      "sentence": "The study group reviewed “authoritative” and then completed a sentence with it.",
+      "target": "authoritative",
+      "translation": "学习小组复习了“authoritative”，随后用它完成句子。",
+      "sense": "adj. 权威的；有权威性的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-053:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "authorization": {
+    "primary": {
+      "sentence": "The learner added “authorization” to the weak-word list for another review.",
+      "target": "authorization",
+      "translation": "学习者把“authorization”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 授权；批准",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-055:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "authentic": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “authentic” from the surrounding sentence.",
+      "target": "authentic",
+      "translation": "在模拟考试中，学生根据上下文推断“authentic”的含义。",
+      "sense": "adj. 真实的；可信的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-056:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "liberal": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “liberal”.",
+      "target": "liberal",
+      "translation": "一道词汇题检验学生是否理解“liberal”。",
+      "sense": "adj. 开明的；自由的；慷慨的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "cet-20260807-28-062:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "deliberate": {
+    "primary": {
+      "sentence": "The learner added “deliberate” to the weak-word list for another review.",
+      "target": "deliberate",
+      "translation": "学习者把“deliberate”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 深思熟虑的；故意的；v. 仔细考虑",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-063:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "deliberation": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “deliberation” from the surrounding sentence.",
+      "target": "deliberation",
+      "translation": "在模拟考试中，学生根据上下文推断“deliberation”的含义。",
+      "sense": "n. 深思熟虑；审议",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-064:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "generous": {
+    "primary": {
+      "sentence": "The teacher used “generous” in a short reading passage during vocabulary review.",
+      "target": "generous",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“generous”。",
+      "sense": "adj. 慷慨的；丰富的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-065:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "generosity": {
+    "primary": {
+      "sentence": "Students marked “generosity” as a key word before discussing the passage.",
+      "target": "generosity",
+      "translation": "学生在讨论文章前把“generosity”标记为关键词。",
+      "sense": "n. 慷慨；大方",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-066:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "broadcast": {
+    "primary": {
+      "sentence": "The word “broadcast” appeared in today’s entrance-exam practice.",
+      "target": "broadcast",
+      "translation": "“broadcast”出现在今天的专升本练习中。",
+      "sense": "n. 广播；v. 播送；传播",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-067:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "statue": {
+    "primary": {
+      "sentence": "The study group reviewed “statue” and then completed a sentence with it.",
+      "target": "statue",
+      "translation": "学习小组复习了“statue”，随后用它完成句子。",
+      "sense": "n. 雕像",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-069:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "liberty": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “liberty”.",
+      "target": "liberty",
+      "translation": "一道词汇题检验学生是否理解“liberty”。",
+      "sense": "n. 自由；自由权",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "cet-20260807-28-070:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "liberation": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “liberation” from the surrounding sentence.",
+      "target": "liberation",
+      "translation": "在模拟考试中，学生根据上下文推断“liberation”的含义。",
+      "sense": "n. 解放；释放",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-072:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "overhead": {
+    "primary": {
+      "sentence": "The teacher used “overhead” in a short reading passage during vocabulary review.",
+      "target": "overhead",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“overhead”。",
+      "sense": "adv. 在头顶上；adj. 头顶的；n. 经常费用",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-073:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "forecast": {
+    "primary": {
+      "sentence": "Students marked “forecast” as a key word before discussing the passage.",
+      "target": "forecast",
+      "translation": "学生在讨论文章前把“forecast”标记为关键词。",
+      "sense": "n. 预测；预报；v. 预测",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-074:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cast": {
+    "primary": {
+      "sentence": "The word “cast” appeared in today’s entrance-exam practice.",
+      "target": "cast",
+      "translation": "“cast”出现在今天的专升本练习中。",
+      "sense": "v. 投掷；铸造；分配角色；n. 演员阵容",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-075:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "foremost": {
+    "primary": {
+      "sentence": "The study group reviewed “foremost” and then completed a sentence with it.",
+      "target": "foremost",
+      "translation": "学习小组复习了“foremost”，随后用它完成句子。",
+      "sense": "adj. 最重要的；最前面的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-077:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "oversee": {
+    "primary": {
+      "sentence": "The teacher used “oversee” in a short reading passage during vocabulary review.",
+      "target": "oversee",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“oversee”。",
+      "sense": "v. 监督；管理",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-081:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "army": {
+    "primary": {
+      "sentence": "The study group reviewed “army” and then completed a sentence with it.",
+      "target": "army",
+      "translation": "学习小组复习了“army”，随后用它完成句子。",
+      "sense": "n. 军队；陆军",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-005:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "what": {
+    "primary": {
+      "sentence": "The teacher used “what” in a short reading passage during vocabulary review.",
+      "target": "what",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“what”。",
+      "sense": "pron. 什么；adj. 什么样的；int. 多么",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-009:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "check": {
+    "primary": {
+      "sentence": "Students marked “check” as a key word before discussing the passage.",
+      "target": "check",
+      "translation": "学生在讨论文章前把“check”标记为关键词。",
+      "sense": "v. 检查；核对；n. 检查；支票",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-010:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "which": {
+    "primary": {
+      "sentence": "The study group reviewed “which” and then completed a sentence with it.",
+      "target": "which",
+      "translation": "学习小组复习了“which”，随后用它完成句子。",
+      "sense": "pron. 哪一个；哪些；adj. 哪个",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-013:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "whole": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “whole”.",
+      "target": "whole",
+      "translation": "一道词汇题检验学生是否理解“whole”。",
+      "sense": "adj. 全部的；完整的；n. 整体",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-014:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "general": {
+    "primary": {
+      "sentence": "The learner added “general” to the weak-word list for another review.",
+      "target": "general",
+      "translation": "学习者把“general”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 一般的；总体的；n. 将军",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-015:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "friend": {
+    "primary": {
+      "sentence": "The learner added “friend” to the weak-word list for another review.",
+      "target": "friend",
+      "translation": "学习者把“friend”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 朋友",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-023:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "history": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “history” from the surrounding sentence.",
+      "target": "history",
+      "translation": "在模拟考试中，学生根据上下文推断“history”的含义。",
+      "sense": "n. 历史；经历",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-024:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fork": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “fork”.",
+      "target": "fork",
+      "translation": "一道词汇题检验学生是否理解“fork”。",
+      "sense": "n. 叉子；分叉；v. 分岔",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-030:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fish": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “fish” from the surrounding sentence.",
+      "target": "fish",
+      "translation": "在模拟考试中，学生根据上下文推断“fish”的含义。",
+      "sense": "n. 鱼；v. 钓鱼",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-032:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fit": {
+    "primary": {
+      "sentence": "The teacher used “fit” in a short reading passage during vocabulary review.",
+      "target": "fit",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“fit”。",
+      "sense": "v. 合适；安装；adj. 健康的；适合的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-033:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fast": {
+    "primary": {
+      "sentence": "The study group reviewed “fast” and then completed a sentence with it.",
+      "target": "fast",
+      "translation": "学习小组复习了“fast”，随后用它完成句子。",
+      "sense": "adj. 快的；adv. 快速地；牢固地",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-045:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "far": {
+    "primary": {
+      "sentence": "The teacher used “far” in a short reading passage during vocabulary review.",
+      "target": "far",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“far”。",
+      "sense": "adv. 远；很大程度上；adj. 遥远的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-057:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fat": {
+    "primary": {
+      "sentence": "Students marked “fat” as a key word before discussing the passage.",
+      "target": "fat",
+      "translation": "学生在讨论文章前把“fat”标记为关键词。",
+      "sense": "adj. 肥胖的；n. 脂肪",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-058:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "top": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “top”.",
+      "target": "top",
+      "translation": "一道词汇题检验学生是否理解“top”。",
+      "sense": "n. 顶部；最高处；adj. 最高的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-070:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "exercise": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “exercise” from the surrounding sentence.",
+      "target": "exercise",
+      "translation": "在模拟考试中，学生根据上下文推断“exercise”的含义。",
+      "sense": "n. 锻炼；练习；v. 锻炼",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-072:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "everybody": {
+    "primary": {
+      "sentence": "The learner added “everybody” to the weak-word list for another review.",
+      "target": "everybody",
+      "translation": "学习者把“everybody”加入薄弱词列表，准备再次复习。",
+      "sense": "pron. 每个人",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-079:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "elephant": {
+    "primary": {
+      "sentence": "The word “elephant” appeared in today’s entrance-exam practice.",
+      "target": "elephant",
+      "translation": "“elephant”出现在今天的专升本练习中。",
+      "sense": "n. 大象",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-083:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "ear": {
+    "primary": {
+      "sentence": "The teacher used “ear” in a short reading passage during vocabulary review.",
+      "target": "ear",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“ear”。",
+      "sense": "n. 耳朵；听觉",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-097:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "down": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “down”.",
+      "target": "down",
+      "translation": "一道词汇题检验学生是否理解“down”。",
+      "sense": "adv. 向下；prep. 沿着；adj. 向下的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-102:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "that": {
+    "primary": {
+      "sentence": "The learner added “that” to the weak-word list for another review.",
+      "target": "that",
+      "translation": "学习者把“that”加入薄弱词列表，准备再次复习。",
+      "sense": "pron. 那个；conj. 那；adj. 那个",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-103:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "yes": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “yes” quickly.",
+      "target": "yes",
+      "translation": "小测时，全班需要快速识别“yes”。",
+      "sense": "int. 是；对",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-108:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "downstairs": {
+    "primary": {
+      "sentence": "The teacher used “downstairs” in a short reading passage during vocabulary review.",
+      "target": "downstairs",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“downstairs”。",
+      "sense": "adv. 在楼下；adj. 楼下的；n. 楼下",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-113:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "whose": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “whose” from the surrounding sentence.",
+      "target": "whose",
+      "translation": "在模拟考试中，学生根据上下文推断“whose”的含义。",
+      "sense": "pron. 谁的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-120:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "usual": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “usual” from the surrounding sentence.",
+      "target": "usual",
+      "translation": "在模拟考试中，学生根据上下文推断“usual”的含义。",
+      "sense": "adj. 通常的；惯常的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-128:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "thirteen": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “thirteen” quickly.",
+      "target": "thirteen",
+      "translation": "小测时，全班需要快速识别“thirteen”。",
+      "sense": "num. 十三",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-140:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "three": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “three”.",
+      "target": "three",
+      "translation": "一道词汇题检验学生是否理解“three”。",
+      "sense": "num. 三",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-142:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "ten": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “ten” quickly.",
+      "target": "ten",
+      "translation": "小测时，全班需要快速识别“ten”。",
+      "sense": "num. 十",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-148:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "terrible": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “terrible”.",
+      "target": "terrible",
+      "translation": "一道词汇题检验学生是否理解“terrible”。",
+      "sense": "adj. 糟糕的；可怕的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-150:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "sometimes": {
+    "primary": {
+      "sentence": "The teacher used “sometimes” in a short reading passage during vocabulary review.",
+      "target": "sometimes",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“sometimes”。",
+      "sense": "adv. 有时",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-153:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "seldom": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “seldom”.",
+      "target": "seldom",
+      "translation": "一道词汇题检验学生是否理解“seldom”。",
+      "sense": "adv. 很少；不常",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-166:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "shelf": {
+    "primary": {
+      "sentence": "The learner added “shelf” to the weak-word list for another review.",
+      "target": "shelf",
+      "translation": "学习者把“shelf”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 架子；搁板",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-167:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "ship": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “ship” from the surrounding sentence.",
+      "target": "ship",
+      "translation": "在模拟考试中，学生根据上下文推断“ship”的含义。",
+      "sense": "n. 船；v. 运送",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-168:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "six": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “six” quickly.",
+      "target": "six",
+      "translation": "小测时，全班需要快速识别“six”。",
+      "sense": "num. 六",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-172:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "sausage": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “sausage”.",
+      "target": "sausage",
+      "translation": "一道词汇题检验学生是否理解“sausage”。",
+      "sense": "n. 香肠",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-174:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "reply": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “reply” quickly.",
+      "target": "reply",
+      "translation": "小测时，全班需要快速识别“reply”。",
+      "sense": "v. 回复；回答；n. 答复",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-180:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "rich": {
+    "primary": {
+      "sentence": "The learner added “rich” to the weak-word list for another review.",
+      "target": "rich",
+      "translation": "学习者把“rich”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 富有的；丰富的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-183:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "robot": {
+    "primary": {
+      "sentence": "The teacher used “robot” in a short reading passage during vocabulary review.",
+      "target": "robot",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“robot”。",
+      "sense": "n. 机器人",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-185:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "purple": {
+    "primary": {
+      "sentence": "The word “purple” appeared in today’s entrance-exam practice.",
+      "target": "purple",
+      "translation": "“purple”出现在今天的专升本练习中。",
+      "sense": "n. 紫色；adj. 紫色的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-187:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "picnic": {
+    "primary": {
+      "sentence": "Students marked “picnic” as a key word before discussing the passage.",
+      "target": "picnic",
+      "translation": "学生在讨论文章前把“picnic”标记为关键词。",
+      "sense": "n. 野餐；v. 去野餐",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-202:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "table": {
+    "primary": {
+      "sentence": "The study group reviewed “table” and then completed a sentence with it.",
+      "target": "table",
+      "translation": "学习小组复习了“table”，随后用它完成句子。",
+      "sense": "n. 桌子；表格",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-205:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "pair": {
+    "primary": {
+      "sentence": "Students marked “pair” as a key word before discussing the passage.",
+      "target": "pair",
+      "translation": "学生在讨论文章前把“pair”标记为关键词。",
+      "sense": "n. 一对；一双；v. 配对",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-210:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "next": {
+    "primary": {
+      "sentence": "The learner added “next” to the weak-word list for another review.",
+      "target": "next",
+      "translation": "学习者把“next”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 下一个的；adv. 接着",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-215:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "me": {
+    "primary": {
+      "sentence": "The study group reviewed “me” and then completed a sentence with it.",
+      "target": "me",
+      "translation": "学习小组复习了“me”，随后用它完成句子。",
+      "sense": "pron. 我（宾格）",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-229:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "loud": {
+    "primary": {
+      "sentence": "Students marked “loud” as a key word before discussing the passage.",
+      "target": "loud",
+      "translation": "学生在讨论文章前把“loud”标记为关键词。",
+      "sense": "adj. 大声的；响亮的；adv. 大声地",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-242:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "jeans": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “jeans” from the surrounding sentence.",
+      "target": "jeans",
+      "translation": "在模拟考试中，学生根据上下文推断“jeans”的含义。",
+      "sense": "n. 牛仔裤",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-248:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "kind": {
+    "primary": {
+      "sentence": "The teacher used “kind” in a short reading passage during vocabulary review.",
+      "target": "kind",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“kind”。",
+      "sense": "n. 种类；adj. 友善的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-249:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "kitchen": {
+    "primary": {
+      "sentence": "Students marked “kitchen” as a key word before discussing the passage.",
+      "target": "kitchen",
+      "translation": "学生在讨论文章前把“kitchen”标记为关键词。",
+      "sense": "n. 厨房",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-250:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "itself": {
+    "primary": {
+      "sentence": "The word “itself” appeared in today’s entrance-exam practice.",
+      "target": "itself",
+      "translation": "“itself”出现在今天的专升本练习中。",
+      "sense": "pron. 它自己",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-251:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "however": {
+    "primary": {
+      "sentence": "The study group reviewed “however” and then completed a sentence with it.",
+      "target": "however",
+      "translation": "学习小组复习了“however”，随后用它完成句子。",
+      "sense": "adv. 然而；无论如何",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-253:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "hurry": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “hurry”.",
+      "target": "hurry",
+      "translation": "一道词汇题检验学生是否理解“hurry”。",
+      "sense": "v. 匆忙；催促；n. 匆忙",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-254:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "standard": {
+    "primary": {
+      "sentence": "The learner added “standard” to the weak-word list for another review.",
+      "target": "standard",
+      "translation": "学习者把“standard”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 标准；adj. 标准的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-263:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "him": {
+    "primary": {
+      "sentence": "The teacher used “him” in a short reading passage during vocabulary review.",
+      "target": "him",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“him”。",
+      "sense": "pron. 他（宾格）",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-265:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "guess": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “guess” quickly.",
+      "target": "guess",
+      "translation": "小测时，全班需要快速识别“guess”。",
+      "sense": "v. 猜；猜测；n. 猜测",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-276:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "guitar": {
+    "primary": {
+      "sentence": "The study group reviewed “guitar” and then completed a sentence with it.",
+      "target": "guitar",
+      "translation": "学习小组复习了“guitar”，随后用它完成句子。",
+      "sense": "n. 吉他",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-277:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "spare": {
+    "primary": {
+      "sentence": "The word “spare” appeared in today’s entrance-exam practice.",
+      "target": "spare",
+      "translation": "“spare”出现在今天的专升本练习中。",
+      "sense": "adj. 空闲的；备用的；v. 抽出；饶恕",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-283:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "every": {
+    "primary": {
+      "sentence": "The teacher used “every” in a short reading passage during vocabulary review.",
+      "target": "every",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“every”。",
+      "sense": "det. 每一个",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-289:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "either": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “either” from the surrounding sentence.",
+      "target": "either",
+      "translation": "在模拟考试中，学生根据上下文推断“either”的含义。",
+      "sense": "det. 两者之一；adv. 也；conj. 要么",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-296:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "coin": {
+    "primary": {
+      "sentence": "The study group reviewed “coin” and then completed a sentence with it.",
+      "target": "coin",
+      "translation": "学习小组复习了“coin”，随后用它完成句子。",
+      "sense": "n. 硬币；v. 创造（新词）",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-317:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "but": {
+    "primary": {
+      "sentence": "The teacher used “but” in a short reading passage during vocabulary review.",
+      "target": "but",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“but”。",
+      "sense": "conj. 但是；prep. 除了",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-321:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cent": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “cent”.",
+      "target": "cent",
+      "translation": "一道词汇题检验学生是否理解“cent”。",
+      "sense": "n. 分；美分",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-326:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "breakfast": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “breakfast”.",
+      "target": "breakfast",
+      "translation": "一道词汇题检验学生是否理解“breakfast”。",
+      "sense": "n. 早餐",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-334:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "below": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “below” from the surrounding sentence.",
+      "target": "below",
+      "translation": "在模拟考试中，学生根据上下文推断“below”的含义。",
+      "sense": "prep. 在下面；低于；adv. 在下面",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-336:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "bicycle": {
+    "primary": {
+      "sentence": "The teacher used “bicycle” in a short reading passage during vocabulary review.",
+      "target": "bicycle",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“bicycle”。",
+      "sense": "n. 自行车；v. 骑自行车",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-337:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "big": {
+    "primary": {
+      "sentence": "Students marked “big” as a key word before discussing the passage.",
+      "target": "big",
+      "translation": "学生在讨论文章前把“big”标记为关键词。",
+      "sense": "adj. 大的；重要的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-338:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "away": {
+    "primary": {
+      "sentence": "The study group reviewed “away” and then completed a sentence with it.",
+      "target": "away",
+      "translation": "学习小组复习了“away”，随后用它完成句子。",
+      "sense": "adv. 离开；远离",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-341:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "around": {
+    "primary": {
+      "sentence": "The learner added “around” to the weak-word list for another review.",
+      "target": "around",
+      "translation": "学习者把“around”加入薄弱词列表，准备再次复习。",
+      "sense": "prep. 在周围；adv. 大约；到处",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-343:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "angry": {
+    "primary": {
+      "sentence": "The learner added “angry” to the weak-word list for another review.",
+      "target": "angry",
+      "translation": "学习者把“angry”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 生气的；愤怒的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-351:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "any": {
+    "primary": {
+      "sentence": "The word “any” appeared in today’s entrance-exam practice.",
+      "target": "any",
+      "translation": "“any”出现在今天的专升本练习中。",
+      "sense": "det. 任何；一些；pron. 任何一个",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-355:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "anywhere": {
+    "primary": {
+      "sentence": "The study group reviewed “anywhere” and then completed a sentence with it.",
+      "target": "anywhere",
+      "translation": "学习小组复习了“anywhere”，随后用它完成句子。",
+      "sense": "adv. 任何地方",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-357:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "bell": {
+    "primary": {
+      "sentence": "The word “bell” appeared in today’s entrance-exam practice.",
+      "target": "bell",
+      "translation": "“bell”出现在今天的专升本练习中。",
+      "sense": "n. 铃；钟",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-379:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cotton": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “cotton”.",
+      "target": "cotton",
+      "translation": "一道词汇题检验学生是否理解“cotton”。",
+      "sense": "n. 棉花；棉布",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-382:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "repair": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “repair” from the surrounding sentence.",
+      "target": "repair",
+      "translation": "在模拟考试中，学生根据上下文推断“repair”的含义。",
+      "sense": "v. 修理；n. 修理",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-384:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cow": {
+    "primary": {
+      "sentence": "The word “cow” appeared in today’s entrance-exam practice.",
+      "target": "cow",
+      "translation": "“cow”出现在今天的专升本练习中。",
+      "sense": "n. 奶牛；母牛",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-387:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cool": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “cool” from the surrounding sentence.",
+      "target": "cool",
+      "translation": "在模拟考试中，学生根据上下文推断“cool”的含义。",
+      "sense": "adj. 凉爽的；酷的；v. 使冷却",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-392:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "corner": {
+    "primary": {
+      "sentence": "The teacher used “corner” in a short reading passage during vocabulary review.",
+      "target": "corner",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“corner”。",
+      "sense": "n. 角落；拐角",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-393:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "red": {
+    "primary": {
+      "sentence": "Students marked “red” as a key word before discussing the passage.",
+      "target": "red",
+      "translation": "学生在讨论文章前把“red”标记为关键词。",
+      "sense": "n. 红色；adj. 红色的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-394:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "balloon": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “balloon”.",
+      "target": "balloon",
+      "translation": "一道词汇题检验学生是否理解“balloon”。",
+      "sense": "n. 气球；v. 激增",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-398:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "concert": {
+    "primary": {
+      "sentence": "The learner added “concert” to the weak-word list for another review.",
+      "target": "concert",
+      "translation": "学习者把“concert”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 音乐会；一致行动",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-399:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "control": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “control” quickly.",
+      "target": "control",
+      "translation": "小测时，全班需要快速识别“control”。",
+      "sense": "v. 控制；n. 控制；管理",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-404:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fight": {
+    "primary": {
+      "sentence": "Students marked “fight” as a key word before discussing the passage.",
+      "target": "fight",
+      "translation": "学生在讨论文章前把“fight”标记为关键词。",
+      "sense": "v. 战斗；打架；n. 战斗",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-410:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "bag": {
+    "primary": {
+      "sentence": "The word “bag” appeared in today’s entrance-exam practice.",
+      "target": "bag",
+      "translation": "“bag”出现在今天的专升本练习中。",
+      "sense": "n. 包；袋",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-411:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "back": {
+    "primary": {
+      "sentence": "The study group reviewed “back” and then completed a sentence with it.",
+      "target": "back",
+      "translation": "学习小组复习了“back”，随后用它完成句子。",
+      "sense": "n. 背部；adv. 回去；adj. 后面的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-413:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cloud": {
+    "primary": {
+      "sentence": "Students marked “cloud” as a key word before discussing the passage.",
+      "target": "cloud",
+      "translation": "学生在讨论文章前把“cloud”标记为关键词。",
+      "sense": "n. 云；v. 使模糊",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-418:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "coat": {
+    "primary": {
+      "sentence": "The word “coat” appeared in today’s entrance-exam practice.",
+      "target": "coat",
+      "translation": "“coat”出现在今天的专升本练习中。",
+      "sense": "n. 外套；涂层；v. 覆盖",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-419:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "chicken": {
+    "primary": {
+      "sentence": "The study group reviewed “chicken” and then completed a sentence with it.",
+      "target": "chicken",
+      "translation": "学习小组复习了“chicken”，随后用它完成句子。",
+      "sense": "n. 鸡；鸡肉；adj. 胆小的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-421:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "child": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “child” from the surrounding sentence.",
+      "target": "child",
+      "translation": "在模拟考试中，学生根据上下文推断“child”的含义。",
+      "sense": "n. 孩子",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-424:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "clean": {
+    "primary": {
+      "sentence": "Students marked “clean” as a key word before discussing the passage.",
+      "target": "clean",
+      "translation": "学生在讨论文章前把“clean”标记为关键词。",
+      "sense": "adj. 干净的；v. 清洁",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-426:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "class": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “class” quickly.",
+      "target": "class",
+      "translation": "小测时，全班需要快速识别“class”。",
+      "sense": "n. 班级；课程；类别",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-428:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cut": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “cut”.",
+      "target": "cut",
+      "translation": "一道词汇题检验学生是否理解“cut”。",
+      "sense": "v. 切；割；n. 切口",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-430:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cat": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “cat”.",
+      "target": "cat",
+      "translation": "一道词汇题检验学生是否理解“cat”。",
+      "sense": "n. 猫",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-438:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "chalk": {
+    "primary": {
+      "sentence": "Students marked “chalk” as a key word before discussing the passage.",
+      "target": "chalk",
+      "translation": "学生在讨论文章前把“chalk”标记为关键词。",
+      "sense": "n. 粉笔",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-442:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "camp": {
+    "primary": {
+      "sentence": "The word “camp” appeared in today’s entrance-exam practice.",
+      "target": "camp",
+      "translation": "“camp”出现在今天的专升本练习中。",
+      "sense": "n. 营地；v. 露营",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-443:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "car": {
+    "primary": {
+      "sentence": "The study group reviewed “car” and then completed a sentence with it.",
+      "target": "car",
+      "translation": "学习小组复习了“car”，随后用它完成句子。",
+      "sense": "n. 汽车",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-445:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "camera": {
+    "primary": {
+      "sentence": "The teacher used “camera” in a short reading passage during vocabulary review.",
+      "target": "camera",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“camera”。",
+      "sense": "n. 相机；摄影机",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-457:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "brown": {
+    "primary": {
+      "sentence": "Students marked “brown” as a key word before discussing the passage.",
+      "target": "brown",
+      "translation": "学生在讨论文章前把“brown”标记为关键词。",
+      "sense": "n. 棕色；adj. 棕色的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-458:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "bus": {
+    "primary": {
+      "sentence": "The study group reviewed “bus” and then completed a sentence with it.",
+      "target": "bus",
+      "translation": "学习小组复习了“bus”，随后用它完成句子。",
+      "sense": "n. 公共汽车",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-461:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "brother": {
+    "primary": {
+      "sentence": "The learner added “brother” to the weak-word list for another review.",
+      "target": "brother",
+      "translation": "学习者把“brother”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 兄弟；哥哥；弟弟",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-471:primary",
+      "batch": "v70-b029"
     },
     "extra": []
   }

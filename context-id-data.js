@@ -1,4 +1,4 @@
-// Generated 2026-08-06. v70 B024 source examples and individually reviewed entrance-exam contexts.
+// Generated 2026-08-07. v70 B029 source contexts by stable word id.
 window.WORD_MEMORY_CONTEXTS_BY_ID = {
   "dictation-1-001": {
     "primary": {
@@ -18659,6 +18659,8058 @@ window.WORD_MEMORY_CONTEXTS_BY_ID = {
       "templateFamily": "individually-reviewed",
       "contextId": "cet-20260806-27-052:primary",
       "batch": "v70-b024"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-003": {
+    "primary": {
+      "sentence": "Students wrote the key points on the board before class ended.",
+      "target": "board",
+      "translation": "下课前，学生们把重点写在了黑板上。",
+      "sense": "n. 木板；董事会；膳食；棋盘；v. 登上（飞机或船）；寄宿；提供食宿",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-003:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-008": {
+    "primary": {
+      "sentence": "Please put the old textbooks into this box.",
+      "target": "box",
+      "translation": "请把旧课本放进这个箱子里。",
+      "sense": "n. 盒子；箱子；方框；包厢；v. 把……装箱；拳击",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-008:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-009": {
+    "primary": {
+      "sentence": "A bit of daily practice can improve your vocabulary steadily.",
+      "target": "bit",
+      "translation": "每天进行一点练习可以稳步提高词汇量。",
+      "sense": "n. 少量；小块；一点；二进制位；马嚼子；钻头",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-009:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-013": {
+    "primary": {
+      "sentence": "The medicine tasted bitter, but it helped her recover.",
+      "target": "bitter",
+      "translation": "这种药味道很苦，但帮助她恢复了健康。",
+      "sense": "adj. 苦的；痛苦的；激烈的；严寒的；n. 苦啤酒",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-013:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-014": {
+    "primary": {
+      "sentence": "The teacher used a black pen to mark the important sentence.",
+      "target": "black",
+      "translation": "老师用黑色钢笔标出了这个重要句子。",
+      "sense": "adj. 黑色的；黑暗的；n. 黑色；黑人；v. 使变黑；抵制",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-014:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-025": {
+    "primary": {
+      "sentence": "The bathroom is at the end of the corridor.",
+      "target": "bathroom",
+      "translation": "洗手间在走廊尽头。",
+      "sense": "n. 浴室；洗手间（美式常用）",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-025:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-028": {
+    "primary": {
+      "sentence": "A bee moved from flower to flower in the school garden.",
+      "target": "bee",
+      "translation": "一只蜜蜂在校园花园里从一朵花飞到另一朵花。",
+      "sense": "n. 蜜蜂；聚会（旧用法）",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-028:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-035": {
+    "primary": {
+      "sentence": "She went to the bank to open a savings account.",
+      "target": "bank",
+      "translation": "她去银行开了一个储蓄账户。",
+      "sense": "n. 银行；河岸；一排；v. 存钱；堆积；（飞机）倾斜飞行",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-035:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-037": {
+    "primary": {
+      "sentence": "There is little time left, so we must review the main points first.",
+      "target": "little",
+      "translation": "剩余时间很少，所以我们必须先复习重点。",
+      "sense": "adj. 小的；年幼的；少量的；adv. 很少；稍微；n. 少量；短暂时间",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-037:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-043": {
+    "primary": {
+      "sentence": "The teacher let us discuss the problem in groups.",
+      "target": "let",
+      "translation": "老师让我们分组讨论这个问题。",
+      "sense": "v. 允许；让；出租；n. 出租（英式用法）",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-043:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-047": {
+    "primary": {
+      "sentence": "A bad study habit can waste a great deal of time.",
+      "target": "bad",
+      "translation": "不良的学习习惯会浪费大量时间。",
+      "sense": "adj. 坏的；严重的；不擅长的；腐坏的",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-047:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-054": {
+    "primary": {
+      "sentence": "Please pay close attention to the words in bold type.",
+      "target": "attention",
+      "translation": "请特别注意黑体字。",
+      "sense": "n. 注意；注意力；照料；关心",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-054:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-066": {
+    "primary": {
+      "sentence": "The class was divided into four study groups.",
+      "target": "into",
+      "translation": "这个班被分成了四个学习小组。",
+      "sense": "prep. 进入；成为；撞上；关于；对……有兴趣",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-066:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-079": {
+    "primary": {
+      "sentence": "Her clear accent made the English speech easy to understand.",
+      "target": "accent",
+      "translation": "她清晰的口音使这篇英语演讲容易理解。",
+      "sense": "n. 口音；重音；强调；vt. 强调；突出",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-079:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-090": {
+    "primary": {
+      "sentence": "The teacher gave them ten minutes to finish the exercise.",
+      "target": "them",
+      "translation": "老师给了他们十分钟完成练习。",
+      "sense": "pron. 他们；她们；它们（宾格）",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-090:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-108": {
+    "primary": {
+      "sentence": "The passage is about the importance of environmental protection.",
+      "target": "about",
+      "translation": "这篇文章讲的是环境保护的重要性。",
+      "sense": "prep. 关于；在……周围；涉及；adv. 大约；周围；将要",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-108:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blueforest-20260806-33-109": {
+    "primary": {
+      "sentence": "She keeps a notebook for new words and useful expressions.",
+      "target": "a",
+      "translation": "她用一个笔记本记录新单词和有用表达。",
+      "sense": "art. 一（个）；任一；每一；n. 字母A；第一等；甲级",
+      "pos": "other",
+      "level": "basic",
+      "source": "reviewed-exam-context",
+      "contextKind": "exam-authored",
+      "generatedBy": "human-review-v70-b026",
+      "templateFamily": "individually-reviewed",
+      "contextId": "blueforest-20260806-33-109:primary",
+      "batch": "v70-b026"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-068": {
+    "primary": {
+      "sentence": "The writer uses a real example to show why people need to talk to their classmates.",
+      "target": "talk to their classmates",
+      "translation": "作者用真实例子说明人们为什么需要对某人说话。",
+      "sense": "对某人说话",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blue-forest-b2-068:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-069": {
+    "primary": {
+      "sentence": "Students are encouraged to talk about the task during their college years.",
+      "target": "talk about the task",
+      "translation": "大学生在校期间应积极谈论某事。",
+      "sense": "谈论某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blue-forest-b2-069:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-071": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between a fly away and environmental protection.",
+      "target": "fly away",
+      "translation": "研究人员考察了飞走与环境保护之间的关系。",
+      "sense": "飞走",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-phrase-exam",
+      "contextId": "blue-forest-b2-071:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-074": {
+    "primary": {
+      "sentence": "Don't give up on your dreams.",
+      "target": "give up",
+      "translation": "不要放弃你的梦想。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-074",
+      "sense": "放弃",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-074:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-075": {
+    "primary": {
+      "sentence": "Don't give away the answer.",
+      "target": "give away",
+      "translation": "不要泄露答案。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-075",
+      "sense": "泄露；赠送",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-075:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-076": {
+    "primary": {
+      "sentence": "The teacher will give out the test papers now.",
+      "target": "give out",
+      "translation": "老师现在要分发试卷。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-076",
+      "sense": "分发；耗尽",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-076:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-077": {
+    "primary": {
+      "sentence": "Students are encouraged to give in during their college years.",
+      "target": "give in",
+      "translation": "大学生在校期间应积极屈服。",
+      "sense": "屈服",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blue-forest-b2-077:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-078": {
+    "primary": {
+      "sentence": "The flowers give off a sweet smell.",
+      "target": "give off",
+      "translation": "这些花散发出香味。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-078",
+      "sense": "散发",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-078:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260720-15-001": {
+    "primary": {
+      "sentence": "College students should apply for a scholarship when they make plans for the future.",
+      "target": "apply for a scholarship",
+      "translation": "大学生规划未来时应当申请。",
+      "sense": "申请",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blueforest-20260720-15-001:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260722-17-002": {
+    "primary": {
+      "sentence": "Students are encouraged to apply to the university during their college years.",
+      "target": "apply to the university",
+      "translation": "大学生在校期间应积极应用于。",
+      "sense": "应用于",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blueforest-20260722-17-002:primary"
+    },
+    "extra": []
+  },
+  "lansen-pdf-a-20260624-013": {
+    "primary": {
+      "sentence": "The writer uses a real example to show why people need to fail to solve practical problems.",
+      "target": "fail to solve practical problems",
+      "translation": "作者用真实例子说明人们为什么需要未能做成某事。",
+      "sense": "未能做成某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "lansen-pdf-a-20260624-013:primary"
+    },
+    "extra": []
+  },
+  "lansen-pdf-a-20260624-014": {
+    "primary": {
+      "sentence": "A number of students are playing basketball.",
+      "target": "a number of",
+      "translation": "许多学生正在打篮球。",
+      "sourceField": "phrase",
+      "sourceRef": "lansen-pdf-a-20260624-014",
+      "sense": "许多；大量",
+      "pos": "phrase",
+      "level": "蓝色森林 4 / 第一章词汇短语",
+      "source": "existing",
+      "contextId": "lansen-pdf-a-20260624-014:primary"
+    },
+    "extra": []
+  },
+  "lansen-pdf-a-20260624-015": {
+    "primary": {
+      "sentence": "The number of students in our class is thirty.",
+      "target": "the number of",
+      "translation": "我们班的学生人数是三十。",
+      "sourceField": "phrase",
+      "sourceRef": "lansen-pdf-a-20260624-015",
+      "sense": "……的数量",
+      "pos": "phrase",
+      "level": "蓝色森林 4 / 第一章词汇短语",
+      "source": "existing",
+      "contextId": "lansen-pdf-a-20260624-015:primary"
+    },
+    "extra": []
+  },
+  "lansen-pdf-a-20260624-016": {
+    "primary": {
+      "sentence": "Many a student has failed this test.",
+      "target": "many a",
+      "translation": "许多学生没有通过这次考试。",
+      "sourceField": "phrase",
+      "sourceRef": "lansen-pdf-a-20260624-016",
+      "sense": "许多（后接单数名词）",
+      "pos": "phrase",
+      "level": "蓝色森林 4 / 第一章词汇短语",
+      "source": "existing",
+      "contextId": "lansen-pdf-a-20260624-016:primary"
+    },
+    "extra": []
+  },
+  "lansen-pdf-a-20260624-017": {
+    "primary": {
+      "sentence": "There is more than one way to solve this problem.",
+      "target": "more than one",
+      "translation": "解决这个问题的方法不止一种。",
+      "sourceField": "phrase",
+      "sourceRef": "lansen-pdf-a-20260624-017",
+      "sense": "不止一个",
+      "pos": "phrase",
+      "level": "蓝色森林 4 / 第一章词汇短语",
+      "source": "existing",
+      "contextId": "lansen-pdf-a-20260624-017:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-054": {
+    "primary": {
+      "sentence": "Please hand in your application form before the deadline.",
+      "target": "hand in",
+      "translation": "请在截止日期前提交申请表。",
+      "sense": "上交",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "用户资料例句",
+      "contextKind": "source-example",
+      "generatedBy": "source-import-v1",
+      "templateFamily": "source-example",
+      "contextId": "blue-forest-b2-054:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-055": {
+    "primary": {
+      "sentence": "The teacher will hand out the test papers now.",
+      "target": "hand out",
+      "translation": "老师现在要分发试卷。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-055",
+      "sense": "分发；散发",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-055:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-056": {
+    "primary": {
+      "sentence": "Please hand over your homework to the teacher.",
+      "target": "hand over",
+      "translation": "请把作业交给老师。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-056",
+      "sense": "移交；交出",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-056:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-060": {
+    "primary": {
+      "sentence": "The mayor held a press conference to answer questions from reporters.",
+      "target": "press conference",
+      "translation": "市长召开新闻发布会回答记者的问题。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-060",
+      "sense": "新闻招待会；新闻发布会",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-060:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-064": {
+    "primary": {
+      "sentence": "Keep practicing the piano. Remember, practice makes perfect.",
+      "target": "practice makes perfect",
+      "translation": "坚持练琴，记住熟能生巧。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-064",
+      "sense": "熟能生巧",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-064:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260719-14-001": {
+    "primary": {
+      "sentence": "The report includes useful information about a spoken/oral English.",
+      "target": "spoken/oral English",
+      "translation": "这份报告包含有关英语口语的有用信息。",
+      "sense": "英语口语",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-phrase-exam",
+      "contextId": "blueforest-20260719-14-001:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-067": {
+    "primary": {
+      "sentence": "The passage suggests that young people should talk with their classmates in order to solve practical problems.",
+      "target": "talk with their classmates",
+      "translation": "文章建议年轻人应和某人交谈，以解决实际问题。",
+      "sense": "和某人交谈",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blue-forest-b2-067:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-015": {
+    "primary": {
+      "sentence": "The passage suggests that young people should promise their classmates the task in order to solve practical problems.",
+      "target": "promise their classmates the task",
+      "translation": "文章建议年轻人应允诺某人某物，以解决实际问题。",
+      "sense": "允诺某人某物",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blue-forest-b2-015:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-016": {
+    "primary": {
+      "sentence": "College students should promise the task to their classmates when they make plans for the future.",
+      "target": "promise the task to their classmates",
+      "translation": "大学生规划未来时应当允诺某人某物。",
+      "sense": "允诺某人某物",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blue-forest-b2-016:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-030": {
+    "primary": {
+      "sentence": "He put forward a good idea for the school project.",
+      "target": "put forward",
+      "translation": "他为学校项目提出了一个好主意。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-030",
+      "sense": "提出",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-030:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260719-14-010": {
+    "primary": {
+      "sentence": "College students should put forward some suggestions/advice when they make plans for the future.",
+      "target": "put forward some suggestions/advice",
+      "translation": "大学生规划未来时应当提出建议。",
+      "sense": "提出建议",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blueforest-20260719-14-010:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-032": {
+    "primary": {
+      "sentence": "We should protect cultural relics because they tell us about history.",
+      "target": "cultural relics",
+      "translation": "我们应该保护文物，因为它们记录着历史。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-032",
+      "sense": "文物；文化遗迹",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-032:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260719-14-008": {
+    "primary": {
+      "sentence": "During social practice, students learn how to adjust to taking part in social practice.",
+      "target": "adjust to taking part in social practice",
+      "translation": "在社会实践中，学生学习如何调整以适应。",
+      "sense": "调整以适应",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blueforest-20260719-14-008:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-048": {
+    "primary": {
+      "sentence": "The writer uses a real example to show why people need to explain the task to their classmates.",
+      "target": "explain the task to their classmates",
+      "translation": "作者用真实例子说明人们为什么需要向某人解释某事。",
+      "sense": "向某人解释某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blue-forest-b2-048:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260718-docx-002": {
+    "primary": {
+      "sentence": "College students should be afraid of taking part in social practice when they make plans for the future.",
+      "target": "be afraid of taking part in social practice",
+      "translation": "大学生规划未来时应当害怕会发生某事。",
+      "sense": "害怕会发生某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blueforest-20260718-docx-002:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260718-docx-001": {
+    "primary": {
+      "sentence": "The passage suggests that young people should be afraid to solve practical problems in order to solve practical problems.",
+      "target": "be afraid to solve practical problems",
+      "translation": "文章建议年轻人应不敢去做某事（缺乏勇气），以解决实际问题。",
+      "sense": "不敢去做某事（缺乏勇气）",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blueforest-20260718-docx-001:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-006": {
+    "primary": {
+      "sentence": "We will return to school next Monday.",
+      "target": "return to",
+      "translation": "我们下周一回学校。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-006",
+      "sense": "回到",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-006:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-008": {
+    "primary": {
+      "sentence": "During social practice, students learn how to come to an end.",
+      "target": "come to an end",
+      "translation": "在社会实践中，学生学习如何结束。",
+      "sense": "结束",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blue-forest-b2-008:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-010": {
+    "primary": {
+      "sentence": "At last, the bus arrived.",
+      "target": "at last",
+      "translation": "公交车终于到了。",
+      "sourceField": "phrase",
+      "sourceRef": "blue-forest-b2-010",
+      "sense": "最终；终于",
+      "pos": "phrase",
+      "level": "蓝色森林 / 听写总结",
+      "source": "existing",
+      "contextId": "blue-forest-b2-010:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-012": {
+    "primary": {
+      "sentence": "The writer uses a real example to show why people need to buy their classmates the task.",
+      "target": "buy their classmates the task",
+      "translation": "作者用真实例子说明人们为什么需要给某人买某物。",
+      "sense": "给某人买某物",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blue-forest-b2-012:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-013": {
+    "primary": {
+      "sentence": "The passage suggests that young people should buy the task for their classmates in order to solve practical problems.",
+      "target": "buy the task for their classmates",
+      "translation": "文章建议年轻人应给某人买某物，以解决实际问题。",
+      "sense": "给某人买某物",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "verb-phrase-exam",
+      "contextId": "blue-forest-b2-013:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-001": {
+    "primary": {
+      "sentence": "The teacher used “rally” in a short reading passage during vocabulary review.",
+      "target": "rally",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“rally”。",
+      "sense": "n. 集会；集合；v. 召集；恢复",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-001:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-5-009": {
+    "primary": {
+      "sentence": "The passage asks readers to think carefully about a network.",
+      "target": "network",
+      "translation": "文章要求读者认真思考人际网。",
+      "sense": "人际网",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-5-009:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-003": {
+    "primary": {
+      "sentence": "The word “networking” appeared in today’s entrance-exam practice.",
+      "target": "networking",
+      "translation": "“networking”出现在今天的专升本练习中。",
+      "sense": "n. 建立人际网络；网络连接",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-003:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-004": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “cyberspace” quickly.",
+      "target": "cyberspace",
+      "translation": "小测时，全班需要快速识别“cyberspace”。",
+      "sense": "n. 网络空间",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "cet-20260807-28-004:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-005": {
+    "primary": {
+      "sentence": "The study group reviewed “hack” and then completed a sentence with it.",
+      "target": "hack",
+      "translation": "学习小组复习了“hack”，随后用它完成句子。",
+      "sense": "v. 砍；非法侵入；n. 黑客；劈砍",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-005:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-006": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “democracy”.",
+      "target": "democracy",
+      "translation": "一道词汇题检验学生是否理解“democracy”。",
+      "sense": "n. 民主；民主制度",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "cet-20260807-28-006:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-007": {
+    "primary": {
+      "sentence": "The learner added “socialize” to the weak-word list for another review.",
+      "target": "socialize",
+      "translation": "学习者把“socialize”加入薄弱词列表，准备再次复习。",
+      "sense": "v. 社交；使社会化",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-007:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-282": {
+    "primary": {
+      "sentence": "According to the survey, students have different views on socialism.",
+      "target": "socialism",
+      "translation": "调查显示，学生们对社会主义有不同看法。",
+      "sense": "社会主义",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-20260627-v29-282:primary"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-284": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of a socialist.",
+      "target": "socialist",
+      "translation": "这个例子帮助学生更清楚地理解社会主义者。",
+      "sense": "社会主义者",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-20260627-v29-284:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-006": {
+    "primary": {
+      "sentence": "The survey result was regarded as easy-going by the research team.",
+      "target": "easy-going",
+      "translation": "研究团队认为这项调查结果是随和的的。",
+      "sense": "随和的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260714-v68-word-006:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-011": {
+    "primary": {
+      "sentence": "The word “ally” appeared in today’s entrance-exam practice.",
+      "target": "ally",
+      "translation": "“ally”出现在今天的专升本练习中。",
+      "sense": "n. 盟友；v. 结盟",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-011:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-012": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “alliance” quickly.",
+      "target": "alliance",
+      "translation": "小测时，全班需要快速识别“alliance”。",
+      "sense": "n. 联盟；同盟关系",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "cet-20260807-28-012:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-013": {
+    "primary": {
+      "sentence": "The study group reviewed “association” and then completed a sentence with it.",
+      "target": "association",
+      "translation": "学习小组复习了“association”，随后用它完成句子。",
+      "sense": "n. 协会；联系；联想",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-013:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-07-135": {
+    "primary": {
+      "sentence": "The survey result was regarded as sociable by the research team.",
+      "target": "sociable",
+      "translation": "研究团队认为这项调查结果是善于交际的的。",
+      "sense": "善于交际的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260627-07-135:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-07-133": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to a society.",
+      "target": "society",
+      "translation": "阅读文章给出了一个与社会有关的清晰例子。",
+      "sense": "社会",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260627-07-133:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-07-134": {
+    "primary": {
+      "sentence": "The writer described the change as social in the final paragraph.",
+      "target": "social",
+      "translation": "作者在最后一段把这一变化描述为社会的。",
+      "sense": "社会的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260627-07-134:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-017": {
+    "primary": {
+      "sentence": "The teacher used “commuter” in a short reading passage during vocabulary review.",
+      "target": "commuter",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“commuter”。",
+      "sense": "n. 通勤者",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-017:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-018": {
+    "primary": {
+      "sentence": "Students marked “neighborhood” as a key word before discussing the passage.",
+      "target": "neighborhood",
+      "translation": "学生在讨论文章前把“neighborhood”标记为关键词。",
+      "sense": "n. 街区；邻里地区",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-018:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-019": {
+    "primary": {
+      "sentence": "The word “neighbor” appeared in today’s entrance-exam practice.",
+      "target": "neighbor",
+      "translation": "“neighbor”出现在今天的专升本练习中。",
+      "sense": "n. 邻居；邻近的人或事物",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-019:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-030": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose block to complete the sentence correctly.",
+      "target": "block",
+      "translation": "在语法练习中，学生需要选择“block”来正确完成句子。",
+      "sense": "街区。",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "fullway-complete-extra-030:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-021": {
+    "primary": {
+      "sentence": "The study group reviewed “associate” and then completed a sentence with it.",
+      "target": "associate",
+      "translation": "学习小组复习了“associate”，随后用它完成句子。",
+      "sense": "v. 联系；交往；n. 伙伴；adj. 副的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-021:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-147": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between community and public health.",
+      "target": "community",
+      "translation": "研究人员考察了社区，社会，群体。与公共健康之间的关系。",
+      "sense": "社区，社会，群体。",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-2026-prefix-147:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-023": {
+    "primary": {
+      "sentence": "The learner added “commune” to the weak-word list for another review.",
+      "target": "commune",
+      "translation": "学习者把“commune”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 公社；群体；v. 亲密交谈",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-023:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-285": {
+    "primary": {
+      "sentence": "Students learned more about a communist through the class discussion.",
+      "target": "communist",
+      "translation": "学生们通过课堂讨论进一步了解了共产主义者。",
+      "sense": "共产主义者",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-20260627-v29-285:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-025": {
+    "primary": {
+      "sentence": "The teacher used “communism” in a short reading passage during vocabulary review.",
+      "target": "communism",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“communism”。",
+      "sense": "n. 共产主义",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-025:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-026": {
+    "primary": {
+      "sentence": "Students marked “commute” as a key word before discussing the passage.",
+      "target": "commute",
+      "translation": "学生在讨论文章前把“commute”标记为关键词。",
+      "sense": "v. 通勤；减刑；n. 通勤",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-026:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-07-085": {
+    "primary": {
+      "sentence": "The writer described the change as communicative in the final paragraph.",
+      "target": "communicative",
+      "translation": "作者在最后一段把这一变化描述为善于交际的。",
+      "sense": "善于交际的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260627-07-085:primary"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-057": {
+    "primary": {
+      "sentence": "The survey result was regarded as mutual by the research team.",
+      "target": "mutual",
+      "translation": "研究团队认为这项调查结果是相互的。mutual trust 相互信任。的。",
+      "sense": "相互的。mutual trust 相互信任。",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "fullway-2026-prefix-057:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-029": {
+    "primary": {
+      "sentence": "The study group reviewed “telecommunications” and then completed a sentence with it.",
+      "target": "telecommunications",
+      "translation": "学习小组复习了“telecommunications”，随后用它完成句子。",
+      "sense": "n. 电信；远程通信",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-029:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-2-041": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of message.",
+      "target": "message",
+      "translation": "这个例子帮助学生更清楚地理解口信。",
+      "sense": "口信",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-2-041:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-031": {
+    "primary": {
+      "sentence": "The learner added “messenger” to the weak-word list for another review.",
+      "target": "messenger",
+      "translation": "学习者把“messenger”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 信使；送信人",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-031:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-032": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “superb” from the surrounding sentence.",
+      "target": "superb",
+      "translation": "在模拟考试中，学生根据上下文推断“superb”的含义。",
+      "sense": "adj. 极好的；卓越的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-032:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-033": {
+    "primary": {
+      "sentence": "The teacher used “supreme” in a short reading passage during vocabulary review.",
+      "target": "supreme",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“supreme”。",
+      "sense": "adj. 最高的；至高无上的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-033:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-034": {
+    "primary": {
+      "sentence": "Students marked “supremacy” as a key word before discussing the passage.",
+      "target": "supremacy",
+      "translation": "学生在讨论文章前把“supremacy”标记为关键词。",
+      "sense": "n. 至高地位；优势",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-034:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-145": {
+    "primary": {
+      "sentence": "With proper guidance, young people can communicate in a supportive environment.",
+      "target": "communicate",
+      "translation": "在适当指导下，年轻人可以在支持性的环境中交流，沟通。communicate with .。。",
+      "sense": "交流，沟通。communicate with .。",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-intransitive-exam",
+      "contextId": "fullway-2026-prefix-145:primary"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-146": {
+    "primary": {
+      "sentence": "The final paragraph focuses mainly on communication.",
+      "target": "communication",
+      "translation": "最后一段主要关注交流，沟通。。",
+      "sense": "交流，沟通。",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-2026-prefix-146:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-037": {
+    "primary": {
+      "sentence": "The study group reviewed “inferior” and then completed a sentence with it.",
+      "target": "inferior",
+      "translation": "学习小组复习了“inferior”，随后用它完成句子。",
+      "sense": "adj. 较差的；下级的；n. 下级",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-037:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-038": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “inferiority”.",
+      "target": "inferiority",
+      "translation": "一道词汇题检验学生是否理解“inferiority”。",
+      "sense": "n. 劣势；低等；自卑感",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "cet-20260807-28-038:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-039": {
+    "primary": {
+      "sentence": "The learner added “super” to the weak-word list for another review.",
+      "target": "super",
+      "translation": "学习者把“super”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 超级的；极好的；n. 主管",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-039:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-040": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “superior” from the surrounding sentence.",
+      "target": "superior",
+      "translation": "在模拟考试中，学生根据上下文推断“superior”的含义。",
+      "sense": "adj. 更好的；上级的；n. 上级",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-040:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-041": {
+    "primary": {
+      "sentence": "The teacher used “superiority” in a short reading passage during vocabulary review.",
+      "target": "superiority",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“superiority”。",
+      "sense": "n. 优越；优势",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-041:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-043": {
+    "primary": {
+      "sentence": "The word “elite” appeared in today’s entrance-exam practice.",
+      "target": "elite",
+      "translation": "“elite”出现在今天的专升本练习中。",
+      "sense": "n. 精英；adj. 精英的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-043:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-044": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “previous” quickly.",
+      "target": "previous",
+      "translation": "小测时，全班需要快速识别“previous”。",
+      "sense": "adj. 以前的；前一个的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "cet-20260807-28-044:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-045": {
+    "primary": {
+      "sentence": "The study group reviewed “prior” and then completed a sentence with it.",
+      "target": "prior",
+      "translation": "学习小组复习了“prior”，随后用它完成句子。",
+      "sense": "adj. 先前的；优先的；n. 先前事项",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-045:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-046": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “priority”.",
+      "target": "priority",
+      "translation": "一道词汇题检验学生是否理解“priority”。",
+      "sense": "n. 优先事项；优先权",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "cet-20260807-28-046:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-047": {
+    "primary": {
+      "sentence": "The learner added “authenticity” to the weak-word list for another review.",
+      "target": "authenticity",
+      "translation": "学习者把“authenticity”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 真实性；可靠性",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-047:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-048": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “sincere” from the surrounding sentence.",
+      "target": "sincere",
+      "translation": "在模拟考试中，学生根据上下文推断“sincere”的含义。",
+      "sense": "adj. 真诚的；诚挚的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-048:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-049": {
+    "primary": {
+      "sentence": "The teacher used “sincerely” in a short reading passage during vocabulary review.",
+      "target": "sincerely",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“sincerely”。",
+      "sense": "adv. 真诚地；诚挚地",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-049:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-050": {
+    "primary": {
+      "sentence": "Students marked “sincerity” as a key word before discussing the passage.",
+      "target": "sincerity",
+      "translation": "学生在讨论文章前把“sincerity”标记为关键词。",
+      "sense": "n. 真诚；诚意",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-050:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-051": {
+    "primary": {
+      "sentence": "The word “genuine” appeared in today’s entrance-exam practice.",
+      "target": "genuine",
+      "translation": "“genuine”出现在今天的专升本练习中。",
+      "sense": "adj. 真正的；真诚的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-051:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-052": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “authority” quickly.",
+      "target": "authority",
+      "translation": "小测时，全班需要快速识别“authority”。",
+      "sense": "n. 权力；权威；当局",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "cet-20260807-28-052:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-053": {
+    "primary": {
+      "sentence": "The study group reviewed “authoritative” and then completed a sentence with it.",
+      "target": "authoritative",
+      "translation": "学习小组复习了“authoritative”，随后用它完成句子。",
+      "sense": "adj. 权威的；有权威性的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-053:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-055": {
+    "primary": {
+      "sentence": "The learner added “authorization” to the weak-word list for another review.",
+      "target": "authorization",
+      "translation": "学习者把“authorization”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 授权；批准",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-055:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-056": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “authentic” from the surrounding sentence.",
+      "target": "authentic",
+      "translation": "在模拟考试中，学生根据上下文推断“authentic”的含义。",
+      "sense": "adj. 真实的；可信的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-056:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-8-001": {
+    "primary": {
+      "sentence": "Students were encouraged to mean the practical problem after a careful discussion.",
+      "target": "mean",
+      "translation": "经过认真讨论，学生们被鼓励去意思是这一实际问题。",
+      "sense": "意思是",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-8-001:primary"
+    },
+    "extra": []
+  },
+  "word-list-8-002": {
+    "primary": {
+      "sentence": "The report includes useful information about meaning.",
+      "target": "meaning",
+      "translation": "这份报告包含有关意义的有用信息。",
+      "sense": "意义",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-8-002:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-07-098": {
+    "primary": {
+      "sentence": "The writer described the change as meaningful in the final paragraph.",
+      "target": "meaningful",
+      "translation": "作者在最后一段把这一变化描述为有意义的。",
+      "sense": "有意义的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260627-07-098:primary"
+    },
+    "extra": []
+  },
+  "word-list-5-018": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to means.",
+      "target": "means",
+      "translation": "最近的一份报告讨论了与方法有关的若干变化。",
+      "sense": "方法",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-5-018:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-177": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose author to complete the sentence correctly.",
+      "target": "author",
+      "translation": "在语法练习中，学生需要选择“author”来正确完成句子。",
+      "sense": "作者。",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "fullway-complete-extra-177:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-062": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “liberal”.",
+      "target": "liberal",
+      "translation": "一道词汇题检验学生是否理解“liberal”。",
+      "sense": "adj. 开明的；自由的；慷慨的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "cet-20260807-28-062:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-063": {
+    "primary": {
+      "sentence": "The learner added “deliberate” to the weak-word list for another review.",
+      "target": "deliberate",
+      "translation": "学习者把“deliberate”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 深思熟虑的；故意的；v. 仔细考虑",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "cet-20260807-28-063:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-064": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “deliberation” from the surrounding sentence.",
+      "target": "deliberation",
+      "translation": "在模拟考试中，学生根据上下文推断“deliberation”的含义。",
+      "sense": "n. 深思熟虑；审议",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-064:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-065": {
+    "primary": {
+      "sentence": "The teacher used “generous” in a short reading passage during vocabulary review.",
+      "target": "generous",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“generous”。",
+      "sense": "adj. 慷慨的；丰富的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-065:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-066": {
+    "primary": {
+      "sentence": "Students marked “generosity” as a key word before discussing the passage.",
+      "target": "generosity",
+      "translation": "学生在讨论文章前把“generosity”标记为关键词。",
+      "sense": "n. 慷慨；大方",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-066:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-067": {
+    "primary": {
+      "sentence": "The word “broadcast” appeared in today’s entrance-exam practice.",
+      "target": "broadcast",
+      "translation": "“broadcast”出现在今天的专升本练习中。",
+      "sense": "n. 广播；v. 播送；传播",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-067:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-069": {
+    "primary": {
+      "sentence": "The study group reviewed “statue” and then completed a sentence with it.",
+      "target": "statue",
+      "translation": "学习小组复习了“statue”，随后用它完成句子。",
+      "sense": "n. 雕像",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-069:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-070": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “liberty”.",
+      "target": "liberty",
+      "translation": "一道词汇题检验学生是否理解“liberty”。",
+      "sense": "n. 自由；自由权",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "cet-20260807-28-070:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260722-17-014": {
+    "primary": {
+      "sentence": "Students were encouraged to liberate the practical problem after a careful discussion.",
+      "target": "liberate",
+      "translation": "经过认真讨论，学生们被鼓励去vt. 解放这一实际问题。",
+      "sense": "vt. 解放",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260722-17-014:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-072": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “liberation” from the surrounding sentence.",
+      "target": "liberation",
+      "translation": "在模拟考试中，学生根据上下文推断“liberation”的含义。",
+      "sense": "n. 解放；释放",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "cet-20260807-28-072:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-073": {
+    "primary": {
+      "sentence": "The teacher used “overhead” in a short reading passage during vocabulary review.",
+      "target": "overhead",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“overhead”。",
+      "sense": "adv. 在头顶上；adj. 头顶的；n. 经常费用",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-073:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-074": {
+    "primary": {
+      "sentence": "Students marked “forecast” as a key word before discussing the passage.",
+      "target": "forecast",
+      "translation": "学生在讨论文章前把“forecast”标记为关键词。",
+      "sense": "n. 预测；预报；v. 预测",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "cet-20260807-28-074:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-075": {
+    "primary": {
+      "sentence": "The word “cast” appeared in today’s entrance-exam practice.",
+      "target": "cast",
+      "translation": "“cast”出现在今天的专升本练习中。",
+      "sense": "v. 投掷；铸造；分配角色；n. 演员阵容",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "cet-20260807-28-075:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260721-16-042": {
+    "primary": {
+      "sentence": "The writer suggests that young people should toss the practical problem before making a final decision.",
+      "target": "toss",
+      "translation": "作者建议年轻人在作出最终决定前先抛这一实际问题。",
+      "sense": "抛",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260721-16-042:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-077": {
+    "primary": {
+      "sentence": "The study group reviewed “foremost” and then completed a sentence with it.",
+      "target": "foremost",
+      "translation": "学习小组复习了“foremost”，随后用它完成句子。",
+      "sense": "adj. 最重要的；最前面的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "cet-20260807-28-077:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-063": {
+    "primary": {
+      "sentence": "The university plans to foresee the practical problem in order to improve teaching quality.",
+      "target": "foresee",
+      "translation": "学校计划预见。fore- 预先 + see 看见。这一实际问题，以提高教学质量。",
+      "sense": "预见。fore- 预先 + see 看见。",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "fullway-2026-prefix-063:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-020": {
+    "primary": {
+      "sentence": "The writer mentions a foresight when discussing changes in modern society.",
+      "target": "foresight",
+      "translation": "作者在讨论现代社会变化时提到了先见之明。",
+      "sense": "先见之明",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260714-v68-word-020:primary"
+    },
+    "extra": []
+  },
+  "cet-20260807-28-081": {
+    "primary": {
+      "sentence": "The teacher used “oversee” in a short reading passage during vocabulary review.",
+      "target": "oversee",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“oversee”。",
+      "sense": "v. 监督；管理",
+      "pos": "word",
+      "level": "advanced",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "cet-20260807-28-081:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "lansen-white-20260624-042": {
+    "primary": {
+      "sentence": "The writer mentions a boy when discussing changes in modern society.",
+      "target": "boy",
+      "translation": "作者在讨论现代社会变化时提到了男孩。",
+      "sense": "男孩",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "lansen-white-20260624-042:primary"
+    },
+    "extra": []
+  },
+  "cet4-14-024": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between a bottom and daily communication.",
+      "target": "bottom",
+      "translation": "研究人员考察了底部与日常交流之间的关系。",
+      "sense": "底部",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet4-14-024:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-005": {
+    "primary": {
+      "sentence": "The study group reviewed “army” and then completed a sentence with it.",
+      "target": "army",
+      "translation": "学习小组复习了“army”，随后用它完成句子。",
+      "sense": "n. 军队；陆军",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-005:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-105": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose boss to complete the sentence correctly.",
+      "target": "boss",
+      "translation": "在语法练习中，学生需要选择“boss”来正确完成句子。",
+      "sense": "老板。",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "fullway-complete-extra-105:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-061": {
+    "primary": {
+      "sentence": "If the conditions improve, more students will be able to move.",
+      "target": "move",
+      "translation": "如果条件改善，更多学生将能够移动。",
+      "sense": "移动",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-intransitive-exam",
+      "contextId": "blue-forest-b2-061:primary"
+    },
+    "extra": []
+  },
+  "lansen-white-20260624-035": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of a music.",
+      "target": "music",
+      "translation": "这个例子帮助学生更清楚地理解音乐。",
+      "sense": "音乐",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "lansen-white-20260624-035:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-009": {
+    "primary": {
+      "sentence": "The teacher used “what” in a short reading passage during vocabulary review.",
+      "target": "what",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“what”。",
+      "sense": "pron. 什么；adj. 什么样的；int. 多么",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-009:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-010": {
+    "primary": {
+      "sentence": "Students marked “check” as a key word before discussing the passage.",
+      "target": "check",
+      "translation": "学生在讨论文章前把“check”标记为关键词。",
+      "sense": "v. 检查；核对；n. 检查；支票",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-010:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-4-038": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of future.",
+      "target": "future",
+      "translation": "这个例子帮助学生更清楚地理解将来。",
+      "sense": "将来",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-4-038:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-adjadv-014": {
+    "primary": {
+      "sentence": "After all the facts were considered, the situation seemed full.",
+      "target": "full",
+      "translation": "综合考虑所有事实后，情况显得满的。",
+      "sense": "满的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260628-adjadv-014:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-013": {
+    "primary": {
+      "sentence": "The study group reviewed “which” and then completed a sentence with it.",
+      "target": "which",
+      "translation": "学习小组复习了“which”，随后用它完成句子。",
+      "sense": "pron. 哪一个；哪些；adj. 哪个",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-013:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-014": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “whole”.",
+      "target": "whole",
+      "translation": "一道词汇题检验学生是否理解“whole”。",
+      "sense": "adj. 全部的；完整的；n. 整体",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-014:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-015": {
+    "primary": {
+      "sentence": "The learner added “general” to the weak-word list for another review.",
+      "target": "general",
+      "translation": "学习者把“general”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 一般的；总体的；n. 将军",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-015:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-adjadv-113": {
+    "primary": {
+      "sentence": "The writer suggests that young people should forget the practical problem before making a final decision.",
+      "target": "forget",
+      "translation": "作者建议年轻人在作出最终决定前先忘记这一实际问题。",
+      "sense": "忘记",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260628-adjadv-113:primary"
+    },
+    "extra": []
+  },
+  "word-list-3-018": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of water.",
+      "target": "water",
+      "translation": "这个例子帮助学生更清楚地理解水。",
+      "sense": "水",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-3-018:primary"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-357": {
+    "primary": {
+      "sentence": "College students should learn to wear the practical problem through social practice.",
+      "target": "wear",
+      "translation": "大学生应通过社会实践学会穿着这一实际问题。",
+      "sense": "穿着",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "fullway-20260627-v29-357:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260716-12-004": {
+    "primary": {
+      "sentence": "The university organized a lecture on a fox for first-year students.",
+      "target": "fox",
+      "translation": "学校为大一学生举办了一场关于狐狸的讲座。",
+      "sense": "狐狸",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260716-12-004:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260720-15-027": {
+    "primary": {
+      "sentence": "A total of fourteen students took part in the campus survey last week.",
+      "target": "fourteen",
+      "translation": "上周共有十四名学生参加了校园调查。",
+      "sense": "十四",
+      "pos": "numeral",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "numeral-exam",
+      "contextId": "blueforest-20260720-15-027:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260716-12-007": {
+    "primary": {
+      "sentence": "Students can learn a great deal from social practice.",
+      "target": "from",
+      "translation": "学生可以从社会实践中学到很多。",
+      "sense": "prep. 从……（起点）",
+      "pos": "other",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "function-word",
+      "contextId": "blueforest-20260716-12-007:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-023": {
+    "primary": {
+      "sentence": "The learner added “friend” to the weak-word list for another review.",
+      "target": "friend",
+      "translation": "学习者把“friend”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 朋友",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-023:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-024": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “history” from the surrounding sentence.",
+      "target": "history",
+      "translation": "在模拟考试中，学生根据上下文推断“history”的含义。",
+      "sense": "n. 历史；经历",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-024:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway1-v32-fix-009": {
+    "primary": {
+      "sentence": "College students should learn to watch the practical problem through social practice.",
+      "target": "watch",
+      "translation": "大学生应通过社会实践学会观看这一实际问题。",
+      "sense": "观看",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "fullway1-v32-fix-009:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-07-060": {
+    "primary": {
+      "sentence": "Students were encouraged to follow the practical problem after a careful discussion.",
+      "target": "follow",
+      "translation": "经过认真讨论，学生们被鼓励去跟随这一实际问题。",
+      "sense": "跟随",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260627-07-060:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260720-15-048": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to a food.",
+      "target": "food",
+      "translation": "最近的一份报告讨论了与食物有关的若干变化。",
+      "sense": "食物",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260720-15-048:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-017": {
+    "primary": {
+      "sentence": "The report includes useful information about a foot.",
+      "target": "foot",
+      "translation": "这份报告包含有关脚的有用信息。",
+      "sense": "脚",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260714-v68-word-017:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-phrase-083": {
+    "primary": {
+      "sentence": "The university plans to force the practical problem in order to improve teaching quality.",
+      "target": "force",
+      "translation": "学校计划强迫这一实际问题，以提高教学质量。",
+      "sense": "强迫",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260714-v68-phrase-083:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-030": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “fork”.",
+      "target": "fork",
+      "translation": "一道词汇题检验学生是否理解“fork”。",
+      "sense": "n. 叉子；分叉；v. 分岔",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-030:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "wordlist-20260628-v42-142": {
+    "primary": {
+      "sentence": "The final paragraph focuses mainly on a film.",
+      "target": "film",
+      "translation": "最后一段主要关注胶片。",
+      "sense": "胶片",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "wordlist-20260628-v42-142:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-032": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “fish” from the surrounding sentence.",
+      "target": "fish",
+      "translation": "在模拟考试中，学生根据上下文推断“fish”的含义。",
+      "sense": "n. 鱼；v. 钓鱼",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-032:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-033": {
+    "primary": {
+      "sentence": "The teacher used “fit” in a short reading passage during vocabulary review.",
+      "target": "fit",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“fit”。",
+      "sense": "v. 合适；安装；adj. 健康的；适合的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-033:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-032": {
+    "primary": {
+      "sentence": "The university plans to fix the practical problem in order to improve teaching quality.",
+      "target": "fix",
+      "translation": "学校计划vt. 修理这一实际问题，以提高教学质量。",
+      "sense": "vt. 修理",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260714-v68-word-032:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-027": {
+    "primary": {
+      "sentence": "According to the survey, students have different views on a floor.",
+      "target": "floor",
+      "translation": "调查显示，学生们对地板有不同看法。",
+      "sense": "地板",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-forest-027:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-034": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose flower to complete the sentence correctly.",
+      "target": "flower",
+      "translation": "在语法练习中，学生需要选择“flower”来正确完成句子。",
+      "sense": "花。",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "fullway-complete-extra-034:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-030": {
+    "primary": {
+      "sentence": "The writer mentions a fever when discussing changes in modern society.",
+      "target": "fever",
+      "translation": "作者在讨论现代社会变化时提到了发烧。",
+      "sense": "发烧",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260714-v68-word-030:primary"
+    },
+    "extra": []
+  },
+  "wordlist-20260628-v42-121": {
+    "primary": {
+      "sentence": "The writer mentions festival when discussing changes in modern society.",
+      "target": "festival",
+      "translation": "作者在讨论现代社会变化时提到了节日。",
+      "sense": "节日",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "wordlist-20260628-v42-121:primary"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-196": {
+    "primary": {
+      "sentence": "The survey result was regarded as fine by the research team.",
+      "target": "fine",
+      "translation": "研究团队认为这项调查结果是优质的的。",
+      "sense": "优质的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "fullway-20260627-v29-196:primary"
+    },
+    "extra": []
+  },
+  "cet4-20260727-17-027": {
+    "primary": {
+      "sentence": "The teacher used a fire as the topic of a short writing task.",
+      "target": "fire",
+      "translation": "老师把火；解雇作为一项短文写作任务的主题。",
+      "sense": "火；解雇",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet4-20260727-17-027:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-045": {
+    "primary": {
+      "sentence": "The study group reviewed “fast” and then completed a sentence with it.",
+      "target": "fast",
+      "translation": "学习小组复习了“fast”，随后用它完成句子。",
+      "sense": "adj. 快的；adv. 快速地；牢固地",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-045:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-10-029": {
+    "primary": {
+      "sentence": "The teacher used a fear as the topic of a short writing task.",
+      "target": "fear",
+      "translation": "老师把/v. 害怕作为一项短文写作任务的主题。",
+      "sense": "/v. 害怕",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-10-029:primary"
+    },
+    "extra": []
+  },
+  "lansen-pdf-b-20260624-059": {
+    "primary": {
+      "sentence": "The survey result was regarded as international by the research team.",
+      "target": "international",
+      "translation": "研究团队认为这项调查结果是国际的的。",
+      "sense": "国际的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "lansen-pdf-b-20260624-059:primary"
+    },
+    "extra": []
+  },
+  "word-list-2-006": {
+    "primary": {
+      "sentence": "Students were encouraged to feel the practical problem after a careful discussion.",
+      "target": "feel",
+      "translation": "经过认真讨论，学生们被鼓励去感觉这一实际问题。",
+      "sense": "感觉",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-2-006:primary"
+    },
+    "extra": []
+  },
+  "cet4-20260727-17-001": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of treasure.",
+      "target": "treasure",
+      "translation": "这个例子帮助学生更清楚地理解金银财宝。",
+      "sense": "金银财宝",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet4-20260727-17-001:primary"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-354": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to a family.",
+      "target": "family",
+      "translation": "阅读文章给出了一个与家庭有关的清晰例子。",
+      "sense": "家庭",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-20260627-v29-354:primary"
+    },
+    "extra": []
+  },
+  "word-list-8-008": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of a fact.",
+      "target": "fact",
+      "translation": "这个例子帮助学生更清楚地理解事实。",
+      "sense": "事实",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-8-008:primary"
+    },
+    "extra": []
+  },
+  "wordlist-20260628-v42-078": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between a care and community service.",
+      "target": "care",
+      "translation": "研究人员考察了照顾与社区服务之间的关系。",
+      "sense": "照顾",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "wordlist-20260628-v42-078:primary"
+    },
+    "extra": []
+  },
+  "word-list-8-010": {
+    "primary": {
+      "sentence": "The teacher used truth as the topic of a short writing task.",
+      "target": "truth",
+      "translation": "老师把事实作为一项短文写作任务的主题。",
+      "sense": "事实",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-8-010:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-057": {
+    "primary": {
+      "sentence": "The teacher used “far” in a short reading passage during vocabulary review.",
+      "target": "far",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“far”。",
+      "sense": "adv. 远；很大程度上；adj. 遥远的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-057:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-058": {
+    "primary": {
+      "sentence": "Students marked “fat” as a key word before discussing the passage.",
+      "target": "fat",
+      "translation": "学生在讨论文章前把“fat”标记为关键词。",
+      "sense": "adj. 肥胖的；n. 脂肪",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-058:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-073": {
+    "primary": {
+      "sentence": "The university plans to excite the practical problem in order to improve teaching quality.",
+      "target": "excite",
+      "translation": "学校计划使兴奋。这一实际问题，以提高教学质量。",
+      "sense": "使兴奋。",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "fullway-complete-extra-073:primary"
+    },
+    "extra": []
+  },
+  "word-list-8-028": {
+    "primary": {
+      "sentence": "The final paragraph focuses mainly on a ground.",
+      "target": "ground",
+      "translation": "最后一段主要关注地。",
+      "sense": "地",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-8-028:primary"
+    },
+    "extra": []
+  },
+  "word-list-10-006": {
+    "primary": {
+      "sentence": "The writer mentions a card when discussing changes in modern society.",
+      "target": "card",
+      "translation": "作者在讨论现代社会变化时提到了卡片。",
+      "sense": "卡片",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-10-006:primary"
+    },
+    "extra": []
+  },
+  "word-list-10-016": {
+    "primary": {
+      "sentence": "The speaker explained the difficult point even, so everyone understood it.",
+      "target": "even",
+      "translation": "演讲者即使解释了难点，因此大家都听懂了。",
+      "sense": "即使",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "adverb-exam",
+      "contextId": "word-list-10-016:primary"
+    },
+    "extra": []
+  },
+  "word-list-9-002": {
+    "primary": {
+      "sentence": "The writer suggests that young people should examine the social issue before making a final decision.",
+      "target": "examine",
+      "translation": "作者建议年轻人在作出最终决定前先检查这一社会问题。",
+      "sense": "检查",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-9-002:primary"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-091": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose except to complete the sentence correctly.",
+      "target": "except",
+      "translation": "在语法练习中，学生需要选择“except”来正确完成句子。",
+      "sense": "prep. 除了……以外。注意和 exclude 区分。",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "fullway-2026-prefix-091:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-070": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “top”.",
+      "target": "top",
+      "translation": "一道词汇题检验学生是否理解“top”。",
+      "sense": "n. 顶部；最高处；adj. 最高的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-070:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-085": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to experience.",
+      "target": "experience",
+      "translation": "阅读文章给出了一个与/v. 经历有关的清晰例子。",
+      "sense": "/v. 经历",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-forest-b2-085:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-072": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “exercise” from the surrounding sentence.",
+      "target": "exercise",
+      "translation": "在模拟考试中，学生根据上下文推断“exercise”的含义。",
+      "sense": "n. 锻炼；练习；v. 锻炼",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-072:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-3-012": {
+    "primary": {
+      "sentence": "The writer suggests that young people should enjoy the practical problem before making a final decision.",
+      "target": "enjoy",
+      "translation": "作者建议年轻人在作出最终决定前先享受这一实际问题。",
+      "sense": "享受",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-3-012:primary"
+    },
+    "extra": []
+  },
+  "word-list-9-030": {
+    "primary": {
+      "sentence": "After all the facts were considered, the situation seemed enough.",
+      "target": "enough",
+      "translation": "综合考虑所有事实后，情况显得/pron./adv. 足够。",
+      "sense": "/pron./adv. 足够",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "word-list-9-030:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-103": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose environment to complete the sentence correctly.",
+      "target": "environment",
+      "translation": "在语法练习中，学生需要选择“environment”来正确完成句子。",
+      "sense": "环境。",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "fullway-complete-extra-103:primary"
+    },
+    "extra": []
+  },
+  "word-list-8-040": {
+    "primary": {
+      "sentence": "The final paragraph focuses mainly on university.",
+      "target": "university",
+      "translation": "最后一段主要关注综合性大学。",
+      "sense": "综合性大学",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-8-040:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260719-14-026": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose everything to complete the sentence correctly.",
+      "target": "everything",
+      "translation": "在语法练习中，学生需要选择“everything”来正确完成句子。",
+      "sense": "pron. 一切事物",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blueforest-20260719-14-026:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-079": {
+    "primary": {
+      "sentence": "The learner added “everybody” to the weak-word list for another review.",
+      "target": "everybody",
+      "translation": "学习者把“everybody”加入薄弱词列表，准备再次复习。",
+      "sense": "pron. 每个人",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-079:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260629-v44-missing-004": {
+    "primary": {
+      "sentence": "The writer suggests that young people should translate the practical problem before making a final decision.",
+      "target": "translate",
+      "translation": "作者建议年轻人在作出最终决定前先vt. 翻译这一实际问题。",
+      "sense": "vt. 翻译",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260629-v44-missing-004:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-010": {
+    "primary": {
+      "sentence": "The speaker explained the difficult point else, so everyone understood it.",
+      "target": "else",
+      "translation": "演讲者其他解释了难点，因此大家都听懂了。",
+      "sense": "其他",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "adverb-exam",
+      "contextId": "blueforest-20260714-v68-word-010:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-011": {
+    "primary": {
+      "sentence": "The final paragraph focuses mainly on an email.",
+      "target": "email",
+      "translation": "最后一段主要关注电子邮件。",
+      "sense": "电子邮件",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260714-v68-word-011:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-083": {
+    "primary": {
+      "sentence": "The word “elephant” appeared in today’s entrance-exam practice.",
+      "target": "elephant",
+      "translation": "“elephant”出现在今天的专升本练习中。",
+      "sense": "n. 大象",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-083:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blue-18-016": {
+    "primary": {
+      "sentence": "College students should learn to encourage students in need through social practice.",
+      "target": "encourage",
+      "translation": "大学生应通过社会实践学会鼓励有需要的学生。",
+      "sense": "鼓励",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blue-18-016:primary"
+    },
+    "extra": []
+  },
+  "word-list-4-015": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to an end.",
+      "target": "end",
+      "translation": "最近的一份报告讨论了与最后部分有关的若干变化。",
+      "sense": "最后部分",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-4-015:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-031": {
+    "primary": {
+      "sentence": "The teacher used an energy as the topic of a short writing task.",
+      "target": "energy",
+      "translation": "老师把精力作为一项短文写作任务的主题。",
+      "sense": "精力",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-complete-extra-031:primary"
+    },
+    "extra": []
+  },
+  "word-list-1-030": {
+    "primary": {
+      "sentence": "Modern technology makes it easier for people to buy the practical problem.",
+      "target": "buy",
+      "translation": "现代技术使人们更容易买这一实际问题。",
+      "sense": "买",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-1-030:primary"
+    },
+    "extra": []
+  },
+  "word-list-6-028": {
+    "primary": {
+      "sentence": "After all the facts were considered, the situation seemed easy.",
+      "target": "easy",
+      "translation": "综合考虑所有事实后，情况显得容易的。",
+      "sense": "容易的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "word-list-6-028:primary"
+    },
+    "extra": []
+  },
+  "blue-20260726-21-027": {
+    "primary": {
+      "sentence": "The passage asks readers to think carefully about an egg.",
+      "target": "egg",
+      "translation": "文章要求读者认真思考鸡蛋。",
+      "sense": "鸡蛋",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-20260726-21-027:primary"
+    },
+    "extra": []
+  },
+  "blue-20260726-21-004": {
+    "primary": {
+      "sentence": "The final paragraph focuses mainly on an eighteen.",
+      "target": "eighteen",
+      "translation": "最后一段主要关注十八。",
+      "sense": "十八",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-20260726-21-004:primary"
+    },
+    "extra": []
+  },
+  "cet4-20260629-v43-001": {
+    "primary": {
+      "sentence": "The passage explains why people need to burn the practical problem in a changing society.",
+      "target": "burn",
+      "translation": "文章解释了人们为什么需要在变化的社会中vi. 燃烧这一实际问题。",
+      "sense": "vi. 燃烧",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "cet4-20260629-v43-001:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-051": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose duty to complete the sentence correctly.",
+      "target": "duty",
+      "translation": "在语法练习中，学生需要选择“duty”来正确完成句子。",
+      "sense": "责任",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "fullway-complete-extra-051:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-097": {
+    "primary": {
+      "sentence": "The teacher used “ear” in a short reading passage during vocabulary review.",
+      "target": "ear",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“ear”。",
+      "sense": "n. 耳朵；听觉",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-097:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-008": {
+    "primary": {
+      "sentence": "The writer mentions a duck when discussing changes in modern society.",
+      "target": "duck",
+      "translation": "作者在讨论现代社会变化时提到了鸭子。",
+      "sense": "鸭子",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260714-v68-word-008:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260722-17-035": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to a door.",
+      "target": "door",
+      "translation": "阅读文章给出了一个与门有关的清晰例子。",
+      "sense": "门",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260722-17-035:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-102": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “down”.",
+      "target": "down",
+      "translation": "一道词汇题检验学生是否理解“down”。",
+      "sense": "adv. 向下；prep. 沿着；adj. 向下的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-102:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-103": {
+    "primary": {
+      "sentence": "The learner added “that” to the weak-word list for another review.",
+      "target": "that",
+      "translation": "学习者把“that”加入薄弱词列表，准备再次复习。",
+      "sense": "pron. 那个；conj. 那；adj. 那个",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-103:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-005": {
+    "primary": {
+      "sentence": "The writer suggests that young people should drive the practical problem before making a final decision.",
+      "target": "drive",
+      "translation": "作者建议年轻人在作出最终决定前先驾驶这一实际问题。",
+      "sense": "驾驶",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260714-v68-word-005:primary"
+    },
+    "extra": []
+  },
+  "cet4-20260726-16-056": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of a drawer.",
+      "target": "drawer",
+      "translation": "这个例子帮助学生更清楚地理解抽屉。",
+      "sense": "抽屉",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet4-20260726-16-056:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-007": {
+    "primary": {
+      "sentence": "The passage explains why people need to drop unnecessary waste in a changing society.",
+      "target": "drop",
+      "translation": "文章解释了人们为什么需要在变化的社会中使落下不必要的浪费。",
+      "sense": "使落下",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260714-v68-word-007:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-108": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “yes” quickly.",
+      "target": "yes",
+      "translation": "小测时，全班需要快速识别“yes”。",
+      "sense": "int. 是；对",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-108:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260719-14-040": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose you to complete the sentence correctly.",
+      "target": "you",
+      "translation": "在语法练习中，学生需要选择“you”来正确完成句子。",
+      "sense": "pron. 你",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blueforest-20260719-14-040:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-010": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose yours to complete the sentence correctly.",
+      "target": "yours",
+      "translation": "在语法练习中，学生需要选择“yours”来正确完成句子。",
+      "sense": "pron. 你（们）的东西",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blue-forest-010:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-113": {
+    "primary": {
+      "sentence": "The teacher used “downstairs” in a short reading passage during vocabulary review.",
+      "target": "downstairs",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“downstairs”。",
+      "sense": "adv. 在楼下；adj. 楼下的；n. 楼下",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-113:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-1-019": {
+    "primary": {
+      "sentence": "The university organized a lecture on a dollar for first-year students.",
+      "target": "dollar",
+      "translation": "学校为大一学生举办了一场关于美元的讲座。",
+      "sense": "美元",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-1-019:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260719-14-054": {
+    "primary": {
+      "sentence": "Students learned more about a weekday through the class discussion.",
+      "target": "weekday",
+      "translation": "学生们通过课堂讨论进一步了解了工作日。",
+      "sense": "工作日",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260719-14-054:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260725-20-026": {
+    "primary": {
+      "sentence": "The library is a place where students can study quietly.",
+      "target": "where",
+      "translation": "图书馆是学生可以安静学习的地方。",
+      "sense": "在哪里",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "function-word",
+      "contextId": "blueforest-20260725-20-026:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-002": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose whom to complete the sentence correctly.",
+      "target": "whom",
+      "translation": "在语法练习中，学生需要选择“whom”来正确完成句子。",
+      "sense": "pron. 谁，那个人（用作动词或介词的宾语）",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blueforest-20260714-v68-word-002:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-120": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “whose” from the surrounding sentence.",
+      "target": "whose",
+      "translation": "在模拟考试中，学生根据上下文推断“whose”的含义。",
+      "sense": "pron. 谁的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-120:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-004": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose would to complete the sentence correctly.",
+      "target": "would",
+      "translation": "在语法练习中，学生需要选择“would”来正确完成句子。",
+      "sense": "modal. will 的过去式",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blueforest-20260714-v68-word-004:primary"
+    },
+    "extra": []
+  },
+  "fullway1-v32-fix-023": {
+    "primary": {
+      "sentence": "The university plans to try the practical problem in order to improve teaching quality.",
+      "target": "try",
+      "translation": "学校计划尝试，努力这一实际问题，以提高教学质量。",
+      "sense": "尝试，努力",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "fullway1-v32-fix-023:primary"
+    },
+    "extra": []
+  },
+  "word-list-4-024": {
+    "primary": {
+      "sentence": "Students should read the instructions under before answering the questions.",
+      "target": "under",
+      "translation": "学生答题前应在下面阅读说明。",
+      "sense": "在下面",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "adverb-exam",
+      "contextId": "word-list-4-024:primary"
+    },
+    "extra": []
+  },
+  "wordlist-20260628-v42-164": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose unless to complete the sentence correctly.",
+      "target": "unless",
+      "translation": "在语法练习中，学生需要选择“unless”来正确完成句子。",
+      "sense": "conj. 除非",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "wordlist-20260628-v42-164:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260718-docx-017": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose upon to complete the sentence correctly.",
+      "target": "upon",
+      "translation": "在语法练习中，学生需要选择“upon”来正确完成句子。",
+      "sense": "prep. 在……上",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blueforest-20260718-docx-017:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-128": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “usual” from the surrounding sentence.",
+      "target": "usual",
+      "translation": "在模拟考试中，学生根据上下文推断“usual”的含义。",
+      "sense": "adj. 通常的；惯常的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-128:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260629-v43-013": {
+    "primary": {
+      "sentence": "The report includes useful information about a volleyball.",
+      "target": "volleyball",
+      "translation": "这份报告包含有关排球（运动）的有用信息。",
+      "sense": "排球（运动）",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260629-v43-013:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260725-20-013": {
+    "primary": {
+      "sentence": "The writer mentions a tomato when discussing changes in modern society.",
+      "target": "tomato",
+      "translation": "作者在讨论现代社会变化时提到了番茄。",
+      "sense": "番茄",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260725-20-013:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260725-20-015": {
+    "primary": {
+      "sentence": "According to the survey, students have different views on a ton.",
+      "target": "ton",
+      "translation": "调查显示，学生们对吨（重量单位）有不同看法。",
+      "sense": "吨（重量单位）",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260725-20-015:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-phrase-006": {
+    "primary": {
+      "sentence": "Students can improve their skills through regular practice.",
+      "target": "through",
+      "translation": "学生可以通过经常练习提高技能。",
+      "sense": "prep. 通过",
+      "pos": "other",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "function-word",
+      "contextId": "blueforest-20260714-v68-phrase-006:primary"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-174": {
+    "primary": {
+      "sentence": "The speaker explained the difficult point together, so everyone understood it.",
+      "target": "together",
+      "translation": "演讲者在一起解释了难点，因此大家都听懂了。",
+      "sense": "在一起",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "adverb-exam",
+      "contextId": "fullway-20260627-v29-174:primary"
+    },
+    "extra": []
+  },
+  "blue-20260726-21-039": {
+    "primary": {
+      "sentence": "Everyone agreed the new directions were too clear.",
+      "target": "too",
+      "translation": "大家都认为新的指示也（用于肯定句，通常置于句末）；过于；太清楚。",
+      "sense": "也（用于肯定句，通常置于句末）；过于；太",
+      "pos": "adverb",
+      "level": "basic",
+      "source": "authored",
+      "contextKind": "semantic",
+      "generatedBy": "semantic-v2",
+      "templateFamily": "adverb-degree",
+      "contextId": "blue-20260726-21-039:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260718-docx-015": {
+    "primary": {
+      "sentence": "Students learned more about trousers through the class discussion.",
+      "target": "trousers",
+      "translation": "学生们通过课堂讨论进一步了解了裤子（复数名词）。",
+      "sense": "裤子（复数名词）",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260718-docx-015:primary"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-049": {
+    "primary": {
+      "sentence": "College students should learn to solve some problems by themselves.",
+      "target": "themselves",
+      "translation": "大学生应学会独立解决一些问题。",
+      "sense": "他们自己",
+      "pos": "other",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "function-word",
+      "contextId": "blue-20260727-22-049:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-140": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “thirteen” quickly.",
+      "target": "thirteen",
+      "translation": "小测时，全班需要快速识别“thirteen”。",
+      "sense": "num. 十三",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-140:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blue-19-016": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose theirs to complete the sentence correctly.",
+      "target": "theirs",
+      "translation": "在语法练习中，学生需要选择“theirs”来正确完成句子。",
+      "sense": "pron. 他们的（所有物）",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blue-19-016:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-142": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “three”.",
+      "target": "three",
+      "translation": "一道词汇题检验学生是否理解“three”。",
+      "sense": "num. 三",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-142:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260718-docx-021": {
+    "primary": {
+      "sentence": "The survey result was regarded as tiny by the research team.",
+      "target": "tiny",
+      "translation": "研究团队认为这项调查结果是极小的的。",
+      "sense": "极小的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260718-docx-021:primary"
+    },
+    "extra": []
+  },
+  "blue-18-050": {
+    "primary": {
+      "sentence": "The writer described the change as tall in the final paragraph.",
+      "target": "tall",
+      "translation": "作者在最后一段把这一变化描述为高的。",
+      "sense": "高的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blue-18-050:primary"
+    },
+    "extra": []
+  },
+  "lansen-white-20260624-049": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to a taxi.",
+      "target": "taxi",
+      "translation": "最近的一份报告讨论了与出租车有关的若干变化。",
+      "sense": "出租车",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "lansen-white-20260624-049:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-059": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose technology to complete the sentence correctly.",
+      "target": "technology",
+      "translation": "在语法练习中，学生需要选择“technology”来正确完成句子。",
+      "sense": "科技",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "fullway-complete-extra-059:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-148": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “ten” quickly.",
+      "target": "ten",
+      "translation": "小测时，全班需要快速识别“ten”。",
+      "sense": "num. 十",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-148:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-001": {
+    "primary": {
+      "sentence": "The teacher used tennis as the topic of a short writing task.",
+      "target": "tennis",
+      "translation": "老师把网球运动作为一项短文写作任务的主题。",
+      "sense": "网球运动",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260627-06-001:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-150": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “terrible”.",
+      "target": "terrible",
+      "translation": "一道词汇题检验学生是否理解“terrible”。",
+      "sense": "adj. 糟糕的；可怕的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-150:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-153": {
+    "primary": {
+      "sentence": "The teacher used “sometimes” in a short reading passage during vocabulary review.",
+      "target": "sometimes",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“sometimes”。",
+      "sense": "adv. 有时",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-153:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-2-027": {
+    "primary": {
+      "sentence": "The teacher used a story as the topic of a short writing task.",
+      "target": "story",
+      "translation": "老师把故事作为一项短文写作任务的主题。",
+      "sense": "故事",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-2-027:primary"
+    },
+    "extra": []
+  },
+  "word-list-5-044": {
+    "primary": {
+      "sentence": "The survey result was regarded as stupid by the research team.",
+      "target": "stupid",
+      "translation": "研究团队认为这项调查结果是愚蠢的的。",
+      "sense": "愚蠢的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "word-list-5-044:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-035": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose such to complete the sentence correctly.",
+      "target": "such",
+      "translation": "在语法练习中，学生需要选择“such”来正确完成句子。",
+      "sense": "det. 这样的",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blue-forest-035:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-adjadv-116": {
+    "primary": {
+      "sentence": "The survey result was regarded as sudden by the research team.",
+      "target": "sudden",
+      "translation": "研究团队认为这项调查结果是突然的，意外的的。",
+      "sense": "突然的，意外的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260628-adjadv-116:primary"
+    },
+    "extra": []
+  },
+  "wordlist-20260628-v42-150": {
+    "primary": {
+      "sentence": "Most students considered the new learning method silent.",
+      "target": "silent",
+      "translation": "大多数学生认为这种新学习方法很安静的。",
+      "sense": "安静的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "wordlist-20260628-v42-150:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-adjadv-102": {
+    "primary": {
+      "sentence": "After all the facts were considered, the situation seemed similar.",
+      "target": "similar",
+      "translation": "综合考虑所有事实后，情况显得相似的。",
+      "sense": "相似的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260628-adjadv-102:primary"
+    },
+    "extra": []
+  },
+  "word-list-2-017": {
+    "primary": {
+      "sentence": "The passage explains why some people may speak when they face pressure.",
+      "target": "speak",
+      "translation": "文章解释了有些人在面对压力时为什么会谈话。",
+      "sense": "谈话",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-intransitive-exam",
+      "contextId": "word-list-2-017:primary"
+    },
+    "extra": []
+  },
+  "word-list-2-020": {
+    "primary": {
+      "sentence": "The teacher used a speech as the topic of a short writing task.",
+      "target": "speech",
+      "translation": "老师把说话作为一项短文写作任务的主题。",
+      "sense": "说话",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-2-020:primary"
+    },
+    "extra": []
+  },
+  "word-list-1-054": {
+    "primary": {
+      "sentence": "Modern technology makes it easier for people to spend the practical problem.",
+      "target": "spend",
+      "translation": "现代技术使人们更容易花费这一实际问题。",
+      "sense": "花费",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-1-054:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-166": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “seldom”.",
+      "target": "seldom",
+      "translation": "一道词汇题检验学生是否理解“seldom”。",
+      "sense": "adv. 很少；不常",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-166:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-167": {
+    "primary": {
+      "sentence": "The learner added “shelf” to the weak-word list for another review.",
+      "target": "shelf",
+      "translation": "学习者把“shelf”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 架子；搁板",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-167:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-168": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “ship” from the surrounding sentence.",
+      "target": "ship",
+      "translation": "在模拟考试中，学生根据上下文推断“ship”的含义。",
+      "sense": "n. 船；v. 运送",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-168:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-146": {
+    "primary": {
+      "sentence": "After all the facts were considered, the situation seemed several.",
+      "target": "several",
+      "translation": "综合考虑所有事实后，情况显得pron. 几个。",
+      "sense": "pron. 几个",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "fullway-20260627-v29-146:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260718-docx-037": {
+    "primary": {
+      "sentence": "The teacher used a sir as the topic of a short writing task.",
+      "target": "sir",
+      "translation": "老师把先生作为一项短文写作任务的主题。",
+      "sense": "先生",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260718-docx-037:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-172": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “six” quickly.",
+      "target": "six",
+      "translation": "小测时，全班需要快速识别“six”。",
+      "sense": "num. 六",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-172:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-2-031": {
+    "primary": {
+      "sentence": "The passage explains why people need to say the practical problem in a changing society.",
+      "target": "say",
+      "translation": "文章解释了人们为什么需要在变化的社会中说，讲这一实际问题。",
+      "sense": "说，讲",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-2-031:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-174": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “sausage”.",
+      "target": "sausage",
+      "translation": "一道词汇题检验学生是否理解“sausage”。",
+      "sense": "n. 香肠",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-174:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-147": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of science.",
+      "target": "science",
+      "translation": "这个例子帮助学生更清楚地理解科学。",
+      "sense": "科学",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-20260627-v29-147:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260629-v43-039": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of a salad.",
+      "target": "salad",
+      "translation": "这个例子帮助学生更清楚地理解沙拉。",
+      "sense": "沙拉",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260629-v43-039:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260629-v43-004": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose she to complete the sentence correctly.",
+      "target": "she",
+      "translation": "在语法练习中，学生需要选择“she”来正确完成句子。",
+      "sense": "pron. 她（指女性或雌性动物）",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blueforest-20260629-v43-004:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-180": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “reply” quickly.",
+      "target": "reply",
+      "translation": "小测时，全班需要快速识别“reply”。",
+      "sense": "v. 回复；回答；n. 答复",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-180:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-142": {
+    "primary": {
+      "sentence": "A total of thousand students took part in the campus survey last week.",
+      "target": "thousand",
+      "translation": "上周共有一千名学生参加了校园调查。",
+      "sense": "一千",
+      "pos": "numeral",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "numeral-exam",
+      "contextId": "fullway-20260627-v29-142:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-183": {
+    "primary": {
+      "sentence": "The learner added “rich” to the weak-word list for another review.",
+      "target": "rich",
+      "translation": "学习者把“rich”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 富有的；丰富的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-183:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260718-docx-046": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to a river.",
+      "target": "river",
+      "translation": "最近的一份报告讨论了与河流有关的若干变化。",
+      "sense": "河流",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260718-docx-046:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-185": {
+    "primary": {
+      "sentence": "The teacher used “robot” in a short reading passage during vocabulary review.",
+      "target": "robot",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“robot”。",
+      "sense": "n. 机器人",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-185:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-10-046": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to a room.",
+      "target": "room",
+      "translation": "最近的一份报告讨论了与空间有关的若干变化。",
+      "sense": "空间",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-10-046:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-187": {
+    "primary": {
+      "sentence": "The word “purple” appeared in today’s entrance-exam practice.",
+      "target": "purple",
+      "translation": "“purple”出现在今天的专升本练习中。",
+      "sense": "n. 紫色；adj. 紫色的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-187:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-119": {
+    "primary": {
+      "sentence": "The teacher used a prison as the topic of a short writing task.",
+      "target": "prison",
+      "translation": "老师把监狱。作为一项短文写作任务的主题。",
+      "sense": "监狱。",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-2026-prefix-119:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260716-12-049": {
+    "primary": {
+      "sentence": "According to the survey, students have different views on a railway.",
+      "target": "railway",
+      "translation": "调查显示，学生们对铁路有不同看法。",
+      "sense": "铁路",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260716-12-049:primary"
+    },
+    "extra": []
+  },
+  "word-list-7-040": {
+    "primary": {
+      "sentence": "The writer suggests that young people should teach the practical problem before making a final decision.",
+      "target": "teach",
+      "translation": "作者建议年轻人在作出最终决定前先教这一实际问题。",
+      "sense": "教",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-7-040:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260629-v43-023": {
+    "primary": {
+      "sentence": "Modern technology makes it easier for people to practise the practical problem.",
+      "target": "practise",
+      "translation": "现代技术使人们更容易练习这一实际问题。",
+      "sense": "练习",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260629-v43-023:primary"
+    },
+    "extra": []
+  },
+  "lansen-pdf-b-20260624-013": {
+    "primary": {
+      "sentence": "After all the facts were considered, the situation seemed polite.",
+      "target": "polite",
+      "translation": "综合考虑所有事实后，情况显得有礼貌的。",
+      "sense": "有礼貌的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "lansen-pdf-b-20260624-013:primary"
+    },
+    "extra": []
+  },
+  "word-list-6-008": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of a problem.",
+      "target": "problem",
+      "translation": "这个例子帮助学生更清楚地理解问题。",
+      "sense": "问题",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-6-008:primary"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-059": {
+    "primary": {
+      "sentence": "The writer mentions a progress when discussing changes in modern society.",
+      "target": "progress",
+      "translation": "作者在讨论现代社会变化时提到了进步，进展。",
+      "sense": "进步，进展",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-2026-prefix-059:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260716-12-045": {
+    "primary": {
+      "sentence": "The writer suggests that young people should pronounce the practical problem before making a final decision.",
+      "target": "pronounce",
+      "translation": "作者建议年轻人在作出最终决定前先vt. 发音这一实际问题。",
+      "sense": "vt. 发音",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260716-12-045:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-202": {
+    "primary": {
+      "sentence": "Students marked “picnic” as a key word before discussing the passage.",
+      "target": "picnic",
+      "translation": "学生在讨论文章前把“picnic”标记为关键词。",
+      "sense": "n. 野餐；v. 去野餐",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-202:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260629-v43-018": {
+    "primary": {
+      "sentence": "The report includes useful information about a pie.",
+      "target": "pie",
+      "translation": "这份报告包含有关馅饼的有用信息。",
+      "sense": "馅饼",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260629-v43-018:primary"
+    },
+    "extra": []
+  },
+  "word-list-9-033": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to a plenty.",
+      "target": "plenty",
+      "translation": "阅读文章给出了一个与pron. 大量有关的清晰例子。",
+      "sense": "pron. 大量",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-9-033:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-205": {
+    "primary": {
+      "sentence": "The study group reviewed “table” and then completed a sentence with it.",
+      "target": "table",
+      "translation": "学习小组复习了“table”，随后用它完成句子。",
+      "sense": "n. 桌子；表格",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-205:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-210": {
+    "primary": {
+      "sentence": "Students marked “pair” as a key word before discussing the passage.",
+      "target": "pair",
+      "translation": "学生在讨论文章前把“pair”标记为关键词。",
+      "sense": "n. 一对；一双；v. 配对",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-210:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blue-18-021": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose ours to complete the sentence correctly.",
+      "target": "ours",
+      "translation": "在语法练习中，学生需要选择“ours”来正确完成句子。",
+      "sense": "pron. 我们的（名词性物主代词）",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blue-18-021:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-215": {
+    "primary": {
+      "sentence": "The learner added “next” to the weak-word list for another review.",
+      "target": "next",
+      "translation": "学习者把“next”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 下一个的；adv. 接着",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-215:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260629-v43-017": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of a notebook.",
+      "target": "notebook",
+      "translation": "这个例子帮助学生更清楚地理解笔记本。",
+      "sense": "笔记本",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260629-v43-017:primary"
+    },
+    "extra": []
+  },
+  "cet4-13-031": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to an officer.",
+      "target": "officer",
+      "translation": "阅读文章给出了一个与官员有关的清晰例子。",
+      "sense": "官员",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet4-13-031:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-040": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose oneself to complete the sentence correctly.",
+      "target": "oneself",
+      "translation": "在语法练习中，学生需要选择“oneself”来正确完成句子。",
+      "sense": "pron. 自己",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blue-forest-040:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-045": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of a museum.",
+      "target": "museum",
+      "translation": "这个例子帮助学生更清楚地理解博物馆。",
+      "sense": "博物馆",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-forest-045:primary"
+    },
+    "extra": []
+  },
+  "word-list-6-023": {
+    "primary": {
+      "sentence": "It is necessary for students to review what they have learned in time.",
+      "target": "necessary",
+      "translation": "学生及时复习所学内容是必要的。",
+      "sense": "必要的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "用户资料例句",
+      "contextKind": "source-example",
+      "generatedBy": "source-import-v1",
+      "templateFamily": "source-example",
+      "contextId": "word-list-6-023:primary"
+    },
+    "extra": []
+  },
+  "word-list-2-038": {
+    "primary": {
+      "sentence": "The report includes useful information about news.",
+      "target": "news",
+      "translation": "这份报告包含有关新闻的有用信息。",
+      "sense": "新闻",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-2-038:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-229": {
+    "primary": {
+      "sentence": "The study group reviewed “me” and then completed a sentence with it.",
+      "target": "me",
+      "translation": "学习小组复习了“me”，随后用它完成句子。",
+      "sense": "pron. 我（宾格）",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-229:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-327": {
+    "primary": {
+      "sentence": "Most students considered the new learning method medical.",
+      "target": "medical",
+      "translation": "大多数学生认为这种新学习方法很医学的。",
+      "sense": "医学的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "fullway-20260627-v29-327:primary"
+    },
+    "extra": []
+  },
+  "word-list-5-017": {
+    "primary": {
+      "sentence": "The report includes useful information about a method.",
+      "target": "method",
+      "translation": "这份报告包含有关方法的有用信息。",
+      "sense": "方法",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-5-017:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260716-12-017": {
+    "primary": {
+      "sentence": "The two groups worked maybe to finish the project before the deadline.",
+      "target": "maybe",
+      "translation": "两个小组可能合作，在截止日期前完成了项目。",
+      "sense": "可能",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "adverb-exam",
+      "contextId": "blueforest-20260716-12-017:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260716-12-019": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between a mom and public health.",
+      "target": "mom",
+      "translation": "研究人员考察了妈妈（非正式称呼）与公共健康之间的关系。",
+      "sense": "妈妈（非正式称呼）",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260716-12-019:primary"
+    },
+    "extra": []
+  },
+  "lansen-white-20260624-046": {
+    "primary": {
+      "sentence": "According to the survey, students have different views on morning.",
+      "target": "morning",
+      "translation": "调查显示，学生们对早晨有不同看法。",
+      "sense": "早晨",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "lansen-white-20260624-046:primary"
+    },
+    "extra": []
+  },
+  "cet-black-20260624-008": {
+    "primary": {
+      "sentence": "The final paragraph focuses mainly on an island.",
+      "target": "island",
+      "translation": "最后一段主要关注岛。",
+      "sense": "岛",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet-black-20260624-008:primary"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-198": {
+    "primary": {
+      "sentence": "Students should read the instructions just before answering the questions.",
+      "target": "just",
+      "translation": "学生答题前应只是阅读说明。",
+      "sense": "只是",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "adverb-exam",
+      "contextId": "fullway-20260627-v29-198:primary"
+    },
+    "extra": []
+  },
+  "word-list-3-046": {
+    "primary": {
+      "sentence": "College students should learn to lend the practical problem through social practice.",
+      "target": "lend",
+      "translation": "大学生应通过社会实践学会把……借给这一实际问题。",
+      "sense": "把……借给",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-3-046:primary"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-270": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to a stone.",
+      "target": "stone",
+      "translation": "最近的一份报告讨论了与石头有关的若干变化。",
+      "sense": "石头",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-20260627-v29-270:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-242": {
+    "primary": {
+      "sentence": "Students marked “loud” as a key word before discussing the passage.",
+      "target": "loud",
+      "translation": "学生在讨论文章前把“loud”标记为关键词。",
+      "sense": "adj. 大声的；响亮的；adv. 大声地",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-242:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-phrase-069": {
+    "primary": {
+      "sentence": "Students were encouraged to manage the practical problem after a careful discussion.",
+      "target": "manage",
+      "translation": "经过认真讨论，学生们被鼓励去管理这一实际问题。",
+      "sense": "管理",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260714-v68-phrase-069:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260629-v43-016": {
+    "primary": {
+      "sentence": "The writer mentions math when discussing changes in modern society.",
+      "target": "math",
+      "translation": "作者在讨论现代社会变化时提到了数学（美式拼写）。",
+      "sense": "数学（美式拼写）",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260629-v43-016:primary"
+    },
+    "extra": []
+  },
+  "word-list-6-018": {
+    "primary": {
+      "sentence": "The advice given by the teacher proved important during the examination.",
+      "target": "important",
+      "translation": "考试期间，老师给出的建议被证明很重要的。",
+      "sense": "重要的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "word-list-6-018:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260722-17-017": {
+    "primary": {
+      "sentence": "The writer instead points out the importance of independent thinking.",
+      "target": "instead",
+      "translation": "作者代替指出了独立思考的重要性。",
+      "sense": "代替",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "adverb-exam",
+      "contextId": "blueforest-20260722-17-017:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-248": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “jeans” from the surrounding sentence.",
+      "target": "jeans",
+      "translation": "在模拟考试中，学生根据上下文推断“jeans”的含义。",
+      "sense": "n. 牛仔裤",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-248:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-249": {
+    "primary": {
+      "sentence": "The teacher used “kind” in a short reading passage during vocabulary review.",
+      "target": "kind",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“kind”。",
+      "sense": "n. 种类；adj. 友善的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-249:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-250": {
+    "primary": {
+      "sentence": "Students marked “kitchen” as a key word before discussing the passage.",
+      "target": "kitchen",
+      "translation": "学生在讨论文章前把“kitchen”标记为关键词。",
+      "sense": "n. 厨房",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-250:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-251": {
+    "primary": {
+      "sentence": "The word “itself” appeared in today’s entrance-exam practice.",
+      "target": "itself",
+      "translation": "“itself”出现在今天的专升本练习中。",
+      "sense": "pron. 它自己",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-251:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway1-v32-fix-035": {
+    "primary": {
+      "sentence": "The report includes useful information about a housework.",
+      "target": "housework",
+      "translation": "这份报告包含有关家务。的有用信息。",
+      "sense": "家务。",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway1-v32-fix-035:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-253": {
+    "primary": {
+      "sentence": "The study group reviewed “however” and then completed a sentence with it.",
+      "target": "however",
+      "translation": "学习小组复习了“however”，随后用它完成句子。",
+      "sense": "adv. 然而；无论如何",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-253:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-254": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “hurry”.",
+      "target": "hurry",
+      "translation": "一道词汇题检验学生是否理解“hurry”。",
+      "sense": "v. 匆忙；催促；n. 匆忙",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-254:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-099": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between a holiday and community service.",
+      "target": "holiday",
+      "translation": "研究人员考察了假期。与社区服务之间的关系。",
+      "sense": "假期。",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-complete-extra-099:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-112": {
+    "primary": {
+      "sentence": "In the passage, the main character is described as honest but willing to learn.",
+      "target": "honest",
+      "translation": "文章中的主人公被描述为诚实的。，但乐于学习。",
+      "sense": "诚实的。",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "fullway-complete-extra-112:primary"
+    },
+    "extra": []
+  },
+  "wordlist-20260628-v42-045": {
+    "primary": {
+      "sentence": "The report includes useful information about a height.",
+      "target": "height",
+      "translation": "这份报告包含有关身高的有用信息。",
+      "sense": "身高",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "wordlist-20260628-v42-045:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-263": {
+    "primary": {
+      "sentence": "The learner added “standard” to the weak-word list for another review.",
+      "target": "standard",
+      "translation": "学习者把“standard”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 标准；adj. 标准的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-263:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-word-027": {
+    "primary": {
+      "sentence": "The report includes useful information about a gym.",
+      "target": "gym",
+      "translation": "这份报告包含有关健身房的有用信息。",
+      "sense": "健身房",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260714-v68-word-027:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-265": {
+    "primary": {
+      "sentence": "The teacher used “him” in a short reading passage during vocabulary review.",
+      "target": "him",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“him”。",
+      "sense": "pron. 他（宾格）",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-265:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-table-043": {
+    "primary": {
+      "sentence": "The university organized a lecture on a girl for first-year students.",
+      "target": "girl",
+      "translation": "学校为大一学生举办了一场关于女孩的讲座。",
+      "sense": "女孩",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260628-table-043:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-adjadv-024": {
+    "primary": {
+      "sentence": "Students should read the instructions hardly before answering the questions.",
+      "target": "hardly",
+      "translation": "学生答题前应几乎不阅读说明。",
+      "sense": "几乎不",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "adverb-exam",
+      "contextId": "blueforest-20260628-adjadv-024:primary"
+    },
+    "extra": []
+  },
+  "word-list-7-054": {
+    "primary": {
+      "sentence": "The writer mentions handwriting when discussing changes in modern society.",
+      "target": "handwriting",
+      "translation": "作者在讨论现代社会变化时提到了书写。",
+      "sense": "书写",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-7-054:primary"
+    },
+    "extra": []
+  },
+  "word-list-10-017": {
+    "primary": {
+      "sentence": "According to the survey, students have different views on a fun.",
+      "target": "fun",
+      "translation": "调查显示，学生们对乐趣有不同看法。",
+      "sense": "乐趣",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-10-017:primary"
+    },
+    "extra": []
+  },
+  "word-list-7-018": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to a gentleman.",
+      "target": "gentleman",
+      "translation": "最近的一份报告讨论了与绅士有关的若干变化。",
+      "sense": "绅士",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-7-018:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-table-039": {
+    "primary": {
+      "sentence": "Students learned more about a goodbye through the class discussion.",
+      "target": "goodbye",
+      "translation": "学生们通过课堂讨论进一步了解了道别，再见。",
+      "sense": "道别，再见",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260628-table-039:primary"
+    },
+    "extra": []
+  },
+  "word-list-8-027": {
+    "primary": {
+      "sentence": "The writer mentions a sport when discussing changes in modern society.",
+      "target": "sport",
+      "translation": "作者在讨论现代社会变化时提到了运动。",
+      "sense": "运动",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-8-027:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-276": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “guess” quickly.",
+      "target": "guess",
+      "translation": "小测时，全班需要快速识别“guess”。",
+      "sense": "v. 猜；猜测；n. 猜测",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-276:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-277": {
+    "primary": {
+      "sentence": "The study group reviewed “guitar” and then completed a sentence with it.",
+      "target": "guitar",
+      "translation": "学习小组复习了“guitar”，随后用它完成句子。",
+      "sense": "n. 吉他",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-277:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-07-087": {
+    "primary": {
+      "sentence": "Most students considered the new learning method foreign.",
+      "target": "foreign",
+      "translation": "大多数学生认为这种新学习方法很国外的。",
+      "sense": "国外的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260627-07-087:primary"
+    },
+    "extra": []
+  },
+  "lansen-white-20260624-034": {
+    "primary": {
+      "sentence": "A total of forty students took part in the campus survey last week.",
+      "target": "forty",
+      "translation": "上周共有四十名学生参加了校园调查。",
+      "sense": "四十",
+      "pos": "numeral",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "numeral-exam",
+      "contextId": "lansen-white-20260624-034:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-283": {
+    "primary": {
+      "sentence": "The word “spare” appeared in today’s entrance-exam practice.",
+      "target": "spare",
+      "translation": "“spare”出现在今天的专升本练习中。",
+      "sense": "adj. 空闲的；备用的；v. 抽出；饶恕",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-283:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-026": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose speed to complete the sentence correctly.",
+      "target": "speed",
+      "translation": "在语法练习中，学生需要选择“speed”来正确完成句子。",
+      "sense": "速度。",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "fullway-complete-extra-026:primary"
+    },
+    "extra": []
+  },
+  "word-list-9-004": {
+    "primary": {
+      "sentence": "The report includes useful information about an example.",
+      "target": "example",
+      "translation": "这份报告包含有关例子的有用信息。",
+      "sense": "例子",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-9-004:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-047": {
+    "primary": {
+      "sentence": "Modern technology makes it easier for people to explain the social issue.",
+      "target": "explain",
+      "translation": "现代技术使人们更容易说明这一社会问题。",
+      "sense": "说明",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blue-forest-b2-047:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-289": {
+    "primary": {
+      "sentence": "The teacher used “every” in a short reading passage during vocabulary review.",
+      "target": "every",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“every”。",
+      "sense": "det. 每一个",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-289:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet4-20260627-04-032": {
+    "primary": {
+      "sentence": "Most students considered the new learning method excellent.",
+      "target": "excellent",
+      "translation": "大多数学生认为这种新学习方法很极好的。",
+      "sense": "极好的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "cet4-20260627-04-032:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-table-027": {
+    "primary": {
+      "sentence": "A total of eighty students took part in the campus survey last week.",
+      "target": "eighty",
+      "translation": "上周共有八十名学生参加了校园调查。",
+      "sense": "八十",
+      "pos": "numeral",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "numeral-exam",
+      "contextId": "blueforest-20260628-table-027:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-044": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose dress to complete the sentence correctly.",
+      "target": "dress",
+      "translation": "在语法练习中，学生需要选择“dress”来正确完成句子。",
+      "sense": "连衣裙",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "fullway-complete-extra-044:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-296": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “either” from the surrounding sentence.",
+      "target": "either",
+      "translation": "在模拟考试中，学生根据上下文推断“either”的含义。",
+      "sense": "det. 两者之一；adv. 也；conj. 要么",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-296:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "wordlist-20260628-v42-028": {
+    "primary": {
+      "sentence": "The survey result was regarded as soft by the research team.",
+      "target": "soft",
+      "translation": "研究团队认为这项调查结果是柔软的的。",
+      "sense": "柔软的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "wordlist-20260628-v42-028:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-table-031": {
+    "primary": {
+      "sentence": "Most students considered the new learning method sorry.",
+      "target": "sorry",
+      "translation": "大多数学生认为这种新学习方法很感到歉意的。",
+      "sense": "感到歉意的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260628-table-031:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260629-v44-missing-007": {
+    "primary": {
+      "sentence": "The final paragraph focuses mainly on a dictionary.",
+      "target": "dictionary",
+      "translation": "最后一段主要关注词典，字典。",
+      "sense": "词典，字典",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260629-v44-missing-007:primary"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-014": {
+    "primary": {
+      "sentence": "Most students considered the new learning method slow.",
+      "target": "slow",
+      "translation": "大多数学生认为这种新学习方法很缓慢的。",
+      "sense": "缓慢的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "fullway-2026-prefix-014:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260725-20-019": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to a doll.",
+      "target": "doll",
+      "translation": "阅读文章给出了一个与玩偶有关的清晰例子。",
+      "sense": "玩偶",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260725-20-019:primary"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-011": {
+    "primary": {
+      "sentence": "The passage explains why people need to drink the practical problem in a changing society.",
+      "target": "drink",
+      "translation": "文章解释了人们为什么需要在变化的社会中喝这一实际问题。",
+      "sense": "喝",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "fullway-2026-prefix-011:primary"
+    },
+    "extra": []
+  },
+  "word-list-2-010": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to a smell.",
+      "target": "smell",
+      "translation": "最近的一份报告讨论了与气味有关的若干变化。",
+      "sense": "气味",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-2-010:primary"
+    },
+    "extra": []
+  },
+  "lansen-white-20260624-012": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to a countryside.",
+      "target": "countryside",
+      "translation": "最近的一份报告讨论了与乡村有关的若干变化。",
+      "sense": "乡村",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "lansen-white-20260624-012:primary"
+    },
+    "extra": []
+  },
+  "word-list-3-002": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between a skate and public health.",
+      "target": "skate",
+      "translation": "研究人员考察了冰鞋与公共健康之间的关系。",
+      "sense": "冰鞋",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-3-002:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-171": {
+    "primary": {
+      "sentence": "Students learned more about a daughter through the class discussion.",
+      "target": "daughter",
+      "translation": "学生们通过课堂讨论进一步了解了女儿。。",
+      "sense": "女儿。",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-complete-extra-171:primary"
+    },
+    "extra": []
+  },
+  "word-list-3-042": {
+    "primary": {
+      "sentence": "The report includes useful information about a diary.",
+      "target": "diary",
+      "translation": "这份报告包含有关日记的有用信息。",
+      "sense": "日记",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-3-042:primary"
+    },
+    "extra": []
+  },
+  "word-list-6-026": {
+    "primary": {
+      "sentence": "The survey result was regarded as difficult by the research team.",
+      "target": "difficult",
+      "translation": "研究团队认为这项调查结果是困难的的。",
+      "sense": "困难的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "word-list-6-026:primary"
+    },
+    "extra": []
+  },
+  "wordlist-20260628-v42-140": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to a cinema.",
+      "target": "cinema",
+      "translation": "阅读文章给出了一个与电影院有关的清晰例子。",
+      "sense": "电影院",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "wordlist-20260628-v42-140:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-017": {
+    "primary": {
+      "sentence": "The report includes useful information about a shoulder.",
+      "target": "shoulder",
+      "translation": "这份报告包含有关肩膀的有用信息。",
+      "sense": "肩膀",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-forest-017:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-317": {
+    "primary": {
+      "sentence": "The study group reviewed “coin” and then completed a sentence with it.",
+      "target": "coin",
+      "translation": "学习小组复习了“coin”，随后用它完成句子。",
+      "sense": "n. 硬币；v. 创造（新词）",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-317:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-136": {
+    "primary": {
+      "sentence": "The university plans to connect the practical problem in order to improve teaching quality.",
+      "target": "connect",
+      "translation": "学校计划连接，接通。connect A and B。这一实际问题，以提高教学质量。",
+      "sense": "连接，接通。connect A and B。",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "fullway-2026-prefix-136:primary"
+    },
+    "extra": []
+  },
+  "cet4-20260714-v68-020": {
+    "primary": {
+      "sentence": "The teacher used a dozen as the topic of a short writing task.",
+      "target": "dozen",
+      "translation": "老师把det./n. 一打，十二个作为一项短文写作任务的主题。",
+      "sense": "det./n. 一打，十二个",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet4-20260714-v68-020:primary"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-298": {
+    "primary": {
+      "sentence": "The survey result was regarded as born by the research team.",
+      "target": "born",
+      "translation": "研究团队认为这项调查结果是出生的的。",
+      "sense": "出生的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "fullway-20260627-v29-298:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-321": {
+    "primary": {
+      "sentence": "The teacher used “but” in a short reading passage during vocabulary review.",
+      "target": "but",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“but”。",
+      "sense": "conj. 但是；prep. 除了",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-321:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-004": {
+    "primary": {
+      "sentence": "Students were encouraged to shine the practical problem after a careful discussion.",
+      "target": "shine",
+      "translation": "经过认真讨论，学生们被鼓励去发光这一实际问题。",
+      "sense": "发光",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blue-20260727-22-004:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-326": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “cent”.",
+      "target": "cent",
+      "translation": "一道词汇题检验学生是否理解“cent”。",
+      "sense": "n. 分；美分",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-326:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blue-18-012": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to a background.",
+      "target": "background",
+      "translation": "阅读文章给出了一个与背景有关的清晰例子。",
+      "sense": "背景",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-18-012:primary"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-374": {
+    "primary": {
+      "sentence": "The university organized a lecture on a boat for first-year students.",
+      "target": "boat",
+      "translation": "学校为大一学生举办了一场关于舟的讲座。",
+      "sense": "舟",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-20260627-v29-374:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260714-v68-phrase-004": {
+    "primary": {
+      "sentence": "She sat beside her classmate during the lecture.",
+      "target": "beside",
+      "translation": "讲座期间她坐在同学旁边。",
+      "sense": "prep. 在……旁边",
+      "pos": "other",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "function-word",
+      "contextId": "blueforest-20260714-v68-phrase-004:primary"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-177": {
+    "primary": {
+      "sentence": "There is a close relationship between exercise and health.",
+      "target": "between",
+      "translation": "锻炼与健康之间存在密切关系。",
+      "sense": "prep. 之间",
+      "pos": "other",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "function-word",
+      "contextId": "fullway-20260627-v29-177:primary"
+    },
+    "extra": []
+  },
+  "fullway-20260627-v29-248": {
+    "primary": {
+      "sentence": "The university plans to set the practical problem in order to improve teaching quality.",
+      "target": "set",
+      "translation": "学校计划设置这一实际问题，以提高教学质量。",
+      "sense": "设置",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "fullway-20260627-v29-248:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-334": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “breakfast”.",
+      "target": "breakfast",
+      "translation": "一道词汇题检验学生是否理解“breakfast”。",
+      "sense": "n. 早餐",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-334:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-023": {
+    "primary": {
+      "sentence": "Many students choose online courses because they are flexible and convenient.",
+      "target": "because",
+      "translation": "许多学生选择网络课程，因为它们灵活又方便。",
+      "sense": "因为",
+      "pos": "other",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "function-word",
+      "contextId": "blue-20260727-22-023:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-336": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “below” from the surrounding sentence.",
+      "target": "below",
+      "translation": "在模拟考试中，学生根据上下文推断“below”的含义。",
+      "sense": "prep. 在下面；低于；adv. 在下面",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-336:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-337": {
+    "primary": {
+      "sentence": "The teacher used “bicycle” in a short reading passage during vocabulary review.",
+      "target": "bicycle",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“bicycle”。",
+      "sense": "n. 自行车；v. 骑自行车",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-337:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-338": {
+    "primary": {
+      "sentence": "Students marked “big” as a key word before discussing the passage.",
+      "target": "big",
+      "translation": "学生在讨论文章前把“big”标记为关键词。",
+      "sense": "adj. 大的；重要的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-338:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-172": {
+    "primary": {
+      "sentence": "The university organized a lecture on a birthday for first-year students.",
+      "target": "birthday",
+      "translation": "学校为大一学生举办了一场关于生日。的讲座。",
+      "sense": "生日。",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-complete-extra-172:primary"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-024": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to a biscuit.",
+      "target": "biscuit",
+      "translation": "阅读文章给出了一个与饼干有关的清晰例子。",
+      "sense": "饼干",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-20260727-22-024:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-341": {
+    "primary": {
+      "sentence": "The study group reviewed “away” and then completed a sentence with it.",
+      "target": "away",
+      "translation": "学习小组复习了“away”，随后用它完成句子。",
+      "sense": "adv. 离开；远离",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-341:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-343": {
+    "primary": {
+      "sentence": "The learner added “around” to the weak-word list for another review.",
+      "target": "around",
+      "translation": "学习者把“around”加入薄弱词列表，准备再次复习。",
+      "sense": "prep. 在周围；adv. 大约；到处",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-343:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-039": {
+    "primary": {
+      "sentence": "The lecture will begin at nine tomorrow morning.",
+      "target": "at",
+      "translation": "讲座将于明天上午九点开始。",
+      "sense": "在（时间/地点）",
+      "pos": "other",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "function-word",
+      "contextId": "blue-20260727-22-039:primary"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-018": {
+    "primary": {
+      "sentence": "The report includes useful information about an autumn.",
+      "target": "autumn",
+      "translation": "这份报告包含有关秋天的有用信息。",
+      "sense": "秋天",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-20260727-22-018:primary"
+    },
+    "extra": []
+  },
+  "word-list-7-028": {
+    "primary": {
+      "sentence": "After all the facts were considered, the situation seemed asleep.",
+      "target": "asleep",
+      "translation": "综合考虑所有事实后，情况显得睡着的。",
+      "sense": "睡着的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "word-list-7-028:primary"
+    },
+    "extra": []
+  },
+  "cet-black-20260624-010": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between a beach and career development.",
+      "target": "beach",
+      "translation": "研究人员考察了海滩与职业发展之间的关系。",
+      "sense": "海滩",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet-black-20260624-010:primary"
+    },
+    "extra": []
+  },
+  "lansen-white-20260624-025": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between a beer and university education.",
+      "target": "beer",
+      "translation": "研究人员考察了啤酒与大学教育之间的关系。",
+      "sense": "啤酒",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "lansen-white-20260624-025:primary"
+    },
+    "extra": []
+  },
+  "wordlist-20260628-v42-055": {
+    "primary": {
+      "sentence": "Although the path was steep, they reached the lake.",
+      "target": "although",
+      "translation": "虽然山路陡峭，他们还是到达了湖边。",
+      "sense": "conj. 虽然；尽管",
+      "pos": "other",
+      "level": "basic",
+      "source": "authored",
+      "contextKind": "semantic",
+      "generatedBy": "semantic-v2",
+      "templateFamily": "subordinating-connector",
+      "contextId": "wordlist-20260628-v42-055:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-351": {
+    "primary": {
+      "sentence": "The learner added “angry” to the weak-word list for another review.",
+      "target": "angry",
+      "translation": "学习者把“angry”加入薄弱词列表，准备再次复习。",
+      "sense": "adj. 生气的；愤怒的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-351:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-3-037": {
+    "primary": {
+      "sentence": "The final paragraph focuses mainly on animal.",
+      "target": "animal",
+      "translation": "最后一段主要关注动物。",
+      "sense": "动物",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-3-037:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260629-v43-001": {
+    "primary": {
+      "sentence": "Mia always checks the final plan before meetings.",
+      "target": "always",
+      "translation": "米娅总是在开会前检查最终计划。",
+      "sense": "总是；一直；（强调持续存在）永远",
+      "pos": "adverb",
+      "level": "basic",
+      "source": "authored",
+      "contextKind": "semantic",
+      "generatedBy": "semantic-v2",
+      "templateFamily": "adverb-always",
+      "contextId": "blueforest-20260629-v43-001:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-355": {
+    "primary": {
+      "sentence": "The word “any” appeared in today’s entrance-exam practice.",
+      "target": "any",
+      "translation": "“any”出现在今天的专升本练习中。",
+      "sense": "det. 任何；一些；pron. 任何一个",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-355:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-357": {
+    "primary": {
+      "sentence": "The study group reviewed “anywhere” and then completed a sentence with it.",
+      "target": "anywhere",
+      "translation": "学习小组复习了“anywhere”，随后用它完成句子。",
+      "sense": "adv. 任何地方",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-357:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "wordlist-20260628-v42-064": {
+    "primary": {
+      "sentence": "If the conditions improve, more students will be able to run.",
+      "target": "run",
+      "translation": "如果条件改善，更多学生将能够跑。",
+      "sense": "跑",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-intransitive-exam",
+      "contextId": "wordlist-20260628-v42-064:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-table-006": {
+    "primary": {
+      "sentence": "Students were encouraged to do the practical problem after a careful discussion.",
+      "target": "do",
+      "translation": "经过认真讨论，学生们被鼓励去做这一实际问题。",
+      "sense": "做",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260628-table-006:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-072": {
+    "primary": {
+      "sentence": "More students choose to study abroad in order to broaden their horizons.",
+      "target": "abroad",
+      "translation": "越来越多学生选择出国学习以开阔眼界。",
+      "sense": "在国外",
+      "pos": "other",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "function-word",
+      "contextId": "fullway-complete-extra-072:primary"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-031": {
+    "primary": {
+      "sentence": "The volunteers walked across the bridge to reach the village.",
+      "target": "across",
+      "translation": "志愿者们走过桥到达村庄。",
+      "sense": "穿过",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "function-word",
+      "contextId": "blue-20260727-22-031:primary"
+    },
+    "extra": []
+  },
+  "word-list-4-029": {
+    "primary": {
+      "sentence": "Our family moved to this village three years ago.",
+      "target": "ago",
+      "translation": "我们家三年前搬到了这个村庄。",
+      "sense": "以前",
+      "pos": "adverb",
+      "level": "basic",
+      "source": "authored",
+      "contextKind": "semantic",
+      "generatedBy": "semantic-v2",
+      "templateFamily": "adverb-ago",
+      "contextId": "word-list-4-029:primary"
+    },
+    "extra": [
+      {
+        "sentence": "The old bridge closed without warning several months ago.",
+        "target": "ago",
+        "translation": "那座旧桥几个月前毫无预警地关闭了。",
+        "sense": "（用于时间段后）以前，之前",
+        "pos": "adverb",
+        "level": "basic",
+        "source": "authored",
+        "contextKind": "semantic",
+        "generatedBy": "semantic-v2",
+        "templateFamily": "adverb-ago"
+      }
+    ]
+  },
+  "blue-20260727-22-034": {
+    "primary": {
+      "sentence": "The speaker explained the difficult point already, so everyone understood it.",
+      "target": "already",
+      "translation": "演讲者已经解释了难点，因此大家都听懂了。",
+      "sense": "已经",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "adverb-exam",
+      "contextId": "blue-20260727-22-034:primary"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-035": {
+    "primary": {
+      "sentence": "The speaker explained the difficult point also, so everyone understood it.",
+      "target": "also",
+      "translation": "演讲者也解释了难点，因此大家都听懂了。",
+      "sense": "也",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "adverb-exam",
+      "contextId": "blue-20260727-22-035:primary"
+    },
+    "extra": []
+  },
+  "cet-black-20260624-024": {
+    "primary": {
+      "sentence": "The writer described the change as dead in the final paragraph.",
+      "target": "dead",
+      "translation": "作者在最后一段把这一变化描述为死的。",
+      "sense": "死的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "cet-black-20260624-024:primary"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-043": {
+    "primary": {
+      "sentence": "In the passage, the main character is described as deaf but willing to learn.",
+      "target": "deaf",
+      "translation": "文章中的主人公被描述为聋的，但乐于学习。",
+      "sense": "聋的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blue-20260727-22-043:primary"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-044": {
+    "primary": {
+      "sentence": "Students learned more about death through the class discussion.",
+      "target": "death",
+      "translation": "学生们通过课堂讨论进一步了解了死亡。",
+      "sense": "死亡",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-20260727-22-044:primary"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-045": {
+    "primary": {
+      "sentence": "The university plans to decide the practical problem in order to improve teaching quality.",
+      "target": "decide",
+      "translation": "学校计划决定这一实际问题，以提高教学质量。",
+      "sense": "决定",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blue-20260727-22-045:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-table-002": {
+    "primary": {
+      "sentence": "After all the facts were considered, the situation seemed deep.",
+      "target": "deep",
+      "translation": "综合考虑所有事实后，情况显得深的。",
+      "sense": "深的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blueforest-20260628-table-002:primary"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-047": {
+    "primary": {
+      "sentence": "The meal served in the school canteen was delicious and reasonably priced.",
+      "target": "delicious",
+      "translation": "学校食堂提供的饭菜很美味的，价格也合理。",
+      "sense": "美味的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blue-20260727-22-047:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-041": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose they to complete the sentence correctly.",
+      "target": "they",
+      "translation": "在语法练习中，学生需要选择“they”来正确完成句子。",
+      "sense": "pron. 他们／她们／它们",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blue-forest-041:primary"
+    },
+    "extra": []
+  },
+  "wordlist-20260628-v42-134": {
+    "primary": {
+      "sentence": "Modern technology makes it easier for people to create a more effective learning method.",
+      "target": "create",
+      "translation": "现代技术使人们更容易创造一种更有效的学习方法。",
+      "sense": "创造",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "wordlist-20260628-v42-134:primary"
+    },
+    "extra": []
+  },
+  "blue-20260726-21-010": {
+    "primary": {
+      "sentence": "In the passage, the main character is described as crazy but willing to learn.",
+      "target": "crazy",
+      "translation": "文章中的主人公被描述为疯狂的，但乐于学习。",
+      "sense": "疯狂的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "blue-20260726-21-010:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-043": {
+    "primary": {
+      "sentence": "The teacher used a cup as the topic of a short writing task.",
+      "target": "cup",
+      "translation": "老师把杯子作为一项短文写作任务的主题。",
+      "sense": "杯子",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260627-06-043:primary"
+    },
+    "extra": []
+  },
+  "blue-20260726-21-013": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to a bed.",
+      "target": "bed",
+      "translation": "最近的一份报告讨论了与床有关的若干变化。",
+      "sense": "床",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-20260726-21-013:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-379": {
+    "primary": {
+      "sentence": "The word “bell” appeared in today’s entrance-exam practice.",
+      "target": "bell",
+      "translation": "“bell”出现在今天的专升本练习中。",
+      "sense": "n. 铃；钟",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-379:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-019": {
+    "primary": {
+      "sentence": "After all the facts were considered, the situation seemed daily.",
+      "target": "daily",
+      "translation": "综合考虑所有事实后，情况显得日常的。",
+      "sense": "日常的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "fullway-2026-prefix-019:primary"
+    },
+    "extra": []
+  },
+  "blue-20260727-22-041": {
+    "primary": {
+      "sentence": "College students should learn to dare the practical problem through social practice.",
+      "target": "dare",
+      "translation": "大学生应通过社会实践学会敢这一实际问题。",
+      "sense": "敢",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blue-20260727-22-041:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-382": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “cotton”.",
+      "target": "cotton",
+      "translation": "一道词汇题检验学生是否理解“cotton”。",
+      "sense": "n. 棉花；棉布",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-382:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-384": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “repair” from the surrounding sentence.",
+      "target": "repair",
+      "translation": "在模拟考试中，学生根据上下文推断“repair”的含义。",
+      "sense": "v. 修理；n. 修理",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-384:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet4-20260721-11-009": {
+    "primary": {
+      "sentence": "The writer mentions a couple when discussing changes in modern society.",
+      "target": "couple",
+      "translation": "作者在讨论现代社会变化时提到了两个。",
+      "sense": "两个",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet4-20260721-11-009:primary"
+    },
+    "extra": []
+  },
+  "lansen-pdf-a-20260624-007": {
+    "primary": {
+      "sentence": "The writer mentions courage when discussing changes in modern society.",
+      "target": "courage",
+      "translation": "作者在讨论现代社会变化时提到了勇气。",
+      "sense": "勇气",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "lansen-pdf-a-20260624-007:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-387": {
+    "primary": {
+      "sentence": "The word “cow” appeared in today’s entrance-exam practice.",
+      "target": "cow",
+      "translation": "“cow”出现在今天的专升本练习中。",
+      "sense": "n. 奶牛；母牛",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-387:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-7-048": {
+    "primary": {
+      "sentence": "Modern technology makes it easier for people to draw the practical problem.",
+      "target": "draw",
+      "translation": "现代技术使人们更容易画这一实际问题。",
+      "sense": "画",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-7-048:primary"
+    },
+    "extra": []
+  },
+  "blue-20260726-21-021": {
+    "primary": {
+      "sentence": "The passage explains why people need to be the practical problem in a changing society.",
+      "target": "be",
+      "translation": "文章解释了人们为什么需要在变化的社会中aux.（构成进行时态或被动语态）这一实际问题。",
+      "sense": "aux.（构成进行时态或被动语态）",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blue-20260726-21-021:primary"
+    },
+    "extra": []
+  },
+  "word-list-9-010": {
+    "primary": {
+      "sentence": "The university plans to cook the practical problem in order to improve teaching quality.",
+      "target": "cook",
+      "translation": "学校计划烹调这一实际问题，以提高教学质量。",
+      "sense": "烹调",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-9-010:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-392": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “cool” from the surrounding sentence.",
+      "target": "cool",
+      "translation": "在模拟考试中，学生根据上下文推断“cool”的含义。",
+      "sense": "adj. 凉爽的；酷的；v. 使冷却",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-392:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-393": {
+    "primary": {
+      "sentence": "The teacher used “corner” in a short reading passage during vocabulary review.",
+      "target": "corner",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“corner”。",
+      "sense": "n. 角落；拐角",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-393:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-394": {
+    "primary": {
+      "sentence": "Students marked “red” as a key word before discussing the passage.",
+      "target": "red",
+      "translation": "学生在讨论文章前把“red”标记为关键词。",
+      "sense": "n. 红色；adj. 红色的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-394:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blue-20260726-21-023": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose could to complete the sentence correctly.",
+      "target": "could",
+      "translation": "在语法练习中，学生需要选择“could”来正确完成句子。",
+      "sense": "modal.（表能力）能",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blue-20260726-21-023:primary"
+    },
+    "extra": []
+  },
+  "cet4-14-050": {
+    "primary": {
+      "sentence": "Modern technology makes it easier for people to count the practical problem.",
+      "target": "count",
+      "translation": "现代技术使人们更容易vi. （按顺序）数数这一实际问题。",
+      "sense": "vi. （按顺序）数数",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "cet4-14-050:primary"
+    },
+    "extra": []
+  },
+  "word-list-1-057": {
+    "primary": {
+      "sentence": "College students should learn to cost the practical problem through social practice.",
+      "target": "cost",
+      "translation": "大学生应通过社会实践学会成本为这一实际问题。",
+      "sense": "成本为",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-1-057:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-398": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “balloon”.",
+      "target": "balloon",
+      "translation": "一道词汇题检验学生是否理解“balloon”。",
+      "sense": "n. 气球；v. 激增",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-398:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-399": {
+    "primary": {
+      "sentence": "The learner added “concert” to the weak-word list for another review.",
+      "target": "concert",
+      "translation": "学习者把“concert”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 音乐会；一致行动",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-399:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-table-007": {
+    "primary": {
+      "sentence": "The writer suggests that young people should put the practical problem before making a final decision.",
+      "target": "put",
+      "translation": "作者建议年轻人在作出最终决定前先vt. 放置这一实际问题。",
+      "sense": "vt. 放置",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260628-table-007:primary"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-079": {
+    "primary": {
+      "sentence": "Students were encouraged to consider the practical problem after a careful discussion.",
+      "target": "consider",
+      "translation": "经过认真讨论，学生们被鼓励去思考，考虑。consider doing . 考虑做某事。这一实际问题。",
+      "sense": "思考，考虑。consider doing . 考虑做某事。",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "fullway-2026-prefix-079:primary"
+    },
+    "extra": []
+  },
+  "blue-20260726-21-030": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of a baseball.",
+      "target": "baseball",
+      "translation": "这个例子帮助学生更清楚地理解棒球运动。",
+      "sense": "棒球运动",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-20260726-21-030:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-404": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “control” quickly.",
+      "target": "control",
+      "translation": "小测时，全班需要快速识别“control”。",
+      "sense": "v. 控制；n. 控制；管理",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-404:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet4-032": {
+    "primary": {
+      "sentence": "With proper guidance, young people can develop in a supportive environment.",
+      "target": "develop",
+      "translation": "在适当指导下，年轻人可以在支持性的环境中vi.／vt. （使）发展。",
+      "sense": "vi.／vt. （使）发展",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-intransitive-exam",
+      "contextId": "cet4-032:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260725-20-009": {
+    "primary": {
+      "sentence": "According to the survey, students have different views on a president.",
+      "target": "president",
+      "translation": "调查显示，学生们对总统有不同看法。",
+      "sense": "总统",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260725-20-009:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-039": {
+    "primary": {
+      "sentence": "Students learned more about a college through the class discussion.",
+      "target": "college",
+      "translation": "学生们通过课堂讨论进一步了解了学院。",
+      "sense": "学院",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-forest-039:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-410": {
+    "primary": {
+      "sentence": "Students marked “fight” as a key word before discussing the passage.",
+      "target": "fight",
+      "translation": "学生在讨论文章前把“fight”标记为关键词。",
+      "sense": "v. 战斗；打架；n. 战斗",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-410:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-411": {
+    "primary": {
+      "sentence": "The word “bag” appeared in today’s entrance-exam practice.",
+      "target": "bag",
+      "translation": "“bag”出现在今天的专升本练习中。",
+      "sense": "n. 包；袋",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-411:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-050": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to a company.",
+      "target": "company",
+      "translation": "最近的一份报告讨论了与公司有关的若干变化。",
+      "sense": "公司",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260627-06-050:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-413": {
+    "primary": {
+      "sentence": "The study group reviewed “back” and then completed a sentence with it.",
+      "target": "back",
+      "translation": "学习小组复习了“back”，随后用它完成句子。",
+      "sense": "n. 背部；adv. 回去；adj. 后面的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-413:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-020": {
+    "primary": {
+      "sentence": "Modern technology makes it easier for people to climb the practical problem.",
+      "target": "climb",
+      "translation": "现代技术使人们更容易爬这一实际问题。",
+      "sense": "爬",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "fullway-complete-extra-020:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260725-20-006": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to a clone.",
+      "target": "clone",
+      "translation": "阅读文章给出了一个与克隆体有关的清晰例子。",
+      "sense": "克隆体",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260725-20-006:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-021": {
+    "primary": {
+      "sentence": "Students learned more about clothes through the class discussion.",
+      "target": "clothes",
+      "translation": "学生们通过课堂讨论进一步了解了衣服。",
+      "sense": "衣服",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260627-06-021:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-418": {
+    "primary": {
+      "sentence": "Students marked “cloud” as a key word before discussing the passage.",
+      "target": "cloud",
+      "translation": "学生在讨论文章前把“cloud”标记为关键词。",
+      "sense": "n. 云；v. 使模糊",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-418:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-419": {
+    "primary": {
+      "sentence": "The word “coat” appeared in today’s entrance-exam practice.",
+      "target": "coat",
+      "translation": "“coat”出现在今天的专升本练习中。",
+      "sense": "n. 外套；涂层；v. 覆盖",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-419:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet4-b2-050": {
+    "primary": {
+      "sentence": "The report includes useful information about a coast.",
+      "target": "coast",
+      "translation": "这份报告包含有关海岸的有用信息。",
+      "sense": "海岸",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet4-b2-050:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-421": {
+    "primary": {
+      "sentence": "The study group reviewed “chicken” and then completed a sentence with it.",
+      "target": "chicken",
+      "translation": "学习小组复习了“chicken”，随后用它完成句子。",
+      "sense": "n. 鸡；鸡肉；adj. 胆小的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-421:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260725-20-022": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between a period and social responsibility.",
+      "target": "period",
+      "translation": "研究人员考察了时期与社会责任之间的关系。",
+      "sense": "时期",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260725-20-022:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-027": {
+    "primary": {
+      "sentence": "The passage explains why people need to choose a suitable course in a changing society.",
+      "target": "choose",
+      "translation": "文章解释了人们为什么需要在变化的社会中选择一门合适的课程。",
+      "sense": "选择",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260627-06-027:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-424": {
+    "primary": {
+      "sentence": "In the mock exam, students inferred the meaning of “child” from the surrounding sentence.",
+      "target": "child",
+      "translation": "在模拟考试中，学生根据上下文推断“child”的含义。",
+      "sense": "n. 孩子",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-1",
+      "contextId": "blueforest-20260807-34-424:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260725-20-028": {
+    "primary": {
+      "sentence": "According to the survey, students have different views on a classmate.",
+      "target": "classmate",
+      "translation": "调查显示，学生们对同班同学有不同看法。",
+      "sense": "同班同学",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260725-20-028:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-426": {
+    "primary": {
+      "sentence": "Students marked “clean” as a key word before discussing the passage.",
+      "target": "clean",
+      "translation": "学生在讨论文章前把“clean”标记为关键词。",
+      "sense": "adj. 干净的；v. 清洁",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-426:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-167": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between city and community service.",
+      "target": "city",
+      "translation": "研究人员考察了城市。与社区服务之间的关系。",
+      "sense": "城市。",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-complete-extra-167:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-428": {
+    "primary": {
+      "sentence": "During the quiz, the class had to recognize “class” quickly.",
+      "target": "class",
+      "translation": "小测时，全班需要快速识别“class”。",
+      "sense": "n. 班级；课程；类别",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-5",
+      "contextId": "blueforest-20260807-34-428:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260725-20-034": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between an inch and personal growth.",
+      "target": "inch",
+      "translation": "研究人员考察了英寸（约2.54厘米）与个人成长之间的关系。",
+      "sense": "英寸（约2.54厘米）",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260725-20-034:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-430": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “cut”.",
+      "target": "cut",
+      "translation": "一道词汇题检验学生是否理解“cut”。",
+      "sense": "v. 切；割；n. 切口",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-430:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-1-046": {
+    "primary": {
+      "sentence": "The hat is cheap.",
+      "target": "cheap",
+      "translation": "帽子很便宜。",
+      "sourceField": "phrase",
+      "sourceRef": "word-list-1-046",
+      "sense": "adj. 便宜的；无价值的；adv. 便宜地",
+      "pos": "other",
+      "level": "Word List 1 / 购物商务",
+      "source": "existing",
+      "contextId": "word-list-1-046:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260725-20-035": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to a chest.",
+      "target": "chest",
+      "translation": "阅读文章给出了一个与胸部有关的清晰例子。",
+      "sense": "胸部",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260725-20-035:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-042": {
+    "primary": {
+      "sentence": "The teacher used a supermarket as the topic of a short writing task.",
+      "target": "supermarket",
+      "translation": "老师把超市。作为一项短文写作任务的主题。",
+      "sense": "超市。",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-complete-extra-042:primary"
+    },
+    "extra": []
+  },
+  "fullway-2026-prefix-015": {
+    "primary": {
+      "sentence": "Students were encouraged to cheat the practical problem after a careful discussion.",
+      "target": "cheat",
+      "translation": "经过认真讨论，学生们被鼓励去欺骗，作弊这一实际问题。",
+      "sense": "欺骗，作弊",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "fullway-2026-prefix-015:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-018": {
+    "primary": {
+      "sentence": "The university plans to cheer the practical problem in order to improve teaching quality.",
+      "target": "cheer",
+      "translation": "学校计划欢呼这一实际问题，以提高教学质量。",
+      "sense": "欢呼",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260627-06-018:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-020": {
+    "primary": {
+      "sentence": "The writer mentions a chemistry when discussing changes in modern society.",
+      "target": "chemistry",
+      "translation": "作者在讨论现代社会变化时提到了化学（学科）。",
+      "sense": "化学（学科）",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260627-06-020:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-022": {
+    "primary": {
+      "sentence": "Students learned more about ceiling through the class discussion.",
+      "target": "ceiling",
+      "translation": "学生们通过课堂讨论进一步了解了天花板。",
+      "sense": "天花板",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260627-06-022:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-438": {
+    "primary": {
+      "sentence": "A vocabulary question tested whether students understood “cat”.",
+      "target": "cat",
+      "translation": "一道词汇题检验学生是否理解“cat”。",
+      "sense": "n. 猫",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-7",
+      "contextId": "blueforest-20260807-34-438:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "word-list-2-035": {
+    "primary": {
+      "sentence": "The report includes useful information about passage.",
+      "target": "passage",
+      "translation": "这份报告包含有关通道的有用信息。",
+      "sense": "通道",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-2-035:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-025": {
+    "primary": {
+      "sentence": "Students learned more about a pear through the class discussion.",
+      "target": "pear",
+      "translation": "学生们通过课堂讨论进一步了解了梨。",
+      "sense": "梨",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260627-06-025:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260725-20-049": {
+    "primary": {
+      "sentence": "A recent report discusses several changes related to a chairman.",
+      "target": "chairman",
+      "translation": "最近的一份报告讨论了与（男性）主席有关的若干变化。",
+      "sense": "（男性）主席",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260725-20-049:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-442": {
+    "primary": {
+      "sentence": "Students marked “chalk” as a key word before discussing the passage.",
+      "target": "chalk",
+      "translation": "学生在讨论文章前把“chalk”标记为关键词。",
+      "sense": "n. 粉笔",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-442:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-443": {
+    "primary": {
+      "sentence": "The word “camp” appeared in today’s entrance-exam practice.",
+      "target": "camp",
+      "translation": "“camp”出现在今天的专升本练习中。",
+      "sense": "n. 营地；v. 露营",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-4",
+      "contextId": "blueforest-20260807-34-443:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260628-adjadv-001": {
+    "primary": {
+      "sentence": "The passage explains why people need to cover the practical problem in a changing society.",
+      "target": "cover",
+      "translation": "文章解释了人们为什么需要在变化的社会中包括，涉及这一实际问题。",
+      "sense": "包括，涉及",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blueforest-20260628-adjadv-001:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-445": {
+    "primary": {
+      "sentence": "The study group reviewed “car” and then completed a sentence with it.",
+      "target": "car",
+      "translation": "学习小组复习了“car”，随后用它完成句子。",
+      "sense": "n. 汽车",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-445:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-011": {
+    "primary": {
+      "sentence": "The university organized a lecture on a captain for first-year students.",
+      "target": "captain",
+      "translation": "学校为大一学生举办了一场关于船长的讲座。",
+      "sense": "船长",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260627-06-011:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-013": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to a part.",
+      "target": "part",
+      "translation": "阅读文章给出了一个与部分有关的清晰例子。",
+      "sense": "部分",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260627-06-013:primary"
+    },
+    "extra": []
+  },
+  "blue-forest-b2-020": {
+    "primary": {
+      "sentence": "College students should learn to catch the practical problem through social practice.",
+      "target": "catch",
+      "translation": "大学生应通过社会实践学会赶上这一实际问题。",
+      "sense": "赶上",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blue-forest-b2-020:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-121": {
+    "primary": {
+      "sentence": "The teacher used a cause as the topic of a short writing task.",
+      "target": "cause",
+      "translation": "老师把导致作为一项短文写作任务的主题。",
+      "sense": "导致",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-complete-extra-121:primary"
+    },
+    "extra": []
+  },
+  "blue-19-022": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose of to complete the sentence correctly.",
+      "target": "of",
+      "translation": "在语法练习中，学生需要选择“of”来正确完成句子。",
+      "sense": "prep. 表示所属关系",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "blue-19-022:primary"
+    },
+    "extra": []
+  },
+  "blue-19-023": {
+    "primary": {
+      "sentence": "A total of one students took part in the campus survey last week.",
+      "target": "one",
+      "translation": "上周共有数字一名学生参加了校园调查。",
+      "sense": "数字一",
+      "pos": "numeral",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "numeral-exam",
+      "contextId": "blue-19-023:primary"
+    },
+    "extra": []
+  },
+  "word-list-4-002": {
+    "primary": {
+      "sentence": "The university plans to cancel the practical problem in order to improve teaching quality.",
+      "target": "cancel",
+      "translation": "学校计划取消这一实际问题，以提高教学质量。",
+      "sense": "取消",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-4-002:primary"
+    },
+    "extra": []
+  },
+  "cet4-20260720-10-030": {
+    "primary": {
+      "sentence": "The passage asks readers to think carefully about a candle.",
+      "target": "candle",
+      "translation": "文章要求读者认真思考蜡烛。",
+      "sense": "蜡烛",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet4-20260720-10-030:primary"
+    },
+    "extra": []
+  },
+  "word-list-4-005": {
+    "primary": {
+      "sentence": "Researchers examined the relationship between a cancer and economic development.",
+      "target": "cancer",
+      "translation": "研究人员考察了癌症与经济发展之间的关系。",
+      "sense": "癌症",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-4-005:primary"
+    },
+    "extra": []
+  },
+  "blue-19-025": {
+    "primary": {
+      "sentence": "The university plans to can the practical problem in order to improve teaching quality.",
+      "target": "can",
+      "translation": "学校计划modal v. 能够这一实际问题，以提高教学质量。",
+      "sense": "modal v. 能够",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blue-19-025:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-457": {
+    "primary": {
+      "sentence": "The teacher used “camera” in a short reading passage during vocabulary review.",
+      "target": "camera",
+      "translation": "词汇复习时，老师在一篇短阅读中使用了“camera”。",
+      "sense": "n. 相机；摄影机",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-2",
+      "contextId": "blueforest-20260807-34-457:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-458": {
+    "primary": {
+      "sentence": "Students marked “brown” as a key word before discussing the passage.",
+      "target": "brown",
+      "translation": "学生在讨论文章前把“brown”标记为关键词。",
+      "sense": "n. 棕色；adj. 棕色的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-3",
+      "contextId": "blueforest-20260807-34-458:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "cet4-14-034": {
+    "primary": {
+      "sentence": "The example helps students form a clearer understanding of a brush.",
+      "target": "brush",
+      "translation": "这个例子帮助学生更清楚地理解刷子。",
+      "sense": "刷子",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "cet4-14-034:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-005": {
+    "primary": {
+      "sentence": "Students should read the instructions nor before answering the questions.",
+      "target": "nor",
+      "translation": "学生答题前应conj. 也不（用于否定句）阅读说明。",
+      "sense": "conj. 也不（用于否定句）",
+      "pos": "adverb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "adverb-exam",
+      "contextId": "blueforest-20260627-06-005:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-461": {
+    "primary": {
+      "sentence": "The study group reviewed “bus” and then completed a sentence with it.",
+      "target": "bus",
+      "translation": "学习小组复习了“bus”，随后用它完成句子。",
+      "sense": "n. 公共汽车",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-6",
+      "contextId": "blueforest-20260807-34-461:primary",
+      "batch": "v70-b029"
+    },
+    "extra": []
+  },
+  "blueforest-20260627-06-009": {
+    "primary": {
+      "sentence": "The report includes useful information about a butter.",
+      "target": "butter",
+      "translation": "这份报告包含有关黄油的有用信息。",
+      "sense": "黄油",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blueforest-20260627-06-009:primary"
+    },
+    "extra": []
+  },
+  "blue-19-021": {
+    "primary": {
+      "sentence": "The final paragraph focuses mainly on a butterfly.",
+      "target": "butterfly",
+      "translation": "最后一段主要关注蝴蝶。",
+      "sense": "蝴蝶",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "blue-19-021:primary"
+    },
+    "extra": []
+  },
+  "word-list-5-033": {
+    "primary": {
+      "sentence": "The writer mentions a brain when discussing changes in modern society.",
+      "target": "brain",
+      "translation": "作者在讨论现代社会变化时提到了脑。",
+      "sense": "脑",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "word-list-5-033:primary"
+    },
+    "extra": []
+  },
+  "word-list-7-035": {
+    "primary": {
+      "sentence": "The passage explains why people need to breathe the practical problem in a changing society.",
+      "target": "breathe",
+      "translation": "文章解释了人们为什么需要在变化的社会中呼吸这一实际问题。",
+      "sense": "呼吸",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "word-list-7-035:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-036": {
+    "primary": {
+      "sentence": "The reading passage gives a clear example related to an iron.",
+      "target": "iron",
+      "translation": "阅读文章给出了一个与铁有关的清晰例子。",
+      "sense": "铁",
+      "pos": "noun",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "noun-exam",
+      "contextId": "fullway-complete-extra-036:primary"
+    },
+    "extra": []
+  },
+  "fullway-complete-extra-180": {
+    "primary": {
+      "sentence": "In the grammar exercise, students had to choose nature to complete the sentence correctly.",
+      "target": "nature",
+      "translation": "在语法练习中，学生需要选择“nature”来正确完成句子。",
+      "sense": "自然。",
+      "pos": "other",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "grammar-exam",
+      "contextId": "fullway-complete-extra-180:primary"
+    },
+    "extra": []
+  },
+  "word-list-5-038": {
+    "primary": {
+      "sentence": "In the passage, the main character is described as bright but willing to learn.",
+      "target": "bright",
+      "translation": "文章中的主人公被描述为明亮的，但乐于学习。",
+      "sense": "明亮的",
+      "pos": "adjective",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v6",
+      "templateFamily": "adjective-exam",
+      "contextId": "word-list-5-038:primary"
+    },
+    "extra": []
+  },
+  "blue-19-014": {
+    "primary": {
+      "sentence": "The passage explains why people need to bring the practical problem in a changing society.",
+      "target": "bring",
+      "translation": "文章解释了人们为什么需要在变化的社会中vt. 带来这一实际问题。",
+      "sense": "vt. 带来",
+      "pos": "verb",
+      "level": "intermediate",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "exam-context-v4",
+      "templateFamily": "verb-transitive-exam",
+      "contextId": "blue-19-014:primary"
+    },
+    "extra": []
+  },
+  "blueforest-20260807-34-471": {
+    "primary": {
+      "sentence": "The learner added “brother” to the weak-word list for another review.",
+      "target": "brother",
+      "translation": "学习者把“brother”加入薄弱词列表，准备再次复习。",
+      "sense": "n. 兄弟；哥哥；弟弟",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-07 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b029-import",
+      "templateFamily": "b029-8",
+      "contextId": "blueforest-20260807-34-471:primary",
+      "batch": "v70-b029"
     },
     "extra": []
   }

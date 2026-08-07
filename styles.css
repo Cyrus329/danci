@@ -4331,3 +4331,105 @@ body.mobile-focus-active {
 }
 
 .memory-lab-panel,.quick-browser-panel{scroll-margin-top:90px}
+
+
+/* v70 B027：全词浏览顶部功能固定。电脑端只滚动词表，上方模块入口、搜索筛选和分页区保持原位。 */
+.module-switcher {
+  position: sticky;
+  top: 0;
+  z-index: 120;
+  align-self: start;
+  isolation: isolate;
+  transform: translateZ(0);
+}
+
+@media (min-width: 761px) {
+  .workspace[data-active-module="browse"] .quick-browser-panel.module-section.active {
+    display: flex !important;
+    flex-direction: column;
+    height: calc(100dvh - var(--module-switcher-dock-height, 96px) - 28px);
+    min-height: 520px;
+    max-height: 900px;
+    overflow: hidden;
+  }
+
+  .workspace[data-active-module="browse"] .quick-browser-heading,
+  .workspace[data-active-module="browse"] .quick-browser-tools,
+  .workspace[data-active-module="browse"] .alphabet-strip,
+  .workspace[data-active-module="browse"] .quick-browser-summary,
+  .workspace[data-active-module="browse"] .quick-browser-pagination {
+    flex: 0 0 auto;
+  }
+
+  .workspace[data-active-module="browse"] .quick-browser-list {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+}
+
+@media (max-width: 760px) {
+  .module-switcher {
+    top: 0;
+    z-index: 120;
+  }
+  .workspace[data-active-module="browse"] .quick-browser-panel.module-section.active {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+  .workspace[data-active-module="browse"] .quick-browser-list {
+    overflow: visible;
+  }
+}
+
+
+/* v70 B030：七个大模块只在滚过原位置后吸附到页面最上方。
+   不再记录或使用中部锚点；工具栏始终 top: 0，下面内容继续正常滚动。 */
+.module-switcher {
+  position: sticky;
+  top: 0;
+  z-index: 160;
+  width: 100%;
+  margin-inline: 0;
+  align-self: start;
+  will-change: auto;
+}
+
+@media (min-width: 761px) {
+  .workspace[data-active-module="browse"] .quick-browser-panel.module-section.active {
+    height: calc(100dvh - var(--module-switcher-dock-height, 96px) - 26px);
+    min-height: 280px;
+    max-height: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .module-switcher {
+    position: sticky;
+    top: 0;
+  }
+}
+
+
+/* v70 B031：七个大模块恢复普通文档流。
+   模块栏只停留在页面原来的位置；向下滚动后自然离开屏幕，不再吸顶、悬浮或跟随。 */
+.module-switcher {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  z-index: 1 !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+@media (max-width: 760px) {
+  .module-switcher {
+    position: relative !important;
+    top: auto !important;
+  }
+}

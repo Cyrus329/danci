@@ -49,6 +49,11 @@
     letter: 'all',
   };
 
+
+  function resetBrowserScroll() {
+    if (els.browseList) els.browseList.scrollTop = 0;
+  }
+
   function allWords() {
     return Array.isArray(api.getWords()) ? api.getWords() : [];
   }
@@ -455,6 +460,7 @@
       browseState.letter = letterButton.dataset.browseLetter || 'all';
       browseState.page = 1;
       renderBrowser();
+      resetBrowserScroll();
       return;
     }
     const pageButton = event.target.closest('[data-browse-page]');
@@ -467,17 +473,17 @@
       if (action === 'next') browseState.page = Math.min(pages, browseState.page + 1);
       if (action === 'last') browseState.page = pages;
       renderBrowser();
-      els.browsePanel?.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
+      resetBrowserScroll();
     }
   });
 
   els.miniToggle?.addEventListener('change', () => api.setMiniRecapEnabled?.(els.miniToggle.checked));
-  els.browseSearch?.addEventListener('input', () => { browseState.query = els.browseSearch.value; browseState.page = 1; renderBrowser(); });
-  els.browseSource?.addEventListener('change', () => { browseState.source = els.browseSource.value; browseState.page = 1; renderBrowser(); });
-  els.browseStatus?.addEventListener('change', () => { browseState.status = els.browseStatus.value; browseState.page = 1; renderBrowser(); });
-  els.browseSort?.addEventListener('change', () => { browseState.sort = els.browseSort.value; browseState.page = 1; renderBrowser(); });
+  els.browseSearch?.addEventListener('input', () => { browseState.query = els.browseSearch.value; browseState.page = 1; renderBrowser(); resetBrowserScroll(); });
+  els.browseSource?.addEventListener('change', () => { browseState.source = els.browseSource.value; browseState.page = 1; renderBrowser(); resetBrowserScroll(); });
+  els.browseStatus?.addEventListener('change', () => { browseState.status = els.browseStatus.value; browseState.page = 1; renderBrowser(); resetBrowserScroll(); });
+  els.browseSort?.addEventListener('change', () => { browseState.sort = els.browseSort.value; browseState.page = 1; renderBrowser(); resetBrowserScroll(); });
   els.browseMask?.addEventListener('change', () => { browseState.mask = els.browseMask.value; renderBrowser(); });
-  els.browsePageSize?.addEventListener('change', () => { browseState.pageSize = Number(els.browsePageSize.value) || 200; browseState.page = 1; renderBrowser(); });
+  els.browsePageSize?.addEventListener('change', () => { browseState.pageSize = Number(els.browsePageSize.value) || 200; browseState.page = 1; renderBrowser(); resetBrowserScroll(); });
 
   window.WordMemoryLab = { render, renderSessionStatus, renderBrowser };
   render();
