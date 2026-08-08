@@ -2,9 +2,9 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>专升本单词记忆</title>
-  <link rel="stylesheet" href="./styles.css?v=70b03120260807">
+  <link rel="stylesheet" href="./styles.css?v=70b036vocabimport20260808">
 </head>
 <body>
   <div class="app-shell">
@@ -295,7 +295,15 @@
             <h2>全词库快速浏览</h2>
             <p class="folder-hint">默认按你资料中的原始导入顺序浏览；需要时再手动切换A-Z、薄弱优先等排序。</p>
           </div>
-          <strong id="quickBrowserTotal">0词</strong>
+          <div class="quick-browser-heading-actions">
+            <div class="browse-quiz-launch-copy">
+              <strong id="quickBrowserTotal">0词</strong>
+              <small id="browseQuizLauncherStats">独立存档：尚未作答</small>
+            </div>
+            <button class="browse-quiz-launch" type="button" data-browse-quiz-start>
+              <span>▦</span><strong>全词独立练习</strong><small>英→中 / 中→英 / 拼写；答错才重置主进度</small>
+            </button>
+          </div>
         </div>
         <div class="quick-browser-tools">
           <label class="search-box"><span>⌕</span><input id="quickBrowseSearch" type="search" placeholder="搜索英文、中文、分组、例句"></label>
@@ -570,19 +578,74 @@
       <button class="mobile-focus-rate remember" type="button" data-mobile-focus-rate="remember"><strong>记住</strong><small>与普通卡片共用进度</small></button>
     </footer>
   </section>
+  <section class="browse-quiz-overlay" id="browseQuizOverlay" hidden aria-label="全词浏览独立练习">
+    <header class="browse-quiz-header">
+      <button class="browse-quiz-close" id="browseQuizClose" type="button" aria-label="关闭">←</button>
+      <div>
+        <strong>全词浏览独立练习</strong>
+        <small id="browseQuizScope">当前全词浏览范围</small>
+      </div>
+      <div class="browse-quiz-header-actions">
+        <button id="browseQuizExport" type="button">导出浏览存档</button>
+        <button id="browseQuizImport" type="button">导入浏览存档</button>
+        <button id="browseQuizReset" type="button">清空浏览存档</button>
+      </div>
+    </header>
+    <input id="browseQuizImportInput" type="file" accept="application/json,.json" hidden>
+    <div class="browse-quiz-mode-tabs" role="group" aria-label="全词浏览练习方式">
+      <button class="active" type="button" data-browse-quiz-mode="enToZh" aria-pressed="true">看英文选中文</button>
+      <button type="button" data-browse-quiz-mode="zhToEn" aria-pressed="false">看中文选英文</button>
+      <button type="button" data-browse-quiz-mode="spelling" aria-pressed="false">看中文拼英文</button>
+    </div>
+    <div class="browse-quiz-progress-row">
+      <strong id="browseQuizProgress">0/0</strong>
+      <span id="browseQuizStats">已练0词</span>
+    </div>
+    <main class="browse-quiz-stage" id="browseQuizStage">
+      <article class="browse-quiz-card" id="browseQuizCard">
+        <p class="browse-quiz-instruction" id="browseQuizInstruction">请选择正确的中文释义</p>
+        <button class="browse-quiz-term" id="browseQuizTerm" type="button" title="可用时点击发音"></button>
+        <button class="browse-quiz-phonetic" id="browseQuizPhonetic" type="button" title="可用时点击发音"></button>
+        <div class="browse-quiz-options" id="browseQuizOptions"></div>
+        <div class="browse-quiz-spelling" id="browseQuizSpelling" hidden>
+          <input id="browseQuizSpellingInput" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" enterkeyhint="done" placeholder="输入英文拼写">
+          <button id="browseQuizSpellingCheck" type="button">检查</button>
+          <small>按 Enter 也可以检查</small>
+        </div>
+        <p class="browse-quiz-feedback" id="browseQuizFeedback" aria-live="polite"></p>
+        <button class="browse-quiz-unknown" id="browseQuizUnknown" type="button">不认识？<small>会记入浏览错词，并清空该词主学习进度重新记</small></button>
+      </article>
+    </main>
+    <p class="browse-quiz-save-note" id="browseQuizSaveNote"></p>
+    <footer class="browse-quiz-footer">
+      <div class="browse-quiz-mark-actions">
+        <button id="browseQuizFavorite" type="button" aria-pressed="false"><span>☆</span><strong>收藏</strong></button>
+        <button id="browseQuizFamiliar" type="button" aria-pressed="false"><span>熟</span><strong>熟词</strong></button>
+      </div>
+      <div class="browse-quiz-session-actions">
+        <button id="browseQuizWrongOnly" type="button">错词重做</button>
+        <button id="browseQuizRestart" type="button">按当前筛选重新开始</button>
+      </div>
+      <div class="browse-quiz-nav-actions">
+        <button id="browseQuizPrevious" type="button" aria-label="上一个">←</button>
+        <button id="browseQuizNext" type="button" aria-label="下一个">→</button>
+      </div>
+    </footer>
+  </section>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="./library-folder-data.js?v=70b03120260807"></script>
-  <script src="./word-data.js?v=70b03120260807"></script>
-  <script src="./context-engine.js?v=70b03120260807"></script>
-  <script src="./context-data.js?v=70b03120260807"></script>
-  <script src="./context-id-data.js?v=70b03120260807"></script>
-  <script src="./context-presenter.js?v=70b03120260807"></script>
-  <script src="./context-study-engine.js?v=70b03120260807"></script>
-  <script src="./mobile-focus.js?v=70b03120260807"></script>
-  <script src="./app.js?v=70b03120260807"></script>
-  <script src="./memory-lab.js?v=70b03120260807"></script>
-  <script src="./folder-view.js?v=70b03120260807"></script>
-  <script src="./smart-vocab.js?v=70b03120260807"></script>
+  <script src="./library-folder-data.js?v=70b036vocabimport20260808"></script>
+  <script src="./word-data.js?v=70b036vocabimport20260808"></script>
+  <script src="./context-engine.js?v=70b036vocabimport20260808"></script>
+  <script src="./context-data.js?v=70b036vocabimport20260808"></script>
+  <script src="./context-id-data.js?v=70b036vocabimport20260808"></script>
+  <script src="./context-presenter.js?v=70b036vocabimport20260808"></script>
+  <script src="./context-study-engine.js?v=70b036vocabimport20260808"></script>
+  <script src="./mobile-focus.js?v=70b036vocabimport20260808"></script>
+  <script src="./app.js?v=70b036vocabimport20260808"></script>
+  <script src="./memory-lab.js?v=70b036vocabimport20260808"></script>
+  <script src="./browse-quiz.js?v=70b036vocabimport20260808"></script>
+  <script src="./folder-view.js?v=70b036vocabimport20260808"></script>
+  <script src="./smart-vocab.js?v=70b036vocabimport20260808"></script>
   <script>
     (function(){
       const buttons = Array.from(document.querySelectorAll('[data-module-target]'));

@@ -43,6 +43,7 @@ function normalizeMemoryLabStore(value = {}) {
       recognition: normalizeAbilityStat(item.recognition),
       spelling: normalizeAbilityStat(item.spelling),
       confusedWith,
+      resetAt: normalizeText(item.resetAt || ""),
       updatedAt: normalizeText(item.updatedAt || ""),
     };
   });
@@ -94,8 +95,17 @@ function mergeMemoryLabStores(localValue = {}, incomingValue = {}) {
   const incomingStore = normalizeMemoryLabStore(incomingValue);
   const merged = normalizeMemoryLabStore(localStore);
   Object.entries(incomingStore.metrics).forEach(([id, item]) => {
-    const current = merged.metrics[id] || { recognition: normalizeAbilityStat(), spelling: normalizeAbilityStat(), confusedWith: {}, updatedAt: "" };
-    const mergeStat = (a, b) => {
+    const current = merged.metrics[id] || { recognition: normalizeAbilityStat(), spelling: normalizeAbilityStat(), confusedWith: {}, resetAt: "", updatedAt: "" };
+    const resetAt = [current.resetAt || "", item.resetAt || ""].filter(Boolean).sort().pop() || "";
+    const resetTime = Date.parse(resetAt || "") || 0;
+    const afterResetStat = (stat) => {
+      const safe = normalizeAbilityStat(stat);
+      const statTime = Date.parse(safe.updatedAt || "") || 0;
+      return resetTime && statTime <= resetTime ? normalizeAbilityStat() : safe;
+    };
+    const mergeStat = (left, right) => {
+      const a = afterResetStat(left);
+      const b = afterResetStat(right);
       const newer = (b.updatedAt || "") >= (a.updatedAt || "") ? b : a;
       return {
         correct: Math.max(a.correct, b.correct),
@@ -107,15 +117,20 @@ function mergeMemoryLabStores(localValue = {}, incomingValue = {}) {
         updatedAt: [a.updatedAt, b.updatedAt].filter(Boolean).sort().pop() || "",
       };
     };
-    const confusedWith = { ...current.confusedWith };
-    Object.entries(item.confusedWith || {}).forEach(([otherId, count]) => {
-      confusedWith[otherId] = Math.max(Number(confusedWith[otherId]) || 0, Number(count) || 0);
-    });
+    const currentConfusionValid = !resetTime || (Date.parse(current.updatedAt || "") || 0) > resetTime;
+    const incomingConfusionValid = !resetTime || (Date.parse(item.updatedAt || "") || 0) > resetTime;
+    const confusedWith = currentConfusionValid ? { ...current.confusedWith } : {};
+    if (incomingConfusionValid) {
+      Object.entries(item.confusedWith || {}).forEach(([otherId, count]) => {
+        confusedWith[otherId] = Math.max(Number(confusedWith[otherId]) || 0, Number(count) || 0);
+      });
+    }
     merged.metrics[id] = {
       recognition: mergeStat(current.recognition, item.recognition),
       spelling: mergeStat(current.spelling, item.spelling),
       confusedWith,
-      updatedAt: [current.updatedAt, item.updatedAt].filter(Boolean).sort().pop() || "",
+      resetAt,
+      updatedAt: [current.updatedAt, item.updatedAt, resetAt].filter(Boolean).sort().pop() || "",
     };
   });
   const reportsById = new Map();
@@ -1394,6 +1409,7 @@ function createEmptyProgress(source = {}) {
     stage,
     nextReviewAt: source.nextReviewAt || "",
     lastStudiedAt: source.lastStudiedAt || "",
+    resetAt: source.resetAt || "",
     history,
   };
 }
@@ -1453,11 +1469,12 @@ function progressStatusRank(status = "new") { return ({ new: 0, learning: 1, mat
 
 function progressActionTime(progress = {}) {
   const direct = Date.parse(progress.lastStudiedAt || "") || 0;
+  const resetTime = Date.parse(progress.resetAt || "") || 0;
   const historyTime = (Array.isArray(progress.history) ? progress.history : []).reduce((latest, item) => {
     const value = Date.parse(item?.time || "") || 0;
     return Math.max(latest, value);
   }, 0);
-  return Math.max(direct, historyTime);
+  return Math.max(direct, resetTime, historyTime);
 }
 
 function mergeProgressRecord(target = {}, incoming = {}) {
@@ -1473,11 +1490,15 @@ function mergeProgressRecord(target = {}, incoming = {}) {
     || (iTime === tTime && iStage > tStage)
     || (iTime === tTime && iStage === tStage && progressStatusRank(incoming.status) > progressStatusRank(target.status));
   const chosen = useIncoming ? incoming : target;
+  const resetAt = [target.resetAt || "", incoming.resetAt || ""].filter(Boolean).sort().at(-1) || "";
+  const resetTime = Date.parse(resetAt || "") || 0;
   const history = [...(Array.isArray(target.history) ? target.history : []), ...(Array.isArray(incoming.history) ? incoming.history : [])]
-    .filter(Boolean).sort((a,b) => String(a.time || "").localeCompare(String(b.time || "")));
+    .filter(Boolean)
+    .filter((item) => !resetTime || (Date.parse(item?.time || "") || 0) > resetTime)
+    .sort((a,b) => String(a.time || "").localeCompare(String(b.time || "")));
   const seen = new Set();
   const compactHistory = history.filter((item) => { const key = [item.time,item.result,item.mode].join("|"); if(seen.has(key)) return false; seen.add(key); return true; }).slice(-20);
-  return { status: chosen.status || "new", stage: Number.isInteger(chosen.stage) ? chosen.stage : -1, nextReviewAt: chosen.nextReviewAt || "", lastStudiedAt: chosen.lastStudiedAt || "", history: compactHistory };
+  return { status: chosen.status || "new", stage: Number.isInteger(chosen.stage) ? chosen.stage : -1, nextReviewAt: chosen.nextReviewAt || "", lastStudiedAt: chosen.lastStudiedAt || "", resetAt, history: compactHistory };
 }
 function mergeRuntimeWord(target, incoming) {
   target.phonetic = normalizeText(target.phonetic) || normalizeText(incoming.phonetic) || normalizeText(incoming.ipa) || normalizeText(incoming.pronunciation);
@@ -1491,7 +1512,10 @@ function mergeRuntimeWord(target, incoming) {
   target.progress = target.progress || {}; incoming.progress = incoming.progress || {};
   PROGRESS_MODES.forEach((mode) => { target.progress[mode] = mergeProgressRecord(target.progress[mode] || {}, incoming.progress[mode] || {}); });
   const card = target.progress.card || {}; target.status = card.status || target.status || "new"; target.stage = Number.isInteger(card.stage) ? card.stage : (Number.isInteger(target.stage) ? target.stage : -1); target.nextReviewAt = card.nextReviewAt || target.nextReviewAt || ""; target.lastStudiedAt = card.lastStudiedAt || target.lastStudiedAt || "";
-  target.history = mergeProgressRecord({history:target.history || []},{history:incoming.history || []}).history;
+  const resetAt = PROGRESS_MODES.map((mode) => target.progress?.[mode]?.resetAt || "").filter(Boolean).sort().at(-1) || "";
+  const resetTime = Date.parse(resetAt || "") || 0;
+  target.history = mergeProgressRecord({history:target.history || []},{history:incoming.history || []}).history
+    .filter((item) => !resetTime || (Date.parse(item?.time || "") || 0) > resetTime);
   return target;
 }
 function dedupeRuntimeWords(words) {
@@ -1598,14 +1622,16 @@ function compactProgress(progress = {}, options = {}) {
     const history = emergency ? [] : (Array.isArray(item.history) ? item.history.slice(-4) : []);
     const status = item.status || "new";
     const stage = Number.isInteger(item.stage) ? item.stage : -1;
-    const hasData = status !== "new" || stage >= 0 || Boolean(item.nextReviewAt) || Boolean(item.lastStudiedAt) || history.length > 0;
+    const resetAt = item.resetAt || "";
+    const hasData = status !== "new" || stage >= 0 || Boolean(item.nextReviewAt) || Boolean(item.lastStudiedAt) || Boolean(resetAt) || history.length > 0;
     if (!hasData) return;
     const record = {};
     if (status !== "new") record.status = status;
-    // “忘了”会把 stage 设为 -1；这个值也是有效操作，必须写入存档。
-    if (status !== "new" || item.lastStudiedAt || history.length) record.stage = stage;
+    // “忘了”会把 stage 设为 -1；“全词浏览答错重置”也会保留 stage=-1，这些都是有效操作。
+    if (status !== "new" || item.lastStudiedAt || resetAt || history.length) record.stage = stage;
     if (item.nextReviewAt) record.nextReviewAt = item.nextReviewAt;
     if (item.lastStudiedAt) record.lastStudiedAt = item.lastStudiedAt;
+    if (resetAt) record.resetAt = resetAt;
     if (history.length) record.history = history;
     out[mode] = record;
   });
@@ -2840,6 +2866,7 @@ function recordMemoryMetric(word, type, correct, meta = {}) {
     recognition: normalizeAbilityStat(),
     spelling: normalizeAbilityStat(),
     confusedWith: {},
+    resetAt: "",
     updatedAt: "",
   };
   const stat = normalizeAbilityStat(item[type]);
@@ -6589,6 +6616,46 @@ function registerServiceWorker() {
   }
 }
 
+function resetWordLearningProgressForBrowseQuiz(id, options = {}) {
+  const word = state.words.find((item) => String(item.id) === String(id));
+  if (!word) return { ok: false, reason: "not-found" };
+  if (!guardEditable()) return { ok: false, reason: "read-only" };
+  const resetAt = new Date().toISOString();
+  word.mastery = "未学";
+  word.status = "new";
+  word.stage = -1;
+  word.nextReviewAt = "";
+  word.lastStudiedAt = resetAt;
+  word.updatedAt = resetAt;
+  word.history = [];
+  word.progress = normalizeModeProgress(word);
+  PROGRESS_MODES.forEach((mode) => {
+    word.progress[mode] = {
+      status: "new",
+      stage: -1,
+      nextReviewAt: "",
+      lastStudiedAt: resetAt,
+      resetAt,
+      history: [],
+    };
+  });
+  memoryLabStore.metrics[word.id] = {
+    recognition: normalizeAbilityStat(),
+    spelling: normalizeAbilityStat(),
+    confusedWith: {},
+    resetAt,
+    updatedAt: resetAt,
+  };
+  if (Array.isArray(memoryLabStore.flow?.recentIds)) {
+    memoryLabStore.flow.recentIds = memoryLabStore.flow.recentIds.filter((wordId) => String(wordId) !== String(word.id));
+  }
+  saveMemoryLabStore();
+  reconcileDailyCompletedWord(word);
+  saveDailyCompletedStore();
+  saveWords({ immediate: true });
+  return { ok: true, id: word.id, resetAt, reason: normalizeText(options.reason || "browse-quiz-wrong") };
+}
+
 window.WordMemoryApp = {
   getWords: () => state.words,
   getWord: (id) => state.words.find((word) => word.id === id) || null,
@@ -6635,6 +6702,7 @@ window.WordMemoryApp = {
   meaningSegments,
   escapeHTML,
   save: () => saveWords({ immediate: true }),
+  resetWordLearningProgress: (id, options = {}) => resetWordLearningProgressForBrowseQuiz(id, options),
 };
 
 // 打开页面默认使用卡片模式；同时恢复上次保存的卡片筛选、分组和当前位置。

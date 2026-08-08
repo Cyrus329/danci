@@ -445,6 +445,15 @@
       });
       return;
     }
+    const browseQuizButton = event.target.closest('[data-browse-quiz-start]');
+    if (browseQuizButton) {
+      const words = browserWords();
+      const sourceLabel = browseState.source === 'all' ? '全部来源' : browseState.source;
+      const statusLabel = browseState.status === 'all' ? '全部状态' : browseState.status;
+      const label = `${sourceLabel} · ${statusLabel} · 当前筛选${words.length}词`;
+      window.BrowseQuizApp?.open?.(words.map((word) => word.id), { label });
+      return;
+    }
     const openButton = event.target.closest('[data-open-word]');
     if (openButton) {
       api.openWord?.(openButton.dataset.openWord);
