@@ -1905,7 +1905,9 @@ function queueMobileDatabaseWrite(payload, options = {}) {
     .catch(() => undefined)
     .then(() => writeMobileDatabasePayload(snapshot));
   if (options.notifyOnSuccess) {
-    mobileDbWriteChain.then(() => showToast("已保存到手机大容量存档")).catch(() => {
+    // Silent successful autosaves: frequent study actions should not cover the card with a toast.
+    // Keep the failure warning so the user still knows when the fallback save did not succeed.
+    mobileDbWriteChain.catch(() => {
       showToast("手机存档保存失败，请立即导出备份");
     });
   }
