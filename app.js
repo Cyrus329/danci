@@ -5,8 +5,10 @@ const MOBILE_DB_STORE = "snapshots";
 const MOBILE_DB_PRIMARY_KEY = "words-primary";
 const MOBILE_DB_PREVIOUS_KEY = "words-previous";
 let mobileDbPromise = null;
+let mobileDbHandle = null;
 let mobileDbWriteChain = Promise.resolve();
 let mobileDbHydrated = false;
+let lastLocalStorageSaveSucceeded = true;
 const SETTINGS_KEY = "word-memory-trainer:settings:v1";
 const STUDY_TIME_KEY = "word-memory-trainer:study-time:v1";
 const DAILY_COMPLETED_KEY = "word-memory-trainer:daily-completed:v1";
@@ -1720,18 +1722,23 @@ function compactPayloadForStorage(words, options = {}) {
       customWords.push(compactCustomWord(normalized, options));
     }
   });
-  return {
+  const payload = {
     app: "专升本单词记忆",
-    version: 30,
+    version: 31,
     compact: true,
     savedAt: new Date().toISOString(),
     studySession: captureStudySessionSnapshot(),
-    dailyCompleted: normalizeDailyCompletedStore(dailyCompletedStore),
-    contextStudy: normalizeContextStudyStore(contextStudyStore),
-    memoryLab: normalizeMemoryLabStore(memoryLabStore),
     progress,
     customWords,
   };
+  // These stores already have their own localStorage keys. Keep them in IndexedDB/cloud
+  // recovery snapshots, but omit the duplicate copy from the main localStorage payload.
+  if (!options.localLite) {
+    payload.dailyCompleted = normalizeDailyCompletedStore(dailyCompletedStore);
+    payload.contextStudy = normalizeContextStudyStore(contextStudyStore);
+    payload.memoryLab = normalizeMemoryLabStore(memoryLabStore);
+  }
+  return payload;
 }
 
 function loadCompactWords(parsed, options = {}) {
@@ -1794,10 +1801,17 @@ function shrinkHistoriesForEmergency() {
   });
 }
 
+function resetMobileDatabaseConnection() {
+  try { mobileDbHandle?.close?.(); } catch { /* ignore */ }
+  mobileDbHandle = null;
+  mobileDbPromise = null;
+}
+
 function openMobileDatabase() {
   if (mobileDbPromise) return mobileDbPromise;
   mobileDbPromise = new Promise((resolve, reject) => {
     if (typeof indexedDB === "undefined") {
+      mobileDbPromise = null;
       reject(new Error("IndexedDB unavailable"));
       return;
     }
@@ -1805,6 +1819,7 @@ function openMobileDatabase() {
     try {
       request = indexedDB.open(MOBILE_DB_NAME, MOBILE_DB_VERSION);
     } catch (error) {
+      mobileDbPromise = null;
       reject(error);
       return;
     }
@@ -1814,9 +1829,32 @@ function openMobileDatabase() {
         db.createObjectStore(MOBILE_DB_STORE, { keyPath: "key" });
       }
     };
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => reject(request.error || new Error("IndexedDB open failed"));
-    request.onblocked = () => reject(new Error("IndexedDB blocked"));
+    request.onsuccess = () => {
+      const db = request.result;
+      mobileDbHandle = db;
+      db.onversionchange = () => {
+        try { db.close(); } catch { /* ignore */ }
+        if (mobileDbHandle === db) mobileDbHandle = null;
+        mobileDbPromise = null;
+      };
+      // iOS Safari may silently close an IndexedDB connection after the page is backgrounded.
+      // Clear the cached handle so the next save can reopen it instead of failing forever.
+      if ("onclose" in db) {
+        db.onclose = () => {
+          if (mobileDbHandle === db) mobileDbHandle = null;
+          mobileDbPromise = null;
+        };
+      }
+      resolve(db);
+    };
+    request.onerror = () => {
+      mobileDbPromise = null;
+      reject(request.error || new Error("IndexedDB open failed"));
+    };
+    request.onblocked = () => {
+      mobileDbPromise = null;
+      reject(new Error("IndexedDB blocked"));
+    };
   });
   return mobileDbPromise;
 }
@@ -1863,50 +1901,110 @@ async function readBestMobileDatabasePayload() {
   }
 }
 
-async function writeMobileDatabasePayload(payload) {
+function mobileDatabaseErrorName(error) {
+  return normalizeText(error?.name || error?.message || "");
+}
+
+function isMobileDatabaseQuotaError(error) {
+  return /QuotaExceeded|quota/i.test(mobileDatabaseErrorName(error));
+}
+
+async function writeMobileDatabasePayloadOnce(payload, options = {}) {
   const db = await openMobileDatabase();
+  const keepPrevious = options.keepPrevious !== false;
   return new Promise((resolve, reject) => {
-    const transaction = db.transaction(MOBILE_DB_STORE, "readwrite");
-    const store = transaction.objectStore(MOBILE_DB_STORE);
-    const getCurrent = store.get(MOBILE_DB_PRIMARY_KEY);
-    getCurrent.onsuccess = () => {
-      const current = getCurrent.result;
-      if (current?.payload) {
-        store.put({
-          key: MOBILE_DB_PREVIOUS_KEY,
-          payload: current.payload,
-          savedAt: current.savedAt || current.payload?.savedAt || "",
-        });
+    let transaction;
+    try {
+      transaction = db.transaction(MOBILE_DB_STORE, "readwrite", { durability: "relaxed" });
+    } catch {
+      try {
+        transaction = db.transaction(MOBILE_DB_STORE, "readwrite");
+      } catch (error) {
+        reject(error);
+        return;
       }
+    }
+    const store = transaction.objectStore(MOBILE_DB_STORE);
+    if (!keepPrevious) {
+      // Low-space fallback: keep the newest complete snapshot rather than failing because
+      // two full copies temporarily exceed Safari's per-origin storage allowance.
+      try { store.delete(MOBILE_DB_PREVIOUS_KEY); } catch { /* ignore */ }
       store.put({
         key: MOBILE_DB_PRIMARY_KEY,
         payload,
         savedAt: payload?.savedAt || new Date().toISOString(),
       });
-    };
-    getCurrent.onerror = () => {
-      store.put({
-        key: MOBILE_DB_PRIMARY_KEY,
-        payload,
-        savedAt: payload?.savedAt || new Date().toISOString(),
-      });
-    };
+    } else {
+      const getCurrent = store.get(MOBILE_DB_PRIMARY_KEY);
+      getCurrent.onsuccess = () => {
+        const current = getCurrent.result;
+        if (current?.payload) {
+          store.put({
+            key: MOBILE_DB_PREVIOUS_KEY,
+            payload: current.payload,
+            savedAt: current.savedAt || current.payload?.savedAt || "",
+          });
+        }
+        store.put({
+          key: MOBILE_DB_PRIMARY_KEY,
+          payload,
+          savedAt: payload?.savedAt || new Date().toISOString(),
+        });
+      };
+      getCurrent.onerror = () => {
+        store.put({
+          key: MOBILE_DB_PRIMARY_KEY,
+          payload,
+          savedAt: payload?.savedAt || new Date().toISOString(),
+        });
+      };
+    }
     transaction.oncomplete = () => resolve(true);
     transaction.onerror = () => reject(transaction.error || new Error("IndexedDB write failed"));
     transaction.onabort = () => reject(transaction.error || new Error("IndexedDB write aborted"));
   });
 }
 
+async function writeMobileDatabasePayload(payload) {
+  let lastError = null;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      return await writeMobileDatabasePayloadOnce(payload, { keepPrevious: true });
+    } catch (error) {
+      lastError = error;
+      resetMobileDatabaseConnection();
+      // If storage is tight, retry once without the secondary snapshot. The primary
+      // snapshot still contains the complete current learning state.
+      if (isMobileDatabaseQuotaError(error)) {
+        try {
+          return await writeMobileDatabasePayloadOnce(payload, { keepPrevious: false });
+        } catch (quotaRetryError) {
+          lastError = quotaRetryError;
+          resetMobileDatabaseConnection();
+        }
+      }
+      await new Promise((resolve) => window.setTimeout(resolve, 80 * (attempt + 1)));
+    }
+  }
+  throw lastError || new Error("IndexedDB write failed after retry");
+}
+
 function queueMobileDatabaseWrite(payload, options = {}) {
-  const snapshot = typeof structuredClone === "function"
-    ? structuredClone(payload)
-    : JSON.parse(JSON.stringify(payload));
+  let snapshot;
+  try {
+    snapshot = typeof structuredClone === "function"
+      ? structuredClone(payload)
+      : JSON.parse(JSON.stringify(payload));
+  } catch {
+    snapshot = JSON.parse(JSON.stringify(payload));
+  }
+  const notifyOnFailure = options.notifyOnFailure ?? options.notifyOnSuccess ?? false;
   mobileDbWriteChain = mobileDbWriteChain
     .catch(() => undefined)
     .then(() => writeMobileDatabasePayload(snapshot));
-  if (options.notifyOnSuccess) {
-    // Silent successful autosaves: frequent study actions should not cover the card with a toast.
-    // Keep the failure warning so the user still knows when the fallback save did not succeed.
+  if (notifyOnFailure) {
+    // Successful autosaves stay silent. Only warn when both the normal localStorage
+    // path and the repaired IndexedDB fallback cannot persist the snapshot.
     mobileDbWriteChain.catch(() => {
       showToast("手机存档保存失败，请立即导出备份");
     });
@@ -2074,27 +2172,30 @@ function commitWordsSave(options = {}) {
   if (PUBLIC_VIEWER_SLUG) return true;
 
   saveDailyCompletedStore();
-  let payload = compactPayloadForStorage(state.words);
+  let mobilePayload = compactPayloadForStorage(state.words);
+  let localPayload = compactPayloadForStorage(state.words, { localLite: true });
   let localSaved = false;
   try {
     cleanupStorageForWordSave();
-    writeCompactStorage(payload);
+    writeCompactStorage(localPayload);
     localSaved = true;
   } catch {
     try {
       // Keep all current stages and groups, but remove only redundant history entries.
       shrinkHistoriesForEmergency();
       cleanupStorageForWordSave();
-      payload = compactPayloadForStorage(state.words, { emergency: true });
-      writeCompactStorage(payload);
+      mobilePayload = compactPayloadForStorage(state.words, { emergency: true });
+      localPayload = compactPayloadForStorage(state.words, { emergency: true, localLite: true });
+      writeCompactStorage(localPayload);
       localSaved = true;
     } catch {
       localSaved = false;
     }
   }
+  lastLocalStorageSaveSucceeded = localSaved;
 
-  // IndexedDB 和云同步改为合并缓冲：连续操作只保存最后一份完整快照，避免每按一次都排队写入。
-  queueMobileDatabaseWrite(payload, { notifyOnSuccess: !localSaved });
+  // localStorage is kept deliberately small; IndexedDB receives the complete recovery snapshot.
+  queueMobileDatabaseWrite(mobilePayload, { notifyOnFailure: !localSaved });
   if (!options.skipCloud) autoSaveCloudSoon();
 
   if (!localSaved && typeof indexedDB === "undefined") {
@@ -2127,6 +2228,18 @@ function saveWords(options = {}) {
   if (wordSaveTimer) window.clearTimeout(wordSaveTimer);
   wordSaveTimer = window.setTimeout(() => flushBufferedWordSave(), 260);
   return true;
+}
+
+async function saveWordsDurably(options = {}) {
+  saveWords({ ...options, immediate: true });
+  let indexedDbSaved = false;
+  try {
+    await mobileDbWriteChain;
+    indexedDbSaved = true;
+  } catch {
+    indexedDbSaved = false;
+  }
+  return Boolean(lastLocalStorageSaveSucceeded || indexedDbSaved);
 }
 
 function showToast(message) {
@@ -2509,7 +2622,7 @@ async function pullAndMergeCloudBeforeSave(config) {
   }
 }
 
-function saveLocalCloudSettingsOnly(config, options = {}) {
+async function saveLocalCloudSettingsOnly(config, options = {}) {
   if (PUBLIC_VIEWER_SLUG) {
     showToast("公开链接只能查看，不能保存");
     return false;
@@ -2517,8 +2630,13 @@ function saveLocalCloudSettingsOnly(config, options = {}) {
   tickStudyTime(true);
   state.cloud.config = { ...state.cloud.config, ...config, autoSync: false };
   saveCloudConfig(state.cloud.config);
-  saveWords({ skipCloud: true, immediate: true });
+  const saved = await saveWordsDurably({ skipCloud: true });
   saveStudyTime();
+  if (!saved) {
+    setCloudStatus("本机存储失败。请先导出 JSON 备份，避免学习记录丢失。", "warn");
+    showToast("本机存储失败，请立即导出备份");
+    return false;
+  }
   if (!options.silent) {
     setCloudStatus("已保存到本机。没有上传到云端。", "ok");
     showToast("已保存到本机");
@@ -6550,20 +6668,22 @@ function wireEvents() {
       await connectSharedEditCloud();
       return;
     }
-    saveLocalCloudSettingsOnly(config, { silent: true, closeDialog: false });
+    const localOk = await saveLocalCloudSettingsOnly(config, { silent: true, closeDialog: false });
+    if (!localOk) return;
     setCloudStatus("正在保存到云端……本机记录已先保存。", "");
     const ok = await saveCloudNow({ config: { ...config, autoSync: true } });
     if (ok) {
       closeCloudDialog();
     }
   });
-  els.localSaveButton?.addEventListener("click", () => {
+  els.localSaveButton?.addEventListener("click", async () => {
     const config = readCloudFormConfig();
-    saveLocalCloudSettingsOnly(config);
+    await saveLocalCloudSettingsOnly(config);
   });
   els.tryCloudSaveButton?.addEventListener("click", async () => {
     const config = readCloudFormConfig();
-    saveLocalCloudSettingsOnly(config, { silent: true, closeDialog: false });
+    const localOk = await saveLocalCloudSettingsOnly(config, { silent: true, closeDialog: false });
+    if (!localOk) return;
     setCloudStatus("正在检查并保存到云端……本机记录已先保存。", "");
     const ok = await saveCloudNow({ config: { ...config, autoSync: true } });
     if (ok) {

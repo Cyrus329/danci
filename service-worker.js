@@ -1,4 +1,4 @@
-const CACHE_NAME = "word-memory-v70-b038-vocab-import-20260809";
+const CACHE_NAME = "word-memory-v70-b039-storage-repair-20260809";
 const APP_ASSETS = [
   "./",
   "./index.html",
@@ -10,7 +10,7 @@ const APP_ASSETS = [
   "./context-presenter.js?v=70b038vocabimport20260809",
   "./context-study-engine.js?v=70b038vocabimport20260809",
   "./mobile-focus.js?v=70b038vocabimport20260809",
-  "./app.js?v=70b038vocabimport20260809",
+  "./app.js?v=70b039storagefix20260809",
   "./memory-lab.js?v=70b038vocabimport20260809",
   "./browse-quiz.js?v=70b038vocabimport20260809",
   "./folder-view.js?v=70b038vocabimport20260809",
