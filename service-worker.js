@@ -1,4 +1,4 @@
-const CACHE_NAME = "word-memory-v70-b039-storage-repair-20260809";
+const CACHE_NAME = "word-memory-v70-b041-real-import-20260810";
 const APP_ASSETS = [
   "./",
   "./index.html",

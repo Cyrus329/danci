@@ -1,4 +1,4 @@
-// Generated 2026-08-09. v70 B038 adds study contexts for newly-created screenshot entries.
+// Generated 2026-08-10. v70 B041 corrects B040 and adds contexts for newly-created screenshot entries.
 window.WORD_MEMORY_CONTEXTS_BY_ID = {
   "dictation-1-001": {
     "primary": {
@@ -30876,6 +30876,924 @@ window.WORD_MEMORY_CONTEXTS_BY_ID = {
       "templateFamily": "b038-1",
       "contextId": "cet-20260809-30-054:primary",
       "batch": "v70-b038"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-002": {
+    "primary": {
+      "sentence": "The reading passage used “entire”, so I checked its meaning before answering the question.",
+      "target": "entire",
+      "translation": "阅读文章中出现了“entire”，所以我在答题前核对了它的含义。",
+      "sense": "adj. 全部的；整个的",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-1",
+      "contextId": "cet-20260810-31-002:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-003": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “entirety” because it may appear in a reading-comprehension passage.",
+      "target": "entirety",
+      "translation": "复习词汇时，我标记了“entirety”，因为它可能出现在阅读理解中。",
+      "sense": "n. 全部；整体",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-2",
+      "contextId": "cet-20260810-31-003:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-005": {
+    "primary": {
+      "sentence": "I tried to recall the meaning of “wholly” before looking at the Chinese explanation.",
+      "target": "wholly",
+      "translation": "我先尝试回忆“wholly”的含义，再看中文解释。",
+      "sense": "adv. 完全地；完整地",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-3",
+      "contextId": "cet-20260810-31-005:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-009": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “idealistic” quickly in context rather than translate word by word.",
+      "target": "idealistic",
+      "translation": "老师要求我们在语境中快速识别“idealistic”，而不是逐词翻译。",
+      "sense": "adj. 理想主义（者）的；空想的",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-4",
+      "contextId": "cet-20260810-31-009:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-010": {
+    "primary": {
+      "sentence": "I wrote “idealism” in my review notebook and compared it with similar words.",
+      "target": "idealism",
+      "translation": "我把“idealism”写进复习本，并和相近词进行比较。",
+      "sense": "n. 理想主义；唯心主义；唯心论",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-5",
+      "contextId": "cet-20260810-31-010:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-015": {
+    "primary": {
+      "sentence": "When “perfectly” appeared in the practice exercise, I used the sentence context to confirm its meaning.",
+      "target": "perfectly",
+      "translation": "练习题出现“perfectly”时，我利用句子语境确认它的含义。",
+      "sense": "adv. 完全地；十足地；完美地",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-6",
+      "contextId": "cet-20260810-31-015:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-016": {
+    "primary": {
+      "sentence": "I reviewed the pronunciation and meaning of “perfection” before the mock test.",
+      "target": "perfection",
+      "translation": "模拟考试前，我复习了“perfection”的发音和含义。",
+      "sense": "n. 完美；完美的事物",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-7",
+      "contextId": "cet-20260810-31-016:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-017": {
+    "primary": {
+      "sentence": "The word “ideal” was added to today’s weak-word list for another quick review.",
+      "target": "ideal",
+      "translation": "“ideal”被加入今天的薄弱词列表，稍后再快速复习。",
+      "sense": "adj. 理想的；最佳的；n. 理想；理想典范；完美典型",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-8",
+      "contextId": "cet-20260810-31-017:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-018": {
+    "primary": {
+      "sentence": "I covered the translation of “infect” and tested whether I could recognize it immediately.",
+      "target": "infect",
+      "translation": "我遮住“infect”的中文释义，测试自己能否立即认出它。",
+      "sense": "vt. 传染；使感染；（情绪等）感染",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-9",
+      "contextId": "cet-20260810-31-018:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-019": {
+    "primary": {
+      "sentence": "I reviewed “infection” together with related words before the practice test.",
+      "target": "infection",
+      "translation": "练习测试前，我把“infection”和相关词一起复习。",
+      "sense": "n. （被）传染；传染病；感染",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-10",
+      "contextId": "cet-20260810-31-019:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-020": {
+    "primary": {
+      "sentence": "The reading passage used “infectious”, so I checked its meaning before answering the question.",
+      "target": "infectious",
+      "translation": "阅读文章中出现了“infectious”，所以我在答题前核对了它的含义。",
+      "sense": "adj. 传染的；有感染力的",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-1",
+      "contextId": "cet-20260810-31-020:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-021": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “manufacture” because it may appear in a reading-comprehension passage.",
+      "target": "manufacture",
+      "translation": "复习词汇时，我标记了“manufacture”，因为它可能出现在阅读理解中。",
+      "sense": "vt. 大量制造；编造；生成（物质）；n. 大量制造；商品",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-2",
+      "contextId": "cet-20260810-31-021:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-022": {
+    "primary": {
+      "sentence": "I tried to recall the meaning of “manufacturer” before looking at the Chinese explanation.",
+      "target": "manufacturer",
+      "translation": "我先尝试回忆“manufacturer”的含义，再看中文解释。",
+      "sense": "n. 生产商；制造商",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-3",
+      "contextId": "cet-20260810-31-022:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-027": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “affectionate” quickly in context rather than translate word by word.",
+      "target": "affectionate",
+      "translation": "老师要求我们在语境中快速识别“affectionate”，而不是逐词翻译。",
+      "sense": "adj. 表示关爱的；充满深情的",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-4",
+      "contextId": "cet-20260810-31-027:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-028": {
+    "primary": {
+      "sentence": "I wrote “facilitate” in my review notebook and compared it with similar words.",
+      "target": "facilitate",
+      "translation": "我把“facilitate”写进复习本，并和相近词进行比较。",
+      "sense": "vt. 促进；使便利",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-5",
+      "contextId": "cet-20260810-31-028:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-029": {
+    "primary": {
+      "sentence": "When “facilitation” appeared in the practice exercise, I used the sentence context to confirm its meaning.",
+      "target": "facilitation",
+      "translation": "练习题出现“facilitation”时，我利用句子语境确认它的含义。",
+      "sense": "n. 便利化；促进",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-6",
+      "contextId": "cet-20260810-31-029:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-030": {
+    "primary": {
+      "sentence": "I reviewed the pronunciation and meaning of “defect” before the mock test.",
+      "target": "defect",
+      "translation": "模拟考试前，我复习了“defect”的发音和含义。",
+      "sense": "n. 缺点；缺陷；瑕疵；vi. 背叛；变节；倒戈",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-7",
+      "contextId": "cet-20260810-31-030:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-031": {
+    "primary": {
+      "sentence": "The word “defective” was added to today’s weak-word list for another quick review.",
+      "target": "defective",
+      "translation": "“defective”被加入今天的薄弱词列表，稍后再快速复习。",
+      "sense": "adj. 有缺陷的；有毛病的",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-8",
+      "contextId": "cet-20260810-31-031:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-032": {
+    "primary": {
+      "sentence": "I covered the translation of “defection” and tested whether I could recognize it immediately.",
+      "target": "defection",
+      "translation": "我遮住“defection”的中文释义，测试自己能否立即认出它。",
+      "sense": "n. 背叛；变节；倒戈",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-9",
+      "contextId": "cet-20260810-31-032:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-034": {
+    "primary": {
+      "sentence": "I reviewed “indication” together with related words before the practice test.",
+      "target": "indication",
+      "translation": "练习测试前，我把“indication”和相关词一起复习。",
+      "sense": "n. 表明；迹象；象征",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-10",
+      "contextId": "cet-20260810-31-034:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-035": {
+    "primary": {
+      "sentence": "The reading passage used “indicative”, so I checked its meaning before answering the question.",
+      "target": "indicative",
+      "translation": "阅读文章中出现了“indicative”，所以我在答题前核对了它的含义。",
+      "sense": "adj. 表明的；表示的；暗示的",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-1",
+      "contextId": "cet-20260810-31-035:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-036": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “indicator” because it may appear in a reading-comprehension passage.",
+      "target": "indicator",
+      "translation": "复习词汇时，我标记了“indicator”，因为它可能出现在阅读理解中。",
+      "sense": "n. 指标；指示器；指针；转向灯",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-2",
+      "contextId": "cet-20260810-31-036:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-037": {
+    "primary": {
+      "sentence": "I tried to recall the meaning of “facility” before looking at the Chinese explanation.",
+      "target": "facility",
+      "translation": "我先尝试回忆“facility”的含义，再看中文解释。",
+      "sense": "n. 设备；设施；特色功能；天资",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-3",
+      "contextId": "cet-20260810-31-037:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-038": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “deny” quickly in context rather than translate word by word.",
+      "target": "deny",
+      "translation": "老师要求我们在语境中快速识别“deny”，而不是逐词翻译。",
+      "sense": "vt. 否认；拒绝接受；拒绝给予",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-4",
+      "contextId": "cet-20260810-31-038:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-039": {
+    "primary": {
+      "sentence": "I wrote “denial” in my review notebook and compared it with similar words.",
+      "target": "denial",
+      "translation": "我把“denial”写进复习本，并和相近词进行比较。",
+      "sense": "n. 否认；拒绝；拒绝给予",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-5",
+      "contextId": "cet-20260810-31-039:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-041": {
+    "primary": {
+      "sentence": "When “prediction” appeared in the practice exercise, I used the sentence context to confirm its meaning.",
+      "target": "prediction",
+      "translation": "练习题出现“prediction”时，我利用句子语境确认它的含义。",
+      "sense": "n. 预言；预告；预测",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-6",
+      "contextId": "cet-20260810-31-041:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-043": {
+    "primary": {
+      "sentence": "I reviewed the pronunciation and meaning of “dictator” before the mock test.",
+      "target": "dictator",
+      "translation": "模拟考试前，我复习了“dictator”的发音和含义。",
+      "sense": "n. 独裁者；专政者；专横的人",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-7",
+      "contextId": "cet-20260810-31-043:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-045": {
+    "primary": {
+      "sentence": "The word “contradict” was added to today’s weak-word list for another quick review.",
+      "target": "contradict",
+      "translation": "“contradict”被加入今天的薄弱词列表，稍后再快速复习。",
+      "sense": "vt. 反驳；否认；相矛盾",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-8",
+      "contextId": "cet-20260810-31-045:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-046": {
+    "primary": {
+      "sentence": "I covered the translation of “contradiction” and tested whether I could recognize it immediately.",
+      "target": "contradiction",
+      "translation": "我遮住“contradiction”的中文释义，测试自己能否立即认出它。",
+      "sense": "n. 矛盾；不一致；反驳；驳斥",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-9",
+      "contextId": "cet-20260810-31-046:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-047": {
+    "primary": {
+      "sentence": "I reviewed “contradictory” together with related words before the practice test.",
+      "target": "contradictory",
+      "translation": "练习测试前，我把“contradictory”和相关词一起复习。",
+      "sense": "adj. 互相矛盾的；对立的",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-10",
+      "contextId": "cet-20260810-31-047:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-049": {
+    "primary": {
+      "sentence": "The reading passage used “addiction”, so I checked its meaning before answering the question.",
+      "target": "addiction",
+      "translation": "阅读文章中出现了“addiction”，所以我在答题前核对了它的含义。",
+      "sense": "n. （毒）瘾；嗜好",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-1",
+      "contextId": "cet-20260810-31-049:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-050": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “addictive” because it may appear in a reading-comprehension passage.",
+      "target": "addictive",
+      "translation": "复习词汇时，我标记了“addictive”，因为它可能出现在阅读理解中。",
+      "sense": "adj. 使人上瘾的；使人入迷的",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-2",
+      "contextId": "cet-20260810-31-050:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "cet-20260810-31-052": {
+    "primary": {
+      "sentence": "I tried to recall the meaning of “dictation” before looking at the Chinese explanation.",
+      "target": "dictation",
+      "translation": "我先尝试回忆“dictation”的含义，再看中文解释。",
+      "sense": "n. 口述；口授；听写（测试）",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-3",
+      "contextId": "cet-20260810-31-052:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-001": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “apology” quickly in context rather than translate word by word.",
+      "target": "apology",
+      "translation": "老师要求我们在语境中快速识别“apology”，而不是逐词翻译。",
+      "sense": "n. 道歉；辩解；拙劣的替代品",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-4",
+      "contextId": "blueforest-20260810-37-001:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-002": {
+    "primary": {
+      "sentence": "I wrote “applaud” in my review notebook and compared it with similar words.",
+      "target": "applaud",
+      "translation": "我把“applaud”写进复习本，并和相近词进行比较。",
+      "sense": "vt. 鼓掌；称赞；赞成；vi. 鼓掌",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-5",
+      "contextId": "blueforest-20260810-37-002:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-006": {
+    "primary": {
+      "sentence": "When “anyhow” appeared in the practice exercise, I used the sentence context to confirm its meaning.",
+      "target": "anyhow",
+      "translation": "练习题出现“anyhow”时，我利用句子语境确认它的含义。",
+      "sense": "adv. 不管怎样；无论如何；杂乱地",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-6",
+      "contextId": "blueforest-20260810-37-006:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-012": {
+    "primary": {
+      "sentence": "I reviewed the pronunciation and meaning of “antique” before the mock test.",
+      "target": "antique",
+      "translation": "模拟考试前，我复习了“antique”的发音和含义。",
+      "sense": "adj. 古老的；古董的；n. 古董；古物；v. 仿古处理；使显得古老",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-7",
+      "contextId": "blueforest-20260810-37-012:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-013": {
+    "primary": {
+      "sentence": "The word “anchor” was added to today’s weak-word list for another quick review.",
+      "target": "anchor",
+      "translation": "“anchor”被加入今天的薄弱词列表，稍后再快速复习。",
+      "sense": "n. 锚；精神支柱；新闻主播；v. 抛锚停泊；使固定；担任主持人",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-8",
+      "contextId": "blueforest-20260810-37-013:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-015": {
+    "primary": {
+      "sentence": "I covered the translation of “jet” and tested whether I could recognize it immediately.",
+      "target": "jet",
+      "translation": "我遮住“jet”的中文释义，测试自己能否立即认出它。",
+      "sense": "n. 喷气式飞机；喷射；v. 喷射；乘喷气式飞机",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-9",
+      "contextId": "blueforest-20260810-37-015:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-018": {
+    "primary": {
+      "sentence": "I reviewed “ambulance” together with related words before the practice test.",
+      "target": "ambulance",
+      "translation": "练习测试前，我把“ambulance”和相关词一起复习。",
+      "sense": "n. 救护车；野战医院",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-10",
+      "contextId": "blueforest-20260810-37-018:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-021": {
+    "primary": {
+      "sentence": "The reading passage used “angel”, so I checked its meaning before answering the question.",
+      "target": "angel",
+      "translation": "阅读文章中出现了“angel”，所以我在答题前核对了它的含义。",
+      "sense": "n. 天使；善良的人；可爱的人",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-1",
+      "contextId": "blueforest-20260810-37-021:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-031": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “scent” because it may appear in a reading-comprehension passage.",
+      "target": "scent",
+      "translation": "复习词汇时，我标记了“scent”，因为它可能出现在阅读理解中。",
+      "sense": "n. 气味；香味；香水；v. 嗅到；察觉；洒香水于",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-2",
+      "contextId": "blueforest-20260810-37-031:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-033": {
+    "primary": {
+      "sentence": "I tried to recall the meaning of “aluminum” before looking at the Chinese explanation.",
+      "target": "aluminum",
+      "translation": "我先尝试回忆“aluminum”的含义，再看中文解释。",
+      "sense": "n. 铝（化学元素，符号Al；轻质金属，耐腐蚀）",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-3",
+      "contextId": "blueforest-20260810-37-033:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-034": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “altitude” quickly in context rather than translate word by word.",
+      "target": "altitude",
+      "translation": "老师要求我们在语境中快速识别“altitude”，而不是逐词翻译。",
+      "sense": "n. 海拔；高度；高处",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-4",
+      "contextId": "blueforest-20260810-37-034:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-039": {
+    "primary": {
+      "sentence": "I wrote “aid” in my review notebook and compared it with similar words.",
+      "target": "aid",
+      "translation": "我把“aid”写进复习本，并和相近词进行比较。",
+      "sense": "n. 帮助；援助；辅助工具；vt. 帮助；援助",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-5",
+      "contextId": "blueforest-20260810-37-039:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-043": {
+    "primary": {
+      "sentence": "When “alert” appeared in the practice exercise, I used the sentence context to confirm its meaning.",
+      "target": "alert",
+      "translation": "练习题出现“alert”时，我利用句子语境确认它的含义。",
+      "sense": "adj. 警觉的；警惕的；n. 警报；vt. 使警觉",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-6",
+      "contextId": "blueforest-20260810-37-043:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-047": {
+    "primary": {
+      "sentence": "I reviewed the pronunciation and meaning of “persist” before the mock test.",
+      "target": "persist",
+      "translation": "模拟考试前，我复习了“persist”的发音和含义。",
+      "sense": "vi. 坚持；持续存在；vt. 坚持说；固执地主张",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-7",
+      "contextId": "blueforest-20260810-37-047:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-050": {
+    "primary": {
+      "sentence": "The word “pessimism” was added to today’s weak-word list for another quick review.",
+      "target": "pessimism",
+      "translation": "“pessimism”被加入今天的薄弱词列表，稍后再快速复习。",
+      "sense": "n. 悲观；悲观主义",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-8",
+      "contextId": "blueforest-20260810-37-050:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-051": {
+    "primary": {
+      "sentence": "I covered the translation of “advertise” and tested whether I could recognize it immediately.",
+      "target": "advertise",
+      "translation": "我遮住“advertise”的中文释义，测试自己能否立即认出它。",
+      "sense": "vt. 为……做广告；宣传；vi. 登广告；公开招募",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-9",
+      "contextId": "blueforest-20260810-37-051:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-054": {
+    "primary": {
+      "sentence": "I reviewed “tag” together with related words before the practice test.",
+      "target": "tag",
+      "translation": "练习测试前，我把“tag”和相关词一起复习。",
+      "sense": "n. 标签；附加语；捉人游戏；vt. 给……加标签；附加",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-10",
+      "contextId": "blueforest-20260810-37-054:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-057": {
+    "primary": {
+      "sentence": "The reading passage used “adjective”, so I checked its meaning before answering the question.",
+      "target": "adjective",
+      "translation": "阅读文章中出现了“adjective”，所以我在答题前核对了它的含义。",
+      "sense": "n. 形容词（用于描述或修饰名词）",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-1",
+      "contextId": "blueforest-20260810-37-057:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-064": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “escape” because it may appear in a reading-comprehension passage.",
+      "target": "escape",
+      "translation": "复习词汇时，我标记了“escape”，因为它可能出现在阅读理解中。",
+      "sense": "vi. 逃跑；逃脱；漏出；vt. 逃避；避开；被遗忘；n. 逃跑；逃脱",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-2",
+      "contextId": "blueforest-20260810-37-064:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-067": {
+    "primary": {
+      "sentence": "I tried to recall the meaning of “estate” before looking at the Chinese explanation.",
+      "target": "estate",
+      "translation": "我先尝试回忆“estate”的含义，再看中文解释。",
+      "sense": "n. 地产；庄园；遗产；社会阶层（历史用法）",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-3",
+      "contextId": "blueforest-20260810-37-067:primary",
+      "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "blueforest-20260810-37-070": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “colony” quickly in context rather than translate word by word.",
+      "target": "colony",
+      "translation": "老师要求我们在语境中快速识别“colony”，而不是逐词翻译。",
+      "sense": "n. 殖民地；聚居地；群体",
+      "pos": "other",
+      "level": "basic",
+      "source": "2026-08-10 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b041-import",
+      "templateFamily": "b041-4",
+      "contextId": "blueforest-20260810-37-070:primary",
+      "batch": "v70-b041"
     },
     "extra": []
   }

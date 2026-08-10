@@ -1,4 +1,4 @@
-// v70 B038 2026-08-09：导入短语练习22、蓝色森林36、四级30；基于B037并保留手机自动存档静默。
+// v70 B041 2026-08-10：修正B040空包问题，实际导入短语练习23、蓝色森林37、四级31；基于B039。
 window.WORD_MEMORY_WORDS = [
   {
     "id": "word-list-1-001",
@@ -5060,13 +5060,14 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-11T09:28:39",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "Word List 4",
       "蓝色森林 16",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "sources": [
       "Word List",
@@ -6797,12 +6798,14 @@ window.WORD_MEMORY_WORDS = [
     "source": "蓝色森林",
     "tag": "蓝色森林 / 图片导入",
     "groups": [
-      "蓝色森林"
+      "蓝色森林",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
     ],
-    "phonetic": "/ˈɛriʌl/"
+    "phonetic": "/ˈɛriʌl/",
+    "updatedAt": "2026-08-10T08:55:00+08:00"
   },
   {
     "id": "blue-forest-032",
@@ -7427,7 +7430,8 @@ window.WORD_MEMORY_WORDS = [
     "note": "来源：2026-06-27 词表截图导入",
     "groups": [
       "四级",
-      "蓝色森林 6"
+      "蓝色森林 6",
+      "蓝色森林 37"
     ],
     "sources": [
       "四级",
@@ -7435,7 +7439,7 @@ window.WORD_MEMORY_WORDS = [
     ],
     "forms": {},
     "createdAt": "2026-06-27T14:50:00+08:00",
-    "updatedAt": "2026-06-27T14:50:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "phonetic": "/ˌænʌvˈɝsɝi/"
   },
   {
@@ -7445,12 +7449,15 @@ window.WORD_MEMORY_WORDS = [
     "source": "四级",
     "tag": "四级 / Part 1 Unit 1",
     "groups": [
-      "四级"
+      "四级",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
-    "phonetic": "/ˈænjuʌl/"
+    "phonetic": "/ˈænjuʌl/",
+    "updatedAt": "2026-08-10T08:55:00+08:00"
   },
   {
     "id": "cet4-023",
@@ -9286,12 +9293,14 @@ window.WORD_MEMORY_WORDS = [
     "source": "蓝色森林",
     "tag": "蓝色森林 / 听写总结",
     "groups": [
-      "蓝色森林"
+      "蓝色森林",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
     ],
-    "phonetic": "/ʌplˈaɪ/"
+    "phonetic": "/ʌplˈaɪ/",
+    "updatedAt": "2026-08-10T08:55:00+08:00"
   },
   {
     "id": "blue-forest-b2-080",
@@ -11198,17 +11207,19 @@ window.WORD_MEMORY_WORDS = [
     "tag": "全方位 2 / 全方位单词课",
     "source": "全方位",
     "sources": [
-      "全方位"
+      "全方位",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-18T00:00:00",
-    "updatedAt": "2026-06-18T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "全方位 2"
+      "全方位 2",
+      "四级 31"
     ],
     "phonetic": "/prɪdˈɪkt/"
   },
@@ -11221,17 +11232,19 @@ window.WORD_MEMORY_WORDS = [
     "tag": "全方位 2 / 全方位单词课",
     "source": "全方位",
     "sources": [
-      "全方位"
+      "全方位",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-18T00:00:00",
-    "updatedAt": "2026-06-18T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "全方位 2"
+      "全方位 2",
+      "四级 31"
     ],
     "phonetic": "/prɪdˈɪktʌbʌl/"
   },
@@ -15625,18 +15638,20 @@ window.WORD_MEMORY_WORDS = [
     "source": "全方位",
     "sources": [
       "全方位",
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-18T00:00:00",
-    "updatedAt": "2026-07-26T08:10:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "全方位 2",
-      "四级 16"
+      "四级 16",
+      "蓝色森林 37"
     ],
     "phonetic": "/ʌpˈɑrtmʌnt/"
   },
@@ -18163,20 +18178,22 @@ window.WORD_MEMORY_WORDS = [
     "sources": [
       "全方位",
       "Word List",
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-18T00:00:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "全方位 3",
       "Word List 14",
       "蓝色森林 20",
-      "蓝色森林 35"
+      "蓝色森林 35",
+      "四级 31"
     ],
     "forms": {},
     "phonetic": "/θˈɔt/"
@@ -18838,12 +18855,13 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-24T00:00:00",
-    "updatedAt": "2026-08-07T07:33:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "四级 3",
       "蓝色森林 9",
-      "蓝色森林 34"
+      "蓝色森林 34",
+      "四级 31"
     ],
     "forms": {},
     "phonetic": "/dˈɛd/"
@@ -19256,17 +19274,19 @@ window.WORD_MEMORY_WORDS = [
     "tag": "四级 3 / 黑背景新导入",
     "source": "四级",
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-24T00:00:00",
-    "updatedAt": "2026-06-24T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 3"
+      "四级 3",
+      "蓝色森林 37"
     ],
     "phonetic": "/ʌmˈaʊnt/"
   },
@@ -21622,18 +21642,21 @@ window.WORD_MEMORY_WORDS = [
     "source": "蓝色森林",
     "sources": [
       "蓝色森林",
-      "Word List"
+      "Word List",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-24T00:00:00",
-    "updatedAt": "2026-06-28T12:35:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 4",
-      "Word List 20"
+      "Word List 20",
+      "四级 31",
+      "蓝色森林 37"
     ],
     "forms": {},
     "phonetic": "/ʌfˈɛkt/"
@@ -21647,17 +21670,20 @@ window.WORD_MEMORY_WORDS = [
     "tag": "蓝色森林 4 / 第一章词汇短语",
     "source": "蓝色森林",
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-24T00:00:00",
-    "updatedAt": "2026-06-24T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 4"
+      "蓝色森林 4",
+      "四级 31",
+      "蓝色森林 37"
     ],
     "phonetic": "/ʌfˈɛkʃʌn/"
   },
@@ -21671,18 +21697,20 @@ window.WORD_MEMORY_WORDS = [
     "source": "蓝色森林",
     "sources": [
       "蓝色森林",
-      "Word List"
+      "Word List",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-24T00:00:00",
-    "updatedAt": "2026-06-28T12:35:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 4",
-      "Word List 20"
+      "Word List 20",
+      "四级 31"
     ],
     "forms": {},
     "phonetic": "/ɪfˈɛkt/"
@@ -21697,18 +21725,20 @@ window.WORD_MEMORY_WORDS = [
     "source": "蓝色森林",
     "sources": [
       "蓝色森林",
-      "Word List"
+      "Word List",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-24T00:00:00",
-    "updatedAt": "2026-06-28T12:35:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 4",
-      "Word List 20"
+      "Word List 20",
+      "四级 31"
     ],
     "forms": {},
     "phonetic": "/ɪfˈɛktɪv/"
@@ -24472,15 +24502,17 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-25T12:20:00",
-    "updatedAt": "2026-06-25T12:20:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "Word List 7",
-      "四级 7"
+      "四级 7",
+      "蓝色森林 37"
     ],
     "sources": [
       "Word List",
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "phonetic": "/pˌɝsʌnˈɛl/"
   },
@@ -24569,13 +24601,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-25T12:20:00",
-    "updatedAt": "2026-06-25T12:20:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "Word List 7"
+      "Word List 7",
+      "四级 31"
     ],
     "sources": [
-      "Word List"
+      "Word List",
+      "四级"
     ],
     "phonetic": "/mˈænjuʌl/"
   },
@@ -28678,15 +28712,17 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-25T12:20:00",
-    "updatedAt": "2026-06-25T12:20:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "Word List 10",
-      "四级 8"
+      "四级 8",
+      "蓝色森林 37"
     ],
     "sources": [
       "Word List",
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "phonetic": "/ʌkjˈumjʌlˌeɪt/"
   },
@@ -31360,12 +31396,13 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-27T14:50:00+08:00",
-    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 7",
       "Word List 20",
-      "四级 27"
+      "四级 27",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林",
@@ -33749,17 +33786,19 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-27T15:05:00+08:00",
-    "updatedAt": "2026-07-27T12:00:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "sources": [
       "Word List",
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "mastery": "未学",
     "important": false,
     "groups": [
       "Word List 11",
-      "四级 17"
+      "四级 17",
+      "蓝色森林 37"
     ],
     "phonetic": "/ʌprˈiʃiˌeɪt/"
   },
@@ -34262,7 +34301,7 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-27T15:05:00+08:00",
-    "updatedAt": "2026-06-28T11:40:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "sources": [
       "Word List",
@@ -34274,7 +34313,8 @@ window.WORD_MEMORY_WORDS = [
     "groups": [
       "Word List 11",
       "四级 5",
-      "蓝色森林 15"
+      "蓝色森林 15",
+      "蓝色森林 37"
     ],
     "forms": {},
     "phonetic": "/ˈæktʃʌwʌl/"
@@ -34405,17 +34445,19 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-27T15:05:00+08:00",
-    "updatedAt": "2026-07-25T10:04:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "sources": [
       "Word List",
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "mastery": "未学",
     "important": false,
     "groups": [
       "Word List 11",
-      "四级 15"
+      "四级 15",
+      "蓝色森林 37"
     ],
     "phonetic": "/ˌɔltʌɡˈɛðɝ/"
   },
@@ -35854,7 +35896,7 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-27T15:05:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "sources": [
       "Word List",
@@ -35865,7 +35907,8 @@ window.WORD_MEMORY_WORDS = [
     "groups": [
       "Word List 13",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/ˈaʊt əv fˈæʃʌn/"
   },
@@ -36578,15 +36621,17 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-27T15:05:00+08:00",
-    "updatedAt": "2026-06-27T15:05:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "sources": [
-      "Word List"
+      "Word List",
+      "蓝色森林"
     ],
     "mastery": "未学",
     "important": false,
     "groups": [
-      "Word List 13"
+      "Word List 13",
+      "蓝色森林 37"
     ],
     "phonetic": "/ɪstˈæblɪʃ/"
   },
@@ -37048,15 +37093,17 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-27T15:05:00+08:00",
-    "updatedAt": "2026-06-27T15:05:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "sources": [
-      "Word List"
+      "Word List",
+      "四级"
     ],
     "mastery": "未学",
     "important": false,
     "groups": [
-      "Word List 14"
+      "Word List 14",
+      "四级 31"
     ],
     "phonetic": "/θˈɔtfʌl/"
   },
@@ -41849,13 +41896,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-28T11:40:00+08:00",
-    "updatedAt": "2026-06-28T11:40:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 9"
+      "蓝色森林 9",
+      "四级 31"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "phonetic": "/dˈɛdli/"
   },
@@ -42622,13 +42671,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-28T11:40:00+08:00",
-    "updatedAt": "2026-06-28T11:40:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 9"
+      "蓝色森林 9",
+      "四级 31"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "phonetic": "/θˈɝoʊ/"
   },
@@ -44603,14 +44654,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-28T12:35:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "Word List 16",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/rɪzˈʌlt ɪn/"
   },
@@ -44632,14 +44684,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-28T12:35:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "Word List 16",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/rɪzˈʌlt frˈʌm/"
   },
@@ -48468,20 +48521,22 @@ window.WORD_MEMORY_WORDS = [
     "source": "Word List",
     "sources": [
       "Word List",
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-28T12:35:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "Word List 19",
-      "蓝色森林 36"
+      "蓝色森林 36",
+      "四级 31"
     ],
     "phonetic": "/ˈɪndʌkˌeɪt/"
   },
@@ -48606,12 +48661,13 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-28T12:35:00+08:00",
-    "updatedAt": "2026-06-28T12:35:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
-      "Word List 19"
+      "Word List 19",
+      "蓝色森林 37"
     ],
     "phonetic": "/ˈædvʌkʌt/"
   },
@@ -48710,13 +48766,14 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-28T12:35:00+08:00",
-    "updatedAt": "2026-06-28T12:35:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "Word List 19",
-      "蓝色森林 17"
+      "蓝色森林 17",
+      "蓝色森林 37"
     ],
     "phonetic": "/pɝswˈeɪd/"
   },
@@ -49958,12 +50015,13 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-28T12:35:00+08:00",
-    "updatedAt": "2026-06-28T12:35:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
-      "Word List 20"
+      "Word List 20",
+      "蓝色森林 37"
     ],
     "phonetic": "/ʌkjˈuz/"
   },
@@ -52473,20 +52531,22 @@ window.WORD_MEMORY_WORDS = [
     "tag": "蓝色森林 10 / 词表截图补充",
     "source": "蓝色森林",
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-06-29T14:20:00+08:00",
-    "updatedAt": "2026-08-07T07:33:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 10",
-      "蓝色森林 34"
+      "蓝色森林 34",
+      "四级 31"
     ],
     "phonetic": "/dˈɪkʃʌnˌɛri/"
   },
@@ -52674,19 +52734,21 @@ window.WORD_MEMORY_WORDS = [
     "tag": "四级 7 / 英语四级截图继续导入",
     "source": "四级",
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "status": "new",
     "stage": -1,
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-07-14T16:30:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
-      "四级 7"
+      "四级 7",
+      "蓝色森林 37"
     ],
     "phonetic": "/ˈæmpʌl/"
   },
@@ -53853,12 +53915,13 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-07-14T16:30:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
-      "蓝色森林 11"
+      "蓝色森林 11",
+      "蓝色森林 37"
     ],
     "phonetic": "/ʌnˈaʊns/"
   },
@@ -55046,14 +55109,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/ˈaʊt əv wˈɝk/"
   },
@@ -55101,14 +55165,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/ˈaʊt əv pˈeɪʃʌns/"
   },
@@ -55129,14 +55194,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/frˈʌm tə/"
   },
@@ -55157,14 +55223,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/frˈʌm tˈaɪm tə tˈaɪm/"
   },
@@ -55185,14 +55252,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/frˈʌm hˈɛd tə tˈoʊ/"
   },
@@ -55213,14 +55281,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/tˈɛl frˈʌm/"
   },
@@ -55241,14 +55310,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/ɝˈɪdʒʌnˌeɪt frˈʌm/"
   },
@@ -55269,14 +55339,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/bˈi dɝˈaɪvd frˈʌm/"
   },
@@ -55297,14 +55368,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/frˈʌm wʌnz pɝspˈɛktɪv/"
   },
@@ -55325,14 +55397,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/frˈʌm pˈɔɪnt əv vjˈu/"
   },
@@ -55353,14 +55426,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/dʒˈʌdʒɪŋ frˈʌm/"
   },
@@ -55381,14 +55455,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/rɪkˈʌvɝ frˈʌm/"
   },
@@ -55409,14 +55484,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/ɪskˈeɪp frˈʌm/"
   },
@@ -55437,14 +55513,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/sˈʌfɝ frˈʌm/"
   },
@@ -55490,14 +55567,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/bˈi mˈeɪd frˈʌm/"
   },
@@ -55518,14 +55596,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/bˈi mˈeɪd əv/"
   },
@@ -55648,13 +55727,14 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "phonetic": "/bɪkˈɔz əv/"
   },
@@ -55881,13 +55961,14 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-14T16:30:00+08:00",
-    "updatedAt": "2026-08-04T07:39:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "mastery": "未学",
     "important": false,
     "groups": [
       "蓝色森林 11",
-      "四级 25"
+      "四级 25",
+      "蓝色森林 37"
     ],
     "phonetic": "/skˈɛdʒʊl/"
   },
@@ -58683,13 +58764,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-16T09:00:00+08:00",
-    "updatedAt": "2026-07-16T09:00:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 8"
+      "四级 8",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "phonetic": "/æmbˈɪʃʌn/"
   },
@@ -60142,10 +60225,11 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-16T09:00:00+08:00",
-    "updatedAt": "2026-07-16T09:00:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 12"
+      "蓝色森林 12",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
@@ -61148,11 +61232,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-16T09:00:00+08:00",
-    "updatedAt": "2026-07-16T09:00:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 13",
-      "蓝色森林 15"
+      "蓝色森林 15",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
@@ -64195,13 +64280,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-18T00:00:00",
-    "updatedAt": "2026-07-18T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 8"
+      "四级 8",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "phonetic": "/ˈɛsʌns/"
@@ -64563,11 +64650,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-18T00:00:00",
-    "updatedAt": "2026-07-18T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "四级 8",
-      "蓝色森林 16"
+      "蓝色森林 16",
+      "蓝色森林 37"
     ],
     "sources": [
       "四级",
@@ -64847,11 +64935,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-18T00:00:00",
-    "updatedAt": "2026-07-18T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "四级 8",
-      "蓝色森林 16"
+      "蓝色森林 16",
+      "蓝色森林 37"
     ],
     "sources": [
       "四级",
@@ -66212,13 +66301,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-19T00:00:00",
-    "updatedAt": "2026-07-19T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 9"
+      "四级 9",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "phonetic": "/ɔltˈɝnʌtɪv/"
@@ -66396,13 +66487,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-19T00:00:00",
-    "updatedAt": "2026-07-19T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 9"
+      "四级 9",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "phonetic": "/ˈɔltɝ/"
@@ -66557,13 +66650,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-19T00:00:00",
-    "updatedAt": "2026-07-19T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 9"
+      "四级 9",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "phonetic": "/ʌmjˈuz/"
@@ -66839,13 +66934,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-19T00:00:00",
-    "updatedAt": "2026-07-19T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 9"
+      "四级 9",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "phonetic": "/ʌpˈɔɪnt/"
@@ -67280,11 +67377,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-20T00:00:00",
-    "updatedAt": "2026-08-05T08:11:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 15",
-      "四级 26"
+      "四级 26",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林",
@@ -67329,12 +67427,13 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-20T00:00:00",
-    "updatedAt": "2026-08-04T07:39:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 15",
       "四级 24",
-      "四级 25"
+      "四级 25",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林",
@@ -67403,10 +67502,11 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-20T00:00:00",
-    "updatedAt": "2026-07-20T00:00:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 15"
+      "蓝色森林 15",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
@@ -71529,10 +71629,11 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-21T13:10:00+08:00",
-    "updatedAt": "2026-07-21T13:10:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 16"
+      "蓝色森林 16",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
@@ -72305,13 +72406,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-21T13:10:00+08:00",
-    "updatedAt": "2026-07-21T13:10:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 11"
+      "四级 11",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "phonetic": "/ˈælkʌhˌɑl/"
@@ -73247,10 +73350,11 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-22T08:30:00+08:00",
-    "updatedAt": "2026-07-22T08:30:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 17"
+      "蓝色森林 17",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
@@ -75096,11 +75200,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-22T16:00:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "第二次听写内容",
-      "四级 30"
+      "四级 30",
+      "四级 31"
     ],
     "sources": [
       "听写内容",
@@ -77672,13 +77777,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-23T08:45:00+08:00",
-    "updatedAt": "2026-07-23T08:45:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 13"
+      "四级 13",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "phonetic": "/ʌdmˈɪnʌstɝ/"
@@ -78738,10 +78845,11 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-24T08:00:00+08:00",
-    "updatedAt": "2026-07-24T08:00:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 19"
+      "蓝色森林 19",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
@@ -84098,11 +84206,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-26T08:10:00+08:00",
-    "updatedAt": "2026-08-04T07:39:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "四级 16",
-      "蓝色森林 30"
+      "蓝色森林 30",
+      "蓝色森林 37"
     ],
     "sources": [
       "四级",
@@ -84402,13 +84511,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-26T08:10:00+08:00",
-    "updatedAt": "2026-07-26T08:10:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 16"
+      "四级 16",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "phonetic": "/ʌpˈɑrt/"
@@ -85611,14 +85722,16 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-27T12:00:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 22",
-      "蓝色森林 35"
+      "蓝色森林 35",
+      "四级 31"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "source": "蓝色森林",
     "phonetic": "/pɝfˈɛkt/"
@@ -86156,14 +86269,16 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-27T12:00:00+08:00",
-    "updatedAt": "2026-08-07T07:33:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "蓝色森林 22",
-      "蓝色森林 34"
+      "蓝色森林 34",
+      "四级 31"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "source": "蓝色森林",
     "phonetic": "/dˈɛθ/"
@@ -87448,11 +87563,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-27T12:00:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "第三次听写内容",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "听写内容",
@@ -88408,13 +88524,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-27T12:00:00+08:00",
-    "updatedAt": "2026-07-27T12:00:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "第三次听写内容"
+      "第三次听写内容",
+      "蓝色森林 37"
     ],
     "sources": [
-      "听写内容"
+      "听写内容",
+      "蓝色森林"
     ],
     "source": "听写内容",
     "contextSentence": "The school adopted a new method to improve teaching quality.",
@@ -94693,11 +94811,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-30T08:00:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "第四次听写内容",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "听写内容",
@@ -94743,11 +94862,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-30T08:00:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "第四次听写内容",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "听写内容",
@@ -94769,11 +94889,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-30T08:00:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "第四次听写内容",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "听写内容",
@@ -94795,11 +94916,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-30T08:00:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "第四次听写内容",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "听写内容",
@@ -94821,11 +94943,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-30T08:00:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "第四次听写内容",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "听写内容",
@@ -94847,11 +94970,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-30T08:00:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "第四次听写内容",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "听写内容",
@@ -94873,11 +94997,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-30T08:00:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "第四次听写内容",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "听写内容",
@@ -94899,11 +95024,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-30T08:00:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "第四次听写内容",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "听写内容",
@@ -95045,13 +95171,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-30T08:00:00+08:00",
-    "updatedAt": "2026-07-30T08:00:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "第四次听写内容"
+      "第四次听写内容",
+      "蓝色森林 37"
     ],
     "sources": [
-      "听写内容"
+      "听写内容",
+      "蓝色森林"
     ],
     "source": "听写内容",
     "forms": {},
@@ -96779,13 +96907,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-07-30T08:00:00+08:00",
-    "updatedAt": "2026-07-30T08:00:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 20"
+      "四级 20",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "forms": {},
@@ -105276,11 +105406,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-04T07:39:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "短语练习 17",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "短语练习"
@@ -105301,11 +105432,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-04T07:39:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "短语练习 17",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "短语练习"
@@ -105326,11 +105458,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-04T07:39:00+08:00",
-    "updatedAt": "2026-08-08T14:07:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "短语练习 17",
-      "短语练习 21"
+      "短语练习 21",
+      "短语练习 23"
     ],
     "sources": [
       "短语练习"
@@ -105375,10 +105508,11 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-04T07:39:00+08:00",
-    "updatedAt": "2026-08-04T07:39:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 30"
+      "蓝色森林 30",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
@@ -105423,10 +105557,11 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-04T07:39:00+08:00",
-    "updatedAt": "2026-08-04T07:39:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 30"
+      "蓝色森林 30",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
@@ -107147,10 +107282,11 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-05T08:11:00+08:00",
-    "updatedAt": "2026-08-05T08:11:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 31"
+      "蓝色森林 31",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
@@ -109156,10 +109292,11 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-06T07:53:00+08:00",
-    "updatedAt": "2026-08-06T07:53:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 32"
+      "蓝色森林 32",
+      "蓝色森林 37"
     ],
     "sources": [
       "蓝色森林"
@@ -110800,13 +110937,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-07T07:33:00+08:00",
-    "updatedAt": "2026-08-07T07:33:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "四级 28"
+      "四级 28",
+      "蓝色森林 37"
     ],
     "sources": [
-      "四级"
+      "四级",
+      "蓝色森林"
     ],
     "source": "四级",
     "forms": {},
@@ -112024,13 +112163,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-07T07:33:00+08:00",
-    "updatedAt": "2026-08-07T07:33:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 34"
+      "蓝色森林 34",
+      "四级 31"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "source": "蓝色森林",
     "forms": {},
@@ -114282,11 +114423,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-08T14:07:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "sources": [
       "短语练习"
@@ -114307,11 +114449,12 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-08T14:07:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
       "短语练习 21",
-      "短语练习 22"
+      "短语练习 22",
+      "短语练习 23"
     ],
     "sources": [
       "短语练习"
@@ -119207,13 +119350,15 @@ window.WORD_MEMORY_WORDS = [
     "nextReviewAt": "",
     "lastStudiedAt": "",
     "createdAt": "2026-08-09T07:51:00+08:00",
-    "updatedAt": "2026-08-09T07:51:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
     "history": [],
     "groups": [
-      "蓝色森林 36"
+      "蓝色森林 36",
+      "四级 31"
     ],
     "sources": [
-      "蓝色森林"
+      "蓝色森林",
+      "四级"
     ],
     "source": "蓝色森林",
     "forms": {},
@@ -120154,5 +120299,1301 @@ window.WORD_MEMORY_WORDS = [
     "source": "四级",
     "forms": {},
     "phonetic": "/ˈwɪlɪŋnəs/"
+  },
+  {
+    "id": "cet-20260810-31-002",
+    "term": "entire",
+    "meaning": "adj. 全部的；整个的",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ɪnˈtaɪə(r)/"
+  },
+  {
+    "id": "cet-20260810-31-003",
+    "term": "entirety",
+    "meaning": "n. 全部；整体",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ɪnˈtaɪərəti/"
+  },
+  {
+    "id": "cet-20260810-31-005",
+    "term": "wholly",
+    "meaning": "adv. 完全地；完整地",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈhəʊlli/"
+  },
+  {
+    "id": "cet-20260810-31-009",
+    "term": "idealistic",
+    "meaning": "adj. 理想主义（者）的；空想的",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˌaɪdiəˈlɪstɪk/"
+  },
+  {
+    "id": "cet-20260810-31-010",
+    "term": "idealism",
+    "meaning": "n. 理想主义；唯心主义；唯心论",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/aɪˈdiːəlɪzəm/"
+  },
+  {
+    "id": "cet-20260810-31-015",
+    "term": "perfectly",
+    "meaning": "adv. 完全地；十足地；完美地",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈpɜːfɪktli/"
+  },
+  {
+    "id": "cet-20260810-31-016",
+    "term": "perfection",
+    "meaning": "n. 完美；完美的事物",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/pəˈfekʃn/"
+  },
+  {
+    "id": "cet-20260810-31-017",
+    "term": "ideal",
+    "meaning": "adj. 理想的；最佳的；n. 理想；理想典范；完美典型",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/aɪˈdiːəl/"
+  },
+  {
+    "id": "cet-20260810-31-018",
+    "term": "infect",
+    "meaning": "vt. 传染；使感染；（情绪等）感染",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ɪnˈfekt/"
+  },
+  {
+    "id": "cet-20260810-31-019",
+    "term": "infection",
+    "meaning": "n. （被）传染；传染病；感染",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ɪnˈfekʃn/"
+  },
+  {
+    "id": "cet-20260810-31-020",
+    "term": "infectious",
+    "meaning": "adj. 传染的；有感染力的",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ɪnˈfekʃəs/"
+  },
+  {
+    "id": "cet-20260810-31-021",
+    "term": "manufacture",
+    "meaning": "vt. 大量制造；编造；生成（物质）；n. 大量制造；商品",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˌmænjuˈfæktʃə(r)/"
+  },
+  {
+    "id": "cet-20260810-31-022",
+    "term": "manufacturer",
+    "meaning": "n. 生产商；制造商",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˌmænjuˈfæktʃərə(r)/"
+  },
+  {
+    "id": "cet-20260810-31-027",
+    "term": "affectionate",
+    "meaning": "adj. 表示关爱的；充满深情的",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/əˈfekʃənət/"
+  },
+  {
+    "id": "cet-20260810-31-028",
+    "term": "facilitate",
+    "meaning": "vt. 促进；使便利",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/fəˈsɪlɪteɪt/"
+  },
+  {
+    "id": "cet-20260810-31-029",
+    "term": "facilitation",
+    "meaning": "n. 便利化；促进",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/fəˌsɪlɪˈteɪʃn/"
+  },
+  {
+    "id": "cet-20260810-31-030",
+    "term": "defect",
+    "meaning": "n. 缺点；缺陷；瑕疵；vi. 背叛；变节；倒戈",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈdiːfekt/"
+  },
+  {
+    "id": "cet-20260810-31-031",
+    "term": "defective",
+    "meaning": "adj. 有缺陷的；有毛病的",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/dɪˈfektɪv/"
+  },
+  {
+    "id": "cet-20260810-31-032",
+    "term": "defection",
+    "meaning": "n. 背叛；变节；倒戈",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/dɪˈfekʃn/"
+  },
+  {
+    "id": "cet-20260810-31-034",
+    "term": "indication",
+    "meaning": "n. 表明；迹象；象征",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˌɪndɪˈkeɪʃn/"
+  },
+  {
+    "id": "cet-20260810-31-035",
+    "term": "indicative",
+    "meaning": "adj. 表明的；表示的；暗示的",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ɪnˈdɪkətɪv/"
+  },
+  {
+    "id": "cet-20260810-31-036",
+    "term": "indicator",
+    "meaning": "n. 指标；指示器；指针；转向灯",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˈɪndɪkeɪtə(r)/"
+  },
+  {
+    "id": "cet-20260810-31-037",
+    "term": "facility",
+    "meaning": "n. 设备；设施；特色功能；天资",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/fəˈsɪləti/"
+  },
+  {
+    "id": "cet-20260810-31-038",
+    "term": "deny",
+    "meaning": "vt. 否认；拒绝接受；拒绝给予",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/dɪˈnaɪ/"
+  },
+  {
+    "id": "cet-20260810-31-039",
+    "term": "denial",
+    "meaning": "n. 否认；拒绝；拒绝给予",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/dɪˈnaɪəl/"
+  },
+  {
+    "id": "cet-20260810-31-041",
+    "term": "prediction",
+    "meaning": "n. 预言；预告；预测",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/prɪˈdɪkʃn/"
+  },
+  {
+    "id": "cet-20260810-31-043",
+    "term": "dictator",
+    "meaning": "n. 独裁者；专政者；专横的人",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/dɪkˈteɪtə(r)/"
+  },
+  {
+    "id": "cet-20260810-31-045",
+    "term": "contradict",
+    "meaning": "vt. 反驳；否认；相矛盾",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˌkɒntrəˈdɪkt/"
+  },
+  {
+    "id": "cet-20260810-31-046",
+    "term": "contradiction",
+    "meaning": "n. 矛盾；不一致；反驳；驳斥",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˌkɒntrəˈdɪkʃn/"
+  },
+  {
+    "id": "cet-20260810-31-047",
+    "term": "contradictory",
+    "meaning": "adj. 互相矛盾的；对立的",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/ˌkɒntrəˈdɪktəri/"
+  },
+  {
+    "id": "cet-20260810-31-049",
+    "term": "addiction",
+    "meaning": "n. （毒）瘾；嗜好",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/əˈdɪkʃn/"
+  },
+  {
+    "id": "cet-20260810-31-050",
+    "term": "addictive",
+    "meaning": "adj. 使人上瘾的；使人入迷的",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/əˈdɪktɪv/"
+  },
+  {
+    "id": "cet-20260810-31-052",
+    "term": "dictation",
+    "meaning": "n. 口述；口授；听写（测试）",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入四级 31；释义按截图内容标准化整理。",
+    "tag": "四级 31 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "四级 31"
+    ],
+    "sources": [
+      "四级"
+    ],
+    "source": "四级",
+    "forms": {},
+    "phonetic": "/dɪkˈteɪʃn/"
+  },
+  {
+    "id": "blueforest-20260810-37-001",
+    "term": "apology",
+    "meaning": "n. 道歉；辩解；拙劣的替代品",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/əpˈɑlədʒˌi/"
+  },
+  {
+    "id": "blueforest-20260810-37-002",
+    "term": "applaud",
+    "meaning": "vt. 鼓掌；称赞；赞成；vi. 鼓掌",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/əplˈɔd/"
+  },
+  {
+    "id": "blueforest-20260810-37-006",
+    "term": "anyhow",
+    "meaning": "adv. 不管怎样；无论如何；杂乱地",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈɛnihˌaʊ/"
+  },
+  {
+    "id": "blueforest-20260810-37-012",
+    "term": "antique",
+    "meaning": "adj. 古老的；古董的；n. 古董；古物；v. 仿古处理；使显得古老",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/æntˈik/"
+  },
+  {
+    "id": "blueforest-20260810-37-013",
+    "term": "anchor",
+    "meaning": "n. 锚；精神支柱；新闻主播；v. 抛锚停泊；使固定；担任主持人",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈæŋkɚ/"
+  },
+  {
+    "id": "blueforest-20260810-37-015",
+    "term": "jet",
+    "meaning": "n. 喷气式飞机；喷射；v. 喷射；乘喷气式飞机",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/dʒˈɛt/"
+  },
+  {
+    "id": "blueforest-20260810-37-018",
+    "term": "ambulance",
+    "meaning": "n. 救护车；野战医院",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈæmbjələns/"
+  },
+  {
+    "id": "blueforest-20260810-37-021",
+    "term": "angel",
+    "meaning": "n. 天使；善良的人；可爱的人",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈeɪndʒəl/"
+  },
+  {
+    "id": "blueforest-20260810-37-031",
+    "term": "scent",
+    "meaning": "n. 气味；香味；香水；v. 嗅到；察觉；洒香水于",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/sˈɛnt/"
+  },
+  {
+    "id": "blueforest-20260810-37-033",
+    "term": "aluminum",
+    "meaning": "n. 铝（化学元素，符号Al；轻质金属，耐腐蚀）",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/əlˈumənəm/"
+  },
+  {
+    "id": "blueforest-20260810-37-034",
+    "term": "altitude",
+    "meaning": "n. 海拔；高度；高处",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈæltətˌud/"
+  },
+  {
+    "id": "blueforest-20260810-37-039",
+    "term": "aid",
+    "meaning": "n. 帮助；援助；辅助工具；vt. 帮助；援助",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈeɪd/"
+  },
+  {
+    "id": "blueforest-20260810-37-043",
+    "term": "alert",
+    "meaning": "adj. 警觉的；警惕的；n. 警报；vt. 使警觉",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/əlˈɝt/"
+  },
+  {
+    "id": "blueforest-20260810-37-047",
+    "term": "persist",
+    "meaning": "vi. 坚持；持续存在；vt. 坚持说；固执地主张",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/pɚsˈɪst/"
+  },
+  {
+    "id": "blueforest-20260810-37-050",
+    "term": "pessimism",
+    "meaning": "n. 悲观；悲观主义",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/pˈɛsəmˌɪzəm/"
+  },
+  {
+    "id": "blueforest-20260810-37-051",
+    "term": "advertise",
+    "meaning": "vt. 为……做广告；宣传；vi. 登广告；公开招募",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈædvɚtˌaɪz/"
+  },
+  {
+    "id": "blueforest-20260810-37-054",
+    "term": "tag",
+    "meaning": "n. 标签；附加语；捉人游戏；vt. 给……加标签；附加",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/tˈæɡ/"
+  },
+  {
+    "id": "blueforest-20260810-37-057",
+    "term": "adjective",
+    "meaning": "n. 形容词（用于描述或修饰名词）",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ˈædʒɪktɪv/"
+  },
+  {
+    "id": "blueforest-20260810-37-064",
+    "term": "escape",
+    "meaning": "vi. 逃跑；逃脱；漏出；vt. 逃避；避开；被遗忘；n. 逃跑；逃脱",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ɪskˈeɪp/"
+  },
+  {
+    "id": "blueforest-20260810-37-067",
+    "term": "estate",
+    "meaning": "n. 地产；庄园；遗产；社会阶层（历史用法）",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/ɪstˈeɪt/"
+  },
+  {
+    "id": "blueforest-20260810-37-070",
+    "term": "colony",
+    "meaning": "n. 殖民地；聚居地；群体",
+    "phrase": "",
+    "note": "来源：2026-08-10 用户上传截图；归入蓝色森林 37；释义按截图内容标准化整理。",
+    "tag": "蓝色森林 37 / 2026-08-10截图导入",
+    "status": "new",
+    "stage": -1,
+    "nextReviewAt": "",
+    "lastStudiedAt": "",
+    "createdAt": "2026-08-10T08:55:00+08:00",
+    "updatedAt": "2026-08-10T08:55:00+08:00",
+    "history": [],
+    "groups": [
+      "蓝色森林 37"
+    ],
+    "sources": [
+      "蓝色森林"
+    ],
+    "source": "蓝色森林",
+    "forms": {},
+    "phonetic": "/kˈɑləni/"
   }
 ];
