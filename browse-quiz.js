@@ -58,6 +58,7 @@
   let requestedLabel = '当前全词浏览范围';
   let answerState = null;
   let advanceTimer = null;
+  let optionsRevealed = false;
   const meaningOptionCache = new Map();
   const termOptionCache = new Map();
 
@@ -399,6 +400,7 @@
       mode,
     };
     answerState = null;
+    optionsRevealed = false;
     saveStore();
   }
 
@@ -455,14 +457,24 @@
   function renderOptions(word, options) {
     if (!els.options) return;
     const correctValue = correctValueFor(word);
+    const wrongSelections = Array.isArray(answerState?.wrongSelections) ? answerState.wrongSelections : [];
+    const solved = Boolean(answerState?.solved);
     els.options.innerHTML = options.map((value, index) => {
+      const isCorrect = normalize(value) === normalize(correctValue);
+      const wasWrong = wrongSelections.some((item) => normalize(item) === normalize(value));
       let stateClass = '';
-      if (answerState) {
-        if (normalize(value) === normalize(correctValue)) stateClass = ' correct';
-        else if (normalize(answerState.selected) === normalize(value)) stateClass = ' wrong';
-      }
-      return `<button type="button" class="browse-quiz-option${stateClass}" data-browse-quiz-choice="${index}" data-value="${escapeHTML(value)}" ${answerState ? 'disabled' : ''}><span>${String.fromCharCode(65 + index)}</span><strong>${escapeHTML(value)}</strong></button>`;
+      if (solved && isCorrect) stateClass = ' correct';
+      else if (wasWrong) stateClass = ' wrong';
+      const disabled = solved || wasWrong;
+      return `<button type="button" class="browse-quiz-option${stateClass}" data-browse-quiz-choice="${index}" data-value="${escapeHTML(value)}" ${disabled ? 'disabled' : ''}><span>${String.fromCharCode(65 + index)}</span><strong>${escapeHTML(value)}</strong></button>`;
     }).join('');
+  }
+
+  function renderRecallFirst(word, mode) {
+    if (!els.options) return;
+    const prompt = mode === 'enToZh' ? '先自己回想中文意思' : '先自己回想对应英文';
+    els.options.hidden = false;
+    els.options.innerHTML = `<button type="button" class="browse-quiz-reveal" data-browse-quiz-reveal="1"><strong>先回想 · 显示四个选项</strong><small>${prompt}</small></button>`;
   }
 
   function render() {
@@ -481,7 +493,7 @@
     if (els.card) els.card.dataset.exerciseMode = mode;
     const session = sessionFor(mode);
     if (els.scope) els.scope.textContent = `${session.mode === 'wrong' ? '浏览错词重做' : session.label} · ${MODE_LABELS[mode]}`;
-    if (els.saveNote) els.saveNote.textContent = '三种练习各有自己的题序、当前位置和对错进度；答对不动主学习数据，答错或“不认识”会清空该词主学习进度，让它重新作为新词记。';
+    if (els.saveNote) els.saveNote.textContent = '三种练习各有自己的题序和进度；选择题必须最终选对、拼写必须最终拼对才能进入下一词。选择答错仍按原规则重置该词主学习进度；单纯拼写错误只记浏览错题，不重置主复习阶段。';
     if (els.stats) els.stats.textContent = `已练${summary.answeredWords}词 · 对${summary.correct}次 · 错${summary.wrong}次 · 收藏${store.favorites.length}词`;
     if (!word || !ids.length) {
       renderEmpty();
@@ -492,36 +504,42 @@
     if (els.feedback) els.feedback.textContent = answerState?.message || '';
 
     if (mode === 'enToZh') {
-      if (els.instruction) els.instruction.textContent = '请选择正确的中文释义';
+      if (els.instruction) els.instruction.textContent = optionsRevealed ? '请选择正确的中文释义 · 必须选对才能过' : '先回想中文意思，再显示四个选项';
       if (els.term) els.term.textContent = word.term || '';
       if (els.phonetic) els.phonetic.textContent = phoneticOf(word);
-      if (els.options) els.options.hidden = false;
       if (els.spelling) els.spelling.hidden = true;
-      renderOptions(word, meaningChoices(word));
+      if (optionsRevealed) renderOptions(word, meaningChoices(word));
+      else renderRecallFirst(word, mode);
     } else if (mode === 'zhToEn') {
-      if (els.instruction) els.instruction.textContent = '请选择正确的英文';
+      if (els.instruction) els.instruction.textContent = optionsRevealed ? '请选择正确的英文 · 必须选对才能过' : '先回想英文，再显示四个选项';
       if (els.term) els.term.textContent = meaningOf(word);
-      if (els.phonetic) els.phonetic.textContent = answerState ? phoneticOf(word) : '';
-      if (els.options) els.options.hidden = false;
+      if (els.phonetic) els.phonetic.textContent = answerState?.solved ? phoneticOf(word) : '';
       if (els.spelling) els.spelling.hidden = true;
-      renderOptions(word, termChoices(word));
+      if (optionsRevealed) renderOptions(word, termChoices(word));
+      else renderRecallFirst(word, mode);
     } else {
       if (els.instruction) els.instruction.textContent = '看中文，拼写正确的英文';
       if (els.term) els.term.textContent = meaningOf(word);
-      if (els.phonetic) els.phonetic.textContent = answerState ? phoneticOf(word) : '';
+      if (els.phonetic) els.phonetic.textContent = answerState?.solved ? phoneticOf(word) : '';
       if (els.options) { els.options.hidden = true; els.options.innerHTML = ''; }
       if (els.spelling) els.spelling.hidden = false;
       if (els.spellingInput) {
-        els.spellingInput.disabled = Boolean(answerState);
+        els.spellingInput.disabled = Boolean(answerState?.solved);
         if (!answerState && els.spellingInput.dataset.wordId !== String(word.id)) {
           els.spellingInput.value = '';
         }
         els.spellingInput.dataset.wordId = String(word.id);
       }
-      if (els.spellingCheck) els.spellingCheck.disabled = Boolean(answerState);
-      if (!answerState) nextFrame(() => els.spellingInput?.focus?.());
+      if (els.spellingCheck) els.spellingCheck.disabled = Boolean(answerState?.solved);
+      if (!answerState?.solved) nextFrame(() => els.spellingInput?.focus?.());
     }
 
+    if (els.unknown) {
+      const detail = mode === 'spelling'
+        ? '不认识会重置主学习进度；拼错本身不会重置，仍需拼对才能过'
+        : '会记入当前模式错词并重置该词主学习进度；仍需最终选对才能过';
+      els.unknown.innerHTML = `不认识？<small>${detail}</small>`;
+    }
     if (els.favorite) {
       const active = hasId(store.favorites, word.id);
       els.favorite.classList.toggle('active', active);
@@ -535,7 +553,7 @@
       els.familiar.innerHTML = `<span>熟</span><strong>${active ? '已标熟' : '熟词'}</strong>`;
     }
     if (els.previous) els.previous.disabled = session.cursor <= 0;
-    if (els.next) els.next.disabled = session.cursor >= ids.length - 1;
+    if (els.next) els.next.disabled = session.cursor >= ids.length - 1 || !answerState?.solved;
     renderLauncherStats();
   }
 
@@ -551,6 +569,7 @@
     session.cursor = Math.min(max, Math.max(0, session.cursor + delta));
     session.completed = session.cursor >= max && max > 0;
     answerState = null;
+    optionsRevealed = false;
     if (els.spellingInput) { els.spellingInput.value = ''; els.spellingInput.dataset.wordId = ''; }
     saveStore();
     render();
@@ -568,34 +587,51 @@
   }
 
   function answerChoice(selectedValue) {
-    if (answerState) return;
+    if (!optionsRevealed || answerState?.solved) return;
     const word = currentWord();
     if (!word) return;
     const mode = exerciseMode();
     const correctValue = correctValueFor(word, mode);
     const correct = normalize(selectedValue) === normalize(correctValue);
-    updateRecord(word.id, correct ? 'correct' : 'wrong', mode);
-    let resetOk = false;
-    if (!correct) {
+    const previousWrong = Array.isArray(answerState?.wrongSelections) ? answerState.wrongSelections.slice() : [];
+    if (correct) {
+      updateRecord(word.id, 'correct', mode);
+      answerState = {
+        selected: selectedValue,
+        correct: true,
+        solved: true,
+        wrongSelections: previousWrong,
+        message: previousWrong.length ? '最终选对了。现在进入下一个词。' : '回答正确。主学习进度不变。',
+      };
+      saveStore();
+      render();
+      scheduleNext(650);
+      return;
+    }
+
+    const alreadyWrong = previousWrong.some((item) => normalize(item) === normalize(selectedValue));
+    if (!alreadyWrong) {
+      updateRecord(word.id, 'wrong', mode);
+      previousWrong.push(selectedValue);
       const unknownList = store.unknownByMode[mode] || (store.unknownByMode[mode] = []);
       if (!hasId(unknownList, word.id)) unknownList.push(String(word.id));
       store.familiar = store.familiar.filter((id) => String(id) !== String(word.id));
-      resetOk = resetMainProgress(word, `browse-${mode}-wrong`);
+      // 选择题答错仍沿用原规则，但同一张卡只在第一次答错时重置一次主学习进度。
+      if (!answerState?.wrongSelections?.length) resetMainProgress(word, `browse-${mode}-wrong`);
     }
     answerState = {
       selected: selectedValue,
-      correct,
-      message: correct
-        ? '回答正确。主学习进度不变。'
-        : `回答错误。正确答案：${correctValue}。${wrongMainResetMessage(resetOk)}`,
+      correct: false,
+      solved: false,
+      wrongSelections: previousWrong,
+      message: '选错了，当前词不会跳过。继续选择，必须选对才能进入下一个。',
     };
     saveStore();
     render();
-    scheduleNext(correct ? 650 : 1450);
   }
 
   function checkSpelling() {
-    if (answerState || exerciseMode() !== 'spelling') return;
+    if (answerState?.solved || exerciseMode() !== 'spelling') return;
     const word = currentWord();
     if (!word) return;
     const typed = String(els.spellingInput?.value || '').trim();
@@ -606,45 +642,65 @@
     }
     const correctValue = String(word.term || '').trim();
     const correct = normalize(typed) === normalize(correctValue);
-    updateRecord(word.id, correct ? 'correct' : 'wrong', 'spelling');
-    let resetOk = false;
-    if (!correct) {
-      const unknownList = store.unknownByMode.spelling || (store.unknownByMode.spelling = []);
-      if (!hasId(unknownList, word.id)) unknownList.push(String(word.id));
-      store.familiar = store.familiar.filter((id) => String(id) !== String(word.id));
-      resetOk = resetMainProgress(word, 'browse-spelling-wrong');
+    if (correct) {
+      updateRecord(word.id, 'correct', 'spelling');
+      answerState = {
+        selected: typed,
+        correct: true,
+        solved: true,
+        wrongSelections: Array.isArray(answerState?.wrongSelections) ? answerState.wrongSelections : [],
+        message: `拼写正确：${correctValue}。主学习进度不变，进入下一个词。`,
+      };
+      saveStore();
+      render();
+      scheduleNext(700);
+      return;
     }
+
+    updateRecord(word.id, 'wrong', 'spelling');
+    const unknownList = store.unknownByMode.spelling || (store.unknownByMode.spelling = []);
+    if (!hasId(unknownList, word.id)) unknownList.push(String(word.id));
+    store.familiar = store.familiar.filter((id) => String(id) !== String(word.id));
+    // 关键规则：普通拼写错误绝不重置主复习阶段，只留在当前词继续重试。
+    const wrongSelections = Array.isArray(answerState?.wrongSelections) ? answerState.wrongSelections.slice() : [];
+    wrongSelections.push(typed);
     answerState = {
       selected: typed,
-      correct,
-      message: correct
-        ? `拼写正确：${correctValue}。主学习进度不变。`
-        : `拼写错误。正确拼写：${correctValue}。${wrongMainResetMessage(resetOk)}`,
+      correct: false,
+      solved: false,
+      wrongSelections,
+      message: '拼写不对，但不会重置主复习阶段。请继续修改，必须拼对才能进入下一个。',
     };
     saveStore();
     render();
-    scheduleNext(correct ? 700 : 1600);
+    if (els.spellingInput) {
+      els.spellingInput.disabled = false;
+      els.spellingInput.focus?.();
+      els.spellingInput.select?.();
+    }
   }
 
   function markUnknown() {
-    if (answerState) return;
+    if (answerState?.solved) return;
     const word = currentWord();
     if (!word) return;
     const mode = exerciseMode();
     updateRecord(word.id, 'unknown', mode);
     const unknownList = store.unknownByMode[mode] || (store.unknownByMode[mode] = []);
-      if (!hasId(unknownList, word.id)) unknownList.push(String(word.id));
+    if (!hasId(unknownList, word.id)) unknownList.push(String(word.id));
     store.familiar = store.familiar.filter((id) => String(id) !== String(word.id));
     const resetOk = resetMainProgress(word, `browse-${mode}-unknown`);
-    const correctValue = correctValueFor(word, mode);
+    const previousWrong = Array.isArray(answerState?.wrongSelections) ? answerState.wrongSelections.slice() : [];
     answerState = {
       selected: '',
       correct: false,
-      message: `已记为不认识。正确答案：${correctValue}。${wrongMainResetMessage(resetOk)}`,
+      solved: false,
+      wrongSelections: previousWrong,
+      message: `已记为不认识。${wrongMainResetMessage(resetOk)} 当前词仍不会跳过，必须${mode === 'spelling' ? '拼对' : '选对'}才能进入下一个。`,
     };
+    if (mode !== 'spelling') optionsRevealed = true;
     saveStore();
     render();
-    scheduleNext(1550);
   }
 
   function setExerciseMode(mode) {
@@ -656,6 +712,7 @@
       newSession(seedIds, requestedLabel, 'all', mode);
     }
     answerState = null;
+    optionsRevealed = false;
     if (els.spellingInput) { els.spellingInput.value = ''; els.spellingInput.dataset.wordId = ''; }
     saveStore();
     render();
@@ -676,6 +733,7 @@
       document.body.classList.add('browse-quiz-open');
     }
     answerState = null;
+    optionsRevealed = false;
     render();
     resetStageScroll();
   }
@@ -685,6 +743,7 @@
     if (els.overlay) els.overlay.hidden = true;
     document.body.classList.remove('browse-quiz-open');
     answerState = null;
+    optionsRevealed = false;
   }
 
   function restartCurrent() {
@@ -757,7 +816,7 @@
 
   els.close?.addEventListener('click', close);
   els.previous?.addEventListener('click', () => move(-1));
-  els.next?.addEventListener('click', () => move(1));
+  els.next?.addEventListener('click', () => { if (answerState?.solved) move(1); else if (els.feedback) els.feedback.textContent = `当前词必须${exerciseMode() === 'spelling' ? '拼对' : '选对'}才能进入下一个。`; });
   els.unknown?.addEventListener('click', markUnknown);
   els.restart?.addEventListener('click', restartCurrent);
   els.wrongOnly?.addEventListener('click', startWrongOnly);
@@ -781,6 +840,13 @@
     render();
   });
   els.options?.addEventListener('click', (event) => {
+    const reveal = event.target.closest('[data-browse-quiz-reveal]');
+    if (reveal) {
+      optionsRevealed = true;
+      answerState = null;
+      render();
+      return;
+    }
     const button = event.target.closest('[data-browse-quiz-choice]');
     if (!button) return;
     answerChoice(button.dataset.value || '');
@@ -795,11 +861,11 @@
   els.term?.addEventListener('click', () => {
     const word = currentWord();
     if (!word) return;
-    if (exerciseMode() === 'enToZh' || answerState) api.speakWord?.(word.id);
+    if (exerciseMode() === 'enToZh' || answerState?.solved) api.speakWord?.(word.id);
   });
   els.phonetic?.addEventListener('click', () => {
     const word = currentWord();
-    if (word && (exerciseMode() === 'enToZh' || answerState)) api.speakWord?.(word.id);
+    if (word && (exerciseMode() === 'enToZh' || answerState?.solved)) api.speakWord?.(word.id);
   });
 
   document.addEventListener('keydown', (event) => {
@@ -808,8 +874,8 @@
     const tag = String(event.target?.tagName || '').toLowerCase();
     if (tag === 'input' || tag === 'textarea') return;
     if (event.key === 'ArrowLeft') { event.preventDefault(); move(-1); return; }
-    if (event.key === 'ArrowRight') { event.preventDefault(); move(1); return; }
-    if (exerciseMode() !== 'spelling' && !answerState) {
+    if (event.key === 'ArrowRight') { event.preventDefault(); if (answerState?.solved) move(1); else if (els.feedback) els.feedback.textContent = `当前词必须${exerciseMode() === 'spelling' ? '拼对' : '选对'}才能进入下一个。`; return; }
+    if (exerciseMode() !== 'spelling' && optionsRevealed && !answerState?.solved) {
       const index = /^[1-4]$/.test(event.key)
         ? Number(event.key) - 1
         : (/^[a-dA-D]$/.test(event.key) ? event.key.toUpperCase().charCodeAt(0) - 65 : -1);

@@ -5347,3 +5347,39 @@ body.browse-quiz-open { overflow: hidden; }
     text-align: left !important;
   }
 }
+
+/* v70 B043: 全词浏览独立练习必须答对/拼对 + 先回想 */
+.browse-quiz-reveal {
+  width: min(880px, 100%);
+  min-height: 92px;
+  margin: 8px auto 2px;
+  padding: 18px 22px;
+  border: 1.5px dashed #9fb4aa;
+  border-radius: 20px;
+  background: #f7faf6;
+  color: #1f3852;
+  display: grid;
+  place-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+.browse-quiz-reveal strong {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 900;
+}
+.browse-quiz-reveal small {
+  font-size: 13px;
+  color: #718078;
+}
+.browse-quiz-reveal:hover { background: #f0f6ee; }
+.browse-quiz-option.wrong:disabled { opacity: .72; }
+@media (max-width: 760px) {
+  .browse-quiz-reveal {
+    min-height: 76px;
+    padding: 13px 14px;
+    border-radius: 16px;
+  }
+  .browse-quiz-reveal strong { font-size: 17px; }
+  .browse-quiz-reveal small { font-size: 11px; }
+}
