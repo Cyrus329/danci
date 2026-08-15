@@ -1,5 +1,5 @@
-// Generated 2026-08-10. v70 B041 corrects B040 and adds contexts for newly-created screenshot entries.
-window.WORD_MEMORY_CONTEXTS_BY_ID = {
+// Generated/extended 2026-08-15. v70 B048 contexts for newly-created imported entries.
+window.WORD_MEMORY_CONTEXT_BY_ID = {
   "dictation-1-001": {
     "primary": {
       "sentence": "To stay energetic during exam season, I do exercise for thirty minutes every morning.",
@@ -31794,6 +31794,7503 @@ window.WORD_MEMORY_CONTEXTS_BY_ID = {
       "templateFamily": "b041-4",
       "contextId": "blueforest-20260810-37-070:primary",
       "batch": "v70-b041"
+    },
+    "extra": []
+  },
+  "phrase-20260811-24-010": {
+    "primary": {
+      "sentence": "The reading passage used “sb. be forced to do sth.”, so I checked its meaning before answering the question.",
+      "target": "sb. be forced to do sth.",
+      "translation": "阅读文章中出现了“sb. be forced to do sth.”，所以我在答题前核对了它的含义。",
+      "sense": "某人被强迫做某事",
+      "pos": "phrase",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-1",
+      "contextId": "phrase-20260811-24-010:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-002": {
+    "primary": {
+      "sentence": "I tried to recall “bark” before looking at the Chinese explanation.",
+      "target": "bark",
+      "translation": "我先尝试回忆“bark”的含义，再看中文解释。",
+      "sense": "vi.（狗）吠叫；厉声说话；vt. 剥去树皮；擦破皮肤；n. 树皮；犬吠",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-2",
+      "contextId": "blueforest-20260811-38-002:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-003": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “barrel” quickly in context.",
+      "target": "barrel",
+      "translation": "老师要求我们在语境中快速识别“barrel”。",
+      "sense": "n. 桶；枪管；大量；石油计量单位（约159升）；v. 快速移动；把……装入桶",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-3",
+      "contextId": "blueforest-20260811-38-003:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-007": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “compound” for another round of practice.",
+      "target": "compound",
+      "translation": "复习词汇时，我把“compound”标记出来准备再练一轮。",
+      "sense": "n. 化合物；复合物；院落；adj. 复合的；v. 合成；加重",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-4",
+      "contextId": "blueforest-20260811-38-007:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-009": {
+    "primary": {
+      "sentence": "The study group reviewed “ballot” before starting the next exercise.",
+      "target": "ballot",
+      "translation": "学习小组在开始下一道练习前复习了“ballot”。",
+      "sense": "n. 投票；选票；投票总数；v. 进行无记名投票；通过投票决定",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-5",
+      "contextId": "blueforest-20260811-38-009:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-013": {
+    "primary": {
+      "sentence": "I wrote a short sentence with “bar” to make the meaning easier to remember.",
+      "target": "bar",
+      "translation": "我用“bar”写了一个短句，让它的含义更容易记住。",
+      "sense": "n. 酒吧；条状物；障碍；法庭围栏；v. 禁止；阻挡；闩上；prep. 除……外",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-6",
+      "contextId": "blueforest-20260811-38-013:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-014": {
+    "primary": {
+      "sentence": "The word “barber” appeared in a practice text for the entrance-upgrade exam.",
+      "target": "barber",
+      "translation": "“barber”出现在一篇专升本练习文章中。",
+      "sense": "n.（为男性理发的）理发师；理发店；vt. 给（某人）理发",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-7",
+      "contextId": "blueforest-20260811-38-014:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-015": {
+    "primary": {
+      "sentence": "I compared “bare” with nearby words so I would not confuse them in a multiple-choice question.",
+      "target": "bare",
+      "translation": "我把“bare”和相近词放在一起比较，避免在选择题中混淆。",
+      "sense": "adj. 裸露的；无遮盖的；最基本的；vt. 使暴露；揭开",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-8",
+      "contextId": "blueforest-20260811-38-015:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-018": {
+    "primary": {
+      "sentence": "The reading passage used “badminton”, so I checked its meaning before answering the question.",
+      "target": "badminton",
+      "translation": "阅读文章中出现了“badminton”，所以我在答题前核对了它的含义。",
+      "sense": "n. 羽毛球运动",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-1",
+      "contextId": "blueforest-20260811-38-018:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-019": {
+    "primary": {
+      "sentence": "I tried to recall “bake” before looking at the Chinese explanation.",
+      "target": "bake",
+      "translation": "我先尝试回忆“bake”的含义，再看中文解释。",
+      "sense": "vt. 烤；烘焙；vi. 被烤；受热；n. 烘焙食品；烘焙活动",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-2",
+      "contextId": "blueforest-20260811-38-019:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-021": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “badge” quickly in context.",
+      "target": "badge",
+      "translation": "老师要求我们在语境中快速识别“badge”。",
+      "sense": "n. 徽章；证章；象征；vt. 授予徽章；用徽章装饰",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-3",
+      "contextId": "blueforest-20260811-38-021:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-024": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “ax” for another round of practice.",
+      "target": "ax",
+      "translation": "复习词汇时，我把“ax”标记出来准备再练一轮。",
+      "sense": "n. 斧头；vt. 用斧砍；解雇；大幅削减",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-4",
+      "contextId": "blueforest-20260811-38-024:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-025": {
+    "primary": {
+      "sentence": "The study group reviewed “aviation” before starting the next exercise.",
+      "target": "aviation",
+      "translation": "学习小组在开始下一道练习前复习了“aviation”。",
+      "sense": "n. 航空；飞行；航空学",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-5",
+      "contextId": "blueforest-20260811-38-025:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-028": {
+    "primary": {
+      "sentence": "I wrote a short sentence with “leak” to make the meaning easier to remember.",
+      "target": "leak",
+      "translation": "我用“leak”写了一个短句，让它的含义更容易记住。",
+      "sense": "v. 漏；渗漏；泄露（信息）；n. 漏洞；泄露",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-6",
+      "contextId": "blueforest-20260811-38-028:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-029": {
+    "primary": {
+      "sentence": "The word “bail” appeared in a practice text for the entrance-upgrade exam.",
+      "target": "bail",
+      "translation": "“bail”出现在一篇专升本练习文章中。",
+      "sense": "n. 保释；保释金；vt. 保释；舀出",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-7",
+      "contextId": "blueforest-20260811-38-029:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-032": {
+    "primary": {
+      "sentence": "I compared “automate” with nearby words so I would not confuse them in a multiple-choice question.",
+      "target": "automate",
+      "translation": "我把“automate”和相近词放在一起比较，避免在选择题中混淆。",
+      "sense": "vt. 使自动化；用自动化技术操作",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-8",
+      "contextId": "blueforest-20260811-38-032:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-035": {
+    "primary": {
+      "sentence": "The reading passage used “awe”, so I checked its meaning before answering the question.",
+      "target": "awe",
+      "translation": "阅读文章中出现了“awe”，所以我在答题前核对了它的含义。",
+      "sense": "n. 敬畏；惊叹；vt. 使敬畏；使惊叹",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-1",
+      "contextId": "blueforest-20260811-38-035:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-036": {
+    "primary": {
+      "sentence": "I tried to recall “axis” before looking at the Chinese explanation.",
+      "target": "axis",
+      "translation": "我先尝试回忆“axis”的含义，再看中文解释。",
+      "sense": "n. 轴线；中心线；坐标轴；（政治/军事）轴心；联盟",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-2",
+      "contextId": "blueforest-20260811-38-036:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-039": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “attitude” quickly in context.",
+      "target": "attitude",
+      "translation": "老师要求我们在语境中快速识别“attitude”。",
+      "sense": "n. 态度；看法；姿势（尤指芭蕾舞姿势）",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-3",
+      "contextId": "blueforest-20260811-38-039:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-042": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “awful” for another round of practice.",
+      "target": "awful",
+      "translation": "复习词汇时，我把“awful”标记出来准备再练一轮。",
+      "sense": "adj. 极坏的；可怕的；非常的；adv. 非常地（非正式）",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-4",
+      "contextId": "blueforest-20260811-38-042:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-043": {
+    "primary": {
+      "sentence": "The study group reviewed “awkward” before starting the next exercise.",
+      "target": "awkward",
+      "translation": "学习小组在开始下一道练习前复习了“awkward”。",
+      "sense": "adj. 笨拙的；尴尬的；难处理的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-5",
+      "contextId": "blueforest-20260811-38-043:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-046": {
+    "primary": {
+      "sentence": "I wrote a short sentence with “gulf” to make the meaning easier to remember.",
+      "target": "gulf",
+      "translation": "我用“gulf”写了一个短句，让它的含义更容易记住。",
+      "sense": "n. 海湾；鸿沟；巨大分歧",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-6",
+      "contextId": "blueforest-20260811-38-046:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-048": {
+    "primary": {
+      "sentence": "The word “attach” appeared in a practice text for the entrance-upgrade exam.",
+      "target": "attach",
+      "translation": "“attach”出现在一篇专升本练习文章中。",
+      "sense": "vt. 系上；贴上；使依附；附加（文件等）；vi. 附属；伴随",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-7",
+      "contextId": "blueforest-20260811-38-048:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-049": {
+    "primary": {
+      "sentence": "I compared “attack” with nearby words so I would not confuse them in a multiple-choice question.",
+      "target": "attack",
+      "translation": "我把“attack”和相近词放在一起比较，避免在选择题中混淆。",
+      "sense": "v. 攻击；抨击；（疾病）侵袭；n. 攻击；发作",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-8",
+      "contextId": "blueforest-20260811-38-049:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-051": {
+    "primary": {
+      "sentence": "The reading passage used “aside”, so I checked its meaning before answering the question.",
+      "target": "aside",
+      "translation": "阅读文章中出现了“aside”，所以我在答题前核对了它的含义。",
+      "sense": "adv. 到一边；在旁边；留出；n. 旁白；离题的话",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-1",
+      "contextId": "blueforest-20260811-38-051:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-052": {
+    "primary": {
+      "sentence": "I tried to recall “ash” before looking at the Chinese explanation.",
+      "target": "ash",
+      "translation": "我先尝试回忆“ash”的含义，再看中文解释。",
+      "sense": "n. 灰；灰烬；骨灰；白蜡树",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-2",
+      "contextId": "blueforest-20260811-38-052:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-053": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “landscape” quickly in context.",
+      "target": "landscape",
+      "translation": "老师要求我们在语境中快速识别“landscape”。",
+      "sense": "n. 风景；地貌；全景；vt. 美化……的环境；进行景观设计",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-3",
+      "contextId": "blueforest-20260811-38-053:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-058": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “architect” for another round of practice.",
+      "target": "architect",
+      "translation": "复习词汇时，我把“architect”标记出来准备再练一轮。",
+      "sense": "n. 建筑师；设计师；缔造者；v. 设计；规划",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-4",
+      "contextId": "blueforest-20260811-38-058:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-059": {
+    "primary": {
+      "sentence": "The study group reviewed “architecture” before starting the next exercise.",
+      "target": "architecture",
+      "translation": "学习小组在开始下一道练习前复习了“architecture”。",
+      "sense": "n. 建筑学；建筑风格；结构体系",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-5",
+      "contextId": "blueforest-20260811-38-059:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-060": {
+    "primary": {
+      "sentence": "I wrote a short sentence with “aspect” to make the meaning easier to remember.",
+      "target": "aspect",
+      "translation": "我用“aspect”写了一个短句，让它的含义更容易记住。",
+      "sense": "n. 方面；（语法）体",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-6",
+      "contextId": "blueforest-20260811-38-060:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-061": {
+    "primary": {
+      "sentence": "The word “ass” appeared in a practice text for the entrance-upgrade exam.",
+      "target": "ass",
+      "translation": "“ass”出现在一篇专升本练习文章中。",
+      "sense": "n. 驴；愚蠢固执的人；（粗俗语）屁股",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-7",
+      "contextId": "blueforest-20260811-38-061:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-063": {
+    "primary": {
+      "sentence": "I compared “assemble” with nearby words so I would not confuse them in a multiple-choice question.",
+      "target": "assemble",
+      "translation": "我把“assemble”和相近词放在一起比较，避免在选择题中混淆。",
+      "sense": "vt. 组装；收集；召集；vi. 聚集；集合",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-8",
+      "contextId": "blueforest-20260811-38-063:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-065": {
+    "primary": {
+      "sentence": "The reading passage used “arrange”, so I checked its meaning before answering the question.",
+      "target": "arrange",
+      "translation": "阅读文章中出现了“arrange”，所以我在答题前核对了它的含义。",
+      "sense": "vt. 安排；整理；筹备；vi. 安排；协商",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-1",
+      "contextId": "blueforest-20260811-38-065:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-066": {
+    "primary": {
+      "sentence": "I tried to recall “arrest” before looking at the Chinese explanation.",
+      "target": "arrest",
+      "translation": "我先尝试回忆“arrest”的含义，再看中文解释。",
+      "sense": "vt. 逮捕；阻止；吸引（注意力）；n. 逮捕；停止",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-2",
+      "contextId": "blueforest-20260811-38-066:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260811-38-068": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “arithmetic” quickly in context.",
+      "target": "arithmetic",
+      "translation": "老师要求我们在语境中快速识别“arithmetic”。",
+      "sense": "n. 算术；计算；adj. 算术的；四则运算的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-3",
+      "contextId": "blueforest-20260811-38-068:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-002": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “triumphant” for another round of practice.",
+      "target": "triumphant",
+      "translation": "复习词汇时，我把“triumphant”标记出来准备再练一轮。",
+      "sense": "adj.（因胜利而）洋洋得意的；胜利的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-4",
+      "contextId": "cet-20260811-32-002:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-004": {
+    "primary": {
+      "sentence": "The study group reviewed “victorious” before starting the next exercise.",
+      "target": "victorious",
+      "translation": "学习小组在开始下一道练习前复习了“victorious”。",
+      "sense": "adj. 获胜的；战胜的；胜利的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-5",
+      "contextId": "cet-20260811-32-004:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-006": {
+    "primary": {
+      "sentence": "I wrote a short sentence with “interaction” to make the meaning easier to remember.",
+      "target": "interaction",
+      "translation": "我用“interaction”写了一个短句，让它的含义更容易记住。",
+      "sense": "n. 互动；交流；沟通；相互影响",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-6",
+      "contextId": "cet-20260811-32-006:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-008": {
+    "primary": {
+      "sentence": "The word “interference” appeared in a practice text for the entrance-upgrade exam.",
+      "target": "interference",
+      "translation": "“interference”出现在一篇专升本练习文章中。",
+      "sense": "n. 干涉；干扰；妨碍",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-7",
+      "contextId": "cet-20260811-32-008:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-009": {
+    "primary": {
+      "sentence": "I compared “interval” with nearby words so I would not confuse them in a multiple-choice question.",
+      "target": "interval",
+      "translation": "我把“interval”和相近词放在一起比较，避免在选择题中混淆。",
+      "sense": "n. 间隔；间歇；区间",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-8",
+      "contextId": "cet-20260811-32-009:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-011": {
+    "primary": {
+      "sentence": "The reading passage used “treaty”, so I checked its meaning before answering the question.",
+      "target": "treaty",
+      "translation": "阅读文章中出现了“treaty”，所以我在答题前核对了它的含义。",
+      "sense": "n. 条约；协定",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-1",
+      "contextId": "cet-20260811-32-011:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-013": {
+    "primary": {
+      "sentence": "I tried to recall “conquest” before looking at the Chinese explanation.",
+      "target": "conquest",
+      "translation": "我先尝试回忆“conquest”的含义，再看中文解释。",
+      "sense": "n. 征服；占领；爱情的俘虏",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-2",
+      "contextId": "cet-20260811-32-013:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-015": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “colonial” quickly in context.",
+      "target": "colonial",
+      "translation": "老师要求我们在语境中快速识别“colonial”。",
+      "sense": "adj. 殖民地的；殖民地时期的；n. 殖民地居民",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-3",
+      "contextId": "cet-20260811-32-015:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-016": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “colonialism” for another round of practice.",
+      "target": "colonialism",
+      "translation": "复习词汇时，我把“colonialism”标记出来准备再练一轮。",
+      "sense": "n. 殖民主义；殖民政策",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-4",
+      "contextId": "cet-20260811-32-016:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-017": {
+    "primary": {
+      "sentence": "The study group reviewed “colonize” before starting the next exercise.",
+      "target": "colonize",
+      "translation": "学习小组在开始下一道练习前复习了“colonize”。",
+      "sense": "vt. 在……建立殖民地；使……殖民；（动植物）在……聚居",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-5",
+      "contextId": "cet-20260811-32-017:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-018": {
+    "primary": {
+      "sentence": "I wrote a short sentence with “intrusion” to make the meaning easier to remember.",
+      "target": "intrusion",
+      "translation": "我用“intrusion”写了一个短句，让它的含义更容易记住。",
+      "sense": "n. 闯入；干扰；侵扰",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-6",
+      "contextId": "cet-20260811-32-018:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-019": {
+    "primary": {
+      "sentence": "The word “intruder” appeared in a practice text for the entrance-upgrade exam.",
+      "target": "intruder",
+      "translation": "“intruder”出现在一篇专升本练习文章中。",
+      "sense": "n. 非法闯入者；侵入者；不速之客",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-7",
+      "contextId": "cet-20260811-32-019:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-021": {
+    "primary": {
+      "sentence": "I compared “conquer” with nearby words so I would not confuse them in a multiple-choice question.",
+      "target": "conquer",
+      "translation": "我把“conquer”和相近词放在一起比较，避免在选择题中混淆。",
+      "sense": "vt. 占领；征服；克服",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-8",
+      "contextId": "cet-20260811-32-021:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-022": {
+    "primary": {
+      "sentence": "The reading passage used “conqueror”, so I checked its meaning before answering the question.",
+      "target": "conqueror",
+      "translation": "阅读文章中出现了“conqueror”，所以我在答题前核对了它的含义。",
+      "sense": "n. 征服者；占领者",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-1",
+      "contextId": "cet-20260811-32-022:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-024": {
+    "primary": {
+      "sentence": "I tried to recall “invasion” before looking at the Chinese explanation.",
+      "target": "invasion",
+      "translation": "我先尝试回忆“invasion”的含义，再看中文解释。",
+      "sense": "n. 入侵；侵略；涌入；侵犯",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-2",
+      "contextId": "cet-20260811-32-024:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-025": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “invader” quickly in context.",
+      "target": "invader",
+      "translation": "老师要求我们在语境中快速识别“invader”。",
+      "sense": "n. 侵略者；侵略国",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-3",
+      "contextId": "cet-20260811-32-025:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-026": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “invasive” for another round of practice.",
+      "target": "invasive",
+      "translation": "复习词汇时，我把“invasive”标记出来准备再练一轮。",
+      "sense": "adj. 侵袭的；（医疗）手术的；入侵的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-4",
+      "contextId": "cet-20260811-32-026:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-027": {
+    "primary": {
+      "sentence": "The study group reviewed “intrude” before starting the next exercise.",
+      "target": "intrude",
+      "translation": "学习小组在开始下一道练习前复习了“intrude”。",
+      "sense": "vi. 闯入；侵入；打扰；干涉",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-5",
+      "contextId": "cet-20260811-32-027:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-028": {
+    "primary": {
+      "sentence": "I wrote a short sentence with “scenic” to make the meaning easier to remember.",
+      "target": "scenic",
+      "translation": "我用“scenic”写了一个短句，让它的含义更容易记住。",
+      "sense": "adj. 景色优美的；舞台布景的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-6",
+      "contextId": "cet-20260811-32-028:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-029": {
+    "primary": {
+      "sentence": "The word “scene” appeared in a practice text for the entrance-upgrade exam.",
+      "target": "scene",
+      "translation": "“scene”出现在一篇专升本练习文章中。",
+      "sense": "n. 现场；场面；景色；圈子",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-7",
+      "contextId": "cet-20260811-32-029:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-031": {
+    "primary": {
+      "sentence": "I compared “landlord” with nearby words so I would not confuse them in a multiple-choice question.",
+      "target": "landlord",
+      "translation": "我把“landlord”和相近词放在一起比较，避免在选择题中混淆。",
+      "sense": "n. 房东；地主；（酒吧等的）店主",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-8",
+      "contextId": "cet-20260811-32-031:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-032": {
+    "primary": {
+      "sentence": "The reading passage used “landlady”, so I checked its meaning before answering the question.",
+      "target": "landlady",
+      "translation": "阅读文章中出现了“landlady”，所以我在答题前核对了它的含义。",
+      "sense": "n. 女房东；（酒吧等的）女店主",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-1",
+      "contextId": "cet-20260811-32-032:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-033": {
+    "primary": {
+      "sentence": "I tried to recall “pavement” before looking at the Chinese explanation.",
+      "target": "pavement",
+      "translation": "我先尝试回忆“pavement”的含义，再看中文解释。",
+      "sense": "n. 人行道；（硬化）路面",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-2",
+      "contextId": "cet-20260811-32-033:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-034": {
+    "primary": {
+      "sentence": "The teacher asked us to recognize “grocery” quickly in context.",
+      "target": "grocery",
+      "translation": "老师要求我们在语境中快速识别“grocery”。",
+      "sense": "n. 食品杂货店；食品杂货",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-3",
+      "contextId": "cet-20260811-32-034:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-038": {
+    "primary": {
+      "sentence": "During vocabulary review, I marked “corridor” for another round of practice.",
+      "target": "corridor",
+      "translation": "复习词汇时，我把“corridor”标记出来准备再练一轮。",
+      "sense": "n. 走廊；过道",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-4",
+      "contextId": "cet-20260811-32-038:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-040": {
+    "primary": {
+      "sentence": "The study group reviewed “lane” before starting the next exercise.",
+      "target": "lane",
+      "translation": "学习小组在开始下一道练习前复习了“lane”。",
+      "sense": "n. 小路；小巷；车道；航线；跑道",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-5",
+      "contextId": "cet-20260811-32-040:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-042": {
+    "primary": {
+      "sentence": "I wrote a short sentence with “pave” to make the meaning easier to remember.",
+      "target": "pave",
+      "translation": "我用“pave”写了一个短句，让它的含义更容易记住。",
+      "sense": "vt. 铺；筑（路或地面）",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-6",
+      "contextId": "cet-20260811-32-042:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-043": {
+    "primary": {
+      "sentence": "The word “territorial” appeared in a practice text for the entrance-upgrade exam.",
+      "target": "territorial",
+      "translation": "“territorial”出现在一篇专升本练习文章中。",
+      "sense": "adj. 领土的；有领地意识的",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-7",
+      "contextId": "cet-20260811-32-043:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-046": {
+    "primary": {
+      "sentence": "I compared “laundry” with nearby words so I would not confuse them in a multiple-choice question.",
+      "target": "laundry",
+      "translation": "我把“laundry”和相近词放在一起比较，避免在选择题中混淆。",
+      "sense": "n.（要洗或洗好的）衣物；洗衣房",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-8",
+      "contextId": "cet-20260811-32-046:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-047": {
+    "primary": {
+      "sentence": "The reading passage used “gallery”, so I checked its meaning before answering the question.",
+      "target": "gallery",
+      "translation": "阅读文章中出现了“gallery”，所以我在答题前核对了它的含义。",
+      "sense": "n. 展览馆；画廊；走廊；长廊",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-1",
+      "contextId": "cet-20260811-32-047:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "cet-20260811-32-051": {
+    "primary": {
+      "sentence": "I tried to recall “mill” before looking at the Chinese explanation.",
+      "target": "mill",
+      "translation": "我先尝试回忆“mill”的含义，再看中文解释。",
+      "sense": "n. 磨坊；工厂；磨粉机；vt. 碾碎；磨成粉",
+      "pos": "word",
+      "level": "basic",
+      "source": "2026-08-11 用户截图导入",
+      "contextKind": "exam-style",
+      "generatedBy": "v70-b044-import",
+      "templateFamily": "b044-2",
+      "contextId": "cet-20260811-32-051:primary",
+      "batch": "v70-b044"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-001": {
+    "primary": {
+      "sentence": "Students wrote “bind” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "bind",
+      "translation": "学生把“bind”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "t. 捆绑；约束；装订；vi. 黏合；产生约束力",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "blueforest-20260812-39-001:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-002": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “biology” and worked out its meaning from the surrounding sentence.",
+      "target": "biology",
+      "translation": "在校园主题阅读课上，学生遇到了“biology”，并根据上下文判断它的含义。",
+      "sense": "生物学；生物科学",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "blueforest-20260812-39-002:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-003": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “imitate” and worked out its meaning from the surrounding sentence.",
+      "target": "imitate",
+      "translation": "在校园主题阅读课上，学生遇到了“imitate”，并根据上下文判断它的含义。",
+      "sense": "t. 模仿；仿效；仿制",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "blueforest-20260812-39-003:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-004": {
+    "primary": {
+      "sentence": "Students marked “blue” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "blue",
+      "translation": "学生在笔记中标出了“blue”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "蓝色的；忧郁的；n. 蓝色；v. 使变蓝",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "blueforest-20260812-39-004:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-005": {
+    "primary": {
+      "sentence": "The class revisited “blueprint” during an evening review and checked both its spelling and meaning.",
+      "target": "blueprint",
+      "translation": "晚间复习时，全班再次学习“blueprint”，同时检查拼写和词义。",
+      "sense": "蓝图；行动方案；（基因的）模型",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "blueforest-20260812-39-005:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-006": {
+    "primary": {
+      "sentence": "A vocabulary review used “better” to test whether students could connect spelling, meaning, and context.",
+      "target": "better",
+      "translation": "一次词汇复习用“better”检验学生能否把拼写、词义和语境联系起来。",
+      "sense": "更好的；更优秀的；adv. 更好地；v. 改善",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-5",
+      "contextId": "blueforest-20260812-39-006:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-007": {
+    "primary": {
+      "sentence": "The reading teacher paused at “heir” and asked students to recall its meaning before showing the answer.",
+      "target": "heir",
+      "translation": "阅读课老师讲到“heir”时先让学生回想词义，再公布答案。",
+      "sense": "继承人；后嗣",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "blueforest-20260812-39-007:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-008": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “best” appeared as a key vocabulary item.",
+      "target": "best",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“best”作为重点词汇出现。",
+      "sense": "最好的；adv. 最好地；n. 最好的事物",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "blueforest-20260812-39-008:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-009": {
+    "primary": {
+      "sentence": "Students marked “appeal” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "appeal",
+      "translation": "学生在笔记中标出了“appeal”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "呼吁；上诉；吸引；n. 呼吁；上诉；吸引力",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "blueforest-20260812-39-009:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-010": {
+    "primary": {
+      "sentence": "The class revisited “bitch” during an evening review and checked both its spelling and meaning.",
+      "target": "bitch",
+      "translation": "晚间复习时，全班再次学习“bitch”，同时检查拼写和词义。",
+      "sense": "母狗；（贬）恶毒女人；v. 抱怨",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "blueforest-20260812-39-010:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-011": {
+    "primary": {
+      "sentence": "Students marked “belly” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "belly",
+      "translation": "学生在笔记中标出了“belly”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "腹部；胃部；物体的凸起部分",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "blueforest-20260812-39-011:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-012": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “beg” and worked out its meaning from the surrounding sentence.",
+      "target": "beg",
+      "translation": "在校园主题阅读课上，学生遇到了“beg”，并根据上下文判断它的含义。",
+      "sense": "i. 乞讨；恳求；vt. 乞求；请求",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "blueforest-20260812-39-012:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-013": {
+    "primary": {
+      "sentence": "The class revisited “bean” during an evening review and checked both its spelling and meaning.",
+      "target": "bean",
+      "translation": "晚间复习时，全班再次学习“bean”，同时检查拼写和词义。",
+      "sense": "豆；豆科植物；豆形种子",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "blueforest-20260812-39-013:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-014": {
+    "primary": {
+      "sentence": "The word “battle” was added to the day's review list after it appeared in a practice text.",
+      "target": "battle",
+      "translation": "“battle”出现在练习文本后，被加入了当天的复习清单。",
+      "sense": "战斗；斗争；战役；v. 与……斗争",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-7",
+      "contextId": "blueforest-20260812-39-014:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-015": {
+    "primary": {
+      "sentence": "Students marked “bath” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "bath",
+      "translation": "学生在笔记中标出了“bath”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "洗澡；浴缸；浴室；v. 给……洗澡",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "blueforest-20260812-39-015:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-016": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “annoy” together with its common meaning.",
+      "target": "annoy",
+      "translation": "备考专升本时，全班把“annoy”和它的常见含义一起复习。",
+      "sense": "t. 使恼怒；打扰；使烦恼",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "blueforest-20260812-39-016:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-017": {
+    "primary": {
+      "sentence": "Students marked “bat” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "bat",
+      "translation": "学生在笔记中标出了“bat”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "蝙蝠；球棒；v. 用球棒击打；眨眼",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "blueforest-20260812-39-017:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-018": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “battery” together with its common meaning.",
+      "target": "battery",
+      "translation": "备考专升本时，全班把“battery”和它的常见含义一起复习。",
+      "sense": "电池；一组同类物品；炮组；殴打罪",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "blueforest-20260812-39-018:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-019": {
+    "primary": {
+      "sentence": "Students marked “bracket” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "bracket",
+      "translation": "学生在笔记中标出了“bracket”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "括号；等级；支架；vt. 用括号括起；归入同类",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "blueforest-20260812-39-019:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-020": {
+    "primary": {
+      "sentence": "The class revisited “brake” during an evening review and checked both its spelling and meaning.",
+      "target": "brake",
+      "translation": "晚间复习时，全班再次学习“brake”，同时检查拼写和词义。",
+      "sense": "刹车；制动器；v. 刹车；减速",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "blueforest-20260812-39-020:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-021": {
+    "primary": {
+      "sentence": "Students marked “brass” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "brass",
+      "translation": "学生在笔记中标出了“brass”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "黄铜；铜管乐器；高级军官；adj. 黄铜制的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "blueforest-20260812-39-021:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-022": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “breed” with nearby words to avoid confusing their meanings.",
+      "target": "breed",
+      "translation": "在词汇训练中，学习者把“breed”与相近词进行比较，以避免混淆词义。",
+      "sense": "繁殖；培育；导致；n. 品种；类型",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "blueforest-20260812-39-022:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-023": {
+    "primary": {
+      "sentence": "Students wrote “bowel” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "bowel",
+      "translation": "学生把“bowel”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "肠；肠道；内脏",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "blueforest-20260812-39-023:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-024": {
+    "primary": {
+      "sentence": "The word “bother” was added to the day's review list after it appeared in a practice text.",
+      "target": "bother",
+      "translation": "“bother”出现在练习文本后，被加入了当天的复习清单。",
+      "sense": "t. 打扰；使烦恼；vi. 费心；n. 麻烦；烦恼",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-7",
+      "contextId": "blueforest-20260812-39-024:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-025": {
+    "primary": {
+      "sentence": "The reading teacher paused at “bow” and asked students to recall its meaning before showing the answer.",
+      "target": "bow",
+      "translation": "阅读课老师讲到“bow”时先让学生回想词义，再公布答案。",
+      "sense": "鞠躬；弯腰；屈服；n. 鞠躬；船头；蝴蝶结；弓",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "blueforest-20260812-39-025:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-026": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “booth” with nearby words to avoid confusing their meanings.",
+      "target": "booth",
+      "translation": "在词汇训练中，学习者把“booth”与相近词进行比较，以避免混淆词义。",
+      "sense": "摊位；隔间；电话亭",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "blueforest-20260812-39-026:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-027": {
+    "primary": {
+      "sentence": "The word “breast” was added to the day's review list after it appeared in a practice text.",
+      "target": "breast",
+      "translation": "“breast”出现在练习文本后，被加入了当天的复习清单。",
+      "sense": "胸部；乳房；胸膛；vt. 挺胸面对；奋勇对抗",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-7",
+      "contextId": "blueforest-20260812-39-027:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-028": {
+    "primary": {
+      "sentence": "Students wrote “artificial” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "artificial",
+      "translation": "学生把“artificial”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "人造的；人工的；虚假的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "blueforest-20260812-39-028:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-029": {
+    "primary": {
+      "sentence": "A quick review card displayed “bone” so that students could practise fast recognition before the exam.",
+      "target": "bone",
+      "translation": "快速复习卡显示“bone”，帮助学生在考试前训练快速识别。",
+      "sense": "骨头；骨质；核心部分；v. 剔骨",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "blueforest-20260812-39-029:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-030": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “blur” and worked out its meaning from the surrounding sentence.",
+      "target": "blur",
+      "translation": "在校园主题阅读课上，学生遇到了“blur”，并根据上下文判断它的含义。",
+      "sense": "模糊不清的事物；难以区分的情况；v. 使模糊",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "blueforest-20260812-39-030:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "blueforest-20260812-39-031": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “bounce” together with its common meaning.",
+      "target": "bounce",
+      "translation": "备考专升本时，全班把“bounce”和它的常见含义一起复习。",
+      "sense": "弹跳；反弹；n. 弹跳；反弹",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "blueforest-20260812-39-031:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-001": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “academician” together with its common meaning.",
+      "target": "academician",
+      "translation": "备考专升本时，全班把“academician”和它的常见含义一起复习。",
+      "sense": "学会会员；院士；学者",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "cet4-20260812-33-001:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-002": {
+    "primary": {
+      "sentence": "The class revisited “scholarly” during an evening review and checked both its spelling and meaning.",
+      "target": "scholarly",
+      "translation": "晚间复习时，全班再次学习“scholarly”，同时检查拼写和词义。",
+      "sense": "学术的；勤奋好学的；博学的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "cet4-20260812-33-002:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-003": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “scholarship” and worked out its meaning from the surrounding sentence.",
+      "target": "scholarship",
+      "translation": "在校园主题阅读课上，学生遇到了“scholarship”，并根据上下文判断它的含义。",
+      "sense": "奖学金；学问；学术研究",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "cet4-20260812-33-003:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-004": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “scholastic” appeared as a key vocabulary item.",
+      "target": "scholastic",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“scholastic”作为重点词汇出现。",
+      "sense": "学校的；学业的；教育的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "cet4-20260812-33-004:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-005": {
+    "primary": {
+      "sentence": "Students marked “seminar” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "seminar",
+      "translation": "学生在笔记中标出了“seminar”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "研讨班；研讨课；专题讨论会",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "cet4-20260812-33-005:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-006": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “forum” together with its common meaning.",
+      "target": "forum",
+      "translation": "备考专升本时，全班把“forum”和它的常见含义一起复习。",
+      "sense": "论坛；讨论会；公共讨论场所",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "cet4-20260812-33-006:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-007": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “faculty” with nearby words to avoid confusing their meanings.",
+      "target": "faculty",
+      "translation": "在词汇训练中，学习者把“faculty”与相近词进行比较，以避免混淆词义。",
+      "sense": "全体教员；院系；能力；才能",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "cet4-20260812-33-007:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-008": {
+    "primary": {
+      "sentence": "The word “educator” was added to the day's review list after it appeared in a practice text.",
+      "target": "educator",
+      "translation": "“educator”出现在练习文本后，被加入了当天的复习清单。",
+      "sense": "教师；教育工作者；教育家",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-7",
+      "contextId": "cet4-20260812-33-008:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-009": {
+    "primary": {
+      "sentence": "Students marked “educate” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "educate",
+      "translation": "学生在笔记中标出了“educate”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "t. 教育；教导；培养",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "cet4-20260812-33-009:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-010": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “educational” together with its common meaning.",
+      "target": "educational",
+      "translation": "备考专升本时，全班把“educational”和它的常见含义一起复习。",
+      "sense": "教育的；有教育意义的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "cet4-20260812-33-010:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-011": {
+    "primary": {
+      "sentence": "Students marked “editorial” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "editorial",
+      "translation": "学生在笔记中标出了“editorial”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "社论；adj. 编辑的；主编的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "cet4-20260812-33-011:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-012": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “edition” appeared as a key vocabulary item.",
+      "target": "edition",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“edition”作为重点词汇出现。",
+      "sense": "版本；版次；（节目）一期",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "cet4-20260812-33-012:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-013": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “version” and worked out its meaning from the surrounding sentence.",
+      "target": "version",
+      "translation": "在校园主题阅读课上，学生遇到了“version”，并根据上下文判断它的含义。",
+      "sense": "版本；描述；说法",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "cet4-20260812-33-013:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-014": {
+    "primary": {
+      "sentence": "Students wrote “tutorial” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "tutorial",
+      "translation": "学生把“tutorial”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "教程；辅导课；adj. 导师的；辅导的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "cet4-20260812-33-014:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-015": {
+    "primary": {
+      "sentence": "Students wrote “publicity” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "publicity",
+      "translation": "学生把“publicity”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "（媒体的）关注；报道；宣传",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "cet4-20260812-33-015:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-016": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “republic” appeared as a key vocabulary item.",
+      "target": "republic",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“republic”作为重点词汇出现。",
+      "sense": "共和国；共和政体",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "cet4-20260812-33-016:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-017": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “republican” together with its common meaning.",
+      "target": "republican",
+      "translation": "备考专升本时，全班把“republican”和它的常见含义一起复习。",
+      "sense": "共和主义者；共和党人；adj. 共和制的；共和国的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "cet4-20260812-33-017:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-018": {
+    "primary": {
+      "sentence": "Students marked “edit” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "edit",
+      "translation": "学生在笔记中标出了“edit”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "编辑；校订；剪辑；n. 编辑；校订",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "cet4-20260812-33-018:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-019": {
+    "primary": {
+      "sentence": "Students marked “editor” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "editor",
+      "translation": "学生在笔记中标出了“editor”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "编辑；主编；校订者；剪辑师",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "cet4-20260812-33-019:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-020": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “publication” appeared as a key vocabulary item.",
+      "target": "publication",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“publication”作为重点词汇出现。",
+      "sense": "出版；出版物；发表；公布",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "cet4-20260812-33-020:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-021": {
+    "primary": {
+      "sentence": "Students wrote “publicize” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "publicize",
+      "translation": "学生把“publicize”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "t. 宣传；推广",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "cet4-20260812-33-021:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-022": {
+    "primary": {
+      "sentence": "Students marked “publicly” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "publicly",
+      "translation": "学生在笔记中标出了“publicly”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "公开地；由政府进行地",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "cet4-20260812-33-022:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-023": {
+    "primary": {
+      "sentence": "The class revisited “fingerprint” during an evening review and checked both its spelling and meaning.",
+      "target": "fingerprint",
+      "translation": "晚间复习时，全班再次学习“fingerprint”，同时检查拼写和词义。",
+      "sense": "指纹；vt. 提取……的指纹",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "cet4-20260812-33-023:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-024": {
+    "primary": {
+      "sentence": "Students wrote “pirate” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "pirate",
+      "translation": "学生把“pirate”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "海盗；盗版者；非法广播者；v. 盗版；侵犯版权",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "cet4-20260812-33-024:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-025": {
+    "primary": {
+      "sentence": "Students marked “piracy” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "piracy",
+      "translation": "学生在笔记中标出了“piracy”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "盗版行为；非法翻印；海盗行为",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "cet4-20260812-33-025:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-026": {
+    "primary": {
+      "sentence": "Students wrote “journalist” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "journalist",
+      "translation": "学生把“journalist”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "记者；新闻工作者",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "cet4-20260812-33-026:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-027": {
+    "primary": {
+      "sentence": "Students wrote “printer” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "printer",
+      "translation": "学生把“printer”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "打印机；印刷工人；印刷公司",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "cet4-20260812-33-027:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-028": {
+    "primary": {
+      "sentence": "Students wrote “printing” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "printing",
+      "translation": "学生把“printing”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "印刷；（书报等的）一次印刷",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "cet4-20260812-33-028:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-029": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “interpreter” with nearby words to avoid confusing their meanings.",
+      "target": "interpreter",
+      "translation": "在词汇训练中，学习者把“interpreter”与相近词进行比较，以避免混淆词义。",
+      "sense": "口译员；演奏者；解释者",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "cet4-20260812-33-029:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-030": {
+    "primary": {
+      "sentence": "A vocabulary review used “interviewer” to test whether students could connect spelling, meaning, and context.",
+      "target": "interviewer",
+      "translation": "一次词汇复习用“interviewer”检验学生能否把拼写、词义和语境联系起来。",
+      "sense": "采访者；面试官",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-5",
+      "contextId": "cet4-20260812-33-030:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-031": {
+    "primary": {
+      "sentence": "A quick review card displayed “interviewee” so that students could practise fast recognition before the exam.",
+      "target": "interviewee",
+      "translation": "快速复习卡显示“interviewee”，帮助学生在考试前训练快速识别。",
+      "sense": "被采访者；被面试者",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "cet4-20260812-33-031:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-032": {
+    "primary": {
+      "sentence": "A quick review card displayed “interpret” so that students could practise fast recognition before the exam.",
+      "target": "interpret",
+      "translation": "快速复习卡显示“interpret”，帮助学生在考试前训练快速识别。",
+      "sense": "解释；说明；把……理解为；口译",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "cet4-20260812-33-032:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "cet4-20260812-33-033": {
+    "primary": {
+      "sentence": "A quick review card displayed “interpretation” so that students could practise fast recognition before the exam.",
+      "target": "interpretation",
+      "translation": "快速复习卡显示“interpretation”，帮助学生在考试前训练快速识别。",
+      "sense": "解释；解读；说明；表演；演绎",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "cet4-20260812-33-033:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-001": {
+    "primary": {
+      "sentence": "The word “keen” was added to the day's review list after it appeared in a practice text.",
+      "target": "keen",
+      "translation": "“keen”出现在练习文本后，被加入了当天的复习清单。",
+      "sense": "热切的；敏锐的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-7",
+      "contextId": "word-list-21-20260812-001:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-002": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “be keen on” and worked out its meaning from the surrounding sentence.",
+      "target": "be keen on",
+      "translation": "在校园主题阅读课上，学生遇到了“be keen on”，并根据上下文判断它的含义。",
+      "sense": "喜爱；热衷于",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "word-list-21-20260812-002:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-003": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “be fond of” appeared as a key vocabulary item.",
+      "target": "be fond of",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“be fond of”作为重点词汇出现。",
+      "sense": "喜爱；喜欢",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-21-20260812-003:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-004": {
+    "primary": {
+      "sentence": "The reading teacher paused at “unlike” and asked students to recall its meaning before showing the answer.",
+      "target": "unlike",
+      "translation": "阅读课老师讲到“unlike”时先让学生回想词义，再公布答案。",
+      "sense": "不像；和……不同；adj. 不同的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-21-20260812-004:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-005": {
+    "primary": {
+      "sentence": "The teacher asked the class to use “dislike” accurately in a short sentence before the vocabulary quiz.",
+      "target": "dislike",
+      "translation": "词汇小测前，老师要求全班在短句中准确使用“dislike”。",
+      "sense": "/n. 不喜欢；厌恶",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-2",
+      "contextId": "word-list-21-20260812-005:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-006": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “sunrise” with nearby words to avoid confusing their meanings.",
+      "target": "sunrise",
+      "translation": "在词汇训练中，学习者把“sunrise”与相近词进行比较，以避免混淆词义。",
+      "sense": "日出",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "word-list-21-20260812-006:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-007": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “wit” together with its common meaning.",
+      "target": "wit",
+      "translation": "备考专升本时，全班把“wit”和它的常见含义一起复习。",
+      "sense": "风趣；机智",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-21-20260812-007:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-008": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “later on” together with its common meaning.",
+      "target": "later on",
+      "translation": "备考专升本时，全班把“later on”和它的常见含义一起复习。",
+      "sense": "后来；以后",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-21-20260812-008:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-009": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “sooner or later” together with its common meaning.",
+      "target": "sooner or later",
+      "translation": "备考专升本时，全班把“sooner or later”和它的常见含义一起复习。",
+      "sense": "迟早；早晚",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-21-20260812-009:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-010": {
+    "primary": {
+      "sentence": "Students wrote “envelope” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "envelope",
+      "translation": "学生把“envelope”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "信封；封套",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "word-list-21-20260812-010:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-011": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “send for” appeared as a key vocabulary item.",
+      "target": "send for",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“send for”作为重点词汇出现。",
+      "sense": "派人去请；派人去取",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-21-20260812-011:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-012": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “postage” and worked out its meaning from the surrounding sentence.",
+      "target": "postage",
+      "translation": "在校园主题阅读课上，学生遇到了“postage”，并根据上下文判断它的含义。",
+      "sense": "邮资；邮费",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "word-list-21-20260812-012:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-21-20260812-013": {
+    "primary": {
+      "sentence": "A quick review card displayed “post office” so that students could practise fast recognition before the exam.",
+      "target": "post office",
+      "translation": "快速复习卡显示“post office”，帮助学生在考试前训练快速识别。",
+      "sense": "邮局",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "word-list-21-20260812-013:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-001": {
+    "primary": {
+      "sentence": "A quick review card displayed “hand down” so that students could practise fast recognition before the exam.",
+      "target": "hand down",
+      "translation": "快速复习卡显示“hand down”，帮助学生在考试前训练快速识别。",
+      "sense": "传给后代；把……传下来",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "word-list-22-20260812-001:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-002": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “last” together with its common meaning.",
+      "target": "last",
+      "translation": "备考专升本时，全班把“last”和它的常见含义一起复习。",
+      "sense": "最后的；上一次的；v. 持续；n. 最后的人（或事物）",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-22-20260812-002:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-003": {
+    "primary": {
+      "sentence": "Students marked “last but not least” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "last but not least",
+      "translation": "学生在笔记中标出了“last but not least”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "最后但同样重要的一点",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "word-list-22-20260812-003:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-004": {
+    "primary": {
+      "sentence": "The word “former” was added to the day's review list after it appeared in a practice text.",
+      "target": "former",
+      "translation": "“former”出现在练习文本后，被加入了当天的复习清单。",
+      "sense": "从前的；前任的；n. 前者",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-7",
+      "contextId": "word-list-22-20260812-004:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-005": {
+    "primary": {
+      "sentence": "Students wrote “meanwhile” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "meanwhile",
+      "translation": "学生把“meanwhile”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "与此同时；n. 其间",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "word-list-22-20260812-005:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-006": {
+    "primary": {
+      "sentence": "The teacher asked the class to use “in the meanwhile” accurately in a short sentence before the vocabulary quiz.",
+      "target": "in the meanwhile",
+      "translation": "词汇小测前，老师要求全班在短句中准确使用“in the meanwhile”。",
+      "sense": "与此同时；在此期间",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-2",
+      "contextId": "word-list-22-20260812-006:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-007": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “meantime” with nearby words to avoid confusing their meanings.",
+      "target": "meantime",
+      "translation": "在词汇训练中，学习者把“meantime”与相近词进行比较，以避免混淆词义。",
+      "sense": "其间；与此同时",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "word-list-22-20260812-007:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-008": {
+    "primary": {
+      "sentence": "Students marked “in the meantime” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "in the meantime",
+      "translation": "学生在笔记中标出了“in the meantime”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "与此同时；在此期间",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "word-list-22-20260812-008:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-009": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “normal university” together with its common meaning.",
+      "target": "normal university",
+      "translation": "备考专升本时，全班把“normal university”和它的常见含义一起复习。",
+      "sense": "师范大学",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-22-20260812-009:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-010": {
+    "primary": {
+      "sentence": "A vocabulary review used “abnormal” to test whether students could connect spelling, meaning, and context.",
+      "target": "abnormal",
+      "translation": "一次词汇复习用“abnormal”检验学生能否把拼写、词义和语境联系起来。",
+      "sense": "不正常的；反常的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-5",
+      "contextId": "word-list-22-20260812-010:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-011": {
+    "primary": {
+      "sentence": "Students marked “common sense / knowledge” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "common sense / knowledge",
+      "translation": "学生在笔记中标出了“common sense / knowledge”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "常识；常识性知识",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "word-list-22-20260812-011:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-012": {
+    "primary": {
+      "sentence": "Students wrote “in common with” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "in common with",
+      "translation": "学生把“in common with”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "与……一样；与……有共同之处",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "word-list-22-20260812-012:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-013": {
+    "primary": {
+      "sentence": "Students wrote “uncommon” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "uncommon",
+      "translation": "学生把“uncommon”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "不常见的；不寻常的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "word-list-22-20260812-013:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-014": {
+    "primary": {
+      "sentence": "Students marked “on average” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "on average",
+      "translation": "学生在笔记中标出了“on average”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "平均；通常",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "word-list-22-20260812-014:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-015": {
+    "primary": {
+      "sentence": "The class revisited “average level” during an evening review and checked both its spelling and meaning.",
+      "target": "average level",
+      "translation": "晚间复习时，全班再次学习“average level”，同时检查拼写和词义。",
+      "sense": "平均水平",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "word-list-22-20260812-015:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-016": {
+    "primary": {
+      "sentence": "Students marked “avoid doing sth.” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "avoid doing sth.",
+      "translation": "学生在笔记中标出了“avoid doing sth.”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "避免做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "word-list-22-20260812-016:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-017": {
+    "primary": {
+      "sentence": "A vocabulary review used “avoidable” to test whether students could connect spelling, meaning, and context.",
+      "target": "avoidable",
+      "translation": "一次词汇复习用“avoidable”检验学生能否把拼写、词义和语境联系起来。",
+      "sense": "可以避免的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-5",
+      "contextId": "word-list-22-20260812-017:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-018": {
+    "primary": {
+      "sentence": "Students wrote “unavoidable” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "unavoidable",
+      "translation": "学生把“unavoidable”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "不可避免的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "word-list-22-20260812-018:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-019": {
+    "primary": {
+      "sentence": "A quick review card displayed “subjection” so that students could practise fast recognition before the exam.",
+      "target": "subjection",
+      "translation": "快速复习卡显示“subjection”，帮助学生在考试前训练快速识别。",
+      "sense": "隶属；服从；征服",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "word-list-22-20260812-019:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-020": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “physical education” appeared as a key vocabulary item.",
+      "target": "physical education",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“physical education”作为重点词汇出现。",
+      "sense": "体育教育",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-22-20260812-020:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-021": {
+    "primary": {
+      "sentence": "The reading teacher paused at “physical fitness” and asked students to recall its meaning before showing the answer.",
+      "target": "physical fitness",
+      "translation": "阅读课老师讲到“physical fitness”时先让学生回想词义，再公布答案。",
+      "sense": "身体健康；体能",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-22-20260812-021:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-022": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “chemical” together with its common meaning.",
+      "target": "chemical",
+      "translation": "备考专升本时，全班把“chemical”和它的常见含义一起复习。",
+      "sense": "化学的；n. 化学品",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-22-20260812-022:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-023": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “chemist” with nearby words to avoid confusing their meanings.",
+      "target": "chemist",
+      "translation": "在词汇训练中，学习者把“chemist”与相近词进行比较，以避免混淆词义。",
+      "sense": "化学家；药剂师",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "word-list-22-20260812-023:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-024": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “philosophy” appeared as a key vocabulary item.",
+      "target": "philosophy",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“philosophy”作为重点词汇出现。",
+      "sense": "哲学；人生观",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-22-20260812-024:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-025": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “geometry” appeared as a key vocabulary item.",
+      "target": "geometry",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“geometry”作为重点词汇出现。",
+      "sense": "几何学",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-22-20260812-025:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-026": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “physicist” appeared as a key vocabulary item.",
+      "target": "physicist",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“physicist”作为重点词汇出现。",
+      "sense": "物理学家",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-22-20260812-026:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-027": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “objective” with nearby words to avoid confusing their meanings.",
+      "target": "objective",
+      "translation": "在词汇训练中，学习者把“objective”与相近词进行比较，以避免混淆词义。",
+      "sense": "目标；目的；adj. 客观的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "word-list-22-20260812-027:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-028": {
+    "primary": {
+      "sentence": "The class revisited “objection” during an evening review and checked both its spelling and meaning.",
+      "target": "objection",
+      "translation": "晚间复习时，全班再次学习“objection”，同时检查拼写和词义。",
+      "sense": "反对；异议",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "word-list-22-20260812-028:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-029": {
+    "primary": {
+      "sentence": "A quick review card displayed “object to doing” so that students could practise fast recognition before the exam.",
+      "target": "object to doing",
+      "translation": "快速复习卡显示“object to doing”，帮助学生在考试前训练快速识别。",
+      "sense": "反对做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "word-list-22-20260812-029:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-030": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “be capable of” with nearby words to avoid confusing their meanings.",
+      "target": "be capable of",
+      "translation": "在词汇训练中，学习者把“be capable of”与相近词进行比较，以避免混淆词义。",
+      "sense": "能够；有……能力",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "word-list-22-20260812-030:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-031": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “capacity for” appeared as a key vocabulary item.",
+      "target": "capacity for",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“capacity for”作为重点词汇出现。",
+      "sense": "做……的能力；……的容量",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-22-20260812-031:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-032": {
+    "primary": {
+      "sentence": "The word “promising” was added to the day's review list after it appeared in a practice text.",
+      "target": "promising",
+      "translation": "“promising”出现在练习文本后，被加入了当天的复习清单。",
+      "sense": "有希望的；有前途的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-7",
+      "contextId": "word-list-22-20260812-032:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-033": {
+    "primary": {
+      "sentence": "The teacher asked the class to use “refuse” accurately in a short sentence before the vocabulary quiz.",
+      "target": "refuse",
+      "translation": "词汇小测前，老师要求全班在短句中准确使用“refuse”。",
+      "sense": "拒绝；不肯",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-2",
+      "contextId": "word-list-22-20260812-033:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-034": {
+    "primary": {
+      "sentence": "The teacher asked the class to use “refusal” accurately in a short sentence before the vocabulary quiz.",
+      "target": "refusal",
+      "translation": "词汇小测前，老师要求全班在短句中准确使用“refusal”。",
+      "sense": "拒绝",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-2",
+      "contextId": "word-list-22-20260812-034:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-22-20260812-035": {
+    "primary": {
+      "sentence": "Students marked “guarantee” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "guarantee",
+      "translation": "学生在笔记中标出了“guarantee”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "保证；确保；n. 保证；担保",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "word-list-22-20260812-035:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-001": {
+    "primary": {
+      "sentence": "The word “hometown” was added to the day's review list after it appeared in a practice text.",
+      "target": "hometown",
+      "translation": "“hometown”出现在练习文本后，被加入了当天的复习清单。",
+      "sense": "家乡；故乡",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-7",
+      "contextId": "word-list-23-20260812-001:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-002": {
+    "primary": {
+      "sentence": "Students wrote “mall” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "mall",
+      "translation": "学生把“mall”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "购物中心；步行商业区",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "word-list-23-20260812-002:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-003": {
+    "primary": {
+      "sentence": "The reading teacher paused at “developed” and asked students to recall its meaning before showing the answer.",
+      "target": "developed",
+      "translation": "阅读课老师讲到“developed”时先让学生回想词义，再公布答案。",
+      "sense": "发达的；成熟的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-23-20260812-003:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-004": {
+    "primary": {
+      "sentence": "The class revisited “developing” during an evening review and checked both its spelling and meaning.",
+      "target": "developing",
+      "translation": "晚间复习时，全班再次学习“developing”，同时检查拼写和词义。",
+      "sense": "发展中的；成长中的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "word-list-23-20260812-004:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-005": {
+    "primary": {
+      "sentence": "Students wrote “widow” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "widow",
+      "translation": "学生把“widow”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "寡妇；遗孀",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "word-list-23-20260812-005:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-006": {
+    "primary": {
+      "sentence": "The reading teacher paused at “skin” and asked students to recall its meaning before showing the answer.",
+      "target": "skin",
+      "translation": "阅读课老师讲到“skin”时先让学生回想词义，再公布答案。",
+      "sense": "皮肤；外皮",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-23-20260812-006:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-007": {
+    "primary": {
+      "sentence": "The teacher asked the class to use “eat one's words” accurately in a short sentence before the vocabulary quiz.",
+      "target": "eat one's words",
+      "translation": "词汇小测前，老师要求全班在短句中准确使用“eat one's words”。",
+      "sense": "收回前言；承认自己说错了",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-2",
+      "contextId": "word-list-23-20260812-007:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-008": {
+    "primary": {
+      "sentence": "The class revisited “job” during an evening review and checked both its spelling and meaning.",
+      "target": "job",
+      "translation": "晚间复习时，全班再次学习“job”，同时检查拼写和词义。",
+      "sense": "工作；职业",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "word-list-23-20260812-008:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-009": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “career” together with its common meaning.",
+      "target": "career",
+      "translation": "备考专升本时，全班把“career”和它的常见含义一起复习。",
+      "sense": "生涯；职业",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-23-20260812-009:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-010": {
+    "primary": {
+      "sentence": "Students wrote “occupy” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "occupy",
+      "translation": "学生把“occupy”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "占据；占用；使忙碌",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "word-list-23-20260812-010:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-011": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “occupy oneself in doing sth.” with nearby words to avoid confusing their meanings.",
+      "target": "occupy oneself in doing sth.",
+      "translation": "在词汇训练中，学习者把“occupy oneself in doing sth.”与相近词进行比较，以避免混淆词义。",
+      "sense": "忙于做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "word-list-23-20260812-011:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-012": {
+    "primary": {
+      "sentence": "The reading teacher paused at “be occupied in doing sth.” and asked students to recall its meaning before showing the answer.",
+      "target": "be occupied in doing sth.",
+      "translation": "阅读课老师讲到“be occupied in doing sth.”时先让学生回想词义，再公布答案。",
+      "sense": "忙于做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-23-20260812-012:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-013": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “occupation” with nearby words to avoid confusing their meanings.",
+      "target": "occupation",
+      "translation": "在词汇训练中，学习者把“occupation”与相近词进行比较，以避免混淆词义。",
+      "sense": "职业；占领；占用",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "word-list-23-20260812-013:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-014": {
+    "primary": {
+      "sentence": "The reading teacher paused at “profession” and asked students to recall its meaning before showing the answer.",
+      "target": "profession",
+      "translation": "阅读课老师讲到“profession”时先让学生回想词义，再公布答案。",
+      "sense": "职业；专业",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-23-20260812-014:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-23-20260812-015": {
+    "primary": {
+      "sentence": "The class revisited “professional” during an evening review and checked both its spelling and meaning.",
+      "target": "professional",
+      "translation": "晚间复习时，全班再次学习“professional”，同时检查拼写和词义。",
+      "sense": "职业的；专业的；n. 专业人士",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "word-list-23-20260812-015:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-001": {
+    "primary": {
+      "sentence": "A quick review card displayed “manage to do sth.” so that students could practise fast recognition before the exam.",
+      "target": "manage to do sth.",
+      "translation": "快速复习卡显示“manage to do sth.”，帮助学生在考试前训练快速识别。",
+      "sense": "设法做成某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "word-list-24-20260812-001:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-002": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “execute” together with its common meaning.",
+      "target": "execute",
+      "translation": "备考专升本时，全班把“execute”和它的常见含义一起复习。",
+      "sense": "执行；实施；处决",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-24-20260812-002:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-003": {
+    "primary": {
+      "sentence": "Students wrote “executive” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "executive",
+      "translation": "学生把“executive”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "主管；经理；adj. 执行的；行政的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "word-list-24-20260812-003:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-004": {
+    "primary": {
+      "sentence": "The reading teacher paused at “execution” and asked students to recall its meaning before showing the answer.",
+      "target": "execution",
+      "translation": "阅读课老师讲到“execution”时先让学生回想词义，再公布答案。",
+      "sense": "执行；实施；处决",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-24-20260812-004:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-005": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “global warming” together with its common meaning.",
+      "target": "global warming",
+      "translation": "备考专升本时，全班把“global warming”和它的常见含义一起复习。",
+      "sense": "全球变暖",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-24-20260812-005:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-006": {
+    "primary": {
+      "sentence": "Students wrote “trend” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "trend",
+      "translation": "学生把“trend”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "趋势；倾向；动向",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "word-list-24-20260812-006:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-007": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “tend” together with its common meaning.",
+      "target": "tend",
+      "translation": "备考专升本时，全班把“tend”和它的常见含义一起复习。",
+      "sense": "倾向；趋向；照料",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-24-20260812-007:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-008": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “tend to do sth.” appeared as a key vocabulary item.",
+      "target": "tend to do sth.",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“tend to do sth.”作为重点词汇出现。",
+      "sense": "往往做某事；倾向于做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-24-20260812-008:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-009": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “tendency” and worked out its meaning from the surrounding sentence.",
+      "target": "tendency",
+      "translation": "在校园主题阅读课上，学生遇到了“tendency”，并根据上下文判断它的含义。",
+      "sense": "倾向；趋势",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "word-list-24-20260812-009:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-010": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “intend to do sth.” and worked out its meaning from the surrounding sentence.",
+      "target": "intend to do sth.",
+      "translation": "在校园主题阅读课上，学生遇到了“intend to do sth.”，并根据上下文判断它的含义。",
+      "sense": "打算做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "word-list-24-20260812-010:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-011": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “intention” appeared as a key vocabulary item.",
+      "target": "intention",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“intention”作为重点词汇出现。",
+      "sense": "意图；目的；打算",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-24-20260812-011:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-012": {
+    "primary": {
+      "sentence": "The reading teacher paused at “tender” and asked students to recall its meaning before showing the answer.",
+      "target": "tender",
+      "translation": "阅读课老师讲到“tender”时先让学生回想词义，再公布答案。",
+      "sense": "温柔的；亲切的；脆弱的；v. 提出；投标",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-24-20260812-012:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-013": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “extension” with nearby words to avoid confusing their meanings.",
+      "target": "extension",
+      "translation": "在词汇训练中，学习者把“extension”与相近词进行比较，以避免混淆词义。",
+      "sense": "延伸；扩展；延期",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "word-list-24-20260812-013:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-014": {
+    "primary": {
+      "sentence": "A vocabulary review used “expansive” to test whether students could connect spelling, meaning, and context.",
+      "target": "expansive",
+      "translation": "一次词汇复习用“expansive”检验学生能否把拼写、词义和语境联系起来。",
+      "sense": "广阔的；扩张的；开朗健谈的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-5",
+      "contextId": "word-list-24-20260812-014:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-015": {
+    "primary": {
+      "sentence": "The reading teacher paused at “explanation” and asked students to recall its meaning before showing the answer.",
+      "target": "explanation",
+      "translation": "阅读课老师讲到“explanation”时先让学生回想词义，再公布答案。",
+      "sense": "解释；说明",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-24-20260812-015:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-016": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “communicate with” appeared as a key vocabulary item.",
+      "target": "communicate with",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“communicate with”作为重点词汇出现。",
+      "sense": "与……交流；与……沟通",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-24-20260812-016:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-017": {
+    "primary": {
+      "sentence": "The class revisited “conversation” during an evening review and checked both its spelling and meaning.",
+      "target": "conversation",
+      "translation": "晚间复习时，全班再次学习“conversation”，同时检查拼写和词义。",
+      "sense": "会话；交谈",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "word-list-24-20260812-017:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-018": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “close down” with nearby words to avoid confusing their meanings.",
+      "target": "close down",
+      "translation": "在词汇训练中，学习者把“close down”与相近词进行比较，以避免混淆词义。",
+      "sense": "关闭；停业",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "word-list-24-20260812-018:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-019": {
+    "primary": {
+      "sentence": "The teacher asked the class to use “close to” accurately in a short sentence before the vocabulary quiz.",
+      "target": "close to",
+      "translation": "词汇小测前，老师要求全班在短句中准确使用“close to”。",
+      "sense": "靠近；几乎",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-2",
+      "contextId": "word-list-24-20260812-019:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-020": {
+    "primary": {
+      "sentence": "A vocabulary review used “disclose” to test whether students could connect spelling, meaning, and context.",
+      "target": "disclose",
+      "translation": "一次词汇复习用“disclose”检验学生能否把拼写、词义和语境联系起来。",
+      "sense": "揭露；透露",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-5",
+      "contextId": "word-list-24-20260812-020:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-021": {
+    "primary": {
+      "sentence": "The reading teacher paused at “enclose” and asked students to recall its meaning before showing the answer.",
+      "target": "enclose",
+      "translation": "阅读课老师讲到“enclose”时先让学生回想词义，再公布答案。",
+      "sense": "围住；把……装入信封",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-24-20260812-021:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-022": {
+    "primary": {
+      "sentence": "The teacher asked the class to use “within reach” accurately in a short sentence before the vocabulary quiz.",
+      "target": "within reach",
+      "translation": "词汇小测前，老师要求全班在短句中准确使用“within reach”。",
+      "sense": "够得着；在可及范围内",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-2",
+      "contextId": "word-list-24-20260812-022:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-023": {
+    "primary": {
+      "sentence": "A vocabulary review used “within sight of” to test whether students could connect spelling, meaning, and context.",
+      "target": "within sight of",
+      "translation": "一次词汇复习用“within sight of”检验学生能否把拼写、词义和语境联系起来。",
+      "sense": "看得见；在……视线范围内",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-5",
+      "contextId": "word-list-24-20260812-023:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-024": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “during” appeared as a key vocabulary item.",
+      "target": "during",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“during”作为重点词汇出现。",
+      "sense": "在……期间",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-24-20260812-024:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-025": {
+    "primary": {
+      "sentence": "The teacher asked the class to use “check out” accurately in a short sentence before the vocabulary quiz.",
+      "target": "check out",
+      "translation": "词汇小测前，老师要求全班在短句中准确使用“check out”。",
+      "sense": "检查；结账离开",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-2",
+      "contextId": "word-list-24-20260812-025:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-026": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “check in” with nearby words to avoid confusing their meanings.",
+      "target": "check in",
+      "translation": "在词汇训练中，学习者把“check in”与相近词进行比较，以避免混淆词义。",
+      "sense": "登记入住；办理报到",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "word-list-24-20260812-026:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-027": {
+    "primary": {
+      "sentence": "The reading teacher paused at “cheek” and asked students to recall its meaning before showing the answer.",
+      "target": "cheek",
+      "translation": "阅读课老师讲到“cheek”时先让学生回想词义，再公布答案。",
+      "sense": "面颊；脸蛋；无礼",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-24-20260812-027:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-028": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “hold on” together with its common meaning.",
+      "target": "hold on",
+      "translation": "备考专升本时，全班把“hold on”和它的常见含义一起复习。",
+      "sense": "坚持；等一下；别挂断",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-24-20260812-028:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-029": {
+    "primary": {
+      "sentence": "The teacher asked the class to use “hold back” accurately in a short sentence before the vocabulary quiz.",
+      "target": "hold back",
+      "translation": "词汇小测前，老师要求全班在短句中准确使用“hold back”。",
+      "sense": "阻止；抑制；隐瞒",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-2",
+      "contextId": "word-list-24-20260812-029:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-030": {
+    "primary": {
+      "sentence": "The class revisited “key detail” during an evening review and checked both its spelling and meaning.",
+      "target": "key detail",
+      "translation": "晚间复习时，全班再次学习“key detail”，同时检查拼写和词义。",
+      "sense": "关键细节",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "word-list-24-20260812-030:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-031": {
+    "primary": {
+      "sentence": "The reading teacher paused at “some times” and asked students to recall its meaning before showing the answer.",
+      "target": "some times",
+      "translation": "阅读课老师讲到“some times”时先让学生回想词义，再公布答案。",
+      "sense": "几次；几倍",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-9",
+      "contextId": "word-list-24-20260812-031:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-032": {
+    "primary": {
+      "sentence": "Students wrote “some time” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "some time",
+      "translation": "学生把“some time”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "一段时间；某个时候",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "word-list-24-20260812-032:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-24-20260812-033": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “weekly” and worked out its meaning from the surrounding sentence.",
+      "target": "weekly",
+      "translation": "在校园主题阅读课上，学生遇到了“weekly”，并根据上下文判断它的含义。",
+      "sense": "每周一次的；adv. 每周；n. 周报；周刊",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "word-list-24-20260812-033:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-001": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “once in a while” and worked out its meaning from the surrounding sentence.",
+      "target": "once in a while",
+      "translation": "在校园主题阅读课上，学生遇到了“once in a while”，并根据上下文判断它的含义。",
+      "sense": "偶尔；间或",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "word-list-25-20260812-001:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-002": {
+    "primary": {
+      "sentence": "A quick review card displayed “ever again” so that students could practise fast recognition before the exam.",
+      "target": "ever again",
+      "translation": "快速复习卡显示“ever again”，帮助学生在考试前训练快速识别。",
+      "sense": "再次；再度",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "word-list-25-20260812-002:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-003": {
+    "primary": {
+      "sentence": "Students marked “more than ever” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "more than ever",
+      "translation": "学生在笔记中标出了“more than ever”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "比以往任何时候都更",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "word-list-25-20260812-003:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-004": {
+    "primary": {
+      "sentence": "The class revisited “never mind” during an evening review and checked both its spelling and meaning.",
+      "target": "never mind",
+      "translation": "晚间复习时，全班再次学习“never mind”，同时检查拼写和词义。",
+      "sense": "没关系；不要紧；别在意",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-12",
+      "contextId": "word-list-25-20260812-004:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-005": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “scarcely ... when...” appeared as a key vocabulary item.",
+      "target": "scarcely ... when...",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“scarcely ... when...”作为重点词汇出现。",
+      "sense": "刚……就……；几乎一……就……",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-25-20260812-005:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-006": {
+    "primary": {
+      "sentence": "The word “once more” was added to the day's review list after it appeared in a practice text.",
+      "target": "once more",
+      "translation": "“once more”出现在练习文本后，被加入了当天的复习清单。",
+      "sense": "再一次；又一次",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-7",
+      "contextId": "word-list-25-20260812-006:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-007": {
+    "primary": {
+      "sentence": "A vocabulary review used “again” to test whether students could connect spelling, meaning, and context.",
+      "target": "again",
+      "translation": "一次词汇复习用“again”检验学生能否把拼写、词义和语境联系起来。",
+      "sense": "再一次；又一次",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-5",
+      "contextId": "word-list-25-20260812-007:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-008": {
+    "primary": {
+      "sentence": "The word “once again” was added to the day's review list after it appeared in a practice text.",
+      "target": "once again",
+      "translation": "“once again”出现在练习文本后，被加入了当天的复习清单。",
+      "sense": "再一次；又一次",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-7",
+      "contextId": "word-list-25-20260812-008:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-009": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “now and again” appeared as a key vocabulary item.",
+      "target": "now and again",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“now and again”作为重点词汇出现。",
+      "sense": "不时；时而",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-25-20260812-009:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-010": {
+    "primary": {
+      "sentence": "Students marked “dream of” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "dream of",
+      "translation": "学生在笔记中标出了“dream of”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "梦想；梦见",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "word-list-25-20260812-010:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-011": {
+    "primary": {
+      "sentence": "The teacher asked the class to use “amazed” accurately in a short sentence before the vocabulary quiz.",
+      "target": "amazed",
+      "translation": "词汇小测前，老师要求全班在短句中准确使用“amazed”。",
+      "sense": "吃惊的；惊奇的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-2",
+      "contextId": "word-list-25-20260812-011:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-012": {
+    "primary": {
+      "sentence": "A vocabulary review used “be worth doing” to test whether students could connect spelling, meaning, and context.",
+      "target": "be worth doing",
+      "translation": "一次词汇复习用“be worth doing”检验学生能否把拼写、词义和语境联系起来。",
+      "sense": "值得做",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-5",
+      "contextId": "word-list-25-20260812-012:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-013": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “worthy” appeared as a key vocabulary item.",
+      "target": "worthy",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“worthy”作为重点词汇出现。",
+      "sense": "值得的；有价值的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-25-20260812-013:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-014": {
+    "primary": {
+      "sentence": "Students marked “be worthy of being done” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "be worthy of being done",
+      "translation": "学生在笔记中标出了“be worthy of being done”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "值得被做；值得做",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "word-list-25-20260812-014:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-015": {
+    "primary": {
+      "sentence": "In a practice passage about study and daily life, “it is worthwhile to do sth.” appeared as a key vocabulary item.",
+      "target": "it is worthwhile to do sth.",
+      "translation": "在一篇关于学习和日常生活的练习文章中，“it is worthwhile to do sth.”作为重点词汇出现。",
+      "sense": "做某事是值得的",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-3",
+      "contextId": "word-list-25-20260812-015:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-016": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “comprise” together with its common meaning.",
+      "target": "comprise",
+      "translation": "备考专升本时，全班把“comprise”和它的常见含义一起复习。",
+      "sense": "包括；包含；构成",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-25-20260812-016:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-017": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “embody” with nearby words to avoid confusing their meanings.",
+      "target": "embody",
+      "translation": "在词汇训练中，学习者把“embody”与相近词进行比较，以避免混淆词义。",
+      "sense": "体现；包含；使具体化",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "word-list-25-20260812-017:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-018": {
+    "primary": {
+      "sentence": "A vocabulary review used “belong” to test whether students could connect spelling, meaning, and context.",
+      "target": "belong",
+      "translation": "一次词汇复习用“belong”检验学生能否把拼写、词义和语境联系起来。",
+      "sense": "属于；应在某处",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-5",
+      "contextId": "word-list-25-20260812-018:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-019": {
+    "primary": {
+      "sentence": "A quick review card displayed “belong to” so that students could practise fast recognition before the exam.",
+      "target": "belong to",
+      "translation": "快速复习卡显示“belong to”，帮助学生在考试前训练快速识别。",
+      "sense": "属于",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "word-list-25-20260812-019:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-020": {
+    "primary": {
+      "sentence": "The word “productive” was added to the day's review list after it appeared in a practice text.",
+      "target": "productive",
+      "translation": "“productive”出现在练习文本后，被加入了当天的复习清单。",
+      "sense": "多产的；富有成效的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-7",
+      "contextId": "word-list-25-20260812-020:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-021": {
+    "primary": {
+      "sentence": "A quick review card displayed “farmer” so that students could practise fast recognition before the exam.",
+      "target": "farmer",
+      "translation": "快速复习卡显示“farmer”，帮助学生在考试前训练快速识别。",
+      "sense": "农民；农场主",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "word-list-25-20260812-021:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-022": {
+    "primary": {
+      "sentence": "A quick review card displayed “retail” so that students could practise fast recognition before the exam.",
+      "target": "retail",
+      "translation": "快速复习卡显示“retail”，帮助学生在考试前训练快速识别。",
+      "sense": "/v. 零售；adj. 零售的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "word-list-25-20260812-022:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-023": {
+    "primary": {
+      "sentence": "Students marked “retailer” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "retailer",
+      "translation": "学生在笔记中标出了“retailer”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "零售商；零售店",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "word-list-25-20260812-023:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-024": {
+    "primary": {
+      "sentence": "Students marked “industrial” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "industrial",
+      "translation": "学生在笔记中标出了“industrial”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "工业的；产业的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "word-list-25-20260812-024:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-025": {
+    "primary": {
+      "sentence": "While preparing for the entrance examination, the class reviewed “industrialize” together with its common meaning.",
+      "target": "industrialize",
+      "translation": "备考专升本时，全班把“industrialize”和它的常见含义一起复习。",
+      "sense": "使工业化；实现工业化",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-6",
+      "contextId": "word-list-25-20260812-025:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-026": {
+    "primary": {
+      "sentence": "A quick review card displayed “diligence” so that students could practise fast recognition before the exam.",
+      "target": "diligence",
+      "translation": "快速复习卡显示“diligence”，帮助学生在考试前训练快速识别。",
+      "sense": "勤奋；努力",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "word-list-25-20260812-026:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "word-list-25-20260812-027": {
+    "primary": {
+      "sentence": "A quick review card displayed “studious” so that students could practise fast recognition before the exam.",
+      "target": "studious",
+      "translation": "快速复习卡显示“studious”，帮助学生在考试前训练快速识别。",
+      "sense": "勤奋的；用功的",
+      "pos": "word",
+      "level": "basic",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-10",
+      "contextId": "word-list-25-20260812-027:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260812-25-001": {
+    "primary": {
+      "sentence": "During a campus reading lesson, students met “be expert at doing sth.” and worked out its meaning from the surrounding sentence.",
+      "target": "be expert at doing sth.",
+      "translation": "在校园主题阅读课上，学生遇到了“be expert at doing sth.”，并根据上下文判断它的含义。",
+      "sense": "擅长做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-1",
+      "contextId": "phrase-practice-20260812-25-001:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260812-25-002": {
+    "primary": {
+      "sentence": "The teacher asked the class to use “focus on (doing) sth.” accurately in a short sentence before the vocabulary quiz.",
+      "target": "focus on (doing) sth.",
+      "translation": "词汇小测前，老师要求全班在短句中准确使用“focus on (doing) sth.”。",
+      "sense": "专心于（做）某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-2",
+      "contextId": "phrase-practice-20260812-25-002:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260812-25-003": {
+    "primary": {
+      "sentence": "A vocabulary review used “concentrate on (doing) sth.” to test whether students could connect spelling, meaning, and context.",
+      "target": "concentrate on (doing) sth.",
+      "translation": "一次词汇复习用“concentrate on (doing) sth.”检验学生能否把拼写、词义和语境联系起来。",
+      "sense": "专心于（做）某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-5",
+      "contextId": "phrase-practice-20260812-25-003:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260812-25-004": {
+    "primary": {
+      "sentence": "In the vocabulary section, learners compared “be good at doing sth.” with nearby words to avoid confusing their meanings.",
+      "target": "be good at doing sth.",
+      "translation": "在词汇训练中，学习者把“be good at doing sth.”与相近词进行比较，以避免混淆词义。",
+      "sense": "擅长做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-8",
+      "contextId": "phrase-practice-20260812-25-004:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260812-25-005": {
+    "primary": {
+      "sentence": "Students marked “do well in doing sth.” in their notes because it could easily appear in a reading or cloze exercise.",
+      "target": "do well in doing sth.",
+      "translation": "学生在笔记中标出了“do well in doing sth.”，因为它很可能出现在阅读或完形练习中。",
+      "sense": "在做某事方面表现好；擅长做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-4",
+      "contextId": "phrase-practice-20260812-25-005:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260812-25-006": {
+    "primary": {
+      "sentence": "Students wrote “it's necessary to do sth.” into a sentence connected with campus life to strengthen long-term memory.",
+      "target": "it's necessary to do sth.",
+      "translation": "学生把“it's necessary to do sth.”写进与校园生活有关的句子中，以加强长期记忆。",
+      "sense": "有必要做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b045-import-learning-aid",
+      "templateFamily": "b045-varied-11",
+      "contextId": "phrase-practice-20260812-25-006:primary",
+      "batch": "v70-b045"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260813-26-001": {
+    "primary": {
+      "sentence": "The review exercise asked students to use “can't ...too” correctly before moving to the next item.",
+      "target": "can't ...too",
+      "translation": "复习练习要求学生正确使用“can't ...too”后再进入下一题。",
+      "sense": "再……也不为过；越……越好",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "phrase-practice-20260813-26-001:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260813-26-002": {
+    "primary": {
+      "sentence": "The review exercise asked students to use “don't/doesn't have to do sth.” correctly before moving to the next item.",
+      "target": "don't/doesn't have to do sth.",
+      "translation": "复习练习要求学生正确使用“don't/doesn't have to do sth.”后再进入下一题。",
+      "sense": "不必做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "phrase-practice-20260813-26-002:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-001": {
+    "primary": {
+      "sentence": "During revision, students identified “carpet” before checking the Chinese meaning.",
+      "target": "carpet",
+      "translation": "在复习中，学生根据语境识别“carpet”，对应释义为“地毯”。",
+      "sense": "地毯",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "blueforest-20260813-40-001:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-002": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “centimeter” was understood from the surrounding context.",
+      "target": "centimeter",
+      "translation": "在复习中，学生根据语境识别“centimeter”，对应释义为“厘米”。",
+      "sense": "厘米",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "blueforest-20260813-40-002:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-003": {
+    "primary": {
+      "sentence": "Students met the word “auto” in a short passage and matched it with its correct meaning.",
+      "target": "auto",
+      "translation": "在复习中，学生根据语境识别“auto”，对应释义为“汽车；adj. 自动的”。",
+      "sense": "汽车；adj. 自动的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "blueforest-20260813-40-003:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-004": {
+    "primary": {
+      "sentence": "The vocabulary task used “cave” in context so that students could recall its meaning quickly.",
+      "target": "cave",
+      "translation": "在复习中，学生根据语境识别“cave”，对应释义为“洞穴；v. 塌陷”。",
+      "sense": "洞穴；v. 塌陷",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "blueforest-20260813-40-004:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-005": {
+    "primary": {
+      "sentence": "During revision, students identified “center” before checking the Chinese meaning.",
+      "target": "center",
+      "translation": "在复习中，学生根据语境识别“center”，对应释义为“中心；v. 集中”。",
+      "sense": "中心；v. 集中",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "blueforest-20260813-40-005:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-006": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “carriage” was understood from the surrounding context.",
+      "target": "carriage",
+      "translation": "在复习中，学生根据语境识别“carriage”，对应释义为“马车；车厢”。",
+      "sense": "马车；车厢",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "blueforest-20260813-40-006:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-007": {
+    "primary": {
+      "sentence": "Students met the word “case” in a short passage and matched it with its correct meaning.",
+      "target": "case",
+      "translation": "在复习中，学生根据语境识别“case”，对应释义为“情况；案例；箱；盒”。",
+      "sense": "情况；案例；箱；盒",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "blueforest-20260813-40-007:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-008": {
+    "primary": {
+      "sentence": "The vocabulary task used “carrot” in context so that students could recall its meaning quickly.",
+      "target": "carrot",
+      "translation": "在复习中，学生根据语境识别“carrot”，对应释义为“胡萝卜”。",
+      "sense": "胡萝卜",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "blueforest-20260813-40-008:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-009": {
+    "primary": {
+      "sentence": "During revision, students identified “pain” before checking the Chinese meaning.",
+      "target": "pain",
+      "translation": "在复习中，学生根据语境识别“pain”，对应释义为“疼痛；痛苦”。",
+      "sense": "疼痛；痛苦",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "blueforest-20260813-40-009:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-010": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “organ” was understood from the surrounding context.",
+      "target": "organ",
+      "translation": "在复习中，学生根据语境识别“organ”，对应释义为“器官；机构”。",
+      "sense": "器官；机构",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "blueforest-20260813-40-010:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-011": {
+    "primary": {
+      "sentence": "Students met the word “dissolve” in a short passage and matched it with its correct meaning.",
+      "target": "dissolve",
+      "translation": "在复习中，学生根据语境识别“dissolve”，对应释义为“溶解；解散；消除”。",
+      "sense": "溶解；解散；消除",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "blueforest-20260813-40-011:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-012": {
+    "primary": {
+      "sentence": "The vocabulary task used “calf” in context so that students could recall its meaning quickly.",
+      "target": "calf",
+      "translation": "在复习中，学生根据语境识别“calf”，对应释义为“小牛；小腿肚”。",
+      "sense": "小牛；小腿肚",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "blueforest-20260813-40-012:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-013": {
+    "primary": {
+      "sentence": "During revision, students identified “opinion” before checking the Chinese meaning.",
+      "target": "opinion",
+      "translation": "在复习中，学生根据语境识别“opinion”，对应释义为“意见；看法”。",
+      "sense": "意见；看法",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "blueforest-20260813-40-013:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-014": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “campaign” was understood from the surrounding context.",
+      "target": "campaign",
+      "translation": "在复习中，学生根据语境识别“campaign”，对应释义为“运动；活动；竞选；v. 参加竞选”。",
+      "sense": "运动；活动；竞选；v. 参加竞选",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "blueforest-20260813-40-014:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-015": {
+    "primary": {
+      "sentence": "Students met the word “butcher” in a short passage and matched it with its correct meaning.",
+      "target": "butcher",
+      "translation": "在复习中，学生根据语境识别“butcher”，对应释义为“屠夫；肉贩；v. 屠宰”。",
+      "sense": "屠夫；肉贩；v. 屠宰",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "blueforest-20260813-40-015:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-016": {
+    "primary": {
+      "sentence": "The vocabulary task used “bypass” in context so that students could recall its meaning quickly.",
+      "target": "bypass",
+      "translation": "在复习中，学生根据语境识别“bypass”，对应释义为“绕过；避开；n. 旁路”。",
+      "sense": "绕过；避开；n. 旁路",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "blueforest-20260813-40-016:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-017": {
+    "primary": {
+      "sentence": "During revision, students identified “cage” before checking the Chinese meaning.",
+      "target": "cage",
+      "translation": "在复习中，学生根据语境识别“cage”，对应释义为“笼子”。",
+      "sense": "笼子",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "blueforest-20260813-40-017:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-018": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “bundle” was understood from the surrounding context.",
+      "target": "bundle",
+      "translation": "在复习中，学生根据语境识别“bundle”，对应释义为“捆；束；包；v. 捆绑”。",
+      "sense": "捆；束；包；v. 捆绑",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "blueforest-20260813-40-018:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-019": {
+    "primary": {
+      "sentence": "Students met the word “odor” in a short passage and matched it with its correct meaning.",
+      "target": "odor",
+      "translation": "在复习中，学生根据语境识别“odor”，对应释义为“气味；臭味”。",
+      "sense": "气味；臭味",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "blueforest-20260813-40-019:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-020": {
+    "primary": {
+      "sentence": "The vocabulary task used “offend” in context so that students could recall its meaning quickly.",
+      "target": "offend",
+      "translation": "在复习中，学生根据语境识别“offend”，对应释义为“冒犯；得罪”。",
+      "sense": "冒犯；得罪",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "blueforest-20260813-40-020:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-021": {
+    "primary": {
+      "sentence": "During revision, students identified “bud” before checking the Chinese meaning.",
+      "target": "bud",
+      "translation": "在复习中，学生根据语境识别“bud”，对应释义为“芽；花蕾”。",
+      "sense": "芽；花蕾",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "blueforest-20260813-40-021:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-022": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “budget” was understood from the surrounding context.",
+      "target": "budget",
+      "translation": "在复习中，学生根据语境识别“budget”，对应释义为“预算；v. 编制预算”。",
+      "sense": "预算；v. 编制预算",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "blueforest-20260813-40-022:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-023": {
+    "primary": {
+      "sentence": "Students met the word “buffet” in a short passage and matched it with its correct meaning.",
+      "target": "buffet",
+      "translation": "在复习中，学生根据语境识别“buffet”，对应释义为“自助餐；餐具柜”。",
+      "sense": "自助餐；餐具柜",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "blueforest-20260813-40-023:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-024": {
+    "primary": {
+      "sentence": "The vocabulary task used “bread” in context so that students could recall its meaning quickly.",
+      "target": "bread",
+      "translation": "在复习中，学生根据语境识别“bread”，对应释义为“面包”。",
+      "sense": "面包",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "blueforest-20260813-40-024:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-025": {
+    "primary": {
+      "sentence": "During revision, students identified “broom” before checking the Chinese meaning.",
+      "target": "broom",
+      "translation": "在复习中，学生根据语境识别“broom”，对应释义为“扫帚”。",
+      "sense": "扫帚",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "blueforest-20260813-40-025:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-026": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “browse” was understood from the surrounding context.",
+      "target": "browse",
+      "translation": "在复习中，学生根据语境识别“browse”，对应释义为“浏览；随便翻阅”。",
+      "sense": "浏览；随便翻阅",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "blueforest-20260813-40-026:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "blueforest-20260813-40-027": {
+    "primary": {
+      "sentence": "Students met the word “burden” in a short passage and matched it with its correct meaning.",
+      "target": "burden",
+      "translation": "在复习中，学生根据语境识别“burden”，对应释义为“负担；v. 使负担”。",
+      "sense": "负担；v. 使负担",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "blueforest-20260813-40-027:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-001": {
+    "primary": {
+      "sentence": "The vocabulary task used “dropout” in context so that students could recall its meaning quickly.",
+      "target": "dropout",
+      "translation": "在复习中，学生根据语境识别“dropout”，对应释义为“辍学者；退学者”。",
+      "sense": "辍学者；退学者",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "cet4-20260813-34-001:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-002": {
+    "primary": {
+      "sentence": "During revision, students identified “nourishment” before checking the Chinese meaning.",
+      "target": "nourishment",
+      "translation": "在复习中，学生根据语境识别“nourishment”，对应释义为“营养；滋养品”。",
+      "sense": "营养；滋养品",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "cet4-20260813-34-002:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-003": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “cultivate” was understood from the surrounding context.",
+      "target": "cultivate",
+      "translation": "在复习中，学生根据语境识别“cultivate”，对应释义为“耕作；培养；培育”。",
+      "sense": "耕作；培养；培育",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "cet4-20260813-34-003:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-004": {
+    "primary": {
+      "sentence": "Students met the word “cultivation” in a short passage and matched it with its correct meaning.",
+      "target": "cultivation",
+      "translation": "在复习中，学生根据语境识别“cultivation”，对应释义为“耕作；培养”。",
+      "sense": "耕作；培养",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "cet4-20260813-34-004:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-005": {
+    "primary": {
+      "sentence": "The vocabulary task used “mastery” in context so that students could recall its meaning quickly.",
+      "target": "mastery",
+      "translation": "在复习中，学生根据语境识别“mastery”，对应释义为“掌握；精通”。",
+      "sense": "掌握；精通",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "cet4-20260813-34-005:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-006": {
+    "primary": {
+      "sentence": "During revision, students identified “masterpiece” before checking the Chinese meaning.",
+      "target": "masterpiece",
+      "translation": "在复习中，学生根据语境识别“masterpiece”，对应释义为“杰作；代表作”。",
+      "sense": "杰作；代表作",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "cet4-20260813-34-006:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-007": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “freshman” was understood from the surrounding context.",
+      "target": "freshman",
+      "translation": "在复习中，学生根据语境识别“freshman”，对应释义为“大学一年级学生；新生”。",
+      "sense": "大学一年级学生；新生",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "cet4-20260813-34-007:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-008": {
+    "primary": {
+      "sentence": "Students met the word “seniority” in a short passage and matched it with its correct meaning.",
+      "target": "seniority",
+      "translation": "在复习中，学生根据语境识别“seniority”，对应释义为“资历；年长；级别高”。",
+      "sense": "资历；年长；级别高",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "cet4-20260813-34-008:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-009": {
+    "primary": {
+      "sentence": "The vocabulary task used “champion” in context so that students could recall its meaning quickly.",
+      "target": "champion",
+      "translation": "在复习中，学生根据语境识别“champion”，对应释义为“冠军；拥护者；v. 支持”。",
+      "sense": "冠军；拥护者；v. 支持",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "cet4-20260813-34-009:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-010": {
+    "primary": {
+      "sentence": "During revision, students identified “championship” before checking the Chinese meaning.",
+      "target": "championship",
+      "translation": "在复习中，学生根据语境识别“championship”，对应释义为“锦标赛；冠军称号”。",
+      "sense": "锦标赛；冠军称号",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "cet4-20260813-34-010:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-011": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “princess” was understood from the surrounding context.",
+      "target": "princess",
+      "translation": "在复习中，学生根据语境识别“princess”，对应释义为“公主；王妃”。",
+      "sense": "公主；王妃",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "cet4-20260813-34-011:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-012": {
+    "primary": {
+      "sentence": "Students met the word “campus” in a short passage and matched it with its correct meaning.",
+      "target": "campus",
+      "translation": "在复习中，学生根据语境识别“campus”，对应释义为“校园”。",
+      "sense": "校园",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "cet4-20260813-34-012:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-013": {
+    "primary": {
+      "sentence": "The vocabulary task used “politician” in context so that students could recall its meaning quickly.",
+      "target": "politician",
+      "translation": "在复习中，学生根据语境识别“politician”，对应释义为“政治家；政客”。",
+      "sense": "政治家；政客",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "cet4-20260813-34-013:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-014": {
+    "primary": {
+      "sentence": "During revision, students identified “politics” before checking the Chinese meaning.",
+      "target": "politics",
+      "translation": "在复习中，学生根据语境识别“politics”，对应释义为“政治；政治学”。",
+      "sense": "政治；政治学",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "cet4-20260813-34-014:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-015": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “prince” was understood from the surrounding context.",
+      "target": "prince",
+      "translation": "在复习中，学生根据语境识别“prince”，对应释义为“王子；亲王”。",
+      "sense": "王子；亲王",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "cet4-20260813-34-015:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-016": {
+    "primary": {
+      "sentence": "Students met the word “disciplinary” in a short passage and matched it with its correct meaning.",
+      "target": "disciplinary",
+      "translation": "在复习中，学生根据语境识别“disciplinary”，对应释义为“纪律的；惩戒的”。",
+      "sense": "纪律的；惩戒的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "cet4-20260813-34-016:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-017": {
+    "primary": {
+      "sentence": "The vocabulary task used “principal” in context so that students could recall its meaning quickly.",
+      "target": "principal",
+      "translation": "在复习中，学生根据语境识别“principal”，对应释义为“主要的；n. 校长；负责人；本金”。",
+      "sense": "主要的；n. 校长；负责人；本金",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "cet4-20260813-34-017:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-018": {
+    "primary": {
+      "sentence": "During revision, students identified “principle” before checking the Chinese meaning.",
+      "target": "principle",
+      "translation": "在复习中，学生根据语境识别“principle”，对应释义为“原则；原理”。",
+      "sense": "原则；原理",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "cet4-20260813-34-018:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-019": {
+    "primary": {
+      "sentence": "In the reading exercise, the word “theoretical” was understood from the surrounding context.",
+      "target": "theoretical",
+      "translation": "在复习中，学生根据语境识别“theoretical”，对应释义为“理论的；理论上的”。",
+      "sense": "理论的；理论上的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-1",
+      "contextId": "cet4-20260813-34-019:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-020": {
+    "primary": {
+      "sentence": "Students met the word “experimental” in a short passage and matched it with its correct meaning.",
+      "target": "experimental",
+      "translation": "在复习中，学生根据语境识别“experimental”，对应释义为“实验的；试验性的”。",
+      "sense": "实验的；试验性的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-2",
+      "contextId": "cet4-20260813-34-020:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-021": {
+    "primary": {
+      "sentence": "The vocabulary task used “disciplined” in context so that students could recall its meaning quickly.",
+      "target": "disciplined",
+      "translation": "在复习中，学生根据语境识别“disciplined”，对应释义为“遵守纪律的；训练有素的”。",
+      "sense": "遵守纪律的；训练有素的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-3",
+      "contextId": "cet4-20260813-34-021:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260813-34-022": {
+    "primary": {
+      "sentence": "During revision, students identified “dean” before checking the Chinese meaning.",
+      "target": "dean",
+      "translation": "在复习中，学生根据语境识别“dean”，对应释义为“院长；系主任”。",
+      "sense": "院长；系主任",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b046-import-learning-aid",
+      "templateFamily": "b046-varied-4",
+      "contextId": "cet4-20260813-34-022:primary",
+      "batch": "v70-b046"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-001": {
+    "primary": {
+      "sentence": "In a campus reading passage, students used the surrounding sentence to identify “structural” correctly.",
+      "target": "structural",
+      "translation": "在校园主题阅读中，学生根据上下文识别“structural”，对应释义为“结构上的；构造上的”。",
+      "sense": "结构上的；构造上的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-1",
+      "contextId": "cet4-20260814-35-001:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-002": {
+    "primary": {
+      "sentence": "The vocabulary exercise placed “paste” in context before asking learners to choose its meaning.",
+      "target": "paste",
+      "translation": "词汇练习先把“paste”放入语境，再要求选择其含义；本词义为“粘贴；黏合；n. 浆糊；糊状物”。",
+      "sense": "粘贴；黏合；n. 浆糊；糊状物",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-2",
+      "contextId": "cet4-20260814-35-002:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-003": {
+    "primary": {
+      "sentence": "During exam revision, “portable” appeared in a short paragraph and had to be understood from context.",
+      "target": "portable",
+      "translation": "备考复习时，“portable”出现在短文中，需要结合语境理解为“轻便的；手提式的；n. 便携设备”。",
+      "sense": "轻便的；手提式的；n. 便携设备",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-3",
+      "contextId": "cet4-20260814-35-003:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-004": {
+    "primary": {
+      "sentence": "Students met “port” while reviewing an English passage and checked the meaning only after recalling it.",
+      "target": "port",
+      "translation": "学生复习英语短文时遇到“port”，先回想后核对，其含义为“港口；港口城市；（计算机）端口；v. 移植（软件）”。",
+      "sense": "港口；港口城市；（计算机）端口；v. 移植（软件）",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-4",
+      "contextId": "cet4-20260814-35-004:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-005": {
+    "primary": {
+      "sentence": "A practice question tested whether students could recognize “construction” without relying on a word list.",
+      "target": "construction",
+      "translation": "练习题要求不依赖词表识别“construction”，本词对应“建造；建筑；建筑物；结构”。",
+      "sense": "建造；建筑；建筑物；结构",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-5",
+      "contextId": "cet4-20260814-35-005:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-006": {
+    "primary": {
+      "sentence": "The sentence around “structure” provided enough clues for students to infer the intended meaning.",
+      "target": "structure",
+      "translation": "“structure”所在句提供了足够线索，可推断其含义为“结构；构造；v. 组织；安排；构造”。",
+      "sense": "结构；构造；v. 组织；安排；构造",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-6",
+      "contextId": "cet4-20260814-35-006:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-007": {
+    "primary": {
+      "sentence": "In a timed vocabulary review, learners recalled “psychologist” before revealing the Chinese definition.",
+      "target": "psychologist",
+      "translation": "限时词汇复习中，学习者先回想“psychologist”，再核对中文释义“心理学家”。",
+      "sense": "心理学家",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-7",
+      "contextId": "cet4-20260814-35-007:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-008": {
+    "primary": {
+      "sentence": "The reading task used “artistic” as a target word so students could practice fast recognition.",
+      "target": "artistic",
+      "translation": "阅读训练把“artistic”设为目标词，用于练习快速识别，其释义为“艺术的；有艺术天赋的；精美的”。",
+      "sense": "艺术的；有艺术天赋的；精美的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-8",
+      "contextId": "cet4-20260814-35-008:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-009": {
+    "primary": {
+      "sentence": "In a campus reading passage, students used the surrounding sentence to identify “artistically” correctly.",
+      "target": "artistically",
+      "translation": "在校园主题阅读中，学生根据上下文识别“artistically”，对应释义为“艺术地；富有艺术性地”。",
+      "sense": "艺术地；富有艺术性地",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-1",
+      "contextId": "cet4-20260814-35-009:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-010": {
+    "primary": {
+      "sentence": "The vocabulary exercise placed “geology” in context before asking learners to choose its meaning.",
+      "target": "geology",
+      "translation": "词汇练习先把“geology”放入语境，再要求选择其含义；本词义为“地质学；地质状况”。",
+      "sense": "地质学；地质状况",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-2",
+      "contextId": "cet4-20260814-35-010:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-011": {
+    "primary": {
+      "sentence": "During exam revision, “psychology” appeared in a short paragraph and had to be understood from context.",
+      "target": "psychology",
+      "translation": "备考复习时，“psychology”出现在短文中，需要结合语境理解为“心理学；心理”。",
+      "sense": "心理学；心理",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-3",
+      "contextId": "cet4-20260814-35-011:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-012": {
+    "primary": {
+      "sentence": "Students met “psychological” while reviewing an English passage and checked the meaning only after recalling it.",
+      "target": "psychological",
+      "translation": "学生复习英语短文时遇到“psychological”，先回想后核对，其含义为“心理的；心理学的”。",
+      "sense": "心理的；心理学的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-4",
+      "contextId": "cet4-20260814-35-012:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-013": {
+    "primary": {
+      "sentence": "A practice question tested whether students could recognize “mathematics” without relying on a word list.",
+      "target": "mathematics",
+      "translation": "练习题要求不依赖词表识别“mathematics”，本词对应“数学；数学运算”。",
+      "sense": "数学；数学运算",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-5",
+      "contextId": "cet4-20260814-35-013:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-014": {
+    "primary": {
+      "sentence": "The sentence around “mathematical” provided enough clues for students to infer the intended meaning.",
+      "target": "mathematical",
+      "translation": "“mathematical”所在句提供了足够线索，可推断其含义为“数学的”。",
+      "sense": "数学的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-6",
+      "contextId": "cet4-20260814-35-014:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-015": {
+    "primary": {
+      "sentence": "In a timed vocabulary review, learners recalled “sociology” before revealing the Chinese definition.",
+      "target": "sociology",
+      "translation": "限时词汇复习中，学习者先回想“sociology”，再核对中文释义“社会学”。",
+      "sense": "社会学",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-7",
+      "contextId": "cet4-20260814-35-015:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-016": {
+    "primary": {
+      "sentence": "The reading task used “sociologist” as a target word so students could practice fast recognition.",
+      "target": "sociologist",
+      "translation": "阅读训练把“sociologist”设为目标词，用于练习快速识别，其释义为“社会学家”。",
+      "sense": "社会学家",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-8",
+      "contextId": "cet4-20260814-35-016:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-017": {
+    "primary": {
+      "sentence": "In a campus reading passage, students used the surrounding sentence to identify “geometric” correctly.",
+      "target": "geometric",
+      "translation": "在校园主题阅读中，学生根据上下文识别“geometric”，对应释义为“几何的；几何图形的”。",
+      "sense": "几何的；几何图形的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-1",
+      "contextId": "cet4-20260814-35-017:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-018": {
+    "primary": {
+      "sentence": "The vocabulary exercise placed “geometrically” in context before asking learners to choose its meaning.",
+      "target": "geometrically",
+      "translation": "词汇练习先把“geometrically”放入语境，再要求选择其含义；本词义为“几何学地；按几何形式”。",
+      "sense": "几何学地；按几何形式",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-2",
+      "contextId": "cet4-20260814-35-018:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-019": {
+    "primary": {
+      "sentence": "During exam revision, “triangle” appeared in a short paragraph and had to be understood from context.",
+      "target": "triangle",
+      "translation": "备考复习时，“triangle”出现在短文中，需要结合语境理解为“三角形；三角关系”。",
+      "sense": "三角形；三角关系",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-3",
+      "contextId": "cet4-20260814-35-019:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-020": {
+    "primary": {
+      "sentence": "Students met “triangular” while reviewing an English passage and checked the meaning only after recalling it.",
+      "target": "triangular",
+      "translation": "学生复习英语短文时遇到“triangular”，先回想后核对，其含义为“三角形的；三角的”。",
+      "sense": "三角形的；三角的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-4",
+      "contextId": "cet4-20260814-35-020:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-021": {
+    "primary": {
+      "sentence": "A practice question tested whether students could recognize “trifle” without relying on a word list.",
+      "target": "trifle",
+      "translation": "练习题要求不依赖词表识别“trifle”，本词对应“小事；琐事；少量；v. 轻视；玩弄”。",
+      "sense": "小事；琐事；少量；v. 轻视；玩弄",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-5",
+      "contextId": "cet4-20260814-35-021:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-022": {
+    "primary": {
+      "sentence": "The sentence around “curriculum” provided enough clues for students to infer the intended meaning.",
+      "target": "curriculum",
+      "translation": "“curriculum”所在句提供了足够线索，可推断其含义为“课程；课程设置”。",
+      "sense": "课程；课程设置",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-6",
+      "contextId": "cet4-20260814-35-022:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-023": {
+    "primary": {
+      "sentence": "In a timed vocabulary review, learners recalled “acknowledgement” before revealing the Chinese definition.",
+      "target": "acknowledgement",
+      "translation": "限时词汇复习中，学习者先回想“acknowledgement”，再核对中文释义“承认；确认；致谢；感谢”。",
+      "sense": "承认；确认；致谢；感谢",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-7",
+      "contextId": "cet4-20260814-35-023:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-024": {
+    "primary": {
+      "sentence": "The reading task used “peer” as a target word so students could practice fast recognition.",
+      "target": "peer",
+      "translation": "阅读训练把“peer”设为目标词，用于练习快速识别，其释义为“同龄人；同辈；v. 凝视；仔细看”。",
+      "sense": "同龄人；同辈；v. 凝视；仔细看",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-8",
+      "contextId": "cet4-20260814-35-024:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-025": {
+    "primary": {
+      "sentence": "In a campus reading passage, students used the surrounding sentence to identify “compatibility” correctly.",
+      "target": "compatibility",
+      "translation": "在校园主题阅读中，学生根据上下文识别“compatibility”，对应释义为“兼容性；相容性；协调性”。",
+      "sense": "兼容性；相容性；协调性",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-1",
+      "contextId": "cet4-20260814-35-025:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-026": {
+    "primary": {
+      "sentence": "The vocabulary exercise placed “sharpen” in context before asking learners to choose its meaning.",
+      "target": "sharpen",
+      "translation": "词汇练习先把“sharpen”放入语境，再要求选择其含义；本词义为“使锋利；削尖；使敏锐；变锋利”。",
+      "sense": "使锋利；削尖；使敏锐；变锋利",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-2",
+      "contextId": "cet4-20260814-35-026:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-027": {
+    "primary": {
+      "sentence": "During exam revision, “cultivated” appeared in a short paragraph and had to be understood from context.",
+      "target": "cultivated",
+      "translation": "备考复习时，“cultivated”出现在短文中，需要结合语境理解为“有教养的；有修养的；耕种的”。",
+      "sense": "有教养的；有修养的；耕种的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-3",
+      "contextId": "cet4-20260814-35-027:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "cet4-20260814-35-028": {
+    "primary": {
+      "sentence": "Students met “rear” while reviewing an English passage and checked the meaning only after recalling it.",
+      "target": "rear",
+      "translation": "学生复习英语短文时遇到“rear”，先回想后核对，其含义为“后部；后方；adj. 后面的；v. 抚养；饲养；培养”。",
+      "sense": "后部；后方；adj. 后面的；v. 抚养；饲养；培养",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-4",
+      "contextId": "cet4-20260814-35-028:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-001": {
+    "primary": {
+      "sentence": "A practice question tested whether students could recognize “press” without relying on a word list.",
+      "target": "press",
+      "translation": "练习题要求不依赖词表识别“press”，本词对应“按；压；催促；逼迫；n. 新闻界；出版社；按压装置”。",
+      "sense": "按；压；催促；逼迫；n. 新闻界；出版社；按压装置",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-5",
+      "contextId": "blueforest-20260814-41-001:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-002": {
+    "primary": {
+      "sentence": "The sentence around “figure” provided enough clues for students to infer the intended meaning.",
+      "target": "figure",
+      "translation": "“figure”所在句提供了足够线索，可推断其含义为“数字；人物；身材；图形；v. 计算；认为”。",
+      "sense": "数字；人物；身材；图形；v. 计算；认为",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-6",
+      "contextId": "blueforest-20260814-41-002:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-003": {
+    "primary": {
+      "sentence": "In a timed vocabulary review, learners recalled “cock” before revealing the Chinese definition.",
+      "target": "cock",
+      "translation": "限时词汇复习中，学习者先回想“cock”，再核对中文释义“公鸡；龙头；击铁；v. 竖起；扳动（枪的击铁）”。",
+      "sense": "公鸡；龙头；击铁；v. 竖起；扳动（枪的击铁）",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-7",
+      "contextId": "blueforest-20260814-41-003:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-004": {
+    "primary": {
+      "sentence": "The reading task used “coil” as a target word so students could practice fast recognition.",
+      "target": "coil",
+      "translation": "阅读训练把“coil”设为目标词，用于练习快速识别，其释义为“卷；盘绕；成圈；n. 线圈；卷状物；螺旋”。",
+      "sense": "卷；盘绕；成圈；n. 线圈；卷状物；螺旋",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-8",
+      "contextId": "blueforest-20260814-41-004:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-005": {
+    "primary": {
+      "sentence": "In a campus reading passage, students used the surrounding sentence to identify “collapse” correctly.",
+      "target": "collapse",
+      "translation": "在校园主题阅读中，学生根据上下文识别“collapse”，对应释义为“倒塌；崩溃；坍缩；n. 倒塌；崩溃”。",
+      "sense": "倒塌；崩溃；坍缩；n. 倒塌；崩溃",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-1",
+      "contextId": "blueforest-20260814-41-005:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-006": {
+    "primary": {
+      "sentence": "The vocabulary exercise placed “collar” in context before asking learners to choose its meaning.",
+      "target": "collar",
+      "translation": "词汇练习先把“collar”放入语境，再要求选择其含义；本词义为“衣领；项圈；环状物”。",
+      "sense": "衣领；项圈；环状物",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-2",
+      "contextId": "blueforest-20260814-41-006:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-007": {
+    "primary": {
+      "sentence": "During exam revision, “clip” appeared in a short paragraph and had to be understood from context.",
+      "target": "clip",
+      "translation": "备考复习时，“clip”出现在短文中，需要结合语境理解为“夹子；回形针；片段；v. 夹住；剪裁；剪下”。",
+      "sense": "夹子；回形针；片段；v. 夹住；剪裁；剪下",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-3",
+      "contextId": "blueforest-20260814-41-007:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-008": {
+    "primary": {
+      "sentence": "Students met “clear-cut” while reviewing an English passage and checked the meaning only after recalling it.",
+      "target": "clear-cut",
+      "translation": "学生复习英语短文时遇到“clear-cut”，先回想后核对，其含义为“明确的；清晰的；轮廓分明的”。",
+      "sense": "明确的；清晰的；轮廓分明的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-4",
+      "contextId": "blueforest-20260814-41-008:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-009": {
+    "primary": {
+      "sentence": "A practice question tested whether students could recognize “poison” without relying on a word list.",
+      "target": "poison",
+      "translation": "练习题要求不依赖词表识别“poison”，本词对应“毒药；毒物；有害事物；v. 下毒；毒害；污染”。",
+      "sense": "毒药；毒物；有害事物；v. 下毒；毒害；污染",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-5",
+      "contextId": "blueforest-20260814-41-009:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-010": {
+    "primary": {
+      "sentence": "The sentence around “coherent” provided enough clues for students to infer the intended meaning.",
+      "target": "coherent",
+      "translation": "“coherent”所在句提供了足够线索，可推断其含义为“连贯的；条理清楚的；一致的”。",
+      "sense": "连贯的；条理清楚的；一致的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-6",
+      "contextId": "blueforest-20260814-41-010:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-011": {
+    "primary": {
+      "sentence": "In a timed vocabulary review, learners recalled “decrease” before revealing the Chinese definition.",
+      "target": "decrease",
+      "translation": "限时词汇复习中，学习者先回想“decrease”，再核对中文释义“减少；下降；n. 减少；降低”。",
+      "sense": "减少；下降；n. 减少；降低",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-7",
+      "contextId": "blueforest-20260814-41-011:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-012": {
+    "primary": {
+      "sentence": "The reading task used “pitch” as a target word so students could practice fast recognition.",
+      "target": "pitch",
+      "translation": "阅读训练把“pitch”设为目标词，用于练习快速识别，其释义为“球场；音高；程度；沥青；v. 投掷；搭（帐篷）”。",
+      "sense": "球场；音高；程度；沥青；v. 投掷；搭（帐篷）",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-8",
+      "contextId": "blueforest-20260814-41-012:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-013": {
+    "primary": {
+      "sentence": "In a campus reading passage, students used the surrounding sentence to identify “clue” correctly.",
+      "target": "clue",
+      "translation": "在校园主题阅读中，学生根据上下文识别“clue”，对应释义为“线索；提示；迹象；v. 给……提供线索”。",
+      "sense": "线索；提示；迹象；v. 给……提供线索",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-1",
+      "contextId": "blueforest-20260814-41-013:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-014": {
+    "primary": {
+      "sentence": "The vocabulary exercise placed “incident” in context before asking learners to choose its meaning.",
+      "target": "incident",
+      "translation": "词汇练习先把“incident”放入语境，再要求选择其含义；本词义为“事件；事故；附属事件；adj. 伴随的；易发生的”。",
+      "sense": "事件；事故；附属事件；adj. 伴随的；易发生的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-2",
+      "contextId": "blueforest-20260814-41-014:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-015": {
+    "primary": {
+      "sentence": "During exam revision, “classic” appeared in a short paragraph and had to be understood from context.",
+      "target": "classic",
+      "translation": "备考复习时，“classic”出现在短文中，需要结合语境理解为“经典的；典型的；传统风格的；n. 经典作品；名著”。",
+      "sense": "经典的；典型的；传统风格的；n. 经典作品；名著",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-3",
+      "contextId": "blueforest-20260814-41-015:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-016": {
+    "primary": {
+      "sentence": "Students met “chorus” while reviewing an English passage and checked the meaning only after recalling it.",
+      "target": "chorus",
+      "translation": "学生复习英语短文时遇到“chorus”，先回想后核对，其含义为“合唱团；合唱曲；副歌；v. 齐声说；合唱”。",
+      "sense": "合唱团；合唱曲；副歌；v. 齐声说；合唱",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-4",
+      "contextId": "blueforest-20260814-41-016:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-017": {
+    "primary": {
+      "sentence": "A practice question tested whether students could recognize “sheer” without relying on a word list.",
+      "target": "sheer",
+      "translation": "练习题要求不依赖词表识别“sheer”，本词对应“完全的；陡峭的；极薄的；v. 急转向；避开”。",
+      "sense": "完全的；陡峭的；极薄的；v. 急转向；避开",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-5",
+      "contextId": "blueforest-20260814-41-017:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-018": {
+    "primary": {
+      "sentence": "The sentence around “clarity” provided enough clues for students to infer the intended meaning.",
+      "target": "clarity",
+      "translation": "“clarity”所在句提供了足够线索，可推断其含义为“清晰；清楚；透明度”。",
+      "sense": "清晰；清楚；透明度",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-6",
+      "contextId": "blueforest-20260814-41-018:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-019": {
+    "primary": {
+      "sentence": "In a timed vocabulary review, learners recalled “clause” before revealing the Chinese definition.",
+      "target": "clause",
+      "translation": "限时词汇复习中，学习者先回想“clause”，再核对中文释义“从句；条款”。",
+      "sense": "从句；条款",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-7",
+      "contextId": "blueforest-20260814-41-019:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-020": {
+    "primary": {
+      "sentence": "The reading task used “shell” as a target word so students could practice fast recognition.",
+      "target": "shell",
+      "translation": "阅读训练把“shell”设为目标词，用于练习快速识别，其释义为“壳；贝壳；外壳；炮弹；v. 去壳；炮击”。",
+      "sense": "壳；贝壳；外壳；炮弹；v. 去壳；炮击",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-8",
+      "contextId": "blueforest-20260814-41-020:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-021": {
+    "primary": {
+      "sentence": "In a campus reading passage, students used the surrounding sentence to identify “chin” correctly.",
+      "target": "chin",
+      "translation": "在校园主题阅读中，学生根据上下文识别“chin”，对应释义为“下巴；颏”。",
+      "sense": "下巴；颏",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-1",
+      "contextId": "blueforest-20260814-41-021:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-022": {
+    "primary": {
+      "sentence": "The vocabulary exercise placed “china” in context before asking learners to choose its meaning.",
+      "target": "china",
+      "translation": "词汇练习先把“china”放入语境，再要求选择其含义；本词义为“瓷器；瓷制品；China（大写）中国”。",
+      "sense": "瓷器；瓷制品；China（大写）中国",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-2",
+      "contextId": "blueforest-20260814-41-022:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-023": {
+    "primary": {
+      "sentence": "During exam revision, “choke” appeared in a short paragraph and had to be understood from context.",
+      "target": "choke",
+      "translation": "备考复习时，“choke”出现在短文中，需要结合语境理解为“使窒息；噎住；阻塞；抑制；n. 窒息；阻塞装置”。",
+      "sense": "使窒息；噎住；阻塞；抑制；n. 窒息；阻塞装置",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-3",
+      "contextId": "blueforest-20260814-41-023:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-024": {
+    "primary": {
+      "sentence": "Students met “chew” while reviewing an English passage and checked the meaning only after recalling it.",
+      "target": "chew",
+      "translation": "学生复习英语短文时遇到“chew”，先回想后核对，其含义为“咀嚼；嚼；n. 咀嚼；咀嚼物”。",
+      "sense": "咀嚼；嚼；n. 咀嚼；咀嚼物",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-4",
+      "contextId": "blueforest-20260814-41-024:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-025": {
+    "primary": {
+      "sentence": "A practice question tested whether students could recognize “charter” without relying on a word list.",
+      "target": "charter",
+      "translation": "练习题要求不依赖词表识别“charter”，本词对应“宪章；特许状；包租；v. 包租；特许成立”。",
+      "sense": "宪章；特许状；包租；v. 包租；特许成立",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-5",
+      "contextId": "blueforest-20260814-41-025:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-026": {
+    "primary": {
+      "sentence": "The sentence around “phrase” provided enough clues for students to infer the intended meaning.",
+      "target": "phrase",
+      "translation": "“phrase”所在句提供了足够线索，可推断其含义为“短语；习语；措辞；v. 用语言表达；分乐句”。",
+      "sense": "短语；习语；措辞；v. 用语言表达；分乐句",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-6",
+      "contextId": "blueforest-20260814-41-026:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-027": {
+    "primary": {
+      "sentence": "In a timed vocabulary review, learners recalled “ditch” before revealing the Chinese definition.",
+      "target": "ditch",
+      "translation": "限时词汇复习中，学习者先回想“ditch”，再核对中文释义“沟渠；壕沟；v. 抛弃；丢弃；紧急迫降”。",
+      "sense": "沟渠；壕沟；v. 抛弃；丢弃；紧急迫降",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-7",
+      "contextId": "blueforest-20260814-41-027:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-028": {
+    "primary": {
+      "sentence": "The reading task used “distress” as a target word so students could practice fast recognition.",
+      "target": "distress",
+      "translation": "阅读训练把“distress”设为目标词，用于练习快速识别，其释义为“痛苦；危难；贫困；v. 使痛苦；使忧虑”。",
+      "sense": "痛苦；危难；贫困；v. 使痛苦；使忧虑",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-8",
+      "contextId": "blueforest-20260814-41-028:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-029": {
+    "primary": {
+      "sentence": "In a campus reading passage, students used the surrounding sentence to identify “dive” correctly.",
+      "target": "dive",
+      "translation": "在校园主题阅读中，学生根据上下文识别“dive”，对应释义为“潜水；俯冲；急剧下降；n. 潜水；俯冲”。",
+      "sense": "潜水；俯冲；急剧下降；n. 潜水；俯冲",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-1",
+      "contextId": "blueforest-20260814-41-029:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-030": {
+    "primary": {
+      "sentence": "The vocabulary exercise placed “cellar” in context before asking learners to choose its meaning.",
+      "target": "cellar",
+      "translation": "词汇练习先把“cellar”放入语境，再要求选择其含义；本词义为“地窖；酒窖；地下室”。",
+      "sense": "地窖；酒窖；地下室",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-2",
+      "contextId": "blueforest-20260814-41-030:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "blueforest-20260814-41-031": {
+    "primary": {
+      "sentence": "During exam revision, “channel” appeared in a short paragraph and had to be understood from context.",
+      "target": "channel",
+      "translation": "备考复习时，“channel”出现在短文中，需要结合语境理解为“频道；渠道；海峡；沟渠；v. 引导；输送”。",
+      "sense": "频道；渠道；海峡；沟渠；v. 引导；输送",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本题型语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b047-import-learning-aid",
+      "templateFamily": "b047-varied-3",
+      "contextId": "blueforest-20260814-41-031:primary",
+      "batch": "v70-b047"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-001": {
+    "primary": {
+      "sentence": "The exam passage uses “leave for” in a context that makes its meaning clear.",
+      "target": "leave for",
+      "translation": "考试文章在清晰语境中使用了“leave for”。",
+      "sense": "动身去；前往",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-1",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-001:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-002": {
+    "primary": {
+      "sentence": "Students reviewed “blame sb. for sth.” before completing the vocabulary exercise.",
+      "target": "blame sb. for sth.",
+      "translation": "学生在完成词汇练习前复习了“blame sb. for sth.”。",
+      "sense": "因某事责备某人",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-2",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-002:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-003": {
+    "primary": {
+      "sentence": "The teacher asked the class to explain “sb. be to blame” in their own words.",
+      "target": "sb. be to blame",
+      "translation": "老师要求全班用自己的话解释“sb. be to blame”。",
+      "sense": "某人应受责备；某人有责任",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-3",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-003:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-004": {
+    "primary": {
+      "sentence": "A short reading task helped students remember how “blame sth. on sb.” is used.",
+      "target": "blame sth. on sb.",
+      "translation": "一篇短阅读帮助学生记住“blame sth. on sb.”的用法。",
+      "sense": "把某事归咎于某人",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-4",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-004:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-005": {
+    "primary": {
+      "sentence": "The practice question tested whether students could recognize “be armed with” quickly.",
+      "target": "be armed with",
+      "translation": "这道练习题测试学生能否快速识别“be armed with”。",
+      "sense": "装备有；配备有",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-5",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-005:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-006": {
+    "primary": {
+      "sentence": "During revision, the class compared “it will be a long time before” with several similar expressions.",
+      "target": "it will be a long time before",
+      "translation": "复习时，全班把“it will be a long time before”与几个相近表达进行比较。",
+      "sense": "要过很久才……",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-6",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-006:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-007": {
+    "primary": {
+      "sentence": "The vocabulary note highlights “come into force” as a useful item for exam review.",
+      "target": "come into force",
+      "translation": "词汇笔记把“come into force”标为考试复习中的实用词条。",
+      "sense": "生效；开始实施",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-7",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-007:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-008": {
+    "primary": {
+      "sentence": "Students wrote one sentence containing “as soon as” to strengthen recall.",
+      "target": "as soon as",
+      "translation": "学生写了一个包含“as soon as”的句子来加强记忆。",
+      "sense": "一……就……；尽快",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-8",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-008:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-009": {
+    "primary": {
+      "sentence": "The exam passage uses “take place” in a context that makes its meaning clear.",
+      "target": "take place",
+      "translation": "考试文章在清晰语境中使用了“take place”。",
+      "sense": "发生；举行",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-1",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-009:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-010": {
+    "primary": {
+      "sentence": "Students reviewed “deserve doing sth.” before completing the vocabulary exercise.",
+      "target": "deserve doing sth.",
+      "translation": "学生在完成词汇练习前复习了“deserve doing sth.”。",
+      "sense": "值得做某事（主动形式表被动意义）",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-2",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-010:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-011": {
+    "primary": {
+      "sentence": "The teacher asked the class to explain “deserve to be done” in their own words.",
+      "target": "deserve to be done",
+      "translation": "老师要求全班用自己的话解释“deserve to be done”。",
+      "sense": "值得被做",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-3",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-011:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-012": {
+    "primary": {
+      "sentence": "A short reading task helped students remember how “be worthy to be done” is used.",
+      "target": "be worthy to be done",
+      "translation": "一篇短阅读帮助学生记住“be worthy to be done”的用法。",
+      "sense": "值得被做",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-4",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-012:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-013": {
+    "primary": {
+      "sentence": "The practice question tested whether students could recognize “it is worthwhile doing/to do sth.” quickly.",
+      "target": "it is worthwhile doing/to do sth.",
+      "translation": "这道练习题测试学生能否快速识别“it is worthwhile doing/to do sth.”。",
+      "sense": "做某事是值得的",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-5",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-013:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-014": {
+    "primary": {
+      "sentence": "During revision, the class compared “sb. be required/asked/requested to do sth.” with several similar expressions.",
+      "target": "sb. be required/asked/requested to do sth.",
+      "translation": "复习时，全班把“sb. be required/asked/requested to do sth.”与几个相近表达进行比较。",
+      "sense": "某人被要求做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-6",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-014:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-015": {
+    "primary": {
+      "sentence": "The vocabulary note highlights “need/want/require doing sth.” as a useful item for exam review.",
+      "target": "need/want/require doing sth.",
+      "translation": "词汇笔记把“need/want/require doing sth.”标为考试复习中的实用词条。",
+      "sense": "需要做某事；需要被做",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-7",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-015:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-016": {
+    "primary": {
+      "sentence": "Students wrote one sentence containing “need/want/require to be done” to strengthen recall.",
+      "target": "need/want/require to be done",
+      "translation": "学生写了一个包含“need/want/require to be done”的句子来加强记忆。",
+      "sense": "需要被做",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-8",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-016:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "phrase-practice-20260815-28-017": {
+    "primary": {
+      "sentence": "The exam passage uses “deserve to do sth.” in a context that makes its meaning clear.",
+      "target": "deserve to do sth.",
+      "translation": "考试文章在清晰语境中使用了“deserve to do sth.”。",
+      "sense": "值得做某事；理应做某事",
+      "pos": "phrase",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-1",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "phrase-practice-20260815-28-017:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-001": {
+    "primary": {
+      "sentence": "Students reviewed “core” before completing the vocabulary exercise.",
+      "target": "core",
+      "translation": "学生在完成词汇练习前复习了“core”。",
+      "sense": "n. 核心；要点；果核 adj. 核心的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-2",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-001:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-002": {
+    "primary": {
+      "sentence": "The teacher asked the class to explain “cookie” in their own words.",
+      "target": "cookie",
+      "translation": "老师要求全班用自己的话解释“cookie”。",
+      "sense": "n. 曲奇饼；小甜饼；（计算机）Cookie",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-3",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-002:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-003": {
+    "primary": {
+      "sentence": "A short reading task helped students remember how “coordinate” is used.",
+      "target": "coordinate",
+      "translation": "一篇短阅读帮助学生记住“coordinate”的用法。",
+      "sense": "v. 协调；配合 adj. 同等的 n. 坐标",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-4",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-003:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-004": {
+    "primary": {
+      "sentence": "The practice question tested whether students could recognize “cord” quickly.",
+      "target": "cord",
+      "translation": "这道练习题测试学生能否快速识别“cord”。",
+      "sense": "n. 绳；线；电线",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-5",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-004:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-005": {
+    "primary": {
+      "sentence": "During revision, the class compared “corn” with several similar expressions.",
+      "target": "corn",
+      "translation": "复习时，全班把“corn”与几个相近表达进行比较。",
+      "sense": "n. 玉米；谷物",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-6",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-005:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-006": {
+    "primary": {
+      "sentence": "The vocabulary note highlights “corporation” as a useful item for exam review.",
+      "target": "corporation",
+      "translation": "词汇笔记把“corporation”标为考试复习中的实用词条。",
+      "sense": "n. 公司；法人；社团",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-7",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-006:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-007": {
+    "primary": {
+      "sentence": "Students wrote one sentence containing “rank” to strengthen recall.",
+      "target": "rank",
+      "translation": "学生写了一个包含“rank”的句子来加强记忆。",
+      "sense": "n. 等级；军衔；行列 v. 排列；分级",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-8",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-007:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-008": {
+    "primary": {
+      "sentence": "The exam passage uses “bathe” in a context that makes its meaning clear.",
+      "target": "bathe",
+      "translation": "考试文章在清晰语境中使用了“bathe”。",
+      "sense": "v. 洗澡；给……洗澡；浸泡",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-1",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-008:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-009": {
+    "primary": {
+      "sentence": "Students reviewed “consult” before completing the vocabulary exercise.",
+      "target": "consult",
+      "translation": "学生在完成词汇练习前复习了“consult”。",
+      "sense": "v. 咨询；请教；查阅",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-2",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-009:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-010": {
+    "primary": {
+      "sentence": "The teacher asked the class to explain “conscious” in their own words.",
+      "target": "conscious",
+      "translation": "老师要求全班用自己的话解释“conscious”。",
+      "sense": "adj. 有意识的；清醒的；意识到的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-3",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-010:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-011": {
+    "primary": {
+      "sentence": "A short reading task helped students remember how “conscience” is used.",
+      "target": "conscience",
+      "translation": "一篇短阅读帮助学生记住“conscience”的用法。",
+      "sense": "n. 良心；良知",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-4",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-011:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-012": {
+    "primary": {
+      "sentence": "The practice question tested whether students could recognize “confine” quickly.",
+      "target": "confine",
+      "translation": "这道练习题测试学生能否快速识别“confine”。",
+      "sense": "v. 限制；局限；禁闭",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-5",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-012:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-013": {
+    "primary": {
+      "sentence": "During revision, the class compared “consent” with several similar expressions.",
+      "target": "consent",
+      "translation": "复习时，全班把“consent”与几个相近表达进行比较。",
+      "sense": "n. 同意；准许 v. 同意",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-6",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-013:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-014": {
+    "primary": {
+      "sentence": "The vocabulary note highlights “conflict” as a useful item for exam review.",
+      "target": "conflict",
+      "translation": "词汇笔记把“conflict”标为考试复习中的实用词条。",
+      "sense": "n. 冲突；矛盾 v. 冲突；抵触",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-7",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-014:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-015": {
+    "primary": {
+      "sentence": "Students wrote one sentence containing “confront” to strengthen recall.",
+      "target": "confront",
+      "translation": "学生写了一个包含“confront”的句子来加强记忆。",
+      "sense": "v. 面对；对抗；使面对",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-8",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-015:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-016": {
+    "primary": {
+      "sentence": "The exam passage uses “confuse” in a context that makes its meaning clear.",
+      "target": "confuse",
+      "translation": "考试文章在清晰语境中使用了“confuse”。",
+      "sense": "v. 使困惑；混淆",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-1",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-016:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-017": {
+    "primary": {
+      "sentence": "Students reviewed “drown” before completing the vocabulary exercise.",
+      "target": "drown",
+      "translation": "学生在完成词汇练习前复习了“drown”。",
+      "sense": "v. 淹死；溺死；淹没",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-2",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-017:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-018": {
+    "primary": {
+      "sentence": "The teacher asked the class to explain “condemn” in their own words.",
+      "target": "condemn",
+      "translation": "老师要求全班用自己的话解释“condemn”。",
+      "sense": "v. 谴责；判刑；宣告不适用",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-3",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-018:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-019": {
+    "primary": {
+      "sentence": "A short reading task helped students remember how “compromise” is used.",
+      "target": "compromise",
+      "translation": "一篇短阅读帮助学生记住“compromise”的用法。",
+      "sense": "n. 妥协；折中 v. 妥协；危及",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-4",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-019:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-020": {
+    "primary": {
+      "sentence": "The practice question tested whether students could recognize “compute” quickly.",
+      "target": "compute",
+      "translation": "这道练习题测试学生能否快速识别“compute”。",
+      "sense": "v. 计算；估算",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-5",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-020:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-021": {
+    "primary": {
+      "sentence": "During revision, the class compared “compensate” with several similar expressions.",
+      "target": "compensate",
+      "translation": "复习时，全班把“compensate”与几个相近表达进行比较。",
+      "sense": "v. 补偿；赔偿；弥补",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-6",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-021:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-022": {
+    "primary": {
+      "sentence": "The vocabulary note highlights “color” as a useful item for exam review.",
+      "target": "color",
+      "translation": "词汇笔记把“color”标为考试复习中的实用词条。",
+      "sense": "n. 颜色 v. 给……着色；影响",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-7",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-022:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-023": {
+    "primary": {
+      "sentence": "Students wrote one sentence containing “colon” to strengthen recall.",
+      "target": "colon",
+      "translation": "学生写了一个包含“colon”的句子来加强记忆。",
+      "sense": "n. 结肠；冒号",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-8",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-023:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "blueforest-20260815-42-024": {
+    "primary": {
+      "sentence": "The exam passage uses “primitive” in a context that makes its meaning clear.",
+      "target": "primitive",
+      "translation": "考试文章在清晰语境中使用了“primitive”。",
+      "sense": "adj. 原始的；早期的；简单的 n. 原始人",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-1",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "blueforest-20260815-42-024:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-001": {
+    "primary": {
+      "sentence": "Students reviewed “inspirational” before completing the vocabulary exercise.",
+      "target": "inspirational",
+      "translation": "学生在完成词汇练习前复习了“inspirational”。",
+      "sense": "adj. 有启发性的；鼓舞人心的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-2",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-001:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-002": {
+    "primary": {
+      "sentence": "The teacher asked the class to explain “eager” in their own words.",
+      "target": "eager",
+      "translation": "老师要求全班用自己的话解释“eager”。",
+      "sense": "adj. 热切的；渴望的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-3",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-002:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-003": {
+    "primary": {
+      "sentence": "A short reading task helped students remember how “eagle” is used.",
+      "target": "eagle",
+      "translation": "一篇短阅读帮助学生记住“eagle”的用法。",
+      "sense": "n. 鹰；雕",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-4",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-003:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-004": {
+    "primary": {
+      "sentence": "The practice question tested whether students could recognize “thirst” quickly.",
+      "target": "thirst",
+      "translation": "这道练习题测试学生能否快速识别“thirst”。",
+      "sense": "n. 口渴；渴望 v. 渴求",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-5",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-004:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-005": {
+    "primary": {
+      "sentence": "During revision, the class compared “thirsty” with several similar expressions.",
+      "target": "thirsty",
+      "translation": "复习时，全班把“thirsty”与几个相近表达进行比较。",
+      "sense": "adj. 口渴的；渴望的；干旱缺水的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-6",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-005:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-006": {
+    "primary": {
+      "sentence": "The vocabulary note highlights “spiritual” as a useful item for exam review.",
+      "target": "spiritual",
+      "translation": "词汇笔记把“spiritual”标为考试复习中的实用词条。",
+      "sense": "adj. 精神的；心灵的；宗教的 n. 灵歌",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-7",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-006:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-007": {
+    "primary": {
+      "sentence": "Students wrote one sentence containing “inspiration” to strengthen recall.",
+      "target": "inspiration",
+      "translation": "学生写了一个包含“inspiration”的句子来加强记忆。",
+      "sense": "n. 灵感；灵感来源；鼓舞",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-8",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-007:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-008": {
+    "primary": {
+      "sentence": "The exam passage uses “sponsorship” in a context that makes its meaning clear.",
+      "target": "sponsorship",
+      "translation": "考试文章在清晰语境中使用了“sponsorship”。",
+      "sense": "n. 资助；赞助",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-1",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-008:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-009": {
+    "primary": {
+      "sentence": "Students reviewed “spontaneous” before completing the vocabulary exercise.",
+      "target": "spontaneous",
+      "translation": "学生在完成词汇练习前复习了“spontaneous”。",
+      "sense": "adj. 自发的；自然的；自然而然的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-2",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-009:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-010": {
+    "primary": {
+      "sentence": "The teacher asked the class to explain “spontaneity” in their own words.",
+      "target": "spontaneity",
+      "translation": "老师要求全班用自己的话解释“spontaneity”。",
+      "sense": "n. 自发性；自然",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-3",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-010:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-011": {
+    "primary": {
+      "sentence": "A short reading task helped students remember how “provoke” is used.",
+      "target": "provoke",
+      "translation": "一篇短阅读帮助学生记住“provoke”的用法。",
+      "sense": "v. 激起；引起；挑衅；煽动",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-4",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-011:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-012": {
+    "primary": {
+      "sentence": "The practice question tested whether students could recognize “provocation” quickly.",
+      "target": "provocation",
+      "translation": "这道练习题测试学生能否快速识别“provocation”。",
+      "sense": "n. 挑衅；煽动；刺激",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-5",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-012:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-013": {
+    "primary": {
+      "sentence": "During revision, the class compared “provocative” with several similar expressions.",
+      "target": "provocative",
+      "translation": "复习时，全班把“provocative”与几个相近表达进行比较。",
+      "sense": "adj. 挑衅的；煽动的；引起争议的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-6",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-013:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-014": {
+    "primary": {
+      "sentence": "The vocabulary note highlights “advocacy” as a useful item for exam review.",
+      "target": "advocacy",
+      "translation": "词汇笔记把“advocacy”标为考试复习中的实用词条。",
+      "sense": "n. 拥护；支持；倡导",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-7",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-014:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-015": {
+    "primary": {
+      "sentence": "Students wrote one sentence containing “encouraging” to strengthen recall.",
+      "target": "encouraging",
+      "translation": "学生写了一个包含“encouraging”的句子来加强记忆。",
+      "sense": "adj. 令人鼓舞的；振奋人心的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-8",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-015:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-016": {
+    "primary": {
+      "sentence": "The exam passage uses “frustrate” in a context that makes its meaning clear.",
+      "target": "frustrate",
+      "translation": "考试文章在清晰语境中使用了“frustrate”。",
+      "sense": "v. 使灰心；使沮丧；阻挠",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-1",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-016:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-017": {
+    "primary": {
+      "sentence": "Students reviewed “frustration” before completing the vocabulary exercise.",
+      "target": "frustration",
+      "translation": "学生在完成词汇练习前复习了“frustration”。",
+      "sense": "n. 沮丧；懊恼；挫折",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-2",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-017:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-018": {
+    "primary": {
+      "sentence": "The teacher asked the class to explain “frustrating” in their own words.",
+      "target": "frustrating",
+      "translation": "老师要求全班用自己的话解释“frustrating”。",
+      "sense": "adj. 令人沮丧的；令人懊恼的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-3",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-018:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-019": {
+    "primary": {
+      "sentence": "A short reading task helped students remember how “inquisitive” is used.",
+      "target": "inquisitive",
+      "translation": "一篇短阅读帮助学生记住“inquisitive”的用法。",
+      "sense": "adj. 好奇的；爱探究的；爱打听的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-4",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-019:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-020": {
+    "primary": {
+      "sentence": "The practice question tested whether students could recognize “encouragement” quickly.",
+      "target": "encouragement",
+      "translation": "这道练习题测试学生能否快速识别“encouragement”。",
+      "sense": "n. 鼓励；激励",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-5",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-020:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-021": {
+    "primary": {
+      "sentence": "During revision, the class compared “acquisition” with several similar expressions.",
+      "target": "acquisition",
+      "translation": "复习时，全班把“acquisition”与几个相近表达进行比较。",
+      "sense": "n. 获得；习得；购得物",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-6",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-021:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-022": {
+    "primary": {
+      "sentence": "The vocabulary note highlights “inquiry” as a useful item for exam review.",
+      "target": "inquiry",
+      "translation": "词汇笔记把“inquiry”标为考试复习中的实用词条。",
+      "sense": "n. 询问；调查；探究",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-7",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-022:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-023": {
+    "primary": {
+      "sentence": "Students wrote one sentence containing “confusion” to strengthen recall.",
+      "target": "confusion",
+      "translation": "学生写了一个包含“confusion”的句子来加强记忆。",
+      "sense": "n. 困惑；混淆；混乱",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-8",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-023:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-024": {
+    "primary": {
+      "sentence": "The exam passage uses “complicate” in a context that makes its meaning clear.",
+      "target": "complicate",
+      "translation": "考试文章在清晰语境中使用了“complicate”。",
+      "sense": "v. 使复杂；使难以理解",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-1",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-024:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-025": {
+    "primary": {
+      "sentence": "Students reviewed “complicated” before completing the vocabulary exercise.",
+      "target": "complicated",
+      "translation": "学生在完成词汇练习前复习了“complicated”。",
+      "sense": "adj. 复杂的；难懂的",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-2",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-025:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-026": {
+    "primary": {
+      "sentence": "The teacher asked the class to explain “complication” in their own words.",
+      "target": "complication",
+      "translation": "老师要求全班用自己的话解释“complication”。",
+      "sense": "n. 复杂情况；并发症；使复杂化的难题",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-3",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-026:primary",
+      "batch": "v70-b048"
+    },
+    "extra": []
+  },
+  "cet4-20260815-36-027": {
+    "primary": {
+      "sentence": "A short reading task helped students remember how “porter” is used.",
+      "target": "porter",
+      "translation": "一篇短阅读帮助学生记住“porter”的用法。",
+      "sense": "n. 搬运工；门房；乘务员",
+      "pos": "word",
+      "level": "advanced",
+      "source": "专升本学习辅助语境",
+      "contextKind": "exam-style",
+      "generatedBy": "b048-import-learning-aid",
+      "templateFamily": "b048-varied-4",
+      "wordingNote": "生成语境仅作为学习辅助，不冒充上传资料原句。",
+      "contextId": "cet4-20260815-36-027:primary",
+      "batch": "v70-b048"
     },
     "extra": []
   }

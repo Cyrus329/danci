@@ -1,12 +1,12 @@
-const CACHE_NAME = "word-memory-v70-b043-browse-must-correct-recall-first-20260810";
+const CACHE_NAME = "word-memory-v70-b048-vocab-import-20260815";
 const APP_ASSETS = [
   "./",
   "./index.html",
-  "./word-data.js?v=70b038vocabimport20260809",
-  "./library-folder-data.js?v=70b038vocabimport20260809",
+  "./word-data.js?v=70b048vocabimport20260815",
+  "./library-folder-data.js?v=70b048vocabimport20260815",
   "./context-engine.js?v=70b038vocabimport20260809",
-  "./context-data.js?v=70b038vocabimport20260809",
-  "./context-id-data.js?v=70b038vocabimport20260809",
+  "./context-data.js?v=70b048vocabimport20260815",
+  "./context-id-data.js?v=70b048vocabimport20260815",
   "./context-presenter.js?v=70b038vocabimport20260809",
   "./context-study-engine.js?v=70b038vocabimport20260809",
   "./mobile-focus.js?v=70b038vocabimport20260809",
