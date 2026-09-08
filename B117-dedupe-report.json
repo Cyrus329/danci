@@ -1,0 +1,2003 @@
+{
+  "version": "v70 B117",
+  "baseline": "v70 B116",
+  "originalRecords": 7131,
+  "recordsAfterMerge": 7003,
+  "removedDuplicateRecords": 128,
+  "mergeComponents": 123,
+  "idAliases": 128,
+  "dictationRecordsPreserved": 385,
+  "rules": [
+    "非听写：完全同词形/短语合并为一个学习记录",
+    "非听写：多词短语仅差末尾 sb./sth. 占位符时合并",
+    "spend on / spend time-money on sth. 归并为 spend time/money on sth.",
+    "spend...in doing 等归并为 spend time/money (in) doing sth.",
+    "听写1-4仍保留独立ID和独立进度",
+    "被移除旧ID写入 WORD_MEMORY_ID_ALIASES 迁移到主ID"
+  ],
+  "components": [
+    {
+      "canonicalId": "word-list-1-055",
+      "canonicalTerm": "spend time/money on sth.",
+      "mergedIds": [
+        "word-list-1-055",
+        "fullway-complete-extra-008",
+        "phrase-practice-11-002"
+      ],
+      "originalTerms": [
+        "spend on",
+        "spend time/money on sth.",
+        "spend time/money on sth."
+      ],
+      "meanings": [
+        "在某事上花费时间/金钱",
+        "在某事上花时间/钱；主语通常是人。；在……上花费时间/金钱",
+        "在……上花费时间/金钱"
+      ]
+    },
+    {
+      "canonicalId": "word-list-1-056",
+      "canonicalTerm": "spend time/money (in) doing sth.",
+      "mergedIds": [
+        "word-list-1-056",
+        "fullway-complete-extra-009",
+        "blueforest-20260627-07-066",
+        "phrase-practice-11-003"
+      ],
+      "originalTerms": [
+        "spend...in doing",
+        "spend time/money doing sth.",
+        "sb. spends time/money (in) doing",
+        "sb. spends time/money (in) doing sth."
+      ],
+      "meanings": [
+        "花费时间/金钱做某事",
+        "花时间/钱做某事；spend 后可接 doing。",
+        "某人花费多少时间/金钱做某事",
+        "某人花费时间/金钱做某事"
+      ]
+    },
+    {
+      "canonicalId": "word-list-3-008",
+      "canonicalTerm": "be able to do sth.",
+      "mergedIds": [
+        "word-list-3-008",
+        "lansen-pdf-b-20260624-054",
+        "phrase-practice-8-006"
+      ],
+      "originalTerms": [
+        "be able to do sth.",
+        "be able to do",
+        "be able to do sth."
+      ],
+      "meanings": [
+        "能够",
+        "能够做某事",
+        "能够做某事"
+      ]
+    },
+    {
+      "canonicalId": "word-list-5-015",
+      "canonicalTerm": "by the way",
+      "mergedIds": [
+        "word-list-5-015",
+        "phrase-practice-9-008"
+      ],
+      "originalTerms": [
+        "by the way",
+        "by the way"
+      ],
+      "meanings": [
+        "顺便提一下；顺便说一下；顺带一提",
+        "顺便说一下；顺带一提"
+      ]
+    },
+    {
+      "canonicalId": "word-list-5-029",
+      "canonicalTerm": "deal with",
+      "mergedIds": [
+        "word-list-5-029",
+        "phrase-practice-10-005"
+      ],
+      "originalTerms": [
+        "deal with",
+        "deal with"
+      ],
+      "meanings": [
+        "处理；应对",
+        "处理；解决"
+      ]
+    },
+    {
+      "canonicalId": "blue-forest-b2-082",
+      "canonicalTerm": "apply for sth.",
+      "mergedIds": [
+        "blue-forest-b2-082",
+        "blueforest-20260720-15-001"
+      ],
+      "originalTerms": [
+        "apply for",
+        "apply for sth."
+      ],
+      "meanings": [
+        "申请",
+        "申请"
+      ]
+    },
+    {
+      "canonicalId": "blue-forest-b2-083",
+      "canonicalTerm": "apply to sth.",
+      "mergedIds": [
+        "blue-forest-b2-083",
+        "blueforest-20260722-17-002"
+      ],
+      "originalTerms": [
+        "apply to",
+        "apply to sth."
+      ],
+      "meanings": [
+        "应用",
+        "应用于；适用于"
+      ]
+    },
+    {
+      "canonicalId": "fullway-complete-extra-016",
+      "canonicalTerm": "face to face",
+      "mergedIds": [
+        "fullway-complete-extra-016",
+        "phrase-practice-9-003"
+      ],
+      "originalTerms": [
+        "face to face",
+        "face to face"
+      ],
+      "meanings": [
+        "面对面。；面对面",
+        "面对面"
+      ]
+    },
+    {
+      "canonicalId": "fullway-complete-extra-165",
+      "canonicalTerm": "with the help of sb.",
+      "mergedIds": [
+        "fullway-complete-extra-165",
+        "phrase-20260825-38-005"
+      ],
+      "originalTerms": [
+        "with the help of sb.",
+        "with the help of"
+      ],
+      "meanings": [
+        "在某人的帮助下。；在某人的帮助下",
+        "在……的帮助下"
+      ]
+    },
+    {
+      "canonicalId": "fullway-complete-extra-187",
+      "canonicalTerm": "communicate with sb.",
+      "mergedIds": [
+        "fullway-complete-extra-187",
+        "phrase-practice-12-002",
+        "word-list-24-20260812-016"
+      ],
+      "originalTerms": [
+        "communicate with sb.",
+        "communicate with sb.",
+        "communicate with"
+      ],
+      "meanings": [
+        "与某人交流",
+        "与某人交流",
+        "与……交流；与……沟通"
+      ]
+    },
+    {
+      "canonicalId": "lansen-pdf-a-20260624-042",
+      "canonicalTerm": "try to do sth.",
+      "mergedIds": [
+        "lansen-pdf-a-20260624-042",
+        "blue-18-010"
+      ],
+      "originalTerms": [
+        "try to do",
+        "try to do sth."
+      ],
+      "meanings": [
+        "尽力做；努力做；设法做某事",
+        "尽力；努力做某事"
+      ]
+    },
+    {
+      "canonicalId": "lansen-pdf-a-20260624-043",
+      "canonicalTerm": "try one's best to do sth.",
+      "mergedIds": [
+        "lansen-pdf-a-20260624-043",
+        "blue-18-007"
+      ],
+      "originalTerms": [
+        "try one's best to do",
+        "try one's best to do sth."
+      ],
+      "meanings": [
+        "竭尽全力做；尽最大努力做",
+        "尽某人最大努力做某事"
+      ]
+    },
+    {
+      "canonicalId": "cet4-core-u5-paper-095",
+      "canonicalTerm": "lack of sth.",
+      "mergedIds": [
+        "lansen-pdf-a-20260624-054",
+        "cet4-core-u5-paper-095"
+      ],
+      "originalTerms": [
+        "lack of",
+        "lack of sth."
+      ],
+      "meanings": [
+        "缺乏；缺少",
+        "缺乏某物"
+      ]
+    },
+    {
+      "canonicalId": "lansen-pdf-b-20260624-040",
+      "canonicalTerm": "belong to/with",
+      "mergedIds": [
+        "lansen-pdf-b-20260624-040",
+        "phrase-practice-8-002"
+      ],
+      "originalTerms": [
+        "belong to/with",
+        "belong to/with"
+      ],
+      "meanings": [
+        "属于",
+        "属于"
+      ]
+    },
+    {
+      "canonicalId": "lansen-pdf-b-20260624-043",
+      "canonicalTerm": "natural resources",
+      "mergedIds": [
+        "lansen-pdf-b-20260624-043",
+        "phrase-practice-8-003"
+      ],
+      "originalTerms": [
+        "natural resources",
+        "natural resources"
+      ],
+      "meanings": [
+        "自然资源",
+        "自然资源"
+      ]
+    },
+    {
+      "canonicalId": "lansen-pdf-b-20260624-049",
+      "canonicalTerm": "play an important role in doing sth.",
+      "mergedIds": [
+        "lansen-pdf-b-20260624-049",
+        "phrase-practice-8-004"
+      ],
+      "originalTerms": [
+        "play an important role in doing",
+        "play an important role in doing sth."
+      ],
+      "meanings": [
+        "在……中扮演重要角色",
+        "在……中扮演重要角色"
+      ]
+    },
+    {
+      "canonicalId": "lansen-pdf-b-20260624-052",
+      "canonicalTerm": "have the ability to do sth.",
+      "mergedIds": [
+        "lansen-pdf-b-20260624-052",
+        "phrase-practice-8-005"
+      ],
+      "originalTerms": [
+        "have the ability to do sth.",
+        "have the ability to do sth."
+      ],
+      "meanings": [
+        "有做某事的能力",
+        "有做某事的能力"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-001",
+      "canonicalTerm": "have a rest",
+      "mergedIds": [
+        "blueforest-20260627-07-001",
+        "phrase-practice-8-007"
+      ],
+      "originalTerms": [
+        "have a rest",
+        "have a rest"
+      ],
+      "meanings": [
+        "休息",
+        "休息"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-002",
+      "canonicalTerm": "in a hurry",
+      "mergedIds": [
+        "blueforest-20260627-07-002",
+        "phrase-practice-8-008"
+      ],
+      "originalTerms": [
+        "in a hurry",
+        "in a hurry"
+      ],
+      "meanings": [
+        "匆忙",
+        "匆忙"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-003",
+      "canonicalTerm": "in a word",
+      "mergedIds": [
+        "blueforest-20260627-07-003",
+        "phrase-practice-8-009"
+      ],
+      "originalTerms": [
+        "in a word",
+        "in a word"
+      ],
+      "meanings": [
+        "总之；简言之",
+        "总之"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-004",
+      "canonicalTerm": "as a result",
+      "mergedIds": [
+        "blueforest-20260627-07-004",
+        "phrase-practice-8-010"
+      ],
+      "originalTerms": [
+        "as a result",
+        "as a result"
+      ],
+      "meanings": [
+        "结果；因此",
+        "结果，因此"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-005",
+      "canonicalTerm": "in an emergency",
+      "mergedIds": [
+        "blueforest-20260627-07-005",
+        "phrase-practice-9-010"
+      ],
+      "originalTerms": [
+        "in an emergency",
+        "in an emergency"
+      ],
+      "meanings": [
+        "在紧急情况下",
+        "在紧急情况下"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-006",
+      "canonicalTerm": "at an early age",
+      "mergedIds": [
+        "blueforest-20260627-07-006",
+        "phrase-practice-9-009"
+      ],
+      "originalTerms": [
+        "at an early age",
+        "at an early age"
+      ],
+      "meanings": [
+        "在年少时",
+        "在年少时"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-012",
+      "canonicalTerm": "at the same time",
+      "mergedIds": [
+        "blueforest-20260627-07-012",
+        "phrase-practice-9-007"
+      ],
+      "originalTerms": [
+        "at the same time",
+        "at the same time"
+      ],
+      "meanings": [
+        "同时；与此同时",
+        "同时；与此同时"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-013",
+      "canonicalTerm": "all the time",
+      "mergedIds": [
+        "blueforest-20260627-07-013",
+        "phrase-practice-9-006"
+      ],
+      "originalTerms": [
+        "all the time",
+        "all the time"
+      ],
+      "meanings": [
+        "一直；始终",
+        "一直；始终"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-016",
+      "canonicalTerm": "on time",
+      "mergedIds": [
+        "blueforest-20260627-07-016",
+        "phrase-practice-9-005"
+      ],
+      "originalTerms": [
+        "on time",
+        "on time"
+      ],
+      "meanings": [
+        "准时",
+        "准时"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-017",
+      "canonicalTerm": "in time",
+      "mergedIds": [
+        "blueforest-20260627-07-017",
+        "phrase-practice-9-004"
+      ],
+      "originalTerms": [
+        "in time",
+        "in time"
+      ],
+      "meanings": [
+        "及时",
+        "及时"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-021",
+      "canonicalTerm": "day and night",
+      "mergedIds": [
+        "blueforest-20260627-07-021",
+        "phrase-practice-9-002"
+      ],
+      "originalTerms": [
+        "day and night",
+        "day and night"
+      ],
+      "meanings": [
+        "日以继夜；日日夜夜",
+        "日以继夜；日日夜夜"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-022",
+      "canonicalTerm": "in the bed",
+      "mergedIds": [
+        "blueforest-20260627-07-022",
+        "phrase-practice-9-001"
+      ],
+      "originalTerms": [
+        "in the bed",
+        "in the bed"
+      ],
+      "meanings": [
+        "在床上",
+        "在床上"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-023",
+      "canonicalTerm": "in bed",
+      "mergedIds": [
+        "blueforest-20260627-07-023",
+        "phrase-practice-10-001"
+      ],
+      "originalTerms": [
+        "in bed",
+        "in bed"
+      ],
+      "meanings": [
+        "卧床；在床上",
+        "卧床；在床上"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-024",
+      "canonicalTerm": "hundreds of",
+      "mergedIds": [
+        "blueforest-20260627-07-024",
+        "phrase-practice-10-002"
+      ],
+      "originalTerms": [
+        "hundreds of",
+        "hundreds of"
+      ],
+      "meanings": [
+        "成百上千；数以百计；成百上千的；大量的；很多的",
+        "成百上千；数以百计；上百"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-025",
+      "canonicalTerm": "thousands of",
+      "mergedIds": [
+        "blueforest-20260627-07-025",
+        "phrase-practice-10-003"
+      ],
+      "originalTerms": [
+        "thousands of",
+        "thousands of"
+      ],
+      "meanings": [
+        "成千上万；数以千计；成千上万的",
+        "成千上万；数以千计；上千"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-033",
+      "canonicalTerm": "cooperate with sb.",
+      "mergedIds": [
+        "blueforest-20260627-07-033",
+        "phrase-practice-10-004"
+      ],
+      "originalTerms": [
+        "cooperate with sb.",
+        "cooperate with sb."
+      ],
+      "meanings": [
+        "和某人合作",
+        "与某人合作"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-044",
+      "canonicalTerm": "work out",
+      "mergedIds": [
+        "blueforest-20260627-07-044",
+        "phrase-practice-16-001"
+      ],
+      "originalTerms": [
+        "work out",
+        "work out"
+      ],
+      "meanings": [
+        "解决；算出；锻炼；成功发展；解决，算出；制定",
+        "锻炼；解决；算出；制定"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-048",
+      "canonicalTerm": "form/develop a/the habit of doing sth.",
+      "mergedIds": [
+        "blueforest-20260627-07-048",
+        "phrase-practice-10-007"
+      ],
+      "originalTerms": [
+        "form/develop a/the habit of doing",
+        "form/develop a/the habit of doing sth."
+      ],
+      "meanings": [
+        "养成……的习惯",
+        "养成做某事的习惯"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-049",
+      "canonicalTerm": "get out of the habit of doing sth.",
+      "mergedIds": [
+        "blueforest-20260627-07-049",
+        "phrase-practice-10-008"
+      ],
+      "originalTerms": [
+        "get out of the habit of doing",
+        "get out of the habit of doing sth."
+      ],
+      "meanings": [
+        "改掉……的习惯",
+        "改掉做某事的习惯"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-050",
+      "canonicalTerm": "keep the habit of doing sth.",
+      "mergedIds": [
+        "blueforest-20260627-07-050",
+        "phrase-practice-10-009"
+      ],
+      "originalTerms": [
+        "keep the habit of doing",
+        "keep the habit of doing sth."
+      ],
+      "meanings": [
+        "保持……的习惯",
+        "保持做某事的习惯"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-051",
+      "canonicalTerm": "get a ride",
+      "mergedIds": [
+        "blueforest-20260627-07-051",
+        "phrase-practice-10-010"
+      ],
+      "originalTerms": [
+        "get a ride",
+        "get a ride"
+      ],
+      "meanings": [
+        "搭便车；顺路乘车",
+        "搭便车；顺路乘车"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-052",
+      "canonicalTerm": "give sb. a ride",
+      "mergedIds": [
+        "blueforest-20260627-07-052",
+        "phrase-practice-11-010"
+      ],
+      "originalTerms": [
+        "give sb. a ride",
+        "give sb. a ride"
+      ],
+      "meanings": [
+        "载某人一程",
+        "载某人一程"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-054",
+      "canonicalTerm": "rural area(s)",
+      "mergedIds": [
+        "blueforest-20260627-07-054",
+        "phrase-practice-11-009"
+      ],
+      "originalTerms": [
+        "rural area(s)",
+        "rural area(s)"
+      ],
+      "meanings": [
+        "农村地区",
+        "农村地区"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-056",
+      "canonicalTerm": "come from",
+      "mergedIds": [
+        "blueforest-20260627-07-056",
+        "phrase-practice-11-008"
+      ],
+      "originalTerms": [
+        "come from",
+        "come from"
+      ],
+      "meanings": [
+        "来自",
+        "来自"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-057",
+      "canonicalTerm": "lose heart",
+      "mergedIds": [
+        "blueforest-20260627-07-057",
+        "phrase-practice-11-007"
+      ],
+      "originalTerms": [
+        "lose heart",
+        "lose heart"
+      ],
+      "meanings": [
+        "丧失信心；灰心",
+        "丧失信心；灰心"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-058",
+      "canonicalTerm": "meet with",
+      "mergedIds": [
+        "blueforest-20260627-07-058",
+        "phrase-practice-11-006"
+      ],
+      "originalTerms": [
+        "meet with",
+        "meet with"
+      ],
+      "meanings": [
+        "遭遇；经受",
+        "遭遇；经受；会见"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-064",
+      "canonicalTerm": "as follows",
+      "mergedIds": [
+        "blueforest-20260627-07-064",
+        "phrase-practice-11-005"
+      ],
+      "originalTerms": [
+        "as follows",
+        "as follows"
+      ],
+      "meanings": [
+        "如下",
+        "如下"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-065",
+      "canonicalTerm": "it takes/took sb. time/money to do sth.",
+      "mergedIds": [
+        "blueforest-20260627-07-065",
+        "phrase-practice-11-004"
+      ],
+      "originalTerms": [
+        "it takes/took sb. time/money to do",
+        "it takes/took sb. time/money to do sth."
+      ],
+      "meanings": [
+        "做某事花费某人多少时间/金钱",
+        "做某事花费某人多少时间/金钱"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-070",
+      "canonicalTerm": "common sense",
+      "mergedIds": [
+        "blueforest-20260627-07-070",
+        "phrase-practice-11-001"
+      ],
+      "originalTerms": [
+        "common sense",
+        "common sense"
+      ],
+      "meanings": [
+        "常识",
+        "常识"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-071",
+      "canonicalTerm": "in common",
+      "mergedIds": [
+        "blueforest-20260627-07-071",
+        "phrase-practice-12-010"
+      ],
+      "originalTerms": [
+        "in common",
+        "in common"
+      ],
+      "meanings": [
+        "共同；相同",
+        "共有；相同"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-072",
+      "canonicalTerm": "have sth. in common",
+      "mergedIds": [
+        "blueforest-20260627-07-072",
+        "phrase-practice-12-009"
+      ],
+      "originalTerms": [
+        "have sth. in common",
+        "have sth. in common"
+      ],
+      "meanings": [
+        "有共同之处",
+        "有共同之处"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-073",
+      "canonicalTerm": "have nothing in common",
+      "mergedIds": [
+        "blueforest-20260627-07-073",
+        "phrase-practice-12-008"
+      ],
+      "originalTerms": [
+        "have nothing in common",
+        "have nothing in common"
+      ],
+      "meanings": [
+        "毫无共同之处",
+        "毫无共同之处"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-076",
+      "canonicalTerm": "get along (well) with sb.",
+      "mergedIds": [
+        "blueforest-20260627-07-076",
+        "phrase-practice-12-007"
+      ],
+      "originalTerms": [
+        "get along (well) with sb.",
+        "get along (well) with sb."
+      ],
+      "meanings": [
+        "与某人相处（很好）",
+        "与某人相处（很好）"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-079",
+      "canonicalTerm": "graduate from",
+      "mergedIds": [
+        "blueforest-20260627-07-079",
+        "phrase-practice-12-005"
+      ],
+      "originalTerms": [
+        "graduate from",
+        "graduate from"
+      ],
+      "meanings": [
+        "从……毕业",
+        "从……毕业"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-082",
+      "canonicalTerm": "have a good command of sth.",
+      "mergedIds": [
+        "blueforest-20260627-07-082",
+        "phrase-practice-12-004"
+      ],
+      "originalTerms": [
+        "have a good command of",
+        "have a good command of sth."
+      ],
+      "meanings": [
+        "精通",
+        "精通；熟练掌握"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-096",
+      "canonicalTerm": "raise money",
+      "mergedIds": [
+        "blueforest-20260627-07-096",
+        "phrase-practice-12-001"
+      ],
+      "originalTerms": [
+        "raise money",
+        "raise money"
+      ],
+      "meanings": [
+        "筹钱",
+        "筹款"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-101",
+      "canonicalTerm": "be famous/known for",
+      "mergedIds": [
+        "blueforest-20260627-07-101",
+        "phrase-practice-13-010"
+      ],
+      "originalTerms": [
+        "be famous/known for",
+        "be famous/known for"
+      ],
+      "meanings": [
+        "因……出名",
+        "因……出名"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-102",
+      "canonicalTerm": "be famous/known as",
+      "mergedIds": [
+        "blueforest-20260627-07-102",
+        "phrase-practice-13-009"
+      ],
+      "originalTerms": [
+        "be famous/known as",
+        "be famous/known as"
+      ],
+      "meanings": [
+        "作为……出名",
+        "作为……出名"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-105",
+      "canonicalTerm": "more than",
+      "mergedIds": [
+        "blueforest-20260627-07-105",
+        "phrase-practice-13-008"
+      ],
+      "originalTerms": [
+        "more than",
+        "more than"
+      ],
+      "meanings": [
+        "多于；超过；不仅仅",
+        "多于；超过；不仅仅"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-106",
+      "canonicalTerm": "less than",
+      "mergedIds": [
+        "blueforest-20260627-07-106",
+        "phrase-practice-13-006"
+      ],
+      "originalTerms": [
+        "less than",
+        "less than"
+      ],
+      "meanings": [
+        "少于；不足",
+        "少于；不足"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-107",
+      "canonicalTerm": "no more than",
+      "mergedIds": [
+        "blueforest-20260627-07-107",
+        "phrase-practice-13-007"
+      ],
+      "originalTerms": [
+        "no more than",
+        "no more than"
+      ],
+      "meanings": [
+        "仅仅；只不过",
+        "仅仅；只不过"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-113",
+      "canonicalTerm": "supply sb. with sth.",
+      "mergedIds": [
+        "blueforest-20260627-07-113",
+        "phrase-practice-13-001"
+      ],
+      "originalTerms": [
+        "supply sb. with sth.",
+        "supply sb. with sth."
+      ],
+      "meanings": [
+        "给某人提供某物",
+        "给某人提供某物"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-114",
+      "canonicalTerm": "supply sth. to sb.",
+      "mergedIds": [
+        "blueforest-20260627-07-114",
+        "phrase-practice-14-010"
+      ],
+      "originalTerms": [
+        "supply sth. to sb.",
+        "supply sth. to sb."
+      ],
+      "meanings": [
+        "向某人供应某物；给某人提供某物",
+        "给某人提供某物"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-116",
+      "canonicalTerm": "to be honest",
+      "mergedIds": [
+        "blueforest-20260627-07-116",
+        "phrase-practice-14-008"
+      ],
+      "originalTerms": [
+        "to be honest",
+        "to be honest"
+      ],
+      "meanings": [
+        "坦白来说",
+        "坦白来说"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-120",
+      "canonicalTerm": "be different from",
+      "mergedIds": [
+        "blueforest-20260627-07-120",
+        "phrase-practice-14-007"
+      ],
+      "originalTerms": [
+        "be different from",
+        "be different from"
+      ],
+      "meanings": [
+        "和……不同",
+        "和……不同"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-122",
+      "canonicalTerm": "national economy",
+      "mergedIds": [
+        "blueforest-20260627-07-122",
+        "phrase-practice-14-005"
+      ],
+      "originalTerms": [
+        "national economy",
+        "national economy"
+      ],
+      "meanings": [
+        "国民经济",
+        "国民经济"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-124",
+      "canonicalTerm": "economic development",
+      "mergedIds": [
+        "blueforest-20260627-07-124",
+        "phrase-practice-14-004"
+      ],
+      "originalTerms": [
+        "economic development",
+        "economic development"
+      ],
+      "meanings": [
+        "经济发展",
+        "经济发展"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-125",
+      "canonicalTerm": "economic growth",
+      "mergedIds": [
+        "blueforest-20260627-07-125",
+        "phrase-practice-14-002"
+      ],
+      "originalTerms": [
+        "economic growth",
+        "economic growth"
+      ],
+      "meanings": [
+        "经济增长",
+        "经济增长"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-129",
+      "canonicalTerm": "prefer A to B",
+      "mergedIds": [
+        "blueforest-20260627-07-129",
+        "phrase-practice-14-003"
+      ],
+      "originalTerms": [
+        "prefer A to B",
+        "prefer A to B"
+      ],
+      "meanings": [
+        "相比B更喜欢A",
+        "相比B更喜欢A"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-130",
+      "canonicalTerm": "prefer doing A to doing B",
+      "mergedIds": [
+        "blueforest-20260627-07-130",
+        "phrase-practice-14-001"
+      ],
+      "originalTerms": [
+        "prefer doing A to doing B",
+        "prefer doing A to doing B"
+      ],
+      "meanings": [
+        "相比做B更喜欢做A",
+        "相比做B更喜欢做A"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-131",
+      "canonicalTerm": "prefer (sb.) to do sth.",
+      "mergedIds": [
+        "blueforest-20260627-07-131",
+        "phrase-practice-15-010"
+      ],
+      "originalTerms": [
+        "prefer (sb.) to do",
+        "prefer (sb.) to do sth."
+      ],
+      "meanings": [
+        "宁愿（某人）做某事",
+        "宁愿（某人）做某事"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-132",
+      "canonicalTerm": "prefer to do A rather than do B",
+      "mergedIds": [
+        "blueforest-20260627-07-132",
+        "phrase-practice-15-009"
+      ],
+      "originalTerms": [
+        "prefer to do A rather than do B",
+        "prefer to do A rather than do B"
+      ],
+      "meanings": [
+        "宁愿做A也不愿做B",
+        "宁愿做A也不愿做B"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260627-07-136",
+      "canonicalTerm": "social media",
+      "mergedIds": [
+        "blueforest-20260627-07-136",
+        "phrase-practice-15-008"
+      ],
+      "originalTerms": [
+        "social media",
+        "social media"
+      ],
+      "meanings": [
+        "社交媒体；社会化媒体",
+        "社交媒体"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-004",
+      "canonicalTerm": "be covered with",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-004",
+        "phrase-practice-15-006"
+      ],
+      "originalTerms": [
+        "be covered with",
+        "be covered with"
+      ],
+      "meanings": [
+        "被……覆盖",
+        "被……覆盖"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-009",
+      "canonicalTerm": "living creature",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-009",
+        "phrase-practice-15-007"
+      ],
+      "originalTerms": [
+        "living creature",
+        "living creature"
+      ],
+      "meanings": [
+        "生物",
+        "生物"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-011",
+      "canonicalTerm": "living standard",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-011",
+        "phrase-practice-15-005"
+      ],
+      "originalTerms": [
+        "living standard",
+        "living standard"
+      ],
+      "meanings": [
+        "生活水平",
+        "生活水平"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-029",
+      "canonicalTerm": "too adj./adv. (for sb.) to do sth.",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-029",
+        "phrase-practice-15-002"
+      ],
+      "originalTerms": [
+        "too adj./adv. (for sb.) to do",
+        "too adj./adv. (for sb.) to do sth."
+      ],
+      "meanings": [
+        "太……而不能",
+        "太……而不能"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-034",
+      "canonicalTerm": "physical and mental health",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-034",
+        "phrase-practice-15-003"
+      ],
+      "originalTerms": [
+        "physical and mental health",
+        "physical and mental health"
+      ],
+      "meanings": [
+        "身心健康",
+        "身心健康"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-035",
+      "canonicalTerm": "health care",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-035",
+        "phrase-practice-15-001"
+      ],
+      "originalTerms": [
+        "health care",
+        "health care"
+      ],
+      "meanings": [
+        "医疗保健",
+        "医疗保健"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-047",
+      "canonicalTerm": "be surprised at",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-047",
+        "phrase-practice-16-002"
+      ],
+      "originalTerms": [
+        "be surprised at",
+        "be surprised at"
+      ],
+      "meanings": [
+        "对……感到吃惊/惊讶",
+        "对……感到吃惊/惊讶"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-050",
+      "canonicalTerm": "be confused about",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-050",
+        "phrase-practice-16-003"
+      ],
+      "originalTerms": [
+        "be confused about",
+        "be confused about"
+      ],
+      "meanings": [
+        "对……困惑",
+        "对……困惑"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-058",
+      "canonicalTerm": "make mistakes",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-058",
+        "phrase-practice-16-004"
+      ],
+      "originalTerms": [
+        "make mistakes",
+        "make mistakes"
+      ],
+      "meanings": [
+        "犯错",
+        "犯错"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-059",
+      "canonicalTerm": "make a mistake",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-059",
+        "phrase-practice-16-005"
+      ],
+      "originalTerms": [
+        "make a mistake",
+        "make a mistake"
+      ],
+      "meanings": [
+        "犯错",
+        "犯错"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-077",
+      "canonicalTerm": "be equipped for",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-077",
+        "phrase-practice-16-006"
+      ],
+      "originalTerms": [
+        "be equipped for",
+        "be equipped for"
+      ],
+      "meanings": [
+        "为……做好准备",
+        "为……做好准备；配备"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-081",
+      "canonicalTerm": "look for",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-081",
+        "phrase-practice-16-007"
+      ],
+      "originalTerms": [
+        "look for",
+        "look for"
+      ],
+      "meanings": [
+        "寻找",
+        "寻找"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-082",
+      "canonicalTerm": "look at",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-082",
+        "phrase-practice-16-008"
+      ],
+      "originalTerms": [
+        "look at",
+        "look at"
+      ],
+      "meanings": [
+        "看",
+        "看"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-083",
+      "canonicalTerm": "look after",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-083",
+        "phrase-practice-16-009"
+      ],
+      "originalTerms": [
+        "look after",
+        "look after"
+      ],
+      "meanings": [
+        "照顾",
+        "照顾"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-084",
+      "canonicalTerm": "look into",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-084",
+        "phrase-practice-16-010"
+      ],
+      "originalTerms": [
+        "look into",
+        "look into"
+      ],
+      "meanings": [
+        "调查",
+        "调查"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-085",
+      "canonicalTerm": "look up",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-085",
+        "phrase-practice-17-001"
+      ],
+      "originalTerms": [
+        "look up",
+        "look up"
+      ],
+      "meanings": [
+        "查阅",
+        "查阅"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-086",
+      "canonicalTerm": "look down",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-086",
+        "phrase-practice-17-002"
+      ],
+      "originalTerms": [
+        "look down",
+        "look down"
+      ],
+      "meanings": [
+        "俯视",
+        "俯视"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-087",
+      "canonicalTerm": "look down upon/on sth.",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-087",
+        "phrase-practice-17-003"
+      ],
+      "originalTerms": [
+        "look down upon/on",
+        "look down upon/on sth."
+      ],
+      "meanings": [
+        "看不起，蔑视",
+        "看不起；蔑视"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-089",
+      "canonicalTerm": "look through",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-089",
+        "phrase-practice-17-005"
+      ],
+      "originalTerms": [
+        "look through",
+        "look through"
+      ],
+      "meanings": [
+        "浏览，看穿",
+        "浏览；看穿"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-090",
+      "canonicalTerm": "look forward to doing sth.",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-090",
+        "phrase-practice-17-006"
+      ],
+      "originalTerms": [
+        "look forward to doing",
+        "look forward to doing sth."
+      ],
+      "meanings": [
+        "期待做某事",
+        "期待做某事"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-095",
+      "canonicalTerm": "gender equality",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-095",
+        "phrase-practice-17-007"
+      ],
+      "originalTerms": [
+        "gender equality",
+        "gender equality"
+      ],
+      "meanings": [
+        "性别平等",
+        "性别平等"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-096",
+      "canonicalTerm": "racial equality",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-096",
+        "phrase-practice-17-008"
+      ],
+      "originalTerms": [
+        "racial equality",
+        "racial equality"
+      ],
+      "meanings": [
+        "种族平等",
+        "种族平等"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-099",
+      "canonicalTerm": "racial discrimination",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-099",
+        "phrase-practice-17-009"
+      ],
+      "originalTerms": [
+        "racial discrimination",
+        "racial discrimination"
+      ],
+      "meanings": [
+        "种族歧视",
+        "种族歧视"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-104",
+      "canonicalTerm": "be similar to",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-104",
+        "phrase-practice-17-010"
+      ],
+      "originalTerms": [
+        "be similar to",
+        "be similar to"
+      ],
+      "meanings": [
+        "与……相似",
+        "与……相似"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-105",
+      "canonicalTerm": "be similar in",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-105",
+        "phrase-practice-18-010"
+      ],
+      "originalTerms": [
+        "be similar in",
+        "be similar in"
+      ],
+      "meanings": [
+        "在某方面相像",
+        "在某方面相像"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-112",
+      "canonicalTerm": "in the field of",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-112",
+        "phrase-practice-18-009"
+      ],
+      "originalTerms": [
+        "in the field of",
+        "in the field of"
+      ],
+      "meanings": [
+        "在……领域",
+        "在……领域"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-119",
+      "canonicalTerm": "reflect on/upon",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-119",
+        "phrase-practice-18-008"
+      ],
+      "originalTerms": [
+        "reflect on/upon",
+        "reflect on/upon"
+      ],
+      "meanings": [
+        "反省；回想，回顾",
+        "反省；回想；回顾"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-126",
+      "canonicalTerm": "make sb./sth. adj.",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-126",
+        "phrase-practice-18-006"
+      ],
+      "originalTerms": [
+        "make sb./sth. adj.",
+        "make sb./sth. adj."
+      ],
+      "meanings": [
+        "让人/物……",
+        "让人/物……"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-127",
+      "canonicalTerm": "make sb. n.",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-127",
+        "phrase-practice-18-005"
+      ],
+      "originalTerms": [
+        "make sb. n.",
+        "make sb. n."
+      ],
+      "meanings": [
+        "让人成为……",
+        "让人成为……"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-139",
+      "canonicalTerm": "offer sb. sth.",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-139",
+        "phrase-practice-13-005"
+      ],
+      "originalTerms": [
+        "offer sb. sth.",
+        "offer sb. sth."
+      ],
+      "meanings": [
+        "给某人提供某物",
+        "给某人提供某物"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-140",
+      "canonicalTerm": "offer sth. to sb.",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-140",
+        "phrase-practice-13-004"
+      ],
+      "originalTerms": [
+        "offer sth. to sb.",
+        "offer sth. to sb."
+      ],
+      "meanings": [
+        "给某人提供某物",
+        "给某人提供某物"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-141",
+      "canonicalTerm": "provide sb. with sth.",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-141",
+        "phrase-practice-13-002"
+      ],
+      "originalTerms": [
+        "provide sb. with sth.",
+        "provide sb. with sth."
+      ],
+      "meanings": [
+        "给某人提供某物",
+        "给某人提供某物"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-142",
+      "canonicalTerm": "provide sth. for sb.",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-142",
+        "phrase-practice-13-003"
+      ],
+      "originalTerms": [
+        "provide sth. for sb.",
+        "provide sth. for sb."
+      ],
+      "meanings": [
+        "给某人提供某物",
+        "给某人提供某物"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-150",
+      "canonicalTerm": "serve as",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-150",
+        "phrase-practice-18-004"
+      ],
+      "originalTerms": [
+        "serve as",
+        "serve as"
+      ],
+      "meanings": [
+        "充当，担任",
+        "充当；担任"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-153",
+      "canonicalTerm": "local community",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-153",
+        "phrase-practice-18-003"
+      ],
+      "originalTerms": [
+        "local community",
+        "local community"
+      ],
+      "meanings": [
+        "当地社区",
+        "当地社区"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-157",
+      "canonicalTerm": "renewable energy",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-157",
+        "phrase-practice-18-002"
+      ],
+      "originalTerms": [
+        "renewable energy",
+        "renewable energy"
+      ],
+      "meanings": [
+        "可再生能源",
+        "可再生能源"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-158",
+      "canonicalTerm": "traditional energy",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-158",
+        "phrase-practice-18-001"
+      ],
+      "originalTerms": [
+        "traditional energy",
+        "traditional energy"
+      ],
+      "meanings": [
+        "传统能源",
+        "传统能源"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-159",
+      "canonicalTerm": "renewable resources",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-159",
+        "phrase-practice-19-001"
+      ],
+      "originalTerms": [
+        "renewable resources",
+        "renewable resources"
+      ],
+      "meanings": [
+        "可再生资源",
+        "可再生资源"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260628-adjadv-163",
+      "canonicalTerm": "connect A with/to B",
+      "mergedIds": [
+        "blueforest-20260628-adjadv-163",
+        "phrase-practice-19-002"
+      ],
+      "originalTerms": [
+        "connect A with/to B",
+        "connect A with/to B"
+      ],
+      "meanings": [
+        "把 A 和 B 相连/联系在一起",
+        "把A和B相联系在一起"
+      ]
+    },
+    {
+      "canonicalId": "wordlist-20260628-v42-032",
+      "canonicalTerm": "long for sth.",
+      "mergedIds": [
+        "wordlist-20260628-v42-032",
+        "phrase-20260822-35-006"
+      ],
+      "originalTerms": [
+        "long for",
+        "long for sth."
+      ],
+      "meanings": [
+        "渴望",
+        "渴望某物/某事"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260714-v68-phrase-001",
+      "canonicalTerm": "instead of",
+      "mergedIds": [
+        "blueforest-20260714-v68-phrase-001",
+        "phrase-practice-19-003"
+      ],
+      "originalTerms": [
+        "instead of",
+        "instead of"
+      ],
+      "meanings": [
+        "而不是",
+        "而不是"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260714-v68-phrase-002",
+      "canonicalTerm": "rather than",
+      "mergedIds": [
+        "blueforest-20260714-v68-phrase-002",
+        "phrase-practice-19-004"
+      ],
+      "originalTerms": [
+        "rather than",
+        "rather than"
+      ],
+      "meanings": [
+        "而不是",
+        "而不是"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260714-v68-phrase-013",
+      "canonicalTerm": "fight against",
+      "mergedIds": [
+        "blueforest-20260714-v68-phrase-013",
+        "phrase-practice-19-006"
+      ],
+      "originalTerms": [
+        "fight against",
+        "fight against"
+      ],
+      "meanings": [
+        "对抗",
+        "对抗"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260714-v68-phrase-014",
+      "canonicalTerm": "lean against",
+      "mergedIds": [
+        "blueforest-20260714-v68-phrase-014",
+        "phrase-practice-19-007"
+      ],
+      "originalTerms": [
+        "lean against",
+        "lean against"
+      ],
+      "meanings": [
+        "倚靠",
+        "倚靠"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260714-v68-phrase-015",
+      "canonicalTerm": "be against",
+      "mergedIds": [
+        "blueforest-20260714-v68-phrase-015",
+        "phrase-practice-19-008"
+      ],
+      "originalTerms": [
+        "be against",
+        "be against"
+      ],
+      "meanings": [
+        "反对",
+        "反对"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260714-v68-phrase-016",
+      "canonicalTerm": "protect against",
+      "mergedIds": [
+        "blueforest-20260714-v68-phrase-016",
+        "phrase-practice-19-009"
+      ],
+      "originalTerms": [
+        "protect against",
+        "protect against"
+      ],
+      "meanings": [
+        "防护；抵御",
+        "防护；抵御"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260714-v68-phrase-019",
+      "canonicalTerm": "out of control",
+      "mergedIds": [
+        "blueforest-20260714-v68-phrase-019",
+        "phrase-practice-19-010"
+      ],
+      "originalTerms": [
+        "out of control",
+        "out of control"
+      ],
+      "meanings": [
+        "失控",
+        "失控"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260714-v68-phrase-132",
+      "canonicalTerm": "it's necessary to do sth.",
+      "mergedIds": [
+        "blueforest-20260714-v68-phrase-132",
+        "phrase-practice-20260812-25-006"
+      ],
+      "originalTerms": [
+        "it's necessary to do",
+        "it's necessary to do sth."
+      ],
+      "meanings": [
+        "有必要做某事",
+        "有必要做某事"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260714-v68-phrase-138",
+      "canonicalTerm": "be good at doing sth.",
+      "mergedIds": [
+        "blueforest-20260714-v68-phrase-138",
+        "phrase-practice-20260812-25-004"
+      ],
+      "originalTerms": [
+        "be good at doing",
+        "be good at doing sth."
+      ],
+      "meanings": [
+        "擅长做某事",
+        "擅长做某事"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260714-v68-phrase-139",
+      "canonicalTerm": "do well in doing sth.",
+      "mergedIds": [
+        "blueforest-20260714-v68-phrase-139",
+        "phrase-practice-20260812-25-005"
+      ],
+      "originalTerms": [
+        "do well in doing",
+        "do well in doing sth."
+      ],
+      "meanings": [
+        "擅长做某事",
+        "在做某事方面表现好；擅长做某事"
+      ]
+    },
+    {
+      "canonicalId": "blueforest-20260714-v68-phrase-140",
+      "canonicalTerm": "be expert at doing sth.",
+      "mergedIds": [
+        "blueforest-20260714-v68-phrase-140",
+        "phrase-practice-20260812-25-001"
+      ],
+      "originalTerms": [
+        "be expert at doing",
+        "be expert at doing sth."
+      ],
+      "meanings": [
+        "擅长做某事",
+        "擅长做某事"
+      ]
+    },
+    {
+      "canonicalId": "word-list-22-20260812-029",
+      "canonicalTerm": "object to doing sth.",
+      "mergedIds": [
+        "word-list-22-20260812-029",
+        "phrase-20260820-33-021"
+      ],
+      "originalTerms": [
+        "object to doing",
+        "object to doing sth."
+      ],
+      "meanings": [
+        "反对做某事",
+        "反对做某事"
+      ]
+    },
+    {
+      "canonicalId": "wordlist-20260628-v42-186",
+      "canonicalTerm": "persuade sb. to do sth.",
+      "mergedIds": [
+        "wordlist-20260628-v42-186",
+        "phrase-20260821-34-030"
+      ],
+      "originalTerms": [
+        "persuade someone to do",
+        "persuade sb. to do sth."
+      ],
+      "meanings": [
+        "说服某人做某事",
+        "说服某人做某事"
+      ]
+    }
+  ]
+}

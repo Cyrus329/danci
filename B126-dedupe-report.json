@@ -1,0 +1,375 @@
+{
+  "version": "B126",
+  "before": 7198,
+  "after": 7165,
+  "removed": 33,
+  "mergeGroups": 29,
+  "groups": [
+    {
+      "keepId": "phrase-20260826-39-020",
+      "term": "part-time job",
+      "removed": [
+        {
+          "id": "phrase-20260825-38-023",
+          "term": "take/do part-time jobs",
+          "meaning": "（做）兼职工作（复数）"
+        },
+        {
+          "id": "cet4-core-u6-pdf-043",
+          "term": "part-time work",
+          "meaning": "兼职工作"
+        }
+      ]
+    },
+    {
+      "keepId": "phrase-20260826-39-021",
+      "term": "full-time job",
+      "removed": [
+        {
+          "id": "phrase-20260825-38-024",
+          "term": "take/do a full-time job",
+          "meaning": "做全职工作（单数）"
+        },
+        {
+          "id": "cet4-core-u6-pdf-044",
+          "term": "full-time work",
+          "meaning": "全职工作"
+        }
+      ]
+    },
+    {
+      "keepId": "word-list-5-011",
+      "term": "construction site",
+      "removed": [
+        {
+          "id": "phrase-20260823-36-026",
+          "term": "the construction site",
+          "meaning": "施工地；工地"
+        }
+      ]
+    },
+    {
+      "keepId": "cet4-core-u3-note-014",
+      "term": "cell phone",
+      "removed": [
+        {
+          "id": "blue-forest-004",
+          "term": "cell-phone",
+          "meaning": "n. 手机；移动电话"
+        }
+      ]
+    },
+    {
+      "keepId": "lansen-pdf-a-20260624-018",
+      "term": "a large amount of",
+      "removed": [
+        {
+          "id": "lansen-pdf-a-20260624-019",
+          "term": "large amounts of",
+          "meaning": "许多；大量；修饰不可数名词"
+        }
+      ]
+    },
+    {
+      "keepId": "lansen-pdf-a-20260624-020",
+      "term": "a large quantity of",
+      "removed": [
+        {
+          "id": "lansen-pdf-a-20260624-021",
+          "term": "large quantities of",
+          "meaning": "许多；大量"
+        }
+      ]
+    },
+    {
+      "keepId": "lansen-pdf-a-20260624-062",
+      "term": "have an effect on",
+      "removed": [
+        {
+          "id": "wordlist-20260628-v42-211",
+          "term": "have effect on",
+          "meaning": "对……有影响"
+        }
+      ]
+    },
+    {
+      "keepId": "lansen-pdf-b-20260624-039",
+      "term": "as far as ... be concerned",
+      "removed": [
+        {
+          "id": "phrase-practice-8-001",
+          "term": "as far as...be concerned",
+          "meaning": "就……而言"
+        }
+      ]
+    },
+    {
+      "keepId": "phrase-practice-14-006",
+      "term": "make a difference (to sth.)",
+      "removed": [
+        {
+          "id": "blueforest-20260627-07-118",
+          "term": "make a difference (to)",
+          "meaning": "对……产生影响；有作用"
+        }
+      ]
+    },
+    {
+      "keepId": "blueforest-20260628-adjadv-059",
+      "term": "make a mistake",
+      "removed": [
+        {
+          "id": "blueforest-20260628-adjadv-058",
+          "term": "make mistakes",
+          "meaning": "犯错"
+        }
+      ]
+    },
+    {
+      "keepId": "phrase-practice-19-005",
+      "term": "be opposite to",
+      "removed": [
+        {
+          "id": "blueforest-20260714-v68-phrase-011",
+          "term": "opposite to",
+          "meaning": "与……相反"
+        }
+      ]
+    },
+    {
+      "keepId": "blueforest-20260714-v68-phrase-055",
+      "term": "make a contribution to sth./doing sth.",
+      "removed": [
+        {
+          "id": "blueforest-20260714-v68-phrase-056",
+          "term": "make contributions to n/doing",
+          "meaning": "对……做出贡献"
+        },
+        {
+          "id": "phrase-20260824-37-013",
+          "term": "make contributions to (doing) sth.",
+          "meaning": "为……做贡献（名词复数形式）"
+        },
+        {
+          "id": "phrase-20260824-37-014",
+          "term": "make a contribution to (doing) sth.",
+          "meaning": "为……做贡献（名词单数形式）"
+        }
+      ]
+    },
+    {
+      "keepId": "blueforest-20260714-v68-phrase-128",
+      "term": "a variety of",
+      "removed": [
+        {
+          "id": "blueforest-20260714-v68-phrase-129",
+          "term": "varieties of",
+          "meaning": "各式各样的"
+        }
+      ]
+    },
+    {
+      "keepId": "blueforest-20260716-13-007",
+      "term": "can't ... too",
+      "removed": [
+        {
+          "id": "phrase-practice-20260813-26-001",
+          "term": "can't ...too",
+          "meaning": "再……也不为过；越……越好"
+        }
+      ]
+    },
+    {
+      "keepId": "phrase-20260822-35-021",
+      "term": "a practical solution",
+      "removed": [
+        {
+          "id": "phrase-20260819-32-019",
+          "term": "practical solutions",
+          "meaning": "切实可行的办法"
+        }
+      ]
+    },
+    {
+      "keepId": "phrase-20260823-36-018",
+      "term": "catch a cold",
+      "removed": [
+        {
+          "id": "phrase-20260823-36-019",
+          "term": "catch colds",
+          "meaning": "感冒"
+        }
+      ]
+    },
+    {
+      "keepId": "phrase-20260823-36-034",
+      "term": "hold a reading sharing session",
+      "removed": [
+        {
+          "id": "phrase-20260823-36-033",
+          "term": "hold reading sharing sessions",
+          "meaning": "举办读书分享会（复数形式）"
+        }
+      ]
+    },
+    {
+      "keepId": "phrase-20260824-37-027",
+      "term": "make an apology",
+      "removed": [
+        {
+          "id": "phrase-20260824-37-028",
+          "term": "make apologies",
+          "meaning": "道歉（复数短语）"
+        }
+      ]
+    },
+    {
+      "keepId": "cet4-core-u3-note-003",
+      "term": "prescription drug",
+      "removed": [
+        {
+          "id": "cet4-core-u5-pdf-034",
+          "term": "prescription drugs",
+          "meaning": "处方药"
+        }
+      ]
+    },
+    {
+      "keepId": "cet4-core-u3-note-004",
+      "term": "over-the-counter drug",
+      "removed": [
+        {
+          "id": "cet4-core-u5-pdf-035",
+          "term": "over-the-counter drugs",
+          "meaning": "非处方药"
+        }
+      ]
+    },
+    {
+      "keepId": "cet4-core-u3-note-005",
+      "term": "operational cost",
+      "removed": [
+        {
+          "id": "cet4-core-u5-pdf-056",
+          "term": "operational costs",
+          "meaning": "运营成本"
+        }
+      ]
+    },
+    {
+      "keepId": "cet4-core-u3-note-006",
+      "term": "lower operational cost",
+      "removed": [
+        {
+          "id": "cet4-core-u5-pdf-057",
+          "term": "lower operational costs",
+          "meaning": "降低运营成本"
+        }
+      ]
+    },
+    {
+      "keepId": "cet4-core-u3-note-007",
+      "term": "reduce operational cost",
+      "removed": [
+        {
+          "id": "cet4-core-u5-pdf-058",
+          "term": "reduce operational costs",
+          "meaning": "降低运营成本"
+        }
+      ]
+    },
+    {
+      "keepId": "cet4-translation-3-002",
+      "term": "winter solstice",
+      "removed": [
+        {
+          "id": "cet4-translation-3-001",
+          "term": "the winter solstice",
+          "meaning": "冬至"
+        }
+      ]
+    },
+    {
+      "keepId": "blueforest-20260817-44-010",
+      "term": "air conditioning",
+      "removed": [
+        {
+          "id": "cet4-20260826-47-050",
+          "term": "air conditioning",
+          "meaning": "n. 空调系统"
+        }
+      ]
+    },
+    {
+      "keepId": "fullway-2026-prefix-074",
+      "term": "refund",
+      "removed": [
+        {
+          "id": "cet4-listening-1-009",
+          "term": "a refund",
+          "meaning": "退款"
+        }
+      ]
+    },
+    {
+      "keepId": "cet4-14-037",
+      "term": "bill",
+      "removed": [
+        {
+          "id": "cet4-listening-1-007",
+          "term": "a bill",
+          "meaning": "一张账单"
+        }
+      ]
+    },
+    {
+      "keepId": "blueforest-20260627-07-022",
+      "term": "in bed",
+      "removed": [
+        {
+          "id": "blueforest-20260627-07-023",
+          "term": "in bed",
+          "meaning": "卧床；在床上"
+        }
+      ]
+    },
+    {
+      "keepId": "phrase-practice-15-004",
+      "term": "be full of",
+      "removed": [
+        {
+          "id": "blueforest-20260628-adjadv-016",
+          "term": "be full of",
+          "meaning": "充满"
+        }
+      ]
+    }
+  ],
+  "quickReview": {
+    "storageKey": "wordMemorySpeedReviewV1",
+    "storeVersion": 2,
+    "batchSize": 30,
+    "buckets": [
+      "known",
+      "meaning",
+      "unknown"
+    ],
+    "knownBehavior": "excluded from future new quick-review batches",
+    "meaningBehavior": "stored separately in 看中文才会 pool",
+    "unknownBehavior": "stored separately in 不会 pool",
+    "mainProgressModified": false,
+    "legacyMigration": "old weakIds -> unknown bucket"
+  },
+  "removedOldQuickReviewModes": [
+    "闪电回想",
+    "一屏20词盲扫",
+    "熟词自动播放",
+    "不会词逐轮收缩",
+    "3分钟极速复习",
+    "5分钟极速复习",
+    "10分钟极速复习",
+    "30秒极限识词",
+    "临考冲刺",
+    "能力/易混/词族/报告面板"
+  ]
+}

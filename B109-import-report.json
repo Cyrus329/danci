@@ -1,0 +1,24 @@
+{
+  "base_raw": 6801,
+  "final_raw": 6850,
+  "final_unique_ids": 6850,
+  "final_distinct": 6751,
+  "blue_source_unique": 69,
+  "blue_actual_group": 66,
+  "blue_new": 20,
+  "blue_reused": 46,
+  "blue_core_exclusive": 3,
+  "blue_core_terms": [
+    "virtual",
+    "vivid",
+    "vacant"
+  ],
+  "core_source_unique": 53,
+  "core_owned_group": 52,
+  "core_new": 29,
+  "core_migrated": 23,
+  "core_cross": 1,
+  "core_cross_terms": [
+    "automate"
+  ]
+}

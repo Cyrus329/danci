@@ -1,3 +1,4 @@
+// v70 B112 2026-08-27：英文词条缺失音标已全量补齐；一屏一词不再用“点击发音按钮听读”冒充音标。
 (function (root, factory) {
   const api = factory();
 
@@ -356,8 +357,8 @@
         if (spellingMode) elements.term.classList?.add?.('is-chinese-prompt');
       }
       if (elements.phonetic) {
-        elements.phonetic.hidden = spellingMode && !session.spellingResult;
-        elements.phonetic.textContent = String(view.phonetic || '点击发音按钮听读');
+        elements.phonetic.hidden = spellingMode;
+        elements.phonetic.textContent = spellingMode ? '' : String(view.phonetic || '');
       }
       if (elements.audio) {
         elements.audio.hidden = spellingMode && !session.spellingResult;
@@ -391,7 +392,7 @@
         }
         if (elements.detail) {
           elements.detail.textContent = session.spellingResult
-            ? [view.phonetic, view.example].filter(Boolean).join(' · ')
+            ? [view.example].filter(Boolean).join(' · ')
             : '';
         }
         setExpanded(Boolean(session.spellingResult));
