@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Word Memory Review Ledger Bridge</title></head>
+<body>
+<script>
+(() => {
+  "use strict";
+  const REVIEW_MESSAGE = "word-memory-review-ledger:v1";
+  const REVIEW_KEY = "word-memory-trainer:review-actions:stable-bridge:v1";
+  const BROWSE_MESSAGE = "word-memory-browse-practice:v1";
+  const BROWSE_KEY = "word-memory-trainer:browse-practice:stable-bridge:v1";
+
+  const normalizeReview = (raw) => {
+    const source = raw && typeof raw === "object" && raw.days && typeof raw.days === "object" ? raw.days : {};
+    const days = {};
+    Object.entries(source).forEach(([date, entry]) => {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !entry || typeof entry !== "object") return;
+      const eventIds = [...new Set((Array.isArray(entry.eventIds) ? entry.eventIds : []).map(String).filter(Boolean))].slice(-12000);
+      const wordIds = [...new Set((Array.isArray(entry.wordIds) ? entry.wordIds : []).map(String).filter(Boolean))].slice(-6000);
+      const actions = Math.max(eventIds.length, Math.max(0, Number(entry.actions) || 0));
+      if (!actions) return;
+      days[date] = { actions, eventIds, wordIds, firstAt: String(entry.firstAt || ""), lastAt: String(entry.lastAt || "") };
+    });
+    return { version: 1, days, updatedAt: String(raw && raw.updatedAt || "") };
+  };
+  const normalizeBrowse = (raw) => {
+    const value = raw && typeof raw === "object" ? raw : {};
+    const cleanStore = (store) => {
+      const source = store && typeof store === "object" ? store : {};
+      return {
+        version: Math.max(4, Number(source.version) || 4),
+        updatedAt: String(source.updatedAt || ""),
+        resetAt: String(source.resetAt || ""),
+        currentMode: ["enToZh", "zhToEn", "spelling"].includes(source.currentMode) ? source.currentMode : "enToZh",
+        sessions: source.sessions && typeof source.sessions === "object" ? source.sessions : {},
+        records: source.records && typeof source.records === "object" ? source.records : {},
+        favorites: Array.isArray(source.favorites) ? source.favorites : [],
+        familiar: Array.isArray(source.familiar) ? source.familiar : [],
+        unknownByMode: source.unknownByMode && typeof source.unknownByMode === "object" ? source.unknownByMode : {},
+        gateByWord: source.gateByWord && typeof source.gateByWord === "object" ? source.gateByWord : {},
+        recoveryQueue: Array.isArray(source.recoveryQueue) ? source.recoveryQueue : [],
+        gateSession: source.gateSession && typeof source.gateSession === "object" ? source.gateSession : {},
+        legacyWrongClearedAt: String(source.legacyWrongClearedAt || ""),
+      };
+    };
+    return {
+      version: 1,
+      updatedAt: String(value.updatedAt || ""),
+      activeKind: value.activeKind === "phrase" ? "phrase" : "word",
+      autoBritish: value.autoBritish !== false,
+      exactRestoreVersion: String(value.exactRestoreVersion || ""),
+      word: cleanStore(value.word),
+      phrase: cleanStore(value.phrase),
+    };
+  };
+  const load = (key, normalizer) => { try { return normalizer(JSON.parse(localStorage.getItem(key) || "{}")); } catch { return normalizer({}); } };
+  const save = (key, normalizer, value) => { try { localStorage.setItem(key, JSON.stringify(normalizer(value))); return true; } catch { return false; } };
+  const reply = (source, origin, type, action, payload) => { try { source && source.postMessage({ type, action, payload }, origin === "null" ? "*" : origin); } catch {} };
+
+  window.addEventListener("message", (event) => {
+    if (event.origin !== "null" && event.origin !== "https://cyrus329.github.io") return;
+    const data = event.data || {};
+    if (data.type === REVIEW_MESSAGE) {
+      if (data.action === "get" || data.action === "ping") reply(event.source, event.origin, REVIEW_MESSAGE, data.action === "ping" ? "ready" : "value", load(REVIEW_KEY, normalizeReview));
+      if (data.action === "set") { save(REVIEW_KEY, normalizeReview, data.payload || {}); reply(event.source, event.origin, REVIEW_MESSAGE, "stored", null); }
+      return;
+    }
+    if (data.type === BROWSE_MESSAGE) {
+      if (data.action === "get" || data.action === "ping") reply(event.source, event.origin, BROWSE_MESSAGE, data.action === "ping" ? "ready" : "value", load(BROWSE_KEY, normalizeBrowse));
+      if (data.action === "set") { save(BROWSE_KEY, normalizeBrowse, data.payload || {}); reply(event.source, event.origin, BROWSE_MESSAGE, "stored", null); }
+    }
+  });
+  try {
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({ type: REVIEW_MESSAGE, action: "ready" }, "*");
+      window.parent.postMessage({ type: BROWSE_MESSAGE, action: "ready" }, "*");
+    }
+  } catch {}
+})();
+</script>
+</body></html>

@@ -1,0 +1,39 @@
+{
+  "version": "v70 B110",
+  "unit": "Unit 4 自然环境",
+  "pdfPages": "22-27",
+  "pdfItems": 83,
+  "paperSupplementItems": 82,
+  "actualOwnedEntries": 160,
+  "newRecords": 87,
+  "migratedExisting": 73,
+  "crossUnitLinks": 5,
+  "sameUnitCrossLinks": 1,
+  "rawBefore": 6850,
+  "rawAfter": 6937,
+  "uniqueIds": 6937,
+  "runtimeIndependentAfter": 6838,
+  "familyCounts": {
+    "sustainable": 14,
+    "protect": 27,
+    "rubbish": 8,
+    "plastic": 11,
+    "ecosystem": 22,
+    "solar": 13,
+    "wind": 10,
+    "species": 21,
+    "habitat": 34
+  },
+  "families": 9,
+  "crossUnitTerms": [
+    "product",
+    "byproduct",
+    "bottle",
+    "bottled",
+    "artificial intelligence"
+  ],
+  "sameUnitCrossTerms": [
+    "ocean"
+  ],
+  "unit4Count": 160
+}

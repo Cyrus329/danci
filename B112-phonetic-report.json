@@ -1,0 +1,16 @@
+{
+  "version": "v70 B112",
+  "baseline": "v70 B111",
+  "change": "全量缺失音标补齐 + 去除点击音频占位",
+  "rawRecords": 6991,
+  "independentLearnable": 6892,
+  "uniqueIds": 6991,
+  "phoneticBackfilled": 805,
+  "englishEntriesMissingPhonetic": 0,
+  "nonEnglishStructuralNotesWithoutPhonetic": 3,
+  "translationEntries": 76,
+  "translationEntriesWithPhonetic": 76,
+  "existingManualPhoneticsOverwritten": 0,
+  "phoneticStyleForBackfill": "British IPA",
+  "progressChanged": false
+}
