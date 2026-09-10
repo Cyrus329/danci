@@ -1,0 +1,16 @@
+.translation-spelling-dialog {box-sizing:border-box; width:min(560px,calc(100vw - 28px)); max-height:calc(100dvh - 28px); overflow:auto; border:1px solid #d5e1da; border-radius:18px; padding:28px; color:#203c32; background:#fffefa; box-shadow:0 18px 70px #0003; font-family:Arial,"Microsoft YaHei",sans-serif;}
+.translation-spelling-dialog::backdrop {background:#eff3ef;}
+.translation-spelling-open {overflow:hidden;}
+.translation-spelling-kicker {font-size:13px; color:#527866; margin:0 0 10px;}
+.translation-spelling-dialog h2 {font-size:25px; margin:0 0 24px;}
+.translation-spelling-meaning {font-size:24px; line-height:1.6; margin:0 0 16px; overflow-wrap:anywhere;}
+.translation-spelling-tip {font-size:14px; color:#68756e; line-height:1.6;}
+.translation-spelling-dialog label {display:block; margin:22px 0 8px; font-size:14px;}
+.translation-spelling-dialog input {box-sizing:border-box; display:block; width:100%; border:1px solid #829c8d; border-radius:8px; padding:14px; background:white; color:#203c32; font-family:"Times New Roman",serif; font-size:26px; font-weight:400; letter-spacing:normal;}
+.translation-spelling-dialog input:focus-visible {outline:3px solid #a4c7b6; outline-offset:2px;}
+.translation-spelling-feedback {min-height:24px; line-height:1.6; color:#a54b32; overflow-wrap:anywhere;}
+.translation-spelling-buttons {display:flex; flex-wrap:wrap; gap:12px; margin-top:20px;}
+.translation-spelling-buttons button {flex:1; min-width:150px; min-height:48px; padding:12px 16px; font-size:16px;}
+@media(max-width:600px) {.translation-spelling-dialog {padding:22px;} .translation-spelling-meaning {font-size:21px;}}
+
+.translation-required-label {font-size:13px; color:#477660; margin:4px 0 12px;}

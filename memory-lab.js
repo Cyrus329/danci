@@ -26,6 +26,9 @@
     sprintSource: byId('examSprintSource'),
     browsePanel: byId('quickBrowserPanel'),
     browseTotal: byId('quickBrowserTotal'),
+    browseKindTabs: byId('quickBrowseKindTabs'),
+    browseWordCount: byId('quickBrowseWordCount'),
+    browsePhraseCount: byId('quickBrowsePhraseCount'),
     browseSearch: byId('quickBrowseSearch'),
     browseSource: byId('quickBrowseSource'),
     browseStatus: byId('quickBrowseStatus'),
@@ -47,6 +50,7 @@
     pageSize: 200,
     page: 1,
     letter: 'all',
+    kind: 'word',
   };
 
 
@@ -345,12 +349,22 @@
     return escapeHTML(text || '');
   }
 
-  function browserWords() {
+  function isPhrase(word) {
+    if (typeof api.isPhraseWord === 'function') return Boolean(api.isPhraseWord(word));
+    const term = String(word?.term || '').trim();
+    const note = String(word?.note || '');
+    const tag = String(word?.tag || '');
+    return /\s/.test(term) || /短语/.test(note) || /短语/.test(tag);
+  }
+
+  function browserWords(kindOverride = browseState.kind) {
     const query = normalize(browseState.query);
     const letter = browseState.letter;
+    const wantedKind = kindOverride === 'phrase' ? 'phrase' : 'word';
     // allWords() 已按用户资料的原始导入顺序排列。默认浏览时直接保留该顺序，
     // 只有用户主动选择 A-Z、薄弱优先等排序时才重新排序。
     const filtered = allWords().filter((word) => {
+      if ((isPhrase(word) ? 'phrase' : 'word') !== wantedKind) return false;
       const sources = wordSourcesAndGroups(word);
       const ability = abilityFor(word);
       const blob = normalize([word.term, word.meaning, word.phrase, word.note, word.tag, ...sources].join(' '));
@@ -388,12 +402,21 @@
   function renderBrowser() {
     if (!els.browseList) return;
     const words = browserWords();
+    const wordTotal = allWords().filter((word) => !isPhrase(word)).length;
+    const phraseTotal = allWords().filter(isPhrase).length;
+    if (els.browseWordCount) els.browseWordCount.textContent = `${wordTotal}词`;
+    if (els.browsePhraseCount) els.browsePhraseCount.textContent = `${phraseTotal}条`;
+    els.browseKindTabs?.querySelectorAll('[data-quick-browse-kind]').forEach((button) => {
+      const active = button.dataset.quickBrowseKind === browseState.kind;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
     const pages = Math.max(1, Math.ceil(words.length / browseState.pageSize));
     browseState.page = Math.min(Math.max(1, browseState.page), pages);
     const start = (browseState.page - 1) * browseState.pageSize;
     const visible = words.slice(start, start + browseState.pageSize);
-    if (els.browseTotal) els.browseTotal.textContent = `${allWords().length}词`;
-    if (els.browseSummary) els.browseSummary.innerHTML = `<strong>匹配 ${words.length} 词</strong><span>第 ${browseState.page}/${pages} 页 · 当前显示 ${visible.length} 词</span>`;
+    if (els.browseTotal) els.browseTotal.textContent = `${browseState.kind === 'phrase' ? '短语区' : '单词区'} ${words.length}${browseState.kind === 'phrase' ? '条' : '词'}`;
+    if (els.browseSummary) els.browseSummary.innerHTML = `<strong>${browseState.kind === 'phrase' ? '短语区' : '单词区'} · 匹配 ${words.length}${browseState.kind === 'phrase' ? '条' : '词'}</strong><span>第 ${browseState.page}/${pages} 页 · 当前显示 ${visible.length}${browseState.kind === 'phrase' ? '条' : '词'}</span>`;
     renderAlphabet();
     if (!visible.length) {
       els.browseList.innerHTML = '<div class="empty-card"><div><h3>没有匹配的词</h3><p>调整搜索、来源、状态或字母筛选。</p></div></div>';
@@ -407,7 +430,10 @@
           <div class="quick-browser-term"><b>${maskText(word.term, 'english')}</b><small>${escapeHTML(word.phonetic || word.ipa || '')}</small></div>
           <div class="quick-browser-meaning"><p>${maskText(api.meaningSegments?.(word.meaning)?.[0] || word.meaning || '未填中文', 'chinese')}</p><small>${escapeHTML(word.phrase || '')}</small></div>
           <div class="quick-browser-tags">${sources.map((source) => `<span>${escapeHTML(source)}</span>`).join('')}<em>${escapeHTML(status === 'mature' ? '稳定' : (status === 'learning' ? '学习中' : '新词'))}</em></div>
-          <div class="quick-browser-ability"><span>识 <b>${ability.recognition.score}</b></span><i style="--ability:${ability.recognition.score}%"></i><span>拼 <b>${ability.spelling.score}</b></span><i style="--ability:${ability.spelling.score}%"></i></div>
+          <div class="quick-browser-ability">
+            <div><span>识 ${ability.recognition.score}</span><i style="--ability:${ability.recognition.score}%"></i><em>${ability.recognition.score >= 80 ? '稳固' : ability.recognition.score >= 50 ? '提升中' : ability.recognition.score > 0 ? '起步' : '未练'}</em><small>对${ability.recognition.correct || 0} · 错${ability.recognition.wrong || 0}</small></div>
+            <div><span>拼 ${ability.spelling.score}</span><i style="--ability:${ability.spelling.score}%"></i><em>${ability.spelling.score >= 80 ? '稳固' : ability.spelling.score >= 50 ? '提升中' : ability.spelling.score > 0 ? '起步' : '未练'}</em><small>对${ability.spelling.correct || 0} · 错${ability.spelling.wrong || 0}</small></div>
+          </div>
           <div class="quick-browser-actions"><button type="button" data-open-word="${escapeHTML(word.id)}">打开</button><button type="button" data-speak-word="${escapeHTML(word.id)}">发音</button></div>
         </article>`;
       }).join('');
@@ -447,11 +473,34 @@
     }
     const browseQuizButton = event.target.closest('[data-browse-quiz-start]');
     if (browseQuizButton) {
-      const words = browserWords();
+      const words = browserWords(browseState.kind);
+      const wordArea = browserWords('word');
+      const phraseArea = browserWords('phrase');
       const sourceLabel = browseState.source === 'all' ? '全部来源' : browseState.source;
       const statusLabel = browseState.status === 'all' ? '全部状态' : browseState.status;
-      const label = `${sourceLabel} · ${statusLabel} · 当前筛选${words.length}词`;
-      window.BrowseQuizApp?.open?.(words.map((word) => word.id), { label });
+      const areaLabel = browseState.kind === 'phrase' ? '短语区' : '单词区';
+      const label = `${areaLabel} · ${sourceLabel} · ${statusLabel} · 当前筛选${words.length}${browseState.kind === 'phrase' ? '条' : '词'}`;
+      window.BrowseQuizApp?.open?.(words.map((word) => word.id), {
+        label,
+        kind: browseState.kind,
+        idsByKind: {
+          word: wordArea.map((word) => word.id),
+          phrase: phraseArea.map((word) => word.id),
+        },
+        labelsByKind: {
+          word: `单词区 · ${sourceLabel} · ${statusLabel} · 当前筛选${wordArea.length}词`,
+          phrase: `短语区 · ${sourceLabel} · ${statusLabel} · 当前筛选${phraseArea.length}条`,
+        },
+      });
+      return;
+    }
+    const kindButton = event.target.closest('[data-quick-browse-kind]');
+    if (kindButton) {
+      browseState.kind = kindButton.dataset.quickBrowseKind === 'phrase' ? 'phrase' : 'word';
+      browseState.page = 1;
+      browseState.letter = 'all';
+      renderBrowser();
+      resetBrowserScroll();
       return;
     }
     const openButton = event.target.closest('[data-open-word]');

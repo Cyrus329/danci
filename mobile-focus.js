@@ -455,7 +455,7 @@
       render();
     }
 
-    function rate(result) {
+    async function rate(result) {
       if (
         !session.active
         || session.locked
@@ -465,6 +465,25 @@
       const word = currentWord();
       if (!id || !word) return;
 
+      setRatingLocked(true);
+      try {
+        const ratingGeneration = sessionGeneration;
+        const outcome = adapter.rate?.(id, result, {
+          mode: session.mode,
+          responseMs: Math.max(0, now() - Number(session.questionStartedAt || now())),
+          choiceCorrect: session.choiceResult?.correct,
+          spellingCorrect: session.spellingResult?.correct,
+          spellingInput: session.spellingDraft,
+          confusedWithId: session.choiceResult?.correct ? '' : (session.choiceResult?.selectedWordId || ''),
+        });
+        const accepted = outcome && typeof outcome.then === 'function' ? await outcome : outcome;
+        if (!session.active || ratingGeneration !== sessionGeneration) return;
+        if (accepted === false) { setRatingLocked(false); render(); return; }
+      } catch (error) {
+        setRatingLocked(false);
+        throw error;
+      }
+
       const view = typeof adapter.view === 'function' ? (adapter.view(word) || {}) : word;
       session.previous = {
         id,
@@ -473,19 +492,6 @@
       };
       renderPrevious();
 
-      setRatingLocked(true);
-      try {
-        adapter.rate?.(id, result, {
-          mode: session.mode,
-          responseMs: Math.max(0, now() - Number(session.questionStartedAt || now())),
-          choiceCorrect: session.choiceResult?.correct,
-          spellingCorrect: session.spellingResult?.correct,
-          confusedWithId: session.choiceResult?.correct ? '' : (session.choiceResult?.selectedWordId || ''),
-        });
-      } catch (error) {
-        setRatingLocked(false);
-        throw error;
-      }
 
       const generation = sessionGeneration;
       resetSpellingState({ keepReveal: true });
@@ -534,6 +540,7 @@
     function close(options = {}) {
       const fromPopState = Boolean(options.fromPopState);
       if (!session.active) return;
+      adapter.cancelPendingRating?.();
       cancelPendingAdvance();
       if (currentId() && typeof adapter.select === 'function') adapter.select(currentId());
       session.active = false;

@@ -1,4 +1,5 @@
-// v70 B140 2026-09-06：蓝色森林64 + 四级核心Unit9 Lesson1/2；刷新词库、资料夹和应用缓存。
+// B145: 常规印刷字体与发音失败恢复；词库、存档键保持不变。
+// v70 B144 2026-09-08：主单词改为书本印刷体；保留B143界面与B142词库、学习进度。
 // v70 B131 2026-08-31：新增四级核心Unit8-10、Unit8 Lesson2与蓝色森林58；保留B130听力4、快速30词与Peppa。
 // v70 B129 2026-08-30：新增四级翻译5《中国结》词库/资料夹缓存；保留B128快速30词与Peppa。
 // v70 B128 2026-08-30：快速30词词性标签 + Unit7/今日词导入；保留B127 Peppa。
@@ -14,7 +15,7 @@
 // v70 B113 2026-08-27：刷新四级听力2词库/分组/排序资源缓存。
 // v70 B112 2026-08-27：刷新全量缺失音标补齐资源缓存。
 // v70 B109 2026-08-27：仅刷新词库资源缓存版本；训练逻辑不变。
-const CACHE_NAME = "word-memory-v70-b140-blue64-u9l1-u9l2-20260906";
+const CACHE_NAME = "word-memory-v70-b150-light-mobile";
 const SCENE_ASSETS_101_180 = `a-piece-of-news newspaper message leave-a-message text-message ball skate skill special-skill social-skill professional-skill able be-able-to-do-sth ability disable unable enjoy enjoy-doing-sth enjoyable grass afraid be-afraid-of water old elder young youth youngster junior senior live live-up-to live-on lively livelihood alive lovely life wildlife lifestyle style animal mammal insect pet bite diary keep-a-diary dairy borrow lend lend-sth-to-sb vegetable sweep mainly topic title entitle underline stop cancel call-off cancellation cancer start star begin to-begin-with in-the-beginning beginning beginner renew outset end in-the-end at-the-end-of endless ending cease over`
   .split(" ")
   .map((slug) => `./assets/word-scenes/${slug}.webp`);
@@ -25,17 +26,21 @@ const SCENE_ASSETS_261_280 = `emphasis collective cell-phone punctual with hazar
   .split(" ")
   .map((slug) => `./assets/word-scenes/${slug}.webp`);
 const APP_ASSETS = [
+  "./mobile-polish.css?v=70b150",
+  "./translation-spelling-data.js?v=70b148",
+  "./translation-spelling.js?v=70b148",
+  "./translation-spelling.css?v=70b148",
   "./",
   "./index.html",
   "./review-ledger-bridge.html",
-  "./word-data.js?v=70b140blue64u9l1u9l220260906",
-  "./library-folder-data.js?v=70b140blue64u9l1u9l220260906",
+  "./word-data.js?v=70b149",
+  "./library-folder-data.js?v=70b149",
   "./context-engine.js?v=70b038vocabimport20260809",
   "./context-data.js?v=70b056statsvocab20260820",
   "./context-id-data.js?v=70b056statsvocab20260820",
   "./context-presenter.js?v=70b038vocabimport20260809",
   "./context-study-engine.js?v=70b038vocabimport20260809",
-  "./mobile-focus.js?v=70b112phoneticbackfill20260827",
+  "./mobile-focus.js?v=70b148",
   "./image-memory.js?v=70b071images280checkpoint20260821",
   "./recovered-progress-b068.js?v=70b068userbackup20260821",
   "./assets/image-memory-pressure.png",
@@ -142,13 +147,15 @@ const APP_ASSETS = [
   "./assets/pronunciation-primer.wav?v=70b060fullstart20260820",
   "./browse-user-save-b077.js?v=70b077usersave20260821",
   "./apply-browse-user-save-b077.js?v=70b082exactprogress20260822",
-  "./app.js?v=70b140blue64u9l1u9l220260906",
+  "./app.js?v=70b149",
   "./peppa-content-b127.js?v=70b127peppatesting20260830",
   "./peppa-zone.js?v=70b127peppatesting20260830",
   "./memory-lab.js?v=70b106cet4listen20260826",
   "./speed-review.js?v=70b128posquick3020260830",
   "./browse-quiz.js?v=70b118listening320260828",
-  "./folder-view.js?v=70b140blue64u9l1u9l220260906",
+  "./folder-view.js?v=70b143",
+  "./ui-refresh.css?v=70b145",
+  "./ui-refresh.js?v=70b144",
   "./smart-vocab.js?v=70b106cet4listen20260826",
   "./styles.css?v=70b128posquick3020260830",
   "./supabase-word-memory-repair.sql",

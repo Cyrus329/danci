@@ -1,3 +1,19 @@
+// v70 B142 2026-09-08：导入蓝色森林65并续补四级核心Unit 9 Lesson 2；升级内置包键，不重置旧学习进度。
+// v70 B132 2026-08-31：按用户要求移除四级听力分类与听力专属词；保留其他词库ID和真实学习进度，并兼容旧听力别名迁移。
+// v70 B126 2026-08-30：安全结构去重 + 30词快速复盘；旧ID通过别名合并，绝不重置主学习进度、全词独立练习或Peppa进度。
+// v70 B121 2026-08-29：小猪佩奇第一集全量台词与裸听进度升级；主词库与训练逻辑不变。
+// v70 B120 2026-08-28：小猪佩奇专区发音训练升级；主词库与训练逻辑不变。
+// v70 B119 2026-08-28：新增小猪佩奇英语专区备份接入；不修改原词库与训练进度。
+// v70 B118 2026-08-28：新增四级听力3；保持B117全局去重、B108快速切词与B107连续发音逻辑。
+// v70 B117 2026-08-28：全词库安全去重归并；同词/同短语统一为一个学习记录，尾部 sb./sth. 占位变体与 spend 近同模板统一；旧ID通过别名迁移到主ID；四次听写仍独立。
+// v70 B116 2026-08-28：新增四级翻译 3「冬至」；仅刷新内置词库包版本，不改训练逻辑。
+// v70 B113 2026-08-27：新增四级听力2；仅补充听力分组顺序映射，确保跨听力组复用同一ID时各组仍按原资料顺序。
+// v70 B112 2026-08-27：补齐英文词/短语缺失音标；已有人工音标不覆盖；卡片不再用“点击音频”冒充音标。
+// v70 B109 2026-08-27：仅更新内置词库包版本键以接收本次导词；学习/评分/独立练习逻辑不变。
+// v70 B108 2026-08-26：修复“记完/会了”切词迟滞；评分热路径只做一次必要队列计算，直接使用评分前锁定的下一词；发音预热不再扫描全词库；打卡/复习动作/记忆统计改为卡片切换后的批量静默落盘；不改词库与任何学习进度规则。
+// v70 B107 2026-08-26：修复词典发音断断续续；真实音频不再低音量牺牲起播，改为充分缓冲后配合本地静音 WAV 唤醒输出，缓冲不足自动走系统自然音兜底；不改词库与学习进度。
+// v70 B106 2026-08-26：新增四级听力分区，并把四级/四级核心/四级听力在资料与进度入口归为“四级”大类；不改独立练习进度。
+// v70 B101 2026-08-25：修复四级核心同族卡渲染中的 family 未定义异常；该异常会在评分后切到四级核心词时中断页面刷新，表现为“按钮执行失败/仍停在上一词”。不改词库、评分前进逻辑与全词独立练习进度。
 const STORAGE_KEY = "word-memory-trainer:v1";
 const MOBILE_DB_NAME = "word-memory-trainer-mobile:v1";
 const MOBILE_DB_VERSION = 1;
@@ -12,11 +28,67 @@ let lastLocalStorageSaveSucceeded = true;
 const SETTINGS_KEY = "word-memory-trainer:settings:v1";
 const STUDY_TIME_KEY = "word-memory-trainer:study-time:v1";
 const DAILY_COMPLETED_KEY = "word-memory-trainer:daily-completed:v1";
+const CHECK_IN_KEY = "word-memory-trainer:check-in:v1";
+const REVIEW_ACTIONS_KEY = "word-memory-trainer:review-actions:v1";
+// B068：用户提供的 2026-08-21 存档中可验证的学习基线。
+// 仅保存真实打卡日期、动作下限和累计时长；不把词条创建/导入日期当成学习。
+const RECOVERED_STUDY_BASELINE_B068 = {"studyTime":{"totalSeconds":359000,"todaySeconds":1629,"today":"2026-08-21","updatedAt":"2026-08-21T02:34:06.324Z"},"checkIn":{"version":1,"updatedAt":"2026-08-21T02:34:59.438Z","days":{"2026-06-14":{"actions":40,"firstAt":"2026-06-14T10:05:02.306Z","lastAt":"2026-06-14T10:10:26.740Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-06-29":{"actions":4,"firstAt":"2026-06-29T14:46:56.402Z","lastAt":"2026-06-29T14:47:16.158Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-13":{"actions":746,"firstAt":"2026-07-13T00:41:33.932Z","lastAt":"2026-07-13T05:50:30.472Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-14":{"actions":303,"firstAt":"2026-07-14T06:31:24.587Z","lastAt":"2026-07-14T07:26:42.033Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-19":{"actions":375,"firstAt":"2026-07-19T00:27:13.797Z","lastAt":"2026-07-19T11:38:12.205Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-20":{"actions":227,"firstAt":"2026-07-20T09:24:26.604Z","lastAt":"2026-07-20T15:44:06.076Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-21":{"actions":62,"firstAt":"2026-07-21T04:15:16.914Z","lastAt":"2026-07-21T05:16:13.668Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-22":{"actions":23,"firstAt":"2026-07-22T00:23:31.494Z","lastAt":"2026-07-22T00:29:29.789Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-23":{"actions":309,"firstAt":"2026-07-23T04:43:52.257Z","lastAt":"2026-07-23T14:21:38.304Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-24":{"actions":589,"firstAt":"2026-07-24T09:58:54.801Z","lastAt":"2026-07-24T12:00:00","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-07-25":{"actions":795,"firstAt":"2026-07-25T01:33:22.870Z","lastAt":"2026-07-25T13:19:35.224Z","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-07-26":{"actions":620,"firstAt":"2026-07-26T00:12:38.628Z","lastAt":"2026-07-26T13:42:07.257Z","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-07-27":{"actions":706,"firstAt":"2026-07-27T03:52:26.248Z","lastAt":"2026-07-27T15:56:26.348Z","wordIds":[],"sources":["legacy","daily-completed","context"],"eventIds":[]},"2026-07-28":{"actions":569,"firstAt":"2026-07-27T16:01:43.664Z","lastAt":"2026-07-28T15:33:34.404Z","wordIds":[],"sources":["legacy","daily-completed","context"],"eventIds":[]},"2026-07-29":{"actions":615,"firstAt":"2026-07-29T00:03:32.273Z","lastAt":"2026-07-29T12:00:00","wordIds":[],"sources":["legacy","daily-completed","context"],"eventIds":[]},"2026-07-30":{"actions":582,"firstAt":"2026-07-29T23:33:33.295Z","lastAt":"2026-07-30T12:00:00","wordIds":[],"sources":["legacy","daily-completed","context"],"eventIds":[]},"2026-07-31":{"actions":580,"firstAt":"2026-07-31T04:33:09.843Z","lastAt":"2026-07-31T15:21:27.366Z","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-08-01":{"actions":804,"firstAt":"2026-08-01T00:30:14.240Z","lastAt":"2026-08-01T15:59:19.889Z","wordIds":[],"sources":["legacy","daily-completed","context"],"eventIds":[]},"2026-08-02":{"actions":819,"firstAt":"2026-08-01T23:54:27.552Z","lastAt":"2026-08-02T15:03:18.035Z","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-08-03":{"actions":673,"firstAt":"2026-08-02T16:05:24.668Z","lastAt":"2026-08-03T12:00:00","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-08-04":{"actions":485,"firstAt":"2026-08-03T16:05:27.576Z","lastAt":"2026-08-04T14:54:06.506Z","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-08-05":{"actions":447,"firstAt":"2026-08-04T23:58:23.858Z","lastAt":"2026-08-05T12:00:00","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-08-06":{"actions":593,"firstAt":"2026-08-05T23:20:15.088Z","lastAt":"2026-08-06T15:40:58.119Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab","memory-lab-session"],"eventIds":[]},"2026-08-07":{"actions":448,"firstAt":"2026-08-06T23:35:46.895Z","lastAt":"2026-08-07T12:00:00","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-08":{"actions":551,"firstAt":"2026-08-07T16:00:06.516Z","lastAt":"2026-08-08T13:49:30.912Z","wordIds":[],"sources":["legacy","daily-completed","memory-lab"],"eventIds":[]},"2026-08-09":{"actions":970,"firstAt":"2026-08-09T04:48:35.909Z","lastAt":"2026-08-09T13:22:40.084Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-10":{"actions":773,"firstAt":"2026-08-09T16:06:33.288Z","lastAt":"2026-08-10T15:59:22.141Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-11":{"actions":535,"firstAt":"2026-08-11T04:43:35.407Z","lastAt":"2026-08-11T15:59:50.168Z","wordIds":[],"sources":["legacy","daily-completed","memory-lab"],"eventIds":[]},"2026-08-12":{"actions":955,"firstAt":"2026-08-11T16:00:05.701Z","lastAt":"2026-08-12T15:01:22.901Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-13":{"actions":2053,"firstAt":"2026-08-13T01:46:58.446Z","lastAt":"2026-08-13T12:00:00","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-14":{"actions":1473,"firstAt":"2026-08-14T06:51:23.035Z","lastAt":"2026-08-14T15:02:37.996Z","wordIds":[],"sources":["legacy","daily-completed","memory-lab"],"eventIds":[]},"2026-08-15":{"actions":613,"firstAt":"2026-08-15T01:50:36.413Z","lastAt":"2026-08-15T12:00:00","wordIds":[],"sources":["legacy","daily-completed","memory-lab"],"eventIds":[]},"2026-08-16":{"actions":820,"firstAt":"2026-08-16T01:04:30.830Z","lastAt":"2026-08-16T12:00:00","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-17":{"actions":894,"firstAt":"2026-08-17T12:00:00","lastAt":"2026-08-17T14:32:05.781Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-18":{"actions":1236,"firstAt":"2026-08-18T00:56:01.415Z","lastAt":"2026-08-18T15:59:53.699Z","wordIds":[],"sources":["legacy","daily-completed","browse:enToZh","browse:zhToEn","browse:spelling","context","memory-lab"],"eventIds":[]},"2026-08-19":{"actions":1317,"firstAt":"2026-08-18T16:00:09.659Z","lastAt":"2026-08-19T15:59:58.671Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-20":{"actions":1485,"firstAt":"2026-08-19T16:00:01.100Z","lastAt":"2026-08-20T15:38:35.778Z","wordIds":[],"sources":["legacy","context","memory-lab","daily-completed"],"eventIds":[]},"2026-08-21":{"actions":564,"firstAt":"2026-08-21T01:08:24.921Z","lastAt":"2026-08-21T01:54:35.959Z","wordIds":[],"sources":["legacy","memory-lab"],"eventIds":[]}}}};
+// B065：本地 file:// 每换一个版本文件夹，Edge/Chrome 可能把它当成新的本地站点。
+// 复习动作因此不能只依赖当前文件路径的 localStorage。
+const REVIEW_ACTIONS_BRIDGE_URL = "https://cyrus329.github.io/word-memory/review-ledger-bridge.html";
+const REVIEW_ACTIONS_BRIDGE_MESSAGE = "word-memory-review-ledger:v1";
+const REVIEW_ACTIONS_LEGACY_FLOOR = {
+  // 2026-08-21 B061 截图中已经确认的今日复习动作；仅用于 file:// 新路径首次迁移。
+  "2026-08-21": 309,
+};
 const CONTEXT_STUDY_KEY = "word-memory-trainer:context-study:v1";
 const MEMORY_LAB_KEY = "word-memory-trainer:memory-lab:v1";
+
+// B117：旧重复词条 ID 只作为迁移别名存在，不再作为第二条学习记录显示。
+function canonicalBuiltinAliasId(id = "") {
+  const key = normalizeText(id);
+  if (!key) return key;
+  const aliases = window.WORD_MEMORY_ID_ALIASES && typeof window.WORD_MEMORY_ID_ALIASES === "object" ? window.WORD_MEMORY_ID_ALIASES : {};
+  const alias = normalizeText(aliases[key] || "");
+  if (alias) return alias;
+  // B132：四级听力已整体下线。未映射到其他现存词条的旧听力 ID 直接退休，
+  // 防止旧 JSON / IndexedDB / 全词独立练习会话把已删除听力词重新带回来。
+  if (/^cet4-listening-/.test(key)) return "";
+  return key;
+}
+
+// B117：只做“安全同词”归并：大小写/尾部标点、末尾 sb./sth. 占位写法，以及用户明确指出的 spend 模板。
+// 不把普通同义词、不同语法结构或四次听写合并。
+function builtinDedupeTermKey(term = "") {
+  let raw = normalizeText(term).normalize("NFKC").toLowerCase().replace(/[’‘`]/g, "'");
+  raw = raw.replace(/\b(sb|sth)\s*\./g, "$1").replace(/[。．.]+$/g, "").replace(/\s+/g, " ").trim();
+  const multiword = raw.split(/\s+/).filter(Boolean).length > 1;
+  if (multiword) {
+    raw = raw.replace(/\b(?:someone|somebody)\b/g, "sb").replace(/\bsomething\b/g, "sth");
+  }
+  const spendOn = new Set(["spend on", "spend time/money on sth"]);
+  const spendDoing = new Set([
+    "spend...in doing",
+    "spend time/money doing sth",
+    "sb spends time/money (in) doing",
+    "sb spends time/money (in) doing sth",
+  ]);
+  if (spendOn.has(raw)) return "spend time/money on sth";
+  if (spendDoing.has(raw)) return "spend time/money (in) doing sth";
+  const tail = raw.match(/^(.*\S)\s+(?:sth|sb)$/);
+  if (tail && tail[1].trim().split(/\s+/).length >= 2) return tail[1].trim();
+  return raw;
+}
+
 let dailyCompletedStore = loadDailyCompletedStore();
+let checkInStore = loadCheckInStore();
+let reviewActionStore = loadReviewActionStore();
+let reviewActionBridgeFrame = null;
+let reviewActionBridgeReady = false;
+let reviewActionBridgeSaveTimer = null;
 let contextStudyStore = loadContextStudyStore();
 let memoryLabStore = loadMemoryLabStore();
+let checkInMonthOffset = 0;
 
 function normalizeAbilityStat(value = {}) {
   const source = value && typeof value === "object" ? value : {};
@@ -35,18 +107,42 @@ function normalizeMemoryLabStore(value = {}) {
   const source = value && typeof value === "object" ? value : {};
   const metrics = {};
   Object.entries(source.metrics && typeof source.metrics === "object" ? source.metrics : {}).forEach(([id, item]) => {
-    if (!id || !item || typeof item !== "object") return;
+    const canonicalId = canonicalBuiltinAliasId(id);
+    if (!canonicalId || !item || typeof item !== "object") return;
     const confusedWith = {};
     Object.entries(item.confusedWith && typeof item.confusedWith === "object" ? item.confusedWith : {}).forEach(([otherId, count]) => {
       const safeCount = Math.max(0, Number(count) || 0);
-      if (otherId && safeCount) confusedWith[otherId] = safeCount;
+      const canonicalOtherId = canonicalBuiltinAliasId(otherId);
+      if (canonicalOtherId && safeCount) confusedWith[canonicalOtherId] = Math.max(Number(confusedWith[canonicalOtherId]) || 0, safeCount);
     });
-    metrics[id] = {
+    const incoming = {
       recognition: normalizeAbilityStat(item.recognition),
       spelling: normalizeAbilityStat(item.spelling),
       confusedWith,
       resetAt: normalizeText(item.resetAt || ""),
       updatedAt: normalizeText(item.updatedAt || ""),
+    };
+    const current = metrics[canonicalId];
+    if (!current) {
+      metrics[canonicalId] = incoming;
+      return;
+    }
+    const mergeAbility = (a, b) => {
+      const newer = (b.updatedAt || "") >= (a.updatedAt || "") ? b : a;
+      return {
+        correct: Math.max(a.correct, b.correct), wrong: Math.max(a.wrong, b.wrong), slow: Math.max(a.slow, b.slow),
+        totalMs: Math.max(a.totalMs, b.totalMs), lastMs: newer.lastMs, score: newer.score,
+        updatedAt: [a.updatedAt, b.updatedAt].filter(Boolean).sort().pop() || "",
+      };
+    };
+    const mergedConfused = { ...(current.confusedWith || {}) };
+    Object.entries(incoming.confusedWith || {}).forEach(([otherId, count]) => { mergedConfused[otherId] = Math.max(Number(mergedConfused[otherId]) || 0, Number(count) || 0); });
+    metrics[canonicalId] = {
+      recognition: mergeAbility(current.recognition, incoming.recognition),
+      spelling: mergeAbility(current.spelling, incoming.spelling),
+      confusedWith: mergedConfused,
+      resetAt: [current.resetAt, incoming.resetAt].filter(Boolean).sort().pop() || "",
+      updatedAt: [current.updatedAt, incoming.updatedAt].filter(Boolean).sort().pop() || "",
     };
   });
   const flowSource = source.flow && typeof source.flow === "object" ? source.flow : {};
@@ -60,14 +156,14 @@ function normalizeMemoryLabStore(value = {}) {
     correct: Math.max(0, Number(item?.correct) || 0),
     wrong: Math.max(0, Number(item?.wrong) || 0),
     durationSeconds: Math.max(0, Number(item?.durationSeconds) || 0),
-    weakIds: (Array.isArray(item?.weakIds) ? item.weakIds : []).map(normalizeText).filter(Boolean).slice(0, 20),
+    weakIds: (Array.isArray(item?.weakIds) ? item.weakIds : []).map(canonicalBuiltinAliasId).filter(Boolean).slice(0, 20),
   })).filter((item) => item.id || item.endedAt);
   return {
     version: 1,
     metrics,
     flow: {
       completedSinceRecap: Math.max(0, Number(flowSource.completedSinceRecap) || 0),
-      recentIds: (Array.isArray(flowSource.recentIds) ? flowSource.recentIds : []).map(normalizeText).filter(Boolean).slice(-10),
+      recentIds: (Array.isArray(flowSource.recentIds) ? flowSource.recentIds : []).map(canonicalBuiltinAliasId).filter(Boolean).slice(-10),
       autoMiniRecap: flowSource.autoMiniRecap !== false,
     },
     reports,
@@ -83,8 +179,32 @@ function loadMemoryLabStore() {
   }
 }
 
-function saveMemoryLabStore() {
+function scheduleDeferredLearningStoreSave(stores = {}) {
+  if (stores.checkIn) deferredLearningStoreDirty.checkIn = true;
+  if (stores.reviewActions) deferredLearningStoreDirty.reviewActions = true;
+  if (stores.memoryLab) deferredLearningStoreDirty.memoryLab = true;
+  if (deferredLearningStoreTimer) window.clearTimeout(deferredLearningStoreTimer);
+  deferredLearningStoreTimer = window.setTimeout(() => flushDeferredLearningStoreSave(), 120);
+}
+
+function flushDeferredLearningStoreSave() {
+  if (deferredLearningStoreTimer) {
+    window.clearTimeout(deferredLearningStoreTimer);
+    deferredLearningStoreTimer = null;
+  }
+  const dirty = { ...deferredLearningStoreDirty };
+  deferredLearningStoreDirty = { checkIn: false, reviewActions: false, memoryLab: false };
+  if (dirty.checkIn) saveCheckInStore();
+  if (dirty.reviewActions) saveReviewActionStore();
+  if (dirty.memoryLab) saveMemoryLabStore();
+}
+
+function saveMemoryLabStore(options = {}) {
   memoryLabStore.updatedAt = new Date().toISOString();
+  if (options.defer) {
+    scheduleDeferredLearningStoreSave({ memoryLab: true });
+    return;
+  }
   try {
     localStorage.setItem(MEMORY_LAB_KEY, JSON.stringify(normalizeMemoryLabStore(memoryLabStore)));
   } catch {
@@ -280,6 +400,16 @@ const REVIEW_STEPS = [
   { label: "6天", ms: 6 * 24 * 60 * 60 * 1000 },
   { label: "31天", ms: 31 * 24 * 60 * 60 * 1000 },
 ];
+// B087：用户在 2026-08-23 23:33（+08:00）确认，当前到期的这批 6 天阶段词
+// 基本都属于长期复习积压，直接按“31天已完成”处理。仅迁移当时已经到期的旧积压；
+// 之后新产生的 6 天阶段仍按正常流程走，不固定、不重置任何全词独立练习进度。
+const B087_DIRECT_GRADUATION_CUTOFF = Date.parse("2026-08-23T23:33:00+08:00");
+function isB087DirectGraduationBacklog(progress = {}) {
+  const stage = Number.isInteger(progress.stage) ? progress.stage : -1;
+  if (stage !== REVIEW_STEPS.length - 2) return false;
+  const dueAt = Date.parse(progress.nextReviewAt || "") || 0;
+  return Boolean(dueAt && dueAt <= B087_DIRECT_GRADUATION_CUTOFF);
+}
 const PROGRESS_MODES = [
   "card", "threeStep", "enToZh", "zhToEn", "choiceZhToEn", "phrase", "spell", "dictation", "forms",
   "plainList", "multiMeaning", "rareMeaning", "fixedPhrase", "spellingWeak", "dictationWeak",
@@ -309,7 +439,7 @@ const PROGRESS_MODE_LABELS = {
 };
 const GRAMMAR_PRACTICE_MODES = new Set(["posClassify", "nounCountability", "verbTransitivity", "wordFamily", "posContext"]);
 const MODE_PROGRESS_HINT = "五类语法训练独立记录进度；答题后自动进入下一题";
-const WORD_SOURCES = ["全方位", "Word List", "四级", "蓝色森林", "短语练习", "听写内容"];
+const WORD_SOURCES = ["全方位", "Word List", "四级", "四级核心", "四级翻译", "蓝色森林", "短语练习", "听写内容"];
 const LIST_MASK_MODES = ["show", "hideEnglish", "hideChinese"];
 const CLOUD_CONFIG_KEY = "word-memory-trainer:cloud-config:v1";
 const SHARE_BASE_URL_KEY = "word-memory-trainer:share-base-url:v1";
@@ -329,13 +459,28 @@ let wordSaveTimer = null;
 let pendingWordSave = false;
 let pendingWordSaveSkipCloud = true;
 let backgroundRenderHandle = null;
+// B108：评分按钮的视觉切词优先。打卡/复习动作/记忆统计先更新内存，
+// 再在短暂空闲后批量写 localStorage，避免每次“会了”前连续 stringify 大对象阻塞主线程。
+let deferredLearningStoreTimer = null;
+let deferredLearningStoreDirty = { checkIn: false, reviewActions: false, memoryLab: false };
 let lastSpeechKey = "";
 let lastSpeechAt = 0;
 let activeAudioElement = null;
+let activeSpeechUtterance = null;
+let pronunciationPrimerAudio = null;
+let pronunciationOutputLastStartedAt = 0;
+let pronunciationRequestToken = 0;
+const PRONUNCIATION_PRIMER_URL = "./assets/pronunciation-primer.wav?v=70b060fullstart20260820";
+const PRONUNCIATION_PRIMER_MS = 170;
+const PRONUNCIATION_REPRIME_AFTER_MS = 700;
+const pronunciationAudioCache = new Map();
+const PRONUNCIATION_AUDIO_CACHE_LIMIT = 18;
+let dictionaryAudioFailureStreak = 0;
+let dictionaryAudioSuspendedUntil = 0;
 const CLOUD_STUDY_TIME_META_ID = "__word_memory_study_time_meta__";
 const CLOUD_COMPACT_PAYLOAD_ID = "__word_memory_compact_payload__";
 
-const BUILTIN_PACKAGE_KEY = "word-memory-trainer:dictation-repair-20260730:b008:v70-b012-buffer-enter-20260801";
+const BUILTIN_PACKAGE_KEY = "word-memory-trainer:builtins:v70-b149-core-u9l3-20260909"; // B144书本印刷体界面；旧数据仍按ID合并，不重置学习进度。
 const FORCE_SEPARATE_BUILTIN_ID_PREFIXES = ["dictation-1-", "dictation-2-", "dictation-3-", "dictation-4-"]; // 四次听写均保留独立词条与独立学习进度，不受其他词库中同词状态影响。
 
 const BUILTIN_GROUP_ALIASES = {
@@ -350,17 +495,57 @@ function builtinGroupAliasesForTerm(term = "") {
 }
 const BUILTIN_WORDS = Array.isArray(window.WORD_MEMORY_WORDS) ? window.WORD_MEMORY_WORDS : [];
 const ALL_BUILTIN_WORDS = BUILTIN_WORDS;
+const B092_CET4_CORE_U1_GROUP = "四级核心 Unit 1 商业经济"; // 兼容旧变量名
+const B098_CET4_CORE_GROUP_RE = /^四级核心 Unit \d+\s/;
+const B098_CET4_CORE_WORDS = ALL_BUILTIN_WORDS.filter((word) => (word.groups || []).some((group) => B098_CET4_CORE_GROUP_RE.test(String(group || ""))));
+const B092_CET4_CORE_BY_ID = new Map(B098_CET4_CORE_WORDS.map((word) => [String(word.id || ""), word]));
+const B092_CET4_CORE_BY_TERM = new Map(B098_CET4_CORE_WORDS.map((word) => [normalizeText(word.term).toLowerCase(), word]));
+
+function enforceB092Cet4CoreOwnership(words = []) {
+  (Array.isArray(words) ? words : []).forEach((word) => {
+    const id = String(word?.id || "");
+    const termKey = normalizeText(word?.term).toLowerCase();
+    const isDictation = /^dictation-[1-4]-/.test(id);
+    // B099：四级核心接管只认同一个词条 ID。
+    // 旧版本按 term 兜底会误碰同名/同形的普通词，尤其在点击“会了/模糊/忘了”保存时可能重写来源。
+    const builtin = B092_CET4_CORE_BY_ID.get(id);
+    if (!builtin) return;
+    // B094：四级核心以当前PDF/纸上补充为唯一词义来源。即使旧本机存档曾有历史释义，也覆盖回当前核心资料。
+    word.meaning = normalizeText(builtin.meaning) || normalizeText(word.meaning);
+    word.coreMeaning = normalizeText(builtin.coreMeaning) || normalizeText(builtin.meaning) || normalizeText(word.meaning);
+    word.coreFamily = normalizeText(builtin.coreFamily) || normalizeText(word.coreFamily);
+    word.coreFamilyLabel = normalizeText(builtin.coreFamilyLabel) || normalizeText(word.coreFamilyLabel);
+    word.coreFamilyOrder = Number(builtin.coreFamilyOrder || word.coreFamilyOrder || 0);
+    word.coreRelation = normalizeText(builtin.coreRelation) || normalizeText(word.coreRelation);
+    word.coreRelationOrder = Number(builtin.coreRelationOrder || word.coreRelationOrder || 0);
+    word.coreItemOrder = Number.isFinite(Number(builtin.coreItemOrder)) ? Number(builtin.coreItemOrder) : Number(word.coreItemOrder || 0);
+    word.coreCrossLinks = Array.isArray(builtin.coreCrossLinks) ? builtin.coreCrossLinks : (Array.isArray(word.coreCrossLinks) ? word.coreCrossLinks : []);
+    if (!isDictation) {
+      const builtinGroups = Array.isArray(builtin.groups) ? builtin.groups : [];
+      const coreGroups = builtinGroups.filter((group) => B098_CET4_CORE_GROUP_RE.test(String(group || "")));
+      // B146：同一ID允许核心、蓝色森林等多来源；合并分组不改变学习进度。
+      word.groups = [...new Set([...(word.groups || []), ...builtinGroups])]
+        .filter(group => !isRetiredCet4ListeningGroup(group));
+      word.sources = [...new Set(["四级核心", ...(word.sources || []), ...(builtin.sources || [])])]
+        .filter(source => source && !isRetiredCet4ListeningGroup(source));
+      word.source = "四级核心";
+      word.tag = normalizeText(builtin.tag) || `${coreGroups[0] || "四级核心"} / 四级高分通关核心词汇`;
+    }
+  });
+  return words;
+}
 const BUILTIN_ID_ALIASES = (window.WORD_MEMORY_ID_ALIASES && typeof window.WORD_MEMORY_ID_ALIASES === "object") ? window.WORD_MEMORY_ID_ALIASES : {};
 let shouldPersistBuiltinWords = false;
 let restoredStudySession = null;
+let restoredBrowsePractice = null;
 
 function normalizeStudySessionSnapshot(value = {}) {
   const source = value && typeof value === "object" ? value : {};
   const allowedModes = new Set(["due", "new", "all", "weak"]);
   return {
     mode: allowedModes.has(source.mode) ? source.mode : "due",
-    activeGroup: normalizeText(source.activeGroup || "all") || "all",
-    activeId: normalizeText(source.activeId || "") || null,
+    activeGroup: /^四级听力(?:\s|$)/.test(normalizeText(source.activeGroup || "")) ? "all" : (normalizeText(source.activeGroup || "all") || "all"),
+    activeId: canonicalBuiltinAliasId(source.activeId || "") || null,
     savedAt: normalizeText(source.savedAt || source.updatedAt || ""),
   };
 }
@@ -378,6 +563,7 @@ const els = {
   mobileFocusSpellingClear: document.querySelector("#mobileFocusSpellingClear"),
   mobileFocusSpellingFeedback: document.querySelector("#mobileFocusSpellingFeedback"),
   totalCount: document.querySelector("#totalCount"),
+  browseTotalHint: document.querySelector("#browseTotalHint"),
   totalStudyTime: document.querySelector("#totalStudyTime"),
   todayStudyTime: document.querySelector("#todayStudyTime"),
   dueCount: document.querySelector("#dueCount"),
@@ -391,12 +577,24 @@ const els = {
   todayReviewTarget: document.querySelector("#todayReviewTarget"),
   todayNewHint: document.querySelector("#todayNewHint"),
   todayReviewHint: document.querySelector("#todayReviewHint"),
-  importantCount: document.querySelector("#importantCount"),
-  estimateMinutes: document.querySelector("#estimateMinutes"),
+  dashboardCheckInStreak: document.querySelector("#dashboardCheckInStreak"),
+  dashboardCheckInTotal: document.querySelector("#dashboardCheckInTotal"),
   clockNow: document.querySelector("#clockNow"),
   sprintStatus: document.querySelector("#sprintStatus"),
   dailyReport: document.querySelector("#dailyReport"),
+  checkInPanel: document.querySelector("#checkInPanel"),
+  checkInCalendar: document.querySelector("#checkInCalendar"),
+  checkInMonthLabel: document.querySelector("#checkInMonthLabel"),
+  checkInPrev: document.querySelector("#checkInPrev"),
+  checkInNext: document.querySelector("#checkInNext"),
+  checkInToday: document.querySelector("#checkInToday"),
+  checkInStreak: document.querySelector("#checkInStreak"),
+  checkInTotalDays: document.querySelector("#checkInTotalDays"),
+  checkInFirstStudy: document.querySelector("#checkInFirstStudy"),
+  checkInCreatedAt: document.querySelector("#checkInCreatedAt"),
+  checkInTodayStatus: document.querySelector("#checkInTodayStatus"),
   activeCard: document.querySelector("#activeCard"),
+  todaySceneMemory: document.querySelector("#todaySceneMemory"),
   todayTimeline: document.querySelector("#todayTimeline"),
   groupProgress: document.querySelector("#groupProgress"),
   wordList: document.querySelector("#wordList"),
@@ -469,6 +667,206 @@ function createPracticeSessions(initialMode = "due") {
   }, {});
 }
 
+
+// B081：全词练习不再作为孤立备份。单词/短语仍分区练习，但进度随主存档、JSON、IndexedDB 与云同步一起保存。
+function cloneBrowsePracticeValue(value) {
+  try { return JSON.parse(JSON.stringify(value && typeof value === "object" ? value : {})); } catch { return {}; }
+}
+
+function browseModeRecord(value = {}) {
+  const item = value && typeof value === "object" ? value : {};
+  return {
+    correct: Math.max(0, Number(item.correct) || 0),
+    wrong: Math.max(0, Number(item.wrong) || 0),
+    unknown: Math.max(0, Number(item.unknown) || 0),
+    lastResult: normalizeText(item.lastResult || ""),
+    lastAt: normalizeText(item.lastAt || ""),
+  };
+}
+
+function mergeBrowseModeRecord(leftValue = {}, rightValue = {}) {
+  const left = browseModeRecord(leftValue);
+  const right = browseModeRecord(rightValue);
+  const newer = (right.lastAt || "") > (left.lastAt || "") ? right : left;
+  return {
+    correct: Math.max(left.correct, right.correct),
+    wrong: Math.max(left.wrong, right.wrong),
+    unknown: Math.max(left.unknown, right.unknown),
+    lastResult: newer.lastResult || left.lastResult || right.lastResult || "",
+    lastAt: [left.lastAt, right.lastAt].filter(Boolean).sort().pop() || "",
+  };
+}
+
+function mergeBrowseRecord(leftValue = {}, rightValue = {}) {
+  const left = leftValue && typeof leftValue === "object" ? leftValue : {};
+  const right = rightValue && typeof rightValue === "object" ? rightValue : {};
+  const modes = {};
+  ["enToZh", "zhToEn", "spelling"].forEach((mode) => {
+    modes[mode] = mergeBrowseModeRecord(left?.modes?.[mode], right?.modes?.[mode]);
+  });
+  const totals = Object.values(modes).reduce((out, item) => {
+    out.correct += item.correct; out.wrong += item.wrong; out.unknown += item.unknown; return out;
+  }, { correct: 0, wrong: 0, unknown: 0 });
+  const leftAt = normalizeText(left.lastAt || "");
+  const rightAt = normalizeText(right.lastAt || "");
+  const newer = rightAt > leftAt ? right : left;
+  return {
+    ...totals,
+    lastResult: normalizeText(newer.lastResult || left.lastResult || right.lastResult || ""),
+    lastAt: [leftAt, rightAt].filter(Boolean).sort().pop() || "",
+    lastMode: ["enToZh", "zhToEn", "spelling"].includes(newer.lastMode) ? newer.lastMode : "enToZh",
+    modes,
+  };
+}
+
+function mergeBrowseSession(leftValue = {}, rightValue = {}, preferRight = false) {
+  const left = leftValue && typeof leftValue === "object" ? leftValue : {};
+  const right = rightValue && typeof rightValue === "object" ? rightValue : {};
+  const ids = [...new Set([...(Array.isArray(left.ids) ? left.ids : []), ...(Array.isArray(right.ids) ? right.ids : [])].map(String).filter(Boolean))];
+  // B088：会话 cursor 不再取 max。旧备份的虚高 cursor 会把真实进度直接顶到100等错误位置。
+  // 会话位置只采用整个 store 中 updatedAt 更新的一侧；其他作答记录仍可安全合并。
+  const chosen = preferRight ? right : left;
+  return {
+    ids,
+    cursor: Math.min(Math.max(0, Number(chosen.cursor) || 0), Math.max(0, ids.length - 1)),
+    label: normalizeText(chosen.label || left.label || right.label || "全词库"),
+    startedAt: normalizeText(chosen.startedAt || left.startedAt || right.startedAt || ""),
+    completed: Boolean(chosen.completed),
+    mode: chosen.mode === "wrong" ? "wrong" : "all",
+  };
+}
+
+function mergeBrowseGate(leftValue = {}, rightValue = {}) {
+  const left = leftValue && typeof leftValue === "object" ? leftValue : {};
+  const right = rightValue && typeof rightValue === "object" ? rightValue : {};
+  const leftTime = [normalizeText(left.lastWrongAt || ""), normalizeText(left.completedAt || "")].filter(Boolean).sort().pop() || "";
+  const rightTime = [normalizeText(right.lastWrongAt || ""), normalizeText(right.completedAt || "")].filter(Boolean).sort().pop() || "";
+  const newer = rightTime > leftTime ? right : left;
+  return {
+    pending: Boolean(newer.pending),
+    zhToEn: Boolean(left.zhToEn || right.zhToEn),
+    spelling: Boolean(left.spelling || right.spelling),
+    lastWrongAt: [normalizeText(left.lastWrongAt || ""), normalizeText(right.lastWrongAt || "")].filter(Boolean).sort().pop() || "",
+    completedAt: [normalizeText(left.completedAt || ""), normalizeText(right.completedAt || "")].filter(Boolean).sort().pop() || "",
+  };
+}
+
+function mergeBrowseStoreSnapshot(leftValue = {}, rightValue = {}) {
+  const left = leftValue && typeof leftValue === "object" ? leftValue : {};
+  const right = rightValue && typeof rightValue === "object" ? rightValue : {};
+  const leftReset = normalizeText(left.resetAt || "");
+  const rightReset = normalizeText(right.resetAt || "");
+  const leftUpdated = normalizeText(left.updatedAt || "");
+  const rightUpdated = normalizeText(right.updatedAt || "");
+  if (leftReset && leftReset >= rightUpdated && leftReset >= rightReset) return cloneBrowsePracticeValue(left);
+  if (rightReset && rightReset >= leftUpdated && rightReset >= leftReset) return cloneBrowsePracticeValue(right);
+
+  const records = {};
+  new Set([...Object.keys(left.records || {}), ...Object.keys(right.records || {})]).forEach((id) => {
+    records[id] = mergeBrowseRecord(left.records?.[id], right.records?.[id]);
+  });
+  const sessions = {};
+  const preferRightSession = rightUpdated > leftUpdated;
+  ["enToZh", "zhToEn", "spelling"].forEach((mode) => { sessions[mode] = mergeBrowseSession(left.sessions?.[mode], right.sessions?.[mode], preferRightSession); });
+  const unknownByMode = {};
+  ["enToZh", "zhToEn", "spelling"].forEach((mode) => {
+    unknownByMode[mode] = [...new Set([...(left.unknownByMode?.[mode] || []), ...(right.unknownByMode?.[mode] || [])].map(String).filter(Boolean))];
+  });
+  const gateByWord = {};
+  new Set([...Object.keys(left.gateByWord || {}), ...Object.keys(right.gateByWord || {})]).forEach((id) => {
+    gateByWord[id] = mergeBrowseGate(left.gateByWord?.[id], right.gateByWord?.[id]);
+  });
+  const newer = rightUpdated > leftUpdated ? right : left;
+  return {
+    version: Math.max(4, Number(left.version) || 0, Number(right.version) || 0),
+    updatedAt: [leftUpdated, rightUpdated].filter(Boolean).sort().pop() || "",
+    resetAt: [leftReset, rightReset].filter(Boolean).sort().pop() || "",
+    currentMode: ["enToZh", "zhToEn", "spelling"].includes(newer.currentMode) ? newer.currentMode : "enToZh",
+    sessions,
+    records,
+    favorites: [...new Set([...(left.favorites || []), ...(right.favorites || [])].map(String).filter(Boolean))],
+    familiar: [...new Set([...(left.familiar || []), ...(right.familiar || [])].map(String).filter(Boolean))],
+    unknownByMode,
+    gateByWord,
+    recoveryQueue: [...new Set([...(left.recoveryQueue || []), ...(right.recoveryQueue || [])].map(String).filter(Boolean))].filter((id) => gateByWord[id]?.pending),
+    gateSession: cloneBrowsePracticeValue((newer.gateSession && typeof newer.gateSession === "object") ? newer.gateSession : {}),
+    legacyWrongClearedAt: [normalizeText(left.legacyWrongClearedAt || ""), normalizeText(right.legacyWrongClearedAt || "")].filter(Boolean).sort().pop() || "",
+  };
+}
+
+
+function canonicalizeBrowseStoreAliases(value = {}) {
+  const source = value && typeof value === "object" ? cloneBrowsePracticeValue(value) : {};
+  const records = {};
+  Object.entries(source.records || {}).forEach(([id, record]) => {
+    const canonicalId = canonicalBuiltinAliasId(id);
+    if (!canonicalId) return;
+    records[canonicalId] = mergeBrowseRecord(records[canonicalId], record);
+  });
+  const sessions = {};
+  ["enToZh", "zhToEn", "spelling"].forEach((mode) => {
+    const session = source.sessions?.[mode] && typeof source.sessions[mode] === "object" ? source.sessions[mode] : {};
+    sessions[mode] = { ...session, ids: [...new Set((Array.isArray(session.ids) ? session.ids : []).map(canonicalBuiltinAliasId).filter(Boolean))] };
+  });
+  const unknownByMode = {};
+  ["enToZh", "zhToEn", "spelling"].forEach((mode) => {
+    unknownByMode[mode] = [...new Set((Array.isArray(source.unknownByMode?.[mode]) ? source.unknownByMode[mode] : []).map(canonicalBuiltinAliasId).filter(Boolean))];
+  });
+  const gateByWord = {};
+  Object.entries(source.gateByWord || {}).forEach(([id, gate]) => {
+    const canonicalId = canonicalBuiltinAliasId(id);
+    if (!canonicalId) return;
+    gateByWord[canonicalId] = mergeBrowseGate(gateByWord[canonicalId], gate);
+  });
+  return {
+    ...source,
+    records,
+    sessions,
+    favorites: [...new Set((Array.isArray(source.favorites) ? source.favorites : []).map(canonicalBuiltinAliasId).filter(Boolean))],
+    familiar: [...new Set((Array.isArray(source.familiar) ? source.familiar : []).map(canonicalBuiltinAliasId).filter(Boolean))],
+    unknownByMode,
+    gateByWord,
+    recoveryQueue: [...new Set((Array.isArray(source.recoveryQueue) ? source.recoveryQueue : []).map(canonicalBuiltinAliasId).filter(Boolean))],
+  };
+}
+
+function normalizeBrowsePracticeSnapshot(value = {}) {
+  const source = value && typeof value === "object" ? value : {};
+  return {
+    version: Math.max(1, Number(source.version) || 1),
+    updatedAt: normalizeText(source.updatedAt || ""),
+    activeKind: source.activeKind === "phrase" ? "phrase" : "word",
+    autoBritish: source.autoBritish !== false,
+    word: canonicalizeBrowseStoreAliases(source.word || {}),
+    phrase: canonicalizeBrowseStoreAliases(source.phrase || {}),
+  };
+}
+
+function mergeBrowsePracticeSnapshots(leftValue = {}, rightValue = {}) {
+  const left = normalizeBrowsePracticeSnapshot(leftValue);
+  const right = normalizeBrowsePracticeSnapshot(rightValue);
+  const newer = (right.updatedAt || "") >= (left.updatedAt || "") ? right : left;
+  return {
+    version: Math.max(left.version, right.version, 1),
+    updatedAt: [left.updatedAt, right.updatedAt].filter(Boolean).sort().pop() || "",
+    activeKind: newer.activeKind === "phrase" ? "phrase" : "word",
+    autoBritish: newer.autoBritish !== false,
+    word: mergeBrowseStoreSnapshot(left.word, right.word),
+    phrase: mergeBrowseStoreSnapshot(left.phrase, right.phrase),
+  };
+}
+
+function setBrowsePracticeSnapshot(value = {}, options = {}) {
+  const incoming = normalizeBrowsePracticeSnapshot(value);
+  state.browsePractice = options.merge === false ? incoming : mergeBrowsePracticeSnapshots(state.browsePractice, incoming);
+  state.browsePractice.updatedAt = normalizeText(incoming.updatedAt || state.browsePractice.updatedAt || new Date().toISOString());
+  if (options.notify !== false) {
+    try { window.dispatchEvent(new CustomEvent("word-memory-browse-practice-restored", { detail: cloneBrowsePracticeValue(state.browsePractice) })); } catch {}
+  }
+  if (options.save !== false) saveWords();
+  return cloneBrowsePracticeValue(state.browsePractice);
+}
+
 const initialWords = loadWords();
 const initialStudySession = normalizeStudySessionSnapshot(restoredStudySession || {});
 const initialPracticeSessions = createPracticeSessions(initialStudySession.mode);
@@ -479,6 +877,7 @@ initialPracticeSessions.card = {
 
 const state = {
   words: initialWords,
+  browsePractice: normalizeBrowsePracticeSnapshot(restoredBrowsePractice || {}),
   settings: loadSettings(),
   studyTime: loadStudyTime(),
   mode: initialStudySession.mode,
@@ -808,6 +1207,414 @@ function dailyCompletedCounts(date = todayKey()) {
   };
 }
 
+// B062：学习打卡只认真实学习动作。createdAt / updatedAt 仅用于显示词库记录日期，
+// 不会因为导入词库、更新释义或打开页面而自动点亮打卡。
+function localDateKey(value = nowDate()) {
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  return dateInputValue(date);
+}
+
+function checkInEventId(value = "") {
+  const text = String(value || "");
+  let hash = 2166136261;
+  for (let index = 0; index < text.length; index += 1) {
+    hash ^= text.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0).toString(36);
+}
+
+function normalizeCheckInStore(raw = {}) {
+  const source = raw && typeof raw === "object" && raw.days && typeof raw.days === "object" ? raw.days : {};
+  const days = {};
+  Object.entries(source).forEach(([date, entry]) => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !entry || typeof entry !== "object") return;
+    const eventIds = [...new Set((Array.isArray(entry.eventIds) ? entry.eventIds : []).map(normalizeText).filter(Boolean))].slice(-6000);
+    const wordIds = [...new Set((Array.isArray(entry.wordIds) ? entry.wordIds : []).map(normalizeText).filter(Boolean))].slice(-1200);
+    const sources = [...new Set((Array.isArray(entry.sources) ? entry.sources : []).map(normalizeText).filter(Boolean))].slice(0, 20);
+    const actions = Math.max(eventIds.length, Math.max(0, Number(entry.actions) || 0));
+    if (!actions && !wordIds.length) return;
+    days[date] = {
+      actions: Math.max(1, actions),
+      wordIds,
+      sources,
+      eventIds,
+      firstAt: normalizeText(entry.firstAt || ""),
+      lastAt: normalizeText(entry.lastAt || ""),
+    };
+  });
+  return {
+    version: 1,
+    days: Object.fromEntries(Object.keys(days).sort().slice(-1500).map((date) => [date, days[date]])),
+    updatedAt: normalizeText(raw?.updatedAt || ""),
+  };
+}
+
+function loadCheckInStore() {
+  try {
+    return normalizeCheckInStore(JSON.parse(localStorage.getItem(CHECK_IN_KEY) || "{}"));
+  } catch {
+    return normalizeCheckInStore({});
+  }
+}
+
+function mergeCheckInStores(localValue = {}, incomingValue = {}) {
+  const local = normalizeCheckInStore(localValue);
+  const incoming = normalizeCheckInStore(incomingValue);
+  const merged = { version: 1, days: {}, updatedAt: new Date().toISOString() };
+  new Set([...Object.keys(local.days), ...Object.keys(incoming.days)]).forEach((date) => {
+    const left = local.days[date] || {};
+    const right = incoming.days[date] || {};
+    const eventIds = [...new Set([...(left.eventIds || []), ...(right.eventIds || [])])].slice(-6000);
+    const wordIds = [...new Set([...(left.wordIds || []), ...(right.wordIds || [])])].slice(-1200);
+    const sources = [...new Set([...(left.sources || []), ...(right.sources || [])])].slice(0, 20);
+    const firstAt = [left.firstAt, right.firstAt].filter(Boolean).sort()[0] || "";
+    const lastAt = [left.lastAt, right.lastAt].filter(Boolean).sort().at(-1) || "";
+    merged.days[date] = {
+      actions: Math.max(eventIds.length, Number(left.actions) || 0, Number(right.actions) || 0, wordIds.length),
+      wordIds,
+      sources,
+      eventIds,
+      firstAt,
+      lastAt,
+    };
+  });
+  return normalizeCheckInStore(merged);
+}
+
+function saveCheckInStore() {
+  checkInStore = normalizeCheckInStore(checkInStore);
+  try {
+    localStorage.setItem(CHECK_IN_KEY, JSON.stringify(checkInStore));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function recordStudyCheckIn(payload = {}, options = {}) {
+  const time = payload.time || new Date().toISOString();
+  const date = localDateKey(time);
+  if (!date) return false;
+  const source = normalizeText(payload.source || "main") || "main";
+  const wordId = normalizeText(payload.wordId || "");
+  const result = normalizeText(payload.result || "study") || "study";
+  const eventId = normalizeText(payload.eventId || checkInEventId(`${source}|${wordId}|${time}|${result}`));
+  if (!checkInStore || typeof checkInStore !== "object") checkInStore = normalizeCheckInStore({});
+  if (!checkInStore.days[date]) {
+    checkInStore.days[date] = { actions: 0, wordIds: [], sources: [], eventIds: [], firstAt: "", lastAt: "" };
+  }
+  const entry = checkInStore.days[date];
+  if (eventId && entry.eventIds.includes(eventId)) return false;
+  if (eventId) entry.eventIds.push(eventId);
+  if (wordId && !entry.wordIds.includes(wordId)) entry.wordIds.push(wordId);
+  if (source && !entry.sources.includes(source)) entry.sources.push(source);
+  entry.actions = Math.max((Number(entry.actions) || 0) + 1, entry.eventIds.length, entry.wordIds.length, 1);
+  entry.firstAt = [entry.firstAt, time].filter(Boolean).sort()[0] || time;
+  entry.lastAt = [entry.lastAt, time].filter(Boolean).sort().at(-1) || time;
+  checkInStore.updatedAt = new Date().toISOString();
+  if (options.save !== false) saveCheckInStore();
+  return true;
+}
+
+function backfillCheckInFromExistingRecords() {
+  const dayWordEvidence = new Set();
+  const add = (payload) => {
+    const date = localDateKey(payload.time);
+    if (!date) return;
+    if (payload.wordId) dayWordEvidence.add(`${date}|${payload.wordId}`);
+    recordStudyCheckIn(payload, { save: false });
+  };
+
+  state.words.forEach((word) => {
+    const wordId = dailyCompletedWordId(word);
+    const records = [];
+    if (Array.isArray(word.history)) records.push(...word.history);
+    Object.values(word.progress || {}).forEach((progress) => {
+      if (Array.isArray(progress?.history)) records.push(...progress.history);
+    });
+    let hasTimedHistory = false;
+    records.forEach((entry) => {
+      if (!entry?.time || !entry?.result) return;
+      hasTimedHistory = true;
+      add({
+        time: entry.time,
+        wordId,
+        result: entry.result,
+        source: `main:${entry.mode || "card"}`,
+      });
+    });
+    if (!hasTimedHistory) {
+      const candidates = [word.lastStudiedAt];
+      Object.values(word.progress || {}).forEach((progress) => {
+        if (progress?.lastStudiedAt && progress.lastStudiedAt !== progress.resetAt) candidates.push(progress.lastStudiedAt);
+      });
+      [...new Set(candidates.filter(Boolean))].forEach((time) => {
+        const isResetOnly = Object.values(word.progress || {}).some((progress) => progress?.resetAt === time && !(progress?.history || []).length);
+        if (!isResetOnly) add({ time, wordId, result: "legacy-study", source: "legacy" });
+      });
+    }
+  });
+
+  Object.entries(normalizeDailyCompletedStore(dailyCompletedStore).days).forEach(([date, entry]) => {
+    [...(entry.words || []), ...(entry.phrases || [])].forEach((wordId) => {
+      if (dayWordEvidence.has(`${date}|${wordId}`)) return;
+      add({
+        time: `${date}T12:00:00`,
+        wordId,
+        result: "daily-completed",
+        source: "daily-completed",
+        eventId: checkInEventId(`daily-completed|${date}|${wordId}`),
+      });
+    });
+  });
+
+  ["wordMemoryBrowseQuizWordsV1", "wordMemoryBrowseQuizPhrasesV1", "wordMemoryBrowseQuizV1"].forEach((key) => {
+    try {
+      const store = JSON.parse(localStorage.getItem(key) || "null");
+      Object.entries(store?.records || {}).forEach(([wordId, record]) => {
+        Object.entries(record?.modes || {}).forEach(([mode, stats]) => {
+          if (!stats?.lastAt || !(Number(stats.correct) || Number(stats.wrong) || Number(stats.unknown))) return;
+          add({ time: stats.lastAt, wordId, result: stats.lastResult || "attempt", source: `browse:${mode}` });
+        });
+      });
+    } catch {
+      // 旧版浏览练习存档损坏时不影响主学习打卡。
+    }
+  });
+
+  Object.entries(contextStudyStore || {}).forEach(([key, entry]) => {
+    if (entry?.lastReviewedAt && Number(entry.reviewCount) > 0) {
+      add({ time: entry.lastReviewedAt, wordId: key, result: "context-review", source: "context" });
+    }
+  });
+  Object.entries(memoryLabStore?.metrics || {}).forEach(([wordId, metric]) => {
+    const attempts = Number(metric?.recognition?.correct) + Number(metric?.recognition?.wrong)
+      + Number(metric?.spelling?.correct) + Number(metric?.spelling?.wrong);
+    if (metric?.updatedAt && attempts > 0) add({ time: metric.updatedAt, wordId, result: "memory-lab", source: "memory-lab" });
+  });
+  (memoryLabStore?.reports || []).forEach((report) => {
+    if (report?.endedAt && (Number(report.completed) || Number(report.correct) || Number(report.wrong))) {
+      add({ time: report.endedAt, wordId: report.id || "session", result: report.type || "session", source: "memory-lab-session" });
+    }
+  });
+
+  checkInStore.updatedAt = new Date().toISOString();
+  saveCheckInStore();
+}
+
+// B063：复习动作使用独立、只增不减的日期账本，不再依赖每词仅保留的最近几条历史。
+// 这样经过压缩存档、备份导入、云同步或升级后，今日动作数仍能完整恢复。
+function normalizeReviewActionStore(raw = {}) {
+  const source = raw && typeof raw === "object" && raw.days && typeof raw.days === "object" ? raw.days : {};
+  const days = {};
+  Object.entries(source).forEach(([date, entry]) => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !entry || typeof entry !== "object") return;
+    const eventIds = [...new Set((Array.isArray(entry.eventIds) ? entry.eventIds : []).map(normalizeText).filter(Boolean))].slice(-12000);
+    const wordIds = [...new Set((Array.isArray(entry.wordIds) ? entry.wordIds : []).map(normalizeText).filter(Boolean))].slice(-6000);
+    const actions = Math.max(eventIds.length, Math.max(0, Number(entry.actions) || 0));
+    if (!actions) return;
+    days[date] = {
+      actions,
+      eventIds,
+      wordIds,
+      firstAt: normalizeText(entry.firstAt || ""),
+      lastAt: normalizeText(entry.lastAt || ""),
+    };
+  });
+  return {
+    version: 1,
+    days: Object.fromEntries(Object.keys(days).sort().slice(-1500).map((date) => [date, days[date]])),
+    updatedAt: normalizeText(raw?.updatedAt || ""),
+  };
+}
+
+function applyReviewActionLegacyFloor(store = {}, options = {}) {
+  const normalized = normalizeReviewActionStore(store);
+  // 只对直接双击 index.html 的 file:// 新路径做一次迁移兜底。
+  // GitHub Pages / HTTP 正常按原有独立账本工作，不注入任何固定数字。
+  if (location.protocol !== "file:") return normalized;
+  const days = { ...normalized.days };
+  let changed = false;
+  Object.entries(REVIEW_ACTIONS_LEGACY_FLOOR).forEach(([date, floor]) => {
+    const minimum = Math.max(0, Number(floor) || 0);
+    const current = Number(days[date]?.actions) || 0;
+    if (!minimum || current >= minimum) return;
+    const existing = days[date] || {};
+    days[date] = {
+      actions: minimum,
+      eventIds: Array.isArray(existing.eventIds) ? existing.eventIds : [],
+      wordIds: Array.isArray(existing.wordIds) ? existing.wordIds : [],
+      firstAt: existing.firstAt || `${date}T00:00:00+08:00`,
+      lastAt: existing.lastAt || `${date}T10:27:00+08:00`,
+    };
+    changed = true;
+  });
+  return normalizeReviewActionStore({
+    ...normalized,
+    days,
+    updatedAt: changed ? new Date().toISOString() : normalized.updatedAt,
+  });
+}
+
+function loadReviewActionStore() {
+  try {
+    return applyReviewActionLegacyFloor(JSON.parse(localStorage.getItem(REVIEW_ACTIONS_KEY) || "{}"));
+  } catch {
+    return applyReviewActionLegacyFloor({});
+  }
+}
+
+function postReviewActionsToStableBridge() {
+  if (!reviewActionBridgeReady || !reviewActionBridgeFrame?.contentWindow) return false;
+  try {
+    reviewActionBridgeFrame.contentWindow.postMessage({
+      type: REVIEW_ACTIONS_BRIDGE_MESSAGE,
+      action: "set",
+      payload: normalizeReviewActionStore(reviewActionStore),
+    }, "*");
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function scheduleReviewActionsBridgeSave() {
+  if (location.protocol !== "file:") return;
+  if (reviewActionBridgeSaveTimer) window.clearTimeout(reviewActionBridgeSaveTimer);
+  reviewActionBridgeSaveTimer = window.setTimeout(() => {
+    reviewActionBridgeSaveTimer = null;
+    postReviewActionsToStableBridge();
+  }, 180);
+}
+
+function initializeReviewActionStableBridge() {
+  if (location.protocol !== "file:" || reviewActionBridgeFrame) return;
+  const frame = document.createElement("iframe");
+  frame.hidden = true;
+  frame.tabIndex = -1;
+  frame.setAttribute("aria-hidden", "true");
+  frame.src = `${REVIEW_ACTIONS_BRIDGE_URL}?v=1`;
+  reviewActionBridgeFrame = frame;
+
+  const onMessage = (event) => {
+    if (event.source !== frame.contentWindow) return;
+    const data = event.data || {};
+    if (data.type !== REVIEW_ACTIONS_BRIDGE_MESSAGE) return;
+    if (data.action === "ready") {
+      reviewActionBridgeReady = true;
+      try {
+        frame.contentWindow.postMessage({ type: REVIEW_ACTIONS_BRIDGE_MESSAGE, action: "get" }, "*");
+      } catch { /* bridge unavailable */ }
+      return;
+    }
+    if (data.action === "value") {
+      const merged = mergeReviewActionStores(reviewActionStore, data.payload || {});
+      const before = reviewActionCount();
+      reviewActionStore = applyReviewActionLegacyFloor(merged);
+      saveReviewActionStore({ skipBridge: true });
+      const after = reviewActionCount();
+      postReviewActionsToStableBridge();
+      if (after !== before) render();
+    }
+  };
+  window.addEventListener("message", onMessage);
+  frame.addEventListener("load", () => {
+    // bridge 页面会主动发 ready；这里再探测一次，兼容缓存/慢脚本。
+    window.setTimeout(() => {
+      try { frame.contentWindow?.postMessage({ type: REVIEW_ACTIONS_BRIDGE_MESSAGE, action: "ping" }, "*"); } catch {}
+    }, 120);
+  });
+  document.body.appendChild(frame);
+}
+
+function mergeReviewActionStores(localValue = {}, incomingValue = {}) {
+  const local = normalizeReviewActionStore(localValue);
+  const incoming = normalizeReviewActionStore(incomingValue);
+  const merged = { version: 1, days: {}, updatedAt: new Date().toISOString() };
+  new Set([...Object.keys(local.days), ...Object.keys(incoming.days)]).forEach((date) => {
+    const left = local.days[date] || {};
+    const right = incoming.days[date] || {};
+    const eventIds = [...new Set([...(left.eventIds || []), ...(right.eventIds || [])])].slice(-12000);
+    const wordIds = [...new Set([...(left.wordIds || []), ...(right.wordIds || [])])].slice(-6000);
+    merged.days[date] = {
+      actions: Math.max(eventIds.length, Number(left.actions) || 0, Number(right.actions) || 0),
+      eventIds,
+      wordIds,
+      firstAt: [left.firstAt, right.firstAt].filter(Boolean).sort()[0] || "",
+      lastAt: [left.lastAt, right.lastAt].filter(Boolean).sort().at(-1) || "",
+    };
+  });
+  return normalizeReviewActionStore(merged);
+}
+
+function saveReviewActionStore(options = {}) {
+  reviewActionStore = applyReviewActionLegacyFloor(reviewActionStore);
+  let saved = false;
+  try {
+    localStorage.setItem(REVIEW_ACTIONS_KEY, JSON.stringify(reviewActionStore));
+    saved = true;
+  } catch {
+    saved = false;
+  }
+  if (!options.skipBridge) scheduleReviewActionsBridgeSave();
+  return saved;
+}
+
+function recordReviewAction(payload = {}, options = {}) {
+  const acceptedResults = new Set(["new", "remember", "fuzzy", "forgot"]);
+  const result = normalizeText(payload.result || "");
+  if (!acceptedResults.has(result)) return false;
+  const time = payload.time || new Date().toISOString();
+  const date = localDateKey(time);
+  if (!date) return false;
+  const wordId = normalizeText(payload.wordId || "");
+  const mode = normalizeText(payload.mode || "card") || "card";
+  const nextReviewAt = normalizeText(payload.nextReviewAt || "");
+  const eventId = normalizeText(payload.eventId || checkInEventId(`${wordId}|${time}|${result}|${mode}|${nextReviewAt}`));
+  if (!reviewActionStore.days[date]) {
+    reviewActionStore.days[date] = { actions: 0, eventIds: [], wordIds: [], firstAt: "", lastAt: "" };
+  }
+  const entry = reviewActionStore.days[date];
+  if (eventId && entry.eventIds.includes(eventId)) return false;
+  if (eventId) entry.eventIds.push(eventId);
+  if (wordId && !entry.wordIds.includes(wordId)) entry.wordIds.push(wordId);
+  entry.actions = Math.max((Number(entry.actions) || 0) + 1, entry.eventIds.length, 1);
+  entry.firstAt = [entry.firstAt, time].filter(Boolean).sort()[0] || time;
+  entry.lastAt = [entry.lastAt, time].filter(Boolean).sort().at(-1) || time;
+  reviewActionStore.updatedAt = new Date().toISOString();
+  if (options.save !== false) saveReviewActionStore();
+  return true;
+}
+
+function backfillReviewActionsFromExistingRecords() {
+  state.words.forEach((word) => {
+    const wordId = dailyCompletedWordId(word);
+    const records = [];
+    if (Array.isArray(word.history)) records.push(...word.history);
+    Object.values(word.progress || {}).forEach((progress) => {
+      if (Array.isArray(progress?.history)) records.push(...progress.history);
+    });
+    records.forEach((entry) => {
+      if (!entry?.time || !entry?.result) return;
+      recordReviewAction({
+        time: entry.time,
+        wordId,
+        result: entry.result,
+        mode: entry.mode || "card",
+        nextReviewAt: entry.nextReviewAt || "",
+      }, { save: false });
+    });
+  });
+  reviewActionStore.updatedAt = new Date().toISOString();
+  saveReviewActionStore();
+}
+
+function reviewActionCount(date = localDateKey()) {
+  return Number(normalizeReviewActionStore(reviewActionStore).days[date]?.actions) || 0;
+}
+
 function dateInputValue(date) {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -1089,10 +1896,23 @@ function primeSpeechVoices() {
 
 function stopCurrentPronunciation() {
   try {
+    if (pronunciationPrimerAudio) {
+      pronunciationPrimerAudio.pause();
+      try { pronunciationPrimerAudio.currentTime = 0; } catch {}
+    }
+  } catch {
+    // 忽略无声预启动音频停止失败
+  }
+  try {
     if (activeAudioElement) {
+      activeAudioElement.onerror = null;
       activeAudioElement.pause();
-      activeAudioElement.src = "";
-      activeAudioElement.load?.();
+      try { activeAudioElement.currentTime = 0; } catch {}
+      // B058：预加载缓存里的音频不再清空 src，否则下一次仍要重新走网络，造成明显延迟。
+      if (!activeAudioElement.__wordMemoryCachedAudio) {
+        activeAudioElement.src = "";
+        activeAudioElement.load?.();
+      }
     }
   } catch {
     // 忽略停止在线音频失败
@@ -1107,50 +1927,261 @@ function stopCurrentPronunciation() {
   }
 }
 
-function useSpeechFallback(text, accent = "us", options = {}) {
-  if (!speechSupported()) {
-    if (!options.silent) {
-      showToast("当前浏览器不支持自动读音");
-    }
+// B145: bound media startup; a pending play() must not block every fallback.
+function pronunciationWithTimeout(promise, timeoutMs) {
+  return new Promise((resolve, reject) => {
+    const timer = window.setTimeout(() => reject(new Error("pronunciation startup timeout")), timeoutMs);
+    Promise.resolve(promise).then(
+      value => { window.clearTimeout(timer); resolve(value); },
+      error => { window.clearTimeout(timer); reject(error); }
+    );
+  });
+}
+
+function setPronunciationStatus(message, retry = false, requestToken = 0, accent = "us") {
+  if (requestToken && requestToken !== pronunciationRequestToken) return;
+  const status = typeof document !== "undefined" ? document.getElementById("pronunciationStatus") : null;
+  if (!status) return;
+  const text = status.querySelector("[data-pronunciation-message]");
+  const button = status.querySelector("[data-pronunciation-retry]");
+  if (text) text.textContent = message;
+  if (button) {
+    button.hidden = !retry;
+    button.dataset.cardAction = accent === "uk" ? "speak-system-uk" : "speak-system-us";
+  }
+}
+
+function ensurePronunciationPrimerAudio() {
+  if (pronunciationPrimerAudio || typeof Audio === "undefined") return pronunciationPrimerAudio;
+  try {
+    pronunciationPrimerAudio = new Audio();
+    pronunciationPrimerAudio.preload = "auto";
+    pronunciationPrimerAudio.src = PRONUNCIATION_PRIMER_URL;
+    pronunciationPrimerAudio.volume = 1;
+    try { pronunciationPrimerAudio.load(); } catch {}
+    return pronunciationPrimerAudio;
+  } catch {
+    pronunciationPrimerAudio = null;
+    return null;
+  }
+}
+
+function primePronunciationOutputAsset() {
+  ensurePronunciationPrimerAudio();
+}
+
+function pronunciationAudioBufferedEnough(audio) {
+  if (!audio) return false;
+  // B107：HAVE_ENOUGH_DATA 才允许正式开播；HAVE_FUTURE_DATA 只代表“眼下能播一点”，弱网下很容易播到一半停住。
+  if (Number(audio.readyState || 0) >= 4) return true;
+  try {
+    const duration = Number(audio.duration || 0);
+    if (!Number.isFinite(duration) || duration <= 0 || !audio.buffered?.length) return false;
+    const bufferedEnd = Number(audio.buffered.end(audio.buffered.length - 1) || 0);
+    return bufferedEnd >= Math.max(0, duration - 0.08);
+  } catch {
     return false;
   }
-  const normalized = normalizeText(text);
-  const speechKey = `${accent}:${normalized.toLowerCase()}`;
+}
+
+function waitForPronunciationAudioReady(audio, timeoutMs = 1600) {
+  if (!audio) return Promise.reject(new Error("audio missing"));
+  if (pronunciationAudioBufferedEnough(audio)) return Promise.resolve(true);
+  return new Promise((resolve, reject) => {
+    let settled = false;
+    const timeoutId = window.setTimeout(() => finish(false), Math.max(500, Number(timeoutMs || 1600)));
+    const cleanup = () => {
+      audio.removeEventListener?.("canplaythrough", onProgress);
+      audio.removeEventListener?.("progress", onProgress);
+      audio.removeEventListener?.("loadedmetadata", onProgress);
+      audio.removeEventListener?.("durationchange", onProgress);
+      audio.removeEventListener?.("error", onError);
+      window.clearTimeout(timeoutId);
+    };
+    const finish = (ok, err) => {
+      if (settled) return;
+      settled = true;
+      cleanup();
+      if (ok) resolve(true);
+      else reject(err || new Error("audio buffering timeout"));
+    };
+    const onProgress = () => {
+      if (pronunciationAudioBufferedEnough(audio)) finish(true);
+    };
+    const onError = () => finish(false, new Error("audio failed"));
+    audio.addEventListener?.("canplaythrough", onProgress);
+    audio.addEventListener?.("progress", onProgress);
+    audio.addEventListener?.("loadedmetadata", onProgress);
+    audio.addEventListener?.("durationchange", onProgress);
+    audio.addEventListener?.("error", onError);
+    // 不再在这里反复调用媒体元素的 load 方法：缓存元素已在创建时加载，重复加载会重置缓冲，反而造成断续。
+    onProgress();
+  });
+}
+
+async function wakePronunciationOutput() {
   const now = Date.now();
-  if (speechKey === lastSpeechKey && now - lastSpeechAt < 550) {
-    return true;
-  }
-  lastSpeechKey = speechKey;
-  lastSpeechAt = now;
-  stopCurrentPronunciation();
-  const utterance = new window.SpeechSynthesisUtterance(normalized);
-  utterance.lang = accent === "uk" ? "en-GB" : "en-US";
-  utterance.rate = 0.9;
-  utterance.pitch = 1;
-  const voices = window.speechSynthesis.getVoices?.() || [];
-  const preferred = voices.find((v) => v.lang === utterance.lang && /Google|Microsoft|Natural|Daniel|Samantha|Alex|Serena/i.test(v.name))
-    || voices.find((v) => v.lang === utterance.lang)
-    || voices.find((v) => /^en[-_]/i.test(v.lang));
-  if (preferred) {
-    utterance.voice = preferred;
-  }
-  utterance.onerror = () => {
-    if (!options.silent) {
-      showToast("读音被浏览器拦截，重新点一次即可");
-    }
-  };
+  if (now - pronunciationOutputLastStartedAt < PRONUNCIATION_REPRIME_AFTER_MS) return true;
+  const primer = ensurePronunciationPrimerAudio();
+  if (!primer) return false;
   try {
-    window.speechSynthesis.speak(utterance);
-    window.setTimeout(() => {
-      try { window.speechSynthesis.resume?.(); } catch {}
-    }, 80);
+    primer.pause();
+    try { primer.currentTime = 0; } catch {}
+    const playPromise = primer.play();
+    if (playPromise && typeof playPromise.then === "function") await pronunciationWithTimeout(playPromise, 900);
+    // B060：真正的读音开始前先让本机/蓝牙/浏览器音频通道工作约 170ms。
+    // 这段 WAV 本身完全静音，用来避免冷启动时吞掉 /s/ /p/ /k/ /t/ 等词首短音素。
+    await new Promise((resolve) => window.setTimeout(resolve, PRONUNCIATION_PRIMER_MS));
+    primer.pause();
+    try { primer.currentTime = 0; } catch {}
+    pronunciationOutputLastStartedAt = Date.now();
     return true;
   } catch {
-    if (!options.silent) {
-      showToast("当前浏览器读音失败");
-    }
+    try { primer.pause(); } catch {}
     return false;
   }
+}
+
+function cachedPronunciationAudio(url) {
+  if (!url || typeof Audio === "undefined") return null;
+  let audio = pronunciationAudioCache.get(url) || null;
+  if (audio?.error) {
+    // An errored cached element must be recreated on the next attempt.
+    pronunciationAudioCache.delete(url);
+    audio = null;
+  }
+  if (audio) {
+    // Map 重新插入实现简单 LRU，优先保留最近会用到的词。
+    pronunciationAudioCache.delete(url);
+    pronunciationAudioCache.set(url, audio);
+    return audio;
+  }
+  try {
+    audio = new Audio();
+    audio.preload = "auto";
+    audio.src = url;
+    audio.__wordMemoryCachedAudio = true;
+    pronunciationAudioCache.set(url, audio);
+    try { audio.load(); } catch {}
+    while (pronunciationAudioCache.size > PRONUNCIATION_AUDIO_CACHE_LIMIT) {
+      const oldestKey = pronunciationAudioCache.keys().next().value;
+      const oldestAudio = pronunciationAudioCache.get(oldestKey);
+      pronunciationAudioCache.delete(oldestKey);
+      if (oldestAudio && oldestAudio !== activeAudioElement) {
+        try {
+          oldestAudio.pause();
+          oldestAudio.removeAttribute("src");
+          oldestAudio.load?.();
+        } catch {}
+      }
+    }
+    return audio;
+  } catch {
+    return null;
+  }
+}
+
+function voiceQualityScore(voice, accent = "us") {
+  if (!voice) return -999;
+  const lang = String(voice.lang || "").replace(/_/g, "-").toLowerCase();
+  const name = String(voice.name || "");
+  const wanted = accent === "uk" ? "en-gb" : "en-us";
+  let score = 0;
+  if (lang === wanted) score += 120;
+  else if (lang.startsWith(accent === "uk" ? "en-gb" : "en-us")) score += 105;
+  else if (lang.startsWith("en-")) score += 45;
+  else return -500;
+
+  // 优先系统里的自然/神经网络/在线增强语音；这些通常比 Desktop/Compact 音色清楚得多。
+  if (/Natural|Neural|Online|Premium|Enhanced/i.test(name)) score += 95;
+  if (/Microsoft (Ava|Andrew|Emma|Brian|Jenny|Aria|Guy|Ryan|Sonia|Libby)/i.test(name)) score += 75;
+  if (/Google (US|UK) English/i.test(name)) score += 70;
+  if (/Samantha|Daniel|Serena|Alex|Karen|Moira|Tessa|Rishi|Aaron|Nicky/i.test(name)) score += 55;
+  if (/Compact|Desktop|eSpeak|Festival/i.test(name)) score -= 85;
+  if (voice.localService === false) score += 8;
+  if (voice.default) score += 4;
+  return score;
+}
+
+function bestSpeechVoice(accent = "us") {
+  if (!speechSupported()) return null;
+  const voices = window.speechSynthesis.getVoices?.() || [];
+  return voices
+    .filter((voice) => /^en[-_]/i.test(String(voice?.lang || "")))
+    .sort((a, b) => voiceQualityScore(b, accent) - voiceQualityScore(a, accent))[0] || null;
+}
+
+function startSpeechVoice(text, accent, voice, requestToken) {
+  if (requestToken && requestToken !== pronunciationRequestToken) return Promise.resolve(false);
+  return new Promise(resolve => {
+    const utterance = new window.SpeechSynthesisUtterance(text);
+    activeSpeechUtterance = utterance;
+    utterance.lang = accent === "uk" ? "en-GB" : "en-US";
+    utterance.rate = text.includes(" ") ? 0.84 : 0.88;
+    utterance.pitch = 1;
+    utterance.volume = 1;
+    if (voice) utterance.voice = voice;
+    let settled = false;
+    let started = false;
+    const isCurrent = () => !requestToken || requestToken === pronunciationRequestToken;
+    const finish = ok => {
+      if (settled) return;
+      settled = true;
+      window.clearTimeout(timer);
+      resolve(ok && isCurrent());
+    };
+    const release = () => {
+      if (activeSpeechUtterance === utterance) activeSpeechUtterance = null;
+    };
+    const timer = window.setTimeout(() => {
+      finish(false);
+      if (isCurrent() && activeSpeechUtterance === utterance) {
+        try { window.speechSynthesis.cancel(); } catch {}
+        release();
+      }
+    }, 2400);
+    utterance.onstart = () => {
+      if (settled) return;
+      if (!isCurrent()) { finish(false); return; }
+      started = true;
+      pronunciationOutputLastStartedAt = Date.now();
+      finish(true);
+    };
+    utterance.onend = () => { finish(started); release(); };
+    utterance.onerror = event => {
+      if (started && isCurrent() && !["canceled", "interrupted"].includes(event?.error)) {
+        setPronunciationStatus("朗读中断，可重试系统语音。", true, requestToken, accent);
+      }
+      finish(false);
+      release();
+    };
+    try {
+      window.speechSynthesis.resume?.();
+      window.speechSynthesis.speak(utterance);
+    } catch { finish(false); release(); }
+  });
+}
+
+async function useSpeechFallback(text, accent = "us", options = {}, requestToken = 0) {
+  if (!speechSupported()) return false;
+  const normalized = normalizeText(text);
+  if (requestToken && requestToken !== pronunciationRequestToken) return false;
+  stopCurrentPronunciation();
+  // Explicit system retry starts speech in the click event, without a media await.
+  if (!options.preferSystem) await wakePronunciationOutput();
+  if (requestToken && requestToken !== pronunciationRequestToken) return false;
+  const voices = window.speechSynthesis.getVoices?.() || [];
+  const local = voices.filter(voice => voice.localService === true && /^en[-_]/i.test(voice.lang || ""))
+    .sort((a, b) => voiceQualityScore(b, accent) - voiceQualityScore(a, accent))[0];
+  const offline = typeof navigator !== "undefined" && navigator.onLine === false;
+  const preferred = (options.preferSystem || offline) && local ? local : bestSpeechVoice(accent);
+  const candidates = [preferred];
+  if (local && local !== preferred) candidates.push(local);
+  for (const voice of candidates) {
+    if (requestToken && requestToken !== pronunciationRequestToken) return false;
+    if (await startSpeechVoice(normalized, accent, voice, requestToken)) return true;
+  }
+  return false;
 }
 
 function pronunciationAudioUrls(text, accent = "us") {
@@ -1168,44 +2199,98 @@ function pronunciationAudioUrls(text, accent = "us") {
   return urls;
 }
 
-function playAudioUrl(url) {
-  return new Promise((resolve, reject) => {
-    stopCurrentPronunciation();
-    const audio = new Audio();
-    activeAudioElement = audio;
-    audio.preload = "auto";
-    audio.src = url;
-    let settled = false;
-    const cleanup = () => {
+function warmPronunciation(term, accent = "uk") {
+  if (!dictionaryAudioAllowed()) return;
+  const text = cleanPronunciationText(term);
+  if (!text) return;
+  // 只预热首选词典源，避免一次卡片切换产生多余请求。
+  const url = pronunciationAudioUrls(text, accent)[0];
+  if (url) cachedPronunciationAudio(url);
+}
+
+function warmCurrentAndNextPronunciation(word) {
+  if (!word) return;
+  // B108：新卡片渲染时只预热“已经切到的当前词”。
+  // 旧逻辑为了猜再下一个词会完整 getQueue() 一次，等于每次“会了”又扫描/排序全词库。
+  // 当前词在 maybeAutoSpeakNextBritish() 调用前就会经过这里，因此自动英音仍然能命中预热缓存。
+  warmPronunciation(word.term, "us");
+  warmPronunciation(word.term, "uk");
+}
+
+async function playAudioUrl(url, options = {}) {
+  const requestToken = Number(options.requestToken || 0);
+  const audio = cachedPronunciationAudio(url) || new Audio();
+  activeAudioElement = audio;
+  audio.preload = "auto";
+  audio.volume = 1;
+  audio.playbackRate = 1;
+  if (!audio.src) audio.src = url;
+
+  try {
+    // B107：必须等到“足够连续播放”的缓冲状态。只拿到首段数据就开始播放，是弱网/蓝牙环境下断断续续的主要来源。
+    await waitForPronunciationAudioReady(audio, Number(options.timeoutMs || 1600));
+    if (requestToken && requestToken !== pronunciationRequestToken) throw new Error("stale pronunciation request");
+
+    // B107：只用项目内完全静音的 WAV 唤醒声卡/蓝牙通道，保留 B060 的“词首不被吞”目标；
+    // 不再把真实单词音频低音量播放 170ms 后 pause + 回零，避免人为制造一次中断和重复解码。
+    await wakePronunciationOutput();
+    if (requestToken && requestToken !== pronunciationRequestToken) throw new Error("stale pronunciation request");
+
+    audio.pause();
+    audio.volume = 1;
+    audio.playbackRate = 1;
+    try { audio.currentTime = 0; } catch {}
+    const playPromise = audio.play();
+    if (playPromise && typeof playPromise.then === "function") await pronunciationWithTimeout(playPromise, 2400);
+    pronunciationOutputLastStartedAt = Date.now();
+    audio.onended = () => {
       if (activeAudioElement === audio) activeAudioElement = null;
-      audio.oncanplay = null;
-      audio.onerror = null;
       audio.onended = null;
+      audio.onerror = null;
     };
-    const finish = (ok, err) => {
-      if (settled) return;
-      settled = true;
-      cleanup();
-      ok ? resolve(true) : reject(err || new Error("audio failed"));
+    audio.onerror = () => {
+      if (requestToken && requestToken !== pronunciationRequestToken) return;
+      if (activeAudioElement !== audio) return;
+      audio.onerror = null;
+      setPronunciationStatus("音频中断，可重试系统语音。", true, requestToken, options.accent);
     };
-    audio.oncanplay = () => {
-      audio.play().then(() => finish(true)).catch((err) => finish(false, err));
-    };
-    audio.onerror = () => finish(false, new Error("audio failed"));
-    try {
-      const playPromise = audio.play();
-      if (playPromise && typeof playPromise.then === "function") {
-        playPromise.then(() => finish(true)).catch(() => {
-          try { audio.load(); } catch (err) { finish(false, err); }
-        });
-      } else {
-        audio.load();
-      }
-    } catch (err) {
-      try { audio.load(); } catch (loadErr) { finish(false, loadErr); }
+    return true;
+  } catch (err) {
+    if (requestToken && requestToken !== pronunciationRequestToken) {
+      if (activeAudioElement !== audio) { try { audio.pause(); } catch {} }
+      throw err;
     }
-    window.setTimeout(() => finish(false, new Error("audio timeout")), 2800);
-  });
+    try {
+      audio.pause();
+      audio.volume = 1;
+      try { audio.currentTime = 0; } catch {}
+      if (!audio.__wordMemoryCachedAudio) {
+        audio.removeAttribute("src");
+        audio.load?.();
+      }
+    } catch {}
+    if (activeAudioElement === audio) activeAudioElement = null;
+    throw err || new Error("audio failed");
+  }
+}
+
+function dictionaryAudioAllowed() {
+  if (typeof navigator !== "undefined" && navigator.onLine === false) return false;
+  return Date.now() >= dictionaryAudioSuspendedUntil;
+}
+
+function noteDictionaryAudioSuccess() {
+  dictionaryAudioFailureStreak = 0;
+  dictionaryAudioSuspendedUntil = 0;
+}
+
+function noteDictionaryAudioFailure() {
+  dictionaryAudioFailureStreak += 1;
+  // 连续多次连接不上词典音频时，短暂跳过在线请求，避免离线/弱网时每个词都等待。
+  if (dictionaryAudioFailureStreak >= 3) {
+    dictionaryAudioSuspendedUntil = Date.now() + 60_000;
+    dictionaryAudioFailureStreak = 0;
+  }
 }
 
 async function speakTerm(term, options = {}) {
@@ -1216,14 +2301,53 @@ async function speakTerm(term, options = {}) {
     return false;
   }
 
-  // v45：读音改为优先使用浏览器/手机系统语音，避免在线音频请求等待、连点排队、一次性爆音。
-  // 每次播放前都会停止上一次读音；550ms 内重复点击同一个词会直接忽略。
-  return useSpeechFallback(text, accent, options);
+  const speechKey = `${accent}:${options.preferSystem ? "system" : "dictionary"}:${text.toLowerCase()}`;
+  const now = Date.now();
+  if (speechKey === lastSpeechKey && now - lastSpeechAt < 260) return true;
+  lastSpeechKey = speechKey;
+  lastSpeechAt = now;
+  const requestToken = ++pronunciationRequestToken;
+  stopCurrentPronunciation();
+  setPronunciationStatus("正在准备发音…", false, requestToken, accent);
+
+  // B107：词典标准音频优先 + 充分缓冲 + 本地静音通道预热；不再牺牲播放真实音频。
+  // 缓冲不足/在线源不稳定时直接走系统自然语音兜底，避免正式发音中途卡住。
+  // 不把几千个 mp3 塞进 GitHub 包，既保留词典级清晰度，也控制 ZIP 体积。
+  if (options.preferSystem !== true && dictionaryAudioAllowed()) {
+    const urls = pronunciationAudioUrls(text, accent);
+    for (const url of urls) {
+      try {
+        await playAudioUrl(url, { timeoutMs: isMobilePronunciationContext() ? 2200 : 1700, requestToken, accent });
+        if (requestToken !== pronunciationRequestToken) return false;
+        noteDictionaryAudioSuccess();
+        setPronunciationStatus(`${accent === "uk" ? "英音" : "美音"} · 词典发音`, false, requestToken, accent);
+        return true;
+      } catch {
+        if (requestToken !== pronunciationRequestToken) return false;
+        // 同一个词典源失败后继续下一个源，最后自动转系统自然音。
+      }
+    }
+    if (requestToken !== pronunciationRequestToken) return false;
+    if (urls.length) noteDictionaryAudioFailure();
+  }
+
+  if (requestToken !== pronunciationRequestToken) return false;
+  const spoken = await useSpeechFallback(text, accent, options, requestToken);
+  if (requestToken !== pronunciationRequestToken) return false;
+  const message = spoken
+    ? `${accent === "uk" ? "英音" : "美音"} · 系统朗读`
+    : "发音未启动；可重试系统语音，或检查网页是否静音。";
+  setPronunciationStatus(message, !spoken, requestToken, accent);
+  if (!spoken && !options.silent) showToast(message);
+  return spoken;
 }
 
 if (typeof window !== "undefined") {
   window.speakTerm = speakTerm;
-  window.addEventListener("DOMContentLoaded", primeSpeechVoices, { once: true });
+  window.addEventListener("DOMContentLoaded", () => {
+    primeSpeechVoices();
+    primePronunciationOutputAsset();
+  }, { once: true });
 }
 
 function escapeHTML(value) {
@@ -1244,9 +2368,11 @@ function loadSettings() {
     const parsed = JSON.parse(localStorage.getItem(SETTINGS_KEY) || "{}");
     return {
       examDate: parsed.examDate || defaultExamDate(),
+      // B058：默认开启“进入下一个词自动播放英音”；用户可在单词旁按钮随时关闭。
+      autoBritishNext: parsed.autoBritishNext !== false,
     };
   } catch {
-    return { examDate: defaultExamDate() };
+    return { examDate: defaultExamDate(), autoBritishNext: true };
   }
 }
 
@@ -1291,6 +2417,13 @@ function mergeStudyTimeForCloud(localValue, cloudValue) {
     today,
     updatedAt: new Date().toISOString(),
   };
+}
+
+function applyRecoveredStudyBaselineB068() {
+  checkInStore = mergeCheckInStores(checkInStore, RECOVERED_STUDY_BASELINE_B068.checkIn);
+  saveCheckInStore();
+  state.studyTime = mergeStudyTimeForCloud(state.studyTime, RECOVERED_STUDY_BASELINE_B068.studyTime);
+  saveStudyTime();
 }
 
 function saveStudyTime() {
@@ -1404,12 +2537,16 @@ function cloneBuiltinWords() {
 }
 
 function createEmptyProgress(source = {}) {
-  const stage = Number.isInteger(source.stage) ? source.stage : -1;
+  const sourceStage = Number.isInteger(source.stage) ? source.stage : -1;
   const history = Array.isArray(source.history) ? [...source.history] : [];
+  const directGraduate = isB087DirectGraduationBacklog(source);
+  const stage = directGraduate ? REVIEW_STEPS.length - 1 : sourceStage;
+  const graduated = stage >= REVIEW_STEPS.length - 1;
   return {
-    status: source.status || "new",
+    status: graduated ? "mature" : (source.status || "new"),
     stage,
-    nextReviewAt: source.nextReviewAt || "",
+    // B086：31天为毕业线；B087：对用户确认的当时已到期 6 天旧积压直接视为31天已完成。
+    nextReviewAt: graduated ? "" : (source.nextReviewAt || ""),
     lastStudiedAt: source.lastStudiedAt || "",
     resetAt: source.resetAt || "",
     history,
@@ -1443,7 +2580,7 @@ function activeModeProgress(word) {
   return modeProgress(word, state.practiceMode);
 }
 
-function recordModeHistory(word, entry, mode = state.practiceMode) {
+function recordModeHistory(word, entry, mode = state.practiceMode, options = {}) {
   const progress = modeProgress(word, mode);
   const historyEntry = { ...entry, mode };
   progress.history.push(historyEntry);
@@ -1451,6 +2588,23 @@ function recordModeHistory(word, entry, mode = state.practiceMode) {
     word.history = [];
   }
   word.history.push(historyEntry);
+  if (historyEntry.time && historyEntry.result) {
+    const deferStoreWrites = Boolean(options.deferStoreWrites);
+    recordStudyCheckIn({
+      time: historyEntry.time,
+      wordId: dailyCompletedWordId(word),
+      result: historyEntry.result,
+      source: `main:${mode}`,
+    }, { save: !deferStoreWrites });
+    recordReviewAction({
+      time: historyEntry.time,
+      wordId: dailyCompletedWordId(word),
+      result: historyEntry.result,
+      mode,
+      nextReviewAt: historyEntry.nextReviewAt || "",
+    }, { save: !deferStoreWrites });
+    if (deferStoreWrites) scheduleDeferredLearningStoreSave({ checkIn: true, reviewActions: true });
+  }
 }
 
 
@@ -1500,11 +2654,36 @@ function mergeProgressRecord(target = {}, incoming = {}) {
     .sort((a,b) => String(a.time || "").localeCompare(String(b.time || "")));
   const seen = new Set();
   const compactHistory = history.filter((item) => { const key = [item.time,item.result,item.mode].join("|"); if(seen.has(key)) return false; seen.add(key); return true; }).slice(-20);
-  return { status: chosen.status || "new", stage: Number.isInteger(chosen.stage) ? chosen.stage : -1, nextReviewAt: chosen.nextReviewAt || "", lastStudiedAt: chosen.lastStudiedAt || "", resetAt, history: compactHistory };
+  const chosenStage = Number.isInteger(chosen.stage) ? chosen.stage : -1;
+  const directGraduate = isB087DirectGraduationBacklog(chosen);
+  const mergedStage = directGraduate ? REVIEW_STEPS.length - 1 : chosenStage;
+  const graduated = mergedStage >= REVIEW_STEPS.length - 1;
+  return {
+    status: graduated ? "mature" : (chosen.status || "new"),
+    stage: mergedStage,
+    nextReviewAt: graduated ? "" : (chosen.nextReviewAt || ""),
+    lastStudiedAt: chosen.lastStudiedAt || "",
+    resetAt,
+    history: compactHistory,
+  };
 }
 function mergeRuntimeWord(target, incoming) {
-  target.phonetic = normalizeText(target.phonetic) || normalizeText(incoming.phonetic) || normalizeText(incoming.ipa) || normalizeText(incoming.pronunciation);
+  target.phonetic = normalizeText(incoming.phonetic) || normalizeText(target.phonetic) || normalizeText(incoming.ipa) || normalizeText(incoming.pronunciation);
+  if (Array.isArray(incoming.memoryChunks) && incoming.memoryChunks.length) {
+    target.memoryChunks = incoming.memoryChunks.slice(0, 2).map((item) => ({ ...item }));
+  }
   target.meaning = mergeStudyText(target.meaning, incoming.meaning);
+  target.coreMeaning = normalizeText(incoming.coreMeaning) || normalizeText(target.coreMeaning);
+  target.coreFamily = normalizeText(incoming.coreFamily) || normalizeText(target.coreFamily);
+  target.coreFamilyLabel = normalizeText(incoming.coreFamilyLabel) || normalizeText(target.coreFamilyLabel);
+  target.coreFamilyOrder = Number(incoming.coreFamilyOrder || target.coreFamilyOrder || 0);
+  target.coreRelation = normalizeText(incoming.coreRelation) || normalizeText(target.coreRelation);
+  target.coreRelationOrder = Number(incoming.coreRelationOrder || target.coreRelationOrder || 0);
+  target.coreItemOrder = Number.isFinite(Number(incoming.coreItemOrder)) ? Number(incoming.coreItemOrder) : Number(target.coreItemOrder || 0);
+  target.coreCrossLinks = Array.isArray(incoming.coreCrossLinks) && incoming.coreCrossLinks.length ? incoming.coreCrossLinks.map((item) => ({ ...item })) : (Array.isArray(target.coreCrossLinks) ? target.coreCrossLinks : []);
+  target.cet4TranslationOrder = { ...(target.cet4TranslationOrder || {}), ...(incoming.cet4TranslationOrder || {}) };
+  target.cet4ListeningOrders = { ...(target.cet4ListeningOrders || {}), ...(incoming.cet4ListeningOrders || {}) };
+  if ((!Number.isFinite(Number(target.cet4ListeningOrder)) || Number(target.cet4ListeningOrder) <= 0) && Number.isFinite(Number(incoming.cet4ListeningOrder)) && Number(incoming.cet4ListeningOrder) > 0) target.cet4ListeningOrder = Number(incoming.cet4ListeningOrder);
   target.phrase = mergeStudyText(target.phrase, incoming.phrase);
   target.note = mergeStudyText(target.note, incoming.note);
   target.important = Boolean(target.important || incoming.important);
@@ -1521,21 +2700,90 @@ function mergeRuntimeWord(target, incoming) {
   return target;
 }
 function dedupeRuntimeWords(words) {
-  const out = []; const byTerm = new Map();
+  // B126: alias migration must also collapse rows that now resolve to the same canonical ID.
+  // This fixes legacy localStorage where e.g. “full-time job / full-time work / take-do full-time job”
+  // could survive as separate rows even after their old IDs were aliased. Dictation 1-4 remain independent.
+  const out = [];
+  const byTerm = new Map();
+  const byId = new Map();
   (Array.isArray(words) ? words : []).forEach((item) => {
     const word = normalizeWord(item);
-    const termKey = normalizeText(word.term).toLowerCase().replace(/[’‘`]/g,"'").replace(/\s+/g," ");
-    if(!termKey) return;
-    const keepSeparate = /^dictation-[1-4]-/.test(normalizeText(word.id));
-    const key = keepSeparate ? `id:${normalizeText(word.id)}` : `term:${termKey}`;
-    const existing = byTerm.get(key);
-    if(existing) mergeRuntimeWord(existing, word);
-    else { byTerm.set(key, word); out.push(word); }
+    const termKey = builtinDedupeTermKey(word.term);
+    if (!termKey) return;
+    const idKey = normalizeText(word.id);
+    const keepSeparate = /^dictation-[1-4]-/.test(idKey);
+    if (keepSeparate) {
+      const dictKey = `dict:${idKey}`;
+      const existing = byId.get(dictKey);
+      if (existing) mergeRuntimeWord(existing, word);
+      else { byId.set(dictKey, word); out.push(word); }
+      return;
+    }
+    const existing = byId.get(idKey) || byTerm.get(termKey);
+    if (existing) {
+      mergeRuntimeWord(existing, word);
+      byId.set(idKey, existing);
+      byTerm.set(termKey, existing);
+      return;
+    }
+    byId.set(idKey, word);
+    byTerm.set(termKey, word);
+    out.push(word);
+  });
+  return out;
+}
+
+function isRetiredCet4ListeningGroup(value = "") {
+  return /^四级听力(?:\s|$)/.test(normalizeText(value));
+}
+
+function sourceFromRemainingGroups(groups = []) {
+  for (const raw of Array.isArray(groups) ? groups : []) {
+    const name = normalizeText(raw);
+    if (/^四级核心(?:\s|$)/.test(name)) return "四级核心";
+    if (/^四级翻译(?:\s|$)/.test(name)) return "四级翻译";
+    if (/^四级(?:\s|$)/.test(name)) return "四级";
+    if (/^蓝色森林(?:\s|$)/.test(name)) return "蓝色森林";
+    if (/^Word List(?:\s|$)/i.test(name)) return "Word List";
+    if (/^短语练习(?:\s|$)/.test(name)) return "短语练习";
+    if (/^全方位(?:\s|$)/.test(name)) return "全方位";
+    if (/听写内容/.test(name)) return "听写内容";
+  }
+  return "";
+}
+
+function stripRetiredCet4ListeningText(value = "") {
+  const raw = normalizeText(value);
+  if (!raw) return raw;
+  const retired = /(四级听力|听力真题|单句精听|英语听力截图|历年四级听力|真题听力|听力搭配)/;
+  return raw.split(/[；;]/).map((item) => normalizeText(item)).filter((item) => item && !retired.test(item)).join("；");
+}
+
+function removeRetiredCet4ListeningWords(words = []) {
+  const aliases = window.WORD_MEMORY_ID_ALIASES && typeof window.WORD_MEMORY_ID_ALIASES === "object" ? window.WORD_MEMORY_ID_ALIASES : {};
+  const out = [];
+  (Array.isArray(words) ? words : []).forEach((raw) => {
+    if (!raw || typeof raw !== "object") return;
+    const originalId = normalizeText(raw.id);
+    const aliasTarget = normalizeText(aliases[originalId] || "");
+    // 听力专属旧 ID 无别名时彻底删除；若旧听力 ID 已归并到普通/核心词，则保留以迁移真实进度。
+    if (/^cet4-listening-/.test(originalId) && !aliasTarget) return;
+    const word = { ...raw };
+    word.groups = (Array.isArray(raw.groups) ? raw.groups : []).filter((name) => !isRetiredCet4ListeningGroup(name));
+    word.sources = (Array.isArray(raw.sources) ? raw.sources : []).filter((name) => !isRetiredCet4ListeningGroup(name));
+    if (isRetiredCet4ListeningGroup(raw.source)) word.source = word.sources[0] || sourceFromRemainingGroups(word.groups) || "";
+    if (!word.sources.length && word.source) word.sources = [word.source];
+    word.note = stripRetiredCet4ListeningText(raw.note);
+    word.tag = String(raw.tag || "").includes("四级听力") ? stripRetiredCet4ListeningText(raw.tag) : raw.tag;
+    delete word.cet4ListeningOrder;
+    delete word.cet4ListeningOrders;
+    out.push(word);
   });
   return out;
 }
 
 function applyBuiltinWords(words) {
+  words = removeRetiredCet4ListeningWords(words);
   words = dedupeRuntimeWords(cleanupLegacyWordListMisimports(words));
   let packageAlreadyApplied = false;
   try {
@@ -1545,11 +2793,11 @@ function applyBuiltinWords(words) {
   }
 
   const byId = new Map(words.map((word) => [normalizeText(word.id), word]));
-  const byTerm = new Map(words.map((word) => [normalizeText(word.term).toLowerCase(), word]));
+  const byTerm = new Map(words.map((word) => [builtinDedupeTermKey(word.term), word]));
   ALL_BUILTIN_WORDS.forEach((sourceWord) => {
     const builtin = cloneBuiltinWord(sourceWord);
     const builtinId = normalizeText(builtin.id);
-    const termKey = normalizeText(builtin.term).toLowerCase();
+    const termKey = builtinDedupeTermKey(builtin.term);
     const existingById = byId.get(builtinId);
     const forceSeparate = FORCE_SEPARATE_BUILTIN_ID_PREFIXES.some((prefix) => builtinId.startsWith(prefix));
     if (!existingById && forceSeparate && !packageAlreadyApplied) {
@@ -1569,15 +2817,33 @@ function applyBuiltinWords(words) {
         existing.meaning = builtin.meaning;
         existing.phrase = builtin.phrase || "";
         existing.note = builtin.note || "";
+        existing.phonetic = builtin.phonetic || existing.phonetic || "";
+        existing.memoryChunks = Array.isArray(builtin.memoryChunks) ? builtin.memoryChunks.slice(0, 2).map((item) => ({ ...item })) : (existing.memoryChunks || []);
         existing.tag = builtin.tag;
         existing.groups = [...(builtin.groups || [])];
         existing.sources = [...(builtin.sources || ["听写内容"])];
         existing.source = builtin.source || "听写内容";
       } else {
-        existing.phonetic = normalizeText(existing.phonetic) || normalizeText(builtin.phonetic) || normalizeText(builtin.ipa) || normalizeText(builtin.pronunciation);
+        existing.phonetic = normalizeText(builtin.phonetic) || normalizeText(existing.phonetic) || normalizeText(builtin.ipa) || normalizeText(builtin.pronunciation);
+        if (Array.isArray(builtin.memoryChunks) && builtin.memoryChunks.length) {
+          existing.memoryChunks = builtin.memoryChunks.slice(0, 2).map((item) => ({ ...item }));
+        }
         existing.meaning = mergeStudyText(existing.meaning, builtin.meaning);
+        existing.coreMeaning = normalizeText(builtin.coreMeaning) || normalizeText(existing.coreMeaning);
+        existing.coreFamily = normalizeText(builtin.coreFamily) || normalizeText(existing.coreFamily);
+        existing.coreFamilyLabel = normalizeText(builtin.coreFamilyLabel) || normalizeText(existing.coreFamilyLabel);
+        existing.coreFamilyOrder = Number(builtin.coreFamilyOrder || existing.coreFamilyOrder || 0);
+        existing.coreRelation = normalizeText(builtin.coreRelation) || normalizeText(existing.coreRelation);
+        existing.coreRelationOrder = Number(builtin.coreRelationOrder || existing.coreRelationOrder || 0);
+        existing.coreItemOrder = Number.isFinite(Number(builtin.coreItemOrder)) ? Number(builtin.coreItemOrder) : Number(existing.coreItemOrder || 0);
+        existing.coreCrossLinks = Array.isArray(builtin.coreCrossLinks) ? builtin.coreCrossLinks : (Array.isArray(existing.coreCrossLinks) ? existing.coreCrossLinks : []);
+        existing.cet4TranslationOrder = { ...(existing.cet4TranslationOrder || {}), ...(builtin.cet4TranslationOrder || {}) };
+        existing.cet4ListeningOrders = { ...(existing.cet4ListeningOrders || {}), ...(builtin.cet4ListeningOrders || {}) };
+        if ((!Number.isFinite(Number(existing.cet4ListeningOrder)) || Number(existing.cet4ListeningOrder) <= 0) && Number.isFinite(Number(builtin.cet4ListeningOrder)) && Number(builtin.cet4ListeningOrder) > 0) existing.cet4ListeningOrder = Number(builtin.cet4ListeningOrder);
         existing.phrase = mergeStudyText(existing.phrase, builtin.phrase);
         existing.note = mergeStudyText(existing.note, builtin.note);
+        // B111：内置词新增专项分组时只补 groups，不改已有学习进度。
+        existing.groups = [...new Set([...(existing.groups || []), ...(builtin.groups || [])].map(normalizeText).filter(Boolean))];
       }
       existing.forms = {
         third: normalizeText(existing.forms?.third) || normalizeText(builtin.forms?.third),
@@ -1611,6 +2877,9 @@ function applyBuiltinWords(words) {
   if (!packageAlreadyApplied) {
     shouldPersistBuiltinWords = true;
   }
+  // B092：无论旧本地存档来自哪个版本，53条“补充词”都只保留在四级核心，
+  // 但沿用原词条 ID 与学习进度；仅调整资料归属，不重置学习记录。
+  enforceB092Cet4CoreOwnership(words);
   return words;
 }
 
@@ -1707,12 +2976,12 @@ function compactCustomWord(word, options = {}) {
 
 function compactPayloadForStorage(words, options = {}) {
   const builtinIds = new Set(ALL_BUILTIN_WORDS.map((word) => word.id));
-  const builtinTerms = new Set(ALL_BUILTIN_WORDS.map((word) => normalizeText(word.term).toLowerCase()));
+  const builtinTerms = new Set(ALL_BUILTIN_WORDS.map((word) => builtinDedupeTermKey(word.term)));
   const progress = [];
   const customWords = [];
   words.forEach((word) => {
     const normalized = normalizeWord(word);
-    const isBuiltin = builtinIds.has(normalized.id) || builtinTerms.has(normalizeText(normalized.term).toLowerCase());
+    const isBuiltin = builtinIds.has(normalized.id) || builtinTerms.has(builtinDedupeTermKey(normalized.term));
     if (isBuiltin) {
       const record = compactWordRecord(normalized, options);
       // 只有真正学习过、标记过或改变过的内置词才写入存档。
@@ -1728,6 +2997,7 @@ function compactPayloadForStorage(words, options = {}) {
     compact: true,
     savedAt: new Date().toISOString(),
     studySession: captureStudySessionSnapshot(),
+    browsePractice: normalizeBrowsePracticeSnapshot(state?.browsePractice || restoredBrowsePractice || {}),
     progress,
     customWords,
   };
@@ -1735,8 +3005,15 @@ function compactPayloadForStorage(words, options = {}) {
   // recovery snapshots, but omit the duplicate copy from the main localStorage payload.
   if (!options.localLite) {
     payload.dailyCompleted = normalizeDailyCompletedStore(dailyCompletedStore);
+    payload.checkIn = normalizeCheckInStore(checkInStore);
+    payload.reviewActions = normalizeReviewActionStore(reviewActionStore);
     payload.contextStudy = normalizeContextStudyStore(contextStudyStore);
     payload.memoryLab = normalizeMemoryLabStore(memoryLabStore);
+    try {
+      payload.peppaZone = window.PeppaZone?.exportState?.() || JSON.parse(localStorage.getItem("word-memory-trainer:peppa-zone:v1") || "null");
+    } catch {
+      payload.peppaZone = null;
+    }
   }
   return payload;
 }
@@ -1744,6 +3021,9 @@ function compactPayloadForStorage(words, options = {}) {
 function loadCompactWords(parsed, options = {}) {
   if (options.captureSession !== false && parsed?.studySession) {
     restoredStudySession = normalizeStudySessionSnapshot(parsed.studySession);
+  }
+  if (parsed?.browsePractice) {
+    restoredBrowsePractice = mergeBrowsePracticeSnapshots(restoredBrowsePractice || {}, parsed.browsePractice);
   }
   if (parsed?.contextStudy) {
     contextStudyStore = mergeContextStudyStores(contextStudyStore, parsed.contextStudy);
@@ -1753,22 +3033,40 @@ function loadCompactWords(parsed, options = {}) {
     dailyCompletedStore = mergeDailyCompletedStores(dailyCompletedStore, parsed.dailyCompleted);
     saveDailyCompletedStore();
   }
+  if (parsed?.checkIn) {
+    checkInStore = mergeCheckInStores(checkInStore, parsed.checkIn);
+    saveCheckInStore();
+  }
+  if (parsed?.reviewActions) {
+    reviewActionStore = mergeReviewActionStores(reviewActionStore, parsed.reviewActions);
+    saveReviewActionStore();
+  }
   if (parsed?.memoryLab) {
     memoryLabStore = mergeMemoryLabStores(memoryLabStore, parsed.memoryLab);
     saveMemoryLabStore();
   }
+  if (parsed?.peppaZone) {
+    try {
+      if (window.PeppaZone?.importState) {
+        window.PeppaZone.importState(parsed.peppaZone, { merge: true });
+        localStorage.removeItem("word-memory-trainer:peppa-zone:pending:v1");
+      } else {
+        localStorage.setItem("word-memory-trainer:peppa-zone:pending:v1", JSON.stringify(parsed.peppaZone));
+      }
+    } catch { /* Peppa 专区仍可从自己的本地存储恢复。 */ }
+  }
   const words = cloneBuiltinWords();
   const byId = new Map(words.map((word) => [word.id, word]));
-  const byTerm = new Map(words.map((word) => [normalizeText(word.term).toLowerCase(), word]));
+  const byTerm = new Map(words.map((word) => [builtinDedupeTermKey(word.term), word]));
   Object.entries(BUILTIN_ID_ALIASES).forEach(([oldId, canonicalId]) => { const target = byId.get(canonicalId); if (target) byId.set(oldId, target); });
   (Array.isArray(parsed.progress) ? parsed.progress : []).forEach((item) => {
-    const key = normalizeText(item.term).toLowerCase();
-    const target = byId.get(item.id) || byTerm.get(key);
+    const key = builtinDedupeTermKey(item.term);
+    const target = byId.get(canonicalBuiltinAliasId(item.id)) || byTerm.get(key);
     if (target) applyCompactProgress(target, item);
   });
   (Array.isArray(parsed.customWords) ? parsed.customWords : []).forEach((item) => {
     const word = normalizeWord(item);
-    const key = normalizeText(word.term).toLowerCase();
+    const key = builtinDedupeTermKey(word.term);
     if (!byId.has(word.id) && !byTerm.has(key)) {
       words.push(word);
       byId.set(word.id, word);
@@ -2032,7 +3330,12 @@ function payloadHasStudyData(payload) {
       || (Array.isArray(payload.customWords) && payload.customWords.length > 0)
       || Object.keys(payload.contextStudy || {}).length > 0
       || Object.keys(payload.memoryLab?.metrics || {}).length > 0
-      || (Array.isArray(payload.memoryLab?.reports) && payload.memoryLab.reports.length > 0);
+      || (Array.isArray(payload.memoryLab?.reports) && payload.memoryLab.reports.length > 0)
+      || Object.keys(payload.checkIn?.days || {}).length > 0
+      || Object.keys(payload.reviewActions?.days || {}).length > 0
+      || Object.keys(payload.browsePractice?.word?.records || {}).length > 0
+      || Object.keys(payload.browsePractice?.phrase?.records || {}).length > 0
+      || (Array.isArray(payload.peppaZone?.episodes) && payload.peppaZone.episodes.length > 0);
   }
   return Array.isArray(payload) ? payload.length > 0 : Array.isArray(payload.words) && payload.words.length > 0;
 }
@@ -2057,6 +3360,9 @@ async function hydrateWordsFromMobileDatabase() {
       const restoredWords = wordsFromStoredPayload(dbPayload);
       if (Array.isArray(restoredWords) && restoredWords.length) {
         state.words = restoredWords;
+        if (dbPayload?.browsePractice) {
+          setBrowsePracticeSnapshot(dbPayload.browsePractice, { merge: true, save: false, notify: true });
+        }
         if (dbPayload?.studySession) applyStudySessionSnapshot(dbPayload.studySession);
         else {
           state.activeId = null;
@@ -2064,6 +3370,8 @@ async function hydrateWordsFromMobileDatabase() {
           state.reviewUndo = null;
           resetTypingState();
         }
+        backfillCheckInFromExistingRecords();
+        backfillReviewActionsFromExistingRecords();
         render();
         showToast("已从手机大容量存档恢复学习记录");
       }
@@ -2085,6 +3393,13 @@ function loadWords() {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) {
       shouldPersistBuiltinWords = true;
+      const recovered = window.WORD_MEMORY_RECOVERED_PROGRESS_B068;
+      if (recovered?.compact && Array.isArray(recovered.progress)) {
+        // 只在没有本机主存档时使用用户提供的 B068 快照；IndexedDB 若有更新记录，稍后仍会优先恢复。
+        const recoveredWords = loadCompactWords(recovered);
+        window.WORD_MEMORY_RECOVERED_PROGRESS_B068 = null;
+        return recoveredWords;
+      }
       return cloneBuiltinWords();
     }
     const parsed = JSON.parse(raw);
@@ -2118,12 +3433,28 @@ function normalizeWord(word) {
     ...builtinGroupAliasesForTerm(word.term),
   ].map(normalizeText).filter(Boolean))];
   return {
-    id: word.id || createId(),
+    id: canonicalBuiltinAliasId(word.id || createId()),
     term: word.term || "",
     meaning: word.meaning || "",
+    coreMeaning: word.coreMeaning || "",
+    coreFamily: word.coreFamily || "",
+    coreFamilyLabel: word.coreFamilyLabel || "",
+    coreFamilyOrder: Number(word.coreFamilyOrder || 0),
+    coreRelation: word.coreRelation || "",
+    coreRelationOrder: Number(word.coreRelationOrder || 0),
+    coreItemOrder: Number.isFinite(Number(word.coreItemOrder)) ? Number(word.coreItemOrder) : 0,
+    coreCrossLinks: Array.isArray(word.coreCrossLinks) ? word.coreCrossLinks.map((item) => ({ ...item })) : [],
+    cet4ListeningOrder: Number.isFinite(Number(word.cet4ListeningOrder)) ? Number(word.cet4ListeningOrder) : 0,
+    cet4ListeningOrders: word.cet4ListeningOrders && typeof word.cet4ListeningOrders === "object" ? { ...word.cet4ListeningOrders } : {},
+    cet4TranslationOrder: word.cet4TranslationOrder && typeof word.cet4TranslationOrder === "object" ? { ...word.cet4TranslationOrder } : {},
     phrase: word.phrase || "",
     note: word.note || "",
     phonetic: word.phonetic || word.ipa || word.pronunciation || "",
+    memoryChunks: Array.isArray(word.memoryChunks) ? word.memoryChunks.slice(0, 2).map((item) => ({
+      text: normalizeText(item?.text || item),
+      meaning: normalizeText(item?.meaning || ""),
+      kind: normalizeText(item?.kind || "memory"),
+    })).filter((item) => item.text) : [],
     tag: word.tag || "",
     groups,
     source: sources[0],
@@ -2172,6 +3503,8 @@ function commitWordsSave(options = {}) {
   if (PUBLIC_VIEWER_SLUG) return true;
 
   saveDailyCompletedStore();
+  saveCheckInStore();
+  saveReviewActionStore();
   let mobilePayload = compactPayloadForStorage(state.words);
   let localPayload = compactPayloadForStorage(state.words, { localLite: true });
   let localSaved = false;
@@ -2586,6 +3919,10 @@ function mergeCloudDataIntoLocal(data, options = {}) {
   const localWords = Array.isArray(state.words) ? state.words.map(normalizeWord) : [];
   // 本机记录放前面、云端记录放后面；真正胜负由 mergeProgressRecord 的最后操作时间决定。
   state.words = dedupeRuntimeWords([...localWords, ...(remote.words || [])]);
+  if (remote.compactCloud?.data?.browsePractice) {
+    setBrowsePracticeSnapshot(remote.compactCloud.data.browsePractice, { merge: true, save: false, notify: true });
+  }
+  if (!remote.compactCloud?.data?.reviewActions) backfillReviewActionsFromExistingRecords();
   if (remote.studyTime) {
     state.studyTime = mergeStudyTimeForCloud(state.studyTime, remote.studyTime);
     saveStudyTime();
@@ -2883,13 +4220,19 @@ function formatTime(value) {
   return new Date(value).toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" });
 }
 
+function isGraduatedProgress(progress = {}) {
+  return Number(progress.stage) >= REVIEW_STEPS.length - 1;
+}
+
 function isDue(word, date = nowDate(), mode = state.practiceMode) {
   const progress = modeProgress(word, mode);
+  if (isGraduatedProgress(progress)) return false;
   return Boolean(progress.nextReviewAt && new Date(progress.nextReviewAt) <= date);
 }
 
 function isTodayReview(word, mode = state.practiceMode) {
   const progress = modeProgress(word, mode);
+  if (isGraduatedProgress(progress)) return false;
   return Boolean(progress.nextReviewAt && todayKey(new Date(progress.nextReviewAt)) === todayKey());
 }
 
@@ -2915,11 +4258,12 @@ function wordGroupNames(word) {
 function wordMatchesActiveGroup(word) {
   if (state.activeGroup === "all") return true;
   const groupNames = wordGroupNames(word);
-  if (groupNames.includes(state.activeGroup)) return true;
-  if (["全方位", "蓝色森林", "Word List", "四级", "短语练习", "听写内容"].includes(state.activeGroup)) {
-    return groupNames.some((groupName) => progressRootName(groupName) === state.activeGroup);
+  const rootGroup = activeRootGroupName(state.activeGroup);
+  if (rootGroup) {
+    return groupNames.some((groupName) => progressRootName(groupName) === rootGroup);
   }
-  return false;
+  const activeExact = canonicalProgressGroupName(state.activeGroup);
+  return groupNames.some((groupName) => canonicalProgressGroupName(groupName) === activeExact);
 }
 
 function wordTextBlob(word) {
@@ -3008,10 +4352,10 @@ function recordMemoryMetric(word, type, correct, meta = {}) {
   }
   item.updatedAt = now;
   memoryLabStore.metrics[word.id] = item;
-  saveMemoryLabStore();
+  saveMemoryLabStore({ defer: Boolean(meta.deferStoreWrites) });
 }
 
-function recordRatingMetric(word, result, meta = null) {
+function recordRatingMetric(word, result, meta = null, options = {}) {
   if (!word) return;
   if (meta?.skipMetric) return;
   const correct = result === "remember" || result === "new";
@@ -3020,6 +4364,7 @@ function recordRatingMetric(word, result, meta = null) {
   recordMemoryMetric(word, type, correct, {
     responseMs: meta?.responseMs || 0,
     confusedWithId: meta?.confusedWithId || "",
+    deferStoreWrites: Boolean(options.deferStoreWrites),
   });
 }
 
@@ -3314,14 +4659,14 @@ function resetTypingState() {
 
 function statusOf(word, mode = state.practiceMode) {
   const progress = modeProgress(word, mode);
+  if (isGraduatedProgress(progress)) {
+    return "mature";
+  }
   if (isDue(word, nowDate(), mode)) {
     return "due";
   }
   if (progress.status === "new" || (progress.stage < 0 && !progress.nextReviewAt)) {
     return "new";
-  }
-  if (progress.stage >= REVIEW_STEPS.length - 1) {
-    return "mature";
   }
   return "learning";
 }
@@ -3331,7 +4676,7 @@ function statusLabel(status) {
     due: "到期",
     new: "新词",
     learning: "学习中",
-    mature: "稳定",
+    mature: "已毕业",
     important: "重点",
   }[status] || "新词";
 }
@@ -4073,18 +5418,18 @@ function miniRecapCandidates() {
     }).slice(0, 3);
 }
 
-function trackMiniRecap(word, result) {
+function trackMiniRecap(word, result, options = {}) {
   if (!word?.id || state.quickSession.active || !memoryLabStore.flow.autoMiniRecap) return;
   if (!["new", "remember", "fuzzy", "forgot"].includes(result)) return;
   memoryLabStore.flow.recentIds = [...(memoryLabStore.flow.recentIds || []).filter((id) => id !== word.id), word.id].slice(-10);
   memoryLabStore.flow.completedSinceRecap = (Number(memoryLabStore.flow.completedSinceRecap) || 0) + 1;
   if (memoryLabStore.flow.completedSinceRecap < 10) {
-    saveMemoryLabStore();
+    saveMemoryLabStore({ defer: Boolean(options.deferStoreWrites) });
     return;
   }
   const words = miniRecapCandidates();
   memoryLabStore.flow.completedSinceRecap = 0;
-  saveMemoryLabStore();
+  saveMemoryLabStore({ defer: Boolean(options.deferStoreWrites) });
   if (words.length < 3) return;
   window.setTimeout(() => startQuickSession({
     type: "mini-recap",
@@ -4105,7 +5450,60 @@ function todayWrongWordIds() {
   }).sort((a, b) => weakScore(b) - weakScore(a)).map((word) => word.id);
 }
 
+// B148: approval lives only for one synchronous completion, never in a save.
+const TRANSLATION_SPELLING_BUILTINS = new Map(ALL_BUILTIN_WORDS.map(word => [word.id, word]));
+let translationSpellingApproval = null;
+function translationSpellingInfo(word) {
+  const id = canonicalBuiltinAliasId(word?.id);
+  const item = window.TRANSLATION_SPELLING_DATA?.[id];
+  const builtin = TRANSLATION_SPELLING_BUILTINS.get(id);
+  const required = Boolean(item) || [...(word?.groups || []), ...(builtin?.groups || [])]
+    .some(group => /^四级翻译(?:\s|$)/.test(String(group)));
+  if (!required) return null;
+  return { term: item?.term || word.term, meaning: item?.meaning || word.meaning,
+    answers: [...new Set([item?.term, word.term].filter(Boolean))] };
+}
+
+function translationSpellingSnapshot(word) {
+  return JSON.stringify([word.updatedAt, word.stage, word.nextReviewAt, word.progress]);
+}
+
+function withTranslationSpelling(word, commit, evidence = null) {
+  const info = translationSpellingInfo(word);
+  if (!info || translationSpellingApproval === word.id) return commit();
+  if (!guardEditable()) return false;
+  const module = window.TranslationSpelling;
+  if (!module) { showToast("拼写组件未加载，请刷新页面后再试。"); return false; }
+  // A just-checked full spelling already satisfies the gate; forms/choices do not.
+  const mainSpelling = ["spell", "dictation", "spellingWeak", "dictationWeak"].includes(state.practiceMode)
+    && state.activeId === word.id && state.spellingResult?.correct && isSpellingCorrect(state.spellingDraft, word);
+  const mobileSpelling = evidence?.correct === true && isSpellingCorrect(evidence.input, word);
+  const run = () => {
+    translationSpellingApproval = word.id;
+    try { return commit(); } finally { translationSpellingApproval = null; }
+  };
+  if (mainSpelling || mobileSpelling) return run();
+  const snapshot = translationSpellingSnapshot(word), mode = state.practiceMode, activeId = state.activeId;
+  stopCurrentPronunciation();
+  return module.request(info).then(passed => {
+    if (!passed) return false;
+    if (!guardEditable() || state.practiceMode !== mode || state.activeId !== activeId
+      || state.words.find(item => item.id === word.id) !== word || translationSpellingSnapshot(word) !== snapshot) {
+      showToast("学习记录已变化，请在当前词上重新确认。"); return false;
+    }
+    return run();
+  });
+}
+
+function consumeTranslationSpelling(word, result) {
+  if (!["remember", "new"].includes(result) || !translationSpellingInfo(word)) return true;
+  if (translationSpellingApproval !== word.id) return false;
+  translationSpellingApproval = null;
+  return true;
+}
+
 function scheduleNext(word, result, options = {}) {
+  if (!consumeTranslationSpelling(word, result)) return false;
   const progress = modeProgress(word);
   const completedAt = options.completedAt || nowDate();
   let nextStep = 0;
@@ -4135,26 +5533,31 @@ function scheduleNext(word, result, options = {}) {
     word.important = true;
   }
 
-  const nextDate = new Date(completedAt.getTime() + delay);
+  // B099：只有“记完/会了”推进到最终阶段才毕业。
+  // “模糊”必须仍然安排 8 分钟后复习，不能因为原 stage 已在末阶段就被误判为毕业。
+  const graduated = (result === "new" || result === "remember") && nextStep >= REVIEW_STEPS.length - 1;
+  const nextDate = graduated ? null : new Date(completedAt.getTime() + delay);
   progress.stage = nextStep;
-  progress.status = nextStep >= REVIEW_STEPS.length - 1 ? "mature" : "learning";
-  progress.nextReviewAt = nextDate.toISOString();
+  progress.status = graduated ? "mature" : "learning";
+  progress.nextReviewAt = graduated ? "" : nextDate.toISOString();
   progress.lastStudiedAt = completedAt.toISOString();
+  if (graduated) label = "已毕业";
   word.updatedAt = completedAt.toISOString();
   recordModeHistory(word, {
     time: completedAt.toISOString(),
     result,
     nextReviewAt: progress.nextReviewAt,
-  });
+  }, state.practiceMode, { deferStoreWrites: Boolean(options.deferStoreWrites) });
   const ratingMeta = state.pendingRatingMeta && state.pendingRatingMeta.wordId === word.id ? state.pendingRatingMeta : null;
   state.pendingRatingMeta = null;
-  recordRatingMetric(word, result, ratingMeta);
+  recordRatingMetric(word, result, ratingMeta, { deferStoreWrites: Boolean(options.deferStoreWrites) });
   updateQuickSessionAfterRating(word, result);
-  trackMiniRecap(word, result);
+  trackMiniRecap(word, result, { deferStoreWrites: Boolean(options.deferStoreWrites) });
   markDailyCompleted(word, completedAt);
   if (!options.silent) {
-    showToast(`下次：${formatDateTime(progress.nextReviewAt)}（${label}后）`);
+    showToast(graduated ? "已完成长期记忆：不再自动复习" : `下次：${formatDateTime(progress.nextReviewAt)}（${label}后）`);
   }
+  return true;
 }
 
 function getQueue() {
@@ -4221,11 +5624,13 @@ function mobileFocusQueue() {
 }
 
 function mobileFocusView(word) {
+  const chunkText = memoryChunksPlain(word);
+  const baseDetail = word.phrase || word.note || "";
   return {
     term: word.term,
     phonetic: extractWordPhonetic(word),
     answer: word.meaning || "未填中文",
-    example: word.phrase || word.note || "",
+    example: [baseDetail, chunkText].filter(Boolean).join("\n"),
   };
 }
 
@@ -4301,11 +5706,15 @@ function applySharedCardRating(id, result, meta = {}) {
   const word = state.words.find((item) => item.id === id);
   if (!word || !["remember", "fuzzy", "forgot"].includes(result)) return;
 
+  if (result === "remember" && translationSpellingInfo(word) && translationSpellingApproval !== word.id) {
+    return withTranslationSpelling(word, () => applySharedCardRating(id, result, meta),
+      meta.mode === "spelling" ? {correct: meta.spellingCorrect, input: meta.spellingInput} : null);
+  }
   // 直接复用普通卡片的动作入口：同一 progress.card、同一 history、同一每日完成、同一云存档。
   if (state.practiceMode !== "card") switchPracticeMode("card");
   setActiveId(id);
   state.pendingRatingMeta = { wordId: id, ...meta };
-  handleCardAction(result);
+  return handleCardAction(result);
 }
 
 let mobileFocusController = null;
@@ -4358,23 +5767,28 @@ function initializeMobileFocus() {
     activeId: () => ensurePracticeSession("card").activeId || state.activeId,
     select: (id) => {
       if (!id) return;
+      const canonicalId = canonicalBuiltinAliasId(id);
       state.practiceMode = "card";
-      setActiveId(id);
+      setActiveId(canonicalId);
       saveWords();
     },
-    getWord: (id) => state.words.find((word) => word.id === id),
+    getWord: (id) => { const canonicalId = canonicalBuiltinAliasId(id); return state.words.find((word) => String(word.id) === String(canonicalId)); },
     view: mobileFocusView,
-    renderAnswer: (view, answerElements) => {
+    renderAnswer: (view, answerElements, word) => {
       if (answerElements.meaning) answerElements.meaning.textContent = view.answer || "未填释义";
-      if (answerElements.detail) answerElements.detail.textContent = view.example || "";
+      if (answerElements.detail) {
+        const example = view.example ? `<span class="mobile-focus-example-v53">${escapeHTML(view.example)}</span>` : "";
+        answerElements.detail.innerHTML = `${example}${renderImageMemory(word, { compact: true })}`;
+      }
     },
     speak: (word) => speakTerm(word.term, { accent: "us" }),
     rate: applySharedCardRating,
+    cancelPendingRating: () => window.TranslationSpelling?.cancel(),
     checkSpelling: (input, word) => isSpellingCorrect(input, word),
     choiceOptions: mobileFocusChoiceOptions,
     source: () => state.quickSession.active
       ? `${state.quickSession.label || "快速复习"} · 与普通卡片共用进度`
-      : (state.activeGroup === "all" ? "全部词库 · 与当前卡片完全同进度" : `${state.activeGroup} · 与当前卡片完全同进度`),
+      : (state.activeGroup === "all" ? "全部词库 · 与当前卡片完全同进度" : `${activeGroupDisplayName(state.activeGroup)} · 与当前卡片完全同进度`),
     title: () => state.quickSession.active ? (state.quickSession.label || "快速复习") : "一屏一词",
   });
 }
@@ -4394,6 +5808,25 @@ function getOrderedStudyWords(words, order = state.dictationOrder) {
     const bd = activeModeProgress(b).nextReviewAt || "9999-12-31";
     return ad.localeCompare(bd);
   });
+
+  const activeExactListeningGroup = canonicalProgressGroupName(state.activeGroup);
+  if (/^四级听力\s*\d+$/i.test(activeExactListeningGroup) && ["new", "all"].includes(state.mode) && !["dictation", "dictationWeak"].includes(state.practiceMode)) {
+    const listeningOrder = (word) => {
+      const mapped = Number(word?.cet4ListeningOrders?.[activeExactListeningGroup]);
+      if (Number.isFinite(mapped) && mapped > 0) return mapped;
+      const legacy = Number(word?.cet4ListeningOrder);
+      return Number.isFinite(legacy) && legacy > 0 ? legacy : 9999;
+    };
+    return [...words].sort((a, b) => listeningOrder(a) - listeningOrder(b));
+  }
+
+  if (/^四级翻译\s*\d+/i.test(activeExactListeningGroup) && ["new", "all"].includes(state.mode) && !["dictation", "dictationWeak"].includes(state.practiceMode)) {
+    return [...words].sort((a, b) => Number(a.cet4TranslationOrder?.[activeExactListeningGroup] || 9999) - Number(b.cet4TranslationOrder?.[activeExactListeningGroup] || 9999));
+  }
+
+  if (isCet4CoreFamilyScope() && ["new", "all"].includes(state.mode) && !["dictation", "dictationWeak"].includes(state.practiceMode)) {
+    return [...words].sort(cet4CoreFamilyCompare);
+  }
 
   if (!["dictation", "dictationWeak"].includes(state.practiceMode)) {
     return sortedByDue.sort((a, b) => {
@@ -4444,12 +5877,92 @@ function activeWord() {
   return state.words.find((word) => word.id === state.activeId) || null;
 }
 
+function nextWordIdBeforeRating(currentWordId) {
+  const queue = getQueue();
+  if (!queue.length) return null;
+  const currentWord = state.words.find((item) => item.id === currentWordId) || null;
+  const currentTerm = normalizeText(currentWord?.term || "").toLowerCase();
+  const preferDifferentTerm = !["dictation", "dictationWeak"].includes(state.practiceMode);
+  const isPreferred = (candidate) => candidate?.id
+    && candidate.id !== currentWordId
+    && (!preferDifferentTerm || !currentTerm || normalizeText(candidate.term).toLowerCase() !== currentTerm);
+  const isFallback = (candidate) => candidate?.id && candidate.id !== currentWordId;
+  const currentIndex = queue.findIndex((item) => item.id === currentWordId);
+  if (currentIndex >= 0) {
+    for (let offset = 1; offset < queue.length; offset += 1) {
+      const candidate = queue[(currentIndex + offset) % queue.length];
+      if (isPreferred(candidate)) return candidate.id;
+    }
+    for (let offset = 1; offset < queue.length; offset += 1) {
+      const candidate = queue[(currentIndex + offset) % queue.length];
+      if (isFallback(candidate)) return candidate.id;
+    }
+    return null;
+  }
+  return queue.find(isPreferred)?.id || queue.find(isFallback)?.id || null;
+}
+
+function advanceAfterRating(previousWordId, preferredNextId = null) {
+  // B108：preferredNextId 是 B100 在评分前、旧队列仍稳定时锁定的下一词。
+  // 正常评分只改变刚完成的当前词，不会让这个已锁定候选失效，因此直接切过去，
+  // 避免评分后再次过滤 + 排序 6700+ 词。只有没有锁定候选时才回退到完整队列计算。
+  if (preferredNextId && preferredNextId !== previousWordId) {
+    const previousWordFast = state.words.find((item) => item.id === previousWordId) || null;
+    const preferredWordFast = state.words.find((item) => item.id === preferredNextId) || null;
+    const preferDifferentTermFast = !["dictation", "dictationWeak"].includes(state.practiceMode);
+    const previousTermFast = normalizeText(previousWordFast?.term || "").toLowerCase();
+    const preferredTermFast = normalizeText(preferredWordFast?.term || "").toLowerCase();
+    const distinctFast = preferredWordFast && (!preferDifferentTermFast || !previousTermFast || preferredTermFast !== previousTermFast);
+    if (distinctFast) {
+      setActiveId(preferredNextId);
+      state.answerVisible = false;
+      resetTypingState();
+      state.lastAutoSpokenId = null;
+      return;
+    }
+  }
+
+  const queue = getQueue();
+  if (!queue.length) {
+    setActiveId(null);
+    state.answerVisible = false;
+    resetTypingState();
+    state.lastAutoSpokenId = null;
+    return;
+  }
+
+  // B100：评分会改变 stage / nextReviewAt，队列会立即重新排序。
+  // 如果评分后再根据“当前词的新位置”找下一项，旧词可能因为重排又被选中。
+  // 因此优先使用评分前已经锁定的下一词 ID。
+  const previousWord = state.words.find((item) => item.id === previousWordId) || null;
+  const previousTerm = normalizeText(previousWord?.term || "").toLowerCase();
+  const preferDifferentTerm = !["dictation", "dictationWeak"].includes(state.practiceMode);
+  const isDistinct = (candidate) => candidate?.id
+    && candidate.id !== previousWordId
+    && (!preferDifferentTerm || !previousTerm || normalizeText(candidate.term).toLowerCase() !== previousTerm);
+  let nextId = null;
+  const preferred = queue.find((item) => item.id === preferredNextId);
+  if (preferredNextId && isDistinct(preferred)) {
+    nextId = preferredNextId;
+  }
+  if (!nextId) {
+    nextId = queue.find(isDistinct)?.id || queue.find((item) => item.id !== previousWordId)?.id || null;
+  }
+
+  // 只有当前筛选下确实没有第二个词时才允许结束；绝不自动选回刚评分的词。
+  setActiveId(nextId);
+  state.answerVisible = false;
+  resetTypingState();
+  state.lastAutoSpokenId = null;
+}
+
 function render() {
   renderCloudAccessState();
   chooseActiveWord();
   renderStats();
   renderDashboard();
   renderDailyReport();
+  renderCheckInCalendar();
   renderClock();
   renderSprintStatus();
   updateGazeButton();
@@ -4477,6 +5990,7 @@ function scheduleBackgroundRender() {
     renderStats();
     renderDashboard();
     renderDailyReport();
+    renderCheckInCalendar();
     renderClock();
     renderSprintStatus();
     renderTimeline();
@@ -4494,8 +6008,10 @@ function scheduleBackgroundRender() {
   }, 520);
 }
 
-function renderStudyTransition() {
-  chooseActiveWord();
+function renderStudyTransition(options = {}) {
+  // B100：评分后 activeId 已经被显式设置为“评分前锁定的下一词”。
+  // 此时不要再运行 chooseActiveWord()，避免队列重算/筛选把指针改回去。
+  if (!options.preserveActive) chooseActiveWord();
   renderActiveCard();
   renderModeButtons();
   renderPracticeButtons();
@@ -4575,6 +6091,7 @@ function renderStats() {
   const learnedPhrases = learnedItems.filter((word) => isPhraseWord(word)).length;
 
   els.totalCount.textContent = state.words.length;
+  if (els.browseTotalHint) els.browseTotalHint.textContent = `${state.words.length}词快速查阅`;
   els.dueCount.textContent = state.words.filter((word) => isDue(word)).length;
   els.todayCount.textContent = completedToday.total;
   els.doneTodayCount.textContent = learnedItems.length;
@@ -4646,7 +6163,7 @@ function dailyReportStats() {
   syncStudyTimeDay();
   return {
     studied: studiedWords.size,
-    reviews: reviewEntries.length,
+    reviews: Math.max(reviewEntries.length, reviewActionCount()),
     spellingTotal: spellingEntries.length,
     spellingCorrect,
     spellingRate: spellingEntries.length ? Math.round((spellingCorrect / spellingEntries.length) * 100) : 0,
@@ -4656,6 +6173,62 @@ function dailyReportStats() {
     todayStudyTime: state.studyTime?.todaySeconds || 0,
     totalStudyTime: state.studyTime?.totalSeconds || 0,
   };
+}
+
+function checkInStreakCount() {
+  const activeDays = new Set(Object.keys(normalizeCheckInStore(checkInStore).days));
+  let cursor = new Date();
+  cursor.setHours(12, 0, 0, 0);
+  if (!activeDays.has(localDateKey(cursor))) cursor.setDate(cursor.getDate() - 1);
+  let streak = 0;
+  while (activeDays.has(localDateKey(cursor))) {
+    streak += 1;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  return streak;
+}
+
+function earliestWordCreatedDate() {
+  return state.words
+    .map((word) => localDateKey(word.createdAt))
+    .filter(Boolean)
+    .sort()[0] || "--";
+}
+
+function renderCheckInCalendar() {
+  if (!els.checkInCalendar) return;
+  const normalized = normalizeCheckInStore(checkInStore);
+  const dates = Object.keys(normalized.days).sort();
+  const today = localDateKey();
+  const todayEntry = normalized.days[today];
+  const current = new Date();
+  const monthDate = new Date(current.getFullYear(), current.getMonth() + checkInMonthOffset, 1);
+  const year = monthDate.getFullYear();
+  const month = monthDate.getMonth();
+  const monthPrefix = `${year}-${String(month + 1).padStart(2, "0")}`;
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const leading = (new Date(year, month, 1).getDay() + 6) % 7;
+  const cells = [];
+  for (let index = 0; index < leading; index += 1) cells.push('<span class="checkin-day is-empty" aria-hidden="true"></span>');
+  for (let day = 1; day <= daysInMonth; day += 1) {
+    const date = `${monthPrefix}-${String(day).padStart(2, "0")}`;
+    const entry = normalized.days[date];
+    const active = Boolean(entry);
+    const classes = ["checkin-day", active ? "is-active" : "", date === today ? "is-today" : "", date > today ? "is-future" : ""].filter(Boolean).join(" ");
+    const detail = active ? `${entry.actions} 次学习动作 · ${entry.wordIds.length} 个词条` : "无学习记录";
+    cells.push(`<span class="${classes}" title="${escapeHTML(`${date} · ${detail}`)}"><b>${day}</b>${active ? '<i>✓</i>' : '<i></i>'}<small>${active ? entry.wordIds.length || entry.actions : ""}</small></span>`);
+  }
+  while (cells.length % 7) cells.push('<span class="checkin-day is-empty" aria-hidden="true"></span>');
+
+  els.checkInMonthLabel.textContent = `${year}年${month + 1}月`;
+  els.checkInCalendar.innerHTML = `<div class="checkin-weekdays"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div><div class="checkin-days">${cells.join("")}</div>`;
+  els.checkInStreak.textContent = String(checkInStreakCount());
+  els.checkInTotalDays.textContent = String(dates.length);
+  els.checkInFirstStudy.textContent = dates[0] || "暂无";
+  els.checkInCreatedAt.textContent = earliestWordCreatedDate();
+  els.checkInTodayStatus.textContent = todayEntry ? `今日已自动打卡 · ${todayEntry.actions} 次学习动作` : "今日还没有学习记录";
+  els.checkInTodayStatus.classList.toggle("is-active", Boolean(todayEntry));
+  if (els.checkInNext) els.checkInNext.disabled = checkInMonthOffset >= 0;
 }
 
 function renderDailyReport() {
@@ -4712,11 +6285,10 @@ function renderDashboard() {
   const newCount = state.words.filter((word) => statusOf(word) === "new").length;
   const dueNow = state.words.filter((word) => isDue(word)).length;
   const todayReview = state.words.filter(isTodayReview).length;
-  const important = state.words.filter((word) => word.important).length;
-  const importantDue = state.words.filter((word) => word.important && (isDue(word) || statusOf(word) === "new")).length;
   const newTarget = Math.min(30, newCount);
   const reviewTarget = Math.max(dueNow, todayReview);
-  const estimate = Math.max(0, Math.ceil(newTarget * 0.8 + reviewTarget * 0.45 + importantDue * 0.35));
+  const reviewActions = reviewActionCount();
+  const checkInDays = Object.keys(normalizeCheckInStore(checkInStore).days).length;
   const examDate = new Date(`${state.settings.examDate}T00:00:00`);
   const today = new Date(`${todayKey()}T00:00:00`);
   const dayDiff = Math.ceil((examDate - today) / (24 * 60 * 60 * 1000));
@@ -4726,11 +6298,11 @@ function renderDashboard() {
     els.examDateInput.value = state.settings.examDate;
   }
   els.todayNewTarget.textContent = newTarget;
-  els.todayReviewTarget.textContent = reviewTarget;
-  els.importantCount.textContent = important;
-  els.estimateMinutes.textContent = estimate;
+  els.todayReviewTarget.textContent = reviewActions;
+  els.dashboardCheckInStreak.textContent = String(checkInStreakCount());
+  els.dashboardCheckInTotal.textContent = String(checkInDays);
   els.todayNewHint.textContent = newCount ? `还剩 ${newCount} 个新词，建议今天先拿下 ${newTarget} 个` : "新词清空了，今天专心复习";
-  els.todayReviewHint.textContent = reviewTarget ? `现在到期 ${dueNow} 个，今日已排 ${todayReview} 个` : "暂无到期复习，等系统提醒";
+  els.todayReviewHint.textContent = `今日已完成 ${reviewActions} 次复习动作；现在到期 ${dueNow} 个`;
   if (els.mobileFocusEntryHint) {
     const focusCount = mobileFocusQueue().length;
     els.mobileFocusEntryHint.textContent = focusCount
@@ -4744,18 +6316,106 @@ function progressRootName(groupName = "") {
   if (/^全方位/.test(name)) return "全方位";
   if (/^蓝色森林/.test(name)) return "蓝色森林";
   if (/^Word List/.test(name)) return "Word List";
-  if (/^四级/.test(name)) return "四级";
+  if (/^四级核心(?:\s|$)/.test(name)) return "四级";
+  if (/^四级听力(?:\s|$)/.test(name)) return "四级";
+  if (/^四级翻译(?:\s|$)/.test(name)) return "四级";
+  if (/^四级(?:\s|$)/.test(name)) return "四级";
   if (/^短语练习/.test(name)) return "短语练习";
   if (/^第[一二三四]次听写内容$|^听写内容/.test(name)) return "听写内容";
   return "其他";
 }
 
+// B103：进度页里的“资料大类”与“真实分组”必须彻底区分。
+// 以前 state.activeGroup = "蓝色森林" 同时可能表示：
+// 1）整个蓝色森林大类；2）真的存在一个名字就叫“蓝色森林”的旧分组。
+// 这会导致点最后那个“蓝色森林”卡片后，切到拼写时范围突然扩成整个蓝色森林。
+// 现在大类使用 __root__ 前缀；普通分组永远按精确组名匹配。
+function activeRootGroupName(activeGroup = state.activeGroup) {
+  const value = normalizeText(activeGroup);
+  return value.startsWith("__root__") ? normalizeText(value.slice("__root__".length)) : "";
+}
+
+function activeGroupDisplayName(activeGroup = state.activeGroup) {
+  const root = activeRootGroupName(activeGroup);
+  return root || normalizeText(activeGroup) || "all";
+}
+
+// B103：把“蓝色森林46 / 蓝色森林 46”等仅空格不同的历史组名视为同一个逻辑分组。
+// 只影响进度页显示与分组筛选，不修改 word-data.js，也不会改用户任何学习进度。
+function canonicalProgressGroupName(groupName = "") {
+  const name = normalizeText(groupName);
+  let match = name.match(/^蓝色森林\s*(\d+)$/i);
+  if (match) return `蓝色森林 ${Number(match[1])}`;
+  match = name.match(/^Word\s*List\s*(\d+)$/i);
+  if (match) return `Word List ${Number(match[1])}`;
+  match = name.match(/^短语练习\s*(\d+)$/i);
+  if (match) return `短语练习 ${Number(match[1])}`;
+  match = name.match(/^四级听力\s*(\d+)$/i);
+  if (match) return `四级听力 ${Number(match[1])}`;
+  match = name.match(/^四级翻译\s*(\d+)(.*)$/i);
+  if (match) return `四级翻译 ${Number(match[1])}${normalizeText(match[2]) ? ` ${normalizeText(match[2])}` : ''}`;
+  match = name.match(/^四级\s*(\d+)$/i);
+  if (match) return `四级 ${Number(match[1])}`;
+  match = name.match(/^全方位\s*(\d+)$/i);
+  if (match) return `全方位 ${Number(match[1])}`;
+  return name;
+}
+
 let progressGroupFilter = "全部";
+let progressCet4Filter = "四级核心";
+
+// B102：进度卡片必须按资料组编号自然排序，而不是按词条首次出现顺序。
+// 例如“蓝色森林 1, 2, 3 ... 52”，避免出现 30, 35, 41, 16, 8 ... 的乱序。
+function progressGroupSequence(name = "") {
+  const text = normalizeText(name);
+  const root = progressRootName(text);
+  if (/^四级核心(?:\s|$)/.test(text)) {
+    const unit = text.match(/\bUnit\s*(\d+)/i);
+    if (unit) return Number(unit[1]);
+  }
+  if (root === "听写内容") {
+    if (/第一次/.test(text)) return 1;
+    if (/第二次/.test(text)) return 2;
+    if (/第三次/.test(text)) return 3;
+    if (/第四次/.test(text)) return 4;
+  }
+  const numbers = [...text.matchAll(/(\d+)/g)];
+  return numbers.length ? Number(numbers[numbers.length - 1][1]) : Number.POSITIVE_INFINITY;
+}
+
+function progressGroupCompare(leftName = "", rightName = "") {
+  const rootOrder = ["Word List", "蓝色森林", "四级", "短语练习", "全方位", "听写内容", "其他"];
+  const leftRoot = progressRootName(leftName);
+  const rightRoot = progressRootName(rightName);
+  const rootDiff = rootOrder.indexOf(leftRoot) - rootOrder.indexOf(rightRoot);
+  if (rootDiff) return rootDiff;
+
+  if (leftRoot === "四级" && rightRoot === "四级") {
+    const cet4Type = (name) => /^四级核心(?:\s|$)/.test(name) ? 0 : (/^四级听力(?:\s|$)/.test(name) ? 1 : (/^四级翻译(?:\s|$)/.test(name) ? 2 : 3));
+    const typeDiff = cet4Type(leftName) - cet4Type(rightName);
+    if (typeDiff) return typeDiff;
+  }
+
+  const leftSeq = progressGroupSequence(leftName);
+  const rightSeq = progressGroupSequence(rightName);
+  if (leftSeq !== rightSeq) return leftSeq - rightSeq;
+  return String(leftName).localeCompare(String(rightName), "zh-CN", { numeric: true, sensitivity: "base" });
+}
+
+function progressCet4SectionName(groupName = "") {
+  const name = canonicalProgressGroupName(groupName);
+  if (/^四级核心(?:\s|$)/.test(name)) return "四级核心";
+  if (/^四级听力(?:\s|$)/.test(name)) return "四级听力";
+  if (/^四级翻译(?:\s|$)/.test(name)) return "四级翻译";
+  if (/^四级(?:\s|$)/.test(name)) return "普通四级词库";
+  return "";
+}
 
 function renderGroupProgress() {
   const groups = new Map();
   state.words.forEach((word) => {
-    wordGroupNames(word).forEach((name) => {
+    wordGroupNames(word).forEach((rawName) => {
+      const name = canonicalProgressGroupName(rawName);
       if (!groups.has(name)) groups.set(name, []);
       if (!groups.get(name).some((item) => item.id === word.id)) groups.get(name).push(word);
     });
@@ -4769,8 +6429,16 @@ function renderGroupProgress() {
   const modeName = PROGRESS_MODE_LABELS[state.practiceMode] || "当前模式";
   const rootNames = ["全部", ...Array.from(new Set([...groups.keys()].map(progressRootName))).filter(Boolean)];
   if (!rootNames.includes(progressGroupFilter)) progressGroupFilter = "全部";
-  const shownEntries = [...groups.entries()].filter(([name]) => progressGroupFilter === "全部" || progressRootName(name) === progressGroupFilter);
-  const shownWordsRaw = progressGroupFilter === "全部" ? state.words : shownEntries.flatMap(([, words]) => words);
+  const rootEntries = [...groups.entries()]
+    .filter(([name]) => progressGroupFilter === "全部" || progressRootName(name) === progressGroupFilter)
+    .sort(([leftName], [rightName]) => progressGroupCompare(leftName, rightName));
+  const cet4Sections = ["四级核心", "四级翻译", "普通四级词库"];
+  if (!cet4Sections.includes(progressCet4Filter)) progressCet4Filter = "四级核心";
+  const shownEntries = progressGroupFilter === "四级"
+    ? rootEntries.filter(([name]) => progressCet4SectionName(name) === progressCet4Filter)
+    : rootEntries;
+  // 四级总进度仍统计整个四级大类；二级按钮只控制下面具体分组，避免一次铺满几十组。
+  const shownWordsRaw = progressGroupFilter === "全部" ? state.words : rootEntries.flatMap(([, words]) => words);
   const shownWords = [...new Map(shownWordsRaw.map((word) => [word.id, word])).values()];
   const learnedAll = shownWords.filter((word) => modeProgress(word).stage >= 0).length;
   const matureAll = shownWords.filter((word) => statusOf(word) === "mature").length;
@@ -4779,6 +6447,7 @@ function renderGroupProgress() {
   const allPercent = shownWords.length ? Math.round((learnedAll / shownWords.length) * 100) : 0;
 
   const tabs = `<div class="progress-folder-tabs">${rootNames.map((name) => `<button class="progress-folder-tab ${name === progressGroupFilter ? "active" : ""}" data-progress-filter="${escapeHTML(name)}" type="button">${escapeHTML(name)}</button>`).join("")}</div>`;
+  const cet4Tabs = progressGroupFilter === "四级" ? `<div class="progress-cet4-tabs">${cet4Sections.map((name)=>`<button class="progress-cet4-tab ${name===progressCet4Filter?'active':''}" data-progress-cet4-filter="${escapeHTML(name)}" type="button">${escapeHTML(name)}</button>`).join('')}</div>` : '';
   const allGroupName = progressGroupFilter === "全部" ? "all" : `__root__${progressGroupFilter}`;
   const allCard = `
       <article class="group-card progress-summary-card${state.activeGroup === allGroupName ? " active" : ""}" data-group-action="study" data-group="${escapeHTML(allGroupName)}" data-root-group="${escapeHTML(progressGroupFilter)}">
@@ -4788,6 +6457,7 @@ function renderGroupProgress() {
         <button class="text-button" type="button">只背这一大类</button>
       </article>`;
 
+  const activeExactGroup = activeRootGroupName(state.activeGroup) ? "" : canonicalProgressGroupName(state.activeGroup);
   const cards = shownEntries.map(([name, words]) => {
     const learned = words.filter((word) => modeProgress(word).stage >= 0).length;
     const mature = words.filter((word) => statusOf(word) === "mature").length;
@@ -4795,7 +6465,7 @@ function renderGroupProgress() {
     const important = words.filter((word) => word.important).length;
     const percent = Math.round((learned / words.length) * 100);
     return `
-      <article class="group-card${state.activeGroup === name ? " active" : ""}" data-group-action="study" data-group="${escapeHTML(name)}">
+      <article class="group-card${activeExactGroup === name ? " active" : ""}" data-group-action="study" data-group="${escapeHTML(name)}">
         <strong>${escapeHTML(name)}</strong>
         <div class="progress-bar"><div class="progress-fill" style="width:${percent}%"></div></div>
         <p>${learned}/${words.length} 已学 · 到期 ${due} · 重点 ${important} · 稳定 ${mature}</p>
@@ -4803,11 +6473,11 @@ function renderGroupProgress() {
       </article>`;
   }).join("");
 
-  els.groupProgress.innerHTML = tabs + allCard + cards;
+  els.groupProgress.innerHTML = tabs + cet4Tabs + allCard + cards;
 }
 
 function activateModuleFromApp(name = "study") {
-  const titleMap = { folder: "英语资料夹", study: "记忆训练", smart: "构词归类", progress: "学习进度", manage: "管理词库" };
+  const titleMap = { folder: "英语资料夹", peppa: "小猪佩奇", study: "记忆训练", smart: "构词归类", review: "快速复习", browse: "全词浏览", progress: "学习进度", manage: "管理词库" };
   const target = titleMap[name] ? name : "study";
   document.querySelectorAll("[data-module-target]").forEach((button) => {
     button.classList.toggle("active", button.dataset.moduleTarget === target);
@@ -4841,6 +6511,10 @@ function setMastery(word, level) {
   if (!MASTERY_LEVELS.includes(level)) {
     return;
   }
+  if (level === "稳定" && translationSpellingInfo(word) && translationSpellingApproval !== word.id) {
+    return withTranslationSpelling(word, () => setMastery(word, level));
+  }
+  if (level === "稳定" && !consumeTranslationSpelling(word, "remember")) return false;
   word.mastery = level;
   if (level === "稳定") {
     word.status = "mature";
@@ -4868,6 +6542,9 @@ function choiceOptionsFor(word) {
 
 function answerChoice(word, selectedTerm) {
   const correct = normalizeSpelling(selectedTerm) === normalizeSpelling(word.term);
+  if (correct && translationSpellingInfo(word) && translationSpellingApproval !== word.id) {
+    return withTranslationSpelling(word, () => answerChoice(word, selectedTerm));
+  }
   state.choiceResult = { selectedTerm, correct };
   state.answerVisible = true;
   const completedAt = new Date();
@@ -4884,7 +6561,7 @@ function answerChoice(word, selectedTerm) {
   }, "choiceZhToEn");
   if (correct) {
     rememberReviewUndo(word, "remember");
-    scheduleNext(word, modeProgress(word, "choiceZhToEn").stage < 0 ? "new" : "remember", { completedAt, silent: true });
+    if (scheduleNext(word, modeProgress(word, "choiceZhToEn").stage < 0 ? "new" : "remember", { completedAt, silent: true }) === false) return false;
   }
   word.updatedAt = completedAt.toISOString();
   saveWords();
@@ -4902,8 +6579,94 @@ function answerChoice(word, selectedTerm) {
   }
 }
 
+
+function isCet4CoreFamilyScope() {
+  const root = activeRootGroupName(state.activeGroup);
+  if (root === "四级核心") return true;
+  return /^四级核心(?:\s|$)/.test(activeGroupDisplayName(state.activeGroup));
+}
+
+function cet4CoreFamilyCompare(a, b) {
+  const af = Number(a?.coreFamilyOrder || 999);
+  const bf = Number(b?.coreFamilyOrder || 999);
+  if (af !== bf) return af - bf;
+  const ar = Number(a?.coreRelationOrder || 99);
+  const br = Number(b?.coreRelationOrder || 99);
+  if (ar !== br) return ar - br;
+  const ai = Number(a?.coreItemOrder || 999);
+  const bi = Number(b?.coreItemOrder || 999);
+  if (ai !== bi) return ai - bi;
+  return String(a?.term || "").localeCompare(String(b?.term || ""), "en", { sensitivity: "base" });
+}
+
+function cet4CoreFamilyMembers(word) {
+  const family = normalizeText(word?.coreFamily);
+  if (!family) return [];
+  return state.words
+    .filter((item) => item?.source === "四级核心" && normalizeText(item?.coreFamily) === family)
+    .sort(cet4CoreFamilyCompare);
+}
+
+function renderCet4CoreFamilyContext(word) {
+  if (word?.source !== "四级核心" || !normalizeText(word?.coreFamily)) return "";
+  // B101：后面的跨词族关联筛选会使用 family。B095-B100 漏掉了这个局部变量，
+  // 一旦评分后下一词恰好是四级核心词，renderActiveCard() 就会抛 ReferenceError，
+  // 从而被主卡片按钮异常保护捕获，用户看到“按钮执行失败”并误以为没有前进。
+  const family = normalizeText(word.coreFamily);
+  const members = cet4CoreFamilyMembers(word);
+  if (!members.length) return "";
+  const groups = [];
+  members.forEach((item) => {
+    const relation = normalizeText(item.coreRelation) || "关联词";
+    let group = groups.find((entry) => entry.relation === relation);
+    if (!group) {
+      group = { relation, items: [] };
+      groups.push(group);
+    }
+    if (!group.items.some((entry) => normalizeSpelling(entry.term) === normalizeSpelling(item.term))) group.items.push(item);
+  });
+  const familyOrder = Number(word.coreFamilyOrder || 0);
+  const familyName = normalizeText(word.coreFamily) || "词族";
+  const familyLabel = `${familyOrder > 0 ? String(familyOrder).padStart(2, "0") + " " : ""}${familyName}`;
+  const currentRelation = normalizeText(word.coreRelation) || "关联词";
+  const crossReferences = (state.words || []).filter((item) => item?.source === "四级核心" && normalizeText(item?.coreFamily) !== family && Array.isArray(item?.coreCrossLinks) && item.coreCrossLinks.some((link) => normalizeText(link?.family) === family));
+  return `<details class="cet4-core-family-study">
+    <summary><b>${escapeHTML(familyLabel)}</b><span>当前：${escapeHTML(currentRelation)}</span><em>同族 ${members.length} 条</em></summary>
+    <div class="cet4-core-family-study-groups">
+      ${groups.map((group) => `<div class="cet4-core-family-study-group"><strong>${escapeHTML(group.relation)}</strong><div>${group.items.map((item) => `<span class="${item.id === word.id ? "is-current" : ""}">${escapeHTML(item.term)}</span>`).join("")}</div></div>`).join("")}
+      ${crossReferences.length ? `<div class="cet4-core-family-study-group"><strong>跨词族关联</strong><div>${crossReferences.map((item) => `<span>${escapeHTML(item.term)}</span>`).join("")}</div></div>` : ""}
+    </div>
+  </details>`;
+}
+
+function studyMeaningForWord(word) {
+  const activeTopic = normalizeText(state?.activeGroup || "");
+  const topicMeaning = normalizeText(word?.topicMeanings?.[activeTopic] || "");
+  if (topicMeaning) return topicMeaning;
+  if ((word?.source === "四级核心" || activeTopic.startsWith("四级核心")) && normalizeText(word?.coreMeaning)) {
+    return normalizeText(word.coreMeaning);
+  }
+  return normalizeText(word?.meaning || "") || "未填中文";
+}
+
+function splitAllMeaningSegments(text) {
+  return normalizeText(text || "")
+    .split(/[；;。]/)
+    .map((item) => normalizeText(item).replace(/^[,，、:：\s]+/, ""))
+    .filter(Boolean);
+}
+
+function renderCet4CoreAllMeaning(text) {
+  const parts = splitAllMeaningSegments(text);
+  if (!parts.length) return `<p class="word-meaning">未填中文</p>`;
+  return `<div class="cet4-core-all-meaning">
+    <div class="cet4-core-all-meaning-title">全部词义</div>
+    ${parts.map((part) => `<p>${escapeHTML(part)}</p>`).join("")}
+  </div>`;
+}
+
 function practiceView(word) {
-  const safeMeaning = word.meaning || "未填中文";
+  const safeMeaning = studyMeaningForWord(word);
   const safeTerm = word.term || "未命名";
   const phrase = word.phrase || "";
 
@@ -5469,8 +7232,55 @@ function extractWordPhonetic(word) {
 }
 
 function renderAudioButton(label, action, phonetic) {
-  const phoneticText = phonetic ? `<small>${escapeHTML(phonetic)}</small>` : "";
-  return `<button class="secondary-button audio-button phonetic-audio" data-card-action="${escapeHTML(action)}" type="button"><span>${escapeHTML(label)}</span>${phoneticText}</button>`;
+  return `<button class="secondary-button audio-button phonetic-audio" data-card-action="${escapeHTML(action)}" type="button" aria-label="${escapeHTML(label)}朗读"><span>${escapeHTML(label)}</span></button>`;
+}
+
+function memoryChunksOf(word) {
+  return (Array.isArray(word?.memoryChunks) ? word.memoryChunks : [])
+    .map((item) => ({
+      text: normalizeText(item?.text || item),
+      meaning: normalizeText(item?.meaning || ""),
+      kind: normalizeText(item?.kind || "memory"),
+    }))
+    .filter((item) => item.text)
+    .slice(0, 2);
+}
+
+function renderMemoryChunks(word) {
+  const chunks = memoryChunksOf(word);
+  if (!chunks.length) return "";
+  return `<details class="memory-chunks-v52 memory-chunks-v53" aria-label="高频词组和记忆语块">
+    <summary><span>高频词组 · 记忆语块（可选）</span><small>需要时再展开</small></summary>
+    <div class="memory-chunks-list-v52">
+      ${chunks.map((item, index) => `<div class="memory-chunk-v52"><b>${index + 1}</b><span>${escapeHTML(item.text)}</span>${item.meaning ? `<em>${escapeHTML(item.meaning)}</em>` : ""}</div>`).join("")}
+    </div>
+  </details>`;
+}
+
+function renderImageMemory(word, options = {}) {
+  const api = window.WordMemoryImageMemory;
+  if (!api?.build || !api?.render) return "";
+  const scene = api.build(word);
+  // B069：只有已经制作并接入的正式场景图才允许显示，未配图词不生成通用占位图。
+  if (!scene?.customScene || !scene?.asset) return "";
+  return api.render(word, options) || "";
+}
+
+function renderTodaySceneMemory(word) {
+  if (!els.todaySceneMemory) return;
+  const image = word && state.practiceMode !== "threeStep" && state.answerVisible
+    ? renderImageMemory(word, { open: true })
+    : "";
+  const showScene = Boolean(image);
+  els.todaySceneMemory.innerHTML = image;
+  els.todaySceneMemory.hidden = !showScene;
+  els.todaySceneMemory.classList.toggle("showing-official-scene", showScene);
+  els.todaySceneMemory.closest(".hero-workbench")?.classList.toggle("has-official-scene", showScene);
+}
+
+function memoryChunksPlain(word) {
+  const chunks = memoryChunksOf(word);
+  return chunks.map((item, index) => `语块${index + 1}：${item.text}${item.meaning ? `（${item.meaning}）` : ""}`).join("\n");
 }
 
 function renderLayeredMeaning(answerText) {
@@ -5509,13 +7319,14 @@ function renderPlainListCard() {
     <div class="plain-speed-card">
       <div class="plain-speed-head"><h3>纯文字速刷</h3><p>一屏多词，适合快速过重点和到期词。</p></div>
       <div class="plain-speed-list">
-        ${queue.map((word) => `<article class="plain-speed-row" data-id="${escapeHTML(word.id)}"><b>${escapeHTML(word.term)}</b><span>${escapeHTML(meaningSegments(word.meaning)[0] || word.meaning || word.phrase || "未填释义")}</span><em>${priorityOf(word)}级</em><div><button data-card-action="studyword:${escapeHTML(word.id)}:remember" class="primary-button" type="button">记完</button><button data-card-action="studyword:${escapeHTML(word.id)}:fuzzy" class="secondary-button" type="button">模糊</button><button data-card-action="studyword:${escapeHTML(word.id)}:forgot" class="danger-button" type="button">忘了</button></div></article>`).join("")}
+        ${queue.map((word) => `<article class="plain-speed-row" data-id="${escapeHTML(word.id)}"><b>${escapeHTML(word.term)}</b><span>${escapeHTML(word.source === "四级核心" ? studyMeaningForWord(word) : (meaningSegments(word.meaning)[0] || word.meaning || word.phrase || "未填释义"))}</span><em>${priorityOf(word)}级</em><div><button data-card-action="studyword:${escapeHTML(word.id)}:remember" class="primary-button" type="button">记完</button><button data-card-action="studyword:${escapeHTML(word.id)}:fuzzy" class="secondary-button" type="button">模糊</button><button data-card-action="studyword:${escapeHTML(word.id)}:forgot" class="danger-button" type="button">忘了</button></div></article>`).join("")}
       </div>
     </div>`;
 }
 
 function renderActiveCard() {
   const word = activeWord();
+  renderTodaySceneMemory(word);
   if (!word) {
     const message = GRAMMAR_PRACTICE_MODES.has(state.practiceMode) && state.words.length ? "当前分组没有可训练词条" : (state.practiceMode === "forms" && state.words.length ? "当前没有可练的动词变形" : (state.words.length ? "现在没有到期词" : "先加入第一批单词"));
     const detail = GRAMMAR_PRACTICE_MODES.has(state.practiceMode) && state.words.length ? "当前模式会自动跳过不符合条件或标注不明确的词条；可切换到“全部”或其他词库" : (state.practiceMode === "forms" && state.words.length ? "短语不会进入变形练习；可以切换 Word List 或添加单个动词" : (state.words.length ? "切到“新词记忆”或“全部抽查”继续" : "把你发来的单词和短语放进词库"));
@@ -5541,19 +7352,24 @@ function renderActiveCard() {
     return;
   }
   const typingMode = ["spell", "dictation", "forms", "spellingWeak", "dictationWeak"].includes(state.practiceMode);
+  const hidePhoneticForSpelling = ["spell", "dictation", "spellingWeak", "dictationWeak"].includes(state.practiceMode);
   const letters = typingMode ? [] : word.term.replace(/[^a-zA-Z]/g, "").slice(0, 9).split("");
   const ribbon = typingMode
     ? (state.practiceMode === "forms" ? "<span>F</span><span>O</span><span>R</span><span>M</span>" : "<span>S</span><span>P</span><span>E</span><span>L</span><span>L</span>")
     : (letters.length ? letters.map((letter) => `<span>${escapeHTML(letter)}</span>`).join("") : "<span>W</span><span>O</span><span>R</span><span>D</span>");
   const view = practiceView(word);
   const contextCard = renderContextCard(word);
+  const cet4CoreFamilyContext = renderCet4CoreFamilyContext(word);
   const choiceBox = state.practiceMode === "choiceZhToEn" ? renderChoiceBox(word) : "";
   const previousHint = renderPreviousWordHint();
   const phonetic = extractWordPhonetic(word);
   const threeStepBox = state.practiceMode === "threeStep" ? renderThreeStepBox(word, view) : "";
-  const answer = state.practiceMode === "threeStep" ? "" : (state.answerVisible ? renderLayeredMeaning(view.answer) : `<div class="answer-mask">${escapeHTML(view.hidden)}</div>`);
+  const answer = state.practiceMode === "threeStep" ? "" : (state.answerVisible
+    ? (word.source === "四级核心" ? renderCet4CoreAllMeaning(view.answer) : renderLayeredMeaning(view.answer))
+    : `<div class="answer-mask">${escapeHTML(view.hidden)}</div>`);
   const extra = state.practiceMode === "threeStep" ? "" : (state.answerVisible && view.extra ? `<p class="word-phrase">${escapeHTML(view.extra)}</p>` : "");
   const note = state.practiceMode === "threeStep" ? "" : (state.answerVisible && word.note ? `<p class="word-note">备注：${escapeHTML(word.note)}</p>` : "");
+  const memoryChunksBox = state.practiceMode === "threeStep" ? "" : (state.answerVisible ? renderMemoryChunks(word) : "");
   const important = word.important ? `<p class="important-line">重点词</p>` : "";
   const masteryBox = renderMasteryBox(word);
   const errorReasonBox = renderErrorReasonBox(word);
@@ -5562,12 +7378,12 @@ function renderActiveCard() {
   const undoDisabled = state.reviewUndo ? "" : "disabled";
   const quickActions = `
     <div class="quick-review-actions action-grid-v59 action-grid-v61">
-      <button class="primary-button" data-card-action="remember">${progress.stage < 0 ? "记完" : "会了"}</button>
-      <button class="secondary-button" data-card-action="fuzzy">模糊</button>
-      <button class="secondary-button meaning-button" data-card-action="show">${state.answerVisible ? "隐藏词义" : "显示词义"}</button>
-      <button class="secondary-button" data-card-action="undo-review" ${undoDisabled}>撤回上一个</button>
+      <button class="primary-button" data-card-action="remember" type="button">${progress.stage < 0 ? "记完" : "会了"}</button>
+      <button class="secondary-button" data-card-action="fuzzy" type="button">模糊</button>
+      <button class="secondary-button meaning-button" data-card-action="show" type="button">${state.answerVisible ? "隐藏词义" : "显示词义"}</button>
+      <button class="secondary-button" data-card-action="undo-review" type="button" ${undoDisabled}>撤回上一个</button>
       ${renderAudioButton("美音", "speak", phonetic)}
-      <button class="danger-button" data-card-action="forgot">忘了</button>
+      <button class="danger-button" data-card-action="forgot" type="button">忘了</button>
       <span class="action-spacer" aria-hidden="true"></span>
       ${renderAudioButton("英音", "speak-uk", phonetic)}
       <span class="action-spacer" aria-hidden="true"></span>
@@ -5575,19 +7391,30 @@ function renderActiveCard() {
 
   els.activeCard.innerHTML = `
     <div class="card-top">
-      <div class="letter-ribbon">${ribbon}</div>
-      ${previousHint}
-      <p class="quiz-prompt">${escapeHTML(view.prompt)}</p>
-      <h3 class="${state.practiceMode === "card" || state.practiceMode === "enToZh" ? "word-term" : "quiz-target"}">${escapeHTML(view.target)}</h3>
-      <p class="word-phonetic-line">${phonetic ? escapeHTML(phonetic) : "点击美音或英音听读"}</p>
-      ${contextCard}
-      ${quickActions}
-      ${spellingBox}
-      ${choiceBox}
-      ${threeStepBox}
-      ${answer}
-      ${extra}
-      ${note}
+      <div class="card-study-layout">
+        <div class="card-study-main">
+          ${typingMode ? `<div class="letter-ribbon">${ribbon}</div>` : ""}
+          ${previousHint}
+          <p class="quiz-prompt">${escapeHTML(view.prompt)}</p>
+          ${translationSpellingInfo(word) ? '<p class="translation-required-label">四级翻译 · 记完需拼写通过</p>' : ''}
+    <div class="word-term-row">
+            <h3 class="${state.practiceMode === "card" || state.practiceMode === "enToZh" ? "word-term" : "quiz-target"}">${escapeHTML(view.target)}</h3>
+            <button class="auto-uk-toggle${state.settings.autoBritishNext ? " is-on" : ""}" data-card-action="toggle-auto-uk" type="button" aria-pressed="${state.settings.autoBritishNext ? "true" : "false"}" title="开启后，记完或忘了进入下一个词时自动播放英音">英音自动：${state.settings.autoBritishNext ? "开" : "关"}</button>
+          </div>
+          ${hidePhoneticForSpelling ? "" : (phonetic ? `<p class="word-phonetic-line">${escapeHTML(phonetic)}</p>` : "")}
+          ${contextCard}
+          ${cet4CoreFamilyContext}
+          ${quickActions}
+    <div id="pronunciationStatus" class="pronunciation-status"><span data-pronunciation-message role="status" aria-live="polite"></span><button type="button" class="secondary-button" data-pronunciation-retry data-card-action="speak-system-us" hidden>重试系统语音</button></div>
+          ${spellingBox}
+          ${choiceBox}
+          ${threeStepBox}
+          ${answer}
+          ${extra}
+          ${note}
+        </div>
+      </div>
+      ${memoryChunksBox}
       ${important}
       ${abilityBox}
       ${errorReasonBox}
@@ -5602,6 +7429,9 @@ function renderActiveCard() {
     </div>`;
 
   updateGazeGuidePosition();
+
+  // B058：卡片一出现就静默预热当前读音和下一词英音，减少点击后的网络等待。
+  warmCurrentAndNextPronunciation(word);
 
   if (["dictation", "dictationWeak"].includes(state.practiceMode) && state.lastAutoSpokenId !== word.id) {
     state.lastAutoSpokenId = word.id;
@@ -5643,6 +7473,7 @@ function filteredWords() {
       return matchesQuery && matchesFilter && matchesSource && wordMatchesActiveGroup(word);
     })
     .sort((a, b) => {
+      if (isCet4CoreFamilyScope()) return cet4CoreFamilyCompare(a, b);
       const statusDiff = Number(isDue(b)) - Number(isDue(a));
       if (statusDiff) {
         return statusDiff;
@@ -5818,6 +7649,9 @@ function bulkAdd() {
 }
 
 function finishPosQuiz(word, correct, answerLabel, kind, selected) {
+  if (correct && translationSpellingInfo(word) && translationSpellingApproval !== word.id) {
+    return withTranslationSpelling(word, () => finishPosQuiz(word, correct, answerLabel, kind, selected));
+  }
   const completedAt = new Date();
   const mode = state.practiceMode;
   if (!correct) {
@@ -5831,7 +7665,7 @@ function finishPosQuiz(word, correct, answerLabel, kind, selected) {
     }[kind] || "语法判断错误";
   }
   rememberReviewUndo(word, correct ? "remember" : "forgot");
-  scheduleNext(word, modeProgress(word, mode).stage < 0 && correct ? "new" : (correct ? "remember" : "forgot"), { silent: true });
+  if (scheduleNext(word, modeProgress(word, mode).stage < 0 && correct ? "new" : (correct ? "remember" : "forgot"), { silent: true }) === false) return false;
   recordModeHistory(word, {
     time: completedAt.toISOString(),
     result: correct ? `${kind}-correct` : `${kind}-wrong`,
@@ -5892,7 +7726,18 @@ function skipPosQuiz(word) {
   render();
 }
 
+function maybeAutoSpeakNextBritish(result, previousWordId = "") {
+  if (!state.settings?.autoBritishNext || !["remember", "forgot"].includes(result)) return;
+  // 听写模式已有自动美音，避免双重朗读互相打架。
+  if (["dictation", "dictationWeak"].includes(state.practiceMode)) return;
+  const nextWord = activeWord();
+  if (!nextWord || nextWord.id === previousWordId) return;
+  // 这里保持在用户点击“记完/忘了”的同一个事件链里立即 play，移动端更不容易被自动播放策略拦截。
+  speakTerm(nextWord.term, { accent: "uk", silent: true });
+}
+
 function handleCardAction(action) {
+  if (window.TranslationSpelling?.isOpen()) return false;
   if (action === "new-mode") {
     setMode("new");
     return;
@@ -5906,18 +7751,33 @@ function handleCardAction(action) {
     const [, id, result] = action.split(":");
     const targetWord = state.words.find((item) => item.id === id);
     if (!targetWord || !["remember", "fuzzy", "forgot"].includes(result)) return;
+    if (result === "remember" && translationSpellingInfo(targetWord) && translationSpellingApproval !== targetWord.id) {
+      return withTranslationSpelling(targetWord, () => handleCardAction(action));
+    }
     state.activeId = targetWord.id;
     rememberReviewUndo(targetWord, result);
-    scheduleNext(targetWord, modeProgress(targetWord).stage < 0 && result === "remember" ? "new" : result, { silent: true });
+    if (scheduleNext(targetWord, modeProgress(targetWord).stage < 0 && result === "remember" ? "new" : result, { silent: true, deferStoreWrites: true }) === false) return false;
     saveWords();
     state.answerVisible = false;
     resetTypingState();
     render();
+    maybeAutoSpeakNextBritish(result, targetWord.id);
     showToast(result === "remember" ? "已记完" : (result === "fuzzy" ? "已加入模糊复习" : "已加入重点复习"));
     return;
   }
   const word = activeWord();
   if (!word) {
+    return;
+  }
+  if (action === "remember" && translationSpellingInfo(word) && translationSpellingApproval !== word.id) {
+    return withTranslationSpelling(word, () => handleCardAction(action));
+  }
+  if (action === "toggle-auto-uk") {
+    state.settings.autoBritishNext = !state.settings.autoBritishNext;
+    saveSettings();
+    if (state.settings.autoBritishNext) warmCurrentAndNextPronunciation(word);
+    renderActiveCard();
+    showToast(state.settings.autoBritishNext ? "已开启：记完或忘了后，下一个词自动播放英音" : "已关闭下一个词自动英音");
     return;
   }
   if (action === "context-toggle") {
@@ -5978,6 +7838,10 @@ function handleCardAction(action) {
   }
   if (action === "pos-speak") {
     speakTerm(word.term, { accent: "us" });
+    return;
+  }
+  if (action === "speak-system-us" || action === "speak-system-uk") {
+    speakTerm(word.term, { accent: action.endsWith("uk") ? "uk" : "us", preferSystem: true });
     return;
   }
   if (action === "speak") {
@@ -6093,16 +7957,21 @@ function handleCardAction(action) {
   }
   if (["remember", "fuzzy", "forgot"].includes(action)) {
     const progress = activeModeProgress(word);
+    // B100：必须在评分前记录下一词。评分会改变当前词的排序/筛选状态，
+    // 评分后才找下一词会出现“点了会了却仍停在原词”的视觉故障。
+    const preferredNextId = nextWordIdBeforeRating(word.id);
     rememberReviewUndo(word, action);
-    scheduleNext(word, progress.stage < 0 && action === "remember" ? "new" : action);
+    if (scheduleNext(word, progress.stage < 0 && action === "remember" ? "new" : action, { deferStoreWrites: true }) === false) return false;
     if (state.sprint.active) {
       state.sprint.completed += 1;
     }
-    saveWords();
     state.answerVisible = false;
     resetTypingState();
-    chooseActiveWord(true);
-    renderStudyTransition();
+    advanceAfterRating(word.id, preferredNextId);
+    // 先写入新的 activeId，再保存；这样主存档/手机大容量存档也会记住“已经前进”的位置。
+    saveWords();
+    renderStudyTransition({ preserveActive: true });
+    maybeAutoSpeakNextBritish(action, word.id);
     focusTypingInputSoon();
   }
 }
@@ -6145,7 +8014,7 @@ function startNewWords() {
   setMode("new");
 }
 
-function batchLearnNewWords() {
+async function batchLearnNewWords() {
   if (!guardEditable()) {
     return;
   }
@@ -6157,17 +8026,25 @@ function batchLearnNewWords() {
   }
 
   const scope = visibleNew.length === words.length && (state.query || state.filter !== "all") ? "当前筛选的新词" : "所有新词";
-  if (!confirm(`把${scope}（${words.length} 个）全部标为已记完，并从现在开始安排 20 分钟后的第一次复习？`)) {
+  const spellingCount = words.filter(word => translationSpellingInfo(word)).length;
+  if (!confirm(`处理${scope}（${words.length} 个），其中 ${spellingCount} 个四级翻译词需要逐词拼写；可中途暂停。通过后安排第一次复习，是否开始？`)) {
     return;
   }
 
-  const completedAt = nowDate();
-  words.forEach((word) => scheduleNext(word, "new", { completedAt, silent: true }));
+  let completedCount = 0;
+  for (const word of words) {
+    const completed = await withTranslationSpelling(word, () => scheduleNext(word, "new", { completedAt: nowDate(), silent: true }));
+    if (completed === false) break;
+    completedCount += 1;
+    // Persist each success so reload/cancel cannot erase completed batch items.
+    saveWords();
+  }
+  if (!completedCount) { showToast("已暂停，没有词被标为记完。"); return; }
   saveWords();
   setStudyMode("due");
   state.answerVisible = false;
   render();
-  showToast(`已安排 ${words.length} 个新词：${formatDateTime(activeModeProgress(words[0]).nextReviewAt)} 复习`);
+  showToast(`已完成 ${completedCount} 个新词；其余 ${words.length - completedCount} 个保持原进度。`);
 }
 
 function deleteWord(id) {
@@ -6199,8 +8076,12 @@ function exportWords() {
     studyTime: state.studyTime,
     studySession: captureStudySessionSnapshot(),
     dailyCompleted: normalizeDailyCompletedStore(dailyCompletedStore),
+    checkIn: normalizeCheckInStore(checkInStore),
+    reviewActions: normalizeReviewActionStore(reviewActionStore),
     contextStudy: normalizeContextStudyStore(contextStudyStore),
     memoryLab: normalizeMemoryLabStore(memoryLabStore),
+    browsePractice: normalizeBrowsePracticeSnapshot(state.browsePractice || {}),
+    peppaZone: window.PeppaZone?.exportState?.() || null,
     words: state.words,
   };
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json;charset=utf-8" });
@@ -6311,12 +8192,21 @@ async function importWords(event) {
     });
 
     if (parsed.studyTime) {
-      state.studyTime = normalizeStudyTime(parsed.studyTime);
+      // B068：导入较旧备份时只补全时长，绝不把本机或恢复基线中的累计时长降回去。
+      state.studyTime = mergeStudyTimeForCloud(state.studyTime, parsed.studyTime);
       saveStudyTime();
     }
     if (parsed.dailyCompleted) {
       dailyCompletedStore = mergeDailyCompletedStores(dailyCompletedStore, parsed.dailyCompleted);
       saveDailyCompletedStore();
+    }
+    if (parsed.checkIn) {
+      checkInStore = mergeCheckInStores(checkInStore, parsed.checkIn);
+      saveCheckInStore();
+    }
+    if (parsed.reviewActions) {
+      reviewActionStore = mergeReviewActionStores(reviewActionStore, parsed.reviewActions);
+      saveReviewActionStore();
     }
     if (parsed.contextStudy) {
       contextStudyStore = mergeContextStudyStores(contextStudyStore, parsed.contextStudy);
@@ -6326,7 +8216,15 @@ async function importWords(event) {
       memoryLabStore = mergeMemoryLabStores(memoryLabStore, parsed.memoryLab);
       saveMemoryLabStore();
     }
+    if (parsed.browsePractice) {
+      setBrowsePracticeSnapshot(parsed.browsePractice, { merge: true, save: false, notify: true });
+    }
+    if (parsed.peppaZone && window.PeppaZone?.importState) {
+      window.PeppaZone.importState(parsed.peppaZone, { merge: true });
+    }
     syncTodayCompletedFromHistories();
+    backfillCheckInFromExistingRecords();
+    backfillReviewActionsFromExistingRecords();
     if (parsed.studySession) applyStudySessionSnapshot(parsed.studySession);
     else setActiveId(null);
     saveWords({ immediate: true });
@@ -6517,8 +8415,12 @@ function wireEvents() {
   els.activeCard.addEventListener("pointerleave", onFingerPointerCancel, { passive: true });
   els.activeCard.addEventListener("click", (event) => {
     const button = event.target.closest("[data-card-action]");
-    if (button) {
+    if (!button || button.disabled) return;
+    try {
       handleCardAction(button.dataset.cardAction);
+    } catch (error) {
+      console.error("主卡片按钮执行失败", button.dataset.cardAction, error);
+      showToast("按钮执行失败，请刷新后重试");
     }
   });
   els.activeCard.addEventListener("input", (event) => {
@@ -6594,20 +8496,28 @@ function wireEvents() {
       renderGroupProgress();
       return;
     }
+    const cet4FilterBtn = event.target.closest('[data-progress-cet4-filter]');
+    if (cet4FilterBtn) {
+      progressCet4Filter = cet4FilterBtn.dataset.progressCet4Filter || "四级核心";
+      renderGroupProgress();
+      return;
+    }
     const card = event.target.closest('[data-group-action="study"]');
     if (!card) {
       return;
     }
-    const picked = card.dataset.group || "all";
-    if (picked.startsWith("__root__")) {
-      state.activeGroup = picked.replace("__root__", "");
-    } else {
-      state.activeGroup = picked;
-    }
+    const picked = canonicalProgressGroupName(card.dataset.group || "all");
+    state.activeGroup = picked.startsWith("__root__") ? (card.dataset.group || picked) : picked;
     state.wordListLimit = 40;
     state.mode = "all";
-    state.practiceMode = "card";
-    ensurePracticeSession("card");
+    // B103：从“学习进度”点某一组时，保留用户当前训练方式。
+    // 例如用户正在看“拼写”进度，点“蓝色森林 42”就必须继续进入拼写，
+    // 不能像旧版一样强制改回卡片，导致“我点的是拼写却变成其他的”。
+    const currentPracticeMode = PROGRESS_MODES.includes(state.practiceMode) ? state.practiceMode : "card";
+    state.practiceMode = currentPracticeMode;
+    const session = ensurePracticeSession(currentPracticeMode);
+    session.mode = "all";
+    session.activeId = null;
     setActiveId(null);
     state.answerVisible = false;
     resetTypingState();
@@ -6615,7 +8525,9 @@ function wireEvents() {
     chooseActiveWord(true);
     render();
     activateModuleFromApp("study");
-    showToast(state.activeGroup === "all" ? "已切回全部词库，已进入卡片" : `只背 ${state.activeGroup}，已进入卡片`);
+    const groupLabel = activeGroupDisplayName(state.activeGroup);
+    const practiceLabel = PROGRESS_MODE_LABELS[state.practiceMode] || "当前模式";
+    showToast(state.activeGroup === "all" ? `已切回全部词库 · ${practiceLabel}` : `只背 ${groupLabel} · ${practiceLabel}`);
   });
   els.searchInput.addEventListener("input", (event) => {
     state.query = event.target.value.trim();
@@ -6726,6 +8638,18 @@ function wireEvents() {
   els.dueModeButton.addEventListener("click", () => setMode("due"));
   els.newModeButton.addEventListener("click", () => setMode("new"));
   els.allModeButton.addEventListener("click", () => setMode("all"));
+  els.checkInPrev?.addEventListener("click", () => {
+    checkInMonthOffset -= 1;
+    renderCheckInCalendar();
+  });
+  els.checkInNext?.addEventListener("click", () => {
+    checkInMonthOffset = Math.min(0, checkInMonthOffset + 1);
+    renderCheckInCalendar();
+  });
+  els.checkInToday?.addEventListener("click", () => {
+    checkInMonthOffset = 0;
+    renderCheckInCalendar();
+  });
 }
 
 function registerServiceWorker() {
@@ -6739,7 +8663,8 @@ function registerServiceWorker() {
 }
 
 function resetWordLearningProgressForBrowseQuiz(id, options = {}) {
-  const word = state.words.find((item) => String(item.id) === String(id));
+  const canonicalId = canonicalBuiltinAliasId(id);
+  const word = state.words.find((item) => String(item.id) === String(canonicalId));
   if (!word) return { ok: false, reason: "not-found" };
   if (!guardEditable()) return { ok: false, reason: "read-only" };
   const resetAt = new Date().toISOString();
@@ -6780,9 +8705,9 @@ function resetWordLearningProgressForBrowseQuiz(id, options = {}) {
 
 window.WordMemoryApp = {
   getWords: () => state.words,
-  getWord: (id) => state.words.find((word) => word.id === id) || null,
+  getWord: (id) => { const canonicalId = canonicalBuiltinAliasId(id); return state.words.find((word) => String(word.id) === String(canonicalId)) || null; },
   getMemoryLab: () => normalizeMemoryLabStore(memoryLabStore),
-  getAbility: (id) => wordAbilitySummary(state.words.find((word) => word.id === id) || { id }),
+  getAbility: (id) => { const canonicalId = canonicalBuiltinAliasId(id); return wordAbilitySummary(state.words.find((word) => String(word.id) === String(canonicalId)) || { id: canonicalId }); },
   getQuickSession: quickSessionSnapshot,
   getTodayWrongIds: todayWrongWordIds,
   startQuickSession,
@@ -6800,13 +8725,14 @@ window.WordMemoryApp = {
     notifyMemoryLab();
   },
   openWord: (id) => {
-    const word = state.words.find((item) => item.id === id);
+    const canonicalId = canonicalBuiltinAliasId(id);
+    const word = state.words.find((item) => String(item.id) === String(canonicalId));
     if (!word) return false;
     state.quickSession.active = false;
     state.practiceMode = "card";
     state.mode = "all";
     state.activeGroup = "all";
-    setActiveId(id);
+    setActiveId(canonicalId);
     state.answerVisible = false;
     resetTypingState();
     render();
@@ -6814,7 +8740,43 @@ window.WordMemoryApp = {
     document.querySelector('[data-module-target="study"]')?.click?.();
     return true;
   },
-  speakWord: (id) => { const word = state.words.find((item) => item.id === id); if (word) speakTerm(word.term, { accent: "us" }); },
+  openMainSpelling: (groupName = 'all') => {
+    const requestedRaw = normalizeText(groupName || 'all');
+    const requestedGroup = requestedRaw.startsWith('__root__') ? requestedRaw : canonicalProgressGroupName(requestedRaw);
+    const requestedRoot = activeRootGroupName(requestedGroup);
+    const hasGroup = requestedGroup === 'all' || (requestedRoot
+      ? state.words.some((word) => wordGroupNames(word).some((name) => progressRootName(name) === requestedRoot))
+      : state.words.some((word) => wordGroupNames(word).some((name) => canonicalProgressGroupName(name) === requestedGroup)));
+    savePracticeSession();
+    state.quickSession.active = false;
+    state.practiceMode = 'spell';
+    state.mode = 'all';
+    state.activeGroup = hasGroup ? requestedGroup : 'all';
+    state.practiceSessions.spell = { mode: 'all', activeId: null };
+    setActiveId(null);
+    state.answerVisible = false;
+    resetTypingState();
+    state.lastAutoSpokenId = null;
+    chooseActiveWord(true);
+    render();
+    activateModuleFromApp('study');
+    showToast(state.activeGroup === 'all' ? '已进入主要记单词的拼写模式' : `已进入 ${activeGroupDisplayName(state.activeGroup)} 的主要拼写模式`);
+    return true;
+  },
+  speakWord: (id, options = {}) => {
+    const canonicalId = canonicalBuiltinAliasId(id);
+    const word = state.words.find((item) => String(item.id) === String(canonicalId));
+    if (!word) return false;
+    return speakTerm(word.term, { ...options, accent: options.accent === "uk" ? "uk" : "us" });
+  },
+  warmWordPronunciation: (id, accent = "uk") => {
+    const canonicalId = canonicalBuiltinAliasId(id);
+    const word = state.words.find((item) => String(item.id) === String(canonicalId));
+    if (!word) return false;
+    warmPronunciation(word.term, accent === "us" ? "us" : "uk");
+    return true;
+  },
+  isPhraseWord,
   wordSources,
   wordGroupNames,
   wordFamilyStem,
@@ -6823,7 +8785,11 @@ window.WordMemoryApp = {
   priorityOf,
   meaningSegments,
   escapeHTML,
+  getBrowsePractice: () => cloneBrowsePracticeValue(state.browsePractice || {}),
+  setBrowsePractice: (snapshot, options = {}) => setBrowsePracticeSnapshot(snapshot, { merge: options.merge !== false, save: options.save !== false, notify: options.notify !== false }),
   save: () => saveWords({ immediate: true }),
+  saveBuffered: () => saveWords(),
+  recordCheckIn: (payload = {}) => recordStudyCheckIn(payload),
   resetWordLearningProgress: (id, options = {}) => resetWordLearningProgressForBrowseQuiz(id, options),
 };
 
@@ -6836,18 +8802,25 @@ wireEvents();
 initializeMobileFocus();
 registerServiceWorker();
 installStudyTimeTracker();
+backfillCheckInFromExistingRecords();
+applyRecoveredStudyBaselineB068();
+backfillReviewActionsFromExistingRecords();
+initializeReviewActionStableBridge();
 render();
 hydrateWordsFromMobileDatabase();
 initializeCloudFromUrl();
 document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "hidden" && mobileDbHydrated) {
-    saveWords({ skipCloud: true, immediate: true });
+  if (document.visibilityState === "hidden") {
+    flushDeferredLearningStoreSave();
+    if (mobileDbHydrated) saveWords({ skipCloud: true, immediate: true });
   }
 });
 window.addEventListener("pagehide", () => {
+  flushDeferredLearningStoreSave();
   if (mobileDbHydrated) saveWords({ skipCloud: true, immediate: true });
 });
 window.addEventListener("beforeunload", () => {
+  flushDeferredLearningStoreSave();
   if (mobileDbHydrated) flushBufferedWordSave({ skipCloud: true, force: true });
 });
 let periodicHeavyRefreshTicks = 0;
