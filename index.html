@@ -18,7 +18,7 @@
   <div class="app-shell">
     <header class="topbar">
       <div>
-        <p class="eyebrow">WORD MEMORY <span class="version-badge">B150</span></p>
+        <p class="eyebrow">WORD MEMORY <span class="version-badge">B151</span></p>
         <h1>专升本单词记忆</h1>
       </div>
       <div class="topbar-actions">
@@ -33,6 +33,7 @@
             <button class="secondary-button" id="sprintButton"><span aria-hidden="true">◷</span> 15分钟冲刺</button>
             <span class="menu-label">数据与批量操作</span>
             <button class="secondary-button" id="importButton" title="导入旧数据 / 备份文件" aria-label="导入旧数据">↥ 导入旧数据</button>
+            <button class="secondary-button" type="button" onclick="location.hash='reset-local';location.reload()">清空本机全部学习进度</button>
             <button class="secondary-button" id="batchLearnButton"><span aria-hidden="true">✓</span> 一键记完新词</button>
           </div>
         </details>
@@ -674,64 +675,6 @@
     </footer>
   </section>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="./library-folder-data.js?v=70b149"></script>
-  <script src="./word-data.js?v=70b149"></script>
-  <script src="./context-engine.js?v=70b038vocabimport20260809"></script>
-  <script src="./context-data.js?v=70b056statsvocab20260820"></script>
-  <script src="./context-id-data.js?v=70b056statsvocab20260820"></script>
-  <script src="./context-presenter.js?v=70b038vocabimport20260809"></script>
-  <script src="./context-study-engine.js?v=70b038vocabimport20260809"></script>
-  <script src="./mobile-focus.js?v=70b148"></script>
-  <script src="./image-memory.js?v=70b071images280checkpoint20260821"></script>
-  <script src="./recovered-progress-b068.js?v=70b068userbackup20260821"></script>
-  <script src="./browse-user-save-b077.js?v=70b077usersave20260821"></script>
-  <script src="./apply-browse-user-save-b077.js?v=70b082exactprogress20260822"></script>
-  <script src="./translation-spelling-data.js?v=70b148"></script>
-  <script src="./translation-spelling.js?v=70b148"></script>
-  <script src="./app.js?v=70b149"></script>
-  <script src="./peppa-content-b127.js?v=70b127peppatesting20260830"></script>
-  <script src="./peppa-zone.js?v=70b127peppatesting20260830"></script>
-  <script src="./memory-lab.js?v=70b106cet4listen20260826"></script>
-  <script src="./speed-review.js?v=70b128posquick3020260830"></script>
-  <script src="./browse-quiz.js?v=70b118listening320260828"></script>
-  <script src="./folder-view.js?v=70b143"></script>
-  <script src="./smart-vocab.js?v=70b106cet4listen20260826"></script>
-  <script src="./ui-refresh.js?v=70b144"></script>
-  <script>
-    (function(){
-      const buttons = Array.from(document.querySelectorAll('[data-module-target]'));
-      const sections = Array.from(document.querySelectorAll('[data-module-section]'));
-      if (!buttons.length || !sections.length) return;
-      const titleMap = {folder: '英语资料夹', peppa: '小猪佩奇', study: '记忆训练', smart: '构词归类', review: '快速复习', browse: '全词浏览', progress: '学习进度', manage: '管理词库'};
-      const switcher = document.querySelector('.module-switcher');
-      function syncDockHeight(){
-        if (!switcher) return;
-        const height = Math.ceil(switcher.getBoundingClientRect().height || switcher.offsetHeight || 0);
-        document.documentElement.style.setProperty('--module-switcher-dock-height', `${height}px`);
-      }
-      function activate(name, keepHash){
-        const target = titleMap[name] ? name : 'folder';
-        buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.moduleTarget === target));
-        sections.forEach(sec => sec.classList.toggle('active', sec.dataset.moduleSection === target));
-        if (!keepHash) {
-          try { history.replaceState(null, '', '#' + target); } catch (e) {}
-        }
-        const main = document.querySelector('.workspace');
-        if (main) main.dataset.activeModule = target;
-        requestAnimationFrame(syncDockHeight);
-        window.scrollTo({top: 0, behavior: 'smooth'});
-      }
-      buttons.forEach(btn => btn.addEventListener('click', () => activate(btn.dataset.moduleTarget)));
-      const initial = (location.hash || '').replace('#','');
-      activate(titleMap[initial] ? initial : 'folder', true);
-      window.addEventListener('resize', syncDockHeight, { passive: true });
-      window.addEventListener('load', syncDockHeight, { once: true });
-      if ('ResizeObserver' in window && switcher) {
-        const dockObserver = new ResizeObserver(() => syncDockHeight());
-        dockObserver.observe(switcher);
-      }
-      window.addEventListener('hashchange', () => activate((location.hash || '').replace('#',''), true));
-    })();
-  </script>
+  <script src="./startup.js?v=70b151"></script>
 </body>
 </html>

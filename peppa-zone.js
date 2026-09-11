@@ -700,11 +700,11 @@
       sentences: LEARNED_SENTENCES_S1E1.map((x, i) => {
         const item = normalizeItem({
           id:`peppa-s1e1-full-s${i+1}`, ...x,
-          status:'mastered', attempts:1, remembered:1,
-          dictationPassed:true, dictationPassedAt:S1E1_COMPLETED_AT,
+          status:'new', attempts:0, remembered:0,
+          dictationPassed:false, dictationPassedAt:'',
           createdAt:created, updatedAt:created
         }, 'sentences');
-        initializeSpellingSchedule(item, S1E1_COMPLETED_AT);
+        // B151: seed content carries no learning history.
         return item;
       }),
       words: LEARNED_WORDS_S1E1.map((x, i) => normalizeItem({ id:`peppa-s1e1-w${i+1}`, ...x, createdAt:created, updatedAt:created }, 'words'))
@@ -890,7 +890,7 @@
     seedOrMigrateEpisode(next, {
       id:'peppa-s1e1', season:1, episode:1, title:'Muddy Puddles', titleZh:'泥水坑',
       sentences:LEARNED_SENTENCES_S1E1, words:LEARNED_WORDS_S1E1
-    }, { forceDictationPassed:true });
+    });
 
     const e2 = B127_CONTENT.episode2 || {};
     seedOrMigrateEpisode(next, {

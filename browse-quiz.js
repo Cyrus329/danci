@@ -495,10 +495,7 @@
       if (ownRaw) merged = mergeStores(merged, ownRaw, kind);
       const legacyRaw = readStoreRaw(LEGACY_STORAGE_KEY);
       if (legacyRaw) merged = mergeStores(merged, legacyRaw, kind);
-      if (kind === 'word') {
-        const b077 = window.WORD_MEMORY_BROWSE_USER_SAVE_B077;
-        if (b077?.kind === 'word' && b077?.browseQuiz) merged = mergeStores(merged, b077.browseQuiz, 'word');
-      }
+
     }
     return repairImpossibleSessionCursor(merged, kind).store;
   }
@@ -1612,7 +1609,7 @@
 
   // 初次迁移完成后立刻写进主存档；以后每次作答都跟随主存档保存。
   persistPracticeToMain({ save: true });
-  initializeBrowseStableBridge();
+  // B151: explicit cloud/import only; no cross-site snapshot restoration.
 
   els.close?.addEventListener('click', close);
   els.previous?.addEventListener('click', () => move(-1));

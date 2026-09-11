@@ -32,15 +32,11 @@ const CHECK_IN_KEY = "word-memory-trainer:check-in:v1";
 const REVIEW_ACTIONS_KEY = "word-memory-trainer:review-actions:v1";
 // B068：用户提供的 2026-08-21 存档中可验证的学习基线。
 // 仅保存真实打卡日期、动作下限和累计时长；不把词条创建/导入日期当成学习。
-const RECOVERED_STUDY_BASELINE_B068 = {"studyTime":{"totalSeconds":359000,"todaySeconds":1629,"today":"2026-08-21","updatedAt":"2026-08-21T02:34:06.324Z"},"checkIn":{"version":1,"updatedAt":"2026-08-21T02:34:59.438Z","days":{"2026-06-14":{"actions":40,"firstAt":"2026-06-14T10:05:02.306Z","lastAt":"2026-06-14T10:10:26.740Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-06-29":{"actions":4,"firstAt":"2026-06-29T14:46:56.402Z","lastAt":"2026-06-29T14:47:16.158Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-13":{"actions":746,"firstAt":"2026-07-13T00:41:33.932Z","lastAt":"2026-07-13T05:50:30.472Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-14":{"actions":303,"firstAt":"2026-07-14T06:31:24.587Z","lastAt":"2026-07-14T07:26:42.033Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-19":{"actions":375,"firstAt":"2026-07-19T00:27:13.797Z","lastAt":"2026-07-19T11:38:12.205Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-20":{"actions":227,"firstAt":"2026-07-20T09:24:26.604Z","lastAt":"2026-07-20T15:44:06.076Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-21":{"actions":62,"firstAt":"2026-07-21T04:15:16.914Z","lastAt":"2026-07-21T05:16:13.668Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-22":{"actions":23,"firstAt":"2026-07-22T00:23:31.494Z","lastAt":"2026-07-22T00:29:29.789Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-23":{"actions":309,"firstAt":"2026-07-23T04:43:52.257Z","lastAt":"2026-07-23T14:21:38.304Z","wordIds":[],"sources":["legacy"],"eventIds":[]},"2026-07-24":{"actions":589,"firstAt":"2026-07-24T09:58:54.801Z","lastAt":"2026-07-24T12:00:00","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-07-25":{"actions":795,"firstAt":"2026-07-25T01:33:22.870Z","lastAt":"2026-07-25T13:19:35.224Z","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-07-26":{"actions":620,"firstAt":"2026-07-26T00:12:38.628Z","lastAt":"2026-07-26T13:42:07.257Z","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-07-27":{"actions":706,"firstAt":"2026-07-27T03:52:26.248Z","lastAt":"2026-07-27T15:56:26.348Z","wordIds":[],"sources":["legacy","daily-completed","context"],"eventIds":[]},"2026-07-28":{"actions":569,"firstAt":"2026-07-27T16:01:43.664Z","lastAt":"2026-07-28T15:33:34.404Z","wordIds":[],"sources":["legacy","daily-completed","context"],"eventIds":[]},"2026-07-29":{"actions":615,"firstAt":"2026-07-29T00:03:32.273Z","lastAt":"2026-07-29T12:00:00","wordIds":[],"sources":["legacy","daily-completed","context"],"eventIds":[]},"2026-07-30":{"actions":582,"firstAt":"2026-07-29T23:33:33.295Z","lastAt":"2026-07-30T12:00:00","wordIds":[],"sources":["legacy","daily-completed","context"],"eventIds":[]},"2026-07-31":{"actions":580,"firstAt":"2026-07-31T04:33:09.843Z","lastAt":"2026-07-31T15:21:27.366Z","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-08-01":{"actions":804,"firstAt":"2026-08-01T00:30:14.240Z","lastAt":"2026-08-01T15:59:19.889Z","wordIds":[],"sources":["legacy","daily-completed","context"],"eventIds":[]},"2026-08-02":{"actions":819,"firstAt":"2026-08-01T23:54:27.552Z","lastAt":"2026-08-02T15:03:18.035Z","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-08-03":{"actions":673,"firstAt":"2026-08-02T16:05:24.668Z","lastAt":"2026-08-03T12:00:00","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-08-04":{"actions":485,"firstAt":"2026-08-03T16:05:27.576Z","lastAt":"2026-08-04T14:54:06.506Z","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-08-05":{"actions":447,"firstAt":"2026-08-04T23:58:23.858Z","lastAt":"2026-08-05T12:00:00","wordIds":[],"sources":["legacy","daily-completed"],"eventIds":[]},"2026-08-06":{"actions":593,"firstAt":"2026-08-05T23:20:15.088Z","lastAt":"2026-08-06T15:40:58.119Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab","memory-lab-session"],"eventIds":[]},"2026-08-07":{"actions":448,"firstAt":"2026-08-06T23:35:46.895Z","lastAt":"2026-08-07T12:00:00","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-08":{"actions":551,"firstAt":"2026-08-07T16:00:06.516Z","lastAt":"2026-08-08T13:49:30.912Z","wordIds":[],"sources":["legacy","daily-completed","memory-lab"],"eventIds":[]},"2026-08-09":{"actions":970,"firstAt":"2026-08-09T04:48:35.909Z","lastAt":"2026-08-09T13:22:40.084Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-10":{"actions":773,"firstAt":"2026-08-09T16:06:33.288Z","lastAt":"2026-08-10T15:59:22.141Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-11":{"actions":535,"firstAt":"2026-08-11T04:43:35.407Z","lastAt":"2026-08-11T15:59:50.168Z","wordIds":[],"sources":["legacy","daily-completed","memory-lab"],"eventIds":[]},"2026-08-12":{"actions":955,"firstAt":"2026-08-11T16:00:05.701Z","lastAt":"2026-08-12T15:01:22.901Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-13":{"actions":2053,"firstAt":"2026-08-13T01:46:58.446Z","lastAt":"2026-08-13T12:00:00","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-14":{"actions":1473,"firstAt":"2026-08-14T06:51:23.035Z","lastAt":"2026-08-14T15:02:37.996Z","wordIds":[],"sources":["legacy","daily-completed","memory-lab"],"eventIds":[]},"2026-08-15":{"actions":613,"firstAt":"2026-08-15T01:50:36.413Z","lastAt":"2026-08-15T12:00:00","wordIds":[],"sources":["legacy","daily-completed","memory-lab"],"eventIds":[]},"2026-08-16":{"actions":820,"firstAt":"2026-08-16T01:04:30.830Z","lastAt":"2026-08-16T12:00:00","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-17":{"actions":894,"firstAt":"2026-08-17T12:00:00","lastAt":"2026-08-17T14:32:05.781Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-18":{"actions":1236,"firstAt":"2026-08-18T00:56:01.415Z","lastAt":"2026-08-18T15:59:53.699Z","wordIds":[],"sources":["legacy","daily-completed","browse:enToZh","browse:zhToEn","browse:spelling","context","memory-lab"],"eventIds":[]},"2026-08-19":{"actions":1317,"firstAt":"2026-08-18T16:00:09.659Z","lastAt":"2026-08-19T15:59:58.671Z","wordIds":[],"sources":["legacy","daily-completed","context","memory-lab"],"eventIds":[]},"2026-08-20":{"actions":1485,"firstAt":"2026-08-19T16:00:01.100Z","lastAt":"2026-08-20T15:38:35.778Z","wordIds":[],"sources":["legacy","context","memory-lab","daily-completed"],"eventIds":[]},"2026-08-21":{"actions":564,"firstAt":"2026-08-21T01:08:24.921Z","lastAt":"2026-08-21T01:54:35.959Z","wordIds":[],"sources":["legacy","memory-lab"],"eventIds":[]}}}};
 // B065：本地 file:// 每换一个版本文件夹，Edge/Chrome 可能把它当成新的本地站点。
 // 复习动作因此不能只依赖当前文件路径的 localStorage。
 const REVIEW_ACTIONS_BRIDGE_URL = "https://cyrus329.github.io/word-memory/review-ledger-bridge.html";
 const REVIEW_ACTIONS_BRIDGE_MESSAGE = "word-memory-review-ledger:v1";
-const REVIEW_ACTIONS_LEGACY_FLOOR = {
-  // 2026-08-21 B061 截图中已经确认的今日复习动作；仅用于 file:// 新路径首次迁移。
-  "2026-08-21": 309,
-};
+
 const CONTEXT_STUDY_KEY = "word-memory-trainer:context-study:v1";
 const MEMORY_LAB_KEY = "word-memory-trainer:memory-lab:v1";
 
@@ -1430,33 +1426,7 @@ function normalizeReviewActionStore(raw = {}) {
   };
 }
 
-function applyReviewActionLegacyFloor(store = {}, options = {}) {
-  const normalized = normalizeReviewActionStore(store);
-  // 只对直接双击 index.html 的 file:// 新路径做一次迁移兜底。
-  // GitHub Pages / HTTP 正常按原有独立账本工作，不注入任何固定数字。
-  if (location.protocol !== "file:") return normalized;
-  const days = { ...normalized.days };
-  let changed = false;
-  Object.entries(REVIEW_ACTIONS_LEGACY_FLOOR).forEach(([date, floor]) => {
-    const minimum = Math.max(0, Number(floor) || 0);
-    const current = Number(days[date]?.actions) || 0;
-    if (!minimum || current >= minimum) return;
-    const existing = days[date] || {};
-    days[date] = {
-      actions: minimum,
-      eventIds: Array.isArray(existing.eventIds) ? existing.eventIds : [],
-      wordIds: Array.isArray(existing.wordIds) ? existing.wordIds : [],
-      firstAt: existing.firstAt || `${date}T00:00:00+08:00`,
-      lastAt: existing.lastAt || `${date}T10:27:00+08:00`,
-    };
-    changed = true;
-  });
-  return normalizeReviewActionStore({
-    ...normalized,
-    days,
-    updatedAt: changed ? new Date().toISOString() : normalized.updatedAt,
-  });
-}
+function applyReviewActionLegacyFloor(store = {}) { return normalizeReviewActionStore(store); }
 
 function loadReviewActionStore() {
   try {
@@ -2419,12 +2389,6 @@ function mergeStudyTimeForCloud(localValue, cloudValue) {
   };
 }
 
-function applyRecoveredStudyBaselineB068() {
-  checkInStore = mergeCheckInStores(checkInStore, RECOVERED_STUDY_BASELINE_B068.checkIn);
-  saveCheckInStore();
-  state.studyTime = mergeStudyTimeForCloud(state.studyTime, RECOVERED_STUDY_BASELINE_B068.studyTime);
-  saveStudyTime();
-}
 
 function saveStudyTime() {
   try {
@@ -3393,13 +3357,6 @@ function loadWords() {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) {
       shouldPersistBuiltinWords = true;
-      const recovered = window.WORD_MEMORY_RECOVERED_PROGRESS_B068;
-      if (recovered?.compact && Array.isArray(recovered.progress)) {
-        // 只在没有本机主存档时使用用户提供的 B068 快照；IndexedDB 若有更新记录，稍后仍会优先恢复。
-        const recoveredWords = loadCompactWords(recovered);
-        window.WORD_MEMORY_RECOVERED_PROGRESS_B068 = null;
-        return recoveredWords;
-      }
       return cloneBuiltinWords();
     }
     const parsed = JSON.parse(raw);
@@ -8803,9 +8760,9 @@ initializeMobileFocus();
 registerServiceWorker();
 installStudyTimeTracker();
 backfillCheckInFromExistingRecords();
-applyRecoveredStudyBaselineB068();
+
 backfillReviewActionsFromExistingRecords();
-initializeReviewActionStableBridge();
+// B151: no automatic cross-site history restoration.
 render();
 hydrateWordsFromMobileDatabase();
 initializeCloudFromUrl();
