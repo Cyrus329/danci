@@ -476,7 +476,7 @@ let dictionaryAudioSuspendedUntil = 0;
 const CLOUD_STUDY_TIME_META_ID = "__word_memory_study_time_meta__";
 const CLOUD_COMPACT_PAYLOAD_ID = "__word_memory_compact_payload__";
 
-const BUILTIN_PACKAGE_KEY = "word-memory-trainer:builtins:v70-b159-speed-review-backup-20260914"; // B159：快速复盘记录随备份导入导出，旧数据按ID合并。
+const BUILTIN_PACKAGE_KEY = "word-memory-trainer:builtins:v70-b162-noun2-u10-20260915"; // B159：快速复盘记录随备份导入导出，旧数据按ID合并。
 const FORCE_SEPARATE_BUILTIN_ID_PREFIXES = ["dictation-1-", "dictation-2-", "dictation-3-", "dictation-4-"]; // 四次听写均保留独立词条与独立学习进度，不受其他词库中同词状态影响。
 
 const BUILTIN_GROUP_ALIASES = {
