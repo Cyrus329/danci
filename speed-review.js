@@ -1,4 +1,4 @@
-// v70 B128 2026-08-30：固定30词三分类新增词性标注；动词优先显示 vt./vi.；独立存档，不修改主学习阶段。
+// v70 B153：30词快速复盘体验增强；智能优先级、策略选择、学习教练提示；独立存档，不修改主学习阶段。
 (function () {
   'use strict';
 
@@ -33,6 +33,8 @@
     content: byId('speedReviewContent'),
     footer: byId('speedReviewFooter'),
     source: byId('speedReviewSource'),
+    strategy: byId('speedReviewStrategy'),
+    coach: byId('speedReviewCoach'),
     resume: byId('speedReviewResume'),
     knownCount: byId('speedReviewKnownCount'),
     meaningCount: byId('speedReviewMeaningCount'),
@@ -51,18 +53,18 @@
     return {
       version: STORE_VERSION,
       updatedAt: '',
-      settings: { source: 'all' },
+      settings: { source: 'all', strategy: 'smart' },
       buckets: { known: [], meaning: [], unknown: [] },
       session: null,
     };
   }
 
-  function sanitizeIds(ids) {
+  function sanitizeIds(ids, options = {}) {
     const out = [];
     const seen = new Set();
     (Array.isArray(ids) ? ids : []).forEach((raw) => {
       const id = canonicalId(raw);
-      if (!id || seen.has(id) || !api.getWord?.(id)) return;
+      if (!id || seen.has(id) || (!options.keepMissing && !api.getWord?.(id))) return;
       seen.add(id);
       out.push(id);
     });
@@ -73,7 +75,7 @@
     const result = { known: [], meaning: [], unknown: [] };
     const globallySeen = new Set();
     ['known', 'meaning', 'unknown'].forEach((name) => {
-      sanitizeIds(input[name]).forEach((id) => {
+      sanitizeIds(input[name], { keepMissing: true }).forEach((id) => {
         if (globallySeen.has(id)) return;
         globallySeen.add(id);
         result[name].push(id);
@@ -164,6 +166,22 @@
     return wordSources(word).some((item) => item === source || item.startsWith(source + ' '));
   }
 
+  function cardProgress(word) {
+    return word?.progress?.card || word || {};
+  }
+
+  function priorityScore(word, strategy, originalIndex) {
+    const progress = cardProgress(word);
+    const stage = Number.isInteger(progress.stage) ? progress.stage : -1;
+    const last = Date.parse(progress.lastStudiedAt || word?.lastStudiedAt || '') || 0;
+    const ageDays = last ? Math.max(0, (Date.now() - last) / 86400000) : 30;
+    const weak = progress.status === 'learning' || stage < 4;
+    if (strategy === 'original') return -originalIndex;
+    if (strategy === 'recent') return (last || 0) - originalIndex / 100000;
+    if (strategy === 'weak') return (weak ? 100000 : 0) + (word?.important ? 1000 : 0) + ageDays - originalIndex / 100000;
+    return (weak ? 100000 : 0) + (word?.important ? 2500 : 0) + Math.min(ageDays, 60) * 10 - originalIndex / 100000;
+  }
+
   function classifiedSet() {
     return new Set([
       ...store.buckets.known,
@@ -187,6 +205,10 @@
       store.buckets[name] = store.buckets[name].filter((item) => String(item) !== target);
     });
     store.buckets[bucket].push(target);
+    if (bucket === 'unknown') {
+      // “不会”表示重新开始该词的主学习链；快速复盘本身仍独立保存。
+      api.resetWordLearningProgress?.(target, { reason: 'speed-review-unknown' });
+    }
     if (store.session?.kind === 'batch' && bucket !== 'known') {
       const revealed = new Set(store.session.revealedIds || []);
       revealed.add(target);
@@ -203,16 +225,20 @@
 
   function nextBatchIds() {
     const source = els.source?.value || store.settings.source || 'all';
+    const strategy = els.strategy?.value || store.settings.strategy || 'smart';
     const done = classifiedSet();
     return allWords()
       .filter((word) => sourceMatches(word, source))
-      .map((word) => canonicalId(word.id))
-      .filter((id, index, arr) => id && !done.has(id) && arr.indexOf(id) === index)
+      .map((word, index) => ({ word, index, id: canonicalId(word.id) }))
+      .filter((item, index, arr) => item.id && !done.has(item.id) && arr.findIndex((x) => x.id === item.id) === index)
+      .sort((a, b) => priorityScore(b.word, strategy, b.index) - priorityScore(a.word, strategy, a.index))
+      .map((item) => item.id)
       .slice(0, BATCH_SIZE);
   }
 
   function renderHub() {
     if (els.source) els.source.value = store.settings.source || 'all';
+    if (els.strategy) els.strategy.value = store.settings.strategy || 'smart';
     if (els.knownCount) els.knownCount.textContent = String(store.buckets.known.length);
     if (els.meaningCount) els.meaningCount.textContent = String(store.buckets.meaning.length);
     if (els.unknownCount) els.unknownCount.textContent = String(store.buckets.unknown.length);
@@ -224,6 +250,11 @@
       } else {
         els.resume.textContent = '暂无未完成的30词';
       }
+    }
+    if (els.coach) {
+      const unknown = store.buckets.unknown.length;
+      const meaning = store.buckets.meaning.length;
+      els.coach.innerHTML = `<span class="quick30-coach-icon">◎</span><div><strong>${unknown ? `今天先回炉 ${unknown} 个“不会”词` : meaning ? `今天先巩固 ${meaning} 个“看中文才会”词` : '推荐流程：先回想，再看中文，最后按真实掌握度分类'}</strong><small>${unknown ? '每次只练30个；答错后先尝试拼写或造一个短句，再看答案。' : '每轮30词；分类结果会保留，下一轮自动跳过已经稳定掌握的词。'}</small></div>`;
     }
   }
 
@@ -258,6 +289,7 @@
       kind: 'batch',
       ids,
       source: store.settings.source,
+      strategy: store.settings.strategy || 'smart',
       revealedIds: [],
       startedAt: new Date().toISOString(),
     };
@@ -294,7 +326,7 @@
     const classified = s.ids.length - stats.unclassified;
     const revealed = new Set(s.revealedIds || []);
     if (els.title) els.title.textContent = '新的30词';
-    if (els.scope) els.scope.textContent = `${s.source === 'all' ? '全部词库' : s.source} · 独立分类，不改主学习阶段`;
+    if (els.scope) els.scope.textContent = `${s.source === 'all' ? '全部词库' : s.source} · ${s.strategy === 'weak' ? '薄弱词优先' : s.strategy === 'recent' ? '最近学习优先' : s.strategy === 'original' ? '原始顺序' : '智能混合'} · 独立分类`;
     if (els.progressText) els.progressText.textContent = `${classified} / ${s.ids.length} 已分类`;
     if (els.progressBar) els.progressBar.style.width = `${s.ids.length ? Math.round(classified / s.ids.length * 100) : 0}%`;
 
@@ -302,13 +334,13 @@
       <div class="quick30-instruction"><strong>先看英文判断</strong><span>会就直接勾“会 / 认识”；卡住可显示中文，再选“看中文才会”或“不会”。</span></div>
       <div class="quick30-grid">${s.ids.map((id, index) => {
         const word = api.getWord?.(id);
-        if (!word) return '';
+        if (!word) return `<article class="quick30-word"><div class="quick30-word-head"><span>${index + 1}</span><strong>词条已移除</strong></div><div class="quick30-bucket-meaning">该分类记录已保留，但当前词库没有此词条</div></article>`;
         const status = bucketOf(id);
         const showMeaning = revealed.has(id) || status === 'meaning' || status === 'unknown';
         return `<article class="quick30-word ${status ? `is-${status}` : ''}" data-speed-word-id="${escapeHTML(id)}">
           <div class="quick30-word-head"><span>${index + 1}</span><strong>${escapeHTML(word.term)}</strong><em class="quick30-pos">${escapeHTML(wordPartOfSpeech(word))}</em></div>
           <button type="button" class="quick30-meaning" data-speed-reveal-id="${escapeHTML(id)}">${showMeaning ? escapeHTML(wordMeaning(word)) : '显示中文'}</button>
-          <div class="quick30-ratings">
+          <p>${escapeHTML(word.phonetic || window.PronunciationSupport?.local(word.term) || "") || `<span data-ipa-term="${escapeHTML(word.term)}">正在查音标…</span>`}</p><div><button type="button" data-speed-audio="uk" data-speed-id="${escapeHTML(id)}">英音</button><button type="button" data-speed-audio="us" data-speed-id="${escapeHTML(id)}">美音</button><button type="button" data-speed-audio="system" data-speed-id="${escapeHTML(id)}">系统朗读</button></div><div class="quick30-ratings">
             <button type="button" class="known ${status === 'known' ? 'selected' : ''}" data-speed-classify="known" data-speed-id="${escapeHTML(id)}"><i>✓</i>会 / 认识</button>
             <button type="button" class="meaning ${status === 'meaning' ? 'selected' : ''}" data-speed-classify="meaning" data-speed-id="${escapeHTML(id)}"><i>◐</i>看中文才会</button>
             <button type="button" class="unknown ${status === 'unknown' ? 'selected' : ''}" data-speed-classify="unknown" data-speed-id="${escapeHTML(id)}"><i>×</i>不会</button>
@@ -318,7 +350,15 @@
     </section>`;
 
     const disabled = stats.unclassified > 0 ? ' disabled' : '';
-    els.footer.innerHTML = `<div class="quick30-footer-stats"><span>✓ 会 ${stats.known}</span><span>◐ 看义 ${stats.meaning}</span><span>× 不会 ${stats.unknown}</span><b>未分类 ${stats.unclassified}</b></div><button type="button" class="primary" data-speed-action="next-batch"${disabled}>${stats.unclassified ? `还有 ${stats.unclassified} 个未分类` : '完成本批 · 下一批30词'}</button>`;
+    els.footer.innerHTML = `<div class="quick30-footer-stats"><span>✓ 会 ${stats.known}</span><span>◐ 看义 ${stats.meaning}</span><span>× 不会 ${stats.unknown}</span><b>未分类 ${stats.unclassified}</b></div><div class="quick30-footer-actions"><button type="button" data-speed-action="quick-finish-batch">一键记完本批</button><button type="button" class="primary" data-speed-action="next-batch"${disabled}>${stats.unclassified ? `还有 ${stats.unclassified} 个未分类` : '完成本批 · 下一批30词'}</button></div>`;
+  }
+
+  function quickFinishBatch() {
+    const ids = store.session?.ids || [];
+    if (!ids.length) return;
+    if (!confirm('将本批词全部记为“会 / 认识”，只影响快速复盘分类，不改变主学习进度。继续吗？')) return;
+    ids.forEach((id) => setBucket(id, 'known'));
+    finishBatchAndNext();
   }
 
   function finishBatchAndNext() {
@@ -340,7 +380,7 @@
   function renderBucket(bucket, page = 0) {
     const meta = bucketMeta[bucket];
     if (!meta || !els.content) return;
-    const ids = sanitizeIds(store.buckets[bucket]);
+    const ids = sanitizeIds(store.buckets[bucket], { keepMissing: true });
     store.buckets[bucket] = ids;
     const totalPages = Math.max(1, Math.ceil(ids.length / BATCH_SIZE));
     const safePage = Math.min(Math.max(0, page), totalPages - 1);
@@ -353,10 +393,12 @@
       <div class="quick30-instruction"><strong>${escapeHTML(meta.mark)} ${escapeHTML(meta.label)}</strong><span>这里每页最多30词，可随时重新分到另外两类。</span></div>
       <div class="quick30-grid">${pageIds.map((id, index) => {
         const word = api.getWord?.(id);
-        if (!word) return '';
+        if (!word) return `<article class=\"quick30-word is-${escapeHTML(bucket)}\"><div class=\"quick30-word-head\"><span>${safePage * BATCH_SIZE + index + 1}</span><strong>词条已移除</strong></div><div class=\"quick30-bucket-meaning\">该分类记录已保留，但当前词库没有此词条</div></article>`;
         return `<article class="quick30-word is-${escapeHTML(bucket)}">
           <div class="quick30-word-head"><span>${safePage * BATCH_SIZE + index + 1}</span><strong>${escapeHTML(word.term)}</strong><em class="quick30-pos">${escapeHTML(wordPartOfSpeech(word))}</em></div>
           <div class="quick30-bucket-meaning">${escapeHTML(wordMeaning(word))}</div>
+          <p>${escapeHTML(word.phonetic || window.PronunciationSupport?.local(word.term) || '') || `<span data-ipa-term="${escapeHTML(word.term)}">正在查音标…</span>`}</p>
+          <div><button type="button" data-speed-audio="uk" data-speed-id="${escapeHTML(id)}">英音</button><button type="button" data-speed-audio="us" data-speed-id="${escapeHTML(id)}">美音</button><button type="button" data-speed-audio="system" data-speed-id="${escapeHTML(id)}">系统朗读</button></div>
           <div class="quick30-ratings">
             <button type="button" class="known ${bucket === 'known' ? 'selected' : ''}" data-speed-bucket-classify="known" data-speed-id="${escapeHTML(id)}" data-speed-current-bucket="${escapeHTML(bucket)}" data-speed-page="${safePage}"><i>✓</i>会 / 认识</button>
             <button type="button" class="meaning ${bucket === 'meaning' ? 'selected' : ''}" data-speed-bucket-classify="meaning" data-speed-id="${escapeHTML(id)}" data-speed-current-bucket="${escapeHTML(bucket)}" data-speed-page="${safePage}"><i>◐</i>看中文才会</button>
@@ -378,6 +420,12 @@
   }
 
   document.addEventListener('click', (event) => {
+    const audio = event.target.closest('[data-speed-audio]');
+    if (audio) {
+      const word = api.getWord?.(audio.dataset.speedId);
+      if (word) window.speakTerm(word.term, {accent:audio.dataset.speedAudio === 'us' ? 'us' : 'uk', preferSystem:audio.dataset.speedAudio === 'system'});
+      return;
+    }
     const start = event.target.closest('[data-speed-start="batch"]');
     if (start) { startBatch(); return; }
 
@@ -414,12 +462,17 @@
     const value = action.dataset.speedAction;
     if (value === 'close') return closeOverlay();
     if (value === 'clear-store') return clearStore();
+    if (value === 'quick-finish-batch') return quickFinishBatch();
     if (value === 'resume') { openOverlay(); renderBatch(); return; }
     if (value === 'next-batch') return finishBatchAndNext();
   });
 
   els.source?.addEventListener('change', () => {
     store.settings.source = els.source.value || 'all';
+    saveStore();
+  });
+  els.strategy?.addEventListener('change', () => {
+    store.settings.strategy = els.strategy.value || 'smart';
     saveStore();
   });
   window.addEventListener('keydown', (event) => {
@@ -432,9 +485,31 @@
       if (store.session?.kind === 'batch') { openOverlay(); renderBatch(); }
     },
     getStore: () => JSON.parse(JSON.stringify(store)),
+    exportState: () => JSON.parse(JSON.stringify(store)),
+    importState: (snapshot) => {
+      if (!snapshot || typeof snapshot !== 'object') return false;
+      const base = defaultStore();
+      store = {
+        ...base,
+        ...snapshot,
+        version: STORE_VERSION,
+        settings: { ...base.settings, ...(snapshot.settings || {}) },
+        buckets: normalizeBuckets(snapshot.buckets || {}),
+      };
+      if (store.session?.kind === 'batch') {
+        store.session.ids = sanitizeIds(store.session.ids, { keepMissing: true }).slice(0, BATCH_SIZE);
+        store.session.revealedIds = sanitizeIds(store.session.revealedIds, { keepMissing: true });
+      } else store.session = null;
+      saveStore();
+      return true;
+    },
     start: startBatch,
     storageKey: STORAGE_KEY,
   };
+
+  window.addEventListener('word-memory-backup-imported', (event) => {
+    if (event.detail?.speedReview) window.SpeedReviewApp.importState(event.detail.speedReview);
+  });
 
   saveStore();
 }());

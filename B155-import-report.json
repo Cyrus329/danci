@@ -1,0 +1,11 @@
+{
+  "version": "B155",
+  "before": 8088,
+  "after": 8091,
+  "imported": 26,
+  "added": 3,
+  "reused": 23,
+  "group": "四级翻译 形容词",
+  "progressFieldsUnchanged": true,
+  "spellingChecksPassed": 26
+}

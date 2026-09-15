@@ -1,0 +1,635 @@
+{
+  "version": "B154",
+  "baseline": "B153",
+  "before": 8033,
+  "entries": [
+    {
+      "term": "economic prosperity",
+      "meaning": "经济繁荣",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-001",
+      "new": true
+    },
+    {
+      "term": "mental flexibility",
+      "meaning": "思维灵活性",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-002",
+      "new": true
+    },
+    {
+      "term": "natural resource",
+      "meaning": "自然资源",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-003",
+      "new": true
+    },
+    {
+      "term": "sustainable development",
+      "meaning": "可持续发展",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-core-u4-32-006",
+      "new": false
+    },
+    {
+      "term": "exercise intensity",
+      "meaning": "运动强度",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-004",
+      "new": true
+    },
+    {
+      "term": "systematic review",
+      "meaning": "系统性综述",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-005",
+      "new": true
+    },
+    {
+      "term": "common symptom",
+      "meaning": "常⻅症状",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-006",
+      "new": true
+    },
+    {
+      "term": "contradictory result",
+      "meaning": "矛盾的结果",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-007",
+      "new": true
+    },
+    {
+      "term": "optimum result",
+      "meaning": "最佳结果",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-008",
+      "new": true
+    },
+    {
+      "term": "conventional fix",
+      "meaning": "传统解决方案",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-009",
+      "new": true
+    },
+    {
+      "term": "intellectual curiosity",
+      "meaning": "求知欲",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-010",
+      "new": true
+    },
+    {
+      "term": "emergency exit",
+      "meaning": "紧急出口",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-011",
+      "new": true
+    },
+    {
+      "term": "safety rule",
+      "meaning": "安全规则",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-012",
+      "new": true
+    },
+    {
+      "term": "traffic accident",
+      "meaning": "交通事故",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-013",
+      "new": true
+    },
+    {
+      "term": "instinctive quality",
+      "meaning": "本能特质",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-014",
+      "new": true
+    },
+    {
+      "term": "strong commitment",
+      "meaning": "坚定承诺",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-015",
+      "new": true
+    },
+    {
+      "term": "parental dependency",
+      "meaning": "父母依赖",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-016",
+      "new": true
+    },
+    {
+      "term": "leisure time",
+      "meaning": "闲暇时间",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-017",
+      "new": true
+    },
+    {
+      "term": "economic inequality",
+      "meaning": "经济不平等",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-018",
+      "new": true
+    },
+    {
+      "term": "health insurance",
+      "meaning": "医疗保险",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-019",
+      "new": true
+    },
+    {
+      "term": "social justice",
+      "meaning": "社会正义",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-020",
+      "new": true
+    },
+    {
+      "term": "selfish behavior",
+      "meaning": "自私行为",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-021",
+      "new": true
+    },
+    {
+      "term": "social interaction",
+      "meaning": "社交互动",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-022",
+      "new": true
+    },
+    {
+      "term": "external pressure",
+      "meaning": "外部压力",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-023",
+      "new": true
+    },
+    {
+      "term": "job interview",
+      "meaning": "工作面试",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-024",
+      "new": true
+    },
+    {
+      "term": "unemployment rate",
+      "meaning": "失业率",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-025",
+      "new": true
+    },
+    {
+      "term": "poor budget",
+      "meaning": "预算不足",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-026",
+      "new": true
+    },
+    {
+      "term": "nutrient intake",
+      "meaning": "营养摄入",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-027",
+      "new": true
+    },
+    {
+      "term": "cloning technology",
+      "meaning": "克隆技术",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-028",
+      "new": true
+    },
+    {
+      "term": "ethical issue",
+      "meaning": "伦理问题",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-029",
+      "new": true
+    },
+    {
+      "term": "genuine concern",
+      "meaning": "真诚的关心",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-030",
+      "new": true
+    },
+    {
+      "term": "vulnerable group",
+      "meaning": "弱势群体",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-031",
+      "new": true
+    },
+    {
+      "term": "building collapse",
+      "meaning": "建筑倒塌",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-032",
+      "new": true
+    },
+    {
+      "term": "the right to intellectual property",
+      "meaning": "知识产权",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-core-u1-note-017",
+      "new": false
+    },
+    {
+      "term": "new enterprise",
+      "meaning": "新事业",
+      "group": "四级核心 专题4 名词短语一",
+      "id": "cet4-b154-033",
+      "new": true
+    },
+    {
+      "term": "arrange",
+      "meaning": "v. 安排，筹备；整理，排列；布置；编曲，改编",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-20260811-38-065",
+      "new": false
+    },
+    {
+      "term": "arrangement",
+      "meaning": "n. 安排；约定，协议；布置；改编曲",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-core-u6-pdf-062",
+      "new": false
+    },
+    {
+      "term": "event",
+      "meaning": "n. 事件；公开活动；体育项目",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "word-list-6-004",
+      "new": false
+    },
+    {
+      "term": "eventful",
+      "meaning": "adj. 充满大事的，多变故的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-core-u9l4-b152-020",
+      "new": false
+    },
+    {
+      "term": "eventually",
+      "meaning": "adv. 终于，最终",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-20260821-48-010",
+      "new": false
+    },
+    {
+      "term": "eventual",
+      "meaning": "adj. 最后的，最终的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-034",
+      "new": true
+    },
+    {
+      "term": "eventuality",
+      "meaning": "n. 可能发生的事（尤指坏事）",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-035",
+      "new": true
+    },
+    {
+      "term": "final",
+      "meaning": "adj. 最后的，最终的；决定性的；n. 决赛；期末考试，结业考试",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-20260802-28-017",
+      "new": false
+    },
+    {
+      "term": "finalize",
+      "meaning": "vt.（尤指经过讨论）最终敲定",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-036",
+      "new": true
+    },
+    {
+      "term": "finally",
+      "meaning": "adv. 终于，最终；最后；彻底地",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-037",
+      "new": true
+    },
+    {
+      "term": "consequence",
+      "meaning": "n. 结果，后果；重要性，价值",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "wordlist-20260628-v42-006",
+      "new": false
+    },
+    {
+      "term": "consequent",
+      "meaning": "adj. 因之而起的，作为结果的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-038",
+      "new": true
+    },
+    {
+      "term": "consequently",
+      "meaning": "adv. 结果，因此，所以",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "wordlist-20260628-v42-008",
+      "new": false
+    },
+    {
+      "term": "sequence",
+      "meaning": "n. 一系列，一连串；顺序，次序；vt. 按顺序排列；测定…的序列",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-66-b146-020",
+      "new": false
+    },
+    {
+      "term": "sequent",
+      "meaning": "adj. 按次序的，随之而来的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-039",
+      "new": true
+    },
+    {
+      "term": "sequential",
+      "meaning": "adj. 按次序的，顺序的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-040",
+      "new": true
+    },
+    {
+      "term": "subsequent",
+      "meaning": "adj. 随后的，后来的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-20260826-53-046",
+      "new": false
+    },
+    {
+      "term": "subsequently",
+      "meaning": "adv. 随后，后来，接着",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-041",
+      "new": true
+    },
+    {
+      "term": "vain",
+      "meaning": "adj. 徒劳的；自负的，虚荣的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-core-u6-pdf-042",
+      "new": false
+    },
+    {
+      "term": "series",
+      "meaning": "n. 一系列；系列节目；系列比赛",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "dictation-1-068",
+      "new": false
+    },
+    {
+      "term": "chain",
+      "meaning": "n. 链条；一连串；连锁店；vt. 用链子拴住，拴住",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-56-b124-004",
+      "new": false
+    },
+    {
+      "term": "addition",
+      "meaning": "n. 增添；添加物；加法；增建部分",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-042",
+      "new": true
+    },
+    {
+      "term": "additional",
+      "meaning": "adj. 附加的，额外的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-043",
+      "new": true
+    },
+    {
+      "term": "increasingly",
+      "meaning": "adv. 越来越多地",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-044",
+      "new": true
+    },
+    {
+      "term": "gradually",
+      "meaning": "adv. 逐渐地，逐步地",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-translation-1-023",
+      "new": false
+    },
+    {
+      "term": "gradual",
+      "meaning": "adj. 逐渐的，逐步的；（斜坡）平缓的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-20260830-57-003",
+      "new": false
+    },
+    {
+      "term": "further",
+      "meaning": "adv. 更远；更久远；更进一步；此外；adj. 更多的，更进一步的，附加的；vt. 促进，增进",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "fullway-complete-extra-151",
+      "new": false
+    },
+    {
+      "term": "frequent",
+      "meaning": "adj. 经常性的，频繁的；vt. 常到，常去，常出入于",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-20260830-57-012",
+      "new": false
+    },
+    {
+      "term": "frequency",
+      "meaning": "n. 发生频率；频繁；（声波等）频率",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-045",
+      "new": true
+    },
+    {
+      "term": "secondary",
+      "meaning": "adj. 中等的；次要的；继发的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-64-b140-050",
+      "new": false
+    },
+    {
+      "term": "chief",
+      "meaning": "adj. 首要的；首席的；为首的；n. 首领，最高领导人；酋长，族长",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blue-20260819-46-021",
+      "new": false
+    },
+    {
+      "term": "primary",
+      "meaning": "adj. 首要的，主要的；最早的；小学的；（英国的）初选",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-20260808-35-132",
+      "new": false
+    },
+    {
+      "term": "primarily",
+      "meaning": "adv. 主要地",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-046",
+      "new": true
+    },
+    {
+      "term": "prime",
+      "meaning": "adj. 首要的；最好的；典型的；n. 盛年，鼎盛时期；vt. 准备；事先指点",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-66-b146-013",
+      "new": false
+    },
+    {
+      "term": "preliminary",
+      "meaning": "adj. 初步的，预备的，开始的；n. 初步行动，准备工作",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-66-b146-012",
+      "new": false
+    },
+    {
+      "term": "primitive",
+      "meaning": "adj. 原始的；落后的；原始本能的；n. 原始派艺术家",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-20260815-42-024",
+      "new": false
+    },
+    {
+      "term": "coarse",
+      "meaning": "adj. 粗糙的；大颗粒的；粗鲁的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-66-b146-037",
+      "new": false
+    },
+    {
+      "term": "rude",
+      "meaning": "adj. 粗鲁的；下流的；猛然的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "word-list-7-021",
+      "new": false
+    },
+    {
+      "term": "manner",
+      "meaning": "n. 方式；态度，举止；礼貌，礼仪",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-20260805-31-009",
+      "new": false
+    },
+    {
+      "term": "offend",
+      "meaning": "vt. vi. 冒犯，得罪；vt. 令人不适；vi. 违反（法规、原则等）；犯罪",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-20260813-40-020",
+      "new": false
+    },
+    {
+      "term": "offense",
+      "meaning": "n. 违法行为；冒犯，得罪；进攻方",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-047",
+      "new": true
+    },
+    {
+      "term": "offender",
+      "meaning": "n. 罪犯，违法者；引发坏事的人",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-048",
+      "new": true
+    },
+    {
+      "term": "offensive",
+      "meaning": "adj. 冒犯的；令人不快的；攻击性的；n. 进攻，攻击；攻势",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-049",
+      "new": true
+    },
+    {
+      "term": "defend",
+      "meaning": "vt. vi. 防御，保卫；防守；为被告辩护；vt. 为…辩护；卫冕",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-20260816-43-001",
+      "new": false
+    },
+    {
+      "term": "defense",
+      "meaning": "n. 防御；防御物；国防；辩护",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-050",
+      "new": true
+    },
+    {
+      "term": "defensive",
+      "meaning": "adj. 防御性的；怀有戒心的；防守的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-051",
+      "new": true
+    },
+    {
+      "term": "defendant",
+      "meaning": "n. 被告",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-052",
+      "new": true
+    },
+    {
+      "term": "fence",
+      "meaning": "n. 栅栏，篱笆；围栏；销赃犯；vt.（用栅栏、篱笆）围住，隔开；vi. 参加击剑运动；搪塞，回避",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "blueforest-56-b124-010",
+      "new": false
+    },
+    {
+      "term": "property",
+      "meaning": "n. 财产，所有物；房地产；特性",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-core-u1-009",
+      "new": false
+    },
+    {
+      "term": "appropriate",
+      "meaning": "adj. 适当的，恰当的；vt. 盗用，挪用；拨出（款项）",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-053",
+      "new": true
+    },
+    {
+      "term": "possess",
+      "meaning": "v. 拥有；具有",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-core-b128-031",
+      "new": false
+    },
+    {
+      "term": "possession",
+      "meaning": "n. 拥有，占有；财产，所有物",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-054",
+      "new": true
+    },
+    {
+      "term": "possessive",
+      "meaning": "adj. 占有欲强的；所有格的",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "id": "cet4-b154-055",
+      "new": true
+    }
+  ],
+  "after": 8088,
+  "new": 55,
+  "groups": [
+    {
+      "name": "Unit 9 Lesson 4",
+      "count": 88
+    },
+    {
+      "name": "专题4 名词短语一",
+      "count": 35
+    }
+  ]
+}

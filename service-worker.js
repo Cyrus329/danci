@@ -15,7 +15,7 @@
 // v70 B113 2026-08-27：刷新四级听力2词库/分组/排序资源缓存。
 // v70 B112 2026-08-27：刷新全量缺失音标补齐资源缓存。
 // v70 B109 2026-08-27：仅刷新词库资源缓存版本；训练逻辑不变。
-const CACHE_NAME = "word-memory-v70-b151-clean-start";
+const CACHE_NAME = "word-memory-v70-b161";
 const SCENE_ASSETS_101_180 = `a-piece-of-news newspaper message leave-a-message text-message ball skate skill special-skill social-skill professional-skill able be-able-to-do-sth ability disable unable enjoy enjoy-doing-sth enjoyable grass afraid be-afraid-of water old elder young youth youngster junior senior live live-up-to live-on lively livelihood alive lovely life wildlife lifestyle style animal mammal insect pet bite diary keep-a-diary dairy borrow lend lend-sth-to-sb vegetable sweep mainly topic title entitle underline stop cancel call-off cancellation cancer start star begin to-begin-with in-the-beginning beginning beginner renew outset end in-the-end at-the-end-of endless ending cease over`
   .split(" ")
   .map((slug) => `./assets/word-scenes/${slug}.webp`);
@@ -26,7 +26,9 @@ const SCENE_ASSETS_261_280 = `emphasis collective cell-phone punctual with hazar
   .split(" ")
   .map((slug) => `./assets/word-scenes/${slug}.webp`);
 const APP_ASSETS = [
-  "./startup.js?v=70b151",
+  "./phonetic-local-data.js",
+  "./pronunciation-support.js",
+  "./startup.js?v=70b152",
   "./reset-local.js?v=70b151",
   "./mobile-polish.css?v=70b150",
   "./translation-spelling-data.js?v=70b148",
@@ -35,8 +37,8 @@ const APP_ASSETS = [
   "./",
   "./index.html",
   "./review-ledger-bridge.html",
-  "./word-data.js?v=70b149",
-  "./library-folder-data.js?v=70b149",
+  "./word-data.js?v=70b152",
+  "./library-folder-data.js?v=70b152",
   "./context-engine.js?v=70b038vocabimport20260809",
   "./context-data.js?v=70b056statsvocab20260820",
   "./context-id-data.js?v=70b056statsvocab20260820",
@@ -146,17 +148,18 @@ const APP_ASSETS = [
   "./assets/word-scenes/paragraph.webp",
   "./assets/word-scenes/news.webp",
   "./assets/pronunciation-primer.wav?v=70b060fullstart20260820",
-  "./app.js?v=70b151",
+  "./app.js?v=70b152",
   "./peppa-content-b127.js?v=70b127peppatesting20260830",
   "./peppa-zone.js?v=70b151",
   "./memory-lab.js?v=70b106cet4listen20260826",
+  "./speed-review.js?v=70b153quickcoach",
   "./speed-review.js?v=70b128posquick3020260830",
   "./browse-quiz.js?v=70b151",
   "./folder-view.js?v=70b143",
   "./ui-refresh.css?v=70b145",
   "./ui-refresh.js?v=70b144",
   "./smart-vocab.js?v=70b106cet4listen20260826",
-  "./styles.css?v=70b128posquick3020260830",
+  "./styles.css?v=70b153quickcoach",
   "./supabase-word-memory-repair.sql",
   "./manifest.webmanifest",
   "./icons/icon-180.png",

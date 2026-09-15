@@ -476,7 +476,7 @@ let dictionaryAudioSuspendedUntil = 0;
 const CLOUD_STUDY_TIME_META_ID = "__word_memory_study_time_meta__";
 const CLOUD_COMPACT_PAYLOAD_ID = "__word_memory_compact_payload__";
 
-const BUILTIN_PACKAGE_KEY = "word-memory-trainer:builtins:v70-b149-core-u9l3-20260909"; // B144书本印刷体界面；旧数据仍按ID合并，不重置学习进度。
+const BUILTIN_PACKAGE_KEY = "word-memory-trainer:builtins:v70-b159-speed-review-backup-20260914"; // B159：快速复盘记录随备份导入导出，旧数据按ID合并。
 const FORCE_SEPARATE_BUILTIN_ID_PREFIXES = ["dictation-1-", "dictation-2-", "dictation-3-", "dictation-4-"]; // 四次听写均保留独立词条与独立学习进度，不受其他词库中同词状态影响。
 
 const BUILTIN_GROUP_ALIASES = {
@@ -2197,21 +2197,14 @@ async function playAudioUrl(url, options = {}) {
   if (!audio.src) audio.src = url;
 
   try {
-    // B107：必须等到“足够连续播放”的缓冲状态。只拿到首段数据就开始播放，是弱网/蓝牙环境下断断续续的主要来源。
-    await waitForPronunciationAudioReady(audio, Number(options.timeoutMs || 1600));
+    // B160：在点击调用栈里发起播放，让浏览器自行缓冲，保留用户手势。
+    const initialPlay = audio.play();
+    if (initialPlay?.then) await pronunciationWithTimeout(initialPlay, 6000);
     if (requestToken && requestToken !== pronunciationRequestToken) throw new Error("stale pronunciation request");
 
-    // B107：只用项目内完全静音的 WAV 唤醒声卡/蓝牙通道，保留 B060 的“词首不被吞”目标；
-    // 不再把真实单词音频低音量播放 170ms 后 pause + 回零，避免人为制造一次中断和重复解码。
-    await wakePronunciationOutput();
-    if (requestToken && requestToken !== pronunciationRequestToken) throw new Error("stale pronunciation request");
-
-    audio.pause();
+    // Playback has already started; do not pause or rewind the word.
     audio.volume = 1;
     audio.playbackRate = 1;
-    try { audio.currentTime = 0; } catch {}
-    const playPromise = audio.play();
-    if (playPromise && typeof playPromise.then === "function") await pronunciationWithTimeout(playPromise, 2400);
     pronunciationOutputLastStartedAt = Date.now();
     audio.onended = () => {
       if (activeAudioElement === audio) activeAudioElement = null;
@@ -7176,6 +7169,10 @@ function renderPreviousWordHint() {
 }
 
 function extractWordPhonetic(word) {
+  const cached = window.PronunciationSupport?.local(word?.term);
+  if (cached) return cached;
+  const direct = String(word?.phonetic || word?.ipa || '').trim();
+  if (direct && /^[A-Za-zɑɒæʌɔəɜː:ɪiʊuɛeɡθðʃʒŋˈˌ'`.\-\s()r]+$/.test(direct)) return `/${direct}/`;
   const candidates = [word?.phonetic, word?.ipa, word?.pronunciation, word?.note, word?.phrase]
     .filter(Boolean)
     .map((value) => String(value));
@@ -7358,7 +7355,7 @@ function renderActiveCard() {
             <h3 class="${state.practiceMode === "card" || state.practiceMode === "enToZh" ? "word-term" : "quiz-target"}">${escapeHTML(view.target)}</h3>
             <button class="auto-uk-toggle${state.settings.autoBritishNext ? " is-on" : ""}" data-card-action="toggle-auto-uk" type="button" aria-pressed="${state.settings.autoBritishNext ? "true" : "false"}" title="开启后，记完或忘了进入下一个词时自动播放英音">英音自动：${state.settings.autoBritishNext ? "开" : "关"}</button>
           </div>
-          ${hidePhoneticForSpelling ? "" : (phonetic ? `<p class="word-phonetic-line">${escapeHTML(phonetic)}</p>` : "")}
+          ${hidePhoneticForSpelling ? "" : (phonetic ? `<p class="word-phonetic-line">${escapeHTML(phonetic)}</p>` : `<p class="word-phonetic-line" data-ipa-term="${escapeHTML(word.term)}"></p>`)}
           ${contextCard}
           ${cet4CoreFamilyContext}
           ${quickActions}
@@ -8025,6 +8022,10 @@ function deleteWord(id) {
 }
 
 function exportWords() {
+  let speedReview = null;
+  try {
+    speedReview = window.SpeedReviewApp?.exportState?.() || JSON.parse(localStorage.getItem("wordMemorySpeedReviewV1") || "null");
+  } catch {}
   const payload = {
     app: "专升本单词记忆",
     version: 1,
@@ -8039,6 +8040,7 @@ function exportWords() {
     memoryLab: normalizeMemoryLabStore(memoryLabStore),
     browsePractice: normalizeBrowsePracticeSnapshot(state.browsePractice || {}),
     peppaZone: window.PeppaZone?.exportState?.() || null,
+    speedReview,
     words: state.words,
   };
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json;charset=utf-8" });
@@ -8178,6 +8180,10 @@ async function importWords(event) {
     }
     if (parsed.peppaZone && window.PeppaZone?.importState) {
       window.PeppaZone.importState(parsed.peppaZone, { merge: true });
+    }
+    if (parsed.speedReview) {
+      try { window.SpeedReviewApp?.importState?.(parsed.speedReview); } catch {}
+      // SpeedReviewApp.importState above restores the snapshot exactly once.
     }
     syncTodayCompletedFromHistories();
     backfillCheckInFromExistingRecords();

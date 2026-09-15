@@ -18,7 +18,7 @@
   <div class="app-shell">
     <header class="topbar">
       <div>
-        <p class="eyebrow">WORD MEMORY <span class="version-badge">B151</span></p>
+        <p class="eyebrow">WORD MEMORY <span class="version-badge">B161</span></p>
         <h1>专升本单词记忆</h1>
       </div>
       <div class="topbar-actions">
@@ -285,15 +285,19 @@
           </div>
           <div class="quick30-controls">
             <label><span>范围</span><select id="speedReviewSource"><option value="all">全部词库</option><option value="蓝色森林">蓝色森林</option><option value="四级">四级</option><option value="四级核心">四级核心</option><option value="四级翻译">四级翻译</option><option value="短语练习">短语练习</option><option value="Word List">Word List</option><option value="听写内容">听写内容</option></select></label>
+            <label><span>本轮策略</span><select id="speedReviewStrategy"><option value="smart" selected>智能混合（推荐）</option><option value="weak">薄弱词优先</option><option value="recent">最近学习优先</option><option value="original">按原始顺序</option></select></label>
             <button class="quick30-start" type="button" data-speed-start="batch"><strong>开始新的30词</strong><small>已分类过的词不会重复进入新批次</small></button>
             <div class="speed-review-resume" id="speedReviewResume">暂无未完成的30词</div>
+          </div>
+          <div class="quick30-coach" id="speedReviewCoach" role="status">
+            <span class="quick30-coach-icon">◎</span><div><strong>推荐流程：先回想，再看中文，最后按真实掌握度分类</strong><small>每轮30词；不会和“看中文才会”的词会自动留在复盘池，下一轮优先出现。</small></div>
           </div>
           <div class="quick30-buckets" aria-label="快速复盘分类池">
             <button type="button" class="quick30-bucket known" data-speed-bucket="known"><span>✓</span><strong>会 / 认识</strong><b id="speedReviewKnownCount">0</b><small>以后不再进入快速复盘</small></button>
             <button type="button" class="quick30-bucket meaning" data-speed-bucket="meaning"><span>◐</span><strong>看中文才会</strong><b id="speedReviewMeaningCount">0</b><small>单独放这里，需要时再看</small></button>
             <button type="button" class="quick30-bucket unknown" data-speed-bucket="unknown"><span>×</span><strong>不会</strong><b id="speedReviewUnknownCount">0</b><small>单独放这里，重点复习</small></button>
           </div>
-          <p class="quick30-note">三类只属于快速复盘，不会改动“记住 / 模糊 / 忘了”、31天阶段或全词独立练习进度。</p>
+          <p class="quick30-note">三类只属于快速复盘，不会改动“记住 / 模糊 / 忘了”、31天阶段或全词独立练习进度；复盘池只记录你真正的回忆表现。</p>
         </section>
       </section>
 
@@ -675,6 +679,8 @@
     </footer>
   </section>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="./startup.js?v=70b151"></script>
+  <script src="./phonetic-local-data.js?v=70b161"></script>
+<script src="./pronunciation-support.js?v=70b161"></script>
+<script src="./startup.js?v=70b161"></script>
 </body>
 </html>

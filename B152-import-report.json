@@ -1,0 +1,491 @@
+{
+  "version": "B152",
+  "baseline": "B151",
+  "source": "b4d3a9dc-4bec-4298-b12e-02c261da963b.docx",
+  "screenshots": 11,
+  "before": 8013,
+  "entries": [
+    {
+      "term": "undoubtedly",
+      "id": "blueforest-20260801-27-034",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "adv. 毫无疑问地，确实地",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "disaster",
+      "id": "blue-20260820-47-019",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "n. 灾难；不幸；失败的人（或事物）",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "disastrous",
+      "id": "cet4-core-u4-36-021",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "adj. 灾难性的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "famine",
+      "id": "blueforest-20260821-48-013",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "n. 饥荒",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "volcano",
+      "id": "blueforest-20260827-54-063",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "n. 火山",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "volcanic",
+      "id": "cet4-core-u9l3-b152-001",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": true,
+      "meaning": "adj. 火山的，由火山引发的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "vague",
+      "id": "blueforest-20260826-53-080",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "adj. 模糊的；含糊的，笼统的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "blur",
+      "id": "blueforest-20260812-39-030",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "n. 模糊不清的事物；模糊的记忆；vt. vi.（使）视线模糊；使（想法等）模糊",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "dim",
+      "id": "blueforest-b138-62-026",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "adj. 昏暗的；模糊的；迟钝的；vi. vt.（使）变昏暗；（使）变渺茫",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "district",
+      "id": "blue-20260820-47-017",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "n. 地区，区域；行政区，管辖区",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "disgust",
+      "id": "blueforest-66-b146-041",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "n. 厌恶，反感；vt. 使厌恶，使反感",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "disgusting",
+      "id": "cet4-core-attitude-b141-016",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "adj. 令人厌恶的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "disturb",
+      "id": "blueforest-20260627-06-015",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "vt. 打扰，干扰；使烦恼；弄乱",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "disturbance",
+      "id": "cet4-core-u9l3-b152-002",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": true,
+      "meaning": "n. 干扰；骚乱；失调，紊乱",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "dimension",
+      "id": "blueforest-20260809-36-041",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "n. 尺寸，维度；方面；规模，程度",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "dimensional",
+      "id": "cet4-core-u9l3-b152-003",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": true,
+      "meaning": "adj. …维的，…维度的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "column",
+      "id": "blueforest-20260728-23-007",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "n. 柱，柱状物；列；栏；专栏",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "columnist",
+      "id": "cet4-core-u9l3-b152-004",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": true,
+      "meaning": "n. 专栏作家",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "anchor",
+      "id": "blueforest-20260810-37-013",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "n. 锚；主持人；顶梁柱；vi. vt. 抛锚，使停泊；主持（节目）；vt. 使固定；使扎根",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "ankle",
+      "id": "blueforest-20260817-44-008",
+      "group": "四级核心 Unit 9 Lesson 3",
+      "new": false,
+      "meaning": "n. 脚踝，脚脖子",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "respond",
+      "id": "blueforest-20260825-52-041",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "vi. vt. 回复，回答；vi. 作出反应；有良好反应",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "response",
+      "id": "cet4-core-u9l4-b152-005",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "n. 回答，答复；反应，回应",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "responsive",
+      "id": "cet4-core-u9l4-b152-006",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "adj. 反应快的，反应积极的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "respondent",
+      "id": "cet4-core-u9l4-b152-007",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "n. 调查对象；被告",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "correspond",
+      "id": "blue-20260819-46-004",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "vi. 相符，一致；类似，相当；通信",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "corresponding",
+      "id": "cet4-core-u9l4-b152-008",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "adj. 符合的，相应的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "correspondence",
+      "id": "cet4-core-u9l4-b152-009",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "n. 往来书信；通信；关系，联系",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "correspondent",
+      "id": "cet4-core-u9l4-b152-010",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "n. 记者，通讯员；通信者",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "feedback",
+      "id": "blueforest-20260719-14-017",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 反馈",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "phase",
+      "id": "blueforest-b138-62-040",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 阶段，时期；（月亮的）盈亏；vt. 分阶段进行，逐步做",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "phrase",
+      "id": "blueforest-20260814-41-026",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 短语，词组；成语，习语；乐句；vt.（以某种方式）表达",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "phrasal",
+      "id": "cet4-core-u9l4-b152-011",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "adj. 短语的，词组的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "fatigue",
+      "id": "blueforest-66-b146-053",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 疲惫，疲倦；（士兵的）作训服",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "exhaust",
+      "id": "blueforest-20260828-55-019",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "vt. 使…精疲力竭；耗尽；详尽探讨；n.（发动机排出的）废气；排气管",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "exhaustion",
+      "id": "cet4-core-u9l4-b152-012",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "n. 精疲力竭；耗尽，用尽",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "exhausted",
+      "id": "cet4-core-u9l4-b152-013",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "adj. 精疲力竭的；耗尽的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "exhaustive",
+      "id": "cet4-core-u9l4-b152-014",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "adj. 详尽无遗的，彻底全面的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "expand",
+      "id": "fullway-2026-prefix-092",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "vi. vt. 扩充，扩大；扩展（业务）；vi. 详谈，详述",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "expansion",
+      "id": "cet4-core-u9l4-b152-015",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "n. 扩张，扩充，扩大",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "expansive",
+      "id": "word-list-24-20260812-014",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "adj. 广阔的，辽阔的；开朗健谈的；广泛的，全面的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "feasible",
+      "id": "blueforest-20260821-48-017",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "adj. 可行的，行得通的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "feasibility",
+      "id": "cet4-core-u6-pdf-050",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 可行性，可能性",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "feature",
+      "id": "cet4-translation-3-012",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 特征，特点；特写，专题；五官；vt. 以…为特色；vi. 起重要作用",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "feather",
+      "id": "blueforest-56-b124-014",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 羽毛",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "character",
+      "id": "blueforest-66-b146-036",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 性格；角色；特点；字符；名誉",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "characteristic",
+      "id": "cet4-core-b128-032",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 特色，特点；adj. 典型的，独特的，特有的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "characterize",
+      "id": "cet4-core-u9l4-b152-016",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "vt. 是…的特征；描绘，描述，刻画",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "figure",
+      "id": "blueforest-20260814-41-002",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 数字；算术；人物；人影；身材；塑像；（书中的）图表；vt. 认为，以为；计算；vt. vi. 弄懂，弄清楚",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "figurative",
+      "id": "cet4-core-u9l4-b152-017",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "adj. 比喻的，借喻的；（艺术）写实的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "file",
+      "id": "blueforest-64-b140-037",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 文件夹；文件；档案；vt. 把…归档；发送（报道）；锉光滑；vi. vt. 提起（诉讼），提交（申请）；vi. 排成纵队行走",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "document",
+      "id": "blueforest-20260827-54-019",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 文件，文档，文献；vt. 记录，记载；用文献证明",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "documentary",
+      "id": "cet4-core-u9l4-b152-018",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "n. 纪录片，纪实节目；adj. 记录的，纪实的；文献的",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "forge",
+      "id": "blueforest-56-b124-003",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "vt. 缔造，建立；伪造；锻造，制作；vi. 稳步前进；n. 铁匠铺；锻造炉，锻造车间",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "forgery",
+      "id": "cet4-core-u9l4-b152-019",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "n. 伪造品，赝品；伪造（罪）",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "range",
+      "id": "blueforest-63-b139-011",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 一系列；范围；射程；山脉；vi.（在…范围内）变化；包括；vt.（按一定顺序）排列；vi. vt. 徘徊，漫步",
+      "meaningSource": "screenshot"
+    },
+    {
+      "term": "arrange",
+      "id": "blueforest-20260811-38-065",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "v. 安排，筹备；整理，排列",
+      "meaningSource": "supplemental; English only visible"
+    },
+    {
+      "term": "event",
+      "id": "word-list-6-004",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": false,
+      "meaning": "n. 事件；活动；比赛项目",
+      "meaningSource": "supplemental; English only visible"
+    },
+    {
+      "term": "eventful",
+      "id": "cet4-core-u9l4-b152-020",
+      "group": "四级核心 Unit 9 Lesson 4",
+      "new": true,
+      "meaning": "adj. 多事的；充满大事的",
+      "meaningSource": "supplemental; English only visible"
+    }
+  ],
+  "groups": [
+    {
+      "name": "四级核心 Unit 9 Lesson 3",
+      "before": 60,
+      "after": 78,
+      "imported": 20
+    },
+    {
+      "name": "四级核心 Unit 9 Lesson 4",
+      "before": 0,
+      "after": 38,
+      "imported": 38
+    }
+  ],
+  "progressChanged": false,
+  "after": 8033,
+  "new": 20,
+  "reused": 38
+}
