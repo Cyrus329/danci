@@ -1,0 +1,11 @@
+const fs = require('fs');
+const assert = require('assert');
+const hub = fs.readFileSync('spelling-hub.js','utf8');
+const index = fs.readFileSync('index.html','utf8');
+assert(hub.includes('meaningSegments?.(word.meaning)'));
+assert(!hub.includes('meaningSegments?.(word);'));
+assert(hub.includes('word.perGroupMeaning[selectedGroup]'));
+assert(hub.includes("selectedSource === '四级核心'"));
+assert(hub.includes('中文释义已显示'));
+assert(index.includes('>B170</span>'));
+console.log('B170 spelling Chinese-meaning fix: PASS');

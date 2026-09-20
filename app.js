@@ -1,3 +1,11 @@
+// v70 B178 2026-09-19：新增四级固定搭配专项48条；复用已有ID/进度，仅缺失搭配新增独立专项记录。
+// v70 B177 2026-09-18：导入 Unit 10 Lesson 3/4 截图词汇与四级翻译政治/经济词组；仅合并内置元数据，绝不重置用户进度。
+// v70 B176 2026-09-18：修复 B175 仍会被“陈旧 guard meta”误报回退。硬保护只信任 IndexedDB 中实际安全快照 summary + 黄金基线；localStorage guard meta 不再作为拦截依据，并自动纠正陈旧元数据。
+// v70 B175 2026-09-18：修复进度防回退误报；8229已学习/153小时等核心进度正常时，不再因辅助历史天数暂少而阻止保存。
+// v70 B173 2026-09-16：修复撤回上一条受冷却/统计副作用影响的问题；拼写训练增加手动“已掌握”；保留B172全部功能。
+// v70 B170 2026-09-16：拼写训练中文释义显示修复；B169 大容量/快速存档保护逻辑保持不变。
+// v70 B169 2026-09-16：修复“快速存档空间不足”。localStorage 仅保存黄金基线后的增量快照，完整进度继续写入 IndexedDB；快速存档失败不再干扰真实大容量存档。
+// v70 B168 2026-09-16：加入黄金基线自动恢复 + 滚动安全快照 + 灾难性回退拦截；代码升级不得覆盖真实学习进度。
 // v70 B142 2026-09-08：导入蓝色森林65并续补四级核心Unit 9 Lesson 2；升级内置包键，不重置旧学习进度。
 // v70 B132 2026-08-31：按用户要求移除四级听力分类与听力专属词；保留其他词库ID和真实学习进度，并兼容旧听力别名迁移。
 // v70 B126 2026-08-30：安全结构去重 + 30词快速复盘；旧ID通过别名合并，绝不重置主学习进度、全词独立练习或Peppa进度。
@@ -20,6 +28,18 @@ const MOBILE_DB_VERSION = 1;
 const MOBILE_DB_STORE = "snapshots";
 const MOBILE_DB_PRIMARY_KEY = "words-primary";
 const MOBILE_DB_PREVIOUS_KEY = "words-previous";
+const B168_GUARD_DB_KEY = "b168-progress-guard";
+const B168_GUARD_META_KEY = "word-memory-trainer:progress-guard:v168";
+const B169_QUICK_STORAGE_KEY = STORAGE_KEY + ":quick:v169";
+const B169_OLD_PACKED_STORAGE_KEY = STORAGE_KEY + ":packed:v163";
+const B169_QUICK_MAX_CHARS = 1400000; // 约 1.4M 字符，远低于常见 localStorage 配额；超出时仍以 IndexedDB 完整存档为准。
+const B168_GOLDEN_BASELINE = (window.B168_GOLDEN_BASELINE && typeof window.B168_GOLDEN_BASELINE === "object") ? window.B168_GOLDEN_BASELINE : null;
+const B168_GOLDEN_LABEL = normalizeText(B168_GOLDEN_BASELINE?.label || "2026-09-15 黄金恢复基线");
+let b168GoldenMergedCount = 0;
+let b168GuardBlocked = false;
+// B176：只有与 IndexedDB 安全快照绑定的 summary 才能作为新版进度“硬下限”。
+// localStorage 的 guard meta 可能来自旧版本/旧 file:// 路径，不能再单独锁死保存。
+let b176ValidatedGuardMeta = null;
 let mobileDbPromise = null;
 let mobileDbHandle = null;
 let mobileDbWriteChain = Promise.resolve();
@@ -476,7 +496,7 @@ let dictionaryAudioSuspendedUntil = 0;
 const CLOUD_STUDY_TIME_META_ID = "__word_memory_study_time_meta__";
 const CLOUD_COMPACT_PAYLOAD_ID = "__word_memory_compact_payload__";
 
-const BUILTIN_PACKAGE_KEY = "word-memory-trainer:builtins:v70-b162-noun2-u10-20260915"; // B159：快速复盘记录随备份导入导出，旧数据按ID合并。
+const BUILTIN_PACKAGE_KEY = "word-memory-trainer:builtins:v70-b178-fixed-collocation-20260919"; // B171：补政治法律主学习分组；只合并内置元数据，绝不重置学习进度。
 const FORCE_SEPARATE_BUILTIN_ID_PREFIXES = ["dictation-1-", "dictation-2-", "dictation-3-", "dictation-4-"]; // 四次听写均保留独立词条与独立学习进度，不受其他词库中同词状态影响。
 
 const BUILTIN_GROUP_ALIASES = {
@@ -534,6 +554,220 @@ const BUILTIN_ID_ALIASES = (window.WORD_MEMORY_ID_ALIASES && typeof window.WORD_
 let shouldPersistBuiltinWords = false;
 let restoredStudySession = null;
 let restoredBrowsePractice = null;
+
+function b168TermKey(value = "") {
+  return normalizeText(value).toLowerCase().replace(/[’‘`]/g, "'").replace(/\s+/g, " ");
+}
+
+function b168WordHasStudyEvidence(word = {}) {
+  const card = word?.progress?.card || {};
+  const topStage = Number.isInteger(word?.stage) ? word.stage : -1;
+  const cardStage = Number.isInteger(card?.stage) ? card.stage : -1;
+  return cardStage >= 0
+    || topStage >= 0
+    || (card.status && card.status !== "new")
+    || (word.status && word.status !== "new")
+    || Boolean(card.lastStudiedAt || word.lastStudiedAt)
+    || (Array.isArray(card.history) && card.history.length > 0)
+    || (Array.isArray(word.history) && word.history.length > 0)
+    || (normalizeText(word.mastery || "未学") !== "未学");
+}
+
+function b168ApplyGoldenBaselineToWords(words = []) {
+  const baselineWords = Array.isArray(B168_GOLDEN_BASELINE?.words) ? B168_GOLDEN_BASELINE.words : [];
+  if (!baselineWords.length || !Array.isArray(words)) return words;
+  const byId = new Map();
+  const byTerm = new Map();
+  words.forEach((word) => {
+    const id = canonicalBuiltinAliasId(word?.id || "");
+    const key = b168TermKey(word?.term || "");
+    if (id) byId.set(id, word);
+    if (key && !byTerm.has(key)) byTerm.set(key, word);
+  });
+  let merged = 0;
+  baselineWords.forEach((incoming) => {
+    const id = canonicalBuiltinAliasId(incoming?.id || "");
+    const key = b168TermKey(incoming?.term || "");
+    const target = (id && byId.get(id)) || (key && byTerm.get(key));
+    if (!target) return; // 已退休/已删除词不重新带回项目。
+    const before = JSON.stringify([target.status, target.stage, target.lastStudiedAt, target.progress]);
+    mergeImportedProgressOnly(target, incoming);
+    const after = JSON.stringify([target.status, target.stage, target.lastStudiedAt, target.progress]);
+    if (before !== after) merged += 1;
+  });
+  b168GoldenMergedCount += merged;
+  return words;
+}
+
+function b168ApplyGoldenAncillaryStores() {
+  if (!B168_GOLDEN_BASELINE) return;
+  if (B168_GOLDEN_BASELINE.dailyCompleted) dailyCompletedStore = mergeDailyCompletedStores(dailyCompletedStore, B168_GOLDEN_BASELINE.dailyCompleted);
+  if (B168_GOLDEN_BASELINE.checkIn) checkInStore = mergeCheckInStores(checkInStore, B168_GOLDEN_BASELINE.checkIn);
+  if (B168_GOLDEN_BASELINE.reviewActions) reviewActionStore = mergeReviewActionStores(reviewActionStore, B168_GOLDEN_BASELINE.reviewActions);
+  if (B168_GOLDEN_BASELINE.contextStudy) contextStudyStore = mergeContextStudyStores(contextStudyStore, B168_GOLDEN_BASELINE.contextStudy);
+  if (B168_GOLDEN_BASELINE.memoryLab) memoryLabStore = mergeMemoryLabStores(memoryLabStore, B168_GOLDEN_BASELINE.memoryLab);
+  if (B168_GOLDEN_BASELINE.browsePractice) restoredBrowsePractice = mergeBrowsePracticeSnapshots(restoredBrowsePractice || {}, B168_GOLDEN_BASELINE.browsePractice);
+}
+
+function b168ProtectedStudyTime(value = {}) {
+  const golden = B168_GOLDEN_BASELINE?.studyTime || {};
+  return mergeStudyTimeForCloud(value || {}, golden);
+}
+
+function b168SafetySummaryFromState() {
+  const words = Array.isArray(state?.words) ? state.words : [];
+  const learned = words.filter(b168WordHasStudyEvidence).length;
+  const mature = words.filter((word) => Number(word?.progress?.card?.stage ?? word?.stage ?? -1) >= REVIEW_STEPS.length - 1).length;
+  return {
+    savedAt: new Date().toISOString(),
+    totalWords: words.length,
+    learned,
+    mature,
+    totalStudySeconds: Math.max(0, Number(state?.studyTime?.totalSeconds) || 0),
+    checkInDays: Object.keys(checkInStore?.days || {}).length,
+    completedDays: Object.keys(dailyCompletedStore?.days || {}).length,
+    reviewActionDays: Object.keys(reviewActionStore?.days || {}).length,
+  };
+}
+
+function b168ReadGuardMeta() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(B168_GUARD_META_KEY) || "null");
+    return parsed && typeof parsed === "object" ? parsed : null;
+  } catch { return null; }
+}
+
+function b168GoldenFloorMeta() {
+  if (!B168_GOLDEN_BASELINE) return null;
+  const baselineWords = Array.isArray(B168_GOLDEN_BASELINE.words) ? B168_GOLDEN_BASELINE.words : [];
+  let learned = 0, mature = 0;
+  baselineWords.forEach((word) => {
+    if (b168WordHasStudyEvidence(word)) learned += 1;
+    const stage = Number(word?.progress?.card?.stage ?? word?.stage ?? -1);
+    if (stage >= REVIEW_STEPS.length - 1) mature += 1;
+  });
+  return {
+    savedAt: B168_GOLDEN_BASELINE.exportedAt || "",
+    totalWords: baselineWords.length,
+    learned,
+    mature,
+    totalStudySeconds: Math.max(0, Number(B168_GOLDEN_BASELINE?.studyTime?.totalSeconds) || 0),
+    checkInDays: Object.keys(B168_GOLDEN_BASELINE?.checkIn?.days || {}).length,
+    completedDays: Object.keys(B168_GOLDEN_BASELINE?.dailyCompleted?.days || {}).length,
+    reviewActionDays: Object.keys(B168_GOLDEN_BASELINE?.reviewActions?.days || {}).length,
+  };
+}
+
+function b176NormalizeGuardSummary(value) {
+  if (!value || typeof value !== "object") return null;
+  const totalWords = Math.max(0, Number(value.totalWords) || 0);
+  const learned = Math.max(0, Number(value.learned) || 0);
+  const mature = Math.max(0, Number(value.mature) || 0);
+  const totalStudySeconds = Math.max(0, Number(value.totalStudySeconds) || 0);
+  // 明显不可能的 summary 直接拒绝，避免旧错误元数据永久锁死。
+  if (learned > totalWords + 5 || mature > learned + 5) return null;
+  return {
+    savedAt: normalizeText(value.savedAt || ""),
+    totalWords, learned, mature, totalStudySeconds,
+    checkInDays: Math.max(0, Number(value.checkInDays) || 0),
+    completedDays: Math.max(0, Number(value.completedDays) || 0),
+    reviewActionDays: Math.max(0, Number(value.reviewActionDays) || 0),
+  };
+}
+
+function b176MergeGuardFloors(primary, golden) {
+  if (!primary) return golden || null;
+  if (!golden) return primary;
+  return {
+    savedAt: [primary.savedAt, golden.savedAt].filter(Boolean).sort().pop() || "",
+    totalWords: Math.max(Number(primary.totalWords)||0, Number(golden.totalWords)||0),
+    learned: Math.max(Number(primary.learned)||0, Number(golden.learned)||0),
+    mature: Math.max(Number(primary.mature)||0, Number(golden.mature)||0),
+    totalStudySeconds: Math.max(Number(primary.totalStudySeconds)||0, Number(golden.totalStudySeconds)||0),
+    checkInDays: Math.max(Number(primary.checkInDays)||0, Number(golden.checkInDays)||0),
+    completedDays: Math.max(Number(primary.completedDays)||0, Number(golden.completedDays)||0),
+    reviewActionDays: Math.max(Number(primary.reviewActionDays)||0, Number(golden.reviewActionDays)||0),
+  };
+}
+
+function b168EffectiveGuardMeta() {
+  const golden = b168GoldenFloorMeta();
+  // B176：阻断保存时只信任“实际 IndexedDB 安全快照”与黄金基线。
+  // 旧 localStorage guard meta 仅作兼容线索，不再成为硬下限，否则一次陈旧/膨胀元数据会永久误报。
+  return b176MergeGuardFloors(b176ValidatedGuardMeta, golden);
+}
+
+function b176RepairStaleGuardMeta() {
+  const authoritative = b168EffectiveGuardMeta();
+  if (!authoritative) return;
+  const localMeta = b176NormalizeGuardSummary(b168ReadGuardMeta());
+  if (!localMeta
+      || localMeta.learned !== authoritative.learned
+      || localMeta.totalStudySeconds !== authoritative.totalStudySeconds
+      || localMeta.totalWords !== authoritative.totalWords) {
+    b168PersistGuardMeta(authoritative);
+  }
+}
+
+function b168DetectCatastrophicRegression(current, floor) {
+  if (!floor) return [];
+  const issues = [];
+  const learnedTolerance = Math.max(30, Math.ceil((Number(floor.learned) || 0) * 0.02));
+  // B175：只有“核心进度证据”真正倒退时才阻止保存。
+  // 打卡/每日完成/复习动作这些辅助历史会在不同 file:// 路径、初始化时序、旧快照迁移时
+  // 暂时少几天；把它们当硬门槛会出现“8229 已学习、153 小时仍被判回退”的误报，
+  // 反而阻止最新真实操作落盘。辅助历史继续由黄金基线/安全快照自动合并修复，但不再锁死保存。
+  if ((Number(current.learned) || 0) + learnedTolerance < (Number(floor.learned) || 0)) {
+    issues.push(`已学习 ${current.learned} < 安全基线 ${floor.learned}`);
+  }
+  if ((Number(current.totalStudySeconds) || 0) + 60 < (Number(floor.totalStudySeconds) || 0)) {
+    issues.push("累计学习时长回退");
+  }
+  return issues;
+}
+
+function b175AncillaryHistoryWarnings(current, floor) {
+  if (!floor) return [];
+  const warnings = [];
+  const dayTolerance = 2;
+  if ((Number(current.checkInDays) || 0) + dayTolerance < (Number(floor.checkInDays) || 0)) warnings.push("打卡历史暂少");
+  if ((Number(current.completedDays) || 0) + dayTolerance < (Number(floor.completedDays) || 0)) warnings.push("每日完成历史暂少");
+  if ((Number(current.reviewActionDays) || 0) + dayTolerance < (Number(floor.reviewActionDays) || 0)) warnings.push("复习动作历史暂少");
+  return warnings;
+}
+
+function b168PersistGuardMeta(summary) {
+  try { localStorage.setItem(B168_GUARD_META_KEY, JSON.stringify(summary)); } catch {}
+}
+
+async function b168ReadGuardPayload() {
+  try {
+    const record = await readMobileDatabaseRecord(B168_GUARD_DB_KEY);
+    const normalized = b176NormalizeGuardSummary(record?.summary);
+    if (normalized) b176ValidatedGuardMeta = normalized;
+    b176RepairStaleGuardMeta();
+    return record?.payload || null;
+  } catch {
+    b176ValidatedGuardMeta = null;
+    return null;
+  }
+}
+
+async function b168WriteGuardPayload(payload, summary) {
+  try {
+    const db = await openMobileDatabase();
+    await new Promise((resolve, reject) => {
+      const tx = db.transaction(MOBILE_DB_STORE, "readwrite");
+      tx.objectStore(MOBILE_DB_STORE).put({ key: B168_GUARD_DB_KEY, payload, summary, savedAt: payload?.savedAt || new Date().toISOString() });
+      tx.oncomplete = () => resolve(true);
+      tx.onerror = () => reject(tx.error || new Error("guard write failed"));
+      tx.onabort = () => reject(tx.error || new Error("guard write aborted"));
+    });
+    b176ValidatedGuardMeta = b176NormalizeGuardSummary(summary) || b176ValidatedGuardMeta;
+    b168PersistGuardMeta(summary);
+    return true;
+  } catch { return false; }
+}
 
 function normalizeStudySessionSnapshot(value = {}) {
   const source = value && typeof value === "object" ? value : {};
@@ -863,7 +1097,8 @@ function setBrowsePracticeSnapshot(value = {}, options = {}) {
   return cloneBrowsePracticeValue(state.browsePractice);
 }
 
-const initialWords = loadWords();
+b168ApplyGoldenAncillaryStores();
+const initialWords = b168ApplyGoldenBaselineToWords(loadWords());
 const initialStudySession = normalizeStudySessionSnapshot(restoredStudySession || {});
 const initialPracticeSessions = createPracticeSessions(initialStudySession.mode);
 initialPracticeSessions.card = {
@@ -875,7 +1110,7 @@ const state = {
   words: initialWords,
   browsePractice: normalizeBrowsePracticeSnapshot(restoredBrowsePractice || {}),
   settings: loadSettings(),
-  studyTime: loadStudyTime(),
+  studyTime: b168ProtectedStudyTime(loadStudyTime()),
   mode: initialStudySession.mode,
   practiceMode: "card",
   practiceSessions: initialPracticeSessions,
@@ -902,6 +1137,7 @@ const state = {
   contextExpanded: false,
   choiceResult: null,
   pendingRatingMeta: null,
+  reviewCooldowns: {},
   quickSession: {
     active: false,
     ending: false,
@@ -2971,6 +3207,11 @@ function compactPayloadForStorage(words, options = {}) {
     } catch {
       payload.peppaZone = null;
     }
+    try {
+      payload.spellingLab = window.SpellingHubApp?.exportState?.() || JSON.parse(localStorage.getItem("wordMemorySpellingLabV2") || "null");
+    } catch {
+      payload.spellingLab = null;
+    }
   }
   return payload;
 }
@@ -3012,6 +3253,16 @@ function loadCompactWords(parsed, options = {}) {
       }
     } catch { /* Peppa 专区仍可从自己的本地存储恢复。 */ }
   }
+  if (parsed?.spellingLab) {
+    try {
+      if (window.SpellingHubApp?.importState) {
+        window.SpellingHubApp.importState(parsed.spellingLab, { merge: true });
+        localStorage.removeItem("wordMemorySpellingLabPendingV2");
+      } else {
+        localStorage.setItem("wordMemorySpellingLabPendingV2", JSON.stringify(parsed.spellingLab));
+      }
+    } catch { /* 拼写训练中心仍可从自己的本地存储恢复。 */ }
+  }
   const words = cloneBuiltinWords();
   const byId = new Map(words.map((word) => [word.id, word]));
   const byTerm = new Map(words.map((word) => [builtinDedupeTermKey(word.term), word]));
@@ -3031,6 +3282,117 @@ function loadCompactWords(parsed, options = {}) {
     }
   });
   return applyBuiltinWords(words);
+}
+
+
+function b169QuickProgressRecord(progress = {}) {
+  const out = {};
+  PROGRESS_MODES.forEach((mode) => {
+    const item = progress?.[mode];
+    if (!item) return;
+    const status = item.status || "new";
+    const stage = Number.isInteger(item.stage) ? item.stage : -1;
+    const lastStudiedAt = item.lastStudiedAt || "";
+    const resetAt = item.resetAt || "";
+    const nextReviewAt = item.nextReviewAt || "";
+    if (status === "new" && stage < 0 && !lastStudiedAt && !resetAt && !nextReviewAt) return;
+    const record = {};
+    if (status !== "new") record.status = status;
+    if (status !== "new" || stage >= 0 || lastStudiedAt || resetAt) record.stage = stage;
+    if (nextReviewAt) record.nextReviewAt = nextReviewAt;
+    if (lastStudiedAt) record.lastStudiedAt = lastStudiedAt;
+    if (resetAt) record.resetAt = resetAt;
+    out[mode] = record;
+  });
+  return out;
+}
+
+function b169QuickWordRecord(word = {}) {
+  const record = { id: canonicalBuiltinAliasId(word.id || "") || word.id };
+  const mastery = word.mastery || "未学";
+  const status = word.status || "new";
+  const stage = Number.isInteger(word.stage) ? word.stage : -1;
+  if (mastery !== "未学") record.mastery = mastery;
+  if (word.important) record.important = true;
+  if (status !== "new") record.status = status;
+  if (status !== "new" || stage >= 0 || word.lastStudiedAt) record.stage = stage;
+  if (word.nextReviewAt) record.nextReviewAt = word.nextReviewAt;
+  if (word.lastStudiedAt) record.lastStudiedAt = word.lastStudiedAt;
+  const progress = b169QuickProgressRecord(word.progress || {});
+  if (Object.keys(progress).length) record.progress = progress;
+  return record;
+}
+
+let b169GoldenQuickMapCache = null;
+function b169GoldenQuickMap() {
+  if (b169GoldenQuickMapCache) return b169GoldenQuickMapCache;
+  const map = new Map();
+  (Array.isArray(B168_GOLDEN_BASELINE?.words) ? B168_GOLDEN_BASELINE.words : []).forEach((word) => {
+    const id = canonicalBuiltinAliasId(word?.id || "");
+    if (id) map.set(id, JSON.stringify(b169QuickWordRecord(word)));
+  });
+  b169GoldenQuickMapCache = map;
+  return map;
+}
+
+function b169BuildQuickStoragePayload(words = state.words) {
+  const builtinIds = new Set(ALL_BUILTIN_WORDS.map((word) => canonicalBuiltinAliasId(word.id || "")).filter(Boolean));
+  const golden = b169GoldenQuickMap();
+  const progress = [];
+  const customWords = [];
+  (Array.isArray(words) ? words : []).forEach((raw) => {
+    const word = normalizeWord(raw);
+    const id = canonicalBuiltinAliasId(word.id || "") || word.id;
+    const quick = b169QuickWordRecord(word);
+    const hasQuickData = Object.keys(quick).some((key) => key !== "id");
+    if (builtinIds.has(id)) {
+      if (!hasQuickData) return;
+      const current = JSON.stringify(quick);
+      const baseline = golden.get(id) || "";
+      // 黄金基线已有的8205条不重复写；只记录此后真正变化过的状态。
+      if (current !== baseline) progress.push(quick);
+    } else {
+      customWords.push(compactCustomWord(word, { emergency: true }));
+    }
+  });
+  return {
+    app: "专升本单词记忆",
+    version: 169,
+    compact: true,
+    quickV169: true,
+    base: B168_GOLDEN_LABEL,
+    savedAt: new Date().toISOString(),
+    studySession: captureStudySessionSnapshot(),
+    progress,
+    customWords,
+  };
+}
+
+function b169WriteQuickStorage(payload = b169BuildQuickStoragePayload()) {
+  const encoded = window.WordMemoryStorageCodec.encode(payload);
+  const serialized = JSON.stringify(encoded);
+  if (serialized.length > B169_QUICK_MAX_CHARS) {
+    const error = new Error("B169 quick snapshot exceeds safe localStorage budget");
+    error.name = "QuotaExceededError";
+    throw error;
+  }
+  localStorage.setItem(B169_QUICK_STORAGE_KEY, serialized);
+  return serialized.length;
+}
+
+function b169ReadQuickStorage() {
+  try {
+    const raw = localStorage.getItem(B169_QUICK_STORAGE_KEY);
+    if (!raw) return null;
+    const decoded = window.WordMemoryStorageCodec.decode(JSON.parse(raw));
+    return decoded && decoded.quickV169 ? decoded : null;
+  } catch { return null; }
+}
+
+function b169ReleaseRedundantLocalCopies() {
+  // 只有 IndexedDB 完整快照已经成功后才调用。删除的是重复副本，不是唯一存档。
+  try { localStorage.removeItem(B169_OLD_PACKED_STORAGE_KEY); } catch {}
+  try { localStorage.removeItem(STORAGE_KEY); } catch {}
 }
 
 function cleanupStorageForWordSave() {
@@ -3149,7 +3511,7 @@ async function readBestMobileDatabasePayload() {
     const primaryScore = storedPayloadScore(primaryPayload);
     const previousScore = storedPayloadScore(previousPayload);
     // Never let an unexpectedly tiny snapshot replace a substantially fuller last-good copy.
-    if (previousScore > 0 && primaryScore < previousScore * 0.55) return previousPayload;
+    // A smaller newer snapshot can be an intentional reset; count is not recency.
     return payloadSavedAt(primaryPayload) >= payloadSavedAt(previousPayload) ? primaryPayload : previousPayload;
   } catch {
     return null;
@@ -3268,12 +3630,16 @@ function queueMobileDatabaseWrite(payload, options = {}) {
 }
 
 function parseLocalStoragePayload() {
+  let quick = null, packed = null, legacy = null;
+  try { quick = b169ReadQuickStorage(); } catch {}
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : null;
-  } catch {
-    return null;
-  }
+    const raw = localStorage.getItem(B169_OLD_PACKED_STORAGE_KEY);
+    if (raw) packed = window.WordMemoryStorageCodec.decode(JSON.parse(raw));
+  } catch {}
+  try { legacy = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null'); } catch {}
+  return [quick, packed, legacy]
+    .filter(Boolean)
+    .sort((a, b) => payloadSavedAt(b) - payloadSavedAt(a))[0] || null;
 }
 
 function payloadSavedAt(payload) {
@@ -3309,19 +3675,25 @@ function wordsFromStoredPayload(payload) {
 async function hydrateWordsFromMobileDatabase() {
   try {
     navigator.storage?.persist?.().catch(() => false);
+    // Preserve the original candidates before any startup merge/save occurs.
+    await archivePreB163Storage().catch(() => showToast("旧存档快照暂存失败，请先导出本机存档线索"));
     const dbPayload = await readBestMobileDatabasePayload();
+    const guardPayload = await b168ReadGuardPayload();
     const localPayload = parseLocalStoragePayload();
     const shouldUseDb = payloadHasStudyData(dbPayload)
       && (!payloadHasStudyData(localPayload) || payloadSavedAt(dbPayload) > payloadSavedAt(localPayload));
-    if (shouldUseDb) {
-      const restoredWords = wordsFromStoredPayload(dbPayload);
+    for (const candidate of [guardPayload, dbPayload]) {
+      if (!payloadHasStudyData(candidate)) continue;
+      const restoredWords = wordsFromStoredPayload(candidate);
       if (Array.isArray(restoredWords) && restoredWords.length) {
-        state.words = restoredWords;
-        if (dbPayload?.browsePractice) {
-          setBrowsePracticeSnapshot(dbPayload.browsePractice, { merge: true, save: false, notify: true });
+        // B168：安全快照和大容量存档都只按“真实操作时间”逐词合并，绝不整包覆盖。
+        state.words = dedupeRuntimeWords([...state.words, ...restoredWords]);
+        b168ApplyGoldenBaselineToWords(state.words);
+        if (candidate?.browsePractice) {
+          setBrowsePracticeSnapshot(candidate.browsePractice, { merge: true, save: false, notify: true });
         }
-        if (dbPayload?.studySession) applyStudySessionSnapshot(dbPayload.studySession);
-        else {
+        if (candidate === dbPayload && shouldUseDb && !pendingWordSave && candidate?.studySession) applyStudySessionSnapshot(candidate.studySession);
+        else if (!state.activeId) {
           state.activeId = null;
           state.answerVisible = false;
           state.reviewUndo = null;
@@ -3330,29 +3702,33 @@ async function hydrateWordsFromMobileDatabase() {
         backfillCheckInFromExistingRecords();
         backfillReviewActionsFromExistingRecords();
         render();
-        showToast("已从手机大容量存档恢复学习记录");
       }
-    } else if (payloadHasStudyData(localPayload)) {
-      await queueMobileDatabaseWrite(localPayload);
-    } else {
-      await queueMobileDatabaseWrite(compactPayloadForStorage(state.words));
     }
+    // 黄金基线最后再兜一次底：只补旧证据，不覆盖更新的真实操作。
+    b168ApplyGoldenBaselineToWords(state.words);
+    state.studyTime = b168ProtectedStudyTime(state.studyTime);
+    b168ApplyGoldenAncillaryStores();
   } catch {
     // localStorage remains available as the compatibility fallback.
   } finally {
     mobileDbHydrated = true;
+    const persisted = saveWords({ immediate: true, skipCloud: true });
     persistBuiltinWordsIfNeeded();
+    if (b168GoldenMergedCount > 0) {
+      showToast(`B168 已从黄金基线补回 ${b168GoldenMergedCount} 条进度证据，并启用防回退保护。`, 5200);
+    } else if (persisted !== false) {
+      showToast("B168 进度防回退保护已启用。", 3000);
+    }
   }
 }
 
 function loadWords() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) {
+    const parsed = parseLocalStoragePayload();
+    if (!parsed) {
       shouldPersistBuiltinWords = true;
       return cloneBuiltinWords();
     }
-    const parsed = JSON.parse(raw);
     if (parsed && parsed.compact) {
       return loadCompactWords(parsed);
     }
@@ -3428,61 +3804,100 @@ function normalizeWord(word) {
 }
 
 function writeCompactStorage(payload) {
-  const serialized = JSON.stringify(payload);
-  const previous = localStorage.getItem(STORAGE_KEY);
-  try {
-    localStorage.setItem(STORAGE_KEY, serialized);
-    return serialized.length;
-  } catch (firstError) {
-    // iPhone Safari may count both the old and new value while replacing a large item.
-    if (previous && serialized.length < previous.length) {
-      localStorage.removeItem(STORAGE_KEY);
-      try {
-        localStorage.setItem(STORAGE_KEY, serialized);
-        return serialized.length;
-      } catch (secondError) {
-        try { localStorage.setItem(STORAGE_KEY, previous); } catch { /* IndexedDB still keeps the last good copy. */ }
-        throw secondError;
-      }
+  const serialized = JSON.stringify(window.WordMemoryStorageCodec.encode(payload));
+  localStorage.setItem(STORAGE_KEY + ':packed:v163', serialized);
+  return serialized.length;
+}
+
+async function archivePreB163Storage() {
+  const db = await openMobileDatabase();
+  const legacyRaw = localStorage.getItem(STORAGE_KEY);
+  await new Promise((resolve,reject) => {
+    const tx=db.transaction(MOBILE_DB_STORE,'readwrite'), store=tx.objectStore(MOBILE_DB_STORE);
+    for (const sourceKey of [MOBILE_DB_PRIMARY_KEY,MOBILE_DB_PREVIOUS_KEY]) {
+      const archiveKey='b163-preserved:'+sourceKey;
+      const request=store.get(archiveKey);
+      request.onsuccess=()=>{if(!request.result){const old=store.get(sourceKey);old.onsuccess=()=>{if(old.result)store.put({key:archiveKey,original:old.result});};}};
     }
-    throw firstError;
-  }
+    const check=store.get('b163-preserved:legacy-local');
+    check.onsuccess=()=>{if(!check.result&&legacyRaw)store.put({key:'b163-preserved:legacy-local',raw:legacyRaw});};
+    tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error);
+  });
 }
 
 function commitWordsSave(options = {}) {
   if (PUBLIC_VIEWER_SLUG) return true;
 
+  // B168：每次落盘前先合并黄金基线；较新的“忘了/重置”等真实操作仍因时间更晚而优先。
+  b168ApplyGoldenBaselineToWords(state.words);
+  b168ApplyGoldenAncillaryStores();
+  state.studyTime = b168ProtectedStudyTime(state.studyTime);
+  // B176：先纠正旧版本留下的陈旧 localStorage guard meta，再用真实安全快照判断。
+  b176RepairStaleGuardMeta();
+  const guardFloor = b168EffectiveGuardMeta();
+  const guardNow = b168SafetySummaryFromState();
+  const guardIssues = b168DetectCatastrophicRegression(guardNow, guardFloor);
+  const ancillaryWarnings = b175AncillaryHistoryWarnings(guardNow, guardFloor);
+  if (ancillaryWarnings.length) {
+    console.warn("B175 ancillary history gap; save continues and baseline merge remains active", ancillaryWarnings, { guardNow, guardFloor });
+  }
+  if (guardIssues.length && !options.allowRegression) {
+    b168GuardBlocked = true;
+    console.error("B168 progress guard blocked save", guardIssues, { guardNow, guardFloor });
+    showToast(`检测到真实核心进度回退（${guardIssues.join("；")}），已阻止覆盖安全存档。`, 5200);
+    return false;
+  }
+  b168GuardBlocked = false;
+
   saveDailyCompletedStore();
   saveCheckInStore();
   saveReviewActionStore();
   let mobilePayload = compactPayloadForStorage(state.words);
-  let localPayload = compactPayloadForStorage(state.words, { localLite: true });
+  let quickPayload = b169BuildQuickStoragePayload(state.words);
   let localSaved = false;
   try {
     cleanupStorageForWordSave();
-    writeCompactStorage(localPayload);
+    b169WriteQuickStorage(quickPayload);
     localSaved = true;
   } catch {
-    try {
-      // Keep all current stages and groups, but remove only redundant history entries.
-      shrinkHistoriesForEmergency();
-      cleanupStorageForWordSave();
-      mobilePayload = compactPayloadForStorage(state.words, { emergency: true });
-      localPayload = compactPayloadForStorage(state.words, { emergency: true, localLite: true });
-      writeCompactStorage(localPayload);
-      localSaved = true;
-    } catch {
-      localSaved = false;
-    }
+    // 不再把8200+条完整进度重复塞进 localStorage。快速区失败时，先保住 IndexedDB 完整快照。
+    localSaved = false;
   }
   lastLocalStorageSaveSucceeded = localSaved;
+  if (localSaved) b168PersistGuardMeta(b168SafetySummaryFromState());
 
-  // localStorage is kept deliberately small; IndexedDB receives the complete recovery snapshot.
-  queueMobileDatabaseWrite(mobilePayload, { notifyOnFailure: !localSaved });
+  // B169：IndexedDB 是完整主存档；localStorage 只是黄金基线后的轻量增量快照。
+  if (mobileDbHydrated) {
+    queueMobileDatabaseWrite(mobilePayload, { notifyOnFailure: false }).then(async () => {
+      const safeSummary = b168SafetySummaryFromState();
+      if (!b168DetectCatastrophicRegression(safeSummary, b168EffectiveGuardMeta()).length) {
+        await b168WriteGuardPayload(mobilePayload, safeSummary);
+      }
+      // 完整快照已安全落盘后，释放旧版重复大对象，再重试轻量快速存档。
+      if (!localSaved && !lastLocalStorageSaveSucceeded) {
+        b169ReleaseRedundantLocalCopies();
+        try {
+          quickPayload = b169BuildQuickStoragePayload(state.words);
+          b169WriteQuickStorage(quickPayload);
+          lastLocalStorageSaveSucceeded = true;
+          b168PersistGuardMeta(safeSummary);
+        } catch {
+          // 快速区仍不可写也不影响完整存档；仅在控制台记录，不再反复弹“空间不足”。
+          console.warn("B169 quick snapshot unavailable; IndexedDB full snapshot is safe");
+        }
+      } else {
+        // 旧大副本已无必要；在快速快照成功时也释放，避免再次把 localStorage 撑满。
+        b169ReleaseRedundantLocalCopies();
+      }
+    }).catch((error) => {
+      console.error("B169 IndexedDB save failed", error);
+      if (!lastLocalStorageSaveSucceeded) showToast("本机存档保存失败，请立即导出备份。", 5000);
+    });
+  }
   if (!options.skipCloud) autoSaveCloudSoon();
 
   if (!localSaved && typeof indexedDB === "undefined") {
-    showToast("手机存档保存失败，请立即导出备份");
+    showToast("本机存档保存失败，请立即导出备份");
     return false;
   }
   return true;
@@ -3525,11 +3940,11 @@ async function saveWordsDurably(options = {}) {
   return Boolean(lastLocalStorageSaveSucceeded || indexedDbSaved);
 }
 
-function showToast(message) {
+function showToast(message, duration = 2200) {
   els.toast.textContent = message;
   els.toast.classList.add("show");
   window.clearTimeout(showToast.timer);
-  showToast.timer = window.setTimeout(() => els.toast.classList.remove("show"), 2200);
+  showToast.timer = window.setTimeout(() => els.toast.classList.remove("show"), Math.max(1200, Number(duration) || 2200));
 }
 
 function normalizeCloudSlug(value) {
@@ -4180,6 +4595,24 @@ function isDue(word, date = nowDate(), mode = state.practiceMode) {
   return Boolean(progress.nextReviewAt && new Date(progress.nextReviewAt) <= date);
 }
 
+// B171：刚评分后的词在自己的 nextReviewAt 到来前不得被页面重绘/“全部抽查”立即塞回当前队列。
+// 额外读取最近10分钟真实操作时间，确保刷新页面后“忘了2分钟 / 模糊8分钟”仍严格等待。
+function isRecentReviewCooldown(word, date = nowDate(), mode = state.practiceMode) {
+  const progress = modeProgress(word, mode);
+  const nowMs = date.getTime();
+  const key = `${mode}:${word?.id || ""}`;
+  const runtimeUntil = Date.parse(state.reviewCooldowns?.[key] || "") || 0;
+  if (runtimeUntil > nowMs) return true;
+  if (runtimeUntil && runtimeUntil <= nowMs && state.reviewCooldowns) delete state.reviewCooldowns[key];
+
+  const dueAt = Date.parse(progress.nextReviewAt || "") || 0;
+  if (!dueAt || dueAt <= nowMs) return false;
+  const lastActionAt = progressActionTime(progress);
+  if (!lastActionAt) return false;
+  const age = nowMs - lastActionAt;
+  return age >= -5000 && age < 10 * 60 * 1000;
+}
+
 function isTodayReview(word, mode = state.practiceMode) {
   const progress = modeProgress(word, mode);
   if (isGraduatedProgress(progress)) return false;
@@ -4635,7 +5068,14 @@ function cloneWordForUndo(word) {
   return JSON.parse(JSON.stringify(word));
 }
 
+function cloneUndoValue(value) {
+  if (value === undefined) return undefined;
+  return JSON.parse(JSON.stringify(value));
+}
+
 function rememberReviewUndo(word, action) {
+  const date = todayKey();
+  const cooldownKey = `${state.practiceMode}:${word.id}`;
   state.reviewUndo = {
     wordId: word.id,
     word: cloneWordForUndo(word),
@@ -4644,6 +5084,17 @@ function rememberReviewUndo(word, action) {
     mode: state.mode,
     activeGroup: state.activeGroup,
     sprintWasActive: Boolean(state.sprint.active),
+    sprintSnapshot: cloneUndoValue(state.sprint),
+    quickSessionSnapshot: cloneUndoValue(state.quickSession),
+    cooldownKey,
+    cooldownBefore: state.reviewCooldowns?.[cooldownKey] || "",
+    sideEffectDate: date,
+    dailyCompletedDayBefore: cloneUndoValue(dailyCompletedStore?.days?.[date]),
+    checkInDayBefore: cloneUndoValue(checkInStore?.days?.[date]),
+    reviewActionDayBefore: cloneUndoValue(reviewActionStore?.days?.[date]),
+    memoryMetricExisted: Boolean(memoryLabStore?.metrics && Object.prototype.hasOwnProperty.call(memoryLabStore.metrics, word.id)),
+    memoryMetricBefore: cloneUndoValue(memoryLabStore?.metrics?.[word.id]),
+    memoryFlowBefore: cloneUndoValue(memoryLabStore?.flow),
     createdAt: new Date().toISOString(),
   };
 }
@@ -5178,22 +5629,60 @@ function undoLastReview() {
     renderActiveCard();
     return;
   }
+
+  // B173：撤回必须先撤销 B171 的运行时冷却。否则虽然词条进度恢复了，
+  // getQueue() 仍会把它当成“2/8分钟冷却中”过滤掉，造成点撤回却马上跳走。
+  const cooldownKey = snapshot.cooldownKey || `${snapshot.practiceMode || state.practiceMode}:${snapshot.wordId}`;
+  if (state.reviewCooldowns) {
+    if (snapshot.cooldownBefore) state.reviewCooldowns[cooldownKey] = snapshot.cooldownBefore;
+    else delete state.reviewCooldowns[cooldownKey];
+  }
+
   state.words[index] = normalizeWord(snapshot.word);
   state.practiceMode = PROGRESS_MODES.includes(snapshot.practiceMode) ? snapshot.practiceMode : state.practiceMode;
   state.mode = ["due", "new", "all", "weak"].includes(snapshot.mode) ? snapshot.mode : state.mode;
   state.activeGroup = snapshot.activeGroup || state.activeGroup;
+
+  // 同步恢复本次评分前的会话/统计内存，避免“词撤回了，但冲刺/快速练仍多算一次”。
+  if (snapshot.quickSessionSnapshot) state.quickSession = cloneUndoValue(snapshot.quickSessionSnapshot);
+  if (snapshot.sprintSnapshot) state.sprint = cloneUndoValue(snapshot.sprintSnapshot);
+
+  const date = snapshot.sideEffectDate || todayKey();
+  if (dailyCompletedStore?.days) {
+    if (snapshot.dailyCompletedDayBefore === undefined) delete dailyCompletedStore.days[date];
+    else dailyCompletedStore.days[date] = cloneUndoValue(snapshot.dailyCompletedDayBefore);
+  }
+  if (checkInStore?.days) {
+    if (snapshot.checkInDayBefore === undefined) delete checkInStore.days[date];
+    else checkInStore.days[date] = cloneUndoValue(snapshot.checkInDayBefore);
+  }
+  if (reviewActionStore?.days) {
+    if (snapshot.reviewActionDayBefore === undefined) delete reviewActionStore.days[date];
+    else reviewActionStore.days[date] = cloneUndoValue(snapshot.reviewActionDayBefore);
+  }
+  if (memoryLabStore?.metrics) {
+    if (snapshot.memoryMetricExisted) memoryLabStore.metrics[snapshot.wordId] = cloneUndoValue(snapshot.memoryMetricBefore);
+    else delete memoryLabStore.metrics[snapshot.wordId];
+  }
+  if (snapshot.memoryFlowBefore !== undefined) memoryLabStore.flow = cloneUndoValue(snapshot.memoryFlowBefore);
+
   setActiveId(snapshot.wordId);
   state.answerVisible = true;
   resetTypingState();
   state.lastAutoSpokenId = null;
-  if (snapshot.sprintWasActive && state.sprint.active) {
-    state.sprint.completed = Math.max(0, Number(state.sprint.completed || 0) - 1);
-  }
   state.reviewUndo = null;
-  reconcileDailyCompletedWord(state.words[index]);
+
+  // 把撤回后的状态立即写回，避免之前评分安排的延迟存储随后把旧状态再写回来。
+  if (deferredLearningStoreTimer) window.clearTimeout(deferredLearningStoreTimer);
+  deferredLearningStoreTimer = null;
+  deferredLearningStoreDirty = { checkIn: false, reviewActions: false, memoryLab: false };
+  saveDailyCompletedStore();
+  saveCheckInStore();
+  saveReviewActionStore();
+  saveMemoryLabStore();
   saveWords();
   render();
-  showToast("已撤回上一步，回到上一个词");
+  showToast("已撤回上一条，已恢复原进度并回到该词");
 }
 
 function quickSessionQuestionMode(session = state.quickSession) {
@@ -5491,6 +5980,9 @@ function scheduleNext(word, result, options = {}) {
   progress.status = graduated ? "mature" : "learning";
   progress.nextReviewAt = graduated ? "" : nextDate.toISOString();
   progress.lastStudiedAt = completedAt.toISOString();
+  const cooldownKey = `${state.practiceMode}:${word.id}`;
+  if (progress.nextReviewAt) state.reviewCooldowns[cooldownKey] = progress.nextReviewAt;
+  else delete state.reviewCooldowns[cooldownKey];
   if (graduated) label = "已毕业";
   word.updatedAt = completedAt.toISOString();
   recordModeHistory(word, {
@@ -5514,7 +6006,7 @@ function getQueue() {
   if (state.quickSession.active) {
     return state.quickSession.queueIds.map((id) => state.words.find((word) => word.id === id)).filter(Boolean);
   }
-  const scopedWords = practiceEligibleWords(state.words.filter(wordMatchesActiveGroup));
+  const scopedWords = practiceEligibleWords(state.words.filter(wordMatchesActiveGroup)).filter((word) => !isRecentReviewCooldown(word));
   if (state.sprint.active) {
     return sprintQueue(scopedWords);
   }
@@ -6427,7 +6919,7 @@ function renderGroupProgress() {
 }
 
 function activateModuleFromApp(name = "study") {
-  const titleMap = { folder: "英语资料夹", peppa: "小猪佩奇", study: "记忆训练", smart: "构词归类", review: "快速复习", browse: "全词浏览", progress: "学习进度", manage: "管理词库" };
+  const titleMap = { folder: "英语资料夹", spelling: "拼写训练", peppa: "小猪佩奇", study: "记忆训练", smart: "构词归类", review: "快速复习", browse: "全词浏览", progress: "学习进度", manage: "管理词库" };
   const target = titleMap[name] ? name : "study";
   document.querySelectorAll("[data-module-target]").forEach((button) => {
     button.classList.toggle("active", button.dataset.moduleTarget === target);
@@ -8040,6 +8532,7 @@ function exportWords() {
     memoryLab: normalizeMemoryLabStore(memoryLabStore),
     browsePractice: normalizeBrowsePracticeSnapshot(state.browsePractice || {}),
     peppaZone: window.PeppaZone?.exportState?.() || null,
+    spellingLab: window.SpellingHubApp?.exportState?.() || (() => { try { return JSON.parse(localStorage.getItem("wordMemorySpellingLabV2") || "null"); } catch { return null; } })(),
     speedReview,
     words: state.words,
   };
@@ -8181,6 +8674,12 @@ async function importWords(event) {
     if (parsed.peppaZone && window.PeppaZone?.importState) {
       window.PeppaZone.importState(parsed.peppaZone, { merge: true });
     }
+    if (parsed.spellingLab) {
+      try {
+        if (window.SpellingHubApp?.importState) window.SpellingHubApp.importState(parsed.spellingLab, { merge: true });
+        else localStorage.setItem("wordMemorySpellingLabPendingV2", JSON.stringify(parsed.spellingLab));
+      } catch {}
+    }
     if (parsed.speedReview) {
       try { window.SpeedReviewApp?.importState?.(parsed.speedReview); } catch {}
       // SpeedReviewApp.importState above restores the snapshot exactly once.
@@ -8190,9 +8689,9 @@ async function importWords(event) {
     backfillReviewActionsFromExistingRecords();
     if (parsed.studySession) applyStudySessionSnapshot(parsed.studySession);
     else setActiveId(null);
-    saveWords({ immediate: true });
+    const persisted = await saveWordsDurably({ skipCloud: true });
     render();
-    showToast(`备份恢复完成：恢复进度 ${restored} 条，新增 ${added} 条；当前卡片位置也已恢复`);
+    showToast(persisted ? `备份恢复并保存完成：恢复进度 ${restored} 条，新增 ${added} 条` : '备份已读入但保存失败，请立即导出，不要刷新页面');
   } catch (error) {
     console.error("Import failed", error);
     showToast("导入失败，请选择正确的词库备份文件");
@@ -8667,6 +9166,7 @@ function resetWordLearningProgressForBrowseQuiz(id, options = {}) {
 }
 
 window.WordMemoryApp = {
+  showToast,
   getWords: () => state.words,
   getWord: (id) => { const canonicalId = canonicalBuiltinAliasId(id); return state.words.find((word) => String(word.id) === String(canonicalId)) || null; },
   getMemoryLab: () => normalizeMemoryLabStore(memoryLabStore),
@@ -8752,6 +9252,14 @@ window.WordMemoryApp = {
   setBrowsePractice: (snapshot, options = {}) => setBrowsePracticeSnapshot(snapshot, { merge: options.merge !== false, save: options.save !== false, notify: options.notify !== false }),
   save: () => saveWords({ immediate: true }),
   saveBuffered: () => saveWords(),
+  getProgressSafety: () => ({
+    version: "B170",
+    goldenLabel: B168_GOLDEN_LABEL,
+    goldenMergedCount: b168GoldenMergedCount,
+    blocked: b168GuardBlocked,
+    current: b168SafetySummaryFromState(),
+    floor: b168EffectiveGuardMeta(),
+  }),
   recordCheckIn: (payload = {}) => recordStudyCheckIn(payload),
   resetWordLearningProgress: (id, options = {}) => resetWordLearningProgressForBrowseQuiz(id, options),
 };

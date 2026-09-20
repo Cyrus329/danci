@@ -1,0 +1,38 @@
+{
+  "version": "v70 B177",
+  "baselineCount": 8230,
+  "finalCount": 8326,
+  "coreScreenshot": {
+    "unit10Lesson4": {
+      "visibleUnique": 185,
+      "new": 53,
+      "reused": 132,
+      "first": "otherwise",
+      "last": "comprehension"
+    },
+    "unit10Lesson3": {
+      "visibleUnique": 30,
+      "new": 11,
+      "reused": 19,
+      "first": "drama",
+      "last": "renovate"
+    }
+  },
+  "cet4Translation": {
+    "politics": {
+      "count": 13,
+      "new": 13,
+      "reused": 0
+    },
+    "economy": {
+      "count": 20,
+      "new": 19,
+      "reused": 1
+    }
+  },
+  "newCoreCount": 64,
+  "newTranslationCount": 32,
+  "uniqueIds": 8326,
+  "builtInPackageKey": "word-memory-trainer:builtins:v70-b177-u10l3-l4-cet4-translation-20260918",
+  "progressPolicy": "existing IDs preserved; no user progress fields reset"
+}

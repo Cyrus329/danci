@@ -1,0 +1,12 @@
+const fs=require('fs');
+const app=fs.readFileSync('app.js','utf8');
+const index=fs.readFileSync('index.html','utf8');
+const startup=fs.readFileSync('startup.js','utf8');
+if(!app.includes('function b175AncillaryHistoryWarnings')) throw new Error('missing B175 ancillary warning helper');
+const fn=app.match(/function b168DetectCatastrophicRegression\(current, floor\) \{[\s\S]*?\n\}/)?.[0]||'';
+if(!fn) throw new Error('guard function missing');
+if(fn.includes('checkInDays')||fn.includes('completedDays')||fn.includes('reviewActionDays')) throw new Error('ancillary histories still hard-block save');
+if(!fn.includes('current.learned')||!fn.includes('current.totalStudySeconds')) throw new Error('core guard missing');
+if(!index.includes('B175')) throw new Error('index version not B175');
+if(!startup.includes('app.js?v=70b175')) throw new Error('startup app cache-bust not B175');
+console.log('B175 progress guard false-positive regression PASS');

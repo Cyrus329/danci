@@ -1,0 +1,9 @@
+{
+  "version": "v70 B170",
+  "date": "2026-09-16",
+  "change": "Fix spelling prompt Chinese meaning rendering",
+  "rootCause": "spelling-hub.js called meaningSegments(word) instead of meaningSegments(word.meaning)",
+  "dataChanged": false,
+  "progressChanged": false,
+  "storageProtection": "B169/B168 unchanged"
+}

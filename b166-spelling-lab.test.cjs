@@ -1,0 +1,26 @@
+const fs = require('fs');
+const vm = require('vm');
+const path = require('path');
+const root = __dirname;
+const read = f => fs.readFileSync(path.join(root,f),'utf8');
+function ok(cond,msg){ if(!cond) throw new Error(msg); console.log('PASS',msg); }
+const index = read('index.html');
+const hub = read('spelling-hub.js');
+const app = read('app.js');
+const sw = read('service-worker.js');
+ok(index.includes('version-badge">B166'), 'version badge B166');
+ok(!index.includes('data-module-target="peppa"'), 'Peppa operation entry hidden');
+['今日拼写','拼写错词','词族强化','听音拼写','自由专项'].forEach(x=>ok(index.includes(x), `hub entry: ${x}`));
+['5分钟后','今日稍后','1天后','3天后','7天后','14天后','30天后'].forEach(x=>ok(hub.includes(x), `spelling interval: ${x}`));
+ok(hub.includes("wordMemorySpellingLabV2"), 'independent spelling storage key');
+ok(hub.includes("session.cardTries===1") && hub.includes("session.cardTries===2") && hub.includes('连续三次没拼对'), '3-level hint then reveal flow');
+ok(hub.includes('闭卷重拼') && hub.includes("session.phase='retype'"), 'forced closed-book retype');
+ok(hub.includes('classifyError') && hub.includes('双写') && hub.includes('词尾变化'), 'error-pattern classifier');
+ok(app.includes('spellingLab: window.SpellingHubApp') && app.includes('parsed.spellingLab'), 'spellingLab full backup import/export');
+ok(app.includes('payload.spellingLab'), 'spellingLab durable compact snapshot');
+ok(sw.includes('word-memory-v70-b166'), 'service worker cache B166');
+const ctx={window:{}}; vm.createContext(ctx); vm.runInContext(read('word-data.js'),ctx,{filename:'word-data.js'});
+const words=ctx.window.WORD_MEMORY_WORDS;
+ok(Array.isArray(words) && words.length===8206,'word count unchanged 8206');
+ok(new Set(words.map(w=>w.id)).size===words.length,'all word IDs unique');
+console.log('B166 spelling lab QA complete');

@@ -1,0 +1,28 @@
+const fs=require('fs'), vm=require('vm');
+function ok(c,m){ if(!c) throw new Error(m); console.log('PASS',m); }
+const root=__dirname;
+const app=fs.readFileSync(root+'/app.js','utf8');
+const spelling=fs.readFileSync(root+'/spelling-hub.js','utf8');
+const index=fs.readFileSync(root+'/index.html','utf8');
+const sw=fs.readFileSync(root+'/service-worker.js','utf8');
+const ctx={window:{},console}; vm.createContext(ctx); vm.runInContext(fs.readFileSync(root+'/word-data.js','utf8'),ctx);
+const words=ctx.window.WORD_MEMORY_WORDS||[];
+const politics=words.filter(w=>(w.groups||[]).includes('四级核心 Unit 10 政治法律'));
+ok(index.includes('version-badge">B173'),'version badge B173');
+ok(app.includes('cooldownBefore') && app.includes('delete state.reviewCooldowns[cooldownKey]'),'undo restores/clears cooldown');
+ok(app.includes('dailyCompletedDayBefore') && app.includes('checkInDayBefore') && app.includes('reviewActionDayBefore'),'undo snapshots same-day side effects');
+ok(app.includes('memoryMetricBefore') && app.includes('memoryFlowBefore'),'undo snapshots memory metrics');
+ok(app.includes('saveDailyCompletedStore();') && app.includes('saveMemoryLabStore();'),'undo persists restored side effects');
+ok(spelling.includes("const STORE_KEY = 'wordMemorySpellingLabV2'"),'spelling storage key unchanged');
+ok(spelling.includes('const VERSION = 4'),'spelling schema upgraded without key reset');
+ok(index.includes('id="spellingMasteredButton"'),'manual mastered button exists');
+ok(spelling.includes('function markCurrentMastered()'),'manual mastered handler exists');
+ok(spelling.includes('rec.manualMastered=true') && spelling.includes("rec.nextDueAt=''"),'manual mastered exits auto review');
+ok(spelling.includes("!store.records[String(w.id)]?.manualMastered"),'today/free queues exclude mastered words');
+ok(index.includes('data-history-filter="mastered"') && spelling.includes('data-history-unmaster'),'history supports mastered filter and restore');
+ok(spelling.includes('本轮首拼正确') && spelling.includes('尚未建立回炉'),'misleading first-time wording corrected');
+ok(politics.length===105,'Unit 10 politics still has 105 records');
+ok(politics.filter(w=>/\s/.test(String(w.term||'').trim())).length===42,'Unit 10 politics still has 42 phrases');
+ok(words.length===8230 && new Set(words.map(w=>w.id)).size===8230,'8230 unique word IDs preserved');
+ok(sw.includes('word-memory-v70-b173'),'service worker cache bumped');
+console.log('B173 QA PASS');

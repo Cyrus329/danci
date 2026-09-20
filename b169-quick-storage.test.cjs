@@ -1,0 +1,16 @@
+const fs = require('fs');
+const assert = require('assert');
+const app = fs.readFileSync(__dirname + '/app.js','utf8');
+const index = fs.readFileSync(__dirname + '/index.html','utf8');
+const sw = fs.readFileSync(__dirname + '/service-worker.js','utf8');
+assert(app.includes('B169_QUICK_STORAGE_KEY'));
+assert(app.includes('b169BuildQuickStoragePayload'));
+assert(app.includes('b169WriteQuickStorage'));
+assert(app.includes('b169ReleaseRedundantLocalCopies'));
+assert(app.includes('quickV169: true'));
+assert(app.includes('IndexedDB 是完整主存档'));
+assert(!app.includes('showToast("快速存档空间不足；大容量存档已保存，请导出备份。")'));
+assert(!app.includes('showToast("当前进度未写入快速存档，正在尝试大容量保存；请先导出备份再刷新。")'));
+assert(index.includes('>B169</span>'));
+assert(sw.includes('word-memory-v70-b169'));
+console.log('B169 quick-storage guard: PASS');

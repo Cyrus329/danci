@@ -1,0 +1,7 @@
+{
+  "version": "v70 B181",
+  "issue": "快速复盘 localStorage 保存失败后，新分类在刷新时回退",
+  "recovery": "自动把当前仍可读取的分类与内置黄金快照、IndexedDB镜像按词条时间合并",
+  "protection": ["localStorage", "IndexedDB"],
+  "note": "从未成功写入任何存档且页面已经刷新的具体分类无法凭数量重建"
+}

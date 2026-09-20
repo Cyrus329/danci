@@ -1,0 +1,29 @@
+{
+  "version": "v70 B169",
+  "date": "2026-09-16",
+  "purpose": "修复快速存档 localStorage 空间不足；完整进度继续由 IndexedDB 保存",
+  "goldenBaseline": {
+    "exportedAt": "2026-09-15T03:56:47.294Z",
+    "wordRecords": 8205,
+    "stage6": 7881,
+    "studySeconds": 540459
+  },
+  "storage": {
+    "fullSnapshot": "IndexedDB words-primary + words-previous + b168-progress-guard",
+    "quickSnapshotKey": "word-memory-trainer:v1:quick:v169",
+    "quickSnapshotContent": "黄金基线之后变化的学习记录 + 自定义词 + 当前卡片位置",
+    "quickSafeCharBudget": 1400000,
+    "legacyCopiesReleasedAfterFullDbSave": [
+      "word-memory-trainer:v1",
+      "word-memory-trainer:v1:packed:v163"
+    ],
+    "warningPolicy": "仅当完整 IndexedDB 与快速快照都不可保存时提示用户导出备份"
+  },
+  "qa": {
+    "jsSyntaxErrors": 0,
+    "serviceWorkerExplicitMissing": 0,
+    "b169QuickStorageTest": "PASS",
+    "goldenProtectionPreserved": true,
+    "builtinWordCount": 8230
+  }
+}

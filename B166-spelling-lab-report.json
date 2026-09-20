@@ -1,0 +1,23 @@
+{
+  "version": "v70 B166",
+  "baseline": "v70 B165",
+  "wordCount": 8206,
+  "uniqueIds": 8206,
+  "peppaEntryHidden": true,
+  "peppaDataPreserved": true,
+  "spellingStorageKey": "wordMemorySpellingLabV2",
+  "reviewSchedule": ["5分钟", "今日稍后", "1天", "3天", "7天", "14天", "30天"],
+  "trainingPaths": ["今日拼写", "拼写错词", "词族强化", "听音拼写", "自由专项"],
+  "hintPolicy": ["第一次错误仅提示错误类型和大致位置", "第二次错误提示首字母和字母总数", "第三次错误显示完整答案", "显示答案后强制闭卷重拼"],
+  "errorTypes": ["漏字母", "多字母", "字母顺序", "词尾变化", "双写", "符号/连字符", "字母写错"],
+  "backupIntegrated": true,
+  "main31DayProgressUntouched": true,
+  "qa": {
+    "syntaxFiles": 31,
+    "syntaxErrors": 0,
+    "serviceWorkerStaticMissing": 0,
+    "sceneAssetsMissing": 0,
+    "htmlDuplicateIds": 0,
+    "b166SpecialTest": "PASS"
+  }
+}

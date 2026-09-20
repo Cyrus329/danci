@@ -1,0 +1,28 @@
+const fs=require('fs'),vm=require('vm');
+function ok(c,m){if(!c)throw new Error(m);console.log('PASS',m)}
+const app=fs.readFileSync('app.js','utf8'),sp=fs.readFileSync('spelling-hub.js','utf8'),idx=fs.readFileSync('index.html','utf8'),st=fs.readFileSync('startup.js','utf8'),sw=fs.readFileSync('service-worker.js','utf8');
+ok(idx.includes('version-badge">B177'),'B177 badge');
+ok(sw.includes('word-memory-v70-b177'),'B177 service worker cache');
+ok(st.includes('app.js?v=70b177')&&st.includes('spelling-hub.js?v=70b177'),'B177 cache bust');
+ok(st.includes('b168-golden-baseline.js?v=70b177'),'golden baseline URL consistent');
+ok(app.includes('cooldownBefore')&&app.includes('delete state.reviewCooldowns[cooldownKey]'),'undo cooldown repair preserved');
+ok(idx.includes('id="spellingMasteredButton"')&&sp.includes('function markCurrentMastered()'),'spelling mastered preserved');
+for(const x of ["key: '1d'","key: '2d'","key: '4d'","key: '7d'","key: '14d'","key: '30d'"]) ok(sp.includes(x),'spelling schedule '+x);
+ok(sp.includes('ERROR_RETRY_MS = 5 * 60 * 1000'),'5-minute spelling correction preserved');
+ok(sp.includes('Only truly unstarted words can be used as fresh fillers'),'future spelling reviews not pulled forward');
+const hard=app.match(/function b168DetectCatastrophicRegression\(current, floor\) \{[\s\S]*?\n\}/)?.[0]||'';
+ok(hard.includes('current.learned')&&hard.includes('current.totalStudySeconds'),'core rollback guard preserved');
+ok(!hard.includes('checkInDays')&&!hard.includes('completedDays')&&!hard.includes('reviewActionDays'),'ancillary histories not hard blocking');
+const effective=app.match(/function b168EffectiveGuardMeta\(\) \{[\s\S]*?\n\}/)?.[0]||'';
+ok(effective.includes('b176ValidatedGuardMeta')&&!effective.includes('b168ReadGuardMeta()'),'hard floor no longer trusts stale local meta');
+ok(app.includes('v70-b177-u10l3-l4-cet4-translation-20260918'),'B177 built-in package key');
+const ctx={window:{}};vm.createContext(ctx);vm.runInContext(fs.readFileSync('word-data.js','utf8'),ctx);const words=ctx.window.WORD_MEMORY_WORDS||[];
+ok(words.length===8326&&new Set(words.map(w=>w.id)).size===8326,'8326 unique word IDs');
+const politics=words.filter(w=>(w.groups||[]).includes('四级核心 Unit 10 政治法律'));
+ok(politics.length===105,'legacy politics group 105 preserved');
+ok(politics.filter(w=>/\s/.test(String(w.term||'').trim())).length===42,'legacy politics phrases 42 preserved');
+ok(words.filter(w=>(w.groups||[]).includes('四级核心 Unit 10 Lesson 4')).length===185,'Unit 10 Lesson 4 = 185 visible screenshot entries');
+ok(words.filter(w=>(w.groups||[]).includes('四级核心 Unit 10 Lesson 3')).length===30,'Unit 10 Lesson 3 = 30 visible screenshot entries');
+ok(words.filter(w=>(w.groups||[]).includes('四级翻译 政治')).length===13,'CET4 translation politics = 13');
+ok(words.filter(w=>(w.groups||[]).includes('四级翻译 经济')).length===20,'CET4 translation economy = 20');
+console.log('B177 full regression PASS');

@@ -1,0 +1,15 @@
+{
+  "version": "B178",
+  "base": "B177",
+  "fixedGroup": "四级固定搭配专项",
+  "count": 48,
+  "translationPolitics": 13,
+  "translationEconomy": 20,
+  "unit10Core": 15,
+  "newIndependentRecords": 2,
+  "reusedExistingRecords": 13,
+  "totalWords": 8328,
+  "uniqueIds": 8328,
+  "rule": "固定搭配专项复用已有ID/进度；仅 in horror / culture shock 若原主词库无独立条目则新增专项记录。",
+  "note": "brand-new 为单个合成形容词，不作为固定搭配专项条目；其余均为多词搭配。"
+}

@@ -1,0 +1,13 @@
+const fs = require('fs');
+const assert = require('assert');
+const js = fs.readFileSync(__dirname + '/speed-review.js', 'utf8');
+const index = fs.readFileSync(__dirname + '/index.html', 'utf8');
+const startup = fs.readFileSync(__dirname + '/startup.js', 'utf8');
+const sw = fs.readFileSync(__dirname + '/service-worker.js', 'utf8');
+for (const needle of ['DURABLE_DB', 'openDurableDb', 'readDurableStore', 'writeDurableStore', 'restoreDurableStore']) assert(js.includes(needle), needle);
+assert(js.includes('window.mergeSpeedReviewSnapshots(store, durable)'));
+assert(js.includes('快速复盘双重存档均失败'));
+assert(index.includes('version-badge">B181'));
+assert(startup.includes('speed-review.js?v=70b181'));
+assert(sw.includes('word-memory-v70-b181'));
+console.log('B181 speed review durable test PASS');

@@ -1,0 +1,19 @@
+{
+  "version": "B179",
+  "base": "B178",
+  "scope": "全部词库",
+  "totalFixedCollocations": 1785,
+  "fixedSentencePatterns": 108,
+  "sourceCounts": {
+    "蓝色森林": 741,
+    "四级核心": 904,
+    "四级翻译": 202,
+    "四级": 197,
+    "Word List": 449,
+    "短语练习": 465,
+    "全方位": 106,
+    "听写内容": 160
+  },
+  "mainWordCountUnchanged": 8328,
+  "rule": "汇总现有多词词条、memoryChunks(kind=collocation/source-phrase且有释义)、phrase字段中带中文释义的短搭配；去重后作为虚拟专项数据，不写入主词库、不改原ID/31天进度。"
+}

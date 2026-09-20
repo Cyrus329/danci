@@ -85,6 +85,7 @@
     return [{name:'一词多义集中刷', tip:'一个词多个常考意思，适合阅读和完形', words:candidates}].filter(g=>g.words.length);
   }
   function collocationGroups(){
+    const special = uniqueByTerm(words.filter(w=>Array.isArray(w.groups) && w.groups.includes('四级固定搭配专项')));
     const buckets = new Map();
     uniqueByTerm(words.filter(w=>String(w.phrase||'').trim())).forEach(w=>{
       const first = norm(w.phrase).split(/\s+/)[0] || '短语';
@@ -92,7 +93,8 @@
       if(!buckets.has(key)) buckets.set(key, []);
       buckets.get(key).push(w);
     });
-    return [...buckets.entries()].map(([name,list])=>({name, tip:'固定搭配只速记，不再做填空', words:list})).filter(g=>g.words.length).sort((a,b)=>b.words.length-a.words.length);
+    const general=[...buckets.entries()].map(([name,list])=>({name, tip:'固定搭配只速记，不再做填空', words:list})).filter(g=>g.words.length).sort((a,b)=>b.words.length-a.words.length);
+    return special.length ? [{name:'四级固定搭配专项',tip:'政治/经济翻译 + Unit 10 高频搭配；可到拼写训练直接做中文→英文专项',words:special},...general] : general;
   }
   function groups(){
     if(active==='affix') return affixGroups();

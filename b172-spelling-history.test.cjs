@@ -1,0 +1,13 @@
+const fs=require('fs'),assert=require('assert');
+const html=fs.readFileSync('index.html','utf8');
+const js=fs.readFileSync('spelling-hub.js','utf8');
+assert(html.includes('id="spellingHubHistoryOpen"'));
+assert(html.includes('id="spellingHistoryPanel"'));
+for(const s of ['全部练过','今天练过','拼对过','拼错过','正在回炉','拼写毕业']) assert(html.includes(s));
+assert(js.includes("const STORE_KEY = 'wordMemorySpellingLabV2'"));
+assert(js.includes('const VERSION = 3'));
+assert(js.includes('function practicedEntries()'));
+assert(js.includes('function renderHistory()'));
+assert(js.includes('data-history-practice'));
+assert(js.includes('lastWrongText'));
+console.log('B172 spelling history static test PASS');

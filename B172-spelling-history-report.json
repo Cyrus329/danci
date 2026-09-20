@@ -1,0 +1,46 @@
+{
+  "version": "v70 B172",
+  "base": "v70 B171",
+  "purpose": "新增拼写记录历史中心，查看已练词；不修改词库与主复习进度",
+  "spelling_storage_key": "wordMemorySpellingLabV2",
+  "store_schema_version": 3,
+  "features": [
+    "全部练过",
+    "今天练过",
+    "拼对过",
+    "拼错过",
+    "正在回炉",
+    "拼写毕业",
+    "按来源筛选",
+    "中英文搜索",
+    "单词再练",
+    "保存最近错写样本（B172以后）"
+  ],
+  "protected_files": {
+    "word-data.js": {
+      "b171_sha256": "07618d9f191ce5036528385f34bb71ea5df8b9f4d40e75425d37135a7e8d82cd",
+      "b172_sha256": "07618d9f191ce5036528385f34bb71ea5df8b9f4d40e75425d37135a7e8d82cd"
+    },
+    "app.js": {
+      "b171_sha256": "95bcd8685d91a91662fafdc4ad70a0a52813a8bd482e8b158cf5158114cbc9cd",
+      "b172_sha256": "95bcd8685d91a91662fafdc4ad70a0a52813a8bd482e8b158cf5158114cbc9cd"
+    },
+    "library-folder-data.js": {
+      "b171_sha256": "2ada085efbbaeaf5352e1e9aeac13b73eb190b8fdada5cd4938e893f51ec3e11",
+      "b172_sha256": "2ada085efbbaeaf5352e1e9aeac13b73eb190b8fdada5cd4938e893f51ec3e11"
+    },
+    "b168-golden-baseline.js": {
+      "b171_sha256": "b89d0d132c6a0492ac399f3a3f4d1640bc3256ada1003bc291cef31734cacc10",
+      "b172_sha256": "b89d0d132c6a0492ac399f3a3f4d1640bc3256ada1003bc291cef31734cacc10"
+    }
+  },
+  "word_count": 8230,
+  "unique_ids": 8230,
+  "unit10_politics_count": 105,
+  "unit10_politics_phrase_count": 42,
+  "notes": [
+    "旧拼写记录沿用原存档键，不清零",
+    "旧记录没有原始错写文本时不伪造",
+    "B171复习冷却锁与政治法律完整分组保留"
+  ]
+}

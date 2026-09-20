@@ -1,4 +1,4 @@
-// v70 B153：30词快速复盘体验增强；智能优先级、策略选择、学习教练提示；独立存档，不修改主学习阶段。
+// v70 B181：快速复盘增加 IndexedDB 大容量镜像；localStorage 满时不再丢分类，启动时自动合并恢复。
 (function () {
   'use strict';
 
@@ -6,6 +6,9 @@
   if (!api) return;
 
   const STORAGE_KEY = 'wordMemorySpeedReviewV1';
+  const DURABLE_DB = 'word-memory-speed-review-v1';
+  const DURABLE_STORE = 'snapshots';
+  const DURABLE_KEY = 'latest';
   const STORE_VERSION = 2;
   const BATCH_SIZE = 30;
   const byId = (id) => document.getElementById(id);
@@ -48,6 +51,43 @@
   };
 
   let store = loadStore();
+
+  function openDurableDb() {
+    return new Promise((resolve, reject) => {
+      if (!window.indexedDB) return reject(new Error('IndexedDB unavailable'));
+      const request = indexedDB.open(DURABLE_DB, 1);
+      request.onupgradeneeded = () => {
+        const db = request.result;
+        if (!db.objectStoreNames.contains(DURABLE_STORE)) db.createObjectStore(DURABLE_STORE);
+      };
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error || new Error('IndexedDB open failed'));
+      request.onblocked = () => reject(new Error('IndexedDB blocked'));
+    });
+  }
+  async function readDurableStore() {
+    const db = await openDurableDb();
+    try {
+      return await new Promise((resolve, reject) => {
+        const tx = db.transaction(DURABLE_STORE, 'readonly');
+        const request = tx.objectStore(DURABLE_STORE).get(DURABLE_KEY);
+        request.onsuccess = () => resolve(request.result || null);
+        request.onerror = () => reject(request.error || new Error('IndexedDB read failed'));
+      });
+    } finally { db.close(); }
+  }
+  async function writeDurableStore(snapshot) {
+    const db = await openDurableDb();
+    try {
+      await new Promise((resolve, reject) => {
+        const tx = db.transaction(DURABLE_STORE, 'readwrite');
+        tx.objectStore(DURABLE_STORE).put(JSON.parse(JSON.stringify(snapshot)), DURABLE_KEY);
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => reject(tx.error || new Error('IndexedDB write failed'));
+        tx.onabort = () => reject(tx.error || new Error('IndexedDB write aborted'));
+      });
+    } finally { db.close(); }
+  }
 
   function defaultStore() {
     return {
@@ -114,6 +154,10 @@
       }
       delete result.weakIds;
       delete result.stats;
+      result.entryUpdatedAt ||= {};
+      for (const ids of Object.values(result.buckets)) for (const id of ids) {
+        result.entryUpdatedAt[id] ||= result.updatedAt || '1970-01-01T00:00:00.001Z';
+      }
       return result;
     } catch {
       return base;
@@ -121,11 +165,34 @@
   }
 
   function saveStore() {
+    // Combine independently saved classifications before writing this tab's state.
+    store = window.mergeSpeedReviewSnapshots(loadStore(), store);
     store.version = STORE_VERSION;
     store.updatedAt = new Date().toISOString();
     store.buckets = normalizeBuckets(store.buckets);
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(store)); } catch {}
+    let localSaved = false;
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(store)); localSaved = true; }
+    catch {}
+    const snapshot = JSON.parse(JSON.stringify(store));
+    writeDurableStore(snapshot).catch(() => {
+      if (!localSaved) api.showToast?.('快速复盘双重存档均失败，请立即导出备份后再刷新');
+    });
     renderHub();
+  }
+
+  async function restoreDurableStore() {
+    try {
+      const durable = await readDurableStore();
+      if (durable && typeof durable === 'object') store = window.mergeSpeedReviewSnapshots(store, durable);
+      store.buckets = normalizeBuckets(store.buckets);
+      store.version = STORE_VERSION;
+      store.updatedAt ||= new Date().toISOString();
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(store)); } catch {}
+      await writeDurableStore(store);
+      renderHub();
+    } catch {
+      // localStorage remains usable when IndexedDB is unavailable.
+    }
   }
 
   function allWords() {
@@ -205,6 +272,8 @@
       store.buckets[name] = store.buckets[name].filter((item) => String(item) !== target);
     });
     store.buckets[bucket].push(target);
+    store.entryUpdatedAt ||= {};
+    store.entryUpdatedAt[target] = new Date().toISOString();
     if (bucket === 'unknown') {
       // “不会”表示重新开始该词的主学习链；快速复盘本身仍独立保存。
       api.resetWordLearningProgress?.(target, { reason: 'speed-review-unknown' });
@@ -413,8 +482,9 @@
 
   function clearStore() {
     if (!confirm('只清空“30词快速复盘”的三类记录？不会影响主卡片、全词独立练习或Peppa进度。')) return;
-    try { localStorage.removeItem(STORAGE_KEY); } catch {}
     store = defaultStore();
+    store.clearedAt = new Date().toISOString();
+    saveStore();
     renderHub();
     closeOverlay();
   }
@@ -484,18 +554,18 @@
     open: () => {
       if (store.session?.kind === 'batch') { openOverlay(); renderBatch(); }
     },
-    getStore: () => JSON.parse(JSON.stringify(store)),
-    exportState: () => JSON.parse(JSON.stringify(store)),
+    getStore: () => JSON.parse(JSON.stringify(window.mergeSpeedReviewSnapshots(loadStore(),store))),
+    exportState: () => JSON.parse(JSON.stringify(window.mergeSpeedReviewSnapshots(loadStore(),store))),
     importState: (snapshot) => {
       if (!snapshot || typeof snapshot !== 'object') return false;
       const base = defaultStore();
-      store = {
+      store = window.mergeSpeedReviewSnapshots(loadStore(), {
         ...base,
         ...snapshot,
         version: STORE_VERSION,
         settings: { ...base.settings, ...(snapshot.settings || {}) },
         buckets: normalizeBuckets(snapshot.buckets || {}),
-      };
+      });
       if (store.session?.kind === 'batch') {
         store.session.ids = sanitizeIds(store.session.ids, { keepMissing: true }).slice(0, BATCH_SIZE);
         store.session.revealedIds = sanitizeIds(store.session.revealedIds, { keepMissing: true });
@@ -510,6 +580,12 @@
   window.addEventListener('word-memory-backup-imported', (event) => {
     if (event.detail?.speedReview) window.SpeedReviewApp.importState(event.detail.speedReview);
   });
+  window.addEventListener('storage', event => {
+    if (event.key !== STORAGE_KEY) return;
+    store = window.mergeSpeedReviewSnapshots(store, loadStore());
+    renderHub();
+  });
 
   saveStore();
+  restoreDurableStore();
 }());

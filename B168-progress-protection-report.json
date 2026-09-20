@@ -1,0 +1,36 @@
+{
+  "version": "v70 B168",
+  "date": "2026-09-16",
+  "purpose": "进度防回退 + 2026-09-15 黄金存档自动恢复",
+  "goldenBackup": {
+    "sourceFile": "07781314-f426-4ba2-b63a-000e2cee4bbf.json",
+    "sha256": "c3b9d053175e07e4c1820cfcab51168995dde7554f4923b600c16cb6439fe1f8",
+    "exportedAt": "2026-09-15T03:56:47.294Z",
+    "wordRecords": 8205,
+    "learnedEvidence": 8205,
+    "stageDistribution": {
+      "-1": 2,
+      "0": 15,
+      "1": 65,
+      "2": 60,
+      "3": 3,
+      "4": 179,
+      "6": 7881
+    },
+    "studyTimeSeconds": 540459,
+    "checkInDays": 46,
+    "dailyCompletedDays": 33,
+    "reviewActionDays": 6
+  },
+  "currentBuiltinWords": 8230,
+  "goldenRecordsMatchedToCurrentWords": 8205,
+  "protections": [
+    "启动时自动把黄金基线逐词合并到当前词库；不重新带回已退休四级听力词",
+    "同一词以真实学习动作时间决定新旧；更新的忘了/重置可覆盖旧高阶段",
+    "黄金基线只补回缺失历史，不覆盖更新的真实操作",
+    "IndexedDB保存滚动安全快照 b168-progress-guard",
+    "保存前检查已学习数、累计学习时长、打卡/每日完成/复习动作历史，灾难性下降时拒绝覆盖安全存档",
+    "每日统计卡片标签从“已完成”改为“今日完成”，避免误解为累计毕业数"
+  ],
+  "runtimeNote": "word-data.js 为8230条；运行时安全去重会合并 give rise to sth. / give rise to，因此页面总数可显示8229。黄金基线8205条均可映射。"
+}

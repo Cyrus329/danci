@@ -1,0 +1,17 @@
+const fs = require('fs');
+const assert = require('assert');
+const js = fs.readFileSync(__dirname + '/spelling-hub.js', 'utf8');
+const index = fs.readFileSync(__dirname + '/index.html', 'utf8');
+const startup = fs.readFileSync(__dirname + '/startup.js', 'utf8');
+assert(js.includes("const VERSION = 6"));
+assert(js.includes("const TERM_KEY_PREFIX = 'term:'"));
+assert(js.includes('function recordKeyFor(wordOrId)'));
+assert(js.includes('function mergeLegacyIdRecords()'));
+assert(js.includes('termKeyMigrationV6'));
+assert(js.includes('return uniqWordsByTerm(out)'));
+assert(js.includes('Number.isFinite(stageA) ? stageA : -1'));
+assert(js.includes('历史拼对 ${Number(rec.correct)||0} 次'));
+assert(js.includes('delete store.settings.termKeyMigrationV6'));
+assert(/version-badge">B18[01]/.test(index));
+assert(startup.includes('spelling-hub.js?v=70b180'));
+console.log('B180 shared spelling progress test PASS');

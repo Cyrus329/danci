@@ -1,3 +1,12 @@
+// v70 B181 2026-09-19：快速复盘增加 IndexedDB 双重存档与自动合并恢复。
+// v70 B180 2026-09-19：同一英文答案跨词库/专项共享拼写记录，旧ID记录自动合并。
+// v70 B178 2026-09-19：固定搭配专项与拼写入口缓存更新。
+// v70 B177 2026-09-18：导入 Unit 10 Lesson 3/4 与四级翻译政治/经济；缓存版本同步升级。
+// v70 B176 2026-09-18：修复“学习进度异常回退”误报；辅助历史暂少不再阻断真实进度保存，核心已学习数/累计时长仍硬保护。
+// v70 B171 2026-09-16：复习冷却锁 + Unit10政治法律主学习分组补齐。
+// v70 B170 2026-09-16：修复拼写训练中文释义显示为 [object Object]；按分组优先显示对应中文释义。
+// v70 B169 2026-09-16：快速存档改为黄金基线后的轻量增量；完整进度继续由 IndexedDB 保存，修复 localStorage 配额警告。
+// v70 B168 2026-09-16：黄金基线自动恢复 + 进度安全快照 + 灾难性回退拦截。
 // B145: 常规印刷字体与发音失败恢复；词库、存档键保持不变。
 // v70 B144 2026-09-08：主单词改为书本印刷体；保留B143界面与B142词库、学习进度。
 // v70 B131 2026-08-31：新增四级核心Unit8-10、Unit8 Lesson2与蓝色森林58；保留B130听力4、快速30词与Peppa。
@@ -15,7 +24,7 @@
 // v70 B113 2026-08-27：刷新四级听力2词库/分组/排序资源缓存。
 // v70 B112 2026-08-27：刷新全量缺失音标补齐资源缓存。
 // v70 B109 2026-08-27：仅刷新词库资源缓存版本；训练逻辑不变。
-const CACHE_NAME = "word-memory-v70-b162";
+const CACHE_NAME = "word-memory-v70-b181";
 const SCENE_ASSETS_101_180 = `a-piece-of-news newspaper message leave-a-message text-message ball skate skill special-skill social-skill professional-skill able be-able-to-do-sth ability disable unable enjoy enjoy-doing-sth enjoyable grass afraid be-afraid-of water old elder young youth youngster junior senior live live-up-to live-on lively livelihood alive lovely life wildlife lifestyle style animal mammal insect pet bite diary keep-a-diary dairy borrow lend lend-sth-to-sb vegetable sweep mainly topic title entitle underline stop cancel call-off cancellation cancer start star begin to-begin-with in-the-beginning beginning beginner renew outset end in-the-end at-the-end-of endless ending cease over`
   .split(" ")
   .map((slug) => `./assets/word-scenes/${slug}.webp`);
@@ -26,9 +35,14 @@ const SCENE_ASSETS_261_280 = `emphasis collective cell-phone punctual with hazar
   .split(" ")
   .map((slug) => `./assets/word-scenes/${slug}.webp`);
 const APP_ASSETS = [
+  "./speed-review-merge.js",
+  "./storage-codec.js", "./storage-rescue.js",
+  "./b168-golden-baseline.js?v=70b178",
   "./phonetic-local-data.js",
   "./pronunciation-support.js",
-  "./startup.js?v=70b152",
+  "./startup.js?v=70b181",
+  "./spelling-hub.js?v=70b180",
+  "./spelling-hub.css?v=70b180",
   "./reset-local.js?v=70b151",
   "./mobile-polish.css?v=70b150",
   "./translation-spelling-data.js?v=70b148",
@@ -37,8 +51,9 @@ const APP_ASSETS = [
   "./",
   "./index.html",
   "./review-ledger-bridge.html",
-  "./word-data.js?v=70b152",
-  "./library-folder-data.js?v=70b152",
+  "./word-data.js?v=70b178",
+  "./fixed-collocation-data.js?v=70b179",
+  "./library-folder-data.js?v=70b178",
   "./context-engine.js?v=70b038vocabimport20260809",
   "./context-data.js?v=70b056statsvocab20260820",
   "./context-id-data.js?v=70b056statsvocab20260820",
@@ -148,12 +163,11 @@ const APP_ASSETS = [
   "./assets/word-scenes/paragraph.webp",
   "./assets/word-scenes/news.webp",
   "./assets/pronunciation-primer.wav?v=70b060fullstart20260820",
-  "./app.js?v=70b152",
+  "./app.js?v=70b178",
   "./peppa-content-b127.js?v=70b127peppatesting20260830",
   "./peppa-zone.js?v=70b151",
   "./memory-lab.js?v=70b106cet4listen20260826",
-  "./speed-review.js?v=70b153quickcoach",
-  "./speed-review.js?v=70b128posquick3020260830",
+  "./speed-review.js?v=70b181",
   "./browse-quiz.js?v=70b151",
   "./folder-view.js?v=70b143",
   "./ui-refresh.css?v=70b145",

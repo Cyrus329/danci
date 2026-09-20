@@ -1,0 +1,17 @@
+const fs=require('fs');
+const assert=require('assert');
+const js=fs.readFileSync('spelling-hub.js','utf8');
+const index=fs.readFileSync('index.html','utf8');
+const startup=fs.readFileSync('startup.js','utf8');
+assert(js.includes("const VERSION = 5"));
+for (const x of ["key: '1d'","key: '2d'","key: '4d'","key: '7d'","key: '14d'","key: '30d'"]) assert(js.includes(x),x);
+assert(!js.includes("key: 'later'"));
+assert(!js.includes("key: '3d'"));
+assert(js.includes('ERROR_RETRY_MS = 5 * 60 * 1000'));
+assert(js.includes('rec.stage = -1; rec.nextDueAt = errorRetryAt(now)'));
+assert(js.includes('Only truly unstarted words can be used as fresh fillers'));
+assert(js.includes("(!(rec.attempts||0) && !rec.nextDueAt)"));
+assert(index.includes('1天 → 2天 → 4天 → 7天 → 14天 → 30天'));
+assert(index.includes('B174'));
+assert(startup.includes('spelling-hub.js?v=70b174'));
+console.log('B174 spelling schedule regression PASS');

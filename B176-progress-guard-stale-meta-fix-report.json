@@ -1,0 +1,13 @@
+{
+  "version": "v70 B176",
+  "issue": "B175 仍可能被旧 localStorage guard meta 误判为进度回退",
+  "rootCause": "b168EffectiveGuardMeta 使用 max(localStorage guard meta, golden)，陈旧或错误的 guard meta 会永久成为过高下限，即使当前已学习 8229、累计 153 小时仍会被拦截",
+  "fix": [
+    "硬保护只使用 IndexedDB 中实际安全快照 record.summary 与黄金基线",
+    "localStorage guard meta 仅作兼容元数据，不再参与硬拦截",
+    "启动读取安全快照后自动把陈旧 guard meta 纠正为权威 summary",
+    "每次成功写入安全快照后同步更新内存中的权威 summary",
+    "真实回退仍会被拦截，并显示具体原因"
+  ],
+  "preserved": ["B174 拼写 1-2-4-7-14-30 天", "B173 撤回与拼写已掌握", "B172 拼写记录", "B171 冷却与政治法律完整组", "B168/B169 黄金恢复与大容量存档"]
+}

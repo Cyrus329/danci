@@ -13,12 +13,13 @@
   <link rel="preload" as="audio" href="./assets/pronunciation-primer.wav?v=70b060fullstart20260820" type="audio/wav">
   <link rel="stylesheet" href="./translation-spelling.css?v=70b148">
   <link rel="stylesheet" href="./mobile-polish.css?v=70b150">
+  <link rel="stylesheet" href="./spelling-hub.css?v=70b180">
 </head>
 <body class="ui-b143">
   <div class="app-shell">
     <header class="topbar">
       <div>
-        <p class="eyebrow">WORD MEMORY <span class="version-badge">B162</span></p>
+        <p class="eyebrow">WORD MEMORY <span class="version-badge">B181</span></p>
         <h1>专升本单词记忆</h1>
       </div>
       <div class="topbar-actions">
@@ -53,7 +54,7 @@
     <main class="workspace">
       <nav class="module-switcher" aria-label="大模块切换">
         <button class="module-button active" type="button" data-module-target="folder"><span>📁</span><strong>英语资料夹</strong><small>蓝色森林 / 四级（核心·翻译·普通） / 短语练习 / Word List / 全方位</small></button>
-        <button class="module-button" type="button" data-module-target="peppa"><span>🐷</span><strong>小猪佩奇</strong><small>按集背句子 / 默写 / 裸听 / 发音</small></button>
+        <button class="module-button" type="button" data-module-target="spelling"><span>✍️</span><strong>拼写训练</strong><small>看中文写英文 · 专练主动拼写</small></button>
         <button class="module-button" type="button" data-module-target="study"><span>🧠</span><strong>记忆训练</strong><small>复习 / 新词 / 听写 / 拼写</small></button>
         <button class="module-button" type="button" data-module-target="smart"><span>🔎</span><strong>构词归类</strong><small>词根 / 形近 / 同义</small></button>
         <button class="module-button" type="button" data-module-target="review"><span>⚡</span><strong>快速复习</strong><small>错词回炉 / 极速 / 冲刺</small></button>
@@ -61,6 +62,130 @@
         <button class="module-button" type="button" data-module-target="progress"><span>📊</span><strong>学习进度</strong><small>Word List 与分组统计</small></button>
         <button class="module-button" type="button" data-module-target="manage"><span>＋</span><strong>管理词库</strong><small>添加 / 筛选 / 总词库</small></button>
       </nav>
+
+      <section class="spelling-hub module-section" data-module-section="spelling" id="spellingHub" aria-label="拼写训练中心">
+        <div class="spelling-hub-hero">
+          <div>
+            <p class="eyebrow">SPELLING LAB · ACTIVE RECALL</p>
+            <h2>拼写训练中心</h2>
+            <p>把“看得懂”变成“写得出”：拼错先5分钟纠错；独立拼对后按 1天 → 2天 → 4天 → 7天 → 14天 → 30天回炉。没到期的词不会提前混进今日训练。</p>
+          </div>
+          <div class="spelling-hub-goal">
+            <span>训练规则</span>
+            <strong>先想，再写</strong>
+            <small>拼写系统独立记录，不重置31天主复习阶段</small>
+          </div>
+        </div>
+
+        <div class="spelling-hub-stats" aria-label="拼写掌握统计">
+          <article><span>今日掌握</span><strong id="spellingHubMasteredToday">0</strong><small>两次独立拼对</small></article>
+          <article><span>到期回炉</span><strong id="spellingHubDue">0</strong><small>现在应该再拼</small></article>
+          <article><span>今日首拼正确率</span><strong id="spellingHubAccuracy">—</strong><small>第一次就写对</small></article>
+          <article><span>长期拼写毕业</span><strong id="spellingHubGraduated">0</strong><small>通过30天复测</small></article>
+        </div>
+
+        <div class="spelling-hub-paths" aria-label="拼写训练入口">
+          <button class="spelling-path-card primary" id="spellingHubTodayStart" type="button">
+            <span class="spelling-path-icon">✍️</span><span><strong>今日拼写</strong><small>到期词优先，不足30个再补“已认识但未建立拼写”的词</small></span><b id="spellingHubTodayCount">30</b>
+          </button>
+          <button class="spelling-path-card" id="spellingHubMistakeStart" type="button">
+            <span class="spelling-path-icon">↻</span><span><strong>拼写错词</strong><small>只处理真正拼错过的词，按错误次数和到期时间排序</small></span><b id="spellingHubMistakeCount">0</b>
+          </button>
+          <button class="spelling-path-card" id="spellingHubFamilyStart" type="button">
+            <span class="spelling-path-icon">🌿</span><span><strong>词族强化</strong><small>把 represent → representation → representative 这类变化集中练</small></span><b>词族</b>
+          </button>
+          <button class="spelling-path-card" id="spellingHubListeningStart" type="button">
+            <span class="spelling-path-icon">🔊</span><span><strong>听音拼写</strong><small>第二训练通道：只听发音写英文，不靠中文提示</small></span><b>听写</b>
+          </button>
+          <button class="spelling-path-card" id="spellingHubCollocationStart" type="button">
+            <span class="spelling-path-icon">🧩</span><span><strong>固定搭配专项</strong><small>扫描全部词库固定搭配 / 句型，按来源专项练中文 → 英文</small></span><b id="spellingHubCollocationCount">1785</b>
+          </button>
+          <button class="spelling-path-card history-card" id="spellingHubHistoryOpen" type="button">
+            <span class="spelling-path-icon">📚</span><span><strong>拼写记录</strong><small>查看已经练过的词、正确/错误次数、回炉阶段和最近练习时间</small></span><b id="spellingHubHistoryCount">0</b>
+          </button>
+        </div>
+
+        <div class="spelling-hub-panel">
+          <div class="spelling-hub-panel-head">
+            <div><span>自由专项</span><strong>自己指定范围练</strong></div>
+            <small>可精确到蓝色森林 / 四级核心 / Unit / 短语等</small>
+          </div>
+          <div class="spelling-hub-controls">
+            <label><span>练什么</span><select id="spellingHubKind"><option value="word" selected>单词</option><option value="phrase">短语</option></select></label>
+            <label><span>大来源</span><select id="spellingHubSource"><option value="all" selected>全部词库</option><option value="蓝色森林">蓝色森林</option><option value="四级核心">四级核心</option><option value="四级">四级</option><option value="Word List">Word List</option><option value="短语练习">短语练习</option><option value="全方位">全方位</option><option value="固定搭配专项">固定搭配专项</option><option value="听写内容">听写内容</option></select></label>
+            <label><span>具体分组</span><select id="spellingHubGroup"><option value="all" selected>全部分组</option></select></label>
+            <label><span>掌握状态</span><select id="spellingHubStatus"><option value="learned" selected>已学过的词</option><option value="weak">薄弱词优先</option><option value="all">全部</option><option value="new">只练新词</option></select></label>
+            <label><span>本轮数量</span><select id="spellingHubLimit"><option value="30" selected>30个</option><option value="50">50个</option><option value="100">100个</option><option value="all">全部</option></select></label>
+          </div>
+          <div class="spelling-hub-actions">
+            <button class="spelling-hub-start" id="spellingHubStart" type="button"><span>▶</span><strong>开始自由专项</strong><small>中文 → 英文 · 分级提示 · 强制闭卷重拼</small></button>
+            <button class="spelling-hub-secondary" id="spellingHubWeakStart" type="button"><strong>直接练薄弱词</strong><small>按主词库薄弱分优先</small></button>
+          </div>
+          <div class="spelling-error-summary" id="spellingHubErrorSummary"><strong>常错模式</strong><span>开始练习后，这里会统计你的漏字母、顺序、词尾、双写等错误。</span></div>
+          <p class="spelling-hub-note" id="spellingHubNote">第一次拼错只告诉你“错在哪里”，第二次才给首字母和长度，第三次才显示答案；看完答案必须重新闭卷拼对。</p>
+        </div>
+
+        <div class="spelling-session" id="spellingLabSession" hidden aria-hidden="true">
+          <div class="spelling-session-backdrop" data-spelling-action="close"></div>
+          <section class="spelling-session-card" role="dialog" aria-modal="true" aria-labelledby="spellingSessionTitle">
+            <header class="spelling-session-head">
+              <div><small id="spellingSessionKicker">主动提取</small><strong id="spellingSessionTitle">中文 → 英文</strong></div>
+              <button class="spelling-session-close" type="button" data-spelling-action="close" aria-label="关闭">×</button>
+            </header>
+            <div class="spelling-session-progress"><i id="spellingSessionProgressBar"></i></div>
+            <div class="spelling-session-meta"><span id="spellingSessionIndex">1/30</span><span id="spellingSessionSchedule">首次建立</span></div>
+            <main class="spelling-session-body">
+              <div class="spelling-session-prompt" id="spellingSessionPrompt"></div>
+              <button class="spelling-listen-button" id="spellingListenButton" type="button" hidden>🔊 播放发音</button>
+              <div class="spelling-hint-box" id="spellingHintBox" hidden></div>
+              <div class="spelling-answer-box" id="spellingAnswerBox" hidden></div>
+              <label class="spelling-input-wrap" id="spellingInputWrap"><span>完整拼写</span><input id="spellingLabInput" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" enterkeyhint="done" placeholder="在这里写英文"></label>
+              <p class="spelling-session-feedback" id="spellingSessionFeedback" aria-live="polite"></p>
+              <div class="spelling-session-actions">
+                <button class="secondary-button" id="spellingDontKnowButton" type="button">完全不会</button>
+                <button class="mastered-button" id="spellingMasteredButton" type="button">✓ 已掌握</button>
+                <button class="primary-button" id="spellingCheckButton" type="button">检查 Enter</button>
+              </div>
+            </main>
+            <footer class="spelling-session-footer"><span id="spellingSessionFooter">英文、音标和发音在提交前不会泄露。</span></footer>
+          </section>
+        </div>
+
+        <div class="spelling-history" id="spellingHistoryPanel" hidden aria-hidden="true">
+          <div class="spelling-history-backdrop" data-spelling-history-action="close"></div>
+          <section class="spelling-history-card" role="dialog" aria-modal="true" aria-labelledby="spellingHistoryTitle">
+            <header class="spelling-history-head">
+              <div><small>MY SPELLING</small><strong id="spellingHistoryTitle">📚 拼写记录</strong><p>这里显示你真正练过的词，不影响31天主学习进度。</p></div>
+              <button class="spelling-session-close" type="button" data-spelling-history-action="close" aria-label="关闭">×</button>
+            </header>
+            <div class="spelling-history-summary">
+              <article><span>已练拼写</span><strong id="spellingHistoryTotal">0</strong></article>
+              <article><span>正在回炉</span><strong id="spellingHistoryReview">0</strong></article>
+              <article><span>手动已掌握</span><strong id="spellingHistoryManualMastered">0</strong></article>
+              <article><span>拼写毕业</span><strong id="spellingHistoryGraduated">0</strong></article>
+            </div>
+            <div class="spelling-history-toolbar">
+              <div class="spelling-history-tabs" id="spellingHistoryTabs">
+                <button type="button" data-history-filter="all" class="active">全部练过</button>
+                <button type="button" data-history-filter="today">今天练过</button>
+                <button type="button" data-history-filter="correct">拼对过</button>
+                <button type="button" data-history-filter="wrong">拼错过</button>
+                <button type="button" data-history-filter="review">正在回炉</button>
+                <button type="button" data-history-filter="mastered">已掌握</button>
+                <button type="button" data-history-filter="graduated">拼写毕业</button>
+              </div>
+              <div class="spelling-history-search-row">
+                <input id="spellingHistorySearch" type="search" autocomplete="off" placeholder="搜索英文或中文释义">
+                <select id="spellingHistorySource" aria-label="按来源筛选">
+                  <option value="all">全部来源</option><option value="蓝色森林">蓝色森林</option><option value="四级核心">四级核心</option><option value="四级">四级</option><option value="Word List">Word List</option><option value="短语练习">短语练习</option><option value="全方位">全方位</option><option value="固定搭配专项">固定搭配专项</option>
+                </select>
+              </div>
+            </div>
+            <div class="spelling-history-result-meta" id="spellingHistoryMeta">0 条记录</div>
+            <div class="spelling-history-list" id="spellingHistoryList"></div>
+          </section>
+        </div>
+      </section>
 
       <section class="peppa-zone module-section" data-module-section="peppa" id="peppaZone" aria-label="小猪佩奇英语专区">
         <div id="peppaZoneApp"></div>
@@ -81,7 +206,7 @@
           <strong id="dueCount">0</strong>
         </article>
         <article class="metric warm">
-          <span>已完成</span>
+          <span>今日完成</span>
           <strong id="todayCount">0</strong>
         </article>
         <article class="metric calm completed-metric">
@@ -681,6 +806,8 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="./phonetic-local-data.js?v=70b162"></script>
 <script src="./pronunciation-support.js?v=70b162"></script>
-<script src="./startup.js?v=70b162"></script>
+<script src="./speed-review-merge.js?v=164"></script>
+<script src="./storage-codec.js?v=163"></script>
+<script src="./startup.js?v=70b181"></script>
 </body>
 </html>
