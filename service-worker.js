@@ -1,3 +1,4 @@
+// v70 B182 2026-09-20：彻底移除个人黄金存档自动注入；增加覆盖前快照恢复页；每10词小复盘默认关闭并提供真实开关。
 // v70 B181 2026-09-19：快速复盘增加 IndexedDB 双重存档与自动合并恢复。
 // v70 B180 2026-09-19：同一英文答案跨词库/专项共享拼写记录，旧ID记录自动合并。
 // v70 B178 2026-09-19：固定搭配专项与拼写入口缓存更新。
@@ -24,7 +25,7 @@
 // v70 B113 2026-08-27：刷新四级听力2词库/分组/排序资源缓存。
 // v70 B112 2026-08-27：刷新全量缺失音标补齐资源缓存。
 // v70 B109 2026-08-27：仅刷新词库资源缓存版本；训练逻辑不变。
-const CACHE_NAME = "word-memory-v70-b181";
+const CACHE_NAME = "word-memory-v70-b182";
 const SCENE_ASSETS_101_180 = `a-piece-of-news newspaper message leave-a-message text-message ball skate skill special-skill social-skill professional-skill able be-able-to-do-sth ability disable unable enjoy enjoy-doing-sth enjoyable grass afraid be-afraid-of water old elder young youth youngster junior senior live live-up-to live-on lively livelihood alive lovely life wildlife lifestyle style animal mammal insect pet bite diary keep-a-diary dairy borrow lend lend-sth-to-sb vegetable sweep mainly topic title entitle underline stop cancel call-off cancellation cancer start star begin to-begin-with in-the-beginning beginning beginner renew outset end in-the-end at-the-end-of endless ending cease over`
   .split(" ")
   .map((slug) => `./assets/word-scenes/${slug}.webp`);
@@ -37,10 +38,10 @@ const SCENE_ASSETS_261_280 = `emphasis collective cell-phone punctual with hazar
 const APP_ASSETS = [
   "./speed-review-merge.js",
   "./storage-codec.js", "./storage-rescue.js",
-  "./b168-golden-baseline.js?v=70b178",
+  "./restore-previous-progress.html?v=70b182",
   "./phonetic-local-data.js",
   "./pronunciation-support.js",
-  "./startup.js?v=70b181",
+  "./startup.js?v=70b182",
   "./spelling-hub.js?v=70b180",
   "./spelling-hub.css?v=70b180",
   "./reset-local.js?v=70b151",
@@ -163,10 +164,10 @@ const APP_ASSETS = [
   "./assets/word-scenes/paragraph.webp",
   "./assets/word-scenes/news.webp",
   "./assets/pronunciation-primer.wav?v=70b060fullstart20260820",
-  "./app.js?v=70b178",
+  "./app.js?v=70b182",
   "./peppa-content-b127.js?v=70b127peppatesting20260830",
   "./peppa-zone.js?v=70b151",
-  "./memory-lab.js?v=70b106cet4listen20260826",
+  "./memory-lab.js?v=70b182",
   "./speed-review.js?v=70b181",
   "./browse-quiz.js?v=70b151",
   "./folder-view.js?v=70b143",

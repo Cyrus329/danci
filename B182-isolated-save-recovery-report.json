@@ -1,0 +1,12 @@
+{
+  "version": "v70 B182",
+  "criticalFix": "删除共享包中的个人黄金基线及全部自动注入入口",
+  "recovery": "restore-previous-progress.html 可恢复设备 IndexedDB 的 words-previous 快照，并先下载双快照保险文件",
+  "miniRecap": {
+    "default": "off",
+    "visibleSwitch": true,
+    "disableStopsSession": true,
+    "repeatAvoidance": "优先排除最近30个小复盘词"
+  },
+  "privacy": "包内不再包含 b168-golden-baseline.js"
+}

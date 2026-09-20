@@ -1,0 +1,17 @@
+const fs=require('fs'),assert=require('assert');
+const app=fs.readFileSync(__dirname+'/app.js','utf8');
+const startup=fs.readFileSync(__dirname+'/startup.js','utf8');
+const index=fs.readFileSync(__dirname+'/index.html','utf8');
+const sw=fs.readFileSync(__dirname+'/service-worker.js','utf8');
+assert(app.includes('const B168_GOLDEN_BASELINE = null'));
+assert(!startup.includes('b168-golden-baseline.js'));
+assert(!startup.includes('golden?.speedReview'));
+assert(index.includes('id="miniRecapToggle"'));
+assert(app.includes('autoMiniRecap: flowSource.autoMiniRecap === true'));
+assert(app.includes('memoryLabStore.flow.recentIds = []'));
+assert(app.includes('recentMiniRecapIds'));
+assert(app.includes('b182-mini-recap-default-off'));
+assert(index.includes('version-badge">B182'));
+assert(sw.includes('restore-previous-progress.html?v=70b182'));
+assert(fs.existsSync(__dirname+'/restore-previous-progress.html'));
+console.log('B182 isolated save and mini recap test PASS');

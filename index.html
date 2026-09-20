@@ -19,7 +19,7 @@
   <div class="app-shell">
     <header class="topbar">
       <div>
-        <p class="eyebrow">WORD MEMORY <span class="version-badge">B181</span></p>
+        <p class="eyebrow">WORD MEMORY <span class="version-badge">B182</span></p>
         <h1>专升本单词记忆</h1>
       </div>
       <div class="topbar-actions">
@@ -398,6 +398,10 @@
             <h2>30词快速复盘</h2>
             <p class="folder-hint">每次只过30词：会 / 看中文才会 / 不会。独立存档，不修改主卡片阶段。</p>
           </div>
+          <label class="mini-recap-switch" for="miniRecapToggle">
+            <input id="miniRecapToggle" type="checkbox">
+            <span><strong>每10词小复盘</strong><small>默认关闭；开启后每完成10词弹出一次</small></span>
+          </label>
         </div>
 
         <section class="speed-review-hub quick30-hub" id="speedReviewHub" aria-label="30词快速复盘器">
@@ -473,6 +477,10 @@
       </section>
 
       <section class="entry-grid module-section" data-module-section="manage">
+        <div class="panel-heading" style="grid-column:1/-1">
+          <div><p class="eyebrow">Emergency recovery</p><h2>设备存档修复</h2><p class="folder-hint">如果曾被旧版共享基线覆盖，可恢复本设备上一份完整快照。</p></div>
+          <a class="secondary-button" href="./restore-previous-progress.html">恢复覆盖前存档</a>
+        </div>
         <form class="entry-form" id="wordForm">
           <div class="panel-heading">
             <div>
@@ -808,6 +816,6 @@
 <script src="./pronunciation-support.js?v=70b162"></script>
 <script src="./speed-review-merge.js?v=164"></script>
 <script src="./storage-codec.js?v=163"></script>
-<script src="./startup.js?v=70b181"></script>
+<script src="./startup.js?v=70b182"></script>
 </body>
 </html>

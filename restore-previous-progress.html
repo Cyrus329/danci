@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>恢复覆盖前存档</title>
+  <style>
+    body{margin:0;background:#f4f8f5;color:#173d33;font-family:system-ui,"Microsoft YaHei",sans-serif}.card{max-width:680px;margin:8vh auto;padding:28px;background:#fff;border:1px solid #d9e5df;border-radius:22px;box-shadow:0 16px 50px #1e50351a}h1{margin-top:0}.notice{padding:14px;border-radius:12px;background:#fff4db;color:#795718;line-height:1.7}.status{margin:18px 0;padding:14px;background:#edf6f1;border-radius:12px;white-space:pre-line}button,a{display:inline-flex;margin:6px;padding:12px 18px;border:0;border-radius:12px;font-weight:700;text-decoration:none;cursor:pointer}.restore{background:#237a5b;color:#fff}.download{background:#e8f0ec;color:#234d40}.back{background:#f1f2f1;color:#56615d}
+  </style>
+</head>
+<body><main class="card">
+  <h1>恢复覆盖前存档</h1>
+  <p class="notice">只在个人进度被错误的共享基线覆盖后使用。系统会先下载当前污染存档作保险，再把设备里的“上一份完整快照”恢复为主存档。</p>
+  <div class="status" id="status">正在检查上一份设备快照……</div>
+  <button class="download" id="download" disabled>先下载两份快照</button>
+  <button class="restore" id="restore" disabled>恢复覆盖前存档</button>
+  <a class="back" href="./index.html">暂不恢复，返回首页</a>
+  <script>
+  (()=>{
+    const DB='word-memory-trainer-mobile:v1', STORE='snapshots', PRIMARY='words-primary', PREVIOUS='words-previous', CONTAMINATED='b182-contaminated-backup';
+    const status=document.getElementById('status'), restore=document.getElementById('restore'), download=document.getElementById('download');
+    let db=null, primary=null, previous=null;
+    const open=()=>new Promise((resolve,reject)=>{const r=indexedDB.open(DB,1);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);r.onblocked=()=>reject(new Error('数据库被其他页面占用'));});
+    const get=(key)=>new Promise((resolve,reject)=>{const r=db.transaction(STORE,'readonly').objectStore(STORE).get(key);r.onsuccess=()=>resolve(r.result||null);r.onerror=()=>reject(r.error);});
+    const time=(x)=>x?.savedAt||x?.payload?.savedAt||'未知时间';
+    const saveFile=()=>{const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),primary,previous},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='覆盖修复前双快照备份.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};
+    open().then(async d=>{db=d;primary=await get(PRIMARY);previous=await get(PREVIOUS);if(!previous?.payload){status.textContent='没有找到“上一份完整快照”。请不要继续操作，把朋友之前导出的 JSON 发来恢复。';return;}status.textContent=`当前主快照：${time(primary)}\n覆盖前候选快照：${time(previous)}\n\n已找到可恢复的上一份快照。`;download.disabled=false;restore.disabled=false;}).catch(e=>status.textContent='读取失败：'+(e?.message||e));
+    download.addEventListener('click',saveFile);
+    restore.addEventListener('click',()=>{if(!previous?.payload||!confirm('确定恢复上一份设备快照吗？当前主快照会保留为污染备份。'))return;saveFile();const tx=db.transaction(STORE,'readwrite'),s=tx.objectStore(STORE);if(primary)s.put({...primary,key:CONTAMINATED});s.put({...previous,key:PRIMARY});s.delete(PREVIOUS);s.delete('b168-progress-guard');tx.oncomplete=()=>{for(const k of ['word-memory-trainer:v1','word-memory-trainer:v1:quick:v169','word-memory-trainer:v1:packed:v163','word-memory-trainer:progress-guard:v168'])try{localStorage.removeItem(k)}catch{}status.textContent='恢复完成。正在返回首页……';setTimeout(()=>location.href='./index.html',700);};tx.onerror=()=>status.textContent='恢复写入失败，请保留刚下载的双快照备份。';});
+  })();
+  </script>
+</main></body></html>

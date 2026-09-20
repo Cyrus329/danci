@@ -33,8 +33,10 @@ const B168_GUARD_META_KEY = "word-memory-trainer:progress-guard:v168";
 const B169_QUICK_STORAGE_KEY = STORAGE_KEY + ":quick:v169";
 const B169_OLD_PACKED_STORAGE_KEY = STORAGE_KEY + ":packed:v163";
 const B169_QUICK_MAX_CHARS = 1400000; // 约 1.4M 字符，远低于常见 localStorage 配额；超出时仍以 IndexedDB 完整存档为准。
-const B168_GOLDEN_BASELINE = (window.B168_GOLDEN_BASELINE && typeof window.B168_GOLDEN_BASELINE === "object") ? window.B168_GOLDEN_BASELINE : null;
-const B168_GOLDEN_LABEL = normalizeText(B168_GOLDEN_BASELINE?.label || "2026-09-15 黄金恢复基线");
+// B182: personal progress must never ship as an application baseline.
+// Every browser/device owns an independent local save unless the user explicitly imports a backup.
+const B168_GOLDEN_BASELINE = null;
+const B168_GOLDEN_LABEL = "已停用个人黄金基线";
 let b168GoldenMergedCount = 0;
 let b168GuardBlocked = false;
 // B176：只有与 IndexedDB 安全快照绑定的 summary 才能作为新版进度“硬下限”。
@@ -104,6 +106,17 @@ let reviewActionBridgeReady = false;
 let reviewActionBridgeSaveTimer = null;
 let contextStudyStore = loadContextStudyStore();
 let memoryLabStore = loadMemoryLabStore();
+try {
+  if (localStorage.getItem("word-memory-trainer:b182-mini-recap-default-off") !== "1") {
+    memoryLabStore.flow.autoMiniRecap = false;
+    memoryLabStore.flow.completedSinceRecap = 0;
+    memoryLabStore.flow.recentIds = [];
+    memoryLabStore.flow.recentMiniRecapIds = [];
+    memoryLabStore.updatedAt = new Date().toISOString();
+    localStorage.setItem(MEMORY_LAB_KEY, JSON.stringify(memoryLabStore));
+    localStorage.setItem("word-memory-trainer:b182-mini-recap-default-off", "1");
+  }
+} catch {}
 let checkInMonthOffset = 0;
 
 function normalizeAbilityStat(value = {}) {
@@ -180,7 +193,8 @@ function normalizeMemoryLabStore(value = {}) {
     flow: {
       completedSinceRecap: Math.max(0, Number(flowSource.completedSinceRecap) || 0),
       recentIds: (Array.isArray(flowSource.recentIds) ? flowSource.recentIds : []).map(canonicalBuiltinAliasId).filter(Boolean).slice(-10),
-      autoMiniRecap: flowSource.autoMiniRecap !== false,
+      recentMiniRecapIds: (Array.isArray(flowSource.recentMiniRecapIds) ? flowSource.recentMiniRecapIds : []).map(canonicalBuiltinAliasId).filter(Boolean).slice(-30),
+      autoMiniRecap: flowSource.autoMiniRecap === true,
     },
     reports,
     updatedAt: normalizeText(source.updatedAt || ""),
@@ -281,7 +295,8 @@ function mergeMemoryLabStores(localValue = {}, incomingValue = {}) {
   merged.flow = {
     completedSinceRecap: Math.max(localStore.flow.completedSinceRecap, incomingStore.flow.completedSinceRecap),
     recentIds: [...new Set([...(newerFlow.recentIds || []), ...(localStore.flow.recentIds || []), ...(incomingStore.flow.recentIds || [])])].slice(-10),
-    autoMiniRecap: newerFlow.autoMiniRecap !== false,
+    recentMiniRecapIds: [...new Set([...(newerFlow.recentMiniRecapIds || []), ...(localStore.flow.recentMiniRecapIds || []), ...(incomingStore.flow.recentMiniRecapIds || [])])].slice(-30),
+    autoMiniRecap: newerFlow.autoMiniRecap === true,
   };
   merged.updatedAt = [localStore.updatedAt, incomingStore.updatedAt].filter(Boolean).sort().pop() || "";
   return normalizeMemoryLabStore(merged);
@@ -5847,14 +5862,17 @@ function updateQuickSessionAfterRating(word, result) {
 
 function miniRecapCandidates() {
   const ids = memoryLabStore.flow.recentIds || [];
-  return ids.map((id) => state.words.find((word) => word.id === id)).filter(Boolean)
+  const ranked = ids.map((id) => state.words.find((word) => word.id === id)).filter(Boolean)
     .sort((a, b) => {
       const aa = wordAbilitySummary(a);
       const bb = wordAbilitySummary(b);
       const aScore = (100 - Math.min(aa.recognition.score || 0, aa.spelling.score || 0)) + weakScore(a);
       const bScore = (100 - Math.min(bb.recognition.score || 0, bb.spelling.score || 0)) + weakScore(b);
       return bScore - aScore;
-    }).slice(0, 3);
+    });
+  const used = new Set(memoryLabStore.flow.recentMiniRecapIds || []);
+  const fresh = ranked.filter((word) => !used.has(word.id));
+  return (fresh.length >= 3 ? fresh : ranked).slice(0, 3);
 }
 
 function trackMiniRecap(word, result, options = {}) {
@@ -5868,6 +5886,7 @@ function trackMiniRecap(word, result, options = {}) {
   }
   const words = miniRecapCandidates();
   memoryLabStore.flow.completedSinceRecap = 0;
+  memoryLabStore.flow.recentMiniRecapIds = [...new Set([...(memoryLabStore.flow.recentMiniRecapIds || []), ...words.map((item) => item.id)])].slice(-30);
   saveMemoryLabStore({ defer: Boolean(options.deferStoreWrites) });
   if (words.length < 3) return;
   window.setTimeout(() => startQuickSession({
@@ -9183,6 +9202,12 @@ window.WordMemoryApp = {
   },
   setMiniRecapEnabled: (enabled) => {
     memoryLabStore.flow.autoMiniRecap = Boolean(enabled);
+    if (!enabled) {
+      memoryLabStore.flow.completedSinceRecap = 0;
+      memoryLabStore.flow.recentIds = [];
+      memoryLabStore.flow.recentMiniRecapIds = [];
+      if (state.quickSession?.active && state.quickSession.type === "mini-recap") finishQuickSession("disabled", { immediate: true });
+    }
     saveMemoryLabStore();
     saveWords();
     notifyMemoryLab();

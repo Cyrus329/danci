@@ -333,7 +333,7 @@
 
   function renderMemoryLab() {
     const store = api.getMemoryLab();
-    if (els.miniToggle) els.miniToggle.checked = store.flow?.autoMiniRecap !== false;
+    if (els.miniToggle) els.miniToggle.checked = store.flow?.autoMiniRecap === true;
     if (els.todayErrorCount) els.todayErrorCount.textContent = String((api.getTodayWrongIds?.() || []).length);
     renderSessionStatus();
     renderAbilityOverview();
